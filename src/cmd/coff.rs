@@ -218,8 +218,7 @@ fn sigs_lib(args: SigsLibArgs) -> Result<()> {
         let mut sigs: Vec<_> = hash_map.values().cloned().collect();
         sigs.sort_by_key(|s| s.signature.len());
 
-        let mut safe_name =
-            sym_name.replace(['/', '\\', ':', '*', '?', '"', '<', '>', '|'], "_");
+        let mut safe_name = sym_name.replace(['/', '\\', ':', '*', '?', '"', '<', '>', '|'], "_");
         // Windows MAX_PATH component limit is 255 bytes; ".yml" = 4 bytes.
         const MAX_STEM: usize = 251;
         if safe_name.len() > MAX_STEM {
