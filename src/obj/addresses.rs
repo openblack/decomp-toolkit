@@ -9,12 +9,16 @@ pub struct AddressRanges {
 }
 
 impl Default for AddressRanges {
-    fn default() -> Self { Self::new() }
+    fn default() -> Self {
+        Self::new()
+    }
 }
 
 impl AddressRanges {
     #[inline]
-    pub fn new() -> Self { Self { inner: vec![] } }
+    pub fn new() -> Self {
+        Self { inner: vec![] }
+    }
 
     pub fn insert(&mut self, start: SectionAddress, end: SectionAddress) {
         debug_assert_eq!(
@@ -53,22 +57,22 @@ mod tests {
     #[test]
     fn test_contains() {
         let mut intervals = AddressRanges::new();
-        intervals.insert(SectionAddress { section: 0, address: 0x80000000 }, SectionAddress {
-            section: 0,
-            address: 0x80000004,
-        });
-        intervals.insert(SectionAddress { section: 0, address: 0x80000008 }, SectionAddress {
-            section: 0,
-            address: 0x8000000C,
-        });
-        intervals.insert(SectionAddress { section: 12, address: 0x80004000 }, SectionAddress {
-            section: 12,
-            address: 0x80004004,
-        });
-        intervals.insert(SectionAddress { section: 12, address: 0x80004008 }, SectionAddress {
-            section: 12,
-            address: 0x8000400C,
-        });
+        intervals.insert(
+            SectionAddress { section: 0, address: 0x80000000 },
+            SectionAddress { section: 0, address: 0x80000004 },
+        );
+        intervals.insert(
+            SectionAddress { section: 0, address: 0x80000008 },
+            SectionAddress { section: 0, address: 0x8000000C },
+        );
+        intervals.insert(
+            SectionAddress { section: 12, address: 0x80004000 },
+            SectionAddress { section: 12, address: 0x80004004 },
+        );
+        intervals.insert(
+            SectionAddress { section: 12, address: 0x80004008 },
+            SectionAddress { section: 12, address: 0x8000400C },
+        );
 
         assert!(intervals.contains(SectionAddress { section: 0, address: 0x80000000 }));
         assert!(intervals.contains(SectionAddress { section: 0, address: 0x80000001 }));

@@ -11,7 +11,9 @@ pub struct RarcFs {
 }
 
 impl RarcFs {
-    pub fn new(file: Box<dyn VfsFile>) -> io::Result<Self> { Ok(Self { file }) }
+    pub fn new(file: Box<dyn VfsFile>) -> io::Result<Self> {
+        Ok(Self { file })
+    }
 
     fn view(&mut self) -> io::Result<RarcView<'_>> {
         let data = self.file.map()?;

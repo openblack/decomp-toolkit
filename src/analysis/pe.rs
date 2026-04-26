@@ -40,14 +40,14 @@ fn label_entry_point(obj: &mut ObjInfo, pe: &PeFile32) -> Result<()> {
     // Choose the standard MSVC CRT startup name based on the PE subsystem.
     let subsystem = pe.nt_headers().optional_header().subsystem.get(LE);
     let entry_name = match subsystem {
-        2 => "WinMainCRTStartup",   // IMAGE_SUBSYSTEM_WINDOWS_GUI
-        3 => "mainCRTStartup",       // IMAGE_SUBSYSTEM_WINDOWS_CUI
+        2 => "WinMainCRTStartup", // IMAGE_SUBSYSTEM_WINDOWS_GUI
+        3 => "mainCRTStartup",    // IMAGE_SUBSYSTEM_WINDOWS_CUI
         _ => "CRTStartup",
     };
 
-    let Some((sec_idx, _)) = obj.sections.iter().find(|(_, s)| {
-        entry_abs >= s.address && entry_abs < s.address + s.size
-    }) else {
+    let Some((sec_idx, _)) =
+        obj.sections.iter().find(|(_, s)| entry_abs >= s.address && entry_abs < s.address + s.size)
+    else {
         return Ok(());
     };
 
@@ -114,9 +114,8 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
                 // Named import
                 match import_table.hint_name(raw & 0x7FFF_FFFF) {
                     Ok((_hint, name)) => {
-                        let n = std::str::from_utf8(name)
-                            .unwrap_or("unknown")
-                            .trim_end_matches('\0');
+                        let n =
+                            std::str::from_utf8(name).unwrap_or("unknown").trim_end_matches('\0');
                         format!("__imp__{}", n)
                     }
                     Err(_) => {
@@ -135,9 +134,9 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
     let mut imp_count = 0u32;
     let mut thunk_count = 0u32;
     for (iat_va, name) in &iat_symbols {
-        let Some((sec_idx, _)) = obj.sections.iter().find(|(_, s)| {
-            *iat_va >= s.address && *iat_va < s.address + s.size
-        }) else {
+        let Some((sec_idx, _)) =
+            obj.sections.iter().find(|(_, s)| *iat_va >= s.address && *iat_va < s.address + s.size)
+        else {
             continue;
         };
         if obj.symbols.at_section_address(sec_idx, *iat_va as u32).next().is_some() {
@@ -213,9 +212,7 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
         }
     }
 
-    log::info!(
-        "PE imports: {imp_count} IAT symbols, {thunk_count} thunk stubs"
-    );
+    log::info!("PE imports: {imp_count} IAT symbols, {thunk_count} thunk stubs");
     Ok(())
 }
 
@@ -234,16 +231,18 @@ fn detect_exports(obj: &mut ObjInfo, pe: &PeFile32) -> Result<()> {
         let Some(name_bytes) = export.name else { continue };
         let Ok(name) = std::str::from_utf8(name_bytes) else { continue };
         let name = name.trim_end_matches('\0');
-        if name.is_empty() { continue }
+        if name.is_empty() {
+            continue;
+        }
 
         let abs_va = match export.target {
             ExportTarget::Address(rva) => image_base + rva as u64,
             _ => continue, // skip forwarders
         };
 
-        let Some((sec_idx, _)) = obj.sections.iter().find(|(_, s)| {
-            abs_va >= s.address && abs_va < s.address + s.size
-        }) else {
+        let Some((sec_idx, _)) =
+            obj.sections.iter().find(|(_, s)| abs_va >= s.address && abs_va < s.address + s.size)
+        else {
             continue;
         };
 
@@ -368,7 +367,9 @@ fn detect_crt_init(obj: &mut ObjInfo) -> Result<()> {
                 // Count non-null entries for the log message.
                 for k in (run_start..j).step_by(4) {
                     let fn_va = u32::from_le_bytes(data[k..k + 4].try_into().unwrap());
-                    if fn_va != 0 { fn_count += 1; }
+                    if fn_va != 0 {
+                        fn_count += 1;
+                    }
                 }
                 log::debug!(
                     "PE CRT: table @ {:#010X}, {} entries ({} non-null)",
@@ -393,4 +394,3 @@ fn detect_crt_init(obj: &mut ObjInfo) -> Result<()> {
     }
     Ok(())
 }
-

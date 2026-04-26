@@ -492,7 +492,9 @@ impl Tag {
 }
 
 pub fn read_debug_section<R>(reader: &mut R, e: Endian, include_erased: bool) -> Result<DwarfInfo>
-where R: BufRead + Seek + ?Sized {
+where
+    R: BufRead + Seek + ?Sized,
+{
     let len = {
         let old_pos = reader.stream_position()?;
         let len = reader.seek(SeekFrom::End(0))?;
@@ -529,7 +531,9 @@ pub fn parse_producer(producer: &str) -> Producer {
 
 #[allow(unused)]
 pub fn read_aranges_section<R>(reader: &mut R, e: Endian) -> Result<()>
-where R: BufRead + Seek + ?Sized {
+where
+    R: BufRead + Seek + ?Sized,
+{
     let len = {
         let old_pos = reader.stream_position()?;
         let len = reader.seek(SeekFrom::End(0))?;
@@ -669,7 +673,9 @@ where
 
 // TODO Shift-JIS?
 fn read_string<R>(reader: &mut R) -> Result<String>
-where R: BufRead + ?Sized {
+where
+    R: BufRead + ?Sized,
+{
     let mut str = String::new();
     let mut buf = [0u8; 1];
     loop {
@@ -682,11 +688,7 @@ where R: BufRead + ?Sized {
     Ok(str)
 }
 
-fn read_attribute<R>(
-    reader: &mut R,
-    data_endian: Endian,
-    addr_endian: Endian,
-) -> Result<Attribute>
+fn read_attribute<R>(reader: &mut R, data_endian: Endian, addr_endian: Endian) -> Result<Attribute>
 where
     R: BufRead + Seek + ?Sized,
 {

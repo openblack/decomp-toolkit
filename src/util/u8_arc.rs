@@ -56,10 +56,14 @@ impl U8Node {
     }
 
     /// Whether the node is a file.
-    pub fn is_file(&self) -> bool { self.kind == 0 }
+    pub fn is_file(&self) -> bool {
+        self.kind == 0
+    }
 
     /// Whether the node is a directory.
-    pub fn is_dir(&self) -> bool { self.kind == 1 }
+    pub fn is_dir(&self) -> bool {
+        self.kind == 1
+    }
 
     /// Offset in the string table to the filename.
     pub fn name_offset(&self) -> u32 {
@@ -69,14 +73,18 @@ impl U8Node {
     /// For files, this is the data offset of the file data (relative to header.data_offset).
     ///
     /// For directories, this is the parent node index in the node table.
-    pub fn offset(&self) -> u32 { self.offset.get() }
+    pub fn offset(&self) -> u32 {
+        self.offset.get()
+    }
 
     /// For files, this is the byte size of the file.
     ///
     /// For directories, this is the child end index in the node table.
     ///
     /// Number of child files and directories recursively is `length - offset`.
-    pub fn length(&self) -> u32 { self.length.get() }
+    pub fn length(&self) -> u32 {
+        self.length.get()
+    }
 }
 
 /// A view into a U8 archive.
@@ -121,7 +129,9 @@ impl<'a> U8View<'a> {
     }
 
     /// Iterate over the nodes in the U8 archive.
-    pub fn iter(&self) -> U8Iter<'_> { U8Iter { inner: self, idx: 1 } }
+    pub fn iter(&self) -> U8Iter<'_> {
+        U8Iter { inner: self, idx: 1 }
+    }
 
     /// Get the name of a node.
     pub fn get_name(&self, node: U8Node) -> Result<Cow<'_, str>, String> {

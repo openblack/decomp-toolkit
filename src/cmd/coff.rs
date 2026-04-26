@@ -1,3 +1,4 @@
+use rayon::prelude::*;
 use std::{
     collections::{BTreeMap, HashMap},
     fs,
@@ -5,7 +6,6 @@ use std::{
     io::Write,
     time::Instant,
 };
-use rayon::prelude::*;
 
 use anyhow::{Context, Result, bail};
 use argp::FromArgs;
@@ -35,7 +35,10 @@ use crate::{
     },
     util::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
-        config::{apply_splits_file, apply_symbols_file, is_auto_symbol, write_splits_file, write_symbols_file},
+        config::{
+            apply_splits_file, apply_symbols_file, is_auto_symbol, write_splits_file,
+            write_symbols_file,
+        },
         dep::DepFile,
         file::{FileReadInfo, buf_writer, process_rsp, touch, verify_hash},
         lcf::obj_path_for_unit,
@@ -215,7 +218,15 @@ fn sigs_lib(args: SigsLibArgs) -> Result<()> {
         let mut sigs: Vec<_> = hash_map.values().cloned().collect();
         sigs.sort_by_key(|s| s.signature.len());
 
-        let safe_name = sym_name.replace(['/', '\\', ':', '*', '?', '"', '<', '>', '|'], "_");
+        let mut safe_name =
+            sym_name.replace(['/', '\\', ':', '*', '?', '"', '<', '>', '|'], "_");
+        // Windows MAX_PATH component limit is 255 bytes; ".yml" = 4 bytes.
+        const MAX_STEM: usize = 251;
+        if safe_name.len() > MAX_STEM {
+            let hash = xxh3_64(sym_name.as_bytes());
+            safe_name.truncate(MAX_STEM - 16);
+            safe_name.push_str(&format!("{:016x}", hash));
+        }
         let out_path = out_dir.join(format!("{safe_name}.yml"));
         let mut f = buf_writer(&out_path)?;
         serde_yaml::to_writer(&mut f, &sigs)?;
@@ -308,8 +319,7 @@ fn diff(args: DiffArgs) -> Result<()> {
             }
         };
 
-        let Ok((linked_section_index, linked_section)) =
-            linked_obj.sections.at_address(orig_start)
+        let Ok((linked_section_index, linked_section)) = linked_obj.sections.at_address(orig_start)
         else {
             log::error!(
                 "Symbol {} (size {:#X}) at {:#010X}: no section in linked PE covers this address",
@@ -391,8 +401,7 @@ fn apply(args: ApplyArgs) -> Result<()> {
             continue;
         }
 
-        let Ok((linked_section_index, _)) =
-            linked_obj.sections.at_address(orig_sym.address as u32)
+        let Ok((linked_section_index, _)) = linked_obj.sections.at_address(orig_sym.address as u32)
         else {
             log::warn!(
                 "Symbol {} (type {:?}, size {:#X}) at {:#010X}: no section in linked PE",
@@ -480,8 +489,7 @@ fn apply(args: ApplyArgs) -> Result<()> {
         {
             continue;
         }
-        let Ok((orig_section_index, _)) = obj.sections.at_address(linked_sym.address as u32)
-        else {
+        let Ok((orig_section_index, _)) = obj.sections.at_address(linked_sym.address as u32) else {
             continue;
         };
         let already_present = obj
@@ -552,11 +560,21 @@ fn load_coff_module(
     Ok((obj, image_base, pe_header, object_path))
 }
 
+type LoadAnalyzeCoffResult = (
+    ObjInfo,
+    crate::analysis::x86::X86FunctionSizeData,
+    Option<PeHeaderInfo>,
+    Vec<Utf8NativePathBuf>,
+    Option<FileReadInfo>,
+    Option<FileReadInfo>,
+);
+
 fn load_analyze_coff(
     config: &ProjectConfig,
     object_base: &ObjectBase,
-) -> Result<(ObjInfo, crate::analysis::x86::X86FunctionSizeData, Option<PeHeaderInfo>, Vec<Utf8NativePathBuf>, Option<FileReadInfo>, Option<FileReadInfo>)> {
-    let (mut obj, image_base, pe_header, object_path) = load_coff_module(&config.base, object_base)?;
+) -> Result<LoadAnalyzeCoffResult> {
+    let (mut obj, image_base, pe_header, object_path) =
+        load_coff_module(&config.base, object_base)?;
     let mut dep = vec![object_path];
 
     info!("Loading and analyzing COFF/PE binary");
@@ -571,12 +589,18 @@ fn load_analyze_coff(
     let size_data = analyze_x86_functions(&mut obj)?;
 
     // Apply x86 signatures for already-known symbols (entry point, named stubs).
-    let sig_dir_buf: Option<Utf8NativePathBuf> = config.x86_signatures.as_ref().map(|p| p.with_encoding());
+    let sig_dir_buf: Option<Utf8NativePathBuf> =
+        config.x86_signatures.as_ref().map(|p| p.with_encoding());
     apply_signatures_x86(&mut obj, sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())))?;
 
     if let Some(map_path) = &config.base.map {
         let map_path = map_path.with_encoding();
-        crate::util::map::apply_map_file(&map_path, &mut obj, config.common_start, config.mw_comment_version)?;
+        crate::util::map::apply_map_file(
+            &map_path,
+            &mut obj,
+            config.common_start,
+            config.mw_comment_version,
+        )?;
         dep.push(map_path);
     }
 
@@ -602,7 +626,9 @@ fn load_analyze_coff(
     for reloc in &config.base.block_relocations {
         let end = reloc.end.as_ref().map(|end| end.resolve(&obj)).transpose()?;
         match (&reloc.source, &reloc.target) {
-            (Some(_), Some(_)) => bail!("Cannot specify both source and target for blocked relocation"),
+            (Some(_), Some(_)) => {
+                bail!("Cannot specify both source and target for blocked relocation")
+            }
             (Some(source), None) => {
                 let start = source.resolve(&obj)?;
                 obj.blocked_relocation_sources.insert(start, end.unwrap_or(start + 1));
@@ -682,8 +708,12 @@ fn split_write_coff(
     }
 
     // Post-analysis signature scan: check all functions against the sig dir.
-    let sig_dir_buf: Option<Utf8NativePathBuf> = config.x86_signatures.as_ref().map(|p| p.with_encoding());
-    apply_signatures_post_x86(&mut module.obj, sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())))?;
+    let sig_dir_buf: Option<Utf8NativePathBuf> =
+        config.x86_signatures.as_ref().map(|p| p.with_encoding());
+    apply_signatures_post_x86(
+        &mut module.obj,
+        sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())),
+    )?;
 
     // Deduplicate public symbol names before creating function splits.
     // Two identical functions (e.g. CRT statics) or COMDAT-folded RTTI data
@@ -701,9 +731,8 @@ fn split_write_coff(
         let mut name_to_addr: HashMap<String, u64> = HashMap::new();
         let mut renames: Vec<(u32, String)> = Vec::new();
         for (idx, sym) in module.obj.symbols.iter() {
-            match sym.kind {
-                ObjSymbolKind::Section => continue,
-                _ => {}
+            if sym.kind == ObjSymbolKind::Section {
+                continue;
             }
             if sym.name.is_empty() {
                 continue;
@@ -719,13 +748,15 @@ fn split_write_coff(
                 }
                 std::collections::hash_map::Entry::Occupied(e) => {
                     if *e.get() != sym.address {
-                        let prefix =
-                            if sym.kind == ObjSymbolKind::Object { "data" } else { "fn" };
+                        let prefix = if sym.kind == ObjSymbolKind::Object { "data" } else { "fn" };
                         let generated = format!("{prefix}_{:#010x}", sym.address);
                         log::warn!(
                             "Duplicate {} name '{}' at {:#010X} (already at {:#010X}); \
                              renaming to '{generated}'",
-                            prefix, sym.name, sym.address, e.get()
+                            prefix,
+                            sym.name,
+                            sym.address,
+                            e.get()
                         );
                         renames.push((idx, generated));
                     }
@@ -755,14 +786,18 @@ fn split_write_coff(
             write_symbols_file(&symbols_path.with_encoding(), &module.obj, module.symbols_cache)?;
         }
         if let Some(splits_path) = &module.config.splits {
-            write_splits_file(&splits_path.with_encoding(), &module.obj, false, module.splits_cache)?;
+            write_splits_file(
+                &splits_path.with_encoding(),
+                &module.obj,
+                false,
+                module.splits_cache,
+            )?;
         }
     }
 
     debug!("Splitting {} objects", module.obj.link_order.len());
     let module_name = module.config.name().to_string();
-    let split_objs =
-        split_obj(&module.obj, Some(module_name.as_str()), config.globalize_symbols)?;
+    let split_objs = split_obj(&module.obj, Some(module_name.as_str()), config.globalize_symbols)?;
 
     debug!("Writing object files");
     DirBuilder::new()
@@ -792,10 +827,8 @@ fn split_write_coff(
     };
 
     // Serialize all split objects in parallel (CPU-bound), then write serially.
-    let serialized: Vec<Result<Vec<u8>>> = split_objs
-        .par_iter()
-        .map(|split_obj| write_coff(split_obj, config.export_all))
-        .collect();
+    let serialized: Vec<Result<Vec<u8>>> =
+        split_objs.par_iter().map(|split_obj| write_coff(split_obj, config.export_all)).collect();
 
     let mut object_paths = BTreeMap::new();
     for ((unit, split_obj), out_obj) in

@@ -53,7 +53,9 @@ impl PeHeaderInfo {
             let raw = s.name.as_ref();
             let Ok(name_str) = std::str::from_utf8(raw) else { continue };
             let name = name_str.trim_end_matches('\0').to_string();
-            if name.is_empty() { continue; }
+            if name.is_empty() {
+                continue;
+            }
             section_characteristics.insert(name.clone(), s.characteristics.get(LE));
             section_vsizes.insert(name, s.virtual_size.get(LE));
         }
@@ -175,11 +177,7 @@ pub fn generate_args_rsp(
         lines.push(format!("/ENTRY:{entry_sym}"));
     }
 
-    lines.push(format!(
-        "/SUBSYSTEM:{},{}",
-        pe.subsystem_name(),
-        pe.major_subsystem_version,
-    ));
+    lines.push(format!("/SUBSYSTEM:{},{}", pe.subsystem_name(), pe.major_subsystem_version,));
     lines.push(format!("/STACK:{:#x},{:#x}", pe.stack_reserve, pe.stack_commit));
     lines.push(format!("/HEAP:{:#x},{:#x}", pe.heap_reserve, pe.heap_commit));
     lines.push(format!("/VERSION:{}.{}", pe.major_image_version, pe.minor_image_version));
@@ -216,10 +214,7 @@ pub fn generate_args_rsp(
 /// Generate the objects-only response file (`objs.rsp`).
 /// Contains one object file path per line, in link order.
 /// Usage: `lld-link @args.rsp @objs.rsp /OUT:foo.exe`
-pub fn generate_objs_rsp(
-    obj: &ObjInfo,
-    obj_dir: &Utf8UnixPathBuf,
-) -> Result<String> {
+pub fn generate_objs_rsp(obj: &ObjInfo, obj_dir: &Utf8UnixPathBuf) -> Result<String> {
     // Sort units by their lowest address so link order matches the original.
     let mut unit_min_addr: HashMap<&str, u64> = HashMap::new();
     for (_, section) in obj.sections.iter() {

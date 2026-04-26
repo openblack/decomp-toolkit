@@ -249,7 +249,9 @@ impl VfsFile for WadContent {
         }
     }
 
-    fn into_disc_stream(self: Box<Self>) -> Box<dyn DiscStream> { self }
+    fn into_disc_stream(self: Box<Self>) -> Box<dyn DiscStream> {
+        self
+    }
 }
 
 #[derive(Clone)]
@@ -288,10 +290,14 @@ impl AesCbcStream {
     }
 
     #[inline]
-    fn len(&self) -> u64 { self.content_size }
+    fn len(&self) -> u64 {
+        self.content_size
+    }
 
     #[inline]
-    fn remaining(&self) -> u64 { self.content_size.saturating_sub(self.position) }
+    fn remaining(&self) -> u64 {
+        self.content_size.saturating_sub(self.position)
+    }
 }
 
 impl Read for AesCbcStream {
@@ -351,7 +357,9 @@ impl BufRead for AesCbcStream {
         Ok(&self.block[offset..offset + len])
     }
 
-    fn consume(&mut self, amt: usize) { self.position = self.position.saturating_add(amt as u64); }
+    fn consume(&mut self, amt: usize) {
+        self.position = self.position.saturating_add(amt as u64);
+    }
 }
 
 impl Seek for AesCbcStream {

@@ -66,9 +66,13 @@ pub struct VfsMetadata {
 }
 
 impl VfsMetadata {
-    pub fn is_file(&self) -> bool { self.file_type == VfsFileType::File }
+    pub fn is_file(&self) -> bool {
+        self.file_type == VfsFileType::File
+    }
 
-    pub fn is_dir(&self) -> bool { self.file_type == VfsFileType::Directory }
+    pub fn is_dir(&self) -> bool {
+        self.file_type == VfsFileType::Directory
+    }
 }
 
 dyn_clone::clone_trait_object!(VfsFile);
@@ -97,11 +101,15 @@ impl From<io::Error> for VfsError {
 }
 
 impl From<String> for VfsError {
-    fn from(e: String) -> Self { VfsError::Other(e) }
+    fn from(e: String) -> Self {
+        VfsError::Other(e)
+    }
 }
 
 impl From<&str> for VfsError {
-    fn from(e: &str) -> Self { VfsError::Other(e.to_string()) }
+    fn from(e: &str) -> Self {
+        VfsError::Other(e.to_string())
+    }
 }
 
 impl Display for VfsError {
@@ -172,7 +180,9 @@ impl Display for ArchiveKind {
 }
 
 pub fn detect<R>(file: &mut R) -> io::Result<FileFormat>
-where R: Read + Seek + ?Sized {
+where
+    R: Read + Seek + ?Sized,
+{
     file.seek(SeekFrom::Start(0))?;
     let mut magic = [0u8; 8];
     match file.read_exact(&mut magic) {

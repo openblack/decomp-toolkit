@@ -129,11 +129,12 @@ fn check_prologue_sequence(
         // stw r0, d(r1)
         ins.op == Opcode::Stw && ins.field_rs() == 0 && ins.field_ra() == 1
     }
-    check_sequence(section, addr, ins, &[
-        (&is_stwu, &is_mflr),
-        (&is_mflr, &is_stw),
-        (&is_mflr, &is_stwu),
-    ])
+    check_sequence(
+        section,
+        addr,
+        ins,
+        &[(&is_stwu, &is_mflr), (&is_mflr, &is_stw), (&is_mflr, &is_stwu)],
+    )
 }
 
 impl FunctionSlices {
@@ -240,11 +241,12 @@ impl FunctionSlices {
             ins.op == Opcode::Or && ins.field_rd() == 1
         }
 
-        if check_sequence(section, addr, Some(ins), &[
-            (&is_mtlr, &is_addi),
-            (&is_mtlr, &is_or),
-            (&is_or, &is_mtlr),
-        ])? {
+        if check_sequence(
+            section,
+            addr,
+            Some(ins),
+            &[(&is_mtlr, &is_addi), (&is_mtlr, &is_or), (&is_or, &is_mtlr)],
+        )? {
             if let Some(epilogue) = self.epilogue {
                 if epilogue != addr {
                     bail!("Found duplicate epilogue: {:#010X} and {:#010X}", epilogue, addr)
@@ -575,7 +577,9 @@ impl FunctionSlices {
         Ok(true)
     }
 
-    pub fn can_finalize(&self) -> bool { self.possible_blocks.is_empty() }
+    pub fn can_finalize(&self) -> bool {
+        self.possible_blocks.is_empty()
+    }
 
     pub fn finalize(
         &mut self,

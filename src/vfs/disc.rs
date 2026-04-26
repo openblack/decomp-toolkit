@@ -328,7 +328,9 @@ impl VfsFile for DiscFile {
         }
     }
 
-    fn into_disc_stream(self: Box<Self>) -> Box<dyn DiscStream> { self }
+    fn into_disc_stream(self: Box<Self>) -> Box<dyn DiscStream> {
+        self
+    }
 }
 
 pub fn nod_to_io_error(e: nod::Error) -> io::Error {

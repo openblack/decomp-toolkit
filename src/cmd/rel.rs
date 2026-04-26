@@ -483,7 +483,9 @@ fn info(args: InfoArgs) -> Result<()> {
 }
 
 #[inline]
-const fn align32(x: u32) -> u32 { (x + 31) & !31 }
+const fn align32(x: u32) -> u32 {
+    (x + 31) & !31
+}
 
 fn merge(args: MergeArgs) -> Result<()> {
     log::info!("Loading {}", args.dol_file);
@@ -586,12 +588,10 @@ fn merge(args: MergeArgs) -> Result<()> {
                 })?;
                 (symbol_idx, 0)
             };
-            obj.sections[source_section_index].relocations.insert(source_addr, ObjReloc {
-                kind: rel_reloc.kind,
-                target_symbol: symbol_idx,
-                addend,
-                module: None,
-            })?;
+            obj.sections[source_section_index].relocations.insert(
+                source_addr,
+                ObjReloc { kind: rel_reloc.kind, target_symbol: symbol_idx, addend, module: None },
+            )?;
         }
     }
 

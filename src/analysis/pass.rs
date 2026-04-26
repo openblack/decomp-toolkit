@@ -83,11 +83,10 @@ impl AnalysisPass for FindSaveRestSleds {
                 let start = SectionAddress::new(section_index, section.address as u32 + pos as u32);
                 log::debug!("Found {} @ {:#010X}", func, start);
                 let sled_size = (reg_end - reg_start) * step_size + 4 /* blr */;
-                state.functions.insert(start, FunctionInfo {
-                    analyzed: false,
-                    end: Some(start + sled_size),
-                    slices: None,
-                });
+                state.functions.insert(
+                    start,
+                    FunctionInfo { analyzed: false, end: Some(start + sled_size), slices: None },
+                );
                 state.known_symbols.entry(start).or_default().push(ObjSymbol {
                     name: func.to_string(),
                     address: start.address as u64,

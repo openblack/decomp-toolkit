@@ -32,7 +32,9 @@ pub fn buf_writer(path: &Utf8NativePath) -> Result<BufWriter<File>> {
 
 /// Reads a string with known size at the specified offset.
 pub fn read_string<R>(reader: &mut R, off: u64, size: usize) -> io::Result<String>
-where R: Read + Seek + ?Sized {
+where
+    R: Read + Seek + ?Sized,
+{
     let mut data = vec![0u8; size];
     let pos = reader.stream_position()?;
     reader.seek(SeekFrom::Start(off))?;
@@ -43,7 +45,9 @@ where R: Read + Seek + ?Sized {
 
 /// Reads a zero-terminated string at the specified offset.
 pub fn read_c_string<R>(reader: &mut R, off: u64) -> io::Result<String>
-where R: Read + Seek + ?Sized {
+where
+    R: Read + Seek + ?Sized,
+{
     let pos = reader.stream_position()?;
     reader.seek(SeekFrom::Start(off))?;
     let mut s = String::new();
@@ -130,7 +134,9 @@ impl FileIterator {
 impl Iterator for FileIterator {
     type Item = Result<(Utf8NativePathBuf, Box<dyn VfsFile>)>;
 
-    fn next(&mut self) -> Option<Self::Item> { self.next_path() }
+    fn next(&mut self) -> Option<Self::Item> {
+        self.next_path()
+    }
 }
 
 pub fn touch(path: &Utf8NativePath) -> io::Result<()> {

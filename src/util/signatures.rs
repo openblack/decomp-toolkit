@@ -19,7 +19,10 @@ use crate::{
         ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjSection, ObjSymbol, ObjSymbolFlagSet,
         ObjSymbolKind, SectionIndex, SymbolIndex,
     },
-    util::{coff::{apply_base_relocations, process_coff}, elf::process_elf},
+    util::{
+        coff::{apply_base_relocations, process_coff},
+        elf::process_elf,
+    },
 };
 
 use anyhow::Context as _;
@@ -230,7 +233,12 @@ pub fn compare_signature(existing: &mut FunctionSignature, new: &FunctionSignatu
 
             if same_name && same_core && a.section != b.section {
                 // Section mismatch only — clear section.
-                log::debug!("Clearing section for {:?} ({:?} != {:?})", a.name, a.section, b.section);
+                log::debug!(
+                    "Clearing section for {:?} ({:?} != {:?})",
+                    a.name,
+                    a.section,
+                    b.section
+                );
                 a.section = None;
             } else if a.name != b.name && !a.name.is_empty() && same_core && a.flags == b.flags {
                 // Name-only mismatch with same structure — compiler-generated label ($L*, @, _$E*).
@@ -377,88 +385,92 @@ fn build_x86_signature(obj: &ObjInfo, sym_idx_in: SymbolIndex) -> Result<Functio
     }
 
     let section_idx = match symbol.section {
-            Some(idx) => idx,
-            None => bail!("Symbol '{symbol_name}' has no section"),
+        Some(idx) => idx,
+        None => bail!("Symbol '{symbol_name}' has no section"),
+    };
+    let section = &obj.sections[section_idx];
+
+    let sym_start = (symbol.address - section.address) as usize;
+    let sym_end = sym_start + symbol.size as usize;
+    let fn_bytes = section
+        .data
+        .get(sym_start..sym_end)
+        .ok_or_else(|| anyhow!("Symbol '{symbol_name}' out of section bounds"))?;
+
+    let mut out_symbols: Vec<OutSymbol> = Vec::new();
+    let mut out_relocs: Vec<OutReloc> = Vec::new();
+    let mut symbol_map: BTreeMap<SymbolIndex, u32> = BTreeMap::new();
+
+    let sym_idx = out_symbols.len() as u32;
+    out_symbols.push(OutSymbol {
+        kind: symbol.kind,
+        name: symbol.name.clone(),
+        size: symbol.size as u32,
+        flags: symbol.flags,
+        section: Some(section.name.clone()),
+    });
+
+    // Build a mask array: 0xFF for fixed bytes, 0x00 for reloc-covered bytes.
+    let mut masks = vec![0xFFu8; fn_bytes.len()];
+    for (reloc_addr, reloc) in section.relocations.iter() {
+        let offset = reloc_addr as i64 - symbol.address as i64;
+        if offset < 0 || offset as usize >= fn_bytes.len() {
+            continue;
+        }
+        let offset = offset as usize;
+        let reloc_len = match reloc.kind {
+            ObjRelocKind::X86Rel32 | ObjRelocKind::X86Abs32 | ObjRelocKind::Absolute => 4,
+            _ => 4,
         };
-        let section = &obj.sections[section_idx];
+        for b in &mut masks[offset..offset + reloc_len.min(fn_bytes.len() - offset)] {
+            *b = 0x00;
+        }
 
-        let sym_start = (symbol.address - section.address) as usize;
-        let sym_end = sym_start + symbol.size as usize;
-        let fn_bytes = section
-            .data
-            .get(sym_start..sym_end)
-            .ok_or_else(|| anyhow!("Symbol '{symbol_name}' out of section bounds"))?;
-
-        let mut out_symbols: Vec<OutSymbol> = Vec::new();
-        let mut out_relocs: Vec<OutReloc> = Vec::new();
-        let mut symbol_map: BTreeMap<SymbolIndex, u32> = BTreeMap::new();
-
-        let sym_idx = out_symbols.len() as u32;
-        out_symbols.push(OutSymbol {
-            kind: symbol.kind,
-            name: symbol.name.clone(),
-            size: symbol.size as u32,
-            flags: symbol.flags,
-            section: Some(section.name.clone()),
+        let target = &obj.symbols[reloc.target_symbol];
+        let symbol_idx = match symbol_map.entry(reloc.target_symbol) {
+            btree_map::Entry::Vacant(e) => {
+                let idx = out_symbols.len() as u32;
+                e.insert(idx);
+                out_symbols.push(OutSymbol {
+                    kind: target.kind,
+                    name: target.name.clone(),
+                    size: if target.kind == ObjSymbolKind::Function {
+                        0
+                    } else {
+                        target.size as u32
+                    },
+                    flags: target.flags,
+                    section: target
+                        .section
+                        .and_then(|i| obj.sections.get(i))
+                        .map(|s| s.name.clone()),
+                });
+                idx
+            }
+            btree_map::Entry::Occupied(e) => *e.get(),
+        };
+        out_relocs.push(OutReloc {
+            offset: offset as u32,
+            kind: reloc.kind,
+            symbol: symbol_idx,
+            addend: reloc.addend as i32,
         });
+    }
 
-        // Build a mask array: 0xFF for fixed bytes, 0x00 for reloc-covered bytes.
-        let mut masks = vec![0xFFu8; fn_bytes.len()];
-        for (reloc_addr, reloc) in section.relocations.iter() {
-            let offset = reloc_addr as i64 - symbol.address as i64;
-            if offset < 0 || offset as usize >= fn_bytes.len() {
-                continue;
-            }
-            let offset = offset as usize;
-            let reloc_len = match reloc.kind {
-                ObjRelocKind::X86Rel32 | ObjRelocKind::X86Abs32 | ObjRelocKind::Absolute => 4,
-                _ => 4,
-            };
-            for b in &mut masks[offset..offset + reloc_len.min(fn_bytes.len() - offset)] {
-                *b = 0x00;
-            }
+    // Encode as (value & mask, mask) byte pairs.
+    let mut encoded_bytes = Vec::with_capacity(fn_bytes.len() * 2);
+    for (&byte, &mask) in fn_bytes.iter().zip(&masks) {
+        encoded_bytes.push(byte & mask);
+        encoded_bytes.push(mask);
+    }
 
-            let target = &obj.symbols[reloc.target_symbol];
-            let symbol_idx = match symbol_map.entry(reloc.target_symbol) {
-                btree_map::Entry::Vacant(e) => {
-                    let idx = out_symbols.len() as u32;
-                    e.insert(idx);
-                    out_symbols.push(OutSymbol {
-                        kind: target.kind,
-                        name: target.name.clone(),
-                        size: if target.kind == ObjSymbolKind::Function { 0 } else { target.size as u32 },
-                        flags: target.flags,
-                        section: target
-                            .section
-                            .and_then(|i| obj.sections.get(i))
-                            .map(|s| s.name.clone()),
-                    });
-                    idx
-                }
-                btree_map::Entry::Occupied(e) => *e.get(),
-            };
-            out_relocs.push(OutReloc {
-                offset: offset as u32,
-                kind: reloc.kind,
-                symbol: symbol_idx,
-                addend: reloc.addend as i32,
-            });
-        }
-
-        // Encode as (value & mask, mask) byte pairs.
-        let mut encoded_bytes = Vec::with_capacity(fn_bytes.len() * 2);
-        for (&byte, &mask) in fn_bytes.iter().zip(&masks) {
-            encoded_bytes.push(byte & mask);
-            encoded_bytes.push(mask);
-        }
-
-        let encoded = STANDARD.encode(&encoded_bytes);
-        let mut hasher = Sha1::new();
-        hasher.update(&encoded_bytes);
-        let hash = hasher.finalize();
-        let mut hash_buf = [0u8; 40];
-        let hash_str = base16ct::lower::encode_str(&hash, &mut hash_buf)
-            .map_err(|e| anyhow!("Failed to encode hash: {e}"))?;
+    let encoded = STANDARD.encode(&encoded_bytes);
+    let mut hasher = Sha1::new();
+    hasher.update(&encoded_bytes);
+    let hash = hasher.finalize();
+    let mut hash_buf = [0u8; 40];
+    let hash_str = base16ct::lower::encode_str(&hash, &mut hash_buf)
+        .map_err(|e| anyhow!("Failed to encode hash: {e}"))?;
 
     Ok(FunctionSignature {
         symbol: sym_idx,
@@ -503,8 +515,7 @@ pub fn generate_signature_x86(
     path: &Utf8NativePath,
     symbol_name: &str,
 ) -> Result<Option<FunctionSignature>> {
-    let data = std::fs::read(path)
-        .with_context(|| format!("Failed to read '{path}'"))?;
+    let data = std::fs::read(path).with_context(|| format!("Failed to read '{path}'"))?;
     let (mut obj, image_base) = process_coff(&data, symbol_name)
         .with_context(|| format!("Failed to parse COFF '{path}'"))?;
 
@@ -523,10 +534,8 @@ pub fn generate_signature_x86(
         Some((idx, _)) => build_x86_signature(&obj, idx).map(Some),
         None => {
             // Check if it exists at all (but lacks size info).
-            let exists = obj
-                .symbols
-                .by_kind(ObjSymbolKind::Function)
-                .any(|(_, s)| s.name == symbol_name);
+            let exists =
+                obj.symbols.by_kind(ObjSymbolKind::Function).any(|(_, s)| s.name == symbol_name);
             if exists {
                 bail!(
                     "Symbol '{symbol_name}' has unknown size — run analysis first or set size manually"

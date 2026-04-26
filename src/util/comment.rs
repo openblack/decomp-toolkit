@@ -42,7 +42,9 @@ impl FromReader for MWComment {
     const STATIC_SIZE: usize = HEADER_SIZE as usize;
 
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         let mut header = MWComment {
             version: 0,
             compiler_version: [0; 4],
@@ -122,7 +124,9 @@ impl FromReader for MWComment {
 
 impl ToWriter for MWComment {
     fn to_writer<W>(&self, writer: &mut W, e: Endian) -> io::Result<()>
-    where W: Write + ?Sized {
+    where
+        W: Write + ?Sized,
+    {
         // 0x0 - 0xA
         MAGIC.to_writer(writer, e)?;
         // 0xB
@@ -154,7 +158,9 @@ impl ToWriter for MWComment {
         Ok(())
     }
 
-    fn write_size(&self) -> usize { Self::STATIC_SIZE }
+    fn write_size(&self) -> usize {
+        Self::STATIC_SIZE
+    }
 }
 
 impl MWComment {
@@ -206,7 +212,9 @@ impl FromReader for CommentSym {
     ]);
 
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         let mut out = CommentSym { align: 0, vis_flags: 0, active_flags: 0 };
         out.align = u32::from_reader(reader, e)?;
         out.vis_flags = u8::from_reader(reader, e)?;
@@ -237,7 +245,9 @@ impl FromReader for CommentSym {
 
 impl ToWriter for CommentSym {
     fn to_writer<W>(&self, writer: &mut W, e: Endian) -> io::Result<()>
-    where W: Write + ?Sized {
+    where
+        W: Write + ?Sized,
+    {
         self.align.to_writer(writer, e)?;
         self.vis_flags.to_writer(writer, e)?;
         self.active_flags.to_writer(writer, e)?;
@@ -245,7 +255,9 @@ impl ToWriter for CommentSym {
         Ok(())
     }
 
-    fn write_size(&self) -> usize { Self::STATIC_SIZE }
+    fn write_size(&self) -> usize {
+        Self::STATIC_SIZE
+    }
 }
 
 impl CommentSym {

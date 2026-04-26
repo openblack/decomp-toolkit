@@ -72,37 +72,59 @@ impl ObjSymbolFlagSet {
     }
 
     #[inline]
-    pub fn is_local(&self) -> bool { self.0.contains(ObjSymbolFlags::Local) }
+    pub fn is_local(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::Local)
+    }
 
     #[inline]
-    pub fn is_global(&self) -> bool { !self.is_local() }
+    pub fn is_global(&self) -> bool {
+        !self.is_local()
+    }
 
     #[inline]
-    pub fn is_common(&self) -> bool { self.0.contains(ObjSymbolFlags::Common) }
+    pub fn is_common(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::Common)
+    }
 
     #[inline]
-    pub fn is_weak(&self) -> bool { self.0.contains(ObjSymbolFlags::Weak) }
+    pub fn is_weak(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::Weak)
+    }
 
     #[inline]
-    pub fn is_hidden(&self) -> bool { self.0.contains(ObjSymbolFlags::Hidden) }
+    pub fn is_hidden(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::Hidden)
+    }
 
     #[inline]
-    pub fn is_exported(&self) -> bool { self.0.contains(ObjSymbolFlags::Exported) }
+    pub fn is_exported(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::Exported)
+    }
 
     #[inline]
-    pub fn is_relocation_ignore(&self) -> bool { self.0.contains(ObjSymbolFlags::RelocationIgnore) }
+    pub fn is_relocation_ignore(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::RelocationIgnore)
+    }
 
     #[inline]
-    pub fn is_no_write(&self) -> bool { self.0.contains(ObjSymbolFlags::NoWrite) }
+    pub fn is_no_write(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::NoWrite)
+    }
 
     #[inline]
-    pub fn is_stripped(&self) -> bool { self.0.contains(ObjSymbolFlags::Stripped) }
+    pub fn is_stripped(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::Stripped)
+    }
 
     #[inline]
-    pub fn is_no_export(&self) -> bool { self.0.contains(ObjSymbolFlags::NoExport) }
+    pub fn is_no_export(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::NoExport)
+    }
 
     #[inline]
-    pub fn is_no_reloc(&self) -> bool { self.0.contains(ObjSymbolFlags::NoReloc) }
+    pub fn is_no_reloc(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::NoReloc)
+    }
 
     #[inline]
     pub fn set_scope(&mut self, scope: ObjSymbolScope) {
@@ -150,7 +172,9 @@ impl ObjSymbolFlagSet {
 #[allow(clippy::derived_hash_with_manual_eq)]
 impl Hash for ObjSymbolFlagSet {
     fn hash<H>(&self, state: &mut H)
-    where H: Hasher {
+    where
+        H: Hasher,
+    {
         self.0.bits().hash(state)
     }
 }
@@ -281,11 +305,10 @@ impl ObjSymbols {
             if !replace {
                 // Not replacing existing symbol, but update size
                 if in_symbol.size_known && !existing.size_known {
-                    self.replace(symbol_idx, ObjSymbol {
-                        size: in_symbol.size,
-                        size_known: true,
-                        ..existing.clone()
-                    })?;
+                    self.replace(
+                        symbol_idx,
+                        ObjSymbol { size: in_symbol.size, size_known: true, ..existing.clone() },
+                    )?;
                 }
                 return Ok(symbol_idx);
             }
@@ -360,7 +383,9 @@ impl ObjSymbols {
         self.symbols.iter().enumerate().map(|(i, s)| (i as SymbolIndex, s))
     }
 
-    pub fn count(&self) -> SymbolIndex { self.symbols.len() as SymbolIndex }
+    pub fn count(&self) -> SymbolIndex {
+        self.symbols.len() as SymbolIndex
+    }
 
     pub fn at_section_address(
         &self,
@@ -580,7 +605,9 @@ impl ObjSymbols {
 impl Index<SymbolIndex> for ObjSymbols {
     type Output = ObjSymbol;
 
-    fn index(&self, index: SymbolIndex) -> &Self::Output { &self.symbols[index as usize] }
+    fn index(&self, index: SymbolIndex) -> &Self::Output {
+        &self.symbols[index as usize]
+    }
 }
 
 impl ObjSymbol {

@@ -63,7 +63,9 @@ impl ObjSplits {
         self.splits.iter_mut().flat_map(|(addr, v)| v.iter_mut().map(move |u| (*addr, u)))
     }
 
-    pub fn has_split_at(&self, address: u32) -> bool { self.splits.contains_key(&address) }
+    pub fn has_split_at(&self, address: u32) -> bool {
+        self.splits.contains_key(&address)
+    }
 
     /// Locate an existing split for the given address.
     pub fn for_address(&self, address: u32) -> Option<(u32, &ObjSplit)> {
@@ -82,7 +84,9 @@ impl ObjSplits {
 
     /// Locate existing splits within the given address range.
     pub fn for_range<R>(&self, range: R) -> impl DoubleEndedIterator<Item = (u32, &ObjSplit)>
-    where R: RangeBounds<u32> {
+    where
+        R: RangeBounds<u32>,
+    {
         self.splits.range(range).flat_map(|(addr, v)| v.iter().map(move |u| (*addr, u)))
     }
 
@@ -112,5 +116,7 @@ impl ObjSplits {
         out.sort_by_key(|s| s.end);
     }
 
-    pub fn remove(&mut self, address: u32) -> Option<Vec<ObjSplit>> { self.splits.remove(&address) }
+    pub fn remove(&mut self, address: u32) -> Option<Vec<ObjSplit>> {
+        self.splits.remove(&address)
+    }
 }

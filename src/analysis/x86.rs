@@ -110,9 +110,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
             obj.sections
                 .iter()
                 .filter(|(_, s)| s.kind == ObjSectionKind::Code)
-                .flat_map(|(sec_idx, s)| {
-                    s.relocations.iter().map(move |(addr, _)| (sec_idx, addr))
-                })
+                .flat_map(|(sec_idx, s)| s.relocations.iter().map(move |(addr, _)| (sec_idx, addr)))
                 .collect()
         } else {
             BTreeSet::new()
@@ -261,7 +259,12 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                                 }
                                 enqueue((tgt_sec, target), &mut pending);
                                 add_rel32(
-                                    obj, sec_idx, operand_va, tgt_sec, target, &mut rel_count,
+                                    obj,
+                                    sec_idx,
+                                    operand_va,
+                                    tgt_sec,
+                                    target,
+                                    &mut rel_count,
                                 )?;
                             }
                         }
@@ -452,10 +455,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
             let va = sym.address as u32;
             // Search only within this symbol's section to avoid cross-section false positives.
             if let Some((&(_s, start), &end)) = decoded_spans
-                .range((
-                    std::ops::Bound::Included((sec, 0)),
-                    std::ops::Bound::Included((sec, va)),
-                ))
+                .range((std::ops::Bound::Included((sec, 0)), std::ops::Bound::Included((sec, va))))
                 .next_back()
             {
                 if start < va && va < end {
@@ -543,10 +543,13 @@ pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) 
         let mut fn_end = raw_end.min(cap);
         while fn_end < cap {
             let off = (fn_end as u64 - sec_base) as usize;
-            let mut dec = Decoder::with_ip(32, &sec_data[off..], fn_end as u64, DecoderOptions::NONE);
+            let mut dec =
+                Decoder::with_ip(32, &sec_data[off..], fn_end as u64, DecoderOptions::NONE);
             let mut pad = Instruction::default();
             dec.decode_out(&mut pad);
-            if pad.is_invalid() { break; }
+            if pad.is_invalid() {
+                break;
+            }
             if pad.mnemonic() == Mnemonic::Nop || pad.code() == Code::Int3 {
                 fn_end += pad.len() as u32;
             } else {
@@ -558,26 +561,37 @@ pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) 
         // 2. Extend over embedded jump tables (capped).
         if let Some(tables) = fn_tables.get(&(fn_sec_idx, fn_va)) {
             for &table_va in tables {
-                if table_va < raw_end || table_va >= cap { continue; }
+                if table_va < raw_end || table_va >= cap {
+                    continue;
+                }
                 let mut t = table_va;
                 while t + 4 <= cap {
                     let off = (t as u64 - sec_base) as usize;
                     let entry = u32::from_le_bytes(sec_data[off..off + 4].try_into().unwrap());
-                    if find_code(entry).is_some() { t += 4; } else { break; }
+                    if find_code(entry).is_some() {
+                        t += 4;
+                    } else {
+                        break;
+                    }
                 }
-                if t > fn_end { fn_end = t; }
+                if t > fn_end {
+                    fn_end = t;
+                }
             }
         }
         fn_end = fn_end.min(cap);
 
         let fn_size = (fn_end - fn_va) as u64;
-        if fn_size == 0 { continue; }
+        if fn_size == 0 {
+            continue;
+        }
 
         if let Some((sym_idx, sym)) =
             obj.symbols.kind_at_section_address(fn_sec_idx, fn_va, ObjSymbolKind::Function)?
         {
             if !sym.size_known {
-                size_updates.push((sym_idx, ObjSymbol { size: fn_size, size_known: true, ..sym.clone() }));
+                size_updates
+                    .push((sym_idx, ObjSymbol { size: fn_size, size_known: true, ..sym.clone() }));
             }
         }
     }
@@ -599,10 +613,7 @@ fn is_within_decoded_span(
     decoded_spans: &BTreeMap<(SectionIndex, u32), u32>,
 ) -> bool {
     if let Some((&(_s, _start), &end)) = decoded_spans
-        .range((
-            std::ops::Bound::Included((sec_idx, 0)),
-            std::ops::Bound::Included((sec_idx, va)),
-        ))
+        .range((std::ops::Bound::Included((sec_idx, 0)), std::ops::Bound::Included((sec_idx, va))))
         .next_back()
     {
         va < end
@@ -614,7 +625,7 @@ fn is_within_decoded_span(
 /// Returns `true` if `va` decodes as a valid (non-invalid) instruction.
 fn decode_valid(va: u32, code_snap: &[(SectionIndex, u64, Vec<u8>)]) -> bool {
     let Some((_, base, data)) = code_snap.iter().find(|(_, base, data)| {
-        (va as u64).checked_sub(*base).map_or(false, |o| (o as usize) < data.len())
+        (va as u64).checked_sub(*base).is_some_and(|o| (o as usize) < data.len())
     }) else {
         return false;
     };
@@ -657,12 +668,10 @@ fn add_rel32(
         };
     obj.sections[src_sec]
         .relocations
-        .insert(operand_va, ObjReloc {
-            kind: ObjRelocKind::X86Rel32,
-            target_symbol,
-            addend,
-            module: None,
-        })
+        .insert(
+            operand_va,
+            ObjReloc { kind: ObjRelocKind::X86Rel32, target_symbol, addend, module: None },
+        )
         .ok();
     *count += 1;
     Ok(())

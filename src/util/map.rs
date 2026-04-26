@@ -69,7 +69,9 @@ struct SectionOrder {
 }
 
 #[inline]
-fn is_code_section(section: &str) -> bool { matches!(section, ".text" | ".init") }
+fn is_code_section(section: &str) -> bool {
+    matches!(section, ".text" | ".init")
+}
 
 macro_rules! static_regex {
     ($name:ident, $str:expr) => {
@@ -118,12 +120,21 @@ static_regex!(LINKER_SYMBOL_ENTRY, "^\\s*(?P<name>\\S+)\\s+(?P<addr>[0-9A-Fa-f]+
 
 // PE map file format (MSVC linker)
 static_regex!(PE_SECTION_HEADER, "^\\s*Start\\s+Length\\s+Name\\s+Class\\s*$");
-static_regex!(PE_SYMBOL_HEADER, "^\\s*Address\\s+Publics by Value\\s+Rva\\+Base\\s+Lib:Object\\s*$");
+static_regex!(
+    PE_SYMBOL_HEADER,
+    "^\\s*Address\\s+Publics by Value\\s+Rva\\+Base\\s+Lib:Object\\s*$"
+);
 static_regex!(PE_STATIC_SYMBOLS, "^\\s*Static symbols\\s*$");
 // " 0001:00000000 004a5470H .text                   CODE"
-static_regex!(PE_MAP_SECTION_DEF, "^\\s*(?P<seg>[0-9A-Fa-f]{4}):(?P<off>[0-9A-Fa-f]{8})\\s+(?P<size>[0-9A-Fa-f]+)H\\s+(?P<name>\\S+)\\s+(?P<class>\\w+)\\s*$");
+static_regex!(
+    PE_MAP_SECTION_DEF,
+    "^\\s*(?P<seg>[0-9A-Fa-f]{4}):(?P<off>[0-9A-Fa-f]{8})\\s+(?P<size>[0-9A-Fa-f]+)H\\s+(?P<name>\\S+)\\s+(?P<class>\\w+)\\s*$"
+);
 // " 0001:00000000       sym_name      0000000000401000     source.obj"
-static_regex!(PE_MAP_SYMBOL, "^\\s*(?P<seg>[0-9A-Fa-f]{4}):(?P<off>[0-9A-Fa-f]{8})\\s+(?P<name>\\S+)\\s+(?P<addr>[0-9A-Fa-f]{16})\\s+(?P<source>.+?)\\s*$");
+static_regex!(
+    PE_MAP_SYMBOL,
+    "^\\s*(?P<seg>[0-9A-Fa-f]{4}):(?P<off>[0-9A-Fa-f]{8})\\s+(?P<name>\\S+)\\s+(?P<addr>[0-9A-Fa-f]{16})\\s+(?P<source>.+?)\\s*$"
+);
 
 #[derive(Debug)]
 pub struct SectionInfo {
@@ -263,8 +274,7 @@ impl StateMachine {
                         }
                         let addr = u64::from_str_radix(&caps["addr"], 16)? as u32;
                         let name = caps["name"].to_string();
-                        let is_function =
-                            state.segment_is_code.get(&seg).copied().unwrap_or(false);
+                        let is_function = state.segment_is_code.get(&seg).copied().unwrap_or(false);
                         let demangled = demangle(&name, &DemangleOptions::default());
                         let is_static = state.is_static;
                         self.result.pe_symbols.push(PeMapSymbol {
@@ -460,17 +470,20 @@ impl StateMachine {
         }
         if should_insert {
             let demangled = demangle(&name, &DemangleOptions::default());
-            result.link_map_symbols.insert(symbol_ref.clone(), SymbolEntry {
-                name: name.clone(),
-                demangled,
-                kind,
-                visibility,
-                unit: Some(unit.clone()),
-                address: 0,
-                size: 0,
-                align: None,
-                unused: false,
-            });
+            result.link_map_symbols.insert(
+                symbol_ref.clone(),
+                SymbolEntry {
+                    name: name.clone(),
+                    demangled,
+                    kind,
+                    visibility,
+                    unit: Some(unit.clone()),
+                    address: 0,
+                    size: 0,
+                    align: None,
+                    unused: false,
+                },
+            );
             if !is_duplicate {
                 state.last_symbol = Some(symbol_ref.clone());
             }
@@ -487,17 +500,20 @@ impl StateMachine {
         let name = captures["sym"].to_string();
         let demangled = demangle(&name, &DemangleOptions::default());
         let symbol_ref = SymbolRef { name: name.clone(), unit: None };
-        result.link_map_symbols.insert(symbol_ref, SymbolEntry {
-            name,
-            demangled,
-            kind: SymbolKind::NoType,
-            visibility: SymbolVisibility::Global,
-            unit: None,
-            address: 0,
-            size: 0,
-            align: None,
-            unused: false,
-        });
+        result.link_map_symbols.insert(
+            symbol_ref,
+            SymbolEntry {
+                name,
+                demangled,
+                kind: SymbolKind::NoType,
+                visibility: SymbolVisibility::Global,
+                unit: None,
+                address: 0,
+                size: 0,
+                align: None,
+                unused: false,
+            },
+        );
         Ok(())
     }
 
@@ -752,17 +768,20 @@ impl StateMachine {
         if let Some(existing) = result.link_map_symbols.get_mut(&symbol_ref) {
             existing.address = address;
         } else {
-            result.link_map_symbols.insert(symbol_ref, SymbolEntry {
-                name: name.to_string(),
-                demangled: demangle(name, &DemangleOptions::default()),
-                kind: SymbolKind::NoType,
-                visibility: SymbolVisibility::Global,
-                unit: None,
-                address,
-                size: 0,
-                align: None,
-                unused: false,
-            });
+            result.link_map_symbols.insert(
+                symbol_ref,
+                SymbolEntry {
+                    name: name.to_string(),
+                    demangled: demangle(name, &DemangleOptions::default()),
+                    kind: SymbolKind::NoType,
+                    visibility: SymbolVisibility::Global,
+                    unit: None,
+                    address,
+                    size: 0,
+                    align: None,
+                    unused: false,
+                },
+            );
         };
         Ok(())
     }
@@ -881,7 +900,9 @@ fn apply_pe_map_symbols(pe_symbols: &[PeMapSymbol], obj: &mut ObjInfo) -> Result
         if import_names.contains(undecorated) {
             log::warn!(
                 "PE map: {:#010X} '{}' conflicts with import table entry '__imp__{}'; skipping (trusting import table)",
-                pe_sym.address, pe_sym.name, undecorated
+                pe_sym.address,
+                pe_sym.name,
+                undecorated
             );
             skipped += 1;
             continue;
@@ -898,7 +919,8 @@ fn apply_pe_map_symbols(pe_symbols: &[PeMapSymbol], obj: &mut ObjInfo) -> Result
         if !applied_names.insert(pe_sym.name.clone()) {
             log::warn!(
                 "PE map: {:#010X} '{}' is a duplicate symbol name; skipping",
-                pe_sym.address, pe_sym.name
+                pe_sym.address,
+                pe_sym.name
             );
             skipped += 1;
             continue;
@@ -919,7 +941,9 @@ fn apply_pe_map_symbols(pe_symbols: &[PeMapSymbol], obj: &mut ObjInfo) -> Result
         renamed += 1;
     }
     if renamed > 0 || skipped > 0 {
-        log::debug!("PE map: renamed {renamed} existing functions, skipped {skipped} (no matching section)");
+        log::debug!(
+            "PE map: renamed {renamed} existing functions, skipped {skipped} (no matching section)"
+        );
     }
     // Note: splits are intentionally NOT generated from PE map symbols.
     // Split boundaries come from splits.txt and x86 analysis; the PE map
@@ -1081,15 +1105,18 @@ pub fn apply_map(mut result: MapInfo, obj: &mut ObjInfo) -> Result<()> {
                 });
             }
 
-            section.splits.push(*addr, ObjSplit {
-                unit,
-                end: next,
-                align: None,
-                common,
-                autogenerated: false,
-                skip: false,
-                rename: None,
-            });
+            section.splits.push(
+                *addr,
+                ObjSplit {
+                    unit,
+                    end: next,
+                    align: None,
+                    common,
+                    autogenerated: false,
+                    skip: false,
+                    rename: None,
+                },
+            );
         }
     }
     Ok(())
@@ -1190,15 +1217,18 @@ pub fn create_obj(result: &MapInfo) -> Result<ObjInfo> {
                 });
             }
 
-            section.splits.push(*addr, ObjSplit {
-                unit,
-                end: next,
-                align: None,
-                common,
-                autogenerated: false,
-                skip: false,
-                rename: None,
-            });
+            section.splits.push(
+                *addr,
+                ObjSplit {
+                    unit,
+                    end: next,
+                    align: None,
+                    common,
+                    autogenerated: false,
+                    skip: false,
+                    rename: None,
+                },
+            );
         }
     }
     Ok(obj)

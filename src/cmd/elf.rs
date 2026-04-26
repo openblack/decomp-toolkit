@@ -325,12 +325,15 @@ fn fixup(args: FixupArgs) -> Result<()> {
                 }
             }
 
-            out_file.add_relocation(section_id, object::write::Relocation {
-                offset: addr,
-                symbol: target_symbol_id,
-                addend,
-                flags: reloc.flags(),
-            })?;
+            out_file.add_relocation(
+                section_id,
+                object::write::Relocation {
+                    offset: addr,
+                    symbol: target_symbol_id,
+                    addend,
+                    flags: reloc.flags(),
+                },
+            )?;
         }
     }
 

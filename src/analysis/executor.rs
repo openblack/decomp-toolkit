@@ -81,7 +81,9 @@ impl Executor {
     }
 
     pub fn run<Cb, R>(&mut self, obj: &ObjInfo, mut cb: Cb) -> Result<Option<R>>
-    where Cb: FnMut(ExecCbData) -> Result<ExecCbResult<R>> {
+    where
+        Cb: FnMut(ExecCbData) -> Result<ExecCbResult<R>>,
+    {
         while let Some(mut state) = self.vm_stack.pop() {
             let section = &obj.sections[state.address.section];
             ensure!(

@@ -27,7 +27,9 @@ pub enum ObjRelocKind {
 
 impl Serialize for ObjRelocKind {
     fn serialize<S>(&self, serializer: S) -> Result<S::Ok, S::Error>
-    where S: serde::Serializer {
+    where
+        S: serde::Serializer,
+    {
         serializer.serialize_str(match self {
             ObjRelocKind::Absolute => "abs",
             ObjRelocKind::PpcAddr16Hi => "hi",
@@ -44,7 +46,9 @@ impl Serialize for ObjRelocKind {
 
 impl<'de> Deserialize<'de> for ObjRelocKind {
     fn deserialize<D>(deserializer: D) -> Result<ObjRelocKind, D::Error>
-    where D: serde::Deserializer<'de> {
+    where
+        D: serde::Deserializer<'de>,
+    {
         match String::deserialize(deserializer)?.as_str() {
             "Absolute" | "abs" => Ok(ObjRelocKind::Absolute),
             "PpcAddr16Hi" | "hi" => Ok(ObjRelocKind::PpcAddr16Hi),
@@ -55,9 +59,10 @@ impl<'de> Deserialize<'de> for ObjRelocKind {
             "PpcEmbSda21" | "sda21" => Ok(ObjRelocKind::PpcEmbSda21),
             "x86_abs32" => Ok(ObjRelocKind::X86Abs32),
             "x86_rel32" => Ok(ObjRelocKind::X86Rel32),
-            s => Err(serde::de::Error::unknown_variant(s, &[
-                "abs", "hi", "ha", "l", "rel24", "rel14", "sda21", "x86_abs32", "x86_rel32",
-            ])),
+            s => Err(serde::de::Error::unknown_variant(
+                s,
+                &["abs", "hi", "ha", "l", "rel24", "rel14", "sda21", "x86_abs32", "x86_rel32"],
+            )),
         }
     }
 }
@@ -148,7 +153,9 @@ impl ObjRelocations {
         Ok(Self { relocations: map })
     }
 
-    pub fn len(&self) -> usize { self.relocations.len() }
+    pub fn len(&self) -> usize {
+        self.relocations.len()
+    }
 
     pub fn insert(&mut self, address: u32, reloc: ObjReloc) -> Result<(), ExistingRelocationError> {
         match self.relocations.entry(address) {
@@ -164,15 +171,21 @@ impl ObjRelocations {
         self.relocations.insert(address, reloc);
     }
 
-    pub fn at(&self, address: u32) -> Option<&ObjReloc> { self.relocations.get(&address) }
+    pub fn at(&self, address: u32) -> Option<&ObjReloc> {
+        self.relocations.get(&address)
+    }
 
     pub fn at_mut(&mut self, address: u32) -> Option<&mut ObjReloc> {
         self.relocations.get_mut(&address)
     }
 
-    pub fn clone_map(&self) -> BTreeMap<u32, ObjReloc> { self.relocations.clone() }
+    pub fn clone_map(&self) -> BTreeMap<u32, ObjReloc> {
+        self.relocations.clone()
+    }
 
-    pub fn is_empty(&self) -> bool { self.relocations.is_empty() }
+    pub fn is_empty(&self) -> bool {
+        self.relocations.is_empty()
+    }
 
     pub fn iter(&self) -> impl DoubleEndedIterator<Item = (u32, &ObjReloc)> {
         self.relocations.iter().map(|(&addr, reloc)| (addr, reloc))
@@ -183,9 +196,13 @@ impl ObjRelocations {
     }
 
     pub fn range<R>(&self, range: R) -> impl DoubleEndedIterator<Item = (u32, &ObjReloc)>
-    where R: RangeBounds<u32> {
+    where
+        R: RangeBounds<u32>,
+    {
         self.relocations.range(range).map(|(&addr, reloc)| (addr, reloc))
     }
 
-    pub fn contains(&self, address: u32) -> bool { self.relocations.contains_key(&address) }
+    pub fn contains(&self, address: u32) -> bool {
+        self.relocations.contains_key(&address)
+    }
 }

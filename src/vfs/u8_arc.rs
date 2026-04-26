@@ -11,7 +11,9 @@ pub struct U8Fs {
 }
 
 impl U8Fs {
-    pub fn new(file: Box<dyn VfsFile>) -> io::Result<Self> { Ok(Self { file }) }
+    pub fn new(file: Box<dyn VfsFile>) -> io::Result<Self> {
+        Ok(Self { file })
+    }
 
     fn view(&mut self) -> io::Result<U8View<'_>> {
         let data = self.file.map()?;

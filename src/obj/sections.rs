@@ -46,7 +46,9 @@ pub struct ObjSections {
 pub type SectionIndex = u32;
 
 impl ObjSections {
-    pub fn new(obj_kind: ObjKind, sections: Vec<ObjSection>) -> Self { Self { obj_kind, sections } }
+    pub fn new(obj_kind: ObjKind, sections: Vec<ObjSection>) -> Self {
+        Self { obj_kind, sections }
+    }
 
     pub fn iter(&self) -> impl DoubleEndedIterator<Item = (SectionIndex, &ObjSection)> {
         self.sections.iter().enumerate().map(|(i, s)| (i as SectionIndex, s))
@@ -56,11 +58,17 @@ impl ObjSections {
         self.sections.iter_mut().enumerate().map(|(i, s)| (i as SectionIndex, s))
     }
 
-    pub fn len(&self) -> SectionIndex { self.sections.len() as SectionIndex }
+    pub fn len(&self) -> SectionIndex {
+        self.sections.len() as SectionIndex
+    }
 
-    pub fn is_empty(&self) -> bool { self.sections.is_empty() }
+    pub fn is_empty(&self) -> bool {
+        self.sections.is_empty()
+    }
 
-    pub fn next_section_index(&self) -> SectionIndex { self.sections.len() as SectionIndex }
+    pub fn next_section_index(&self) -> SectionIndex {
+        self.sections.len() as SectionIndex
+    }
 
     pub fn get(&self, index: SectionIndex) -> Option<&ObjSection> {
         self.sections.get(index as usize)
@@ -153,7 +161,9 @@ impl ObjSections {
 impl Index<SectionIndex> for ObjSections {
     type Output = ObjSection;
 
-    fn index(&self, index: SectionIndex) -> &Self::Output { &self.sections[index as usize] }
+    fn index(&self, index: SectionIndex) -> &Self::Output {
+        &self.sections[index as usize]
+    }
 }
 
 impl IndexMut<SectionIndex> for ObjSections {
@@ -210,7 +220,9 @@ impl ObjSection {
 
     #[inline]
     pub fn contains_range<R>(&self, range: R) -> bool
-    where R: RangeBounds<u32> {
+    where
+        R: RangeBounds<u32>,
+    {
         let start = self.address as u32;
         let end = self.address as u32 + self.size as u32;
         let start_in_range = match range.start_bound() {

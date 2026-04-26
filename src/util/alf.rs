@@ -32,7 +32,9 @@ impl FromReader for AlfFile {
 
     #[inline]
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         let header = AlfHeader::from_reader(reader, e)?;
         if !matches!(header.version, 104 | 105) {
             return Err(Error::new(
@@ -73,13 +75,21 @@ impl FromReader for AlfFile {
 }
 
 impl DolLike for AlfFile {
-    fn sections(&self) -> &[DolSection] { &self.sections }
+    fn sections(&self) -> &[DolSection] {
+        &self.sections
+    }
 
-    fn symbols(&self) -> &[AlfSymbol] { &self.symbols }
+    fn symbols(&self) -> &[AlfSymbol] {
+        &self.symbols
+    }
 
-    fn entry_point(&self) -> u32 { self.header.entry }
+    fn entry_point(&self) -> u32 {
+        self.header.entry
+    }
 
-    fn has_unified_bss(&self) -> bool { false }
+    fn has_unified_bss(&self) -> bool {
+        false
+    }
 }
 
 #[derive(Debug, Clone)]
@@ -101,7 +111,9 @@ impl FromReader for AlfHeader {
 
     #[inline]
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         if <[u8; 4]>::from_reader(reader, e)? != ALF_MAGIC {
             return Err(Error::new(ErrorKind::InvalidData, "invalid ALF magic"));
         }
@@ -132,7 +144,9 @@ impl FromReader for AlfSection {
 
     #[inline]
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         let result = Self {
             address: <_>::from_reader(reader, e)?,
             data_size: <_>::from_reader(reader, e)?,
@@ -157,7 +171,9 @@ impl FromReader for AlfSymbolKind {
 
     #[inline]
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         match u32::from_reader(reader, e)? {
             0 => Ok(Self::Function),
             1 => Ok(Self::Object),
@@ -189,7 +205,9 @@ impl FromReader for AlfSymbol {
 
     #[inline]
     fn from_reader_args<R>(reader: &mut R, e: Endian, args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         Ok(Self {
             name: read_string::<u32, _>(reader, e)?,
             demangled_name: read_string::<u32, _>(reader, e)?,
@@ -255,7 +273,9 @@ impl FromReader for AlfSymTab {
 
     #[inline]
     fn from_reader_args<R>(reader: &mut R, e: Endian, args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         let _size = u32::from_reader(reader, e)?;
         let count = u32::from_reader(reader, e)? as usize;
         let symbols = read_vec_args(reader, count, e, args)?;

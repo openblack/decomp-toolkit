@@ -473,11 +473,14 @@ impl Tracker {
                                 (SectionAddress::new(SectionIndex::MAX, 0), false)
                             };
                             if branch.link || !is_fn_addr {
-                                self.relocations.insert(ins_addr, match ins.op {
-                                    Opcode::B => Relocation::Rel24(target),
-                                    Opcode::Bc => Relocation::Rel14(target),
-                                    _ => continue,
-                                });
+                                self.relocations.insert(
+                                    ins_addr,
+                                    match ins.op {
+                                        Opcode::B => Relocation::Rel24(target),
+                                        Opcode::Bc => Relocation::Rel14(target),
+                                        _ => continue,
+                                    },
+                                );
                             } else if is_fn_addr {
                                 executor.push(addr, branch.vm, true);
                             }

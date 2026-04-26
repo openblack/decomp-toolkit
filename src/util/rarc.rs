@@ -29,16 +29,24 @@ static_assert!(size_of::<RarcHeader>() == 0x20);
 
 impl RarcHeader {
     /// Length of the RARC file.
-    pub fn file_len(&self) -> u32 { self.file_len.get() }
+    pub fn file_len(&self) -> u32 {
+        self.file_len.get()
+    }
 
     /// Length of the header.
-    pub fn header_len(&self) -> u32 { self.header_len.get() }
+    pub fn header_len(&self) -> u32 {
+        self.header_len.get()
+    }
 
     /// Start of the file data, relative to the end of the file header.
-    pub fn data_offset(&self) -> u32 { self.data_offset.get() }
+    pub fn data_offset(&self) -> u32 {
+        self.data_offset.get()
+    }
 
     /// Length of the file data.
-    pub fn data_len(&self) -> u32 { self.data_len.get() }
+    pub fn data_len(&self) -> u32 {
+        self.data_len.get()
+    }
 }
 
 #[derive(Copy, Clone, Debug, PartialEq, FromBytes, IntoBytes, Immutable, KnownLayout)]
@@ -88,21 +96,31 @@ static_assert!(size_of::<RarcNode>() == 0x14);
 
 impl RarcNode {
     /// Whether the node is a file.
-    pub fn is_file(&self) -> bool { self.index.get() != 0xFFFF }
+    pub fn is_file(&self) -> bool {
+        self.index.get() != 0xFFFF
+    }
 
     /// Whether the node is a directory.
-    pub fn is_dir(&self) -> bool { self.index.get() == 0xFFFF }
+    pub fn is_dir(&self) -> bool {
+        self.index.get() == 0xFFFF
+    }
 
     /// Offset in the string table to the node name.
-    pub fn name_offset(&self) -> u32 { self.name_offset.get() as u32 }
+    pub fn name_offset(&self) -> u32 {
+        self.name_offset.get() as u32
+    }
 
     /// Files: Offset in the data to the file data.
     /// Directories: Index of the directory in the directory table.
-    pub fn data_offset(&self) -> u32 { self.data_offset.get() }
+    pub fn data_offset(&self) -> u32 {
+        self.data_offset.get()
+    }
 
     /// Files: Length of the data.
     /// Directories: Unknown. Always 16.
-    pub fn data_length(&self) -> u32 { self.data_length.get() }
+    pub fn data_length(&self) -> u32 {
+        self.data_length.get()
+    }
 }
 
 #[derive(Copy, Clone, Debug, PartialEq, FromBytes, IntoBytes, Immutable, KnownLayout)]
@@ -124,13 +142,19 @@ static_assert!(size_of::<RarcDirectory>() == 0x10);
 
 impl RarcDirectory {
     /// Offset in the string table to the directory name.
-    pub fn name_offset(&self) -> u32 { self.name_offset.get() }
+    pub fn name_offset(&self) -> u32 {
+        self.name_offset.get()
+    }
 
     /// Index of the first node in the directory.
-    pub fn node_index(&self) -> u32 { self.index.get() }
+    pub fn node_index(&self) -> u32 {
+        self.index.get()
+    }
 
     /// Number of nodes in the directory.
-    pub fn node_count(&self) -> u16 { self.count.get() }
+    pub fn node_count(&self) -> u16 {
+        self.count.get()
+    }
 }
 
 /// A view into a RARC archive.

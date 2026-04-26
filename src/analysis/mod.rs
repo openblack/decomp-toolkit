@@ -15,12 +15,12 @@ pub mod cfa;
 pub mod executor;
 pub mod objects;
 pub mod pass;
+pub mod pe;
+pub mod rtti;
 pub mod signatures;
 pub mod slices;
 pub mod tracker;
 pub mod vm;
-pub mod pe;
-pub mod rtti;
 pub mod x86;
 
 pub fn disassemble(section: &ObjSection, address: u32) -> Option<Ins> {

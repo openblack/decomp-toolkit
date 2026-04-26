@@ -44,7 +44,9 @@ use byteorder::{LittleEndian, ReadBytesExt, WriteBytesExt};
 /// let mut decompressed = nintendo_lz::decompress(&mut f).unwrap();
 /// ```
 pub fn decompress<R>(inp: &mut R) -> Result<Vec<u8>>
-where R: Read + ?Sized {
+where
+    R: Read + ?Sized,
+{
     let mut length = inp.read_u32::<LittleEndian>()? as usize;
     let ver = match length & 0xFF {
         0x10 => 0,
@@ -165,7 +167,9 @@ fn find_longest_match(data: &[u8], off: usize, max: usize) -> Option<(usize, usi
 /// nintendo_lz::compress(&data, &mut f, nintendo_lz::CompressionLevel::LZ11(65809)).unwrap();
 /// ```
 pub fn compress<W>(inp: &[u8], out: &mut W, level: CompressionLevel) -> Result<()>
-where W: Write + ?Sized {
+where
+    W: Write + ?Sized,
+{
     let ver = match level {
         CompressionLevel::LZ10 => 0,
         CompressionLevel::LZ11(_) => 1,

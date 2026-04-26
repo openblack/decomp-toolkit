@@ -8,8 +8,8 @@ use object::{
     RelocationEncoding, RelocationKind, RelocationTarget, SectionKind, SymbolFlags, SymbolKind,
     SymbolScope,
     write::{
-        Object as WriteObject, Relocation, RelocationFlags,
-        SectionId, Symbol, SymbolId, SymbolSection as WriteSymbolSection,
+        Object as WriteObject, Relocation, RelocationFlags, SectionId, Symbol, SymbolId,
+        SymbolSection as WriteSymbolSection,
     },
 };
 
@@ -122,10 +122,8 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             _ => continue,
         };
 
-        let section_index = symbol
-            .section_index()
-            .and_then(|idx| section_indexes.get(idx.0).copied())
-            .flatten();
+        let section_index =
+            symbol.section_index().and_then(|idx| section_indexes.get(idx.0).copied()).flatten();
 
         let mut flags = ObjSymbolFlagSet(ObjSymbolFlags::none());
         if symbol.is_global() {
@@ -160,12 +158,10 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             let sec_addr = sections[sec_idx].address;
             for (offset, reloc) in section.relocations() {
                 let target_sym = match reloc.target() {
-                    RelocationTarget::Symbol(idx) => {
-                        match coff_sym_map.get(&idx.0) {
-                            Some(&our_idx) => our_idx as u32,
-                            None => continue,
-                        }
-                    }
+                    RelocationTarget::Symbol(idx) => match coff_sym_map.get(&idx.0) {
+                        Some(&our_idx) => our_idx as u32,
+                        None => continue,
+                    },
                     _ => continue,
                 };
                 let reloc_kind = match reloc.kind() {
@@ -174,22 +170,26 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
                     _ => continue,
                 };
                 let addr = sec_addr + offset;
-                sections[sec_idx].relocations.replace(addr as u32, ObjReloc {
-                    kind: reloc_kind,
-                    target_symbol: target_sym,
-                    addend: reloc.addend(),
-                    module: None,
-                });
+                sections[sec_idx].relocations.replace(
+                    addr as u32,
+                    ObjReloc {
+                        kind: reloc_kind,
+                        target_symbol: target_sym,
+                        addend: reloc.addend(),
+                        module: None,
+                    },
+                );
             }
         }
     }
 
     // Extract ImageBase from the PE optional header (x86 PE32 only)
     let image_base: Option<u32> = if kind == ObjKind::Executable {
-        use object::{LittleEndian as LE, read::pe::{ImageNtHeaders, PeFile32}};
-        PeFile32::parse(data)
-            .ok()
-            .map(|pe| pe.nt_headers().optional_header().image_base.get(LE))
+        use object::{
+            LittleEndian as LE,
+            read::pe::{ImageNtHeaders, PeFile32},
+        };
+        PeFile32::parse(data).ok().map(|pe| pe.nt_headers().optional_header().image_base.get(LE))
     } else {
         None
     };
@@ -253,11 +253,9 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
         // Label (Unknown) symbols with a defined section are code labels that
         // may be referenced cross-object by DISP32 relocations.  Promote them
         // to Linkage scope so lld can resolve the cross-object reference.
-        let is_defined_label =
-            sym.kind == ObjSymbolKind::Unknown && sym.section.is_some();
-        let scope = if sym.flags.0.contains(ObjSymbolFlags::Weak) {
-            SymbolScope::Linkage
-        } else if is_exported || is_defined_label {
+        let is_defined_label = sym.kind == ObjSymbolKind::Unknown && sym.section.is_some();
+        let scope = if sym.flags.0.contains(ObjSymbolFlags::Weak) || is_exported || is_defined_label
+        {
             SymbolScope::Linkage
         } else {
             SymbolScope::Compilation
@@ -324,17 +322,17 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             // sym_rva - P + A.  For the CALL/JMP displacement to be correct
             // (sym_rva - P - 4 + A) we must subtract 4 here so the crate writes
             // A - 4 + 4 = A, and lld gets sym_rva - P - 4 + A. ✓
-            let coff_addend = if reloc.kind == ObjRelocKind::X86Rel32 {
-                reloc.addend - 4
-            } else {
-                reloc.addend
-            };
-            out.add_relocation(sid, Relocation {
-                offset: offset as u64,
-                symbol: sym_id,
-                addend: coff_addend,
-                flags: RelocationFlags::Generic { kind, encoding, size },
-            })
+            let coff_addend =
+                if reloc.kind == ObjRelocKind::X86Rel32 { reloc.addend - 4 } else { reloc.addend };
+            out.add_relocation(
+                sid,
+                Relocation {
+                    offset: offset as u64,
+                    symbol: sym_id,
+                    addend: coff_addend,
+                    flags: RelocationFlags::Generic { kind, encoding, size },
+                },
+            )
             .with_context(|| {
                 format!("Adding relocation at {:#010X} in section {}", addr, section.name)
             })?;
@@ -362,8 +360,7 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
     let mut block_off = 0usize;
     let mut count = 0u32;
     while block_off + 8 <= reloc_data.len() {
-        let page_rva =
-            u32::from_le_bytes(reloc_data[block_off..block_off + 4].try_into().unwrap());
+        let page_rva = u32::from_le_bytes(reloc_data[block_off..block_off + 4].try_into().unwrap());
         let block_size =
             u32::from_le_bytes(reloc_data[block_off + 4..block_off + 8].try_into().unwrap());
         if block_size < 8 {
@@ -375,8 +372,7 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
             if e + 2 > reloc_data.len() {
                 break;
             }
-            let type_offset =
-                u16::from_le_bytes(reloc_data[e..e + 2].try_into().unwrap());
+            let type_offset = u16::from_le_bytes(reloc_data[e..e + 2].try_into().unwrap());
             if type_offset >> 12 != IMAGE_REL_BASED_HIGHLOW {
                 continue;
             }
@@ -391,8 +387,7 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
             if off + 4 > src_sec.data.len() {
                 continue;
             }
-            let target_va =
-                u32::from_le_bytes(src_sec.data[off..off + 4].try_into().unwrap());
+            let target_va = u32::from_le_bytes(src_sec.data[off..off + 4].try_into().unwrap());
             if target_va == 0 {
                 continue;
             }
@@ -414,12 +409,10 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
             let src_sec = &mut obj.sections[src_idx];
             src_sec
                 .relocations
-                .insert(reloc_va, ObjReloc {
-                    kind: ObjRelocKind::X86Abs32,
-                    target_symbol,
-                    addend,
-                    module: None,
-                })
+                .insert(
+                    reloc_va,
+                    ObjReloc { kind: ObjRelocKind::X86Abs32, target_symbol, addend, module: None },
+                )
                 .ok();
             count += 1;
         }
@@ -481,10 +474,7 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
             if obj.sections[sec_idx].splits.for_address(*addr).is_some() {
                 continue;
             }
-            let end = fn_symbols
-                .get(i + 1)
-                .map(|(next_addr, _)| *next_addr)
-                .unwrap_or(section_end);
+            let end = fn_symbols.get(i + 1).map(|(next_addr, _)| *next_addr).unwrap_or(section_end);
 
             // Ensure unit name is unique.  Duplicate function names (e.g. a
             // LOCAL static that appears twice due to COMDAT folding) would
@@ -504,22 +494,27 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
                     let generated = format!("fn_{:#010x}", addr);
                     log::warn!(
                         "Duplicate split unit name '{}' at {:#010X}; using '{}'",
-                        name, addr, generated
+                        name,
+                        addr,
+                        generated
                     );
                     unit_name_to_addr.insert(generated.clone(), *addr);
                     generated
                 }
             };
 
-            obj.sections[sec_idx].splits.push(*addr, ObjSplit {
-                unit,
-                end,
-                align: Some(1), // x86 functions have no guaranteed alignment
-                common: false,
-                autogenerated: true,
-                skip: false,
-                rename: None,
-            });
+            obj.sections[sec_idx].splits.push(
+                *addr,
+                ObjSplit {
+                    unit,
+                    end,
+                    align: Some(1), // x86 functions have no guaranteed alignment
+                    common: false,
+                    autogenerated: true,
+                    skip: false,
+                    rename: None,
+                },
+            );
             total += 1;
         }
     }

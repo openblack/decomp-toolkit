@@ -107,7 +107,9 @@ pub struct RsoHeader {
 }
 
 impl RsoHeader {
-    pub fn new() -> Self { Self { version: 1, ..Default::default() } }
+    pub fn new() -> Self {
+        Self { version: 1, ..Default::default() }
+    }
 }
 
 impl FromReader for RsoHeader {
@@ -142,7 +144,9 @@ impl FromReader for RsoHeader {
     ]);
 
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         let next = u32::from_reader(reader, e)?;
         if next != 0 {
             return Err(io::Error::new(
@@ -216,7 +220,9 @@ impl FromReader for RsoHeader {
 
 impl ToWriter for RsoHeader {
     fn to_writer<W>(&self, writer: &mut W, e: Endian) -> io::Result<()>
-    where W: Write + ?Sized {
+    where
+        W: Write + ?Sized,
+    {
         (0u64).to_writer(writer, e)?; // next and prev
         self.num_sections.to_writer(writer, e)?;
         self.section_info_offset.to_writer(writer, e)?;
@@ -244,7 +250,9 @@ impl ToWriter for RsoHeader {
         Ok(())
     }
 
-    fn write_size(&self) -> usize { Self::STATIC_SIZE }
+    fn write_size(&self) -> usize {
+        Self::STATIC_SIZE
+    }
 }
 
 #[derive(Copy, Clone, Debug, Default)]
@@ -265,7 +273,9 @@ impl FromReader for RsoSectionHeader {
     ]);
 
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         Ok(Self {
             offset_and_flags: u32::from_reader(reader, e)?,
             size: u32::from_reader(reader, e)?,
@@ -275,13 +285,17 @@ impl FromReader for RsoSectionHeader {
 
 impl ToWriter for RsoSectionHeader {
     fn to_writer<W>(&self, writer: &mut W, e: Endian) -> io::Result<()>
-    where W: Write + ?Sized {
+    where
+        W: Write + ?Sized,
+    {
         self.offset_and_flags.to_writer(writer, e)?;
         self.size.to_writer(writer, e)?;
         Ok(())
     }
 
-    fn write_size(&self) -> usize { Self::STATIC_SIZE }
+    fn write_size(&self) -> usize {
+        Self::STATIC_SIZE
+    }
 }
 
 impl RsoSectionHeader {
@@ -290,11 +304,17 @@ impl RsoSectionHeader {
         Self { offset_and_flags: offset | (exec as u32), size }
     }
 
-    pub fn offset(&self) -> u32 { self.offset_and_flags & !1 }
+    pub fn offset(&self) -> u32 {
+        self.offset_and_flags & !1
+    }
 
-    pub fn size(&self) -> u32 { self.size }
+    pub fn size(&self) -> u32 {
+        self.size
+    }
 
-    pub fn exec(&self) -> bool { self.offset_and_flags & 1 != 0 }
+    pub fn exec(&self) -> bool {
+        self.offset_and_flags & 1 != 0
+    }
 }
 
 pub struct RsoRelocation {
@@ -320,7 +340,9 @@ impl FromReader for RsoRelocation {
     ]);
 
     fn from_reader_args<R>(reader: &mut R, e: Endian, _args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         Ok(Self {
             offset: u32::from_reader(reader, e)?,
             id_and_type: u32::from_reader(reader, e)?,
@@ -331,14 +353,18 @@ impl FromReader for RsoRelocation {
 
 impl ToWriter for RsoRelocation {
     fn to_writer<W>(&self, writer: &mut W, e: Endian) -> io::Result<()>
-    where W: Write + ?Sized {
+    where
+        W: Write + ?Sized,
+    {
         self.offset.to_writer(writer, e)?;
         self.id_and_type.to_writer(writer, e)?;
         self.target_offset.to_writer(writer, e)?;
         Ok(())
     }
 
-    fn write_size(&self) -> usize { Self::STATIC_SIZE }
+    fn write_size(&self) -> usize {
+        Self::STATIC_SIZE
+    }
 }
 
 impl RsoRelocation {
@@ -347,13 +373,21 @@ impl RsoRelocation {
         Self { offset, id_and_type: (id << 8) | rel_type as u32, target_offset: sym_offset }
     }
 
-    pub fn offset(&self) -> u32 { self.offset }
+    pub fn offset(&self) -> u32 {
+        self.offset
+    }
 
-    pub fn id(&self) -> u32 { (self.id_and_type & 0xFFFFFF00) >> 8 }
+    pub fn id(&self) -> u32 {
+        (self.id_and_type & 0xFFFFFF00) >> 8
+    }
 
-    pub fn rel_type(&self) -> u8 { (self.id_and_type & 0xFF) as u8 }
+    pub fn rel_type(&self) -> u8 {
+        (self.id_and_type & 0xFF) as u8
+    }
 
-    pub fn sym_offset(&self) -> u32 { self.target_offset }
+    pub fn sym_offset(&self) -> u32 {
+        self.target_offset
+    }
 }
 
 #[derive(Copy, Clone, Debug, PartialEq, Eq)]
@@ -382,7 +416,9 @@ impl FromReader for RsoSymbol {
     const STATIC_SIZE: usize = DYNAMIC_SIZE;
 
     fn from_reader_args<R>(reader: &mut R, e: Endian, args: Self::Args) -> io::Result<Self>
-    where R: Read + Seek + ?Sized {
+    where
+        R: Read + Seek + ?Sized,
+    {
         Ok(Self {
             name_offset: u32::from_reader(reader, e)?,
             offset: u32::from_reader(reader, e)?,
@@ -398,7 +434,9 @@ impl FromReader for RsoSymbol {
 
 impl ToWriter for RsoSymbol {
     fn to_writer<W>(&self, writer: &mut W, e: Endian) -> io::Result<()>
-    where W: Write + ?Sized {
+    where
+        W: Write + ?Sized,
+    {
         self.name_offset.to_writer(writer, e)?;
         self.offset.to_writer(writer, e)?;
         self.section_index.to_writer(writer, e)?;
@@ -409,11 +447,15 @@ impl ToWriter for RsoSymbol {
         Ok(())
     }
 
-    fn write_size(&self) -> usize { Self::STATIC_SIZE }
+    fn write_size(&self) -> usize {
+        Self::STATIC_SIZE
+    }
 }
 
 pub fn process_rso<R>(reader: &mut R) -> Result<ObjInfo>
-where R: Read + Seek + ?Sized {
+where
+    R: Read + Seek + ?Sized,
+{
     let header = RsoHeader::from_reader(reader, Endian::Big)?;
     let mut sections = Vec::with_capacity(header.num_sections as usize);
     reader.seek(SeekFrom::Start(header.section_info_offset as u64))?;

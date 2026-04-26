@@ -10,4 +10,6 @@ pub struct Args {
     command: SubCommand,
 }
 
-pub fn run(args: Args) -> Result<()> { nodtool::run(args.command).map_err(Error::new) }
+pub fn run(args: Args) -> Result<()> {
+    nodtool::run(args.command).map_err(Error::new)
+}

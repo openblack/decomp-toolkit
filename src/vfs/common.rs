@@ -22,21 +22,31 @@ impl StaticFile {
 }
 
 impl BufRead for StaticFile {
-    fn fill_buf(&mut self) -> io::Result<&[u8]> { self.inner.fill_buf() }
+    fn fill_buf(&mut self) -> io::Result<&[u8]> {
+        self.inner.fill_buf()
+    }
 
-    fn consume(&mut self, amt: usize) { self.inner.consume(amt) }
+    fn consume(&mut self, amt: usize) {
+        self.inner.consume(amt)
+    }
 }
 
 impl Read for StaticFile {
-    fn read(&mut self, buf: &mut [u8]) -> io::Result<usize> { self.inner.read(buf) }
+    fn read(&mut self, buf: &mut [u8]) -> io::Result<usize> {
+        self.inner.read(buf)
+    }
 }
 
 impl Seek for StaticFile {
-    fn seek(&mut self, pos: SeekFrom) -> io::Result<u64> { self.inner.seek(pos) }
+    fn seek(&mut self, pos: SeekFrom) -> io::Result<u64> {
+        self.inner.seek(pos)
+    }
 }
 
 impl VfsFile for StaticFile {
-    fn map(&mut self) -> io::Result<&[u8]> { Ok(self.inner.get_ref()) }
+    fn map(&mut self) -> io::Result<&[u8]> {
+        Ok(self.inner.get_ref())
+    }
 
     fn metadata(&mut self) -> io::Result<VfsMetadata> {
         Ok(VfsMetadata {
@@ -46,7 +56,9 @@ impl VfsFile for StaticFile {
         })
     }
 
-    fn into_disc_stream(self: Box<Self>) -> Box<dyn DiscStream> { self }
+    fn into_disc_stream(self: Box<Self>) -> Box<dyn DiscStream> {
+        self
+    }
 }
 
 #[derive(Clone)]
@@ -64,7 +76,9 @@ impl WindowedFile {
     }
 
     #[inline]
-    pub fn len(&self) -> u64 { self.end - self.begin }
+    pub fn len(&self) -> u64 {
+        self.end - self.begin
+    }
 }
 
 impl BufRead for WindowedFile {
@@ -114,7 +128,9 @@ impl Seek for WindowedFile {
     }
 
     #[inline]
-    fn stream_position(&mut self) -> io::Result<u64> { Ok(self.pos - self.begin) }
+    fn stream_position(&mut self) -> io::Result<u64> {
+        Ok(self.pos - self.begin)
+    }
 }
 
 impl VfsFile for WindowedFile {
@@ -128,5 +144,7 @@ impl VfsFile for WindowedFile {
         Ok(VfsMetadata { file_type: VfsFileType::File, len: self.len(), mtime: metadata.mtime })
     }
 
-    fn into_disc_stream(self: Box<Self>) -> Box<dyn DiscStream> { self }
+    fn into_disc_stream(self: Box<Self>) -> Box<dyn DiscStream> {
+        self
+    }
 }

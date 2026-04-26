@@ -58,9 +58,7 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
     };
 
     let va_in_code = |va: u32| va_kind(va) == Some(ObjSectionKind::Code);
-    let va_in_data = |va: u32| {
-        matches!(va_kind(va), Some(k) if !matches!(k, ObjSectionKind::Code | ObjSectionKind::Bss))
-    };
+    let va_in_data = |va: u32| matches!(va_kind(va), Some(k) if !matches!(k, ObjSectionKind::Code | ObjSectionKind::Bss));
     let va_in_any_section = |va: u32| va_kind(va).is_some();
 
     // Snapshot section data for scanning (avoids borrow issues while mutating obj).
@@ -254,8 +252,12 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
     }
 
     if added > 0 {
-        log::info!("RTTI: added {added} symbols ({} TypeDescriptors, {} COLs, {} vtables)",
-            type_descriptors.len(), cols.len(), vtables.len());
+        log::info!(
+            "RTTI: added {added} symbols ({} TypeDescriptors, {} COLs, {} vtables)",
+            type_descriptors.len(),
+            cols.len(),
+            vtables.len()
+        );
     }
 
     // ── Step 5: Virtual function naming ──────────────────────────────────────
@@ -296,7 +298,9 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
             Some(v) if va_in_data(v) => v,
             _ => continue,
         };
-        if read_at_va(p_chd).unwrap_or(1) != 0 { continue; } // signature must be 0
+        if read_at_va(p_chd).unwrap_or(1) != 0 {
+            continue;
+        } // signature must be 0
         let num_bases = match read_at_va(p_chd + 8) {
             Some(n) if n > 0 && n <= 512 => n,
             _ => continue,
@@ -353,7 +357,9 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
             fn_to_vtable.entry(fn_va).or_default().push((class_name.clone(), slot));
             ptr += 4;
             slot += 1;
-            if slot >= 512 { break; }
+            if slot >= 512 {
+                break;
+            }
         }
     }
 
@@ -368,7 +374,9 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
     let mut used_names: HashSet<String> = HashSet::new();
 
     for (fn_va, appearances) in &fn_to_vtable {
-        if appearances.is_empty() { continue; }
+        if appearances.is_empty() {
+            continue;
+        }
 
         let (owner_class, owner_slot) = if appearances.len() == 1 {
             (appearances[0].0.clone(), appearances[0].1)
@@ -381,8 +389,7 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
                     appearances
                         .iter()
                         .filter(|(other, _)| {
-                            other != cname
-                                && deriveds.map_or(false, |s| s.contains(other.as_str()))
+                            other != cname && deriveds.is_some_and(|s| s.contains(other.as_str()))
                         })
                         .count()
                 })
@@ -393,10 +400,7 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
         // Build a C-identifier-safe name from the mangled class fragment.
         // class_inner returns e.g. "Foo@@" or "Bar@ns@@"; strip trailing "@@"
         // and replace remaining "@" (namespace separators) with "_".
-        let class_safe = owner_class
-            .strip_suffix("@@")
-            .unwrap_or(&owner_class)
-            .replace('@', "_");
+        let class_safe = owner_class.strip_suffix("@@").unwrap_or(&owner_class).replace('@', "_");
         let mut sym_name = format!("{class_safe}_vfunc{owner_slot}");
 
         // Disambiguate collisions (rare, multiple-inheritance vtables).
@@ -424,15 +428,18 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
         match existing {
             Some((_, false, _)) => continue, // user-defined name — preserve
             Some((idx, true, existing_sym)) => {
-                obj.symbols.replace(idx, ObjSymbol {
-                    name: sym_name.clone(),
-                    // Clear size_known: detect_rtti may add new function symbols
-                    // after x86 analysis, invalidating the previously computed
-                    // size caps.  The split system derives extents from entry gaps.
-                    size: 0,
-                    size_known: false,
-                    ..existing_sym
-                })?;
+                obj.symbols.replace(
+                    idx,
+                    ObjSymbol {
+                        name: sym_name.clone(),
+                        // Clear size_known: detect_rtti may add new function symbols
+                        // after x86 analysis, invalidating the previously computed
+                        // size caps.  The split system derives extents from entry gaps.
+                        size: 0,
+                        size_known: false,
+                        ..existing_sym
+                    },
+                )?;
                 vfunc_named += 1;
             }
             None => {
@@ -479,9 +486,5 @@ fn class_inner(rtti_name: &str) -> &str {
     // Strip `.?A` (3 chars) + one type char (1 char) = 4 chars from the start.
     let s = rtti_name.strip_prefix('.').unwrap_or(rtti_name);
     let s = s.strip_prefix("?A").unwrap_or(s);
-    if s.len() > 1 && s.as_bytes()[0].is_ascii_alphabetic() {
-        &s[1..]
-    } else {
-        s
-    }
+    if s.len() > 1 && s.as_bytes()[0].is_ascii_alphabetic() { &s[1..] } else { s }
 }
