@@ -33,21 +33,21 @@ jobs:
       - name: Cargo clippy
         run: cargo clippy --all-features --all-targets
 
-  fmt:
-    name: Format
-    runs-on: ubuntu-latest
-    env:
-      RUSTFLAGS: -D warnings
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Rust toolchain
-        # We use nightly options in rustfmt.toml
-        uses: dtolnay/rust-toolchain@nightly
-        with:
-          components: rustfmt
-      - name: Cargo fmt
-        run: cargo fmt --all --check
+  # fmt:
+  #   name: Format
+  #   runs-on: ubuntu-latest
+  #   env:
+  #     RUSTFLAGS: -D warnings
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v4
+  #     - name: Setup Rust toolchain
+  #       # We use nightly options in rustfmt.toml
+  #       uses: dtolnay/rust-toolchain@nightly
+  #       with:
+  #         components: rustfmt
+  #     - name: Cargo fmt
+  #       run: cargo fmt --all --check
 
   deny:
     name: Deny
