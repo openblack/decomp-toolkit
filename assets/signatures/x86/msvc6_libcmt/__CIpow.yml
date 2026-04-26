@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 6cacc597cd9cedd2458af393e05ec58f8048ed36
-  signature: g//s/xD/2f/J/93/HP8k/93/VP8k/wj/i/9E/yT/DP8AAAAAAAAAAAD/g//E/xD/w/8=
+  hash: 0ef9d3fac73d5b8db5749dc9e2dfff492aeafb7d
+  signature: g//s/xD/2f/J/93/HP8k/93/VP8k/wj/i/9E/yT/DP/o/wAAAAAAAAAAg//E/xD/w/8=
   symbols:
   - kind: Function
     name: __CIpow
@@ -13,7 +13,7 @@
     flags: 0
     section: .text
   relocations:
-  - offset: 16
+  - offset: 17
     kind: x86_rel32
     symbol: 1
     addend: 0

@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 3cf616a6dd3ec54ac8957205588deada7ca4d8f8
-  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/4P/Zf/k/wD/i/91/wz/i//G/w//r/9F/xD/Af9F/wj/g/9l//z/AP///03/EP94/wv/Kf91/wj/i/9N/wj///9V/xT/6//w/8f/Rf/k/wH/AP8A/wD/g/9N/wAAAAAAAAAAAP8A/wD/i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8L/EP8A/w==
+  hash: f4b45564c926ee8e86f0668ab67ca4244355b210
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/4P/Zf/k/wD/i/91/wz/i//G/w//r/9F/xD/Af9F/wj/g/9l//z/AP///03/EP94/wv/Kf91/wj/i/9N/wj///9V/xT/6//w/8f/Rf/k/wH/AP8A/wD/g/9N//z////o/wAAAAAAAAAAi/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8L/EP8A/w==
   symbols:
   - kind: Function
     name: ??_M@YGXPAXIHP6EX0@Z@Z
@@ -44,7 +44,7 @@
     kind: x86_abs32
     symbol: 3
     addend: 0
-  - offset: 80
+  - offset: 83
     kind: x86_rel32
     symbol: 4
     addend: 0

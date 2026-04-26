@@ -230,7 +230,7 @@ pub fn generate_objs_rsp(obj: &ObjInfo, obj_dir: &Utf8UnixPathBuf) -> Result<Str
     let lines: Vec<String> = ordered_units
         .into_iter()
         .map(|unit_name| {
-            let obj_path = obj_path_for_unit(unit_name);
+            let obj_path: Utf8UnixPathBuf = obj_path_for_unit(unit_name).with_encoding();
             obj_dir.join(&obj_path).to_string()
         })
         .collect();

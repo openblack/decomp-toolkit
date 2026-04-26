@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 10e6064f120e1f35cc6a1c78692d67b9465ffdf3
-  signature: Vf+L/+z/gf/E/zD//f//////U////3X/DP///3X/CP/o/wAAAAAAAAAAg//E/wj/m//Z/73/XP////////+A/6X/OP/9///////9/+j/AAAAAAAAAAAAAAAA/v//////W//J/8P/
+  hash: 0af1eb6ff695bb565f06e268a95d188d1f697c1c
+  signature: Vf+L/+z/gf/E/zD//f//////U////3X/DP///3X/CP/o/wAAAAAAAAAAg//E/wj/m//Z/73/XP////////+A/6X/OP/9///////9/+j/AAAAAAAAAADo/wAAAAAAAAAAW//J/8P/
   symbols:
   - kind: Function
     name: __ctrandisp1
@@ -31,7 +31,7 @@
     kind: x86_rel32
     symbol: 2
     addend: -4
-  - offset: 41
+  - offset: 44
     kind: x86_rel32
     symbol: 3
     addend: 0

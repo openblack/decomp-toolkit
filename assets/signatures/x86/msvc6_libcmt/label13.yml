@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 9c02d42fc0abaf08f29b7bc8eb4849341a870776
-  signature: 2/88/yT/2/98/yT/AAAAAAAAAAD/////g//E/yz/w/8=
+  hash: e4f51bb83aed3de4c6e3f06aa885d201733a1c2b
+  signature: 2/88/yT/2/98/yT/DP/o/wAAAAAAAAAAg//E/yz/w/8=
   symbols:
   - kind: Function
     name: label13
@@ -13,7 +13,7 @@
     flags: 2
     section: null
   relocations:
-  - offset: 6
+  - offset: 8
     kind: x86_rel32
     symbol: 1
     addend: 0

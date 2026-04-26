@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 2d3288e48323046171d137a3e78f0b068e8ad50d
-  signature: 2/98/yT/DP/Z/87/2f/A/9v/PP8k/9v/fP8k/wAAAAAAAAAA/////9n/zv/b/2z/JP8g/9n/z/+D/8T/LP/D/w==
+  hash: a4cab6f2e76bf8afdebef32badf9a015f2492bf8
+  signature: 2/98/yT/DP/Z/87/2f/A/9v/PP8k/9v/fP8k/yD/6P8AAAAAAAAAANn/zv/b/2z/JP8g/9n/z/+D/8T/LP/D/w==
   symbols:
   - kind: Function
     name: label56
@@ -13,7 +13,7 @@
     flags: 2
     section: null
   relocations:
-  - offset: 14
+  - offset: 16
     kind: x86_rel32
     symbol: 1
     addend: 0

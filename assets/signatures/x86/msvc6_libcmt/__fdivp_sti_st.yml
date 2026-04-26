@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 0c8c7ad4b952777ef903f1204589bb2a5c36b611
-  signature: g//s/yz/2/88/yT/2/98/yT/DP8AAAAAAAAAAP//g//E/yz/w/8=
+  hash: 5124f68968dae8cd4ac42031c45c18b6ab9cee87
+  signature: g//s/yz/2/88/yT/2/98/yT/DP/o/wAAAAAAAAAAg//E/yz/w/8=
   symbols:
   - kind: Function
     name: __fdivp_sti_st
@@ -13,7 +13,7 @@
     flags: 2
     section: null
   relocations:
-  - offset: 10
+  - offset: 11
     kind: x86_rel32
     symbol: 1
     addend: 0

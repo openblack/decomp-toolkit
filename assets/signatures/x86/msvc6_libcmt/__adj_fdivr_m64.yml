@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: aa0e463d59216d42a63684ac90fbec08a8cbdf8b
-  signature: UP+L/0T/JP8M/yX/AP8A//D/f/89/wD/AP/w/3//dP8z/9//4P8l/wD/OP8A/wD/dP8N/93/RP8AAAAAAAAAAP7//////1j/wv8I/wD/2f/J/4P/7P8M/9v/PP8k/93/RP8k/xT/6P8AAAAAAAAAANv/LP8k/9n/yf+D/8T/DP9Y/8L/CP8A/9z/fP8k/wj/WP/C/wj/AP8=
+  hash: d8d34cd561c475d181666106b8453f30d1226455
+  signature: UP+L/0T/JP8M/yX/AP8A//D/f/89/wD/AP/w/3//dP8z/9//4P8l/wD/OP8A/wD/dP8N/93/RP8k/wj/6P8AAAAAAAAAAFj/wv8I/wD/2f/J/4P/7P8M/9v/PP8k/93/RP8k/xT/6P8AAAAAAAAAANv/LP8k/9n/yf+D/8T/DP9Y/8L/CP8A/9z/fP8k/wj/WP/C/wj/AP8=
   symbols:
   - kind: Function
     name: __adj_fdivr_m64
@@ -13,7 +13,7 @@
     flags: 1
     section: .text
   relocations:
-  - offset: 28
+  - offset: 31
     kind: x86_rel32
     symbol: 1
     addend: 0

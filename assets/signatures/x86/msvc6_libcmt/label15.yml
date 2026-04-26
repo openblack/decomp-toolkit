@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 3c3bfdd640e21d5728daf6e012d2be01150b4855
-  signature: 2/98/yT/DP/b/zz/AAAAAAAAAAD/////g//E/yz/w/8=
+  hash: 18450ca4cd740270f913d0007e53875fca5d95c5
+  signature: 2/98/yT/DP/b/zz/JP/o/wAAAAAAAAAAg//E/yz/w/8=
   symbols:
   - kind: Function
     name: label15
@@ -13,7 +13,7 @@
     flags: 2
     section: null
   relocations:
-  - offset: 6
+  - offset: 8
     kind: x86_rel32
     symbol: 1
     addend: 0

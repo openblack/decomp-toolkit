@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 47b3e13769fd4d52e5b3be3deb246ada3499442a
-  signature: U/9W/1f/i/9E/yT/EP9Q/2r//v9o/wAAAAAAAAAAZP///zX/AP8A/wD/AP9k/4n/Jf8A/wD/AP8A/4v/RP8k/yD/i/9Y/wj/i/9w/wz/g//+////dP8u/zv/dP8k/yT/dP8o/43/NP92/4v/DP+z/4n/TP8k/wj/if9I/wz/g/98/7P/BP8A/3X/Ev9o/wH/Af8A/wD/i/9E/7P/AAAAAAAAAAAA/wD///9U/7P/CP8=
+  hash: 641862e95459214a37a11e6bf4744d30eb306992
+  signature: U/9W/1f/i/9E/yT/EP9Q/2r//v9o/wAAAAAAAAAAZP///zX/AP8A/wD/AP9k/4n/Jf8A/wD/AP8A/4v/RP8k/yD/i/9Y/wj/i/9w/wz/g//+////dP8u/zv/dP8k/yT/dP8o/43/NP92/4v/DP+z/4n/TP8k/wj/if9I/wz/g/98/7P/BP8A/3X/Ev9o/wH/Af8A/wD/i/9E/7P/CP/o/wAAAAAAAAAA//9U/7P/CP8=
   symbols:
   - kind: Function
     name: __local_unwind2
@@ -22,7 +22,7 @@
     kind: x86_abs32
     symbol: 1
     addend: 0
-  - offset: 78
+  - offset: 80
     kind: x86_rel32
     symbol: 2
     addend: 0

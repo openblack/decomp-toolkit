@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 3739a67fa58ab0d6a27b19ec615136a56ec90eb8
-  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8c/1P/Vv9X/4n/Zf/o/4v/Xf8Y/4n/Xf/U/4P/Zf/c/wD/i/91/wz/i/9G//z/if9F/9j/6P8AAAAAAAAAAIv/QP9s/4n/Rf/k/+j/AAAAAAAAAACL/0D/cP+J/0X/4P/o/wAAAAAAAAAAi/99/wj/if94/2z/6P8AAAAAAAAAAIv/Tf8Q/4n/SP9w/4P/Zf/8/wD/x/9F//z/Af8A/wD/AP///3X/IP///3X/HP9T////df8U/1b/6P8AAAAAAAAAAIP/xP8U/4n/Rf/U/4P/Zf/8/wD/g/9N/wAAAAAAAAAAAP8A/wD/i/9F/9T/i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8P/
+  hash: 437aabb3f38506e5644d2dffce049734edce8f23
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8c/1P/Vv9X/4n/Zf/o/4v/Xf8Y/4n/Xf/U/4P/Zf/c/wD/i/91/wz/i/9G//z/if9F/9j/6P8AAAAAAAAAAIv/QP9s/4n/Rf/k/+j/AAAAAAAAAACL/0D/cP+J/0X/4P/o/wAAAAAAAAAAi/99/wj/if94/2z/6P8AAAAAAAAAAIv/Tf8Q/4n/SP9w/4P/Zf/8/wD/x/9F//z/Af8A/wD/AP///3X/IP///3X/HP9T////df8U/1b/6P8AAAAAAAAAAIP/xP8U/4n/Rf/U/4P/Zf/8/wD/g/9N//z////o/wAAAAAAAAAAi/9F/9T/i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8P/
   symbols:
   - kind: Function
     name: ?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z
@@ -74,7 +74,7 @@
     kind: x86_rel32
     symbol: 5
     addend: -4
-  - offset: 140
+  - offset: 143
     kind: x86_rel32
     symbol: 6
     addend: 0

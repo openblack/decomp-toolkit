@@ -219,8 +219,9 @@ fn sigs_lib(args: SigsLibArgs) -> Result<()> {
         sigs.sort_by_key(|s| s.signature.len());
 
         let mut safe_name = sym_name.replace(['/', '\\', ':', '*', '?', '"', '<', '>', '|'], "_");
-        // Windows MAX_PATH component limit is 255 bytes; ".yml" = 4 bytes.
-        const MAX_STEM: usize = 251;
+        // Windows MAX_PATH = 260; account for workspace prefix + output subdir (~75 chars).
+        // Use 128 to leave headroom for deeper local dev paths.
+        const MAX_STEM: usize = 128;
         if safe_name.len() > MAX_STEM {
             let hash = xxh3_64(sym_name.as_bytes());
             safe_name.truncate(MAX_STEM - 16);
