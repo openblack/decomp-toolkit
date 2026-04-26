@@ -341,8 +341,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "decomp-toolkit"
-version = "1.8.3"
+name = "decomp-toolkit-coff-prototype"
+version = "0.0.1"
 dependencies = [
  "aes",
  "anyhow",

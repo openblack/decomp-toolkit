@@ -1,12 +1,12 @@
 [package]
-name = "decomp-toolkit"
-description = "Yet another GameCube/Wii decompilation toolkit."
-authors = ["Luke Street <luke@street.dev>"]
+name = "decomp-toolkit-coff-prototype"
+description = "A decompilation toolkit (coff prototype)."
+authors = ["Luke Street <luke@street.dev>", "Sandy Carter <bwrsandman@gmail.com"]
 license = "MIT OR Apache-2.0"
-version = "1.8.3"
+version = "0.0.1"
 edition = "2024"
 publish = false
-repository = "https://github.com/encounter/decomp-toolkit"
+repository = "https://github.com/openblack/decomp-toolkit"
 readme = "README.md"
 categories = ["command-line-utilities"]
 rust-version = "1.85"
