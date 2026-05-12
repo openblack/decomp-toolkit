@@ -964,11 +964,16 @@ fn split(args: SplitArgs) -> Result<()> {
         links: vec![OutputLink { modules: vec![config.base.name().to_string()] }],
     };
 
-    // Write config.json
+    // Write config.json only if content changed, to avoid triggering configure cycles
     {
-        let mut out_file = buf_writer(&out_config_path)?;
-        serde_json::to_writer_pretty(&mut out_file, &out_config)?;
-        out_file.flush()?;
+        let mut buf = Vec::new();
+        serde_json::to_writer_pretty(&mut buf, &out_config)?;
+        let need_write = fs::read(&out_config_path)
+            .map(|existing| xxh3_64(&existing) != xxh3_64(&buf))
+            .unwrap_or(true);
+        if need_write {
+            fs::write(&out_config_path, &buf)?;
+        }
     }
 
     // Write dep file
