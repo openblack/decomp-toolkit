@@ -166,7 +166,9 @@ pub fn generate_args_rsp(
 
     lines.push(format!("/BASE:{:#x}", pe.image_base));
 
-    // Resolve entry symbol name from the entry VA
+    // Resolve entry symbol name from the entry VA.
+    // lld-link's /ENTRY auto-prepends '_' for i386 PE, so strip the leading
+    // underscore from cdecl C names; mangled names ('?', '@') are passed as-is.
     if let Some(entry_sym) = obj.entry.and_then(|e| {
         let (sec_idx, _) = obj.sections.at_address(e as u32).ok()?;
         obj.symbols
@@ -174,7 +176,8 @@ pub fn generate_args_rsp(
             .find(|(_, s)| s.kind == crate::obj::ObjSymbolKind::Function)
             .map(|(_, s)| s.name.clone())
     }) {
-        lines.push(format!("/ENTRY:{entry_sym}"));
+        let entry_arg = entry_sym.strip_prefix('_').unwrap_or(&entry_sym);
+        lines.push(format!("/ENTRY:{entry_arg}"));
     }
 
     lines.push(format!("/SUBSYSTEM:{},{}", pe.subsystem_name(), pe.major_subsystem_version,));
