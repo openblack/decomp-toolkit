@@ -452,6 +452,7 @@ where
             file_offset: offset as u64,
             section_known,
             splits: Default::default(),
+            sub_regions: Vec::new(),
         });
     }
     ensure!(
