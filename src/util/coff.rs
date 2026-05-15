@@ -8,7 +8,7 @@ use object::{
     RelocationEncoding, RelocationKind, RelocationTarget, SectionKind, SymbolFlags, SymbolKind,
     SymbolScope,
     write::{
-        Object as WriteObject, Relocation, RelocationFlags, SectionId, Symbol, SymbolId,
+        Mangling, Object as WriteObject, Relocation, RelocationFlags, SectionId, Symbol, SymbolId,
         SymbolSection as WriteSymbolSection,
     },
 };
@@ -208,6 +208,13 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
 
 pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
     let mut out = WriteObject::new(BinaryFormat::Coff, Architecture::I386, Endianness::Little);
+    // Disable object crate's auto leading-underscore mangling: it blindly
+    // prepends '_' to every Text/Data symbol, which corrupts MSVC C++
+    // mangled names ('?...') and fastcall names ('@...').  dtk's stored
+    // symbol names already follow the MSVC convention literally (cdecl C
+    // names include their leading '_' in symbols.txt; mangled names do not),
+    // so we write them verbatim.
+    out.set_mangling(Mangling::None);
 
     // Add sections and build section id map (indexed by ObjSectionIndex)
     let mut section_ids: Vec<Option<SectionId>> = vec![None; obj.sections.len() as usize];

@@ -116,7 +116,16 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
                     Ok((_hint, name)) => {
                         let n =
                             std::str::from_utf8(name).unwrap_or("unknown").trim_end_matches('\0');
-                        format!("__imp__{}", n)
+                        // MSVC IAT name convention: '__imp_' + decorated name.
+                        // Cdecl/stdcall C names already carry a leading '_' (so
+                        // the result is '__imp__Foo'); C++ mangled ('?...') and
+                        // fastcall ('@...') names do not, yielding '__imp_?foo'
+                        // or '__imp_@foo@8' with a single underscore.
+                        if n.starts_with('?') || n.starts_with('@') {
+                            format!("__imp_{}", n)
+                        } else {
+                            format!("__imp__{}", n)
+                        }
                     }
                     Err(_) => {
                         iat_off += 4;
@@ -177,12 +186,18 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
                         i += 1;
                         continue;
                     }
-                    // Derive thunk name: "__imp__SetWindowPos" → "_SetWindowPos"
-                    // (strip double underscore, keep single)
-                    let preferred = imp_name
-                        .strip_prefix("__imp__")
-                        .map(|n| format!("_{}", n))
-                        .unwrap_or_else(|| imp_name.to_string());
+                    // Derive thunk name from IAT symbol:
+                    //   "__imp__SetWindowPos" → "_SetWindowPos"   (cdecl: drop one '_')
+                    //   "__imp_?foo@@YAXXZ"   → "?foo@@YAXXZ"     (MSVC C++: drop '__imp_')
+                    //   "__imp_@foo@8"        → "@foo@8"          (fastcall: drop '__imp_')
+                    let preferred = if let Some(rest) = imp_name.strip_prefix("__imp_") {
+                        // `rest` is the decorated thunk name as MSVC writes it:
+                        // for cdecl it still starts with '_' (the original C prefix);
+                        // for '?'/'@' it is the bare mangled name.
+                        rest.to_string()
+                    } else {
+                        imp_name.to_string()
+                    };
                     // If the preferred name is already taken (e.g. two thunks for the same
                     // import), fall back to a generated name so there's no duplicate symbol.
                     let thunk_name = if used_names.contains(&preferred) {
