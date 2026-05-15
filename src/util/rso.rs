@@ -500,6 +500,7 @@ where
             file_offset: offset as u64,
             section_known: false,
             splits: Default::default(),
+            sub_regions: Vec::new(),
         });
         if offset == 0 {
             total_bss_size += size;

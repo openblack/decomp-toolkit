@@ -78,6 +78,7 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             file_offset: section.file_range().map(|(v, _)| v).unwrap_or_default(),
             section_known: true,
             splits: Default::default(),
+            sub_regions: Vec::new(),
         });
     }
 

@@ -20,6 +20,17 @@ pub enum ObjSectionKind {
     Bss,
 }
 
+/// A logical sub-section that exists within a physical section's VA range.
+/// Used to model MSVC COFF grouped sub-sections like `.rdata$r` / `.xdata$x`
+/// which the linker merges into a single PE section (`.rdata`) but which
+/// .obj files still emit under their distinct names.
+#[derive(Debug, Clone)]
+pub struct ObjSubRegion {
+    pub start: u32,
+    pub end: u32,
+    pub name: String,
+}
+
 #[derive(Debug, Clone)]
 pub struct ObjSection {
     pub name: String,
@@ -35,6 +46,7 @@ pub struct ObjSection {
     pub file_offset: u64,
     pub section_known: bool,
     pub splits: ObjSplits,
+    pub sub_regions: Vec<ObjSubRegion>,
 }
 
 #[derive(Debug, Clone)]

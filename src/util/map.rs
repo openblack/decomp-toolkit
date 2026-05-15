@@ -1158,6 +1158,7 @@ pub fn create_obj(result: &MapInfo) -> Result<ObjInfo> {
                 file_offset,
                 section_known: true,
                 splits: Default::default(),
+            sub_regions: Vec::new(),
             }
         })
         .collect();
