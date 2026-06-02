@@ -141,7 +141,7 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
                 let p_td = read_u32_le(data, off + 12).unwrap();
                 let p_chd = read_u32_le(data, off + 16).unwrap();
                 if let Some(rtti_name) = type_descriptors.get(&p_td) {
-                    if va_in_data(p_chd) || p_chd == 0 {
+                    if va_in_data(p_chd) {
                         let va = base + off as u32;
                         cols.insert(va, rtti_name.clone());
                     }
