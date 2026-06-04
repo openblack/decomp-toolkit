@@ -37,12 +37,20 @@ fn label_entry_point(obj: &mut ObjInfo, pe: &PeFile32) -> Result<()> {
     let image_base = pe.nt_headers().optional_header().image_base.get(LE);
     let entry_abs = image_base.wrapping_add(entry_va) as u64;
 
-    // Choose the standard MSVC CRT startup name based on the PE subsystem.
+    // Choose the standard MSVC CRT startup name. Names carry the i386 cdecl/
+    // stdcall decoration (leading '_', '@N' suffix) so they match both the
+    // bundled signatures and the symbol the linker resolves for /ENTRY.
+    let characteristics = pe.nt_headers().file_header().characteristics.get(LE);
+    let is_dll = characteristics & object::pe::IMAGE_FILE_DLL != 0;
     let subsystem = pe.nt_headers().optional_header().subsystem.get(LE);
-    let entry_name = match subsystem {
-        2 => "WinMainCRTStartup", // IMAGE_SUBSYSTEM_WINDOWS_GUI
-        3 => "mainCRTStartup",    // IMAGE_SUBSYSTEM_WINDOWS_CUI
-        _ => "CRTStartup",
+    let entry_name = if is_dll {
+        "__DllMainCRTStartup@12"
+    } else {
+        match subsystem {
+            2 => "_WinMainCRTStartup", // IMAGE_SUBSYSTEM_WINDOWS_GUI
+            3 => "_mainCRTStartup",    // IMAGE_SUBSYSTEM_WINDOWS_CUI
+            _ => "_CRTStartup",
+        }
     };
 
     let Some((sec_idx, _)) =

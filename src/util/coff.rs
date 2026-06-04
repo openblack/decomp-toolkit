@@ -17,7 +17,7 @@ use crate::{
     analysis::cfa::SectionAddress,
     obj::{
         ObjArchitecture, ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjSection, ObjSectionKind,
-        ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
+        ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind, PeMetadata,
         SectionIndex as ObjSectionIndex,
     },
 };
@@ -33,7 +33,9 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     };
 
     let kind = match obj_file.kind() {
-        ObjectKind::Executable => ObjKind::Executable,
+        // A DLL is a fully-linked PE image (with an ImageBase and base
+        // relocation table), so treat it the same as an executable.
+        ObjectKind::Executable | ObjectKind::Dynamic => ObjKind::Executable,
         ObjectKind::Relocatable => ObjKind::Relocatable,
         kind => bail!("Unexpected COFF type: {kind:?}"),
     };
@@ -204,6 +206,63 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     obj.db_stack_addr = db_stack_addr;
     obj.arena_lo = arena_lo;
     obj.arena_hi = arena_hi;
+
+    // Retain the base relocation table for reconstructing absolute relocations.
+    // It is not kept as a section (the linker regenerates .reloc on output).
+    if let Some(reloc_section) = obj_file.section_by_name(".reloc") {
+        if let Ok(reloc_data) = reloc_section.uncompressed_data() {
+            obj.pe_reloc_data = reloc_data.into_owned();
+        }
+    }
+
+    // Capture original PE header metadata for the post-link patch. Only DLLs
+    // need it (the base image has its own dedicated patch), and capturing the
+    // base's large trailing data would bloat config.json.
+    if kind == ObjKind::Executable {
+        use object::{
+            LittleEndian as LE,
+            read::pe::{ImageNtHeaders, PeFile32},
+        };
+        if let Ok(pe) = PeFile32::parse(data) {
+            let nt = pe.nt_headers();
+            let opt = nt.optional_header();
+            let is_dll = nt.file_header().characteristics.get(LE) & object::pe::IMAGE_FILE_DLL != 0;
+            let data_directories = pe
+                .data_directories()
+                .iter()
+                .map(|d| (d.virtual_address.get(LE), d.size.get(LE)))
+                .collect();
+            let reloc_virtual_size = pe
+                .section_table()
+                .iter()
+                .find(|s| &s.name == b".reloc\0\0")
+                .map(|s| s.virtual_size.get(LE))
+                .unwrap_or(0);
+            let trailing_off = pe
+                .section_table()
+                .iter()
+                .map(|s| {
+                    s.pointer_to_raw_data.get(LE) as usize + s.size_of_raw_data.get(LE) as usize
+                })
+                .max()
+                .unwrap_or(0);
+            if is_dll {
+                obj.pe_metadata = Some(PeMetadata {
+                    timestamp: nt.file_header().time_date_stamp.get(LE),
+                    characteristics: nt.file_header().characteristics.get(LE),
+                    dll_characteristics: opt.dll_characteristics.get(LE),
+                    base_of_data: opt.base_of_data.get(LE),
+                    size_of_code: opt.size_of_code.get(LE),
+                    size_of_initialized_data: opt.size_of_initialized_data.get(LE),
+                    size_of_image: opt.size_of_image.get(LE),
+                    data_directories,
+                    reloc_virtual_size,
+                    trailing_data: data.get(trailing_off..).unwrap_or(&[]).to_vec(),
+                });
+            }
+        }
+    }
+
     Ok((obj, image_base))
 }
 
@@ -355,14 +414,11 @@ const IMAGE_REL_BASED_HIGHLOW: u16 = 3;
 /// Parse the PE `.reloc` section and add [`ObjRelocKind::X86Abs32`] relocations.
 pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> {
     let reloc_data = {
-        let Some((_, section)) = obj.sections.iter().find(|(_, s)| s.name == ".reloc") else {
-            log::debug!("No .reloc section, skipping base relocation import");
-            return Ok(());
-        };
-        if section.data.is_empty() {
+        if obj.pe_reloc_data.is_empty() {
+            log::debug!("No .reloc data, skipping base relocation import");
             return Ok(());
         }
-        section.data.clone()
+        obj.pe_reloc_data.clone()
     };
 
     let mut block_off = 0usize;
@@ -389,6 +445,11 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
             let Ok((src_idx, _)) = obj.sections.at_address(reloc_va) else { continue };
             let src_sec = &obj.sections[src_idx];
             if src_sec.kind == ObjSectionKind::Bss || src_sec.relocations.at(reloc_va).is_some() {
+                continue;
+            }
+            // Skip IAT slots: the linker regenerates the import address table and
+            // its base relocations from the import directory.
+            if obj.symbols.at_section_address(src_idx, reloc_va).any(|(_, s)| s.name.starts_with("__imp_")) {
                 continue;
             }
             let off = (reloc_va as u64 - src_sec.address) as usize;
@@ -487,7 +548,15 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
             // Ensure unit name is unique.  Duplicate function names (e.g. a
             // LOCAL static that appears twice due to COMDAT folding) would
             // otherwise merge two disjoint address ranges into one object.
-            let unit = match unit_name_to_addr.entry(name.clone()) {
+            let unit = if name.is_empty() {
+                // Unnamed function symbol (common in stripped DLLs): derive a
+                // unique unit name from the address so the split object gets a
+                // valid file name.
+                let generated = format!("fn_{:#010x}", addr);
+                unit_name_to_addr.insert(generated.clone(), *addr);
+                generated
+            } else {
+                match unit_name_to_addr.entry(name.clone()) {
                 std::collections::hash_map::Entry::Vacant(e) => {
                     e.insert(*addr);
                     name.clone()
@@ -508,6 +577,7 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
                     );
                     unit_name_to_addr.insert(generated.clone(), *addr);
                     generated
+                }
                 }
             };
 

@@ -210,6 +210,12 @@ impl ObjSection {
             return Ok(&[]);
         }
         let start = (start as u64 - self.address) as usize;
+        // For PE sections, VirtualSize may exceed SizeOfRawData; the trailing
+        // gap is implicitly zero-initialized and not present in `data`. A range
+        // that begins inside that gap has no backing bytes.
+        if start >= self.data.len() {
+            return Ok(&[]);
+        }
         Ok(if end == 0 {
             &self.data[start..]
         } else {

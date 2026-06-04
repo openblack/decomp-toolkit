@@ -1184,6 +1184,8 @@ pub fn create_obj(result: &MapInfo) -> Result<ObjInfo> {
         known_functions: Default::default(),
         module_id: 0,
         unresolved_relocations: vec![],
+        pe_reloc_data: Vec::new(),
+        pe_metadata: None,
     };
 
     // If every symbol the map has alignment 4, it's likely bogus

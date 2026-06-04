@@ -442,6 +442,8 @@ pub struct OutputModule {
     pub entry: Option<String>,
     pub units: Vec<OutputUnit>,
     pub extract: Vec<OutputExtract>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub pe_metadata: Option<crate::obj::PeMetadata>,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, Default)]
@@ -1072,6 +1074,7 @@ fn split_write_obj(
         units: Vec::with_capacity(split_objs.len()),
         entry,
         extract: Vec::with_capacity(module.config.extract.len()),
+        pe_metadata: None,
     };
     let mut object_paths = BTreeMap::new();
     for (unit, split_obj) in module.obj.link_order.iter().zip(&split_objs) {

@@ -36,8 +36,8 @@ use crate::{
     util::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
         config::{
-            apply_splits_file, apply_symbols_file, is_auto_symbol, write_splits_file,
-            write_symbols_file,
+            apply_splits_file, apply_symbols_file, create_auto_symbol_name, is_auto_symbol,
+            write_splits_file, write_symbols_file,
         },
         dep::DepFile,
         file::{FileReadInfo, buf_writer, process_rsp, touch, verify_hash},
@@ -571,18 +571,14 @@ type LoadAnalyzeCoffResult = (
 
 fn load_analyze_coff(
     config: &ProjectConfig,
+    module_config: &ModuleConfig,
     object_base: &ObjectBase,
 ) -> Result<LoadAnalyzeCoffResult> {
     let (mut obj, image_base, pe_header, object_path) =
-        load_coff_module(&config.base, object_base)?;
+        load_coff_module(module_config, object_base)?;
     let mut dep = vec![object_path];
 
     info!("Loading and analyzing COFF/PE binary");
-
-    // Reconstruct abs32 relocations from the PE base relocation table
-    if let Some(base) = image_base {
-        apply_base_relocations(&mut obj, base)?;
-    }
 
     // Discover functions and rel32 relocations by scanning code.
     // Returns size data to be applied after RTTI runs.
@@ -593,7 +589,7 @@ fn load_analyze_coff(
         config.x86_signatures.as_ref().map(|p| p.with_encoding());
     apply_signatures_x86(&mut obj, sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())))?;
 
-    if let Some(map_path) = &config.base.map {
+    if let Some(map_path) = &module_config.map {
         let map_path = map_path.with_encoding();
         crate::util::map::apply_map_file(
             &map_path,
@@ -604,7 +600,7 @@ fn load_analyze_coff(
         dep.push(map_path);
     }
 
-    let splits_cache = if let Some(splits_path) = &config.base.splits {
+    let splits_cache = if let Some(splits_path) = &module_config.splits {
         let splits_path = splits_path.with_encoding();
         let cache = apply_splits_file(&splits_path, &mut obj)?;
         dep.push(splits_path);
@@ -613,7 +609,7 @@ fn load_analyze_coff(
         None
     };
 
-    let symbols_cache = if let Some(symbols_path) = &config.base.symbols {
+    let symbols_cache = if let Some(symbols_path) = &module_config.symbols {
         let symbols_path = symbols_path.with_encoding();
         let cache = apply_symbols_file(&symbols_path, &mut obj)?;
         dep.push(symbols_path);
@@ -623,7 +619,7 @@ fn load_analyze_coff(
     };
 
     // Apply block relocations from config
-    for reloc in &config.base.block_relocations {
+    for reloc in &module_config.block_relocations {
         let end = reloc.end.as_ref().map(|end| end.resolve(&obj)).transpose()?;
         match (&reloc.source, &reloc.target) {
             (Some(_), Some(_)) => {
@@ -642,7 +638,7 @@ fn load_analyze_coff(
     }
 
     // Apply add_relocations from config
-    for reloc in &config.base.add_relocations {
+    for reloc in &module_config.add_relocations {
         let crate::analysis::cfa::SectionAddress { section, address } =
             reloc.source.resolve(&obj)?;
         let (target_symbol, _) = match obj.symbols.by_ref(&obj.sections, &reloc.target)? {
@@ -665,6 +661,13 @@ fn load_analyze_coff(
                 module: None,
             },
         );
+    }
+
+    // Reconstruct abs32 relocations from the PE base relocation table. Done last
+    // so that targets resolve against fully-sized symbols (from analysis and the
+    // symbols file), keeping interior pointers as addends instead of new labels.
+    if let Some(base) = image_base {
+        apply_base_relocations(&mut obj, base)?;
     }
 
     Ok((obj, size_data, pe_header, dep, splits_cache, symbols_cache))
@@ -715,12 +718,34 @@ fn split_write_coff(
         sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())),
     )?;
 
-    // Deduplicate public symbol names before creating function splits.
+    // Assign generated names to any unnamed symbols. Unnamed symbols (common in
+    // stripped DLLs) would otherwise be written to the symbols file with an empty
+    // left-hand side (" = .text:0x...;"), which fails to parse on reload.
+    {
+        let module_id = module.obj.module_id;
+        let mut renames: Vec<(SymbolIndex, String)> = Vec::new();
+        for (idx, sym) in module.obj.symbols.iter() {
+            if sym.kind == ObjSymbolKind::Section || !sym.name.is_empty() {
+                continue;
+            }
+            let prefix = if sym.kind == ObjSymbolKind::Function { "fn" } else { "lbl" };
+            renames.push((idx, create_auto_symbol_name(prefix, module_id, sym.address as u32)));
+        }
+        for (idx, new_name) in renames {
+            let mut sym = module.obj.symbols[idx].clone();
+            sym.name = new_name;
+            module.obj.symbols.replace(idx, sym)?;
+        }
+    }
+
+    // Deduplicate symbol names before creating function splits.
     // Two identical functions (e.g. CRT statics) or COMDAT-folded RTTI data
-    // can end up with the same public name at different addresses.  Keep the
-    // first occurrence and rename duplicates so each split object has unique
-    // public symbols.  Relocations use symbol indices, so the renamed symbol
-    // is still reachable from all callers.
+    // can end up with the same name at different addresses.  Keep the first
+    // occurrence and rename duplicates so each split object has unique symbol
+    // names (the splitter also needs this for local data symbols, otherwise a
+    // duplicate name at an unaligned address forces an impossible split).
+    // Relocations use symbol indices, so the renamed symbol is still reachable
+    // from all callers.
     //
     // This must run BEFORE create_function_splits so that split units use the
     // already-deduplicated names.  If it ran after, two split ranges would be
@@ -737,8 +762,12 @@ fn split_write_coff(
             if sym.name.is_empty() {
                 continue;
             }
-            if sym.flags.0.contains(ObjSymbolFlags::NoExport)
-                || sym.flags.0.contains(ObjSymbolFlags::Local)
+            // The base image keeps local/non-export duplicate names (the splitter
+            // handles aligned duplicates); only modules need them deduped, since
+            // their .data is split with reconstructed relocations.
+            if module.obj.module_id == 0
+                && (sym.flags.0.contains(ObjSymbolFlags::NoExport)
+                    || sym.flags.0.contains(ObjSymbolFlags::Local))
             {
                 continue;
             }
@@ -824,6 +853,7 @@ fn split_write_coff(
         units: Vec::with_capacity(split_objs.len()),
         entry,
         extract: Vec::with_capacity(module.config.extract.len()),
+        pe_metadata: module.obj.pe_metadata.clone(),
     };
 
     // Serialize all split objects in parallel (CPU-bound), then write serially.
@@ -908,12 +938,26 @@ fn split(args: SplitArgs) -> Result<()> {
         config.base.hash = Some(file_sha1_string(&mut data)?);
     }
 
+    // Verify (or compute) the hash of each module (DLL). Done before any
+    // immutable borrow of `config` below, since this mutates `config.modules`.
+    for module_config in config.modules.iter_mut() {
+        if let Some(hash_str) = &module_config.hash {
+            let mut file = object_base.open(&module_config.object)?;
+            let data = file.map()?;
+            verify_hash(data, hash_str)?;
+        } else {
+            let mut file = object_base.open(&module_config.object)?;
+            let mut data = file.map()?;
+            module_config.hash = Some(file_sha1_string(&mut data)?);
+        }
+    }
+
     let out_config_path = args.out_dir.join("config.json");
     let mut dep = DepFile::new(out_config_path.clone());
 
     let start = Instant::now();
     let (obj, size_data, pe_header, obj_dep, splits_cache, symbols_cache) =
-        load_analyze_coff(&config, &object_base)
+        load_analyze_coff(&config, &config.base, &object_base)
             .with_context(|| format!("While loading '{}'", config.base.file_name()))?;
     dep.extend(obj_dep);
 
@@ -948,7 +992,40 @@ fn split(args: SplitArgs) -> Result<()> {
     let out_module = split_write_coff(&mut module, &config, &args.out_dir, args.no_update)
         .with_context(|| format!("While processing '{}'", config.base.file_name()))?;
 
-    let object_count = out_module.units.len();
+    let mut object_count = out_module.units.len();
+
+    // Process each module (DLL) independently. Unlike REL modules, PE DLLs are
+    // self-contained images that resolve cross-module references through their
+    // own import/export tables, so no cross-module relocation analysis is
+    // needed here. Each module is split into its own subdirectory.
+    let mut out_modules: Vec<OutputModule> = Vec::with_capacity(config.modules.len());
+    for (idx, module_config) in config.modules.iter().enumerate() {
+        let (obj, size_data, pe_header, obj_dep, splits_cache, symbols_cache) =
+            load_analyze_coff(&config, module_config, &object_base)
+                .with_context(|| format!("While loading '{}'", module_config.file_name()))?;
+        dep.extend(obj_dep);
+
+        let mut module_state = ModuleState {
+            obj,
+            size_data: Some(size_data),
+            pe_header,
+            config: module_config,
+            symbols_cache,
+            splits_cache,
+            dep: Default::default(),
+        };
+        // Assign a sequential module ID (the base is 0).
+        module_state.obj.module_id = (idx + 1) as u32;
+
+        let module_out_dir = args.out_dir.join(module_config.name());
+        let out_mod = split_write_coff(&mut module_state, &config, &module_out_dir, args.no_update)
+            .with_context(|| format!("While processing '{}'", module_config.file_name()))?;
+        dep.extend(std::mem::take(&mut module_state.dep));
+
+        object_count += out_mod.units.len();
+        out_modules.push(out_mod);
+    }
+
     let duration = start.elapsed();
     info!(
         "Splitting completed in {}.{:03}s (wrote {} objects)",
@@ -957,11 +1034,20 @@ fn split(args: SplitArgs) -> Result<()> {
         object_count
     );
 
+    // Each module links independently against the base; emit one link per
+    // module plus the base-only link.
+    let mut links = vec![OutputLink { modules: vec![config.base.name().to_string()] }];
+    for module_config in config.modules.iter() {
+        links.push(OutputLink {
+            modules: vec![config.base.name().to_string(), module_config.name().to_string()],
+        });
+    }
+
     let out_config = OutputConfig {
         version: env!("CARGO_PKG_VERSION").to_string(),
         base: out_module,
-        modules: vec![],
-        links: vec![OutputLink { modules: vec![config.base.name().to_string()] }],
+        modules: out_modules,
+        links,
     };
 
     // Write config.json only if content changed, to avoid triggering configure cycles

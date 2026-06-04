@@ -119,6 +119,18 @@ pub fn apply_symbol(
     target: SectionAddress,
     sig_symbol: &OutSymbol,
 ) -> Result<SymbolIndex> {
+    // Imports are already labelled at their IAT slot by detect_pe_symbols. Reuse
+    // that symbol instead of adding a second (differently decorated) __imp_ entry
+    // at the same address, which would later break splitting.
+    if sig_symbol.name.starts_with("__imp_") {
+        if let Some((idx, _)) = obj
+            .symbols
+            .at_section_address(target.section, target.address)
+            .find(|(_, s)| s.name.starts_with("__imp_"))
+        {
+            return Ok(idx);
+        }
+    }
     let mut target_section_index =
         if target.section == SectionIndex::MAX { None } else { Some(target.section) };
     if let Some(target_section_index) = target_section_index {

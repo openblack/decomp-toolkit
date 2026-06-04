@@ -24,6 +24,8 @@ pub struct PeHeaderInfo {
     pub file_alignment: u32,
     /// Set when IMAGE_FILE_RELOCS_STRIPPED is present in the file header.
     pub relocs_stripped: bool,
+    /// Set when IMAGE_FILE_DLL is present in the file header (the image is a DLL).
+    pub is_dll: bool,
     /// Set when the PE has no Safe Exception Handler table (Load Config SEHandlerTable == 0).
     /// When true the linker must be told /SAFESEH:NO.
     pub no_seh: bool,
@@ -43,8 +45,9 @@ impl PeHeaderInfo {
         let pe = PeFile32::parse(data).ok()?;
         let nt = pe.nt_headers();
         let opt = nt.optional_header();
-        let relocs_stripped =
-            nt.file_header().characteristics.get(LE) & object::pe::IMAGE_FILE_RELOCS_STRIPPED != 0;
+        let characteristics = nt.file_header().characteristics.get(LE);
+        let relocs_stripped = characteristics & object::pe::IMAGE_FILE_RELOCS_STRIPPED != 0;
+        let is_dll = characteristics & object::pe::IMAGE_FILE_DLL != 0;
         let file_alignment = opt.file_alignment.get(LE);
 
         let mut section_characteristics: HashMap<String, u32> = HashMap::new();
@@ -106,6 +109,7 @@ impl PeHeaderInfo {
             minor_subsystem_version: opt.minor_subsystem_version.get(LE),
             file_alignment,
             relocs_stripped,
+            is_dll,
             no_seh,
             section_characteristics,
             section_vsizes,
@@ -155,16 +159,23 @@ pub fn generate_args_rsp(
     pe: &PeHeaderInfo,
     force_includes: &[String],
 ) -> Result<String> {
-    let mut lines: Vec<String> = Vec::new();
+    let mut lines: Vec<String> = vec![
+        "/includeglob:*".to_string(),
+        "/errorlimit:0".to_string(),
+        "/demangle:no".to_string(),
+        "/OPT:NOREF".to_string(),
+        "/OPT:NOICF".to_string(),
+        "/NODEFAULTLIB".to_string(),
+        format!("/BASE:{:#x}", pe.image_base),
+        format!("/SUBSYSTEM:{},{}", pe.subsystem_name(), pe.major_subsystem_version,),
+        format!("/STACK:{:#x},{:#x}", pe.stack_reserve, pe.stack_commit),
+        format!("/HEAP:{:#x},{:#x}", pe.heap_reserve, pe.heap_commit),
+        format!("/VERSION:{}.{}", pe.major_image_version, pe.minor_image_version),
+    ];
 
-    lines.push("/includeglob:*".to_string());
-    lines.push("/errorlimit:0".to_string());
-    lines.push("/demangle:no".to_string());
-    lines.push("/OPT:NOREF".to_string());
-    lines.push("/OPT:NOICF".to_string());
-    lines.push("/NODEFAULTLIB".to_string());
-
-    lines.push(format!("/BASE:{:#x}", pe.image_base));
+    if pe.is_dll {
+        lines.push("/DLL".to_string());
+    }
 
     // Resolve entry symbol name from the entry VA.
     // lld-link's /ENTRY auto-prepends '_' for i386 PE, so strip the leading
@@ -180,11 +191,6 @@ pub fn generate_args_rsp(
         lines.push(format!("/ENTRY:{entry_arg}"));
     }
 
-    lines.push(format!("/SUBSYSTEM:{},{}", pe.subsystem_name(), pe.major_subsystem_version,));
-    lines.push(format!("/STACK:{:#x},{:#x}", pe.stack_reserve, pe.stack_commit));
-    lines.push(format!("/HEAP:{:#x},{:#x}", pe.heap_reserve, pe.heap_commit));
-    lines.push(format!("/VERSION:{}.{}", pe.major_image_version, pe.minor_image_version));
-
     if pe.file_alignment != 0 {
         lines.push(format!("/FILEALIGN:{:#x}", pe.file_alignment));
     }
@@ -198,6 +204,11 @@ pub fn generate_args_rsp(
     // Per-section permission flags
     for (_, section) in obj.sections.iter() {
         lines.push(format!("/SECTION:{},{}", section.name, pe.section_flags_str(&section.name)));
+        // lld-link merges .idata into .rdata by default; keep it separate when the
+        // original image did, by redirecting the merge to itself.
+        if section.name == ".idata" {
+            lines.push("/MERGE:.idata=.idata".to_string());
+        }
     }
 
     // Per-section virtual sizes (to preserve BSS regions and exact layout)

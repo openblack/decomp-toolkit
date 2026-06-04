@@ -12,6 +12,7 @@ use std::{
 
 use anyhow::{Result, anyhow, bail, ensure};
 use objdiff_core::obj::split_meta::SplitMeta;
+use serde::{Deserialize, Serialize};
 pub use relocations::{ObjReloc, ObjRelocKind, ObjRelocations};
 pub use sections::{
     ObjSection, ObjSectionKind, ObjSections, ObjSubRegion, SectionIndex, section_kind_for_section,
@@ -27,6 +28,25 @@ use crate::{
     obj::addresses::AddressRanges,
     util::{comment::MWComment, rel::RelReloc},
 };
+
+/// PE header values taken from the original image at split time, used by the
+/// post-link patch to reproduce fields the relinker does not (data directories,
+/// timestamp, sizes, the .reloc VirtualSize and the trailing CodeView record).
+#[derive(Serialize, Deserialize, Debug, Clone, Default, PartialEq)]
+pub struct PeMetadata {
+    pub timestamp: u32,
+    pub characteristics: u16,
+    pub dll_characteristics: u16,
+    pub base_of_data: u32,
+    pub size_of_code: u32,
+    pub size_of_initialized_data: u32,
+    pub size_of_image: u32,
+    /// (RVA, size) for each of the 16 data directories.
+    pub data_directories: Vec<(u32, u32)>,
+    pub reloc_virtual_size: u32,
+    /// Bytes after the last section (e.g. the CodeView debug record).
+    pub trailing_data: Vec<u8>,
+}
 
 #[derive(Debug, Copy, Clone, Eq, PartialEq, Hash)]
 pub enum ObjKind {
@@ -86,6 +106,14 @@ pub struct ObjInfo {
     /// Module ID (0 for main)
     pub module_id: u32,
     pub unresolved_relocations: Vec<RelReloc>,
+
+    /// Raw PE base relocation table (`.reloc`), retained for reconstructing
+    /// absolute relocations. Not emitted as a section; the linker regenerates it.
+    pub pe_reloc_data: Vec<u8>,
+
+    /// Original PE header metadata, retained so the post-link patch can reproduce
+    /// fields the relinker doesn't. Only set for COFF/PE images.
+    pub pe_metadata: Option<PeMetadata>,
 }
 
 impl ObjInfo {
@@ -118,6 +146,8 @@ impl ObjInfo {
             known_functions: Default::default(),
             module_id: 0,
             unresolved_relocations: vec![],
+            pe_reloc_data: Vec::new(),
+            pe_metadata: None,
         }
     }
 
