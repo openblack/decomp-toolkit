@@ -272,6 +272,11 @@ impl ObjSymbols {
         } else if let Some(section_index) = in_symbol.section {
             self.at_section_address(section_index, in_symbol.address as u32).find(|(_, symbol)| {
                 symbol.kind == in_symbol.kind ||
+                    // Same name at the same address: merge into the existing
+                    // symbol rather than creating a duplicate with a
+                    // conflicting kind (e.g. an `__imp_` IAT slot symbol vs.
+                    // a Function symbol applied via signature matching).
+                    symbol.name == in_symbol.name ||
                     // Replace auto symbols with real symbols
                     (symbol.kind == ObjSymbolKind::Unknown && is_auto_symbol(symbol))
             })
@@ -320,7 +325,18 @@ impl ObjSymbols {
                 size,
                 size_known: existing.size_known || in_symbol.size != 0,
                 flags: ObjSymbolFlagSet(in_symbol.flags.0 | existing.flags.keep_flags()),
-                kind: in_symbol.kind,
+                // If both kinds are already resolved (not Unknown) and they
+                // conflict, keep the existing kind rather than flipping it —
+                // e.g. don't let a Function symbol applied via signature
+                // matching override an `__imp_` IAT slot's Object kind.
+                kind: if existing.kind != ObjSymbolKind::Unknown
+                    && in_symbol.kind != ObjSymbolKind::Unknown
+                    && existing.kind != in_symbol.kind
+                {
+                    existing.kind
+                } else {
+                    in_symbol.kind
+                },
                 align: in_symbol.align.or(existing.align),
                 data_kind: match in_symbol.data_kind {
                     ObjDataKind::Unknown => existing.data_kind,
