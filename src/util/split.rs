@@ -742,6 +742,24 @@ fn create_gap_splits(obj: &mut ObjInfo) -> Result<()> {
                     .collect_vec();
                 let mut existing_symbols = HashSet::new();
                 for &(_, symbol) in &symbols {
+                    // Isolate comdat-flagged symbols into their own auto unit
+                    // so write_coff can emit them as a standalone COMDAT
+                    // section, without pulling in the rest of the gap.
+                    if symbol.flags.is_comdat() {
+                        if symbol.address as u32 == current_address.address {
+                            ensure!(
+                                symbol.size_known,
+                                "Comdat symbol {} at {:#010X} has unknown size",
+                                symbol.name,
+                                symbol.address,
+                            );
+                            new_split_end.address =
+                                current_address.address + symbol.size as u32;
+                        } else {
+                            new_split_end.address = symbol.address as u32;
+                        }
+                        break;
+                    }
                     if !existing_symbols.insert(symbol.name.clone()) {
                         log::debug!(
                             "Found duplicate symbol {} at {:#010X}",

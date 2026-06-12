@@ -51,6 +51,10 @@ flags! {
         NoExport,
         /// Symbol does not contain any relocations
         NoReloc,
+        /// Emit the symbol's section as a selectany COMDAT, so a duplicate
+        /// definition (e.g. a shared CRT constant linked in from a prebuilt
+        /// library object) folds into this copy instead of colliding.
+        Comdat,
     }
 }
 
@@ -124,6 +128,11 @@ impl ObjSymbolFlagSet {
     #[inline]
     pub fn is_no_reloc(&self) -> bool {
         self.0.contains(ObjSymbolFlags::NoReloc)
+    }
+
+    #[inline]
+    pub fn is_comdat(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::Comdat)
     }
 
     #[inline]

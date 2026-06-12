@@ -8,9 +8,10 @@ use object::{
     RelocationEncoding, RelocationKind, RelocationTarget, SectionKind, SymbolFlags, SymbolKind,
     SymbolScope,
     write::{
-        Mangling, Object as WriteObject, Relocation, RelocationFlags, SectionId, Symbol, SymbolId,
-        SymbolSection as WriteSymbolSection,
+        Comdat, Mangling, Object as WriteObject, Relocation, RelocationFlags, SectionId, Symbol,
+        SymbolId, SymbolSection as WriteSymbolSection,
     },
+    ComdatKind,
 };
 
 use crate::{
@@ -304,6 +305,9 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
 
     // Add symbols and build symbol id map (indexed by SymbolIndex)
     let mut symbol_ids: Vec<SymbolId> = Vec::with_capacity(obj.symbols.count() as usize);
+    // (leader SymbolId, SectionId) for each symbol flagged comdat, emitted as
+    // selectany COMDAT groups after all symbols are added.
+    let mut comdat_groups: Vec<(SymbolId, SectionId)> = Vec::new();
     for (_, sym) in obj.symbols.iter() {
         let sym_section = match sym.section {
             Some(sec_idx) => match section_ids.get(sec_idx as usize).copied().flatten() {
@@ -336,6 +340,15 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             // (function) so they are accepted as code labels.
             ObjSymbolKind::Unknown => SymbolKind::Text,
         };
+        // The COMDAT section symbol (which carries the selection aux) must
+        // precede the leader symbol in the symbol table, or lld defers the
+        // leader, never resolves the pending comdat, and silently discards
+        // the section ("comdat section without leader and unassociated").
+        if sym.flags.is_comdat() {
+            if let WriteSymbolSection::Section(section_id) = sym_section {
+                out.section_symbol(section_id);
+            }
+        }
         let sid = out.add_symbol(Symbol {
             name: sym.name.as_bytes().to_vec(),
             value: sym.address,
@@ -346,7 +359,18 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             section: sym_section,
             flags: SymbolFlags::None,
         });
+        if sym.flags.is_comdat() {
+            if let WriteSymbolSection::Section(section_id) = sym_section {
+                comdat_groups.push((sid, section_id));
+            }
+        }
         symbol_ids.push(sid);
+    }
+
+    // Emit COMDAT groups (selectany) so duplicate definitions of these
+    // symbols fold into this copy at link time instead of colliding.
+    for (symbol, section_id) in comdat_groups {
+        out.add_comdat(Comdat { kind: ComdatKind::Any, symbol, sections: vec![section_id] });
     }
 
     // Add relocations
