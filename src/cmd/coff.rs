@@ -31,7 +31,7 @@ use crate::{
     },
     obj::{
         ObjInfo, ObjKind, ObjRelocKind, ObjSymbol, ObjSymbolFlags, ObjSymbolKind, ObjSymbolScope,
-        SymbolIndex, best_match_for_reloc,
+        SectionIndex, SymbolIndex, best_match_for_reloc,
     },
     util::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
@@ -580,6 +580,23 @@ fn load_analyze_coff(
 
     info!("Loading and analyzing COFF/PE binary");
 
+    // Apply the symbols file BEFORE analysis so every hand-named function
+    // (and any from a prior split) becomes a seed for the recursive x86
+    // disassembler. Functions reached only via indirect paths (function
+    // pointers, callbacks) are never reached from the PE entry/export seeds;
+    // without seeding them their bodies stay untraced and their outbound
+    // CALL/JMP displacements are left raw (invisible to /OPT:REF). Seeding
+    // lets the recursive pass walk each named function, mint + trace its
+    // callees, and emit the cross-unit relocations.
+    let symbols_cache = if let Some(symbols_path) = &module_config.symbols {
+        let symbols_path = symbols_path.with_encoding();
+        let cache = apply_symbols_file(&symbols_path, &mut obj)?;
+        dep.push(symbols_path);
+        cache
+    } else {
+        None
+    };
+
     // Discover functions and rel32 relocations by scanning code.
     // Returns size data to be applied after RTTI runs.
     let size_data = analyze_x86_functions(&mut obj)?;
@@ -609,14 +626,51 @@ fn load_analyze_coff(
         None
     };
 
-    let symbols_cache = if let Some(symbols_path) = &module_config.symbols {
-        let symbols_path = symbols_path.with_encoding();
-        let cache = apply_symbols_file(&symbols_path, &mut obj)?;
-        dep.push(symbols_path);
-        cache
-    } else {
-        None
-    };
+    // Reconcile relocations against C translation-unit scoping. A rel32 whose
+    // target is a *local* (static) symbol cannot be referenced from a different
+    // unit — a static symbol is only visible within its own translation unit.
+    // The linear sweep (and other passes) recover such references optimistically,
+    // before symbol scopes and splits are known; drop any that turn out to be
+    // cross-unit, leaving the original raw fixed-address displacement exactly as
+    // the original linker resolved the call.
+    {
+        // Unit name covering `addr` in `sec_idx`, if any split contains it.
+        let unit_at = |obj: &ObjInfo, sec_idx: SectionIndex, addr: u32| -> Option<String> {
+            obj.sections[sec_idx]
+                .splits
+                .for_range(..=addr)
+                .next_back()
+                .filter(|(_, split)| split.end > addr)
+                .map(|(_, split)| split.unit.clone())
+        };
+        let mut to_remove: Vec<(SectionIndex, u32)> = Vec::new();
+        for (sec_idx, section) in obj.sections.iter() {
+            for (reloc_addr, reloc) in section.relocations.iter() {
+                if reloc.kind != ObjRelocKind::X86Rel32 || reloc.target_symbol >= obj.symbols.count()
+                {
+                    continue;
+                }
+                let sym = &obj.symbols[reloc.target_symbol];
+                if !sym.flags.is_local() {
+                    continue;
+                }
+                let tgt_sec = match sym.section {
+                    Some(s) => s,
+                    None => continue,
+                };
+                if unit_at(&obj, sec_idx, reloc_addr) != unit_at(&obj, tgt_sec, sym.address as u32) {
+                    to_remove.push((sec_idx, reloc_addr));
+                }
+            }
+        }
+        let dropped = to_remove.len();
+        for (sec_idx, addr) in to_remove {
+            obj.sections[sec_idx].relocations.remove(addr);
+        }
+        if dropped > 0 {
+            info!("{}: dropped {dropped} cross-unit relocation(s) to local (static) symbols", obj.name);
+        }
+    }
 
     // Apply block relocations from config
     for reloc in &module_config.block_relocations {

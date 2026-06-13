@@ -349,11 +349,28 @@ pub fn check_signatures_x86(
 /// size/flags, and rename any callees identified by the signature's relocation
 /// table using the x86 relocations already present in the object
 /// (populated by `analyze_x86_functions`).
+/// Returns `true` if `va` falls strictly inside the body of a size-known
+/// Function symbol in `sec`. A signature match here would contradict an
+/// authoritative (e.g. symbols.txt) function declaration; skip it.
+fn inside_size_known_function(obj: &ObjInfo, sec: SectionIndex, va: u32) -> bool {
+    obj.symbols.for_section_range(sec, ..=va).any(|(_, s)| {
+        s.kind == ObjSymbolKind::Function
+            && s.size_known
+            && (s.address as u32) < va
+            && va < (s.address as u32).wrapping_add(s.size as u32)
+    })
+}
+
 pub fn apply_signature_x86(
     obj: &mut ObjInfo,
     addr: SectionAddress,
     sig: &FunctionSignature,
 ) -> Result<()> {
+    // Don't let a signature place a function inside the body of an existing
+    // size-known function — symbols.txt is authoritative over signature guesses.
+    if inside_size_known_function(obj, addr.section, addr.address) {
+        return Ok(());
+    }
     let in_symbol = &sig.symbols[sig.symbol as usize];
     let sym_idx = apply_symbol(obj, addr, in_symbol)?;
     // Don't trust signature sizes in a PE — the linker layout may differ from
@@ -379,6 +396,11 @@ pub fn apply_signature_x86(
         }
         let target_va = (obj.symbols[target_sym_idx].address as i64 + addend) as u32;
         let Some(target_sec) = obj.symbols[target_sym_idx].section else { continue };
+        // Likewise don't name a callee that lands inside an existing size-known
+        // function body.
+        if inside_size_known_function(obj, target_sec, target_va) {
+            continue;
+        }
         let callee_idx = apply_symbol(obj, SectionAddress::new(target_sec, target_va), sig_symbol)?;
         // Same: clear size_known for callees.
         let callee = obj.symbols[callee_idx].clone();

@@ -308,6 +308,13 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
     // (leader SymbolId, SectionId) for each symbol flagged comdat, emitted as
     // selectany COMDAT groups after all symbols are added.
     let mut comdat_groups: Vec<(SymbolId, SectionId)> = Vec::new();
+    // Dedup defined symbols that share an exact name within this object (e.g. a
+    // `label` and a `function` emitted at the same vtable-slot address). Two
+    // external definitions of one name in one object collide at link time;
+    // emit the first and point later duplicates at the same SymbolId so any
+    // relocations against them still resolve.
+    let mut defined_by_name: std::collections::HashMap<Vec<u8>, SymbolId> =
+        std::collections::HashMap::new();
     for (_, sym) in obj.symbols.iter() {
         let sym_section = match sym.section {
             Some(sec_idx) => match section_ids.get(sec_idx as usize).copied().flatten() {
@@ -340,6 +347,18 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             // (function) so they are accepted as code labels.
             ObjSymbolKind::Unknown => SymbolKind::Text,
         };
+        // Skip a duplicate *defined* symbol with an identical name already
+        // emitted in this object; reuse the existing SymbolId for its index.
+        if matches!(sym_section, WriteSymbolSection::Section(_))
+            && !sym.flags.is_comdat()
+            && !sym.name.is_empty()
+        {
+            if let Some(&existing) = defined_by_name.get(sym.name.as_bytes()) {
+                symbol_ids.push(existing);
+                continue;
+            }
+        }
+
         // The COMDAT section symbol (which carries the selection aux) must
         // precede the leader symbol in the symbol table, or lld defers the
         // leader, never resolves the pending comdat, and silently discards
@@ -363,6 +382,9 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             if let WriteSymbolSection::Section(section_id) = sym_section {
                 comdat_groups.push((sid, section_id));
             }
+        }
+        if matches!(sym_section, WriteSymbolSection::Section(_)) && !sym.name.is_empty() {
+            defined_by_name.entry(sym.name.as_bytes().to_vec()).or_insert(sid);
         }
         symbol_ids.push(sid);
     }

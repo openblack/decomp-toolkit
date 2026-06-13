@@ -141,6 +141,14 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                 continue;
             }
 
+            // Likewise skip an address that falls strictly inside the body of a
+            // size-known function (e.g. a data-section pointer into the middle of
+            // a known function). Minting a sub-entry here would split that
+            // function and conflict with its declared size.
+            if inside_known_function(obj, fn_sec_idx, fn_va) {
+                continue;
+            }
+
             // Ensure a Function symbol exists at this entry.
             if obj
                 .symbols
@@ -236,28 +244,36 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                                 continue;
                             }
                             if let Some((tgt_sec, _)) = find_code(target) {
-                                // Ensure the callee has a Function symbol now so the
-                                // relocation can reference it directly (no lbl_ needed).
-                                if obj
-                                    .symbols
-                                    .kind_at_section_address(
-                                        tgt_sec,
-                                        target,
-                                        ObjSymbolKind::Function,
-                                    )?
-                                    .is_none()
-                                {
-                                    obj.symbols.add_direct(ObjSymbol {
-                                        name: format!("fn_{:08X}", target),
-                                        address: target as u64,
-                                        section: Some(tgt_sec),
-                                        kind: ObjSymbolKind::Function,
-                                        flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
-                                        ..Default::default()
-                                    })?;
-                                    fn_new_count += 1;
+                                // A CALL whose target lands inside an already-known
+                                // function's body is a reference into that function,
+                                // not a new entry: don't mint a sub-function or trace
+                                // it (the function is traced from its own entry), but
+                                // still emit the relocation (resolves to the containing
+                                // function + addend).
+                                if !inside_known_function(obj, tgt_sec, target) {
+                                    // Ensure the callee has a Function symbol now so the
+                                    // relocation can reference it directly (no lbl_ needed).
+                                    if obj
+                                        .symbols
+                                        .kind_at_section_address(
+                                            tgt_sec,
+                                            target,
+                                            ObjSymbolKind::Function,
+                                        )?
+                                        .is_none()
+                                    {
+                                        obj.symbols.add_direct(ObjSymbol {
+                                            name: format!("fn_{:08X}", target),
+                                            address: target as u64,
+                                            section: Some(tgt_sec),
+                                            kind: ObjSymbolKind::Function,
+                                            flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
+                                            ..Default::default()
+                                        })?;
+                                        fn_new_count += 1;
+                                    }
+                                    enqueue((tgt_sec, target), &mut pending);
                                 }
-                                enqueue((tgt_sec, target), &mut pending);
                                 add_rel32(
                                     obj,
                                     sec_idx,
@@ -297,7 +313,21 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                                                 ObjSymbolKind::Function,
                                             )?
                                             .is_some();
-                                    if is_tail_call {
+                                    if is_tail_call && inside_known_function(obj, tgt_sec, target)
+                                    {
+                                        // Tail JMP into the body of a known function:
+                                        // emit the reference (resolves to the containing
+                                        // function + addend) but don't mint a sub-entry
+                                        // or follow it.
+                                        add_rel32(
+                                            obj,
+                                            sec_idx,
+                                            operand_va,
+                                            tgt_sec,
+                                            target,
+                                            &mut rel_count,
+                                        )?;
+                                    } else if is_tail_call {
                                         if obj
                                             .symbols
                                             .kind_at_section_address(
@@ -433,6 +463,120 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
             // Loop continues — pending may now be non-empty again.
         } else {
             break;
+        }
+    }
+
+    // Phase 3: linear sweep of code bytes the flow-based disassembler never
+    // entered (un-seeded function bodies, indirect-only blocks). These gaps
+    // still contain CALL/JMP rel32 instructions whose displacements were left
+    // raw — invisible to the linker's reference graph (`/OPT:REF`).
+    //
+    // Data-in-code (jump tables, embedded constants in .text) is the false-
+    // positive hazard: linear-decoding non-instruction bytes yields garbage
+    // that may look like a `call rel32`. Two guards make a bad relocation
+    // astronomically unlikely:
+    //   1. A relocation is emitted only when the branch target lands *exactly*
+    //      on an already-known Function symbol. A coincidental garbage decode
+    //      whose displacement happens to hit a real function entry is rare.
+    //   2. No new symbols are minted here (unlike phases 1-2): the sweep only
+    //      connects existing entries, never invents targets from garbage.
+    // The byte-exact link check is the ultimate backstop — any wrong reloc
+    // perturbs a displacement and breaks the rebuild.
+    {
+        let mut sweep_count = 0u32;
+        // Snapshot existing function-entry VAs per section so the sweep does
+        // not react to entries it would add (it adds none, but keep it pure).
+        for (sec_idx, base, data) in &code_snap {
+            let sec_idx = *sec_idx;
+            let base = *base as u32;
+            let sec_end = base + data.len() as u32;
+            let mut pc = base;
+            while pc < sec_end {
+                // If pc is inside an already-decoded span, trust it and skip to
+                // its end — those relocations were emitted in phase 1.
+                if let Some((&(_s, start), &end)) = decoded_spans
+                    .range((
+                        std::ops::Bound::Included((sec_idx, 0u32)),
+                        std::ops::Bound::Included((sec_idx, pc)),
+                    ))
+                    .next_back()
+                {
+                    if start <= pc && pc < end {
+                        pc = end;
+                        continue;
+                    }
+                }
+
+                let off = (pc - base) as usize;
+                let mut decoder =
+                    Decoder::with_ip(32, &data[off..], pc as u64, DecoderOptions::NONE);
+                let mut instr = Instruction::default();
+                decoder.decode_out(&mut instr);
+                if instr.is_invalid() {
+                    // Likely data or a misaligned start — resync one byte.
+                    pc += 1;
+                    continue;
+                }
+                let ins_len = instr.len() as u32;
+                // NOTE: deliberately do not record this span in `decoded_spans`.
+                // That map drives function-size capping and the stale-symbol
+                // downgrade pass; a speculative linear decode across a gap must
+                // not influence either, or it shrinks/merges real functions and
+                // explodes downstream diffing. The sweep only *reads* the map to
+                // skip flow-decoded regions.
+
+                // Only CALL/JMP with a 4-byte rel32 displacement field carry a
+                // cross-unit reference that needs a relocation.
+                let is_call = instr.code() == Code::Call_rel32_32;
+                let is_jmp = instr.code() == Code::Jmp_rel32_32;
+                if (is_call || is_jmp) && instr.op0_kind() == OpKind::NearBranch32 {
+                    let target = instr.near_branch32();
+                    let operand_va = pc + ins_len - 4; // rel32 is the last 4 bytes
+                    if let Some((tgt_sec, _)) = find_code(target) {
+                        let already = obj.sections[sec_idx].relocations.at(operand_va).is_some();
+                        // Only symbolicate a call to a target that already has a
+                        // Function symbol, and whose scope is *not* local. A static
+                        // (local-scope) C function is owned by its translation unit
+                        // and cannot satisfy a cross-unit external reference — forcing
+                        // a symbolic reloc to one would leave the link undefined.
+                        // Such call sites stay as raw fixed-address displacements,
+                        // exactly as the original linker resolved them.
+                        let emit = obj
+                            .symbols
+                            .kind_at_section_address(tgt_sec, target, ObjSymbolKind::Function)?
+                            .is_some_and(|(_, sym)| !sym.flags.is_local());
+                        // Never place a relocation whose 4-byte field starts exactly
+                        // on an existing Function symbol: a real CALL/JMP operand is
+                        // mid-instruction and never coincides with a function entry,
+                        // so this only happens at a spurious mid-instruction symbol
+                        // (the operand byte mislabeled as a function). The reloc's
+                        // 4-byte field would overrun that tiny symbol, and downstream
+                        // tools that scan per-symbol (objdiff) loop forever on it.
+                        let on_symbol_start = obj
+                            .symbols
+                            .kind_at_section_address(sec_idx, operand_va, ObjSymbolKind::Function)?
+                            .is_some();
+                        if !already && emit && !on_symbol_start {
+                            add_rel32(
+                                obj,
+                                sec_idx,
+                                operand_va,
+                                tgt_sec,
+                                target,
+                                &mut sweep_count,
+                            )?;
+                        }
+                    }
+                }
+                pc += ins_len;
+            }
+        }
+        if sweep_count > 0 {
+            log::info!(
+                "{}: x86 analysis: linear sweep recovered {sweep_count} cross-unit rel32 \
+                 relocations",
+                obj.name
+            );
         }
     }
 
@@ -622,6 +766,23 @@ fn is_within_decoded_span(
     }
 }
 
+/// Returns `true` if `va` falls strictly inside the body of a size-known
+/// Function symbol (start < va < start+size). Used to avoid minting a spurious
+/// sub-function entry at a CALL/JMP target that lands in the middle of an
+/// already-known function — which would split that function and conflict with
+/// its declared size. The reference itself is still emitted as a relocation
+/// against the containing function (with an addend).
+fn inside_known_function(obj: &ObjInfo, sec: SectionIndex, va: u32) -> bool {
+    obj.symbols
+        .for_section_range(sec, ..=va)
+        .any(|(_, s)| {
+            s.kind == ObjSymbolKind::Function
+                && s.size_known
+                && (s.address as u32) < va
+                && va < (s.address as u32).wrapping_add(s.size as u32)
+        })
+}
+
 /// Returns `true` if `va` decodes as a valid (non-invalid) instruction.
 fn decode_valid(va: u32, code_snap: &[(SectionIndex, u64, Vec<u8>)]) -> bool {
     let Some((_, base, data)) = code_snap.iter().find(|(_, base, data)| {
@@ -654,16 +815,34 @@ fn add_rel32(
         match obj.symbols.for_relocation(tgt_addr, ObjRelocKind::X86Rel32)? {
             Some((sym_idx, sym)) => (sym_idx, target_va as i64 - sym.address as i64),
             None => {
-                // Should not happen — callers always ensure a Function symbol exists first.
-                let sym_idx = obj.symbols.add_direct(ObjSymbol {
-                    name: format!("fn_{:08X}", target_va),
-                    address: target_va as u64,
-                    section: Some(tgt_sec),
-                    kind: ObjSymbolKind::Function,
-                    flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
-                    ..Default::default()
-                })?;
-                (sym_idx, 0)
+                // If the target lands inside the body of a size-known function,
+                // reference that function with an addend rather than minting a
+                // spurious sub-entry (which would split the function and conflict
+                // with its declared size).
+                let containing = obj
+                    .symbols
+                    .for_section_range(tgt_sec, ..=target_va)
+                    .filter(|(_, s)| {
+                        s.kind == ObjSymbolKind::Function
+                            && s.size_known
+                            && (s.address as u32) < target_va
+                            && target_va < (s.address as u32).wrapping_add(s.size as u32)
+                    })
+                    .next_back()
+                    .map(|(idx, s)| (idx, s.address));
+                if let Some((sym_idx, sym_addr)) = containing {
+                    (sym_idx, target_va as i64 - sym_addr as i64)
+                } else {
+                    let sym_idx = obj.symbols.add_direct(ObjSymbol {
+                        name: format!("fn_{:08X}", target_va),
+                        address: target_va as u64,
+                        section: Some(tgt_sec),
+                        kind: ObjSymbolKind::Function,
+                        flags: ObjSymbolFlagSet(ObjSymbolFlags::none()),
+                        ..Default::default()
+                    })?;
+                    (sym_idx, 0)
+                }
             }
         };
     obj.sections[src_sec]
