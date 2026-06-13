@@ -949,7 +949,7 @@ fn split_write_coff(
     let pe_default = PeHeaderInfo::default();
     let pe = module.pe_header.as_ref().unwrap_or(&pe_default);
 
-    let args_string = generate_args_rsp(&module.obj, pe, &force_includes)?;
+    let args_string = generate_args_rsp(&module.obj, pe, &force_includes, config.dead_strip)?;
     let args_path = out_config.ldscript.with_encoding();
     write_if_changed(&args_path, args_string.as_bytes())?;
 

@@ -259,6 +259,13 @@ pub struct ProjectConfig {
     /// will be used from the disc image directly without extraction.
     #[serde(default = "bool_true", skip_serializing_if = "is_true")]
     pub extract_objects: bool,
+    /// Enable linker dead-stripping (/OPT:REF) instead of keeping every symbol
+    /// (/includeglob:* + /OPT:NOREF). Required to reproduce the original
+    /// linker's dead-code elimination when a verbatim library object (e.g.
+    /// util.obj) contributes functions the original build dropped. Safe only
+    /// when the x86 reference graph is complete (every named function traced).
+    #[serde(default, skip_serializing_if = "is_default")]
+    pub dead_strip: bool,
 }
 
 impl Default for ProjectConfig {
@@ -276,6 +283,7 @@ impl Default for ProjectConfig {
             common_start: None,
             symbols_known: false,
             fill_gaps: true,
+            dead_strip: false,
             export_all: true,
             globalize_symbols: true,
             object_base: None,

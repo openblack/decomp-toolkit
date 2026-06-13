@@ -158,12 +158,26 @@ pub fn generate_args_rsp(
     obj: &ObjInfo,
     pe: &PeHeaderInfo,
     force_includes: &[String],
+    dead_strip: bool,
 ) -> Result<String> {
     let mut lines: Vec<String> = vec![
-        "/includeglob:*".to_string(),
         "/errorlimit:0".to_string(),
         "/demangle:no".to_string(),
-        "/OPT:NOREF".to_string(),
+    ];
+    if dead_strip && !pe.is_dll {
+        // Reproduce the original linker's dead-code elimination: drop
+        // unreferenced functions (e.g. the parts of a verbatim library object
+        // the original build didn't use). Safe only when the x86 reference
+        // graph is complete (every named function is traced). Applied to the
+        // main image only; the DLLs keep every symbol.
+        lines.push("/OPT:REF".to_string());
+    } else {
+        // Keep every symbol: force-include all and disable dead-stripping so
+        // the byte-exact layout is preserved.
+        lines.push("/includeglob:*".to_string());
+        lines.push("/OPT:NOREF".to_string());
+    }
+    lines.extend([
         "/OPT:NOICF".to_string(),
         "/NODEFAULTLIB".to_string(),
         format!("/BASE:{:#x}", pe.image_base),
@@ -171,7 +185,7 @@ pub fn generate_args_rsp(
         format!("/STACK:{:#x},{:#x}", pe.stack_reserve, pe.stack_commit),
         format!("/HEAP:{:#x},{:#x}", pe.heap_reserve, pe.heap_commit),
         format!("/VERSION:{}.{}", pe.major_image_version, pe.minor_image_version),
-    ];
+    ]);
 
     if pe.is_dll {
         lines.push("/DLL".to_string());
