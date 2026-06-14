@@ -236,6 +236,23 @@ pub struct ObjSymbol {
 
 pub type SymbolIndex = u32;
 
+/// `__imp_*` symbols name PE Import Address Table slots, which are always
+/// 4-byte data pointers. Pin their kind to Object (so a decorated import read
+/// from the symbols file can't flip to Function) and their size to 4 when
+/// unknown (so the gap-filler sees the slot as covered and doesn't mint a
+/// redundant `lbl_*_rdata_*` label over it). Both prevent symbols-file churn.
+fn normalize_imp_kind(symbol: &mut ObjSymbol) {
+    if symbol.name.starts_with("__imp_") {
+        if symbol.kind != ObjSymbolKind::Object {
+            symbol.kind = ObjSymbolKind::Object;
+        }
+        if !symbol.size_known {
+            symbol.size = 4;
+            symbol.size_known = true;
+        }
+    }
+}
+
 #[derive(Debug, Clone)]
 pub struct ObjSymbols {
     obj_kind: ObjKind,
@@ -274,7 +291,12 @@ impl ObjSymbols {
         Self { obj_kind, symbols, symbols_by_address, symbols_by_name, symbols_by_section }
     }
 
-    pub fn add(&mut self, in_symbol: ObjSymbol, replace: bool) -> Result<SymbolIndex> {
+    pub fn add(&mut self, mut in_symbol: ObjSymbol, replace: bool) -> Result<SymbolIndex> {
+        // `__imp_` IAT slots are always data pointers (Object). Pin the kind so a
+        // decorated import read from the symbols file (which may carry a stale
+        // `type:function`) can't oscillate, and so reloc resolution reliably
+        // reuses the slot instead of minting a redundant `lbl_*_rdata_*` label.
+        normalize_imp_kind(&mut in_symbol);
         let opt = if in_symbol.flags.is_stripped() {
             // Stripped symbols don't overwrite existing symbols
             None
@@ -380,7 +402,8 @@ impl ObjSymbols {
         Ok(target_symbol_idx)
     }
 
-    pub fn add_direct(&mut self, in_symbol: ObjSymbol) -> Result<SymbolIndex> {
+    pub fn add_direct(&mut self, mut in_symbol: ObjSymbol) -> Result<SymbolIndex> {
+        normalize_imp_kind(&mut in_symbol);
         let symbol_idx = self.symbols.len() as SymbolIndex;
         self.symbols_by_address.nested_push(in_symbol.address as u32, symbol_idx);
         if let Some(section_idx) = in_symbol.section {
@@ -571,7 +594,8 @@ impl ObjSymbols {
         self.iter().filter(move |(_, sym)| sym.kind == kind)
     }
 
-    pub fn replace(&mut self, index: SymbolIndex, symbol: ObjSymbol) -> Result<()> {
+    pub fn replace(&mut self, index: SymbolIndex, mut symbol: ObjSymbol) -> Result<()> {
+        normalize_imp_kind(&mut symbol);
         let symbol_ref = &mut self.symbols[index as usize];
         ensure!(symbol_ref.address == symbol.address, "Can't modify address with replace_symbol");
         ensure!(symbol_ref.section == symbol.section, "Can't modify section with replace_symbol");
