@@ -822,13 +822,12 @@ fn add_rel32(
                 let containing = obj
                     .symbols
                     .for_section_range(tgt_sec, ..=target_va)
-                    .filter(|(_, s)| {
+                    .rfind(|(_, s)| {
                         s.kind == ObjSymbolKind::Function
                             && s.size_known
                             && (s.address as u32) < target_va
                             && target_va < (s.address as u32).wrapping_add(s.size as u32)
                     })
-                    .next_back()
                     .map(|(idx, s)| (idx, s.address));
                 if let Some((sym_idx, sym_addr)) = containing {
                     (sym_idx, target_va as i64 - sym_addr as i64)
