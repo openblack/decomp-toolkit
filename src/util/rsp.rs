@@ -243,22 +243,16 @@ pub fn generate_args_rsp(
 /// Contains one object file path per line, in link order.
 /// Usage: `lld-link @args.rsp @objs.rsp /OUT:foo.exe`
 pub fn generate_objs_rsp(obj: &ObjInfo, obj_dir: &Utf8UnixPathBuf) -> Result<String> {
-    // Sort units by their lowest address so link order matches the original.
-    let mut unit_min_addr: HashMap<&str, u64> = HashMap::new();
-    for (_, section) in obj.sections.iter() {
-        for (addr, split) in section.splits.iter() {
-            let entry = unit_min_addr.entry(split.unit.as_str()).or_insert(u64::MAX);
-            *entry = (*entry).min(section.address + addr as u64);
-        }
-    }
-
-    let mut ordered_units: Vec<&str> = obj.link_order.iter().map(|u| u.name.as_str()).collect();
-    ordered_units.sort_by_key(|u| unit_min_addr.get(u).copied().unwrap_or(u64::MAX));
-
-    let lines: Vec<String> = ordered_units
-        .into_iter()
-        .map(|unit_name| {
-            let obj_path: Utf8UnixPathBuf = obj_path_for_unit(unit_name).with_encoding();
+    // `obj.link_order` is already resolved into the correct link order by
+    // resolve_link_order (topological over the per-section dependency graph,
+    // with address-ordered tie-breaking). Emit it verbatim — re-sorting here by
+    // each unit's minimum address would discard the dependency order and
+    // misplace text-less gap units (.bss/.data-only fillers).
+    let lines: Vec<String> = obj
+        .link_order
+        .iter()
+        .map(|unit| {
+            let obj_path: Utf8UnixPathBuf = obj_path_for_unit(unit.name.as_str()).with_encoding();
             obj_dir.join(&obj_path).to_string()
         })
         .collect();
