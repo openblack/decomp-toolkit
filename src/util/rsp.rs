@@ -216,12 +216,25 @@ pub fn generate_args_rsp(
     }
 
     // Per-section permission flags
+    let mut merged_crt = false;
     for (_, section) in obj.sections.iter() {
         lines.push(format!("/SECTION:{},{}", section.name, pe.section_flags_str(&section.name)));
-        // lld-link merges .idata into .rdata by default; keep it separate when the
-        // original image did, by redirecting the merge to itself.
+        // The default merge rule for .idata is into .rdata; keep it separate when
+        // the original image did, by redirecting the merge to itself.
         if section.name == ".idata" {
             lines.push("/MERGE:.idata=.idata".to_string());
+        }
+        // No default merge rule exists for ".CRT$XIA"/".CRT$XIC"/... so without
+        // one a standalone ".CRT" output section gets created instead of keeping
+        // the bytes in their parent section, exactly as CRT's own cinitexe.c
+        // requests via `#pragma comment(linker, "/merge:.CRT=.data")`. These
+        // sub-regions don't get their own /SECTION entry above (they share the
+        // parent section's bytes), so check them here too.
+        if !merged_crt
+            && section.sub_regions.iter().any(|r| r.name.split('$').next() == Some(".CRT"))
+        {
+            lines.push(format!("/MERGE:.CRT={}", section.name));
+            merged_crt = true;
         }
     }
 
