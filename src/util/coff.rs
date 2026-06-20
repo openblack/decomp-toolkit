@@ -461,8 +461,13 @@ const IMAGE_REL_BASED_HIGHLOW: u16 = 3;
 pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> {
     let reloc_data = {
         if obj.pe_reloc_data.is_empty() {
-            log::debug!("No .reloc data, skipping base relocation import");
-            return Ok(());
+            // A /FIXED image strips the .reloc table, so there are no base
+            // relocations to import. Recover abs32 relocations by scanning data
+            // for pointer words instead — otherwise verbatim data carries no
+            // cross-references and /OPT:REF dead-strips sections the original
+            // link kept (e.g. RTTI descriptors and the type_info they point at).
+            log::debug!("No .reloc data; reconstructing abs32 relocations by data scan");
+            return reconstruct_abs32_relocations_by_scan(obj);
         }
         obj.pe_reloc_data.clone()
     };
@@ -534,6 +539,86 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
         block_off += block_size as usize;
     }
     log::info!("Applied {count} abs32 relocations from .reloc section");
+    Ok(())
+}
+
+/// Reconstruct abs32 relocations for a `/FIXED` image (whose `.reloc` table has
+/// been stripped) by scanning data sections for 4-byte-aligned pointer words.
+///
+/// This is the COFF analogue of the DOL/PPC `Tracker::process_data` pass: every
+/// data word that points into a section is treated as a pointer and recovered as
+/// an abs32 relocation, scope-agnostically. The linked bytes are unchanged (an
+/// abs32 reloc resolves to the same absolute value the raw word already holds),
+/// but the recovered references let `/OPT:REF` keep the same sections the
+/// original link kept. Linkage validity — cross-unit references to file-local
+/// (static) symbols, which can't be named across units — is handled afterwards
+/// by the reconciliation pass in `cmd/coff.rs`, exactly as for rel32; dropped
+/// relocs simply revert to the raw fixed-address word.
+fn reconstruct_abs32_relocations_by_scan(obj: &mut ObjInfo) -> Result<()> {
+    // First pass: collect candidate pointer words (immutable borrow of sections).
+    let mut candidates: Vec<(ObjSectionIndex, u32, u32)> = Vec::new();
+    for (src_idx, sec) in obj.sections.iter() {
+        if matches!(sec.kind, ObjSectionKind::Bss | ObjSectionKind::Code) {
+            continue;
+        }
+        let base = sec.address as u32;
+        let mut off = (base.wrapping_neg() & 3) as usize; // align first word to 4
+        while off + 4 <= sec.data.len() {
+            let target_va = u32::from_le_bytes(sec.data[off..off + 4].try_into().unwrap());
+            if target_va != 0 {
+                if let Ok((_, tsec)) = obj.sections.at_address(target_va) {
+                    // References to code are always aligned; an unaligned hit is
+                    // an integer that merely looks in-range, not a pointer.
+                    if !(tsec.kind == ObjSectionKind::Code && target_va & 3 != 0) {
+                        candidates.push((src_idx, base + off as u32, target_va));
+                    }
+                }
+            }
+            off += 4;
+        }
+    }
+
+    // Second pass: resolve each word to an *existing* symbol and insert the
+    // relocation. No scope filter. Unlike the .reloc path we do NOT synthesize
+    // labels for unknown targets: a data scan produces far more false positives
+    // (integers that merely look in-range), and a spurious label gets auto-sized
+    // to the next symbol, bisecting a split. Words with no existing symbol are
+    // left as the raw fixed-address value — correct bytes, just not symbolic.
+    let mut count = 0u32;
+    for (src_idx, reloc_va, target_va) in candidates {
+        if obj.sections[src_idx].relocations.at(reloc_va).is_some() {
+            continue;
+        }
+        // Skip IAT slots: the linker regenerates the import address table.
+        if obj
+            .symbols
+            .at_section_address(src_idx, reloc_va)
+            .any(|(_, s)| s.name.starts_with("__imp_"))
+        {
+            continue;
+        }
+        let Ok((tgt_idx, _)) = obj.sections.at_address(target_va) else { continue };
+        let tgt_addr = SectionAddress::new(tgt_idx, target_va);
+        let (target_symbol, addend) =
+            match obj.symbols.for_relocation(tgt_addr, ObjRelocKind::X86Abs32)? {
+                Some((sym_idx, sym)) => (sym_idx, target_va as i64 - sym.address as i64),
+                None => continue,
+            };
+        obj.sections[src_idx]
+            .relocations
+            .insert(
+                reloc_va,
+                ObjReloc {
+                    kind: ObjRelocKind::X86Abs32,
+                    target_symbol,
+                    addend,
+                    module: None,
+                },
+            )
+            .ok();
+        count += 1;
+    }
+    log::info!("Reconstructed {count} abs32 relocations by data scan (FIXED image)");
     Ok(())
 }
 

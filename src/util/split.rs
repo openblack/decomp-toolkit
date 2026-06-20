@@ -885,6 +885,50 @@ fn update_common_splits(obj: &mut ObjInfo, common_start: Option<u32>) -> Result<
 }
 
 /// Final validation of splits.
+/// Truncate auto-generated symbols (`lbl_`/`gap_`/`pad_`) so they don't cross a
+/// translation-unit (split) boundary. A previous run may have written such a
+/// label with a size that's since become invalid because a new split (e.g. a
+/// lib object extracted between runs) was introduced inside its range. These
+/// labels carry no semantic size, so shrink them to the boundary instead of
+/// failing validation.
+fn truncate_autogen_symbols_at_splits(obj: &mut ObjInfo) -> Result<()> {
+    let mut fixes: Vec<(SymbolIndex, u64)> = Vec::new();
+    for (section_index, section) in obj.sections.iter() {
+        for (idx, symbol) in obj.symbols.for_section(section_index) {
+            if !symbol.size_known || symbol.size == 0 {
+                continue;
+            }
+            if !(symbol.name.starts_with("lbl_")
+                || symbol.name.starts_with("gap_")
+                || symbol.name.starts_with("pad_"))
+            {
+                continue;
+            }
+            let start = symbol.address as u32;
+            let end = start + symbol.size as u32;
+            let mut boundary = end;
+            if let Some((_, split)) =
+                section.splits.for_range(..=start).next_back().filter(|(_, s)| s.end > start)
+            {
+                boundary = boundary.min(split.end);
+            }
+            if let Some((next_start, _)) = section.splits.for_range(start + 1..).next() {
+                boundary = boundary.min(next_start);
+            }
+            if boundary < end {
+                fixes.push((idx, (boundary - start) as u64));
+            }
+        }
+    }
+    for (idx, new_size) in fixes {
+        let mut sym = obj.symbols[idx].clone();
+        log::debug!("Truncating {} to size {:#X} at split boundary", sym.name, new_size);
+        sym.size = new_size;
+        obj.symbols.replace(idx, sym)?;
+    }
+    Ok(())
+}
+
 fn validate_splits(obj: &ObjInfo) -> Result<()> {
     let mut last_split_end = SectionAddress::new(0, 0);
     for (section_index, section, addr, split) in obj.sections.all_splits() {
@@ -1056,6 +1100,24 @@ fn add_padding_symbols(obj: &mut ObjInfo) -> Result<()> {
 
             // Check if symbol is missing data between the end of the symbol and the next symbol
             let symbol_end = (symbol.address + symbol.size) as u32;
+            // A generated gap/label symbol must not cross a translation-unit
+            // (split) boundary, or it would bisect that split on extraction
+            // (split_within_symbol). Cap the fill at the nearest split boundary
+            // after this symbol; the remainder belongs to the next unit, which
+            // provides its own coverage.
+            let next_address = {
+                let here = symbol.address as u32;
+                let mut b = next_address;
+                if let Some((_, split)) =
+                    section.splits.for_range(..=here).next_back().filter(|(_, s)| s.end > here)
+                {
+                    b = b.min(split.end);
+                }
+                if let Some((start, _)) = section.splits.for_range(here + 1..).next() {
+                    b = b.min(start);
+                }
+                b.max(symbol_end)
+            };
             if !matches!(section.kind, ObjSectionKind::Code | ObjSectionKind::Bss)
                 && next_address > symbol_end
             {
@@ -1301,6 +1363,10 @@ pub fn update_splits(obj: &mut ObjInfo, common_start: Option<u32>, fill_gaps: bo
 
     // Update common BSS splits
     update_common_splits(obj, common_start)?;
+
+    // Shrink stale auto-generated labels that now cross a split boundary, so
+    // they don't fail validation below.
+    truncate_autogen_symbols_at_splits(obj)?;
 
     // Ensure splits don't overlap symbols or each other
     validate_splits(obj)?;

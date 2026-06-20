@@ -626,52 +626,6 @@ fn load_analyze_coff(
         None
     };
 
-    // Reconcile relocations against C translation-unit scoping. A rel32 whose
-    // target is a *local* (static) symbol cannot be referenced from a different
-    // unit — a static symbol is only visible within its own translation unit.
-    // The linear sweep (and other passes) recover such references optimistically,
-    // before symbol scopes and splits are known; drop any that turn out to be
-    // cross-unit, leaving the original raw fixed-address displacement exactly as
-    // the original linker resolved the call.
-    {
-        // Unit name covering `addr` in `sec_idx`, if any split contains it.
-        let unit_at = |obj: &ObjInfo, sec_idx: SectionIndex, addr: u32| -> Option<String> {
-            obj.sections[sec_idx]
-                .splits
-                .for_range(..=addr)
-                .next_back()
-                .filter(|(_, split)| split.end > addr)
-                .map(|(_, split)| split.unit.clone())
-        };
-        let mut to_remove: Vec<(SectionIndex, u32)> = Vec::new();
-        for (sec_idx, section) in obj.sections.iter() {
-            for (reloc_addr, reloc) in section.relocations.iter() {
-                if reloc.kind != ObjRelocKind::X86Rel32 || reloc.target_symbol >= obj.symbols.count()
-                {
-                    continue;
-                }
-                let sym = &obj.symbols[reloc.target_symbol];
-                if !sym.flags.is_local() {
-                    continue;
-                }
-                let tgt_sec = match sym.section {
-                    Some(s) => s,
-                    None => continue,
-                };
-                if unit_at(&obj, sec_idx, reloc_addr) != unit_at(&obj, tgt_sec, sym.address as u32) {
-                    to_remove.push((sec_idx, reloc_addr));
-                }
-            }
-        }
-        let dropped = to_remove.len();
-        for (sec_idx, addr) in to_remove {
-            obj.sections[sec_idx].relocations.remove(addr);
-        }
-        if dropped > 0 {
-            info!("{}: dropped {dropped} cross-unit relocation(s) to local (static) symbols", obj.name);
-        }
-    }
-
     // Apply block relocations from config
     for reloc in &module_config.block_relocations {
         let end = reloc.end.as_ref().map(|end| end.resolve(&obj)).transpose()?;
@@ -722,6 +676,61 @@ fn load_analyze_coff(
     // symbols file), keeping interior pointers as addends instead of new labels.
     if let Some(base) = image_base {
         apply_base_relocations(&mut obj, base)?;
+    }
+
+    // Reconcile relocations against C translation-unit scoping. Runs AFTER reloc
+    // reconstruction so it also sees the abs32 data relocations recovered above.
+    // A rel32/abs32 whose target can't be referenced across units — a file-local
+    // (static) symbol, or an auto-generated name (fn_/lbl_/…) that a compiled
+    // unit exports under its real source name rather than dtk's placeholder — is
+    // dropped, leaving the original raw fixed-address word exactly as the
+    // original linker resolved it. A verbatim unit's auto-label simply reverts to
+    // its raw value; a compiled unit's would otherwise link as `undefined`.
+    {
+        // Only reconcile abs32 relocations that we *reconstructed* — i.e. for a
+        // /FIXED image with no .reloc table. When a .reloc table is present (e.g.
+        // the PE DLL modules) its abs32 relocations are authoritative and were
+        // imported verbatim by apply_base_relocations; dropping any would change
+        // the emitted base relocation table and break the byte match. rel32 is
+        // always reconstructed from code, so it is reconciled regardless.
+        let reconcile_abs = obj.pe_reloc_data.is_empty();
+        // Unit name covering `addr` in `sec_idx`, if any split contains it.
+        let unit_at = |obj: &ObjInfo, sec_idx: SectionIndex, addr: u32| -> Option<String> {
+            obj.sections[sec_idx]
+                .splits
+                .for_range(..=addr)
+                .next_back()
+                .filter(|(_, split)| split.end > addr)
+                .map(|(_, split)| split.unit.clone())
+        };
+        let mut to_remove: Vec<(SectionIndex, u32)> = Vec::new();
+        for (sec_idx, section) in obj.sections.iter() {
+            for (reloc_addr, reloc) in section.relocations.iter() {
+                let kind_ok = reloc.kind == ObjRelocKind::X86Rel32
+                    || (reconcile_abs && reloc.kind == ObjRelocKind::X86Abs32);
+                if !kind_ok || reloc.target_symbol >= obj.symbols.count() {
+                    continue;
+                }
+                let sym = &obj.symbols[reloc.target_symbol];
+                if !sym.flags.is_local() && !is_auto_symbol(sym) {
+                    continue;
+                }
+                let tgt_sec = match sym.section {
+                    Some(s) => s,
+                    None => continue,
+                };
+                if unit_at(&obj, sec_idx, reloc_addr) != unit_at(&obj, tgt_sec, sym.address as u32) {
+                    to_remove.push((sec_idx, reloc_addr));
+                }
+            }
+        }
+        let dropped = to_remove.len();
+        for (sec_idx, addr) in to_remove {
+            obj.sections[sec_idx].relocations.remove(addr);
+        }
+        if dropped > 0 {
+            info!("{}: dropped {dropped} cross-unit relocation(s) to non-exportable targets", obj.name);
+        }
     }
 
     Ok((obj, size_data, pe_header, dep, splits_cache, symbols_cache))

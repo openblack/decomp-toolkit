@@ -30,6 +30,21 @@ pub fn detect_objects(obj: &mut ObjInfo) -> Result<()> {
                     .for_section_range(section_index, symbol.address as u32 + 1..)
                     .next()
                     .map_or(section_end, |(_, symbol)| symbol.address as u32);
+                // Never let a guessed size cross a translation-unit (split)
+                // boundary: a symbol spanning two units bisects a split and
+                // fails extraction (`split_within_symbol`). Cap at the end of the
+                // split containing the symbol, and at the start of the next split.
+                let addr = symbol.address as u32;
+                let mut boundary = section_end;
+                if let Some((_, split)) =
+                    section.splits.for_range(..=addr).next_back().filter(|(_, s)| s.end > addr)
+                {
+                    boundary = boundary.min(split.end);
+                }
+                if let Some((next_start, _)) = section.splits.for_range(addr + 1..).next() {
+                    boundary = boundary.min(next_start);
+                }
+                let next_addr = next_addr.min(boundary);
                 let new_size = next_addr - symbol.address as u32;
                 log::debug!("Guessed {} size {:#X}", symbol.name, new_size);
                 symbol.size = match (new_size, expected_size) {
