@@ -566,10 +566,16 @@ fn reconstruct_abs32_relocations_by_scan(obj: &mut ObjInfo) -> Result<()> {
         while off + 4 <= sec.data.len() {
             let target_va = u32::from_le_bytes(sec.data[off..off + 4].try_into().unwrap());
             if target_va != 0 {
-                if let Ok((_, tsec)) = obj.sections.at_address(target_va) {
-                    // References to code are always aligned; an unaligned hit is
-                    // an integer that merely looks in-range, not a pointer.
-                    if !(tsec.kind == ObjSectionKind::Code && target_va & 3 != 0) {
+                if let Ok((tsec_idx, tsec)) = obj.sections.at_address(target_va) {
+                    // References to code are normally aligned, so an unaligned in-range
+                    // hit is usually an integer that merely looks like a pointer — unless
+                    // a real symbol is defined at exactly that address. x86 CRT routines
+                    // (e.g. __purecall) can sit at an unaligned code address and are
+                    // referenced only by vtable data words; keep those.
+                    let unaligned_code = tsec.kind == ObjSectionKind::Code && target_va & 3 != 0;
+                    if !unaligned_code
+                        || obj.symbols.at_section_address(tsec_idx, target_va).next().is_some()
+                    {
                         candidates.push((src_idx, base + off as u32, target_va));
                     }
                 }
