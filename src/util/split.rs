@@ -1790,11 +1790,8 @@ pub fn split_obj(
                     _ if start_off >= phys_len => vec![],
                     _ => section.data[start_off..end_off.min(phys_len)].to_vec(),
                 };
-                let split_kind = if in_bss_subregion {
-                    ObjSectionKind::Bss
-                } else if data.is_empty()
-                    && section.kind != ObjSectionKind::Bss
-                    && end_off > phys_len
+                let split_kind = if in_bss_subregion
+                    || (data.is_empty() && section.kind != ObjSectionKind::Bss && end_off > phys_len)
                 {
                     ObjSectionKind::Bss
                 } else {
