@@ -1464,6 +1464,24 @@ fn resolve_link_order(obj: &ObjInfo) -> Result<Vec<ObjUnit>> {
                 if has_tail && (a_addr as u64) < init_end && (b_addr as u64) >= init_end {
                     cross_boundary.insert((a_index, b_index));
                 }
+                // Adjacency across a `$`-suffixed sub-section boundary (e.g.
+                // .CRT$XCA -> .CRT$XCU) is layout-spurious: lld orders these
+                // merged sub-sections by their `$` suffix, not by object order,
+                // so the address adjacency is not a real link-order constraint.
+                // Prefer breaking such edges over real same-sub-section ones
+                // (e.g. the .CRT$XCU init-pointer order) when resolving cycles.
+                let sub = |addr: u32| {
+                    section
+                        .sub_regions
+                        .iter()
+                        .find(|r| addr >= r.start && addr < r.end)
+                        .map(|r| r.name.as_str())
+                };
+                if let (Some(na), Some(nb)) = (sub(a_addr), sub(b_addr))
+                    && na != nb
+                {
+                    cross_boundary.insert((a_index, b_index));
+                }
             }
         }
     }
