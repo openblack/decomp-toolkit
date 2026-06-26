@@ -495,7 +495,7 @@ where
                 w,
                 "\t{:<11} type:{} vaddr:{:#010X} end:{:#010X}",
                 region.name,
-                section_kind_to_str(section.kind),
+                section_kind_to_str(region.kind.unwrap_or(section.kind)),
                 region.start,
                 region.end,
             )?;
@@ -766,6 +766,7 @@ where
                         start,
                         end: stop,
                         name: name.clone(),
+                        kind,
                     });
                     continue;
                 }

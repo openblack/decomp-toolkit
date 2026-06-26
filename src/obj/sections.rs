@@ -29,6 +29,12 @@ pub struct ObjSubRegion {
     pub start: u32,
     pub end: u32,
     pub name: String,
+    /// Optional section-kind override. A `type:bss` logical sub-region marks an
+    /// uninitialized range that physically falls inside an initialized PE
+    /// section (e.g. the head of `.bss` caught in `.data`'s file-aligned last
+    /// page). Units carved here are emitted as uninitialized so the linker
+    /// regenerates the zero padding via file alignment, matching the original.
+    pub kind: Option<ObjSectionKind>,
 }
 
 #[derive(Debug, Clone)]
