@@ -25,6 +25,12 @@ pub struct X86FunctionSizeData {
     fn_tables: BTreeMap<(SectionIndex, u32), Vec<u32>>,
     /// Snapshot of code sections (idx, base, data).
     code_snap: Vec<(SectionIndex, u64, Vec<u8>)>,
+    /// Candidate abs32 references (src_section, operand_va, target_va) found in
+    /// instruction immediate/displacement operands during phase-1. Resolved into
+    /// relocations *after* the size passes (see `resolve_abs32_candidates`), so
+    /// the volatile guessed sizes they depend on are finalized first and the
+    /// split is idempotent.
+    pub abs32_candidates: Vec<(SectionIndex, u32, u32)>,
 }
 
 /// Recursively disassemble all reachable code in `obj` starting from every
@@ -133,7 +139,9 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
 
     let mut fn_new_count = 0u32;
     let mut rel_count = 0u32;
-    let mut abs_count = 0u32;
+    // Abs32 references are only *collected* here; resolution to relocations is
+    // deferred until after the size passes (see resolve_abs32_candidates).
+    let mut abs32_candidates: Vec<(SectionIndex, u32, u32)> = Vec::new();
     let mut data_scanned = false;
 
     // Image address bounds, for a cheap reject of immediates that can't be a
@@ -230,7 +238,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                 // only place such references can be reconstructed. Conservative:
                 // resolves to an existing symbol only (see add_abs32).
                 let co = decoder.get_constant_offsets(&instr);
-                scan_abs32(obj, sec_idx, pc, &instr, &co, img_lo..img_hi, &mut abs_count)?;
+                scan_abs32(&mut abs32_candidates, sec_idx, pc, &instr, &co, img_lo..img_hi);
 
                 let next_pc = pc + instr.len() as u32;
 
@@ -647,10 +655,11 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
 
     log::info!(
         "{}: x86 analysis: {fn_new_count} functions discovered, {rel_count} rel32 relocations \
-         added, {abs_count} abs32 relocations added",
-        obj.name
+         added, {} abs32 candidates collected",
+        obj.name,
+        abs32_candidates.len(),
     );
-    Ok(X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap })
+    Ok(X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap, abs32_candidates })
 }
 
 /// Compute and set `size` / `size_known` on all x86 function symbols.
@@ -659,7 +668,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
 /// completed, so that size caps account for every function entry point.
 /// Pass in the [`X86FunctionSizeData`] returned by [`analyze_x86_functions`].
 pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) -> Result<()> {
-    let X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap } = data;
+    let X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap, abs32_candidates: _ } = data;
 
     let find_code = |va: u32| -> Option<(SectionIndex, usize)> {
         code_snap.iter().find_map(|(idx, base, data)| {
@@ -830,21 +839,19 @@ fn decode_valid(va: u32, code_snap: &[(SectionIndex, u64, Vec<u8>)]) -> bool {
 /// of the immediate and displacement fields come from iced's constant offsets, so
 /// no per-opcode special-casing is needed.
 fn scan_abs32(
-    obj: &mut ObjInfo,
+    candidates: &mut Vec<(SectionIndex, u32, u32)>,
     src_sec: SectionIndex,
     pc: u32,
     instr: &Instruction,
     co: &ConstantOffsets,
     image: std::ops::Range<u32>,
-    count: &mut u32,
-) -> Result<()> {
+) {
     let in_image = |va: u32| image.contains(&va);
     // 32-bit immediate operand (the value is a candidate absolute address).
     if co.has_immediate() && co.immediate_size() == 4 {
         let target = instr.immediate32();
         if in_image(target) {
-            let operand_va = pc + co.immediate_offset() as u32;
-            add_abs32(obj, src_sec, operand_va, target, count)?;
+            candidates.push((src_sec, pc + co.immediate_offset() as u32, target));
         }
     }
     // Absolute 32-bit memory displacement: no base/index register means the
@@ -856,72 +863,87 @@ fn scan_abs32(
     {
         let target = instr.memory_displacement32();
         if in_image(target) {
-            let operand_va = pc + co.displacement_offset() as u32;
-            add_abs32(obj, src_sec, operand_va, target, count)?;
+            candidates.push((src_sec, pc + co.displacement_offset() as u32, target));
         }
     }
-    Ok(())
 }
 
-/// Insert a [`ObjRelocKind::X86Abs32`] relocation at `operand_va` pointing at
-/// `target_va`, but only if an existing symbol resolves it (exact address, or
-/// inside a known-size symbol with an addend).
+/// Resolve the abs32 candidates collected during phase-1 into relocations.
 ///
-/// Unlike [`add_rel32`] this never synthesizes a new symbol: an immediate or
-/// displacement that merely *looks* like an in-range address is far more often a
-/// plain integer constant, so a synthesized label would produce false positives
-/// and bisect splits. Unresolved candidates are left as the raw fixed-address
-/// value — correct bytes, just not symbolic. Cross-unit-local validity is handled
-/// later by the reconciliation pass in `cmd/coff.rs`, exactly as for rel32.
-fn add_abs32(
+/// Run this **after** the size passes (`detect_objects`, `compute_x86_function_sizes`,
+/// RTTI) *and* after the splits are finalized. Resolution depends on `size_known`
+/// and on per-unit ownership; doing it during phase-1 (against the volatile,
+/// not-yet-guessed sizes read from the symbols file) makes the emitted reloc set —
+/// and through it the surviving auto symbols and their guessed sizes — depend on
+/// the previous run's output, so the split never reaches a fixed point.
+///
+/// A candidate is emitted only if it resolves to an existing symbol (exact, or
+/// inside a known-size symbol with an addend); never synthesizes a symbol (an
+/// immediate that merely *looks* in-range is usually a plain integer constant).
+/// Comdat targets are skipped (symbolizing would force write_coff to emit a
+/// comdat whose size isn't retained). Cross-unit references to file-local or
+/// auto-named targets are dropped, mirroring the rel32 reconciliation: such a
+/// name can't be resolved across translation units, so the raw fixed-address
+/// word is left in place.
+pub fn resolve_abs32_candidates(
     obj: &mut ObjInfo,
-    src_sec: SectionIndex,
-    operand_va: u32,
-    target_va: u32,
-    count: &mut u32,
-) -> Result<()> {
-    if target_va == 0 || obj.sections[src_sec].relocations.at(operand_va).is_some() {
-        return Ok(());
-    }
-    let Ok((tgt_sec, _)) = obj.sections.at_address(target_va) else {
-        return Ok(());
+    candidates: &[(SectionIndex, u32, u32)],
+) -> Result<u32> {
+    // Unit owning `addr` in `sec`, if any split contains it.
+    let unit_at = |obj: &ObjInfo, sec: SectionIndex, addr: u32| -> Option<String> {
+        obj.sections[sec]
+            .splits
+            .for_range(..=addr)
+            .next_back()
+            .filter(|(_, split)| split.end > addr)
+            .map(|(_, split)| split.unit.clone())
     };
-    let tgt_addr = SectionAddress::new(tgt_sec, target_va);
-    let resolved = match obj.symbols.for_relocation(tgt_addr, ObjRelocKind::X86Abs32)? {
-        // Skip comdat targets. A comdat (e.g. a `__real@N` float constant) is
-        // normally dead-stripped when referenced only from code; symbolizing the
-        // immediate would make it live and force write_coff to emit it as a
-        // standalone comdat section, but its size is not reliably retained through
-        // later passes — leaving the split unbuildable. Leave such operands raw.
-        Some((_, sym)) if sym.flags.is_comdat() => None,
-        // Require a known size: referencing a symbol forces write_coff to emit it,
-        // and a sizeless symbol cannot be emitted.
-        Some((sym_idx, sym)) if sym.size_known => {
-            Some((sym_idx, target_va as i64 - sym.address as i64))
+    let mut count = 0u32;
+    for &(src_sec, operand_va, target_va) in candidates {
+        if target_va == 0 || obj.sections[src_sec].relocations.at(operand_va).is_some() {
+            continue;
         }
-        Some(_) => None,
-        None => obj
-            .symbols
-            .for_section_range(tgt_sec, ..=target_va)
-            .rfind(|(_, s)| {
-                s.size_known
-                    && (s.address as u32) <= target_va
-                    && target_va < (s.address as u32).wrapping_add(s.size as u32)
-            })
-            .map(|(idx, s)| (idx, target_va as i64 - s.address as i64)),
-    };
-    let Some((target_symbol, addend)) = resolved else {
-        return Ok(());
-    };
-    obj.sections[src_sec]
-        .relocations
-        .insert(
-            operand_va,
-            ObjReloc { kind: ObjRelocKind::X86Abs32, target_symbol, addend, module: None },
-        )
-        .ok();
-    *count += 1;
-    Ok(())
+        let Ok((tgt_sec, _)) = obj.sections.at_address(target_va) else {
+            continue;
+        };
+        let tgt_addr = SectionAddress::new(tgt_sec, target_va);
+        let resolved = match obj.symbols.for_relocation(tgt_addr, ObjRelocKind::X86Abs32)? {
+            Some((_, sym)) if sym.flags.is_comdat() => None,
+            Some((sym_idx, sym)) if sym.size_known => {
+                Some((sym_idx, target_va as i64 - sym.address as i64))
+            }
+            Some(_) => None,
+            None => obj
+                .symbols
+                .for_section_range(tgt_sec, ..=target_va)
+                .rfind(|(_, s)| {
+                    s.size_known
+                        && (s.address as u32) <= target_va
+                        && target_va < (s.address as u32).wrapping_add(s.size as u32)
+                })
+                .map(|(idx, s)| (idx, target_va as i64 - s.address as i64)),
+        };
+        let Some((target_symbol, addend)) = resolved else {
+            continue;
+        };
+        // Cross-unit reconciliation: a file-local or auto-named target can't be
+        // referenced from another unit, so leave the operand raw.
+        let sym = &obj.symbols[target_symbol];
+        if (sym.flags.is_local() || crate::util::config::is_auto_symbol(sym))
+            && unit_at(obj, src_sec, operand_va) != unit_at(obj, tgt_sec, sym.address as u32)
+        {
+            continue;
+        }
+        obj.sections[src_sec]
+            .relocations
+            .insert(
+                operand_va,
+                ObjReloc { kind: ObjRelocKind::X86Abs32, target_symbol, addend, module: None },
+            )
+            .ok();
+        count += 1;
+    }
+    Ok(count)
 }
 
 /// Insert a [`ObjRelocKind::X86Rel32`] relocation at `operand_va` pointing at

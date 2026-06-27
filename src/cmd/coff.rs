@@ -917,6 +917,10 @@ fn split_write_coff(
     detect_rtti(&mut module.obj)?;
 
     // Apply function sizes now that all symbol-discovery passes have run.
+    // Stash the abs32 candidates first; they are resolved into relocations later,
+    // once sizes and splits are final (see resolve_abs32_candidates below).
+    let abs32_candidates =
+        module.size_data.as_ref().map(|d| d.abs32_candidates.clone()).unwrap_or_default();
     if let Some(size_data) = module.size_data.take() {
         compute_x86_function_sizes(&mut module.obj, size_data)?;
     }
@@ -1042,6 +1046,16 @@ fn split_write_coff(
                 module.splits_cache,
             )?;
         }
+    }
+
+    // Resolve abs32 candidates into relocations now that sizes and splits are
+    // final and the symbols/splits files are already written. Emitting here keeps
+    // these relocations entirely out of the persisted configuration, so they
+    // cannot perturb the size analysis on the next run (the split stays a fixed
+    // point) while still appearing in the emitted objects.
+    if !abs32_candidates.is_empty() {
+        let n = crate::analysis::x86::resolve_abs32_candidates(&mut module.obj, &abs32_candidates)?;
+        debug!("Resolved {n} abs32 relocations from {} candidates", abs32_candidates.len());
     }
 
     debug!("Splitting {} objects", module.obj.link_order.len());
