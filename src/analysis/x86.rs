@@ -2,7 +2,10 @@ use std::collections::{BTreeMap, BTreeSet, VecDeque};
 
 use anyhow::Result;
 use flagset::Flags as _;
-use iced_x86::{Code, Decoder, DecoderOptions, FlowControl, Instruction, Mnemonic, OpKind};
+use iced_x86::{
+    Code, ConstantOffsets, Decoder, DecoderOptions, FlowControl, Instruction, Mnemonic, OpKind,
+    Register,
+};
 
 use crate::{
     analysis::cfa::SectionAddress,
@@ -130,6 +133,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
 
     let mut fn_new_count = 0u32;
     let mut rel_count = 0u32;
+    let mut abs_count = 0u32;
     let mut data_scanned = false;
 
     loop {
@@ -207,6 +211,14 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                     continue;
                 }
                 decoded_spans.insert((fn_sec_idx, pc), pc + instr.len() as u32);
+
+                // Recover abs32 references carried by immediate/absolute-displacement
+                // operands (e.g. `mov reg, &data`, `mov reg, [abs]`). The /FIXED image
+                // has no .reloc table and the data scan skips code, so these are the
+                // only place such references can be reconstructed. Conservative:
+                // resolves to an existing symbol only (see add_abs32).
+                let co = decoder.get_constant_offsets(&instr);
+                scan_abs32(obj, sec_idx, pc, &instr, &co, &mut abs_count)?;
 
                 let next_pc = pc + instr.len() as u32;
 
@@ -622,7 +634,8 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
     }
 
     log::info!(
-        "{}: x86 analysis: {fn_new_count} functions discovered, {rel_count} rel32 relocations added",
+        "{}: x86 analysis: {fn_new_count} functions discovered, {rel_count} rel32 relocations \
+         added, {abs_count} abs32 relocations added",
         obj.name
     );
     Ok(X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap })
@@ -795,6 +808,100 @@ fn decode_valid(va: u32, code_snap: &[(SectionIndex, u64, Vec<u8>)]) -> bool {
     let mut instr = Instruction::default();
     decoder.decode_out(&mut instr);
     !instr.is_invalid()
+}
+
+/// Recover abs32 references carried by an instruction's immediate or absolute
+/// memory-displacement operand, emitting [`ObjRelocKind::X86Abs32`] relocations.
+///
+/// Covers `mov reg, imm32` / `push imm32` (32-bit immediate) and `mov reg, [abs]`
+/// / `mov [abs], imm` (absolute disp32, no base/index register). The byte offsets
+/// of the immediate and displacement fields come from iced's constant offsets, so
+/// no per-opcode special-casing is needed.
+fn scan_abs32(
+    obj: &mut ObjInfo,
+    src_sec: SectionIndex,
+    pc: u32,
+    instr: &Instruction,
+    co: &ConstantOffsets,
+    count: &mut u32,
+) -> Result<()> {
+    // 32-bit immediate operand (the value is a candidate absolute address).
+    if co.has_immediate() && co.immediate_size() == 4 {
+        let operand_va = pc + co.immediate_offset() as u32;
+        add_abs32(obj, src_sec, operand_va, instr.immediate32(), count)?;
+    }
+    // Absolute 32-bit memory displacement: no base/index register means the
+    // displacement *is* the address (not reg-relative addressing).
+    if co.has_displacement()
+        && co.displacement_size() == 4
+        && instr.memory_base() == Register::None
+        && instr.memory_index() == Register::None
+    {
+        let operand_va = pc + co.displacement_offset() as u32;
+        add_abs32(obj, src_sec, operand_va, instr.memory_displacement32(), count)?;
+    }
+    Ok(())
+}
+
+/// Insert a [`ObjRelocKind::X86Abs32`] relocation at `operand_va` pointing at
+/// `target_va`, but only if an existing symbol resolves it (exact address, or
+/// inside a known-size symbol with an addend).
+///
+/// Unlike [`add_rel32`] this never synthesizes a new symbol: an immediate or
+/// displacement that merely *looks* like an in-range address is far more often a
+/// plain integer constant, so a synthesized label would produce false positives
+/// and bisect splits. Unresolved candidates are left as the raw fixed-address
+/// value — correct bytes, just not symbolic. Cross-unit-local validity is handled
+/// later by the reconciliation pass in `cmd/coff.rs`, exactly as for rel32.
+fn add_abs32(
+    obj: &mut ObjInfo,
+    src_sec: SectionIndex,
+    operand_va: u32,
+    target_va: u32,
+    count: &mut u32,
+) -> Result<()> {
+    if target_va == 0 || obj.sections[src_sec].relocations.at(operand_va).is_some() {
+        return Ok(());
+    }
+    let Ok((tgt_sec, _)) = obj.sections.at_address(target_va) else {
+        return Ok(());
+    };
+    let tgt_addr = SectionAddress::new(tgt_sec, target_va);
+    let resolved = match obj.symbols.for_relocation(tgt_addr, ObjRelocKind::X86Abs32)? {
+        // Skip comdat targets. A comdat (e.g. a `__real@N` float constant) is
+        // normally dead-stripped when referenced only from code; symbolizing the
+        // immediate would make it live and force write_coff to emit it as a
+        // standalone comdat section, but its size is not reliably retained through
+        // later passes — leaving the split unbuildable. Leave such operands raw.
+        Some((_, sym)) if sym.flags.is_comdat() => None,
+        // Require a known size: referencing a symbol forces write_coff to emit it,
+        // and a sizeless symbol cannot be emitted.
+        Some((sym_idx, sym)) if sym.size_known => {
+            Some((sym_idx, target_va as i64 - sym.address as i64))
+        }
+        Some(_) => None,
+        None => obj
+            .symbols
+            .for_section_range(tgt_sec, ..=target_va)
+            .rfind(|(_, s)| {
+                s.size_known
+                    && (s.address as u32) <= target_va
+                    && target_va < (s.address as u32).wrapping_add(s.size as u32)
+            })
+            .map(|(idx, s)| (idx, target_va as i64 - s.address as i64)),
+    };
+    let Some((target_symbol, addend)) = resolved else {
+        return Ok(());
+    };
+    obj.sections[src_sec]
+        .relocations
+        .insert(
+            operand_va,
+            ObjReloc { kind: ObjRelocKind::X86Abs32, target_symbol, addend, module: None },
+        )
+        .ok();
+    *count += 1;
+    Ok(())
 }
 
 /// Insert a [`ObjRelocKind::X86Rel32`] relocation at `operand_va` pointing at
