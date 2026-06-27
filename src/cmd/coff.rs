@@ -815,44 +815,49 @@ fn split_write_coff(
     // assigned to the same unit (creating two .text sections in one object)
     // and the renamed unit would be missing from the link order.
     {
-        use std::collections::HashMap;
-        let mut name_to_addr: HashMap<String, u64> = HashMap::new();
-        let mut renames: Vec<(u32, String)> = Vec::new();
+        use std::collections::{BTreeSet, HashMap};
+        // name -> all (idx, address) occurrences, so a name with multiple distinct
+        // addresses can be resolved with a full view (not just first-seen order).
+        let mut groups: HashMap<String, Vec<(u32, u64)>> = HashMap::new();
         for (idx, sym) in module.obj.symbols.iter() {
-            if sym.kind == ObjSymbolKind::Section {
+            if sym.kind == ObjSymbolKind::Section || sym.name.is_empty() {
                 continue;
             }
-            if sym.name.is_empty() {
+            groups.entry(sym.name.clone()).or_default().push((idx, sym.address));
+        }
+        let mut renames: Vec<(u32, String)> = Vec::new();
+        for occ in groups.values() {
+            let distinct: BTreeSet<u64> = occ.iter().map(|&(_, a)| a).collect();
+            if distinct.len() < 2 {
                 continue;
             }
-            // The base image keeps local/non-export duplicate names (the splitter
-            // handles aligned duplicates); only modules need them deduped, since
-            // their .data is split with reconstructed relocations.
-            if module.obj.module_id == 0
-                && (sym.flags.0.contains(ObjSymbolFlags::NoExport)
-                    || sym.flags.0.contains(ObjSymbolFlags::Local))
-            {
-                continue;
-            }
-            match name_to_addr.entry(sym.name.clone()) {
-                std::collections::hash_map::Entry::Vacant(e) => {
-                    e.insert(sym.address);
+            let lowest = *distinct.iter().next().unwrap();
+            for &(idx, addr) in occ {
+                let sym = &module.obj.symbols[idx];
+                let local = sym.flags.0.contains(ObjSymbolFlags::NoExport)
+                    || sym.flags.0.contains(ObjSymbolFlags::Local);
+                // Base image: the splitter separates *aligned* duplicate locals into
+                // their own units, so keep those. It cannot split at an unaligned
+                // address, so those duplicate locals must be renamed here (otherwise
+                // create gap splits bails). Exported names — and all duplicates in
+                // modules — keep the lowest-address occurrence and rename the rest.
+                let keep = if module.obj.module_id == 0 && local {
+                    addr & 3 == 0
+                } else {
+                    addr == lowest
+                };
+                if keep {
+                    continue;
                 }
-                std::collections::hash_map::Entry::Occupied(e) => {
-                    if *e.get() != sym.address {
-                        let prefix = if sym.kind == ObjSymbolKind::Object { "data" } else { "fn" };
-                        let generated = format!("{prefix}_{:#010x}", sym.address);
-                        log::warn!(
-                            "Duplicate {} name '{}' at {:#010X} (already at {:#010X}); \
-                             renaming to '{generated}'",
-                            prefix,
-                            sym.name,
-                            sym.address,
-                            e.get()
-                        );
-                        renames.push((idx, generated));
-                    }
-                }
+                let prefix = if sym.kind == ObjSymbolKind::Object { "data" } else { "fn" };
+                let generated = format!("{prefix}_{:#010x}", addr);
+                log::warn!(
+                    "Duplicate {} name '{}' at {:#010X}; renaming to '{generated}'",
+                    prefix,
+                    sym.name,
+                    addr,
+                );
+                renames.push((idx, generated));
             }
         }
         for (idx, new_name) in renames {
