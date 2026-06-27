@@ -604,40 +604,56 @@ pub fn apply_signatures_post_x86(
         }
     }
 
-    for sig_str in &all_strs {
-        let parsed = parse_signatures(sig_str)?;
-        let mut matches: Vec<(u32, crate::util::signatures::FunctionSignature)> = Vec::new();
-        for (section_index, section) in obj.sections.by_kind(ObjSectionKind::Code) {
-            for (symbol_index, symbol) in obj
-                .symbols
-                .for_section(section_index)
-                .filter(|(_, s)| s.kind == ObjSymbolKind::Function)
-            {
-                let addr = symbol.address as u32;
-                // Prefer the symbol's own size (from compute_x86_function_sizes, which strips
-                // NOP/INT3 padding) over the gap-to-next-function, which includes padding and
-                // would cause the size check in check_signature_x86 to reject valid matches.
-                let size = if symbol.size_known && symbol.size > 0 {
-                    Some(symbol.size as u32)
-                } else {
-                    fn_sizes.get(&addr).copied()
-                };
-                if let Some(sig) = check_signatures_x86(section, addr, &parsed, size)? {
-                    matches.push((symbol_index, sig));
+    // Each signature is checked against every function — O(signatures × functions),
+    // the dominant cost on the full image. The scan only reads `obj`, so run the
+    // per-signature scan in parallel and apply the (mutating) results serially.
+    use rayon::prelude::*;
+    let to_apply: Vec<(u32, crate::util::signatures::FunctionSignature)> = all_strs
+        .par_iter()
+        .map(|sig_str| -> Result<Option<(u32, crate::util::signatures::FunctionSignature)>> {
+            let parsed = parse_signatures(sig_str)?;
+            let mut matches: Vec<(u32, crate::util::signatures::FunctionSignature)> = Vec::new();
+            for (section_index, section) in obj.sections.by_kind(ObjSectionKind::Code) {
+                for (symbol_index, symbol) in obj
+                    .symbols
+                    .for_section(section_index)
+                    .filter(|(_, s)| s.kind == ObjSymbolKind::Function)
+                {
+                    let addr = symbol.address as u32;
+                    // Prefer the symbol's own size (from compute_x86_function_sizes, which strips
+                    // NOP/INT3 padding) over the gap-to-next-function, which includes padding and
+                    // would cause the size check in check_signature_x86 to reject valid matches.
+                    let size = if symbol.size_known && symbol.size > 0 {
+                        Some(symbol.size as u32)
+                    } else {
+                        fn_sizes.get(&addr).copied()
+                    };
+                    if let Some(sig) = check_signatures_x86(section, addr, &parsed, size)? {
+                        matches.push((symbol_index, sig));
+                    }
                 }
             }
-        }
-        // If a signature matches multiple functions it's ambiguous — skip it.
-        if matches.len() > 1 {
-            let name = &parsed[0].symbols[parsed[0].symbol as usize].name;
-            log::debug!("Skipping ambiguous x86 signature '{}' ({} matches)", name, matches.len());
-            continue;
-        }
-        for (symbol_index, sig) in matches {
-            let symbol = &obj.symbols[symbol_index];
-            let addr = SectionAddress::new(symbol.section.unwrap(), symbol.address as u32);
-            apply_signature_x86(obj, addr, &sig)?;
-        }
+            // If a signature matches multiple functions it's ambiguous — skip it.
+            if matches.len() > 1 {
+                let name = &parsed[0].symbols[parsed[0].symbol as usize].name;
+                log::debug!(
+                    "Skipping ambiguous x86 signature '{}' ({} matches)",
+                    name,
+                    matches.len()
+                );
+                return Ok(None);
+            }
+            Ok(matches.into_iter().next())
+        })
+        .collect::<Result<Vec<_>>>()?
+        .into_iter()
+        .flatten()
+        .collect();
+
+    for (symbol_index, sig) in to_apply {
+        let symbol = &obj.symbols[symbol_index];
+        let addr = SectionAddress::new(symbol.section.unwrap(), symbol.address as u32);
+        apply_signature_x86(obj, addr, &sig)?;
     }
     Ok(())
 }

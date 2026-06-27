@@ -1,6 +1,6 @@
 use rayon::prelude::*;
 use std::{
-    collections::{BTreeMap, HashMap},
+    collections::{BTreeMap, HashMap, HashSet},
     fs,
     fs::DirBuilder,
     io::Write,
@@ -755,7 +755,6 @@ fn split_write_coff(
     no_update: bool,
 ) -> Result<OutputModule> {
     // No relocation analysis for COFF (no PPC tracker)
-
     if !config.symbols_known && config.detect_objects {
         debug!("Detecting object boundaries");
         detect_objects(&mut module.obj)?;
@@ -928,7 +927,12 @@ fn split_write_coff(
     let serialized: Vec<Result<Vec<u8>>> =
         split_objs.par_iter().map(|split_obj| write_coff(split_obj, config.export_all)).collect();
 
+    // Serial bookkeeping (path dedup, unit order, directory creation), then write
+    // the objects in parallel — writing 18k+ files dominates the split otherwise.
     let mut object_paths = BTreeMap::new();
+    let mut created_dirs = HashSet::new();
+    let mut pending_writes: Vec<(Utf8NativePathBuf, Vec<u8>)> =
+        Vec::with_capacity(split_objs.len());
     for ((unit, split_obj), out_obj) in
         module.obj.link_order.iter().zip(&split_objs).zip(serialized)
     {
@@ -951,10 +955,13 @@ fn split_write_coff(
             data_size: split_obj.data_size(),
         });
         if let Some(parent) = out_path.parent() {
-            DirBuilder::new().recursive(true).create(parent)?;
+            if created_dirs.insert(parent.to_owned()) {
+                DirBuilder::new().recursive(true).create(parent)?;
+            }
         }
-        write_if_changed(&out_path, &out_obj)?;
+        pending_writes.push((out_path, out_obj));
     }
+    pending_writes.par_iter().try_for_each(|(path, data)| write_if_changed(path, data))?;
 
     // Generate args.rsp (flags) and objs.rsp (object file list)
     let force_includes = module.config.force_active.clone();

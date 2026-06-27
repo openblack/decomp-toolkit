@@ -136,6 +136,18 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
     let mut abs_count = 0u32;
     let mut data_scanned = false;
 
+    // Image address bounds, for a cheap reject of immediates that can't be a
+    // pointer (small integer constants, flags) before the section/symbol lookups.
+    let (img_lo, img_hi) = {
+        let mut lo = u32::MAX;
+        let mut hi = 0u32;
+        for (_, s) in obj.sections.iter() {
+            lo = lo.min(s.address as u32);
+            hi = hi.max((s.address + s.size) as u32);
+        }
+        (lo, hi)
+    };
+
     loop {
         if let Some((fn_sec_idx, fn_va)) = pending.pop_first() {
             // A phase-2 candidate may have been enqueued before we knew its
@@ -218,7 +230,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                 // only place such references can be reconstructed. Conservative:
                 // resolves to an existing symbol only (see add_abs32).
                 let co = decoder.get_constant_offsets(&instr);
-                scan_abs32(obj, sec_idx, pc, &instr, &co, &mut abs_count)?;
+                scan_abs32(obj, sec_idx, pc, &instr, &co, img_lo..img_hi, &mut abs_count)?;
 
                 let next_pc = pc + instr.len() as u32;
 
@@ -823,12 +835,17 @@ fn scan_abs32(
     pc: u32,
     instr: &Instruction,
     co: &ConstantOffsets,
+    image: std::ops::Range<u32>,
     count: &mut u32,
 ) -> Result<()> {
+    let in_image = |va: u32| image.contains(&va);
     // 32-bit immediate operand (the value is a candidate absolute address).
     if co.has_immediate() && co.immediate_size() == 4 {
-        let operand_va = pc + co.immediate_offset() as u32;
-        add_abs32(obj, src_sec, operand_va, instr.immediate32(), count)?;
+        let target = instr.immediate32();
+        if in_image(target) {
+            let operand_va = pc + co.immediate_offset() as u32;
+            add_abs32(obj, src_sec, operand_va, target, count)?;
+        }
     }
     // Absolute 32-bit memory displacement: no base/index register means the
     // displacement *is* the address (not reg-relative addressing).
@@ -837,8 +854,11 @@ fn scan_abs32(
         && instr.memory_base() == Register::None
         && instr.memory_index() == Register::None
     {
-        let operand_va = pc + co.displacement_offset() as u32;
-        add_abs32(obj, src_sec, operand_va, instr.memory_displacement32(), count)?;
+        let target = instr.memory_displacement32();
+        if in_image(target) {
+            let operand_va = pc + co.displacement_offset() as u32;
+            add_abs32(obj, src_sec, operand_va, target, count)?;
+        }
     }
     Ok(())
 }
