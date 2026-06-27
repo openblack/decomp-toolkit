@@ -988,17 +988,28 @@ fn split_write_coff(
                 let sym = &module.obj.symbols[idx];
                 let local = sym.flags.0.contains(ObjSymbolFlags::NoExport)
                     || sym.flags.0.contains(ObjSymbolFlags::Local);
-                // Base image: the splitter separates *aligned* duplicate locals into
-                // their own units, so keep those — but only when scopes are left
-                // untouched. With globalize_symbols, each isolated unit re-emits the
-                // duplicate local as a plain global (same name), so lld sees a
-                // duplicate symbol at link time. In that case the aligned duplicates
-                // must be renamed too. It can never split at an unaligned address, so
-                // those duplicate locals are always renamed here (otherwise create gap
-                // splits bails). Exported names — and all duplicates in modules — keep
-                // the lowest-address occurrence and rename the rest.
-                let keep = if module.obj.module_id == 0 && local && !config.globalize_symbols {
-                    addr & 3 == 0
+                // Base image, local duplicates:
+                //   Functions/labels get their own function splits and the
+                //     globalize pass renames any cross-unit reference to
+                //     <name>_<addr>, so duplicate names never collide. Keep them
+                //     (this also preserves hand-applied labels on CRT statics that
+                //     legitimately appear at several addresses).
+                //   Data is gap-split: an unaligned duplicate name forces an
+                //     impossible split, and with globalize_symbols each isolated
+                //     unit re-emits the duplicate as a plain global, so lld sees a
+                //     duplicate symbol at link. Keep only an aligned occurrence,
+                //     and only when not globalizing; otherwise rename all but the
+                //     lowest.
+                // Exported names — and all duplicates in modules — keep the
+                // lowest-address occurrence and rename the rest.
+                let keep = if module.obj.module_id == 0 && local {
+                    if sym.kind != ObjSymbolKind::Object {
+                        true
+                    } else if config.globalize_symbols {
+                        addr == lowest
+                    } else {
+                        addr & 3 == 0
+                    }
                 } else {
                     addr == lowest
                 };
