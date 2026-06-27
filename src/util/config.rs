@@ -285,8 +285,16 @@ pub fn write_symbols<W>(w: &mut W, obj: &ObjInfo) -> Result<()>
 where
     W: Write + ?Sized,
 {
+    // The analyzer can emit several symbols sharing a name at one address (e.g.
+    // many references to a CRT locale array element). They collapse to a single
+    // definition at link time, so persisting each as its own line just bloats the
+    // file with identical entries — write each (name, section, address) once.
+    let mut seen = std::collections::HashSet::<(&str, Option<SectionIndex>, u64)>::new();
     for (_, symbol) in obj.symbols.iter_ordered() {
         if symbol.kind == ObjSymbolKind::Section || is_skip_symbol(symbol) {
+            continue;
+        }
+        if !seen.insert((symbol.name.as_str(), symbol.section, symbol.address)) {
             continue;
         }
         write_symbol(w, obj, symbol)?;

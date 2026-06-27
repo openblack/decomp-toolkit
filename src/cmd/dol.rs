@@ -327,6 +327,22 @@ pub struct ModuleConfig {
     pub clean_extab: Option<bool>,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub skip_cfa_ranges: Vec<SkipCfaRangeConfig>,
+    /// Prebuilt library objects linked verbatim for some of this module's units.
+    /// Their authoritative symbol layout (sizes) is imported into the main image
+    /// so interior references fold into the real symbol + addend instead of dtk's
+    /// per-element placeholder labels (which the verbatim obj never defines).
+    #[serde(default, skip_serializing_if = "Vec::is_empty")]
+    pub lib_objects: Vec<LibObjectConfig>,
+}
+
+/// A unit linked verbatim from a prebuilt static-library object.
+#[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]
+pub struct LibObjectConfig {
+    /// The unit name as it appears in the splits file (e.g. `lib/libcmt/nlsdata2.obj`).
+    pub unit: String,
+    /// Path to the extracted prebuilt object file.
+    #[serde(with = "unix_path_serde")]
+    pub object: Utf8UnixPathBuf,
 }
 
 #[derive(Serialize, Deserialize, Debug, Clone, PartialEq)]

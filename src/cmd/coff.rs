@@ -24,14 +24,14 @@ use crate::{
     },
     cmd::{
         dol::{
-            ModuleConfig, ObjectBase, OutputConfig, OutputLink, OutputModule, OutputUnit,
-            ProjectConfig, find_object_base,
+            LibObjectConfig, ModuleConfig, ObjectBase, OutputConfig, OutputLink, OutputModule,
+            OutputUnit, ProjectConfig, find_object_base,
         },
         shasum::file_sha1_string,
     },
     obj::{
-        ObjInfo, ObjKind, ObjRelocKind, ObjSymbol, ObjSymbolFlags, ObjSymbolKind, ObjSymbolScope,
-        SectionIndex, SymbolIndex, best_match_for_reloc,
+        ObjInfo, ObjKind, ObjRelocKind, ObjSymbol, ObjSymbolFlags, ObjSymbolFlagSet,
+        ObjSymbolKind, ObjSymbolScope, SectionIndex, SymbolIndex, best_match_for_reloc,
     },
     util::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
@@ -560,6 +560,147 @@ fn load_coff_module(
     Ok((obj, image_base, pe_header, object_path))
 }
 
+/// Import authoritative symbol sizes from one prebuilt verbatim library object.
+///
+/// The object's symbol layout (sizes inferred as the gap to the next symbol in
+/// each section) is mapped onto the main image at the unit's split ranges: the
+/// matching main-image symbol is widened to the real size, and any placeholder
+/// symbols dtk synthesized strictly inside that range are stripped. Interior
+/// references then fold into `<symbol> + addend` (matching the verbatim object)
+/// during relocation reconstruction, instead of pointing at per-element labels
+/// the verbatim object never defines.
+fn import_lib_object_sizes(
+    obj: &mut ObjInfo,
+    lib: &LibObjectConfig,
+    dep: &mut Vec<Utf8NativePathBuf>,
+) -> Result<()> {
+    // Skip units that aren't present in this image's splits (and so are never
+    // linked — the prebuilt object may not even have been extracted).
+    let present =
+        obj.sections.iter().any(|(_, s)| s.splits.iter().any(|(_, sp)| sp.unit == lib.unit));
+    if !present {
+        return Ok(());
+    }
+
+    let path = lib.object.with_encoding();
+    let Ok(mut file) = open_file(&path, true) else {
+        log::warn!("Verbatim object {} not found at {}, skipping size import", lib.unit, path);
+        return Ok(());
+    };
+    let data = file.map()?;
+    let (lib_obj, _) = process_coff(data, &lib.unit)?;
+    dep.push(path);
+
+    let mut size_updates: Vec<(SymbolIndex, u64)> = vec![];
+    let mut strips: Vec<SymbolIndex> = vec![];
+
+    // Group this unit's splits by their emitted section name, carrying the main
+    // image section index. The PE image has no `.bss`/`.CRT$*` sections of its
+    // own — those are split renames inside `.data` — so match the object's
+    // section names against the splits' emitted names, not physical sections.
+    let mut unit_layout: std::collections::BTreeMap<String, Vec<(u32, u32, SectionIndex)>> =
+        std::collections::BTreeMap::new();
+    for (sec_idx, section) in obj.sections.iter() {
+        for (addr, sp) in section.splits.iter() {
+            if sp.unit != lib.unit {
+                continue;
+            }
+            let name = sp.rename.clone().unwrap_or_else(|| section.name.clone());
+            unit_layout.entry(name).or_default().push((addr, sp.end, sec_idx));
+        }
+    }
+    for ranges in unit_layout.values_mut() {
+        ranges.sort_unstable_by_key(|&(a, _, _)| a);
+    }
+
+    for (lib_sec_idx, lib_sec) in lib_obj.sections.iter() {
+        // Only uninitialized data. Code sizes come from analysis (widening a
+        // function across its fixed split boundary breaks split validation), and
+        // initialized .data/.rdata are sized by dtk's own object/RTTI analysis —
+        // importing there fights it and the symbol file never converges. BSS is
+        // the case dtk can't size on its own, so interior array references turn
+        // into placeholder labels the verbatim object never defines.
+        if lib_sec.kind != crate::obj::ObjSectionKind::Bss {
+            continue;
+        }
+        let sec_size = lib_sec.size as u32;
+        // Object symbols in this section, by ascending offset (deduped).
+        let mut offsets: Vec<u32> = lib_obj
+            .symbols
+            .for_section(lib_sec_idx)
+            .filter(|(_, s)| !s.name.is_empty() && s.kind != ObjSymbolKind::Section)
+            .map(|(_, s)| s.address as u32)
+            .collect();
+        offsets.sort_unstable();
+        offsets.dedup();
+        if offsets.is_empty() {
+            continue;
+        }
+
+        // The unit's split ranges with this emitted section name concatenate (in
+        // address order) to cover the object section's [0, sec_size) verbatim.
+        let Some(layout) = unit_layout.get(&lib_sec.name) else {
+            continue;
+        };
+        let map_off = |off: u32| -> Option<(u32, u32)> {
+            let mut cursor = 0u32;
+            for &(start, end, _) in layout {
+                let span = end - start;
+                if off < cursor + span {
+                    return Some((start + (off - cursor), end));
+                }
+                cursor += span;
+            }
+            None
+        };
+
+        for i in 0..offsets.len() {
+            let off = offsets[i];
+            let next = offsets.get(i + 1).copied().unwrap_or(sec_size);
+            let Some((abs, split_end)) = map_off(off) else { continue };
+            // Clamp to the containing split: a symbol never extends past its
+            // split boundary (the gap to the next object symbol may straddle a
+            // boundary into another unit's data).
+            let size = ((next - off) as u64).min((split_end - abs) as u64);
+            if size == 0 {
+                continue;
+            }
+            // Look up by absolute address (the bss tail and `.CRT$*` slices have
+            // no physical section of their own, so a section-scoped query would
+            // miss them).
+            for (a, idxs) in obj.symbols.indexes_for_range(abs..abs + size as u32) {
+                for &idx in idxs {
+                    let s = &obj.symbols[idx];
+                    if s.kind == ObjSymbolKind::Section {
+                        continue;
+                    }
+                    if a == abs {
+                        if !s.flags.is_stripped() && s.size < size {
+                            size_updates.push((idx, size));
+                        }
+                    } else {
+                        // A placeholder strictly inside the real symbol's extent.
+                        strips.push(idx);
+                    }
+                }
+            }
+        }
+    }
+
+    for (idx, size) in size_updates {
+        let mut sym = obj.symbols[idx].clone();
+        sym.size = size;
+        sym.size_known = true;
+        obj.symbols.replace(idx, sym)?;
+    }
+    for idx in strips {
+        let mut sym = obj.symbols[idx].clone();
+        sym.flags = ObjSymbolFlagSet(sym.flags.0 | ObjSymbolFlags::Stripped);
+        obj.symbols.replace(idx, sym)?;
+    }
+    Ok(())
+}
+
 type LoadAnalyzeCoffResult = (
     ObjInfo,
     crate::analysis::x86::X86FunctionSizeData,
@@ -625,6 +766,14 @@ fn load_analyze_coff(
     } else {
         None
     };
+
+    // Import authoritative symbol sizes from prebuilt verbatim library objects.
+    // Runs after splits (so unit ranges are known) and before abs32
+    // reconstruction (so interior references fold into the real symbol + addend
+    // via for_relocation instead of dtk's per-element placeholder labels).
+    for lib in &module_config.lib_objects {
+        import_lib_object_sizes(&mut obj, lib, &mut dep)?;
+    }
 
     // Apply block relocations from config
     for reloc in &module_config.block_relocations {
@@ -836,11 +985,15 @@ fn split_write_coff(
                 let local = sym.flags.0.contains(ObjSymbolFlags::NoExport)
                     || sym.flags.0.contains(ObjSymbolFlags::Local);
                 // Base image: the splitter separates *aligned* duplicate locals into
-                // their own units, so keep those. It cannot split at an unaligned
-                // address, so those duplicate locals must be renamed here (otherwise
-                // create gap splits bails). Exported names — and all duplicates in
-                // modules — keep the lowest-address occurrence and rename the rest.
-                let keep = if module.obj.module_id == 0 && local {
+                // their own units, so keep those — but only when scopes are left
+                // untouched. With globalize_symbols, each isolated unit re-emits the
+                // duplicate local as a plain global (same name), so lld sees a
+                // duplicate symbol at link time. In that case the aligned duplicates
+                // must be renamed too. It can never split at an unaligned address, so
+                // those duplicate locals are always renamed here (otherwise create gap
+                // splits bails). Exported names — and all duplicates in modules — keep
+                // the lowest-address occurrence and rename the rest.
+                let keep = if module.obj.module_id == 0 && local && !config.globalize_symbols {
                     addr & 3 == 0
                 } else {
                     addr == lowest
