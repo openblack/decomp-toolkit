@@ -595,6 +595,11 @@ fn reconstruct_abs32_relocations_by_scan(obj: &mut ObjInfo) -> Result<()> {
         if obj.sections[src_idx].relocations.at(reloc_va).is_some() {
             continue;
         }
+        // Respect `noreloc` symbols (and config block_relocations): data whose
+        // contents merely look like in-image pointers must stay raw bytes.
+        if obj.blocked_relocation_sources.contains(SectionAddress::new(src_idx, reloc_va)) {
+            continue;
+        }
         // Skip IAT slots: the linker regenerates the import address table.
         if obj
             .symbols
