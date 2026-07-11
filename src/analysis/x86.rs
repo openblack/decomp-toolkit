@@ -903,6 +903,11 @@ pub fn resolve_abs32_candidates(
         if target_va == 0 || obj.sections[src_sec].relocations.at(operand_va).is_some() {
             continue;
         }
+        // Respect `noreloc` symbols (and config block_relocations): data whose
+        // contents merely look like in-image pointers must stay raw bytes.
+        if obj.blocked_relocation_sources.contains(SectionAddress::new(src_sec, operand_va)) {
+            continue;
+        }
         let Ok((tgt_sec, _)) = obj.sections.at_address(target_va) else {
             continue;
         };
