@@ -315,7 +315,7 @@ dependencies = [
 
 [[package]]
 name = "decomp-toolkit-coff-prototype"
-version = "0.0.19"
+version = "0.0.20"
 dependencies = [
  "aes",
  "anyhow",
