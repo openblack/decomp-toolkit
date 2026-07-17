@@ -1092,7 +1092,8 @@ pub fn apply_map(mut result: MapInfo, obj: &mut ObjInfo) -> Result<()> {
         }
         let section_name = normalize_section_name(section_name);
         let lookup_name = pe_section_base_name(section_name);
-        let rename = if section_name != lookup_name { Some(section_name.to_string()) } else { None };
+        let rename =
+            if section_name != lookup_name { Some(section_name.to_string()) } else { None };
         let (_, section) = obj
             .sections
             .iter_mut()
@@ -1158,7 +1159,7 @@ pub fn create_obj(result: &MapInfo) -> Result<ObjInfo> {
                 file_offset,
                 section_known: true,
                 splits: Default::default(),
-            sub_regions: Vec::new(),
+                sub_regions: Vec::new(),
             }
         })
         .collect();

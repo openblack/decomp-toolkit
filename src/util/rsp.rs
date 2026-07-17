@@ -160,10 +160,7 @@ pub fn generate_args_rsp(
     force_includes: &[String],
     dead_strip: bool,
 ) -> Result<String> {
-    let mut lines: Vec<String> = vec![
-        "/errorlimit:0".to_string(),
-        "/demangle:no".to_string(),
-    ];
+    let mut lines: Vec<String> = vec!["/errorlimit:0".to_string(), "/demangle:no".to_string()];
     if dead_strip && !pe.is_dll {
         // Reproduce the original linker's dead-code elimination: drop
         // unreferenced functions (e.g. the parts of a verbatim library object

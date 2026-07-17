@@ -248,6 +248,10 @@ pub struct ProjectConfig {
     /// Promotes local symbols referenced by other units to global.
     #[serde(default = "bool_true", skip_serializing_if = "is_true")]
     pub globalize_symbols: bool,
+    /// Emit each function as its own section in COFF objects (MSVC /Gy style),
+    /// so tooling (objdiff, dumpbin) sees exact per-function sizes.
+    #[serde(default = "bool_true", skip_serializing_if = "is_true")]
+    pub function_sections: bool,
     /// Optional base path for all object files.
     #[serde(with = "unix_path_serde_option", default, skip_serializing_if = "is_default")]
     pub object_base: Option<Utf8UnixPathBuf>,
@@ -286,6 +290,7 @@ impl Default for ProjectConfig {
             dead_strip: false,
             export_all: true,
             globalize_symbols: true,
+            function_sections: true,
             object_base: None,
             extract_objects: true,
             x86_signatures: None,

@@ -345,8 +345,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                                                 ObjSymbolKind::Function,
                                             )?
                                             .is_some();
-                                    if is_tail_call && inside_known_function(obj, tgt_sec, target)
-                                    {
+                                    if is_tail_call && inside_known_function(obj, tgt_sec, target) {
                                         // Tail JMP into the body of a known function:
                                         // emit the reference (resolves to the containing
                                         // function + addend) but don't mint a sub-entry
@@ -589,14 +588,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                             .kind_at_section_address(sec_idx, operand_va, ObjSymbolKind::Function)?
                             .is_some();
                         if !already && emit && !on_symbol_start {
-                            add_rel32(
-                                obj,
-                                sec_idx,
-                                operand_va,
-                                tgt_sec,
-                                target,
-                                &mut sweep_count,
-                            )?;
+                            add_rel32(obj, sec_idx, operand_va, tgt_sec, target, &mut sweep_count)?;
                         }
                     }
                 }
@@ -807,14 +799,12 @@ fn is_within_decoded_span(
 /// its declared size. The reference itself is still emitted as a relocation
 /// against the containing function (with an addend).
 fn inside_known_function(obj: &ObjInfo, sec: SectionIndex, va: u32) -> bool {
-    obj.symbols
-        .for_section_range(sec, ..=va)
-        .any(|(_, s)| {
-            s.kind == ObjSymbolKind::Function
-                && s.size_known
-                && (s.address as u32) < va
-                && va < (s.address as u32).wrapping_add(s.size as u32)
-        })
+    obj.symbols.for_section_range(sec, ..=va).any(|(_, s)| {
+        s.kind == ObjSymbolKind::Function
+            && s.size_known
+            && (s.address as u32) < va
+            && va < (s.address as u32).wrapping_add(s.size as u32)
+    })
 }
 
 /// Returns `true` if `va` decodes as a valid (non-invalid) instruction.
