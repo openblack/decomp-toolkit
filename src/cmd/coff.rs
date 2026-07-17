@@ -30,8 +30,8 @@ use crate::{
         shasum::file_sha1_string,
     },
     obj::{
-        ObjInfo, ObjKind, ObjRelocKind, ObjSymbol, ObjSymbolFlags, ObjSymbolFlagSet,
-        ObjSymbolKind, ObjSymbolScope, SectionIndex, SymbolIndex, best_match_for_reloc,
+        ObjInfo, ObjKind, ObjRelocKind, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
+        ObjSymbolScope, SectionIndex, SymbolIndex, best_match_for_reloc,
     },
     util::{
         coff::{apply_base_relocations, create_function_splits, process_coff, write_coff},
@@ -868,7 +868,8 @@ fn load_analyze_coff(
                     Some(s) => s,
                     None => continue,
                 };
-                if unit_at(&obj, sec_idx, reloc_addr) != unit_at(&obj, tgt_sec, sym.address as u32) {
+                if unit_at(&obj, sec_idx, reloc_addr) != unit_at(&obj, tgt_sec, sym.address as u32)
+                {
                     to_remove.push((sec_idx, reloc_addr));
                 }
             }
@@ -878,7 +879,10 @@ fn load_analyze_coff(
             obj.sections[sec_idx].relocations.remove(addr);
         }
         if dropped > 0 {
-            info!("{}: dropped {dropped} cross-unit relocation(s) to non-exportable targets", obj.name);
+            info!(
+                "{}: dropped {dropped} cross-unit relocation(s) to non-exportable targets",
+                obj.name
+            );
         }
     }
 
@@ -1102,8 +1106,10 @@ fn split_write_coff(
     };
 
     // Serialize all split objects in parallel (CPU-bound), then write serially.
-    let serialized: Vec<Result<Vec<u8>>> =
-        split_objs.par_iter().map(|split_obj| write_coff(split_obj, config.export_all)).collect();
+    let serialized: Vec<Result<Vec<u8>>> = split_objs
+        .par_iter()
+        .map(|split_obj| write_coff(split_obj, config.export_all, config.function_sections))
+        .collect();
 
     // Serial bookkeeping (path dedup, unit order, directory creation), then write
     // the objects in parallel — writing 18k+ files dominates the split otherwise.

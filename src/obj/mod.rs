@@ -12,11 +12,11 @@ use std::{
 
 use anyhow::{Result, anyhow, bail, ensure};
 use objdiff_core::obj::split_meta::SplitMeta;
-use serde::{Deserialize, Serialize};
 pub use relocations::{ObjReloc, ObjRelocKind, ObjRelocations};
 pub use sections::{
     ObjSection, ObjSectionKind, ObjSections, ObjSubRegion, SectionIndex, section_kind_for_section,
 };
+use serde::{Deserialize, Serialize};
 pub use splits::{ObjSplit, ObjSplits};
 pub use symbols::{
     ObjDataKind, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind, ObjSymbolScope,

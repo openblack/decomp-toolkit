@@ -4,14 +4,13 @@ use anyhow::{Context, Result, bail};
 use cwdemangle::demangle;
 use flagset::Flags;
 use object::{
-    Architecture, BinaryFormat, Endianness, Object, ObjectKind, ObjectSection, ObjectSymbol,
-    RelocationEncoding, RelocationKind, RelocationTarget, SectionKind, SymbolFlags, SymbolKind,
-    SymbolScope,
+    Architecture, BinaryFormat, ComdatKind, Endianness, Object, ObjectKind, ObjectSection,
+    ObjectSymbol, RelocationEncoding, RelocationKind, RelocationTarget, SectionKind, SymbolFlags,
+    SymbolKind, SymbolScope,
     write::{
         Comdat, Mangling, Object as WriteObject, Relocation, RelocationFlags, SectionId, Symbol,
         SymbolId, SymbolSection as WriteSymbolSection,
     },
-    ComdatKind,
 };
 
 use crate::{
@@ -267,7 +266,24 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     Ok((obj, image_base))
 }
 
-pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
+/// A contiguous byte range of an input section emitted as its own COFF
+/// section (MSVC /Gy-style function-level sections). `start`/`end` are
+/// section-relative offsets.
+struct SectionChunk {
+    start: u64,
+    end: u64,
+    id: SectionId,
+}
+
+/// Find the chunk containing `offset`. An offset at or past the end of the
+/// last chunk clamps to the last chunk (defensive; split_obj filters symbols
+/// at the section end address).
+fn chunk_for(chunks: &[SectionChunk], offset: u64) -> Option<&SectionChunk> {
+    let idx = chunks.partition_point(|c| c.start <= offset);
+    if idx == 0 { None } else { Some(&chunks[idx - 1]) }
+}
+
+pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> Result<Vec<u8>> {
     let mut out = WriteObject::new(BinaryFormat::Coff, Architecture::I386, Endianness::Little);
     // Disable object crate's auto leading-underscore mangling: it blindly
     // prepends '_' to every Text/Data symbol, which corrupts MSVC C++
@@ -277,8 +293,16 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
     // so we write them verbatim.
     out.set_mangling(Mangling::None);
 
-    // Add sections and build section id map (indexed by ObjSectionIndex)
-    let mut section_ids: Vec<Option<SectionId>> = vec![None; obj.sections.len() as usize];
+    // Add sections and build chunk table (indexed by ObjSectionIndex).
+    // With function_sections enabled, each code section is cut at function
+    // symbol boundaries so every function gets its own `.text` section (MSVC
+    // /Gy style). COFF allows multiple sections with the same name, and
+    // lld-link concatenates them in section-table order, so the emitted byte
+    // stream is unchanged: inter-function padding and trailing jump tables
+    // stay attached to the preceding function's chunk, and non-first chunks
+    // use alignment 1 so the linker inserts nothing between them.
+    let mut section_chunks: Vec<Vec<SectionChunk>> = Vec::new();
+    section_chunks.resize_with(obj.sections.len() as usize, Vec::new);
     for (idx, section) in obj.sections.iter() {
         let kind = match section.kind {
             ObjSectionKind::Code => SectionKind::Text,
@@ -286,21 +310,50 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             ObjSectionKind::ReadOnlyData => SectionKind::ReadOnlyData,
             ObjSectionKind::Bss => SectionKind::UninitializedData,
         };
-        let sid = out.add_section(vec![], section.name.as_bytes().to_vec(), kind);
         if section.kind == ObjSectionKind::Bss {
+            let sid = out.add_section(vec![], section.name.as_bytes().to_vec(), kind);
             out.append_section_bss(sid, section.size, section.align.max(1));
-        } else {
+            section_chunks[idx as usize].push(SectionChunk {
+                start: 0,
+                end: section.size,
+                id: sid,
+            });
+            continue;
+        }
+        // Section-relative offsets where a new chunk begins. Labels (Unknown)
+        // and Object symbols (e.g. jump tables) do not cut.
+        let mut starts = vec![0u64];
+        if function_sections && section.kind == ObjSectionKind::Code {
+            let mut cuts: Vec<u64> = obj
+                .symbols
+                .for_section(idx)
+                .filter(|(_, s)| s.kind == ObjSymbolKind::Function)
+                .map(|(_, s)| s.address.saturating_sub(section.address))
+                .filter(|&a| a > 0 && a < section.size)
+                .collect();
+            cuts.sort_unstable();
+            cuts.dedup();
+            starts.extend(cuts);
+        }
+        for (i, &start) in starts.iter().enumerate() {
+            let end = starts.get(i + 1).copied().unwrap_or(section.size);
+            let sid = out.add_section(vec![], section.name.as_bytes().to_vec(), kind);
+            let data_end = (end as usize).min(section.data.len());
+            let mut data = section.data[(start as usize).min(data_end)..data_end].to_vec();
             // Zero out bytes at relocation sites; addend is carried by the relocation record
-            let mut data = section.data.clone();
             for (addr, _) in section.relocations.iter() {
-                let off = (addr as u64 - section.address) as usize;
-                if off + 4 <= data.len() {
-                    data[off..off + 4].fill(0);
+                let off = (addr as u64).saturating_sub(section.address);
+                if off >= start && off < end {
+                    let rel = (off - start) as usize;
+                    if rel + 4 <= data.len() {
+                        data[rel..rel + 4].fill(0);
+                    }
                 }
             }
-            out.set_section_data(sid, data, section.align.max(1));
+            let align = if start == 0 { section.align.max(1) } else { 1 };
+            out.set_section_data(sid, data, align);
+            section_chunks[idx as usize].push(SectionChunk { start, end, id: sid });
         }
-        section_ids[idx as usize] = Some(sid);
     }
 
     // Add symbols and build symbol id map (indexed by SymbolIndex)
@@ -316,22 +369,39 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
     let mut defined_by_name: std::collections::HashMap<Vec<u8>, SymbolId> =
         std::collections::HashMap::new();
     for (_, sym) in obj.symbols.iter() {
-        let sym_section = match sym.section {
-            Some(sec_idx) => match section_ids.get(sec_idx as usize).copied().flatten() {
-                Some(sid) => WriteSymbolSection::Section(sid),
-                None => WriteSymbolSection::Undefined,
-            },
-            None => WriteSymbolSection::Undefined,
+        // Resolve the symbol's chunk and chunk-relative value. Function
+        // symbols that start a chunk land at value 0 in their own section;
+        // mid-function labels get chunk-relative values.
+        let (sym_section, sym_value) = match sym.section {
+            Some(sec_idx) => {
+                let sec_addr = obj.sections.get(sec_idx).map_or(0, |s| s.address);
+                let offset = sym.address.saturating_sub(sec_addr);
+                match section_chunks
+                    .get(sec_idx as usize)
+                    .and_then(|chunks| chunk_for(chunks, offset))
+                {
+                    Some(chunk) => (WriteSymbolSection::Section(chunk.id), offset - chunk.start),
+                    None => (WriteSymbolSection::Undefined, sym.address),
+                }
+            }
+            None => (WriteSymbolSection::Undefined, sym.address),
         };
+        // scope:local in symbols.txt is honored even with export_all: the
+        // globalize pass in split_obj has already cleared the Local flag on
+        // any local symbol referenced cross-unit, so remaining locals are
+        // genuinely unit-private and emit as IMAGE_SYM_CLASS_STATIC.
+        let is_local = sym.flags.0.contains(ObjSymbolFlags::Local);
         let is_exported = sym.flags.0.contains(ObjSymbolFlags::Exported)
             || sym.flags.0.contains(ObjSymbolFlags::Global)
             || (export_all
                 && !sym.flags.0.contains(ObjSymbolFlags::NoExport)
+                && !is_local
                 && matches!(sym.kind, ObjSymbolKind::Function | ObjSymbolKind::Object));
         // Label (Unknown) symbols with a defined section are code labels that
         // may be referenced cross-object by DISP32 relocations.  Promote them
         // to Linkage scope so lld can resolve the cross-object reference.
-        let is_defined_label = sym.kind == ObjSymbolKind::Unknown && sym.section.is_some();
+        let is_defined_label =
+            sym.kind == ObjSymbolKind::Unknown && sym.section.is_some() && !is_local;
         let scope = if sym.flags.0.contains(ObjSymbolFlags::Weak) || is_exported || is_defined_label
         {
             SymbolScope::Linkage
@@ -370,7 +440,7 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
         }
         let sid = out.add_symbol(Symbol {
             name: sym.name.as_bytes().to_vec(),
-            value: sym.address,
+            value: sym_value,
             size: sym.size,
             kind,
             scope,
@@ -397,10 +467,10 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
 
     // Add relocations
     for (sec_idx, section) in obj.sections.iter() {
-        let sid = match section_ids[sec_idx as usize] {
-            Some(id) => id,
-            None => continue,
-        };
+        let chunks = &section_chunks[sec_idx as usize];
+        if chunks.is_empty() {
+            continue;
+        }
         for (addr, reloc) in section.relocations.iter() {
             let (kind, encoding, size) = match reloc.kind {
                 ObjRelocKind::X86Abs32 => {
@@ -411,19 +481,22 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
                 }
                 _ => continue,
             };
-            let offset = (addr as u64).saturating_sub(section.address) as usize;
+            let offset = (addr as u64).saturating_sub(section.address);
+            let Some(chunk) = chunk_for(chunks, offset) else { continue };
+            let chunk_off = (offset - chunk.start) as usize;
+            let chunk_len = ((chunk.end.min(section.data.len() as u64)) - chunk.start) as usize;
             // Skip relocations whose 4-byte field extends past the end of the
-            // section data.  This can happen when a false-positive function split
+            // chunk data.  This can happen when a false-positive function split
             // cuts a boundary mid-instruction; the relocation belongs to the
             // correctly-sized split of the enclosing function.
-            if offset + 4 > section.data.len() {
+            if chunk_off + 4 > chunk_len {
                 log::warn!(
                     "Skipping relocation at {:#010X} in section {} (offset {} + 4 > {} bytes): \
                      split boundary may be mid-instruction",
                     addr,
                     section.name,
-                    offset,
-                    section.data.len()
+                    chunk_off,
+                    chunk_len
                 );
                 continue;
             }
@@ -438,9 +511,9 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool) -> Result<Vec<u8>> {
             let coff_addend =
                 if reloc.kind == ObjRelocKind::X86Rel32 { reloc.addend - 4 } else { reloc.addend };
             out.add_relocation(
-                sid,
+                chunk.id,
                 Relocation {
-                    offset: offset as u64,
+                    offset: chunk_off as u64,
                     symbol: sym_id,
                     addend: coff_addend,
                     flags: RelocationFlags::Generic { kind, encoding, size },
@@ -500,7 +573,11 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
             }
             // Skip IAT slots: the linker regenerates the import address table and
             // its base relocations from the import directory.
-            if obj.symbols.at_section_address(src_idx, reloc_va).any(|(_, s)| s.name.starts_with("__imp_")) {
+            if obj
+                .symbols
+                .at_section_address(src_idx, reloc_va)
+                .any(|(_, s)| s.name.starts_with("__imp_"))
+            {
                 continue;
             }
             let off = (reloc_va as u64 - src_sec.address) as usize;
@@ -619,12 +696,7 @@ fn reconstruct_abs32_relocations_by_scan(obj: &mut ObjInfo) -> Result<()> {
             .relocations
             .insert(
                 reloc_va,
-                ObjReloc {
-                    kind: ObjRelocKind::X86Abs32,
-                    target_symbol,
-                    addend,
-                    module: None,
-                },
+                ObjReloc { kind: ObjRelocKind::X86Abs32, target_symbol, addend, module: None },
             )
             .ok();
         count += 1;
@@ -699,27 +771,27 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
                 generated
             } else {
                 match unit_name_to_addr.entry(name.clone()) {
-                std::collections::hash_map::Entry::Vacant(e) => {
-                    e.insert(*addr);
-                    name.clone()
-                }
-                std::collections::hash_map::Entry::Occupied(e) if *e.get() == *addr => {
-                    // Same address — already handled (split exists check above
-                    // should have caught this, but be safe).
-                    name.clone()
-                }
-                std::collections::hash_map::Entry::Occupied(_) => {
-                    // Duplicate: generate an address-unique unit name.
-                    let generated = format!("fn_{:#010x}", addr);
-                    log::warn!(
-                        "Duplicate split unit name '{}' at {:#010X}; using '{}'",
-                        name,
-                        addr,
+                    std::collections::hash_map::Entry::Vacant(e) => {
+                        e.insert(*addr);
+                        name.clone()
+                    }
+                    std::collections::hash_map::Entry::Occupied(e) if *e.get() == *addr => {
+                        // Same address — already handled (split exists check above
+                        // should have caught this, but be safe).
+                        name.clone()
+                    }
+                    std::collections::hash_map::Entry::Occupied(_) => {
+                        // Duplicate: generate an address-unique unit name.
+                        let generated = format!("fn_{:#010x}", addr);
+                        log::warn!(
+                            "Duplicate split unit name '{}' at {:#010X}; using '{}'",
+                            name,
+                            addr,
+                            generated
+                        );
+                        unit_name_to_addr.insert(generated.clone(), *addr);
                         generated
-                    );
-                    unit_name_to_addr.insert(generated.clone(), *addr);
-                    generated
-                }
+                    }
                 }
             };
 
@@ -741,4 +813,255 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
 
     log::info!("Created {total} function splits");
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use object::ObjectSymbol;
+
+    use super::*;
+    use crate::obj::{ObjRelocations, ObjSplits};
+
+    fn section(
+        name: &str,
+        kind: ObjSectionKind,
+        elf_index: ObjSectionIndex,
+        data: Vec<u8>,
+        relocations: Vec<(u32, ObjReloc)>,
+    ) -> ObjSection {
+        ObjSection {
+            name: name.to_string(),
+            kind,
+            address: 0,
+            size: data.len() as u64,
+            data,
+            align: 16,
+            elf_index,
+            relocations: ObjRelocations::new(relocations).unwrap(),
+            virtual_address: None,
+            file_offset: 0,
+            section_known: true,
+            splits: ObjSplits::default(),
+            sub_regions: vec![],
+        }
+    }
+
+    fn symbol(
+        name: &str,
+        address: u64,
+        section: Option<ObjSectionIndex>,
+        size: u64,
+        kind: ObjSymbolKind,
+        flags: ObjSymbolFlagSet,
+    ) -> ObjSymbol {
+        ObjSymbol {
+            name: name.to_string(),
+            address,
+            section,
+            size,
+            size_known: true,
+            flags,
+            kind,
+            ..Default::default()
+        }
+    }
+
+    /// .text: fnA = 8 bytes (Rel32 at +2), 2 bytes 0xCC padding, fnB = 6 bytes
+    /// (Abs32 at +1, i.e. section offset 11); label mid-fnB at +12. Plus .data
+    /// with one Local object symbol.
+    fn test_obj() -> ObjInfo {
+        let mut text: Vec<u8> = (1..=16u8).collect();
+        text[8] = 0xCC;
+        text[9] = 0xCC;
+        let text_sec = section(
+            ".text",
+            ObjSectionKind::Code,
+            0,
+            text,
+            vec![
+                (
+                    2,
+                    ObjReloc {
+                        kind: ObjRelocKind::X86Rel32,
+                        target_symbol: 1,
+                        addend: 0,
+                        module: None,
+                    },
+                ),
+                (
+                    11,
+                    ObjReloc {
+                        kind: ObjRelocKind::X86Abs32,
+                        target_symbol: 3,
+                        addend: 0,
+                        module: None,
+                    },
+                ),
+            ],
+        );
+        let data_sec = section(".data", ObjSectionKind::Data, 1, vec![1, 2, 3, 4], vec![]);
+        let symbols = vec![
+            symbol(
+                "fnA",
+                0,
+                Some(0),
+                8,
+                ObjSymbolKind::Function,
+                ObjSymbolFlagSet(ObjSymbolFlags::Global.into()),
+            ),
+            symbol(
+                "fnB",
+                10,
+                Some(0),
+                6,
+                ObjSymbolKind::Function,
+                ObjSymbolFlagSet(ObjSymbolFlags::Global.into()),
+            ),
+            symbol("lbl_12", 12, Some(0), 0, ObjSymbolKind::Unknown, Default::default()),
+            symbol(
+                "dat",
+                0,
+                Some(1),
+                4,
+                ObjSymbolKind::Object,
+                ObjSymbolFlagSet(ObjSymbolFlags::Local.into()),
+            ),
+        ];
+        ObjInfo::new(
+            ObjKind::Relocatable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            symbols,
+            vec![text_sec, data_sec],
+        )
+    }
+
+    #[test]
+    fn test_function_sections() {
+        let obj = test_obj();
+        let out = write_coff(&obj, true, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+
+        // fnA chunk [0,10) with padding attached, fnB chunk [10,16), .data
+        let sections: Vec<_> = file.sections().collect();
+        assert_eq!(sections.len(), 3);
+        assert_eq!(sections[0].name().unwrap(), ".text");
+        assert_eq!(sections[1].name().unwrap(), ".text");
+        assert_eq!(sections[2].name().unwrap(), ".data");
+        assert_eq!(sections[0].size(), 10);
+        assert_eq!(sections[1].size(), 6);
+
+        let d0 = sections[0].data().unwrap();
+        assert_eq!(&d0[8..10], &[0xCC, 0xCC], "padding attached to preceding function");
+        assert_eq!(&d0[6..8], &[7, 8], "non-reloc bytes preserved");
+        let d1 = sections[1].data().unwrap();
+        assert_eq!(d1[0], 11, "fnB data starts at section offset 10");
+        assert_eq!(&d1[1..5], &[0, 0, 0, 0], "Abs32 reloc site zeroed chunk-relative");
+
+        // Relocations rebased into their chunks
+        let relocs0: Vec<_> = sections[0].relocations().collect();
+        assert_eq!(relocs0.len(), 1);
+        assert_eq!(relocs0[0].0, 2);
+        let relocs1: Vec<_> = sections[1].relocations().collect();
+        assert_eq!(relocs1.len(), 1);
+        assert_eq!(relocs1[0].0, 1);
+
+        // Symbols land in their chunks with chunk-relative values
+        let find = |name: &str| file.symbols().find(|s| s.name() == Ok(name)).unwrap();
+        let fna = find("fnA");
+        assert_eq!(fna.section_index(), Some(sections[0].index()));
+        assert_eq!(fna.address(), 0);
+        let fnb = find("fnB");
+        assert_eq!(fnb.section_index(), Some(sections[1].index()));
+        assert_eq!(fnb.address(), 0);
+        let lbl = find("lbl_12");
+        assert_eq!(lbl.section_index(), Some(sections[1].index()));
+        assert_eq!(lbl.address(), 2);
+    }
+
+    #[test]
+    fn test_no_function_sections() {
+        let obj = test_obj();
+        let out = write_coff(&obj, true, false).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let sections: Vec<_> = file.sections().collect();
+        assert_eq!(sections.len(), 2);
+        assert_eq!(sections[0].name().unwrap(), ".text");
+        assert_eq!(sections[0].size(), 16);
+        let relocs: Vec<_> = sections[0].relocations().collect();
+        assert_eq!(relocs.len(), 2);
+        assert_eq!(relocs[0].0, 2);
+        assert_eq!(relocs[1].0, 11);
+        let fnb = file.symbols().find(|s| s.name() == Ok("fnB")).unwrap();
+        assert_eq!(fnb.address(), 10);
+    }
+
+    #[test]
+    fn test_scope_local_static() {
+        let obj = test_obj();
+        let out = write_coff(&obj, true, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let find = |name: &str| file.symbols().find(|s| s.name() == Ok(name)).unwrap();
+        // scope:local honored despite export_all
+        assert!(find("dat").is_local(), "Local flag must emit IMAGE_SYM_CLASS_STATIC");
+        // globalized/global symbols stay external
+        assert!(find("fnA").is_global());
+        assert!(find("fnB").is_global());
+    }
+
+    #[test]
+    fn test_multi_range_unit_chunks_per_section() {
+        // Two same-named code sections (non-contiguous unit): chunked
+        // independently, no index collisions.
+        let text_a = section(".text", ObjSectionKind::Code, 0, vec![0x90; 8], vec![]);
+        let text_b = section(".text", ObjSectionKind::Code, 1, vec![0x90; 8], vec![]);
+        let symbols = vec![
+            symbol(
+                "fn1",
+                0,
+                Some(0),
+                8,
+                ObjSymbolKind::Function,
+                ObjSymbolFlagSet(ObjSymbolFlags::Global.into()),
+            ),
+            symbol(
+                "fn2",
+                0,
+                Some(1),
+                4,
+                ObjSymbolKind::Function,
+                ObjSymbolFlagSet(ObjSymbolFlags::Global.into()),
+            ),
+            symbol(
+                "fn3",
+                4,
+                Some(1),
+                4,
+                ObjSymbolKind::Function,
+                ObjSymbolFlagSet(ObjSymbolFlags::Global.into()),
+            ),
+        ];
+        let obj = ObjInfo::new(
+            ObjKind::Relocatable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            symbols,
+            vec![text_a, text_b],
+        );
+        let out = write_coff(&obj, true, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let sections: Vec<_> = file.sections().collect();
+        // section A: 1 chunk; section B: 2 chunks
+        assert_eq!(sections.len(), 3);
+        assert!(sections.iter().all(|s| s.name() == Ok(".text")));
+        assert_eq!(sections[0].size(), 8);
+        assert_eq!(sections[1].size(), 4);
+        assert_eq!(sections[2].size(), 4);
+        let find = |name: &str| file.symbols().find(|s| s.name() == Ok(name)).unwrap();
+        assert_eq!(find("fn1").section_index(), Some(sections[0].index()));
+        assert_eq!(find("fn2").section_index(), Some(sections[1].index()));
+        let fn3 = find("fn3");
+        assert_eq!(fn3.section_index(), Some(sections[2].index()));
+        assert_eq!(fn3.address(), 0);
+    }
 }

@@ -753,8 +753,7 @@ fn create_gap_splits(obj: &mut ObjInfo) -> Result<()> {
                                 symbol.name,
                                 symbol.address,
                             );
-                            new_split_end.address =
-                                current_address.address + symbol.size as u32;
+                            new_split_end.address = current_address.address + symbol.size as u32;
                         } else {
                             new_split_end.address = symbol.address as u32;
                         }
@@ -815,8 +814,7 @@ fn create_gap_splits(obj: &mut ObjInfo) -> Result<()> {
                         .then(|| r.name.clone())
                 });
                 let effective_rename = region_rename.or_else(|| prev_rename.clone());
-                let effective_section =
-                    effective_rename.as_deref().unwrap_or(&section.name);
+                let effective_section = effective_rename.as_deref().unwrap_or(&section.name);
                 let unit = format!(
                     "auto_{:02}_{:08X}_{}",
                     current_address.section,
@@ -1438,6 +1436,33 @@ fn resolve_link_order(obj: &ObjInfo) -> Result<Vec<ObjUnit>> {
             .min()
             .unwrap_or(section.address + section.data.len() as u64);
         let has_tail = init_end < section.address + section.size;
+        // Diagnose non-contiguous units: a unit whose splits reappear in this
+        // section after an intervening unit. This is legal (the unit's object
+        // gets multiple same-named sections, which is fine for objdiff), but
+        // the link order below becomes heuristic and a relinked image cannot
+        // be byte-identical, since the linker emits the unit's ranges
+        // adjacently.
+        let mut prev_unit: Option<&str> = None;
+        let mut ended_units = HashSet::<&str>::new();
+        for (_, split) in section.splits.iter() {
+            if split.common {
+                continue;
+            }
+            if let Some(prev) = prev_unit
+                && prev != split.unit
+            {
+                ended_units.insert(prev);
+                if ended_units.contains(split.unit.as_str()) {
+                    log::warn!(
+                        "Unit '{}' has non-contiguous ranges in section {}: link order is \
+                         heuristic and a relinked image will not be byte-identical",
+                        split.unit,
+                        section.name
+                    );
+                }
+            }
+            prev_unit = Some(split.unit.as_str());
+        }
         let mut iter = section.splits.iter().peekable();
         if section.name == ".ctors" || section.name == ".dtors" {
             // Skip __init_cpp_exceptions.o
@@ -1809,7 +1834,9 @@ pub fn split_obj(
                     _ => section.data[start_off..end_off.min(phys_len)].to_vec(),
                 };
                 let split_kind = if in_bss_subregion
-                    || (data.is_empty() && section.kind != ObjSectionKind::Bss && end_off > phys_len)
+                    || (data.is_empty()
+                        && section.kind != ObjSectionKind::Bss
+                        && end_off > phys_len)
                 {
                     ObjSectionKind::Bss
                 } else {
@@ -1829,7 +1856,7 @@ pub fn split_obj(
                         + (current_address.address as u64 - section.address),
                     section_known: true,
                     splits: Default::default(),
-            sub_regions: Vec::new(),
+                    sub_regions: Vec::new(),
                 });
             }
 
