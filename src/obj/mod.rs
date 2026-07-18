@@ -111,6 +111,18 @@ pub struct ObjInfo {
     /// absolute relocations. Not emitted as a section; the linker regenerates it.
     pub pe_reloc_data: Vec<u8>,
 
+    /// Compiler comment strings extracted from the PE header slack via
+    /// `type:comment` splits. Each entry is `(owning unit, literal bytes)`;
+    /// emitted as an `-?comment:"..."` directive in a `.drectve` section of the
+    /// owning unit's object (or a shared object when the unit is `None`). Not a
+    /// real section.
+    pub pe_comment_directives: Vec<(Option<String>, Vec<u8>)>,
+
+    /// `type:comment` split declarations `(name, start_va, end_va, owning unit)`,
+    /// retained so `dtk coff split` round-trips them into the regenerated splits
+    /// file. A `None` unit is a shared `Sections:` entry; `Some` is under a unit.
+    pub pe_comment_sections: Vec<(String, u32, u32, Option<String>)>,
+
     /// Original PE header metadata, retained so the post-link patch can reproduce
     /// fields the relinker doesn't. Only set for COFF/PE images.
     pub pe_metadata: Option<PeMetadata>,
@@ -147,6 +159,8 @@ impl ObjInfo {
             module_id: 0,
             unresolved_relocations: vec![],
             pe_reloc_data: Vec::new(),
+            pe_comment_directives: Vec::new(),
+            pe_comment_sections: Vec::new(),
             pe_metadata: None,
         }
     }
