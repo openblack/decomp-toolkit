@@ -58,6 +58,34 @@ Limitations:
   ranges (`.text` + `.data` + `.bss` for one unit) are unaffected — that is
   the normal case and fully supported.
 
+## Header-slack comment strings (`comment_regions`)
+
+MSVC's `#pragma comment(exestr, …)` / Intel `-?comment:"…"` directives cause the
+original linker to embed comment strings into the PE header slack (between the
+section table and the first raw section). These strings survive in the linked
+image but the `.drectve` directives that produced them are gone.
+
+Declare the byte ranges holding them per image (base exe or a DLL module):
+
+```yaml
+comment_regions:
+- offset: 912      # file offset in the source PE
+  size: 882        # byte length
+```
+
+At split time dtk lifts those bytes, splits them on NUL, and re-emits each run
+as a `-?comment:"…"` directive in a `.drectve` section of a generated
+`auto_comments` object (appended to the link order / `objs.rsp`). Bytes are
+emitted verbatim — a run truncated in the source image stays truncated.
+
+Notes:
+
+- Default is empty (feature off): no comment object is emitted and output is
+  byte-identical to a build without the field.
+- Requires a linker that accepts `-?comment` in `.drectve`. Stock `lld-link`
+  rejects it (`is not allowed in .drectve`); reproducing the strings needs a
+  linker with comment-embedding support.
+
 ## Known limitations
 
 - objdiff may display function signatures as `void(void)`: COFF symbols

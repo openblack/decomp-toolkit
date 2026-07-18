@@ -1186,6 +1186,8 @@ pub fn create_obj(result: &MapInfo) -> Result<ObjInfo> {
         module_id: 0,
         unresolved_relocations: vec![],
         pe_reloc_data: Vec::new(),
+        pe_comment_directives: Vec::new(),
+        pe_comment_sections: Vec::new(),
         pe_metadata: None,
     };
 

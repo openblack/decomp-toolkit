@@ -1641,6 +1641,16 @@ pub fn split_obj(
         objects.push(split_obj);
     }
 
+    // Route exestr comments to their owning units; unattributed ones stay on the
+    // module object for a shared `.drectve` object.
+    for (unit, bytes) in &obj.pe_comment_directives {
+        if let Some(unit) = unit
+            && let Some(&idx) = name_to_obj.get(unit)
+        {
+            objects[idx].pe_comment_directives.push((None, bytes.clone()));
+        }
+    }
+
     for (section_index, section) in obj.sections.iter() {
         let mut current_address = SectionAddress::new(section_index, section.address as u32);
         let section_end = end_for_section(obj, section_index)?;

@@ -22,6 +22,47 @@ use crate::{
     },
 };
 
+/// Extract exestr comment strings from the given `(file_offset, size, unit)`
+/// ranges of the PE header padding onto `ObjInfo::pe_comment_directives`. Each
+/// range may hold several NUL-separated runs; each non-empty run is kept
+/// verbatim (a run truncated in the source is emitted as-is) and tagged with the
+/// range's owning unit. Ranges come from `type:comment` entries in the splits
+/// file (see `read_comment_regions`).
+pub fn extract_comment_directives(
+    data: &[u8],
+    regions: &[(u32, u32, Option<String>)],
+    obj: &mut ObjInfo,
+    name: &str,
+) -> Result<()> {
+    for (offset, size, unit) in regions {
+        let (start, end) = (*offset as usize, *offset as usize + *size as usize);
+        let Some(region) = data.get(start..end) else {
+            bail!("Comment region {offset:#x}..+{size:#x} is out of bounds for '{name}'");
+        };
+        for run in region.split(|&b| b == 0) {
+            if !run.is_empty() {
+                obj.pe_comment_directives.push((unit.clone(), run.to_vec()));
+            }
+        }
+    }
+    Ok(())
+}
+
+/// Encode exestr comment payloads as whitespace-separated `-?comment:"..."`
+/// linker directives for a `.drectve` section.
+fn encode_drectve<'a>(payloads: impl Iterator<Item = &'a [u8]>) -> Vec<u8> {
+    let mut data = Vec::new();
+    for (i, payload) in payloads.enumerate() {
+        if i > 0 {
+            data.push(b' ');
+        }
+        data.extend_from_slice(b"-?comment:\"");
+        data.extend_from_slice(payload);
+        data.push(b'"');
+    }
+    data
+}
+
 /// Returns the parsed `ObjInfo` and, for PE executables, the ImageBase.
 pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
     let obj_file = object::File::parse(data).context("Failed to parse COFF/PE file")?;
@@ -525,7 +566,30 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
         }
     }
 
+    // Emit this unit's exestr comments as a `.drectve` section
+    // (IMAGE_SCN_LNK_INFO | IMAGE_SCN_LNK_REMOVE), which a comment-aware linker
+    // re-embeds and others ignore.
+    if !obj.pe_comment_directives.is_empty() {
+        let data = encode_drectve(obj.pe_comment_directives.iter().map(|(_, p)| p.as_slice()));
+        let sid = out.add_section(vec![], b".drectve".to_vec(), SectionKind::Linker);
+        out.set_section_data(sid, data, 1);
+    }
+
     out.write().map_err(|e| anyhow::anyhow!("{e:?}"))
+}
+
+/// Build a COFF object whose sole content is a `.drectve` section carrying one
+/// `-?comment:"..."` directive per payload (used for comments not attributed to
+/// any unit). Returns `None` if there are no directives.
+pub fn write_coff_comments(directives: &[&[u8]]) -> Result<Option<Vec<u8>>> {
+    if directives.is_empty() {
+        return Ok(None);
+    }
+    let mut out = WriteObject::new(BinaryFormat::Coff, Architecture::I386, Endianness::Little);
+    out.set_mangling(Mangling::None);
+    let sid = out.add_section(vec![], b".drectve".to_vec(), SectionKind::Linker);
+    out.set_section_data(sid, encode_drectve(directives.iter().copied()), 1);
+    out.write().map(Some).map_err(|e| anyhow::anyhow!("{e:?}"))
 }
 
 const IMAGE_REL_BASED_HIGHLOW: u16 = 3;
@@ -1063,5 +1127,46 @@ mod tests {
         let fn3 = find("fn3");
         assert_eq!(fn3.section_index(), Some(sections[2].index()));
         assert_eq!(fn3.address(), 0);
+    }
+
+    #[test]
+    fn test_extract_comment_directives() {
+        // Runs inside the region: "abc" \0 "def"; a trailing NUL yields no empty
+        // run. Bytes outside the declared region must be ignored.
+        let mut data = Vec::new();
+        let region_off = data.len() as u32;
+        data.extend_from_slice(b"abc\0def\0");
+        data.extend_from_slice(b"JUNK_OUTSIDE"); // outside the declared size
+        let region_size = 8u32; // covers "abc\0def\0" only
+
+        let (mut obj, _) =
+            process_coff(&write_coff(&test_obj(), true, false).unwrap(), "test").unwrap();
+        obj.pe_comment_directives.clear();
+        let unit = Some("amaths".to_string());
+        extract_comment_directives(
+            &data,
+            &[(region_off, region_size, unit.clone())],
+            &mut obj,
+            "t",
+        )
+        .unwrap();
+        assert_eq!(
+            obj.pe_comment_directives,
+            vec![(unit.clone(), b"abc".to_vec()), (unit, b"def".to_vec()),]
+        );
+    }
+
+    #[test]
+    fn test_write_coff_comments() {
+        assert!(write_coff_comments(&[]).unwrap().is_none());
+
+        let out =
+            write_coff_comments(&[b"Intel(R) foo".as_slice(), b"bar".as_slice()]).unwrap().unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let sections: Vec<_> = file.sections().collect();
+        assert_eq!(sections.len(), 1);
+        assert_eq!(sections[0].name().unwrap(), ".drectve");
+        assert_eq!(sections[0].kind(), object::SectionKind::Linker);
+        assert_eq!(sections[0].data().unwrap(), br#"-?comment:"Intel(R) foo" -?comment:"bar""#);
     }
 }
