@@ -180,6 +180,11 @@ mod tests {
 
     #[test]
     fn preserves_short_unit_names() {
-        assert_eq!(obj_path_for_unit("lib/amaths/AMaths").as_str(), "lib/amaths/AMaths.o");
+        // obj_path_for_unit returns a native path (backslash-separated on
+        // Windows); normalize before comparing.
+        assert_eq!(
+            obj_path_for_unit("lib/amaths/AMaths").as_str().replace('\\', "/"),
+            "lib/amaths/AMaths.o"
+        );
     }
 }
