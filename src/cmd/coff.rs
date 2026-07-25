@@ -994,7 +994,42 @@ fn split_write_coff(
     // assigned to the same unit (creating two .text sections in one object)
     // and the renamed unit would be missing from the link order.
     {
-        use std::collections::{BTreeSet, HashMap};
+        use std::collections::{BTreeSet, HashMap, HashSet};
+        // Local symbols that some *other* unit references. Only these get globalized
+        // by split_obj, so only these can collide at link; a local referenced solely
+        // from its own unit stays local and may safely share a name with the copy in
+        // another unit. A static defined in a widely included header (each including
+        // unit gets its own private copy) is exactly that case.
+        let cross_unit_refs: HashSet<SymbolIndex> = {
+            let obj = &module.obj;
+            let unit_at = |sec_idx: SectionIndex, addr: u32| -> Option<&str> {
+                obj.sections[sec_idx]
+                    .splits
+                    .for_range(..=addr)
+                    .next_back()
+                    .filter(|(_, split)| split.end > addr)
+                    .map(|(_, split)| split.unit.as_str())
+            };
+            let mut set = HashSet::new();
+            for (sec_idx, section) in obj.sections.iter() {
+                for (reloc_addr, reloc) in section.relocations.iter() {
+                    if reloc.target_symbol >= obj.symbols.count() {
+                        continue;
+                    }
+                    let sym = &obj.symbols[reloc.target_symbol];
+                    let Some(tgt_sec) = sym.section else { continue };
+                    let (Some(from), Some(to)) =
+                        (unit_at(sec_idx, reloc_addr), unit_at(tgt_sec, sym.address as u32))
+                    else {
+                        continue;
+                    };
+                    if from != to {
+                        set.insert(reloc.target_symbol);
+                    }
+                }
+            }
+            set
+        };
         // name -> all (idx, address) occurrences, so a name with multiple distinct
         // addresses can be resolved with a full view (not just first-seen order).
         let mut groups: HashMap<String, Vec<(u32, u64)>> = HashMap::new();
@@ -1022,17 +1057,19 @@ fn split_write_coff(
                 //     (this also preserves hand-applied labels on CRT statics that
                 //     legitimately appear at several addresses).
                 //   Data is gap-split: an unaligned duplicate name forces an
-                //     impossible split, and with globalize_symbols each isolated
-                //     unit re-emits the duplicate as a plain global, so lld sees a
-                //     duplicate symbol at link. Keep only an aligned occurrence,
-                //     and only when not globalizing; otherwise rename all but the
-                //     lowest.
+                //     impossible split, so only an aligned occurrence can be kept.
+                //     Globalizing is what makes a duplicate fatal — an isolated unit
+                //     re-emits the symbol as a plain global and lld then sees two of
+                //     them — but split_obj only globalizes locals that another unit
+                //     references. A local nothing else refers to stays local, so
+                //     duplicates of it are fine (a static in a widely included header
+                //     gives every including unit its own copy of the same name).
                 // Exported names — and all duplicates in modules — keep the
                 // lowest-address occurrence and rename the rest.
                 let keep = if module.obj.module_id == 0 && local {
                     if sym.kind != ObjSymbolKind::Object {
                         true
-                    } else if config.globalize_symbols {
+                    } else if config.globalize_symbols && cross_unit_refs.contains(&idx) {
                         addr == lowest
                     } else {
                         addr & 3 == 0
