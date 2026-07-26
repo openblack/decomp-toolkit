@@ -1168,7 +1168,14 @@ fn split_write_coff(
     // Serialize all split objects in parallel (CPU-bound), then write serially.
     let serialized: Vec<Result<Vec<u8>>> = split_objs
         .par_iter()
-        .map(|split_obj| write_coff(split_obj, config.export_all, config.function_sections))
+        .map(|split_obj| {
+            write_coff(
+                split_obj,
+                config.export_all,
+                config.function_sections,
+                config.function_comdat,
+            )
+        })
         .collect();
 
     // Serial bookkeeping (path dedup, unit order, directory creation), then write

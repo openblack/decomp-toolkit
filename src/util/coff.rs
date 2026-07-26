@@ -324,7 +324,12 @@ fn chunk_for(chunks: &[SectionChunk], offset: u64) -> Option<&SectionChunk> {
     if idx == 0 { None } else { Some(&chunks[idx - 1]) }
 }
 
-pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> Result<Vec<u8>> {
+pub fn write_coff(
+    obj: &ObjInfo,
+    export_all: bool,
+    function_sections: bool,
+    function_comdat: bool,
+) -> Result<Vec<u8>> {
     let mut out = WriteObject::new(BinaryFormat::Coff, Architecture::I386, Endianness::Little);
     // Disable object crate's auto leading-underscore mangling: it blindly
     // prepends '_' to every Text/Data symbol, which corrupts MSVC C++
@@ -472,7 +477,8 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
             None
         } else if sym.flags.is_comdat() {
             Some(ComdatKind::Any)
-        } else if function_sections
+        } else if function_comdat
+            && function_sections
             && sym_value == 0
             && sym.kind == ObjSymbolKind::Function
             && sym.section.and_then(|i| obj.sections.get(i)).map(|s| s.kind)
@@ -734,6 +740,13 @@ fn reconstruct_abs32_relocations_by_scan(obj: &mut ObjInfo) -> Result<()> {
     let mut candidates: Vec<(ObjSectionIndex, u32, u32)> = Vec::new();
     for (src_idx, sec) in obj.sections.iter() {
         if matches!(sec.kind, ObjSectionKind::Bss | ObjSectionKind::Code) {
+            continue;
+        }
+        // Resources are opaque blobs, not pointer-bearing data. Dense binary
+        // runs in them read as plausible addresses (0x7E7E7E, 0x666666 and
+        // friends), and the invented references keep sections alive that
+        // nothing really points at.
+        if sec.name == ".rsrc" || sec.name.starts_with(".rsrc$") {
             continue;
         }
         let base = sec.address as u32;
@@ -1056,7 +1069,7 @@ mod tests {
         }
 
         let mut obj = test_obj();
-        let out = write_coff(&obj, true, true).unwrap();
+        let out = write_coff(&obj, true, true, true).unwrap();
         let secs = comdat_flags(&out);
         assert_eq!(
             secs,
@@ -1071,7 +1084,7 @@ mod tests {
         // nocomdat leaves that one function's section out of a COMDAT.
         let idx = obj.symbols.iter().find(|(_, s)| s.name == "fnB").unwrap().0;
         obj.symbols.flags(idx).0 |= ObjSymbolFlags::NoComdat;
-        let out = write_coff(&obj, true, true).unwrap();
+        let out = write_coff(&obj, true, true, true).unwrap();
         assert_eq!(
             comdat_flags(&out).iter().filter(|(_, c)| *c).count(),
             1,
@@ -1082,7 +1095,7 @@ mod tests {
     #[test]
     fn test_function_sections() {
         let obj = test_obj();
-        let out = write_coff(&obj, true, true).unwrap();
+        let out = write_coff(&obj, true, true, true).unwrap();
         let file = object::File::parse(&*out).unwrap();
 
         // fnA chunk [0,10) with padding attached, fnB chunk [10,16), .data
@@ -1125,7 +1138,7 @@ mod tests {
     #[test]
     fn test_no_function_sections() {
         let obj = test_obj();
-        let out = write_coff(&obj, true, false).unwrap();
+        let out = write_coff(&obj, true, false, true).unwrap();
         let file = object::File::parse(&*out).unwrap();
         let sections: Vec<_> = file.sections().collect();
         assert_eq!(sections.len(), 2);
@@ -1142,7 +1155,7 @@ mod tests {
     #[test]
     fn test_scope_local_static() {
         let obj = test_obj();
-        let out = write_coff(&obj, true, true).unwrap();
+        let out = write_coff(&obj, true, true, true).unwrap();
         let file = object::File::parse(&*out).unwrap();
         let find = |name: &str| file.symbols().find(|s| s.name() == Ok(name)).unwrap();
         // scope:local honored despite export_all
@@ -1191,7 +1204,7 @@ mod tests {
             symbols,
             vec![text_a, text_b],
         );
-        let out = write_coff(&obj, true, true).unwrap();
+        let out = write_coff(&obj, true, true, true).unwrap();
         let file = object::File::parse(&*out).unwrap();
         let sections: Vec<_> = file.sections().collect();
         // section A: 1 chunk; section B: 2 chunks
@@ -1219,7 +1232,7 @@ mod tests {
         let region_size = 8u32; // covers "abc\0def\0" only
 
         let (mut obj, _) =
-            process_coff(&write_coff(&test_obj(), true, false).unwrap(), "test").unwrap();
+            process_coff(&write_coff(&test_obj(), true, false, true).unwrap(), "test").unwrap();
         obj.pe_comment_directives.clear();
         let unit = Some("amaths".to_string());
         extract_comment_directives(

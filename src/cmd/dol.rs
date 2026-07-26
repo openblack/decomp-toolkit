@@ -252,6 +252,13 @@ pub struct ProjectConfig {
     /// so tooling (objdiff, dumpbin) sees exact per-function sizes.
     #[serde(default = "bool_true", skip_serializing_if = "is_true")]
     pub function_sections: bool,
+    /// Emit those function sections as COMDATs, the way cl.exe does.
+    ///
+    /// Off for a link that uses /OPT:REF: only COMDATs are eligible for it, so
+    /// while the reference graph is still being recovered the linker collects
+    /// code nothing has been shown to reach yet.
+    #[serde(default = "bool_true", skip_serializing_if = "is_true")]
+    pub function_comdat: bool,
     /// Optional base path for all object files.
     #[serde(with = "unix_path_serde_option", default, skip_serializing_if = "is_default")]
     pub object_base: Option<Utf8UnixPathBuf>,
@@ -291,6 +298,7 @@ impl Default for ProjectConfig {
             export_all: true,
             globalize_symbols: true,
             function_sections: true,
+            function_comdat: true,
             object_base: None,
             extract_objects: true,
             x86_signatures: None,
