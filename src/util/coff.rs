@@ -402,6 +402,7 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
     // (leader SymbolId, SectionId, selection) for each symbol that leads a
     // COMDAT, emitted as COMDAT groups after all symbols are added.
     let mut comdat_groups: Vec<(SymbolId, SectionId, ComdatKind)> = Vec::new();
+    let mut comdat_sections: std::collections::HashSet<SectionId> = Default::default();
     // Dedup defined symbols that share an exact name within this object (e.g. a
     // `label` and a `function` emitted at the same vtable-slot address). Two
     // external definitions of one name in one object collide at link time;
@@ -484,8 +485,11 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
 
         // Skip a duplicate *defined* symbol with an identical name already
         // emitted in this object; reuse the existing SymbolId for its index.
+        // An explicit `comdat` is meant to fold with a duplicate, so it keeps
+        // its own definition; anything else reuses the first one, or the second
+        // section would be left as a COMDAT whose leader was never emitted.
         if matches!(sym_section, WriteSymbolSection::Section(_))
-            && comdat_kind.is_none()
+            && !sym.flags.is_comdat()
             && !sym.name.is_empty()
         {
             if let Some(&existing) = defined_by_name.get(sym.name.as_bytes()) {
@@ -500,7 +504,9 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
         // the section ("comdat section without leader and unassociated").
         if comdat_kind.is_some() {
             if let WriteSymbolSection::Section(section_id) = sym_section {
-                out.section_symbol(section_id);
+                if !comdat_sections.contains(&section_id) {
+                    out.section_symbol(section_id);
+                }
             }
         }
         let sid = out.add_symbol(Symbol {
@@ -515,7 +521,12 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
         });
         if let Some(kind) = comdat_kind {
             if let WriteSymbolSection::Section(section_id) = sym_section {
-                comdat_groups.push((sid, section_id, kind));
+                // One leader per section: two symbols sharing a chunk's start
+                // would otherwise claim the same section twice, and lld drops a
+                // COMDAT it cannot pin to a single leader.
+                if comdat_sections.insert(section_id) {
+                    comdat_groups.push((sid, section_id, kind));
+                }
             }
         }
         if matches!(sym_section, WriteSymbolSection::Section(_)) && !sym.name.is_empty() {
