@@ -183,6 +183,9 @@ pub fn parse_symbol_line(line: &str, obj: &mut ObjInfo) -> Result<Option<ObjSymb
                     "comdat" => {
                         symbol.flags.0 |= ObjSymbolFlags::Comdat;
                     }
+                    "nocomdat" => {
+                        symbol.flags.0 |= ObjSymbolFlags::NoComdat;
+                    }
                     _ => bail!("Unknown symbol attribute '{attr}'"),
                 }
             }
@@ -357,6 +360,9 @@ where
     }
     if symbol.flags.is_comdat() {
         write!(w, " comdat")?;
+    }
+    if symbol.flags.is_no_comdat() {
+        write!(w, " nocomdat")?;
     }
     writeln!(w)?;
     Ok(())

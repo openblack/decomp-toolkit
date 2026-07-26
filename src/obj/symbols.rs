@@ -55,6 +55,9 @@ flags! {
         /// definition (e.g. a shared CRT constant linked in from a prebuilt
         /// library object) folds into this copy instead of colliding.
         Comdat,
+        /// Keep the symbol's section out of a COMDAT, overriding the COMDAT
+        /// that function sections are otherwise given.
+        NoComdat,
     }
 }
 
@@ -133,6 +136,11 @@ impl ObjSymbolFlagSet {
     #[inline]
     pub fn is_comdat(&self) -> bool {
         self.0.contains(ObjSymbolFlags::Comdat)
+    }
+
+    #[inline]
+    pub fn is_no_comdat(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::NoComdat)
     }
 
     #[inline]

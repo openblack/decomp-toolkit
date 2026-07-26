@@ -399,9 +399,9 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
 
     // Add symbols and build symbol id map (indexed by SymbolIndex)
     let mut symbol_ids: Vec<SymbolId> = Vec::with_capacity(obj.symbols.count() as usize);
-    // (leader SymbolId, SectionId) for each symbol flagged comdat, emitted as
-    // selectany COMDAT groups after all symbols are added.
-    let mut comdat_groups: Vec<(SymbolId, SectionId)> = Vec::new();
+    // (leader SymbolId, SectionId, selection) for each symbol that leads a
+    // COMDAT, emitted as COMDAT groups after all symbols are added.
+    let mut comdat_groups: Vec<(SymbolId, SectionId, ComdatKind)> = Vec::new();
     // Dedup defined symbols that share an exact name within this object (e.g. a
     // `label` and a `function` emitted at the same vtable-slot address). Two
     // external definitions of one name in one object collide at link time;
@@ -458,10 +458,34 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
             // (function) so they are accepted as code labels.
             ObjSymbolKind::Unknown => SymbolKind::Text,
         };
+        // MSVC compiles every function into its own COMDAT, so an object that
+        // mixes COMDAT and plain sections is a shape cl.exe never emits. lld
+        // lays plain sections out in section order but COMDATs in symbol-table
+        // order, so a lone COMDAT among plain sections drifts to the end of the
+        // object; matching cl.exe and making each function section a COMDAT
+        // keeps one order for the whole object. `nocomdat` opts a symbol out.
+        // The selection differs: an explicit `comdat` is selectany, so a
+        // duplicate definition folds into this copy, whereas a function is
+        // NODUPLICATES like /Gy output.
+        let comdat_kind = if sym.flags.is_no_comdat() {
+            None
+        } else if sym.flags.is_comdat() {
+            Some(ComdatKind::Any)
+        } else if function_sections
+            && sym_value == 0
+            && sym.kind == ObjSymbolKind::Function
+            && sym.section.and_then(|i| obj.sections.get(i)).map(|s| s.kind)
+                == Some(ObjSectionKind::Code)
+        {
+            Some(ComdatKind::NoDuplicates)
+        } else {
+            None
+        };
+
         // Skip a duplicate *defined* symbol with an identical name already
         // emitted in this object; reuse the existing SymbolId for its index.
         if matches!(sym_section, WriteSymbolSection::Section(_))
-            && !sym.flags.is_comdat()
+            && comdat_kind.is_none()
             && !sym.name.is_empty()
         {
             if let Some(&existing) = defined_by_name.get(sym.name.as_bytes()) {
@@ -474,7 +498,7 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
         // precede the leader symbol in the symbol table, or lld defers the
         // leader, never resolves the pending comdat, and silently discards
         // the section ("comdat section without leader and unassociated").
-        if sym.flags.is_comdat() {
+        if comdat_kind.is_some() {
             if let WriteSymbolSection::Section(section_id) = sym_section {
                 out.section_symbol(section_id);
             }
@@ -489,9 +513,9 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
             section: sym_section,
             flags: SymbolFlags::None,
         });
-        if sym.flags.is_comdat() {
+        if let Some(kind) = comdat_kind {
             if let WriteSymbolSection::Section(section_id) = sym_section {
-                comdat_groups.push((sid, section_id));
+                comdat_groups.push((sid, section_id, kind));
             }
         }
         if matches!(sym_section, WriteSymbolSection::Section(_)) && !sym.name.is_empty() {
@@ -500,10 +524,9 @@ pub fn write_coff(obj: &ObjInfo, export_all: bool, function_sections: bool) -> R
         symbol_ids.push(sid);
     }
 
-    // Emit COMDAT groups (selectany) so duplicate definitions of these
-    // symbols fold into this copy at link time instead of colliding.
-    for (symbol, section_id) in comdat_groups {
-        out.add_comdat(Comdat { kind: ComdatKind::Any, symbol, sections: vec![section_id] });
+    // Emit the COMDAT groups now that every leader has a SymbolId.
+    for (symbol, section_id, kind) in comdat_groups {
+        out.add_comdat(Comdat { kind, symbol, sections: vec![section_id] });
     }
 
     // Add relocations
@@ -998,6 +1021,51 @@ mod tests {
             symbols,
             vec![text_sec, data_sec],
         )
+    }
+
+    #[test]
+    fn test_function_sections_are_comdat() {
+        // Every function section is a COMDAT, the way cl.exe emits them, so an
+        // object never mixes COMDAT and plain sections. `nocomdat` opts out.
+        // Read IMAGE_SCN_LNK_COMDAT straight out of the section headers: the
+        // object crate is in the dependency graph twice here, so its comdat
+        // trait is awkward to name, and the raw flag is what lld reads anyway.
+        const LNK_COMDAT: u32 = 0x0000_1000;
+        fn comdat_flags(out: &[u8]) -> Vec<(String, bool)> {
+            let count = u16::from_le_bytes([out[2], out[3]]) as usize;
+            (0..count)
+                .map(|i| {
+                    let o = 20 + i * 40;
+                    let name =
+                        String::from_utf8_lossy(&out[o..o + 8]).trim_end_matches('\0').to_string();
+                    let chars = u32::from_le_bytes(out[o + 36..o + 40].try_into().unwrap());
+                    (name, chars & LNK_COMDAT != 0)
+                })
+                .collect()
+        }
+
+        let mut obj = test_obj();
+        let out = write_coff(&obj, true, true).unwrap();
+        let secs = comdat_flags(&out);
+        assert_eq!(
+            secs,
+            vec![
+                (".text".to_string(), true),
+                (".text".to_string(), true),
+                (".data".to_string(), false),
+            ],
+            "function sections are COMDATs, data stays plain"
+        );
+
+        // nocomdat leaves that one function's section out of a COMDAT.
+        let idx = obj.symbols.iter().find(|(_, s)| s.name == "fnB").unwrap().0;
+        obj.symbols.flags(idx).0 |= ObjSymbolFlags::NoComdat;
+        let out = write_coff(&obj, true, true).unwrap();
+        assert_eq!(
+            comdat_flags(&out).iter().filter(|(_, c)| *c).count(),
+            1,
+            "nocomdat keeps fnB out"
+        );
     }
 
     #[test]
