@@ -423,19 +423,30 @@ pub fn write_coff(
         // Resolve the symbol's chunk and chunk-relative value. Function
         // symbols that start a chunk land at value 0 in their own section;
         // mid-function labels get chunk-relative values.
-        let (sym_section, sym_value) = match sym.section {
-            Some(sec_idx) => {
-                let sec_addr = obj.sections.get(sec_idx).map_or(0, |s| s.address);
-                let offset = sym.address.saturating_sub(sec_addr);
-                match section_chunks
-                    .get(sec_idx as usize)
-                    .and_then(|chunks| chunk_for(chunks, offset))
-                {
-                    Some(chunk) => (WriteSymbolSection::Section(chunk.id), offset - chunk.start),
-                    None => (WriteSymbolSection::Undefined, sym.address),
+        // A common symbol is uninitialized storage the linker allocates and
+        // merges across objects, which COFF spells as section 0 with the size
+        // in the value field. cl.exe emits guard bytes and other tentative
+        // definitions this way, so a `scope:common` symbol has to be written
+        // as one rather than pinned into whichever split covers its address.
+        let (sym_section, sym_value) = if sym.flags.is_common() {
+            (WriteSymbolSection::Common, sym.size)
+        } else {
+            match sym.section {
+                Some(sec_idx) => {
+                    let sec_addr = obj.sections.get(sec_idx).map_or(0, |s| s.address);
+                    let offset = sym.address.saturating_sub(sec_addr);
+                    match section_chunks
+                        .get(sec_idx as usize)
+                        .and_then(|chunks| chunk_for(chunks, offset))
+                    {
+                        Some(chunk) => {
+                            (WriteSymbolSection::Section(chunk.id), offset - chunk.start)
+                        }
+                        None => (WriteSymbolSection::Undefined, sym.address),
+                    }
                 }
+                None => (WriteSymbolSection::Undefined, sym.address),
             }
-            None => (WriteSymbolSection::Undefined, sym.address),
         };
         // scope:local in symbols.txt is honored even with export_all: the
         // globalize pass in split_obj has already cleared the Local flag on

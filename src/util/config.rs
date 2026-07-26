@@ -409,7 +409,9 @@ fn symbol_kind_from_str(s: &str) -> Option<ObjSymbolKind> {
 
 #[inline]
 fn symbol_flags_to_str(flags: ObjSymbolFlagSet) -> Option<&'static str> {
-    if flags.0.contains(ObjSymbolFlags::Weak) {
+    if flags.0.contains(ObjSymbolFlags::Common) {
+        Some("common")
+    } else if flags.0.contains(ObjSymbolFlags::Weak) {
         Some("weak")
     } else if flags.0.contains(ObjSymbolFlags::Global) {
         Some("global")
