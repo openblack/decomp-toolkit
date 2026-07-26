@@ -367,13 +367,17 @@ pub fn write_coff(
             continue;
         }
         // Section-relative offsets where a new chunk begins. Labels (Unknown)
-        // and Object symbols (e.g. jump tables) do not cut.
+        // and Object symbols (e.g. jump tables) do not cut. Neither do the
+        // `gap_*` symbols invented for inter-function padding: cl.exe pads a
+        // function's own section out to its alignment, so cutting there would
+        // hand the padding a section of its own and leave the function's
+        // COMDAT 15 bytes shorter than the compiler's copy of it.
         let mut starts = vec![0u64];
         if function_sections && section.kind == ObjSectionKind::Code {
             let mut cuts: Vec<u64> = obj
                 .symbols
                 .for_section(idx)
-                .filter(|(_, s)| s.kind == ObjSymbolKind::Function)
+                .filter(|(_, s)| s.kind == ObjSymbolKind::Function && !s.name.starts_with("gap_"))
                 .map(|(_, s)| s.address.saturating_sub(section.address))
                 .filter(|&a| a > 0 && a < section.size)
                 .collect();
