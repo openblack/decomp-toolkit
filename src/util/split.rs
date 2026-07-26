@@ -12,9 +12,9 @@ use tracing_attributes::instrument;
 use crate::{
     analysis::{cfa::SectionAddress, read_address, read_u32, relocation_target_for},
     obj::{
-        ObjArchitecture, ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjRelocations, ObjSection, ObjSectionKind,
-        ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind, ObjSymbolScope,
-        ObjUnit, SectionIndex, SymbolIndex,
+        ObjArchitecture, ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjRelocations, ObjSection,
+        ObjSectionKind, ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
+        ObjSymbolScope, ObjUnit, SectionIndex, SymbolIndex,
     },
     util::{align_up, comment::MWComment, toposort::toposort},
 };
@@ -2004,7 +2004,13 @@ pub fn split_obj(
 /// x86 default of 4 would let one that the original placed on an 8-byte boundary
 /// slide. Reading it back off the address keeps those in place.
 pub fn address_align(arch: ObjArchitecture, addr: u32) -> u32 {
-    if arch != ObjArchitecture::X86 || addr == 0 { 1 } else if addr & 7 == 0 { 8 } else { 4 }
+    if arch != ObjArchitecture::X86 || addr == 0 {
+        1
+    } else if addr & 7 == 0 {
+        8
+    } else {
+        4
+    }
 }
 
 pub fn default_section_align(arch: ObjArchitecture, section: &ObjSection) -> u64 {

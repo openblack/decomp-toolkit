@@ -20,10 +20,7 @@ use crate::{
         ObjDataKind, ObjInfo, ObjKind, ObjSectionKind, ObjSplit, ObjSymbol, ObjSymbolFlagSet,
         ObjSymbolFlags, ObjSymbolKind, ObjUnit, SectionIndex,
     },
-    util::{
-        file::{FileReadInfo, buf_writer},
-        split::default_section_align,
-    },
+    util::file::{FileReadInfo, buf_writer},
     vfs::open_file,
 };
 
@@ -552,9 +549,11 @@ where
                 end + vaddr_offset
             )?;
             if let Some(align) = split.align {
-                if align != default_section_align(obj.architecture, section) as u32 {
-                    write!(w, " align:{align}")?;
-                }
+                // An alignment stated in the file was stated for a reason: dtk
+                // derives a different one (a .CRT$* table of 4-byte pointers sits
+                // at an 8-aligned address and would be credited with 8), so
+                // dropping it as "same as the default" loses it on write-back.
+                write!(w, " align:{align}")?;
             }
             if split.common {
                 write!(w, " common")?;
