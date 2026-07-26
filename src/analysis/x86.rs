@@ -870,8 +870,7 @@ fn scan_abs32(
 /// A candidate is emitted only if it resolves to an existing symbol (exact, or
 /// inside a known-size symbol with an addend); never synthesizes a symbol (an
 /// immediate that merely *looks* in-range is usually a plain integer constant).
-/// Comdat targets are skipped (symbolizing would force write_coff to emit a
-/// comdat whose size isn't retained). Cross-unit references to file-local or
+/// Cross-unit references to file-local or
 /// auto-named targets are dropped, mirroring the rel32 reconciliation: such a
 /// name can't be resolved across translation units, so the raw fixed-address
 /// word is left in place.
@@ -903,7 +902,6 @@ pub fn resolve_abs32_candidates(
         };
         let tgt_addr = SectionAddress::new(tgt_sec, target_va);
         let resolved = match obj.symbols.for_relocation(tgt_addr, ObjRelocKind::X86Abs32)? {
-            Some((_, sym)) if sym.flags.is_comdat() => None,
             Some((sym_idx, sym)) if sym.size_known => {
                 Some((sym_idx, target_va as i64 - sym.address as i64))
             }
