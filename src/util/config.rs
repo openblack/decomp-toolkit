@@ -552,7 +552,7 @@ where
                 end + vaddr_offset
             )?;
             if let Some(align) = split.align {
-                if align != default_section_align(section) as u32 {
+                if align != default_section_align(obj.architecture, section) as u32 {
                     write!(w, " align:{align}")?;
                 }
             }

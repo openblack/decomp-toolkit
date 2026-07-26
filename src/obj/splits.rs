@@ -33,7 +33,7 @@ impl ObjSplit {
         split_addr: u32,
     ) -> u32 {
         self.align.unwrap_or_else(|| {
-            let default_align = default_section_align(section) as u32;
+            let default_align = default_section_align(obj.architecture, section) as u32;
             max(
                 // Maximum alignment of any symbol in this split
                 obj.symbols

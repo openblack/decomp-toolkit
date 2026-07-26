@@ -1119,7 +1119,7 @@ pub fn update_rel_section_alignment(obj: &mut ObjInfo, header: &RelHeader) -> Re
 
         if section.section_known {
             // Try the default section alignment for known sections
-            let default_align = default_section_align(section);
+            let default_align = default_section_align(ObjArchitecture::PowerPc, section);
             if align_up(prev_offset, default_align as u32) == section.file_offset as u32 {
                 section.align = default_align;
                 continue;
