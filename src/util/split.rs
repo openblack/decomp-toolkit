@@ -1436,19 +1436,25 @@ fn resolve_link_order(obj: &ObjInfo) -> Result<Vec<ObjUnit>> {
             .min()
             .unwrap_or(section.address + section.data.len() as u64);
         let has_tail = init_end < section.address + section.size;
-        // Diagnose non-contiguous units: a unit whose splits reappear in this
-        // section after an intervening unit. This is legal (the unit's object
-        // gets multiple same-named sections, which is fine for objdiff), but
-        // the link order below becomes heuristic and a relinked image cannot
-        // be byte-identical, since the linker emits the unit's ranges
-        // adjacently.
-        let mut prev_unit: Option<&str> = None;
-        let mut ended_units = HashSet::<&str>::new();
+        // Diagnose non-contiguous units: a unit whose splits reappear after an
+        // intervening unit. This is legal (the unit's object gets multiple
+        // same-named sections, which is fine for objdiff), but the link order
+        // below becomes heuristic and a relinked image cannot be byte-identical,
+        // since the linker emits the unit's ranges adjacently.
+        //
+        // Group by the *emitted* COFF section name, not the physical one. A PE
+        // section commonly carries several COFF sub-sections — `.data` here holds
+        // `.CRT$XC*` ahead of it and the zero-fill `.bss` tail behind it — and the
+        // linker lays each of those out in its own run, so a unit appearing once
+        // in each is contiguous as far as link order is concerned.
+        let mut per_name = HashMap::<&str, (Option<&str>, HashSet<&str>)>::new();
         for (_, split) in section.splits.iter() {
             if split.common {
                 continue;
             }
-            if let Some(prev) = prev_unit
+            let emitted = split.rename.as_deref().unwrap_or(section.name.as_str());
+            let (prev_unit, ended_units) = per_name.entry(emitted).or_default();
+            if let Some(prev) = *prev_unit
                 && prev != split.unit
             {
                 ended_units.insert(prev);
@@ -1457,11 +1463,11 @@ fn resolve_link_order(obj: &ObjInfo) -> Result<Vec<ObjUnit>> {
                         "Unit '{}' has non-contiguous ranges in section {}: link order is \
                          heuristic and a relinked image will not be byte-identical",
                         split.unit,
-                        section.name
+                        emitted
                     );
                 }
             }
-            prev_unit = Some(split.unit.as_str());
+            *prev_unit = Some(split.unit.as_str());
         }
         let mut iter = section.splits.iter().peekable();
         if section.name == ".ctors" || section.name == ".dtors" {
