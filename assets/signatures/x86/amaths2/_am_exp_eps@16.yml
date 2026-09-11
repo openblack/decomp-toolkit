@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 511197d4150fd267d17f25ef6a2d911449e34627
+  signature: D/9d/wX/QP8C/wD/AP8P/yj/Df8w/wL/AP8A/w//X/8F/yD/Av8A/wD/D/9Z/8j/D/9X/9L/D/9Y/w3/AAAAAAAAAAAP/8L/0f8F/2b/D//b/xX/QP8A/wD/AP/z/w//W//J/w//KP8l//D/Af8A/wD/Zv8P//r/yv8P/yj/Lf8A/wL/AP8A/w//W//Z/w//Wf/j/w//Wf/r/w//KP81/+D/Af8A/wD/D/9c/8T/D/8o/yX/0P8B/wD/AP8P/1z/xf9m/w///v8N/xD/Av8A/wD/D/8o/9D/D/9Z/8D/D/8o/y3/wP8B/wD/AP8P/1n/8P8P/yj/Hf+w/wH/AP8A/w//Wf/g/w//WP/1/w//KP8t/6D/Af8A/wD/D/9Y/+P/D/8o/x3/kP8B/wD/AP8P/1n/8P8P/1n/4P8P/1j/9f8P/1n/4v8P/1n/8P8P/yj/Bf8AAAAAAAAAAA//WP/U/w//WP/z/2b/D/9y//H/F/8P/1z/8v8P/1P/9v8P/1n/1v8P/1j/0v8P/1j/wv8P/1n/wf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _am_exp_eps@16
+    size: 205
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_0p5
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 30
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 169
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

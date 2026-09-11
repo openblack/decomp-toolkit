@@ -1,4 +1,93 @@
 - symbol: 0
+  hash: fad33a2a83a087fe1934a51edf39d3569990ac01
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8c/1P/Vv9X/4n/Zf/o/4v/Rf8Y/4n/Rf/U/zP/2/+J/13/3P+L/3X/DP+L/07//P+J/03/2P+L/w3/AAAAAAAAAACJ/03/5P+L/w3/AAAAAAAAAACJ/03/4P+L/33/CP+J/z3/AAAAAAAAAACL/03/EP+J/w3/AAAAAAAAAACJ/13//P/H/0X//P8B/wD/AP8A////df8g////df8c/1D///91/xT/Vv/o/wAAAAAAAAAAg//E/xT/if9F/9T/if9d//z/g/9N//z////o/wAAAAAAAAAAi/9F/9T/i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?CallCatchBlock@@YAPAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PBU_s_FuncInfo@@PAXHK@Z
+    size: 156
+    flags: 2
+    section: .text
+  - kind: Object
+    name: $T17183
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_pCurrentException@@3PAUEHExceptionRecord@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?_pCurrentExContext@@3PAU_CONTEXT@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?_CallCatchBlock2@@YAPAXPAUEHRegistrationNode@@PBU_s_FuncInfo@@PAXHK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: fn_000000C6
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 90
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 116
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 7
+    addend: 0
+  - offset: 147
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
   hash: 437aabb3f38506e5644d2dffce049734edce8f23
   signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8c/1P/Vv9X/4n/Zf/o/4v/Xf8Y/4n/Xf/U/4P/Zf/c/wD/i/91/wz/i/9G//z/if9F/9j/6P8AAAAAAAAAAIv/QP9s/4n/Rf/k/+j/AAAAAAAAAACL/0D/cP+J/0X/4P/o/wAAAAAAAAAAi/99/wj/if94/2z/6P8AAAAAAAAAAIv/Tf8Q/4n/SP9w/4P/Zf/8/wD/x/9F//z/Af8A/wD/AP///3X/IP///3X/HP9T////df8U/1b/6P8AAAAAAAAAAIP/xP8U/4n/Rf/U/4P/Zf/8/wD/g/9N//z////o/wAAAAAAAAAAi/9F/9T/i/9N//D/ZP+J/w3/AAAAAAAAAABf/17/W//J/8P/
   symbols:
@@ -8,7 +97,7 @@
     flags: 2
     section: .text
   - kind: Object
-    name: $T17316
+    name: ''
     size: 0
     flags: 2
     section: .rdata

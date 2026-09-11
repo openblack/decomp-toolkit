@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 70c1e6aced73b3dd697f610ebfccb33afc78daae
+  signature: Vv9X/4v/8f/o/wAAAAAAAAAAg//P////O//H/3T/Xf+L/87/6P8AAAAAAAAAADv/x/90/1L/i/9O/wj/hf/J/3X/D/+L/0b/EP+J/0b/GP+J/0b/HP+L/0b/FP+J/0b/IP85/3z/JP8M/3T/F/+F/8n/df8b/4v/Rv8c/zv/Rv8g/3P/E////3T/JP8M/4v/zv/o/wAAAAAAAAAAav8B/1j/X/9e/8L/BP8A/43/RP8k/wz/av8B/1D///92/0z/6P8AAAAAAAAAAIP/xP8M/4P/+P8B/3T/4f+L/8f/6//g/w==
+  symbols:
+  - kind: Function
+    name: ?overflow@filebuf@@UAEHH@Z
+    size: 113
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?allocate@streambuf@@IAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sync@filebuf@@UAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?sputc@streambuf@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __write
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 97
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

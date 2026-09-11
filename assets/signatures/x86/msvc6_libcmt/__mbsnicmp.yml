@@ -1,4 +1,115 @@
 - symbol: 0
+  hash: 98fd6a4653044601b947bdf0fec7fc2f620cbb12
+  signature: g/98/yT/DP8A/1P/Vf9W/1f/D/+E/yf/Af8A/wD/g/89/wAAAAAAAAAAAP91/xn///90/yT/HP///3T/JP8c////dP8k/xz/6P8AAAAAAAAAAIP/xP8M/+n/B/8B/wD/AP///0z/JP8c/2b/i/8t/wAAAAAAAAAAi/90/yT/GP+L/3z/JP8U/2b/D/+2/wf/D/+2/8j/R//2/4H/AAAAAAAAAAAE/3T/Q/+K/w//hP/J/3X/BP8z/8n/6/9Q/zP/0v9H/4r/8P+K/9H/i//K/2b/O//N/3L/Ef9m/zv/Df8AAAAAAAAAAHf/CP8D/w3/AAAAAAAAAADr/zH/Zv87/w3/AAAAAAAAAABy/yj/Zv87/w3/AAAAAAAAAAB3/x//A/8N/wAAAAAAAAAA6/8X/w//t//I/4r/gf8AAAAAAAAAACT/EP88/xD/df8I/2b/D/+2/4n/AAAAAAAAAABm/w//tv8G/w//tv/Q/0b/9v+C/wAAAAAAAAAABP90/0P/iv8W/4T/0v91/wT/M//A/+v/Uv8z/9v/Rv+K//j/iv/a/4v/w/9m/zv/xf9y/xH/Zv87/wX/AAAAAAAAAAB3/wj/A/8F/wAAAAAAAAAA6/8z/2b/O/8F/wAAAAAAAAAAcv8q/2b/O/8F/wAAAAAAAAAAd/8h/wP/Bf8AAAAAAAAAAOv/Gf8P/7f/wP+K/5D/AAAAAAAAAACA/+L/EP+A//r/EP91/wj/Zv8P/7b/gP8AAAAAAAAAAGb/O//B/3X/HP9m/4X/yf90/xD/i/9E/yT/HP///0z/JP8c/4X/wP8P/4X/Dv////////8z/8D/X/9e/13/W//D/xv/wP+D/+D/Av9I/+v/8/8=
+  symbols:
+  - kind: Function
+    name: __mbsnicmp
+    size: 325
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __strnicmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mbulinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbcasemap
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 120
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 129
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 138
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 146
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 157
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 171
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 185
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 219
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 227
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 236
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 245
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 253
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 264
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 280
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
   hash: 1e41bf4cd1d2996f7b0baf5ff1287cc5270815d6
   signature: g/98/yT/DP8A/1P/Vf9W/1f/D/+E/zj/Af8A/wD/g/89/wAAAAAAAAAAAP91/xn///90/yT/HP///3T/JP8c////dP8k/xz/6P8AAAAAAAAAAIP/xP8M/+n/GP8B/wD/AP9q/xn/6P8AAAAAAAAAAP//TP8k/yD/i/9s/yT/HP+L/1T/JP8Y/1n/Zv8P/7b/Av8P/7b/yP9C//b/gf8AAAAAAAAAAAT/dP9H/4r/Cv+E/8n/df8E/zP////r/1T/M//b/0L/iv/4/4r/2f+L//v/Zv87/z3/AAAAAAAAAABy/xH/Zv87/z3/AAAAAAAAAAB3/wj/A/89/wAAAAAAAAAA6/8x/2b/O/89/wAAAAAAAAAAcv8o/2b/O/89/wAAAAAAAAAAd/8f/wP/Pf8AAAAAAAAAAOv/F/8P/7f/+P+K/4f/AAAAAAAAAAAk/xD/PP8Q/3X/CP9m/w//tv+//wAAAAAAAAAAZv8P/7b/Rf8A/w//tv/I/0X/9v+B/wAAAAAAAAAABP90/0j/iv9N/wD/hP/J/3X/BP8z//b/6/9U/zP/2/9F/4r/+P+K/9n/i//z/2b/O/81/wAAAAAAAAAAcv8R/2b/O/81/wAAAAAAAAAAd/8I/wP/Nf8AAAAAAAAAAOv/Mf9m/zv/Nf8AAAAAAAAAAHL/KP9m/zv/Nf8AAAAAAAAAAHf/H/8D/zX/AAAAAAAAAADr/xf/D/+3//D/iv+G/wAAAAAAAAAAJP8Q/zz/EP91/wj/Zv8P/7b/tv8AAAAAAAAAAGb/O//+/3X/JP9m/4X///90/xD/i/9E/yT/HP///0z/JP8c/4X/wP8P/4X/Bv////////9q/xn/6P8AAAAAAAAAAFn/M//A/1//Xv9d/1v/w/9q/xn/6P8AAAAAAAAAAFn/Zv87//f/G//A/4P/4P8C/0j/6//o/w==
   symbols:

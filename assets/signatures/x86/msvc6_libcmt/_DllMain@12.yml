@@ -8,3 +8,31 @@
     flags: 1
     section: .text
   relocations: []
+- symbol: 0
+  hash: 2ae87eec5322a680e7e7be4eb6abf0076c9f5c71
+  signature: g/98/yT/CP8B/3X/E/+D/z3/AAAAAAAAAAAA/3X/Cv///3T/JP8E////Ff8AAAAAAAAAAGr/Af9Y/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _DllMain@12
+    size: 32
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __pRawDllMain
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DisableThreadLibraryCalls@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 130964a8819e621fb4409b5bb1e9125e1756118e
+  signature: i/9E/yT/BP+L/1T/JP8I/4X/0v90/zj/g//6/wH/dP8m/4P/+v8C/3T/FP+D//r/A/91/wn/x/8A/wD/AP8A/wD/M//A/8P/uP8B/wD/AP8A/8P/i/8Q/4P/4v8C/4P/yv8E/4n/EP8z/8D/w/+L/xD/g//i/wT/g//K/wH/if8Q/zP/wP/D/4v/EP+D/+L/B/+D/8r/A/+J/xD/M//A/8P/kP8=
+  symbols:
+  - kind: Function
+    name: ?newlru@@YAKPAKK@Z
+    size: 82
+    flags: 2
+    section: .text
+  relocations: []

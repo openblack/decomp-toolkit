@@ -1,4 +1,133 @@
 - symbol: 0
+  hash: 0d4826c559c3dd2e8c5ec31e97f806c4ea2b1444
+  signature: Vv9X////dP8k/wz/6P8AAAAAAAAAAIv/8P9G/1b/6P8AAAAAAAAAAIv/+P9Z/4X///9Z/w//hP+D/wD/AP8A/1b///90/yT/EP9X/+j/AAAAAAAAAACD/8T/DP+F/8D/df8J/1f/6P8AAAAAAAAAAFn/6/9o/4D/P/8A/3T/IP9X/+j/AAAAAAAAAABQ/1f/av8C/+j/AAAAAAAAAABq/wL/aP8AAAAAAAAAAGr/Av/o/wAAAAAAAAAAg//E/xz/V//o/wAAAAAAAAAAof8AAAAAAAAAAFn/i/8N/wAAAAAAAAAAhf/A/3z/BP87/8H/fP8C/4v/wf+L/zT/hf8AAAAAAAAAAFb/6P8AAAAAAAAAAFD/Vv9q/wL/6P8AAAAAAAAAAGr/Af9o/wAAAAAAAAAAav8C/+j/AAAAAAAAAACD/8T/HP9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: __wperror
+    size: 166
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcstombs
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __write
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_02HFBK@?3?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_nerr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_errlist
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01BJG@?6?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 16
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 82
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 89
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 103
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 110
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 127
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 133
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 142
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 149
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 156
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+- symbol: 0
   hash: 4c9792ff98e2ff765e99242c90a410747531c17e
   signature: Vv9X////dP8k/wz/6P8AAAAAAAAAAIv/8P9G/1b/6P8AAAAAAAAAAIv/+P9Z/4X///9Z/w//hP+l/wD/AP8A/1b///90/yT/EP9X/+j/AAAAAAAAAACD/8T/DP+F/8D/df8M/1f/6P8AAAAAAAAAAFn/6f+H/wD/AP8A/1P/av8C/1v/U//o/wAAAAAAAAAAgP8//wD/Wf90/x3/V//o/wAAAAAAAAAAUP9X/1P/6P8AAAAAAAAAAFP/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAIP/xP8c/1f/6P8AAAAAAAAAAFn/6P8AAAAAAAAAAIP/OP8A/3z/GP/o/wAAAAAAAAAAi/8A/zv/Bf8AAAAAAAAAAH3/Cf/o/wAAAAAAAAAAi/8A/+v/Bf+h/wAAAAAAAAAAi/80/4X/AAAAAAAAAABW/+j/AAAAAAAAAABQ/1b/U//o/wAAAAAAAAAAav8B/2j/AAAAAAAAAABT/+j/AAAAAAAAAABT/+j/AAAAAAAAAACD/8T/IP9b/1//Xv/D/w==
   symbols:

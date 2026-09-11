@@ -1,4 +1,45 @@
 - symbol: 0
+  hash: bd0686c07ab63235b158be3c7a1826b3791386ef
+  signature: Vv9X/zP/9v8z////Of81/wAAAAAAAAAAfv8p/6H/AAAAAAAAAACL/wT/sP+F/8D/dP8U//b/QP8M/4P/dP8O/4P/eP8c/wD/dP8I/1D/6P8AAAAAAAAAAFn/R/9G/zv/Nf8AAAAAAAAAAHz/1/+L/8f/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: __rmtmp
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fclose
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 49
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: b6a412e11c7abf0a88c4bac93486d97a3fd06902
   signature: Vv9X/2r/Av8z////6P8AAAAAAAAAADP/9v9Z/zn/Nf8AAAAAAAAAAH7/Sv+h/wAAAAAAAAAAi/8E/7D/hf/A/3T/Nf9Q/1b/6P8AAAAAAAAAAKH/AAAAAAAAAABZ/1n/i/8E/7D/9v9A/wz/g/90/w7/g/94/xz/AP90/wj/UP/o/wAAAAAAAAAAWf9H/6H/AAAAAAAAAAD//zT/sP9W/+j/AAAAAAAAAABZ/1n/Rv87/zX/AAAAAAAAAAB8/7b/av8C/+j/AAAAAAAAAABZ/4v/x/9f/17/w/8=
   symbols:

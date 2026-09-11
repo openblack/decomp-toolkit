@@ -1,12 +1,105 @@
 - symbol: 0
-  hash: ca72392f17f8af1dd6dd9f40c026eec0b37e5a98
-  signature: Vv+L/3T/JP8I/4X/9v90/z3/av8J/+j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/4X/wP9Z/3T/E/9W/1D/6P8AAAAAAAAAAGr/Cf/o/wAAAAAAAAAAg//E/wz/Xv/D/2r/Cf/o/wAAAAAAAAAAWf9W/2r/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAABe/8P/
+  hash: 0ee73d3fe8a782379a423a66e9b54fecd0ee1349
+  signature: Vf+L/+z/Uf9W/4v/df8I/4X/9v90/1r/of8AAAAAAAAAAIP/+P8D/3X/Fv9W/+j/AAAAAAAAAABZ/4X/wP9W/3T/Nv9Q/+j/AAAAAAAAAABZ/1n/6/86/4P/+P8C/3X/Jv+N/0X/CP9Q/43/Rf/8/1D/Vv/o/wAAAAAAAAAAg//E/wz/hf/A/3T/Ef9Q////df8I////df/8/+j/AAAAAAAAAACD/8T/DP/r/w//Vv9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAXv/J/8P/
   symbols:
   - kind: Function
     name: _free
-    size: 72
+    size: 105
     flags: 1
     section: .text
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_find_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_free_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___old_sbh_find_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___old_sbh_free_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapFree@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 78
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 92
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 98
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+- symbol: 0
+  hash: ae04324ac71306a1226ea0cc67b3df33a46ebe0b
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8Y/1P/Vv9X/4v/df8I/4X/9v8P/4T/rP8A/wD/AP+h/wAAAAAAAAAAg//4/wP/df87/2r/Cf/o/wAAAAAAAAAAWf+D/2X//P8A/1b/6P8AAAAAAAAAAFn/if9F/+T/hf/A/3T/Cf9W/1D/6P8AAAAAAAAAAFn/Wf+D/03//P///+j/AAAAAAAAAACD/33/5P8A/+v/Uf8=
+  symbols:
+  - kind: Function
+    name: _free
+    size: 106
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
   - kind: Function
     name: __lock
     size: 0
@@ -23,46 +116,44 @@
     flags: 1
     section: null
   - kind: Function
-    name: __unlock
+    name: fn_0000006A
     size: 0
-    flags: 1
-    section: null
-  - kind: Object
-    name: __crtheap
-    size: 0
-    flags: 1
-    section: null
-  - kind: Function
-    name: __imp__HeapFree@12
-    size: 0
-    flags: 1
-    section: null
+    flags: 0
+    section: .text
   relocations:
-  - offset: 12
-    kind: x86_rel32
+  - offset: 6
+    kind: x86_abs32
     symbol: 1
-    addend: -4
-  - offset: 18
-    kind: x86_rel32
-    symbol: 2
-    addend: -4
-  - offset: 31
-    kind: x86_rel32
-    symbol: 3
-    addend: -4
-  - offset: 38
-    kind: x86_rel32
-    symbol: 4
-    addend: -4
-  - offset: 50
-    kind: x86_rel32
-    symbol: 4
-    addend: -4
-  - offset: 60
-    kind: x86_abs32
-    symbol: 5
     addend: 0
-  - offset: 66
+  - offset: 11
     kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 47
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
     symbol: 6
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 8
     addend: 0

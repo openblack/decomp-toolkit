@@ -1,4 +1,77 @@
 - symbol: 0
+  hash: 042146a1cde4993efb28756bef5f6e072257031d
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/1f/if91//D/x/8G/wAAAAAAAAAAi/9+/wz/x/9F//z/Av8A/wD/AP+F////dv8w/4v/Rv8I/0//i/8E/7j/hf/A/3T/8f+L/0j/BP+F/8n/dv8J/4P/+f///3P/BP9J/4n/SP8E/4v/SP8E//f/2f8b/8n/9//R/yP/yP90/9T/i/8B/2r/Af///xD/6//M////dv8I/+j/AAAAAAAAAACA/2X//P8A/1n/av8B/43/Tv8Y/+j/AAAAAAAAAACL/03/9P/H/wb/AAAAAAAAAABf/17/ZP+J/w3/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ??1_Locimp@locale@std@@UAE@XZ
+    size: 129
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L10128
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7_Locimp@locale@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7facet@locale@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 20
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 90
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 105
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 114
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+- symbol: 0
   hash: ed392817d461a82512801296af260bd3f5ff1990
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/Vv+L//H/V/+J/3X/7P/H/wb/AAAAAAAAAACN/03/8P/H/0X//P8B/wD/AP8A/+j/AAAAAAAAAACL/37/DP/G/0X//P8C/4X///92/x7/i/9G/wj/T/+L/wz/uP+F/8n/dP/x/+j/AAAAAAAAAACF/8D/dP/o/4v/EP9q/wH/i//I////Ev/r/97///92/wj/6P8AAAAAAAAAAFn/xv9F//z/Af+N/03/8P/o/wAAAAAAAAAAgP9l//z/AP9q/wH/jf9O/xj/6P8AAAAAAAAAAIv/Tf/0/8f/Bv8AAAAAAAAAAF//Xv9k/4n/Df8AAAAAAAAAAMn/w/8=
   symbols:

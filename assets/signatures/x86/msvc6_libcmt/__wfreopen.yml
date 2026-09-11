@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: 866e2840012c84d4a32ffc30d1a2d14fd50ccfba
+  signature: Vv+L/3T/JP8Q//b/Rv8M/4P/dP8H/1b/6P8AAAAAAAAAAFn/Vv9q/0D///90/yT/FP8z/8D/if9G/wj/if8G////dP8k/xT/if9G/wz/if9G/wT/6P8AAAAAAAAAAIP/xP8Q/17/w/8=
+  symbols:
+  - kind: Function
+    name: __wfreopen
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fclose
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __wopenfile
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: 7f1d019e7fdfa806656e576c93253467f69c4b60
   signature: Vv+L/3T/JP8Q/1f/Vv/o/wAAAAAAAAAA9v9G/wz/g/9Z/3T/B/9W/+j/AAAAAAAAAABZ/1b/av9A////dP8k/xj/M//A/4n/Rv8I/4n/Bv///3T/JP8Y/4n/Rv8M/4n/Rv8E/+j/AAAAAAAAAABW/4v/+P/o/wAAAAAAAAAAg//E/xT/i//H/1//Xv/D/w==
   symbols:

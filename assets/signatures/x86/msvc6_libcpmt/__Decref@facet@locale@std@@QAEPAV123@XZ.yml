@@ -1,4 +1,14 @@
 - symbol: 0
+  hash: 8f868a73aa11c6a0ab2506017b3d97fa5db53927
+  signature: i/9B/wT/hf/A/3b/Cf+D//j///9z/wT/SP+J/0H/BP+L/0H/BP/3/9j/G//A//f/0P8j/8H/w/8=
+  symbols:
+  - kind: Function
+    name: ?_Decref@facet@locale@std@@QAEPAV123@XZ
+    size: 28
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
   hash: 80b956555a5e9ab04d716ef1c5cd71064df349fb
   signature: Vf+L/+z/Uf9W/1f/i//5/43/Tf/8/+j/AAAAAAAAAACL/0f/BP+F/8D/dv8J/4P/+P///3P/BP9I/4n/R/8E/4v/d/8E/43/Tf/8//f/3v8b//b/9//W/yP/9//o/wAAAAAAAAAAi//G/1//Xv/J/8P/
   symbols:

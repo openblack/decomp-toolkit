@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 79f67d704877573d28801158891bc8360f74f430
+  signature: Vv+L//H/g/9+/xz/AP90/w3/i/9O/wT/hf/J/3T/Bv+L/wH/av8B////EP+L/0T/JP8I/4X/wP+J/0b/BP90/wb/g/9m/wj/+//r/wT/g/9O/wj/BP9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?init@ios@@IAEXPAVstreambuf@@@Z
+    size: 47
+    flags: 1
+    section: .text
+  relocations: []

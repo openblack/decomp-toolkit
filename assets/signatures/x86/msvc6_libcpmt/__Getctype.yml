@@ -1,4 +1,63 @@
 - symbol: 0
+  hash: 9efa59ceab46815978ac0f84c51d0ffe35257a58
+  signature: Vf+L/+z/g//s/xD/of8AAAAAAAAAAFb/if9F//D/of8AAAAAAAAAAL7/AP8C/wD/AP9X/1b/if9F//T/6P8AAAAAAAAAAIX/wP9Z/4n/Rf/4/3T/Gf9W////Nf8AAAAAAAAAAFD/6P8AAAAAAAAAAIP/xP8M/8f/Rf/8/wH/AP8A/wD/6/8M/6H/AAAAAAAAAACD/2X//P8A/4n/Rf/4/4v/Rf8I/43/df/w/4v/+P+l/6X/pf+l/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: __Getctype
+    size: 96
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 31
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 46
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 52
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 69
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
   hash: 6f8e894fcf9cf3d9a4268747066b2d7548d734e2
   signature: Vf+L/+z/g//s/xT/U/9W/77/AAAAAAAAAABX/1b///8V/wAAAAAAAAAAg/89/wAAAAAAAAAAAP+L/x3/AAAAAAAAAAB0/xT/Vv///9P/av8T/+j/AAAAAAAAAABZ/8f/Rf/8/wH/AP8A/wD/6/8E/4P/Zf/8/wD/of8AAAAAAAAAAL//AP8C/wD/AP+J/0X/7P+h/wAAAAAAAAAAV/+J/0X/8P/o/wAAAAAAAAAAhf/A/1n/if9F//T/dP8Z/1f///81/wAAAAAAAAAAUP/o/wAAAAAAAAAAg//E/wz/x/9F//j/Af8A/wD/AP/r/wz/of8AAAAAAAAAAIP/Zf/4/wD/if9F//T/g/99//z/AP90/wr/av8T/+j/AAAAAAAAAABZ/+v/A/9W////0/+L/0X/CP+N/3X/7P+L//j/pf+l/6X/pf9f/17/W//J/8P/
   symbols:

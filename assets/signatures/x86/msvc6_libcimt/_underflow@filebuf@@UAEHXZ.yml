@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: f62634d55a3f94f2e076c04945f2d40f9128af59
+  signature: Vf+L/+z/Uf9W/1f/i//x/+j/AAAAAAAAAACF/8D/dP8I/4v/Rv8o/w//tv8A/+v/c/+L/87/6P8AAAAAAAAAAIP/z////zv/x/90/03/i//O/+j/AAAAAAAAAAA7/8f/dP9C/4P/fv8I/wD/dP8b/43/Rf///2r/Af9Q////dv9M/+j/AAAAAAAAAACD/8T/DP+F/8D/fv8n/w//tv9F////6/85/4v/Rv8U/4v/Tv8Q/zv/wf92/wT/K//B/+v/Av8z/8D/UP9R////dv9M/+j/AAAAAAAAAACD/8T/DP+F/8D/f/8E/4v/x//r/xT/i/9O/xD/if9+/wz/A//B/4n/Tv8k/4n/Tv8o/4n/Rv8s/w//tv8B/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?underflow@filebuf@@UAEHXZ
+    size: 144
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?in_avail@streambuf@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?allocate@streambuf@@IAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sync@filebuf@@UAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __read
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 105
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

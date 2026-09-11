@@ -1,4 +1,27 @@
 - symbol: 0
+  hash: c2835c6863d5b91bbcfbe1b10b104e012e2339d1
+  signature: i/9M/yT/BP+h/wAAAAAAAAAAif8N/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ?_set_se_translator@@YAP6AXIPAU_EXCEPTION_POINTERS@@@ZP6AXI0@Z@Z
+    size: 16
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?__pSETranslator@@3P6AXIPAU_EXCEPTION_POINTERS@@@ZA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 42ebcb874504866152cb0e560419686f138ba829
   signature: Vv/o/wAAAAAAAAAAi/9w/2j/6P8AAAAAAAAAAIv/TP8k/wj/if9I/2j/i//G/17/w/8=
   symbols:

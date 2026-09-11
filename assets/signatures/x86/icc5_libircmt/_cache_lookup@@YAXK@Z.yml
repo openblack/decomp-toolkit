@@ -1,0 +1,36 @@
+- symbol: 0
+  hash: cc0b49de8904c7dd0d14a4caeb49a82895afc932
+  signature: V/9W/1X/g//s/xD/i/9E/yT/IP+D//j/Af91/xT/iv8V/zj/Av8V/wH/gP/6/wH/dP9F/8b/Bf9c/wL/Ff8B/wD/6/81/4X/wP91/xb/oP84/wL/Ff8B/zz/Af8P/4T/7/8A/wD/AP/G/wX/XP8C/xX/Af8A/+v/G/+D//j/Av91/xb/iv8V/2z/Av8V/wH/gP/6/wH/D/+E/97/AP8A/wD/xv8F/5D/Av8V/wH/AP+D/8T/EP9d/17/X//D/4v/Pf9Q/wL/Ff8B/4v/z/+B/+H/4P8P/wD/AP/B/+n/Bf+B/+f/AP/w//////8z//b/if8N/zz/Av8V/wH/i//R/8H/4v8H/4n/Pf9M/wL/Ff8B/43/LP+K/43/jP+K/1T/R/8V/wH/xv8F/zn/Av8V/wH/AP+J/1z/JP8M/4v/9v+N/xT/Nv+L/xz/sf87//v/df8L/4v/nP9V/3T/R/8V/wH/hf/b/3X/E/9G/4P//v8E/3L/5f+L/1z/JP8M/8b/Bf9c/wL/Ff8B/wD/6/+Q/4v/XP8k/wz/i/+M/1X/pP9H/xX/Af+D//n/Af+J/zX/QP8C/xX/Af/G/wX/XP8C/xX/Af8B/3X/J/+J/wT/JP+L/4T/Vf9E/0f/Ff8B/4n/RP8k/wT/6P8AAAAAAAAAAIv/Ff88/wL/Ff8B/4v/wv/B/+D/B/+N/yz/kP+L/zX/QP8C/xX/Af+N/4X/QP9H/xX/Af+J/wT/JP+J/3T/JP8E/+j/AAAAAAAAAADp/zX/////////xv8F/1z/Av8V/wH/AP/p/yn/////////i/89/4T/Av8V/wH/i//P/4H/4f/g////Af8A/8H/6f8F/4H/5/8A/wD//v///zP/9v+J/w3/cP8C/xX/Af+L/9H/wf/i/wf/if89/4D/Av8V/wH/jf8s/4r/jf+U/4r/VP+J/xX/Af+J/1z/JP8M/4v/9v+N/7z/J/8A/wD/AP8A/43/DP82/4v/HP+y/zv/+/91/wv/i/+c/03/dP+J/xX/Af+F/9v/df8W/0b/g//+/wT/cv/l/4v/XP8k/wz/xv8F/5D/Av8V/wH/AP/p/73//v//////i/9c/yT/DP+L/5T/Tf+k/4n/Ff8B/4P/+v8B/4n/Nf90/wL/Ff8B/8b/Bf+Q/wL/Ff8B/wH/df8n/4n/BP8k/4v/hP9N/0T/if8V/wH/if9E/yT/BP/o/wAAAAAAAAAAi/8V/3D/Av8V/wH/i//C/8H/4P8H/43/LP+Q/4v/Nf90/wL/Ff8B/43/hf9A/4n/Ff8B/4n/BP8k/4n/dP8k/wT/6P8AAAAAAAAAAOn/Yv/+//////8=
+  symbols:
+  - kind: Function
+    name: ?cache_lookup@@YAXK@Z
+    size: 502
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?update_pref_usefulness@@YAXKK@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?newlru@@YAKPAKK@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 244
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 282
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 455
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 493
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

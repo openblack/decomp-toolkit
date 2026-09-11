@@ -1,4 +1,149 @@
 - symbol: 0
+  hash: 4c1346e17d90ca1a64226c89e7fddd764ce63dde
+  signature: Vf+L/+z/Uf9T/1b///91/xD/i/91/wj///91/wz/Vv/o/wAAAAAAAAAAg//E/wz/g/89/wAAAAAAAAAAAv8P/4X/Qf8B/wD/AP9q/1z/Vv/o/wAAAAAAAAAAWf+F/8D/Wf8P/4X/L/8B/wD/AP9q/y//Vv/o/wAAAAAAAAAAWf+F/8D/Wf8P/4X/Hf8B/wD/AP84/wb/dP8K/4D/fv8B/zr/D/+E/w//Af8A/wD/aP8AAAAAAAAAAOj/AAAAAAAAAACF/8D/Wf+J/0X//P8P/4T/+f8A/wD/AP9o/wT/Af8A/wD/6P8AAAAAAAAAAIv/8P9Z/4X/9v+L/97/D/+E/+L/AP8A/wD/V/+L/03//P+K/wH/hP/A/3T/F/88/zv/dP8T/43/lv8C/wH/AP8A/zv/2v9z/wn/iP8D/0P/Qf+J/03//P/r/+P/gP8j/wD/iv9D////jf97////PP9c/4v/3v91/w7/av9c/1b/6P8AAAAAAAAAAFn/O//4/1n/6/8C/zz/L/90/w3/aP8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/Wf9W/+j/AAAAAAAAAAD//3X/CP+L//j/6P8AAAAAAAAAAAP/+P9Z/4H///8E/wH/AP8A/1n/c/9v////df8I/1b/6P8AAAAAAAAAAP//df8Q////df8M/1b/6P8AAAAAAAAAAIP/xP8U/4P/Pf8AAAAAAAAAAAL/dP87/2r/XP9W/+j/AAAAAAAAAABZ/zv/8P9Z/3T/Dv9q/y//Vv/o/wAAAAAAAAAAWf87//D/Wf91/zL/jf9+/wH/av9c/1f/6P8AAAAAAAAAAFn/O//4/1n/dP8O/2r/L/9X/+j/AAAAAAAAAABZ/zv/+P9Z/3X/E/+L/0X//P+A/zj/AP90/wv///9F//z/hf/A/w//hf8n/////////1b/6P8AAAAAAAAAAFn/X/9e/4P/yP///1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __execvpe
+    size: 365
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __execve
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbschr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04LNMG@PATH?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _getenv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbsrchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01PCFE@?2?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strcat
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 41
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 88
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 93
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 184
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 199
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 205
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 213
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 223
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 244
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 256
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 265
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 276
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 290
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 307
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 321
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 352
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+- symbol: 0
   hash: 3840015f7817e5a6075bb5ac3f4c646e5d1a71b2
   signature: Vf+L/+z/Uf9T/1b///91/xD/i/91/wj///91/wz/Vv/o/wAAAAAAAAAAg//E/wz/6P8AAAAAAAAAAIP/OP8C/w//hf9C/wH/AP8A/2r/XP9W/+j/AAAAAAAAAABZ/4X/wP9Z/w//hf8w/wH/AP8A/2r/L/9W/+j/AAAAAAAAAABZ/4X/wP9Z/w//hf8e/wH/AP8A/zj/Bv90/wr/gP9+/wH/Ov8P/4T/EP8B/wD/AP9o/wAAAAAAAAAA6P8AAAAAAAAAAIX/wP9Z/4n/Rf/8/w//hP/6/wD/AP8A/2j/BP8B/wD/AP/o/wAAAAAAAAAAi//w/1n/hf/2/4v/3v8P/4T/4/8A/wD/AP9X/4v/Tf/8/4r/Af+E/8D/dP8X/zz/O/90/xP/jf+W/wL/Af8A/wD/O//a/3P/Cf+I/wP/Q/9B/4n/Tf/8/+v/4/+A/yP/AP+K/0P///+N/3v///88/1z/i//e/3X/Dv9q/1z/Vv/o/wAAAAAAAAAAWf87//j/Wf/r/wL/PP8v/3T/Df9o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf9Z/1b/6P8AAAAAAAAAAP//df8I/4v/+P/o/wAAAAAAAAAAA//4/1n/gf///wT/Af8A/wD/Wf9z/3D///91/wj/Vv/o/wAAAAAAAAAA//91/xD///91/wz/Vv/o/wAAAAAAAAAAg//E/xT/6P8AAAAAAAAAAIP/OP8C/3T/O/9q/1z/Vv/o/wAAAAAAAAAAWf87//D/Wf90/w7/av8v/1b/6P8AAAAAAAAAAFn/O//w/1n/df8y/43/fv8B/2r/XP9X/+j/AAAAAAAAAABZ/zv/+P9Z/3T/Dv9q/y//V//o/wAAAAAAAAAAWf87//j/Wf91/xP/i/9F//z/gP84/wD/dP8L////Rf/8/4X/wP8P/4X/Jv////////9W/+j/AAAAAAAAAABZ/1//Xv+D/8j///9b/8n/w/8=
   symbols:

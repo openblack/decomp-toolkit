@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: a376eb68fec2f28c03309d4f25e9a0a0c13ca994
+  signature: V/+D/+z/IP+L/0T/JP8o/4v/fP8k/yz/g//4/wH/dP91/4P/+P8C/3T/Bf+D/8T/IP9f/8P/if88/yT/uf9A/8r/Hf8B/43/VP8k/wj/x/9E/yT/BP8A/wD/AP8A/43/BP8k/1D/Uv/o/wAAAAAAAAAAi/9E/yT/CP+L/0D/EP+F/8D/dP/S/2n/0P+o/wj/AP8A/4v/gv8A/wD/AP8A/zv/x/91/8L/O/8F/3z/Av8V/wH/df8G////gv8g/wD/AP8A/6H/lP8C/xX/Af+D//j/Af90/6r/g//4/wL/dP+l/4P/+P8D/3T/oP+D//j/BP90/5v///+C/xj/AP8A/wD/g//E/yD/X//D/4n/fP8k/xD/uf9A/8r/Hf8B/43/VP8k/xj/x/9E/yT/FP8A/wD/AP8A/43/RP8k/xD/UP9S/+j/AAAAAAAAAACL/0T/JP8Y/4v/QP8Q/4X/wP8P/4T/Yf////////9p/9D/qP8I/wD/AP+L/4L/AP8A/wD/AP87/8f/D/+F/03/////////O/8F/0j/Av8V/wH/df8G////gv8c/wD/AP8A/6H/YP8C/xX/Af+D//j/Af8P/4T/Mf////////+D//j/Av8P/4T/KP////////+D//j/A/8P/4T/H/////////+D//j/BP8P/4T/Fv///////////4L/FP8A/wD/AP+D/8T/IP9f/8P/kP8=
+  symbols:
+  - kind: Function
+    name: ?update_pref_usefulness@@YAXKK@Z
+    size: 268
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?insert@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@QAE?AU?$pair@Viterator@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@_N@2@ABU?$pair@$$CBKK@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 53
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 162
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -13,7 +13,7 @@
     flags: 1
     section: .rdata
   - kind: Unknown
-    name: $L17894
+    name: ''
     size: 0
     flags: 2
     section: .text

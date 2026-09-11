@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 0d6ffbae58171e874d8b65bfd5719c802def471a
+  signature: i/9E/yT/CP+L/1T/JP8M/2r/A/+N/wz/AP9Y/9P/4P/T/+L/i/9M/yT/BP8j/9D/9//Q/yP/Af8L/9D/if8R/8P/
+  symbols:
+  - kind: Function
+    name: __SetTag
+    size: 33
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: c4ac4a292c1c0b624601a92df3ded13543c01161
+  signature: Vf+L/+z/g//s/wj/i/9F/wz/0f/g/4n/Rf/8/7r/A/8A/wD/AP+L/03//P/T/+L/if9V//j/i/9F/xD/i/9N//z/0//g/4n/Rf8Q/4v/Tf/4//f/0f+L/1X/CP+L/wL/I//B/4v/Tf8Q/yP/Tf/4/wv/wf+L/1X/CP+J/wL/i//l/13/w/8=
+  symbols:
+  - kind: Function
+    name: __SetTag
+    size: 67
+    flags: 1
+    section: .text
+  relocations: []

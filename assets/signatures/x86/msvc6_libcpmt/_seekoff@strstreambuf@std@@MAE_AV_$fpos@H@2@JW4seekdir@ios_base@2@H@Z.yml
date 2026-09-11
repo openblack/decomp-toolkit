@@ -17,3 +17,35 @@
     kind: x86_rel32
     symbol: 1
     addend: -4
+- symbol: 0
+  hash: 6bcd8e4cde45c45c6e665bab963abb483d761231
+  signature: Vf+L/+z/g//s/xj/i/9R/yD/i/8C/4X/wP90/wj/Of9B/zz/c/8D/4n/Qf88/1P/iv9d/xT/Vv9X//b/w/8B/w//hP+W/wD/AP8A/4v/Qf8c/4v/OP+F////D/+E/4n/AP8A/wD/g/99/xD/Av91/w//i/9B/wz/i/9R/zz/K/8Q/4v/df8M/wP/8v/r/yP/g/99/xD/Af91/wz/9v/D/wL/df8V/4v/Qf8M/4v/1//r/+X/g/99/xD/AP91/wj/i/91/wz/g//+////df8D/4P/zv///4X/9v8P/4z/qf8A/wD/AP+L/0H/DP+L/1H/PP+L/wD/K//Q/zv/8v8P/4//l/8A/wD/AP+L/1H/LP8r/8f/A//G/yn/Av+L/1H/HP8B/wL/9v/D/wL/D/+E/4P/AP8A/wD/i/9R/yD/i/8a/4X/2/90/3r/i/9B/xz/i/84/4v/Qf8w/4v/AP+J/zr/i/9J/zD/A//D/yv/x/+J/wH/6/9j//b/w/8C/3T/W/+L/xL/hf/S/3T/Vf+D/33/EP8C/3X/D/+L/0H/DP+L/3n/PP8r/zj/i/91/wz/A//3/+v/Hv+D/33/EP8B/3X/B/+L/0H/DP+L//r/6//q/4P/ff8Q/wD/df8I/4v/df8M/4P//v///3X/A/+D/87///+F//b/fP8e/4v/Qf8M/4v/ef88/4v/AP8r//j/O//3/3//EP8r/8L/i/9R/zD/A//G/yn/Av+L/0n/IP8B/wH/6/8D/4P/zv///6H/AAAAAAAAAABq/wb/if9F//D/of8AAAAAAAAAAIn/Rf/0/6H/AAAAAAAAAACJ/0X/+P+L/0X/CP+J/3X/6P9Z/43/df/o/4v/+P/z/6X/X/9e/1v/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?seekoff@strstreambuf@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+    size: 334
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Fpz@std@@3_JB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Stz@?$fpos@H@std@@0HA
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 288
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 298
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 306
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

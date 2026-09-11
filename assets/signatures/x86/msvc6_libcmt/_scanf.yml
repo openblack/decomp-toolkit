@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: abe7be8d6526b81cd8e128803b2bd826d7a3dbbd
+  signature: jf9E/yT/CP9Q////dP8k/wj/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: _scanf
+    size: 23
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __input
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: 82accae33523c34e0e806a95becb3cdf7aef9845
   signature: Vv++/wAAAAAAAAAAV/9W/2r/AP/o/wAAAAAAAAAAjf9E/yT/GP9Q////dP8k/xj/Vv/o/wAAAAAAAAAAVv9q/wD/i//4/+j/AAAAAAAAAACD/8T/HP+L/8f/X/9e/8P/
   symbols:

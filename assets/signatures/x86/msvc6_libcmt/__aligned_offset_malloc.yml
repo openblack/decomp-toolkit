@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: 37d2465f50340574aec76c618c85455824cfad6b
+  signature: U/9W/1f/i/98/yT/FP+N/0f///+F/8f/dP8M/8f/Bf8AAAAAAAAAABb/AP8A/wD/6/8p/4P///8E/3f/A/9q/wT/X/+L/1z/JP8Y/4v/RP8k/xD/jf9z/wP/g//m//z/A//G/43/RP84/wT/UP/o/wAAAAAAAAAAWf+L/8j/hf/J/3X/BP8z/8D/6/8V/43/BP8x/43/RP84/wT/T//3/9f/I//H/4v/0P8r/9b/K//D/4n/Sv/8/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: __aligned_offset_malloc
+    size: 96
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 56
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 73ec775a17f68920cc85d216cf630e5e09d8749f
+  signature: U/9W/1f/i/98/yT/FP+N/0f///+F/8f/dP8N/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP/r/yn/g////wT/d/8D/2r/BP9f/4v/XP8k/xj/i/9E/yT/EP+N/3P/A/+D/+b//P8D/8b/jf9E/zj/BP9Q/+j/AAAAAAAAAABZ/4v/yP+F/8n/df8E/zP/wP/r/xX/jf8E/zH/jf9E/zj/BP9P//f/1/8j/8f/i//Q/yv/1v8r/8P/if9K//z/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __aligned_offset_malloc
+    size: 97
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

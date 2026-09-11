@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6d01f3f6aa2c649a2a6b708a445b409bbcc97e8b
+  signature: V/+D/+z/CP+L/3z/JP8Q/zP/yf8z/9L/hf///3T/Ev+J/zz/JP/o/wAAAAAAAAAAD/++/0z/OP///w//vv9U/zj//v8D/8r/A//I/4P/4f9//4v/wf+D/8T/CP9f/8P/
+  symbols:
+  - kind: Function
+    name: ?base_id_hash@@YAHPAD@Z
+    size: 48
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?strlen@@YAHPAD@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

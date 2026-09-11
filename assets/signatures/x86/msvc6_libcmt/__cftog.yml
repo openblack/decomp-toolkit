@@ -44,3 +44,88 @@
     kind: x86_rel32
     symbol: 4
     addend: -4
+- symbol: 0
+  hash: ac6f11f4ccc487dcd73c3ea68c6e4eadfcc5149f
+  signature: Vf+L/+z/U/9W/1f/i/99/wj/Uf9R/93/B//d/xz/JP/o/wAAAAAAAAAAo/8AAAAAAAAAAIv/SP8E/0n/i/9d/xD/if8N/wAAAAAAAAAAM//J/4P/OP8t/1D/U/8P/5T/wf8D/03/DP+L//H/Vv/o/wAAAAAAAAAAof8AAAAAAAAAAIP/xP8U/4v/SP8E/0n/Of8N/wAAAAAAAAAAD/+c/8H/iP8N/wAAAAAAAAAAi/9A/wT/SP+D//j//P+j/wAAAAAAAAAAfP8h/zv/w/99/x3/hP/J/3T/Cv+K/wb/Rv+E/8D/df/5/yD/Rv/+/1P///91/wz/V//o/wAAAAAAAAAAg//E/wz/6/8Q////df8U/1P///91/wz/V//o/wAAAAAAAAAAg//E/xD/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __cftog
+    size: 155
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __fltout
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _g_pflt
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _g_magnitude
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __fptostr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _g_round_expansion
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __cftof_g
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __cftoe_g
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 56
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 61
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 95
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 125
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 143
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

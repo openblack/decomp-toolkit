@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 2013172f47edd79451e343e4ec2d645c0859792b
+  signature: Vf+L/+z/Uf+L/0X/EP9m/4P/Zf/+/wD/Zv89/wn/AP9m/4n/Rf/8/3T/Cv9m/z3/Df8A/3T/BP9q/wT/6/8C/2r/CP9Y/43/Tf8M/1b/Uf+N/03/FP9R/43/Tf/8/1H/av8A/2r/AP9Q////df8M////df8I/+j/AAAAAAAAAACL//D/g//E/yD/hf/2/33/Cf///3X/DP9W/+j/AAAAAAAAAACL/8b/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?_com_dispatch_propput@@YAJPAUIDispatch@@JGZZ
+    size: 87
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_com_invoke_helper@@YAJPAUIDispatch@@JGGPAXPBGPADPAPAUIErrorInfo@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?_com_raise_error@@YGXJPAUIErrorInfo@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 60
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 78
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

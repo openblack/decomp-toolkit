@@ -1,4 +1,54 @@
 - symbol: 0
+  hash: 2ee6555b0a73b0274eca54cbe2f946beaaf1ee34
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACh/wAAAAAAAAAAg/9k/yT/CP8A/4v/SP8E/4X/yf92/wn/g//5////c/8E/0n/if9I/wT/i/9I/wT/9//Z/xv/yf/3/9H/I//I/3T/Bv+L/wH/av8B////EP+L/0z/JP8A/4P/Jf8AAAAAAAAAAAD/ZP+J/w3/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ?_Tidy@?$_Tidyfac@V?$money_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@@std@@SAXXZ
+    size: 75
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L25124
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Facsav@?$_Tidyfac@V?$money_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@@std@@0PAV?$money_put@GV?$ostreambuf_iterator@GU?$char_traits@G@std@@@std@@@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 11
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 61
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
   hash: 83d1d343c57abce15e1e232d01741d516bfcec30
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/43/Tf/w/+j/AAAAAAAAAACL/w3/AAAAAAAAAACD/2X//P8A/+j/AAAAAAAAAACF/8D/dP8I/4v/EP9q/wH/i//I////Ev+D/yX/AAAAAAAAAAAA/4P/Tf/8////jf9N//D/6P8AAAAAAAAAAIv/Tf/0/2T/if8N/wAAAAAAAAAAyf/D/w==
   symbols:

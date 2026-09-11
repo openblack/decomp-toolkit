@@ -35,3 +35,58 @@
     kind: x86_rel32
     symbol: 3
     addend: -4
+- symbol: 0
+  hash: 61d414b68cd56888eba607b063072072920cefde
+  signature: Vf+L/+z/U/+L/13/CP9m/4H/+///////Vv90/2z/i/91/wz/i/9G/wz/qP8B/3X/CP+o/4D/dP9e/6j/Av91/1r/g/9+/wj/AP91/wf/Vv/o/wAAAAAAAAAAWf+L/0b/DP+o/0D/D/+F/4T/AP8A/wD/i/9O/xD/g//5////dP8U/4v/0f/B//r/Bf+D/+H/H/+L/xT/lf8AAAAAAAAAAI3/DP/K/+v/Bf+5/wAAAAAAAAAA9v9B/wT/gP90/13/jf9F/wj/U/9Q/+j/AAAAAAAAAABZ/4P/+P///1n/df8S/8f/Bf8AAAAAAAAAACr/AP8A/wD/Zv8N//////9e/1v/Xf/D/4v/Dv87/07/CP91/wr/g/9+/wT/AP91/+v/A//I/4n/Dv+D//j/Af90/wn///8O/4v/Dv+K/1X/Cf+I/xH///8O/4v/Dv+K/1X/CP+I/xH/Af9G/wT/i/9G/wz/JP/v/wz/Af+J/0b/DP9m/4v/w//r/8L/i/8O/zv/Tv8I/3X/C/+D/37/BP8A/3X/sf+D/8H/Av+J/w7/g/9G/wT/Av8k/+//DP8B/4P/Bv/+/4n/Rv8M/4v/Bv9m/4n/GP+L/wb/Zv+L/wD/6/+W/w==
+  symbols:
+  - kind: Function
+    name: _ungetwc
+    size: 233
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wctomb
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 41
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 76
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 86
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 102
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 115
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

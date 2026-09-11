@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 25625354a8637424b41e2d6a3295224e2017a5bd
+  signature: i//B/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??4type_info@@AAEAAV0@ABV0@@Z
+    size: 5
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 2d70b5b5332ac0e67065966e1184fe8d18abcc8f
+  signature: Vf+L/+z/Uf+J/03//P+L/0X//P+L/+X/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??4type_info@@AAEAAV0@ABV0@@Z
+    size: 16
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,123 @@
+- symbol: 0
+  hash: 5fc227a8cf8536cba0eea2cb53d9e301f0caa313
+  signature: uf8AAAAAAAAAAIv/wf+F/8D/dP8K/6H/AAAAAAAAAACL/0D/BP8D/8H/av8B/1D/uf8AAAAAAAAAAOj/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: _$E22
+    size: 35
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ?cerr@@3Vostream_withassign@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ___InitCerr
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??0Iostream_init@@QAE@AAVios@@H@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: ff39d13683b69f7c09f04dcb36a0188cf8275c80
+  signature: uf8AAAAAAAAAAIv/wf+F/8D/dP8K/6H/AAAAAAAAAACL/0D/BP8D/8H/av8A/1D/uf8AAAAAAAAAAOj/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: _$E22
+    size: 35
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??0Iostream_init@@QAE@AAVios@@H@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: c233de8bcc504848f9e003ecddfaf4cfecba85cf
+  signature: uf8AAAAAAAAAAIv/wf+F/8D/dP8K/6H/AAAAAAAAAACL/0D/BP8D/8H/av///1D/uf8AAAAAAAAAAOj/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: _$E22
+    size: 35
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ?cout@@3Vostream_withassign@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ___InitCout
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??0Iostream_init@@QAE@AAVios@@H@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

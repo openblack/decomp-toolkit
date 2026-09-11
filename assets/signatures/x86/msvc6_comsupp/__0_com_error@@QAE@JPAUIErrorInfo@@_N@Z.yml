@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b877536007cebd899892b4933ee6ec7cadd70c12
+  signature: i/9E/yT/BP9W/4v/8f+D/2b/DP8A/4n/Rv8E/4v/RP8k/wz/x/8G/wAAAAAAAAAAhf/A/4n/Rv8I/3T/Df+A/3z/JP8Q/wD/dP8G/4v/CP9Q////Uf8E/4v/xv9e/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0_com_error@@QAE@JPAUIErrorInfo@@_N@Z
+    size: 50
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7_com_error@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

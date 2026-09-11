@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: bcd9753a85117de828ac8702cfe352364fb1409e
+  signature: Vv+L//H/i/8G/4v/QP8E/4v/RP8w/wT/g/94/zD/AP99/wr/g//A/zT/UP/o/wAAAAAAAAAAWf+L/wb/av8B////dP8k/wz/i/9A/wT/i/9M/zD/BP+L/wH///9Q/xD/g//4////df8U/4v/Bv+L/0D/BP+N/wz/MP+L/0T/MP8I/wz/Av9Q/+j/AAAAAAAAAACL/wb/i/9A/wT/i/9E/zD/BP+D/3j/MP8A/33/Cv+D/8D/NP9Q/+j/AAAAAAAAAABZ/4v/xv9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?seekg@istream@@QAEAAV1@J@Z
+    size: 104
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?clear@ios@@QAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

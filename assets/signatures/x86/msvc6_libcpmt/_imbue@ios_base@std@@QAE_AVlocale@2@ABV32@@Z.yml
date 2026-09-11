@@ -75,3 +75,67 @@
     kind: x86_abs32
     symbol: 7
     addend: 0
+- symbol: 0
+  hash: a1a06fae1bfa0ee072a6c471d7275f09b5e82aaa
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/g/9l//D/AP+L//H/i/9G/yD/jf9O/yD/if9F//D/i/9Q/wT/g//6////c/8E/0L/if9Q/wT///91/wz/g/9l//z/AP/o/wAAAAAAAAAAav8B/4v/zv/o/wAAAAAAAAAAi/91/wj/i/9F//D/if8G/4v/SP8E/4P/+f///3P/BP9B/4n/SP8E/43/Tf/w/+j/AAAAAAAAAACL/03/9P+L/8b/Xv9k/4n/Df8AAAAAAAAAAMn/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?imbue@ios_base@std@@QAE?AVlocale@2@ABV32@@Z
+    size: 105
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L6313
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??4locale@std@@QAEAAV01@ABV01@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Callfns@ios_base@std@@AAEXW4event@12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 84
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 97
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

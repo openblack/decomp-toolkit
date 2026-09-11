@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 7acc85f9a289baed0af5015b3cf0766cd3198467
+  signature: i/9U/yT/BP8y/8D/i/9K/wT/M/8K//b/wf8B/3T/Av/+/8D/9v/B/wL/dP8C/7D/Af/2/8H/BP90/wL/sP8B//b/wf8I/3T/Av+w/wH/9v/B/xD/dP8C/7D/Af/2/8H/IP90/wL/sP8B/8P/
+  symbols:
+  - kind: Function
+    name: _ValidateResult
+    size: 54
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 0e1933d33c4df528a8d51793f7ec933c4b126b0e
+  signature: Vf+L/+z/g//s/wz/U/9W/1f/xv9F//j/AP+L/0X/CP+J/0X//P+L/03/CP+D/8H/BP+J/03/9P+L/1X//P+L/wL/g//g/wH/i/9N//T/i/8R/4P/4v8B/zv/wv90/wT/xv9F//j/Af+L/0X//P+L/wj/0f/p/4P/4f8B/4v/Vf/0/4v/Av/R/+j/g//g/wH/O//I/3T/BP/G/0X/+P8B/4v/Tf/8/4v/Ef/B/+r/Av+D/+L/Af+L/0X/9P+L/wj/wf/p/wL/g//h/wH/O//R/3T/BP/G/0X/+P8B/4v/Vf/8/4v/Av/B/+j/A/+D/+D/Af+L/03/9P+L/xH/wf/q/wP/g//i/wH/O//C/3T/BP/G/0X/+P8B/4v/Rf/8/4v/CP/B/+n/BP+D/+H/Af+L/1X/9P+L/wL/wf/o/wT/g//g/wH/O//I/3T/BP/G/0X/+P8B/4v/Tf/8/4v/Ef/B/+r/Bf+D/+L/Af+L/0X/9P+L/wj/wf/p/wX/g//h/wH/O//R/3T/BP/G/0X/+P8B/4v/Rf/4/yX///8A/wD/AP+F/8D/dP8t/7n/Af8A/wD/AP+F/8n/dP8e/2r/AP9q/wD/aP9e/wf/AP8A/2j/AAAAAAAAAABq/wL/6P8AAAAAAAAAAIP/xP8U/4P/+P8B/3X/Af/M/zP/0v+F/9L/df/T/4r/Rf/4/1//Xv9b/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: _ValidateResult
+    size: 267
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BD@OECF@i386?2filter_simd?4c?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CrtDbgReport
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 231
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 238
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

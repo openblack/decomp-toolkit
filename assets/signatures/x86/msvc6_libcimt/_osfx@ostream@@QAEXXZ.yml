@@ -1,0 +1,49 @@
+- symbol: 0
+  hash: 5115a00adcebdfcc7931f2aac8ff357529b4e012
+  signature: Vv+L//H/i/8G/4v/QP8E/4P/ZP8w/zD/AP+L/wb/i/9A/wT/A//G//b/QP8l/yD/dP8c/4v/QP8E/4v/yP+L/xD///9S/wT/g//4////df8N/4v/Bv+L/0D/BP/H/0T/MP8I/wb/AP8A/wD/i/8G/4v/QP8E//b/RP8w/yX/QP90/zz/aP8AAAAAAAAAAOj/AAAAAAAAAACD//j///9Z/3X/Dv+L/wb/i/9A/wT/g/9M/zD/CP8C/43/RP8w/wj/aP8AAAAAAAAAAOj/AAAAAAAAAACD//j///9Z/3X/Dv+L/wb/i/9A/wT/g/9M/zD/CP8C/43/RP8w/wj/i/8G/4v/QP8E/4v/RP8w/wT/g/94/zD/AP99/wr/g//A/zT/UP/o/wAAAAAAAAAAWf+L/wb/i/9A/wT/A//G/17/g/94/zT/AP99/wr/g//A/zj/UP/o/wAAAAAAAAAAWf/D/w==
+  symbols:
+  - kind: Function
+    name: ?osfx@ostream@@QAEXXZ
+    size: 176
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fflush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 67
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 97
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 102
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 170
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

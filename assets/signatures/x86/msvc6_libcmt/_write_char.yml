@@ -8,7 +8,7 @@
     flags: 2
     section: .text
   - kind: Function
-    name: __putch_lk
+    name: ''
     size: 0
     flags: 1
     section: null
@@ -27,7 +27,7 @@
     flags: 2
     section: .text
   - kind: Function
-    name: __putwc_lk
+    name: ''
     size: 0
     flags: 1
     section: null

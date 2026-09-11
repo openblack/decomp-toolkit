@@ -1,4 +1,49 @@
 - symbol: 0
+  hash: 22e9bad4c069d81c118ee41ed9bc5fb962d85e94
+  signature: i/8V/wAAAAAAAAAAU/9V/1b/M//t/zP/9v8z/8D/O//V/1f/fv9d/4v/Hf8AAAAAAAAAAIv/+/+L/w//O//N/3T/Ff/2/0H/DP+D/3T/Cv9A/4P/x/8E/zv/wv98/+z/6/8//4v/NP+D/+v/JP+L//j/av8g/8H/5/8C/+j/AAAAAAAAAABZ/4v/Df8AAAAAAAAAAIn/BP8P/6H/AAAAAAAAAACL/zz/B/87//3/dP8Y/4v/9/87//X/dP8S/4P/Tv8Q////if9u/wT/if9u/wz/if9u/wj/if8u/4n/bv8c/4v/xv9f/17/Xf9b/8P/
+  symbols:
+  - kind: Function
+    name: __getstream
+    size: 120
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 63
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 70
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: 54624596a3e47b1c725177abb298ef535418814c
   signature: U/9W/1f/av8C/zP/2/8z////6P8AAAAAAAAAADP/9v85/x3/AAAAAAAAAABZ/w//jv+d/wD/AP8A/6H/AAAAAAAAAACL/wT/sP87/8P/dP83//b/QP8M/4P/df8h/1D/Vv/o/wAAAAAAAAAAWf9Z/4v/Df8AAAAAAAAAAIv/BP+x//b/QP8M/4P/dP8U/1D/Vv/o/wAAAAAAAAAAWf9Z/0b/O/81/wAAAAAAAAAAfP/E/+v/X/+L/zz/sf/r/0T/av84/8H/5v8C/+j/AAAAAAAAAABZ/4v/Df8AAAAAAAAAAIn/BP8O/6H/AAAAAAAAAACL/wT/Bv87/8P/dP86/4P/wP8g/1D///8V/wAAAAAAAAAAof8AAAAAAAAAAIv/BP8G/4P/wP8g/1D///8V/wAAAAAAAAAAof8AAAAAAAAAAIv/PP8G/zv/+/90/xL/g/9P/xD///+J/1//BP+J/1//DP+J/1//CP+J/x//if9f/xz/av8C/+j/AAAAAAAAAABZ/4v/x/9f/17/W//D/w==
   symbols:

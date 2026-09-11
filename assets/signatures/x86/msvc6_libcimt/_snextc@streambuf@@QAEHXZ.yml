@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 164ab0d33df89551e38db5c6c0c9d0801e91c36b
+  signature: Vv+L//H/g/9+/wj/AP90/xf/g/9+/wz///91/wX/i/8G////UP8g/4v/Bv+L/87///9Q/yD/if9G/wz/Xv/D/4v/Rv8s/4X/wP90/wX/Of9G/yj/cv8H/4v/Bv+L/87///9Q/yD///9G/yj/i/9G/yj/O/9G/yz/c/8F/w//tv8A/17/w/+L/wb/i//O////UP8g/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?snextc@streambuf@@QAEHXZ
+    size: 76
+    flags: 1
+    section: .text
+  relocations: []

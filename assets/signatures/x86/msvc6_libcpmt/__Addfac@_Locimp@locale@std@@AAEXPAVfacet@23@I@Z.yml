@@ -1,4 +1,59 @@
 - symbol: 0
+  hash: 4ff1cd218e76b524dc8bfd9a2110503c6082e03e
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABT/1b/V/+L//H/i/99/wz/g/9l//z/AP85/37/DP93/z7/R/+D////IP9z/wP/av8g/1//i//H/8H/4P8C/1D///92/wj/6P8AAAAAAAAAAIv/2P9Z/4X/2/9Z/3X/Bf/o/wAAAAAAAAAAif9e/wj/Of9+/wz/c/8P/4v/Rv8M/4v/Tv8I/4P/JP+B/wD///9G/wz/6//s/4v/ff8M/4v/Xf8I/4v/Q/8E/4P/+P///3P/BP9A/4n/Q/8E/4v/Rv8I/8H/5/8C/4v/BP84/4X/wP90/yP/i/9I/wT/hf/J/3b/Cf+D//n///9z/wT/Sf+J/0j/BP+L/0j/BP/3/9n/G//J//f/0f8j/8j/dP8G/4v/Af9q/wH///8Q/4v/Rv8I/4v/Tf/0/4n/HP84/1//Xv9b/2T/if8N/wAAAAAAAAAAyf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?_Addfac@_Locimp@locale@std@@AAEXPAVfacet@23@I@Z
+    size: 175
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L12729
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Nomemory@std@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 167
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
   hash: 3896bd109ab6a331c674a2b88d25dfce518aeed3
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1P/Vv+L//H/V/+N/03/8P/o/wAAAAAAAAAAi/9d/wz/g/9l//z/AP85/17/DP93/0H/jf97/wH/g////yD/c/8D/2r/IP9f/4v/x//B/+D/Av9Q////dv8I/+j/AAAAAAAAAABZ/4n/Rf8M/4X/wP9Z/3X/Bf/o/wAAAAAAAAAAi/9F/wz/if9G/wj/Of9+/wz/c/8P/4v/Rv8M/4v/Tv8I/4P/JP+B/wD///9G/wz/6//s/4v/Tf8I/+j/AAAAAAAAAACL/0b/CP+L//v/wf/n/wL/i/8M/zj/hf/J/3T/Ef/o/wAAAAAAAAAAhf/A/3T/CP+L/xD/av8B/4v/yP///xL/i/9G/wj/i/9N/wj/g/9N//z///+J/wz/OP+N/03/8P/o/wAAAAAAAAAAi/9N//T/X/9e/1v/ZP+J/w3/AAAAAAAAAADJ/8L/CP8A/w==
   symbols:

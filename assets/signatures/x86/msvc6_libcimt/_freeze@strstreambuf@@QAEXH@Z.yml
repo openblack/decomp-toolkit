@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 9467170fdcc940de572bb3d8d11098c43561561a
+  signature: g/95/1j/AP91/wz/M//A/zn/RP8k/wT/D/+U/8D/if9B/0z/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?freeze@strstreambuf@@QAEXH@Z
+    size: 21
+    flags: 1
+    section: .text
+  relocations: []

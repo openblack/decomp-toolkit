@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 00519f8c63dd21279b18111d172b7705e5df273a
+  signature: Vv+L//H/g/9+/wj/AP90/xX/i/9G/wz/g//4////df8H/4v/Bv///1D/IP9e/8P/g/9O/wz///9e/8P/i/9G/yj/O/9G/yz/c/8F/w//tv8A/+v/B/+L/wb/i//O////UP8g////Rv8o/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?sbumpc@streambuf@@QAEHXZ
+    size: 55
+    flags: 1
+    section: .text
+  relocations: []

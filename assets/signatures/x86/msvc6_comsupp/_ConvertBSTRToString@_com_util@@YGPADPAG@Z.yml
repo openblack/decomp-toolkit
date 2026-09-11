@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 3e0d574bd08113cea402c4eaf8c5daa3adfc9fa6
+  signature: U/9V/4v/bP8k/wz/M//b/zv/6/91/wT/M//A/+v/X/9W/1f/Vf/o/wAAAAAAAAAAjf98/wD/Av9X/+j/AAAAAAAAAACL//D/Wf87//P/Wf91/wr/aP8O/wD/B/+A/+j/AAAAAAAAAABT/1P/V/9W/2r///9V/1P/U/+I/x7///8V/wAAAAAAAAAAhf/A/3X/Iv+L/z3/AAAAAAAAAAD//9f/hf/A/3T/Dv///9f/Jf//////AP8A/w3/AP8A/wf/gP/r/wL/M//A/1D/6P8AAAAAAAAAAIv/xv9f/17/Xf9b/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?ConvertBSTRToString@_com_util@@YGPADPAG@Z
+    size: 116
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_com_issue_error@@YGXJ@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WideCharToMultiByte@32
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 65
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 103
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

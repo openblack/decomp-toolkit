@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 14b9550bfec58e1115341e9ffd9a3456e1b21c75
+  signature: i/9B//T/i/9A/wT/x/9E/wj/9P8AAAAAAAAAAOn/AAAAAAAAAAA=
+  symbols:
+  - kind: Function
+    name: ??1ifstream@@UAE@XZ
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7ifstream@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??1istream@@UAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

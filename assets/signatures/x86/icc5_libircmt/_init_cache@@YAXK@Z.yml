@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c64d46b4aba05b3d256502c5f9944494a234253e
+  signature: Vf+L/1T/JP8I/4X/0v90/wn/g//6/wP/D/+F/7v/AP8A/wD/M//A/43/tv8A/wD/AP8A/43/v/8A/wD/AP8A/zP/7f+5/wH/AP8A/wD/if+o/0D/Bf8V/wH/if+o/0T/Bf8V/wH/if+o/1T/Bf8V/wH/if+o/3T/Bf8V/wH/if+o/6T/Bf8V/wH/if+I/7T/Bf8V/wH/if+o/5T/Bf8V/wH/if+o/0j/Bf8V/wH/if+o/1j/Bf8V/wH/if+o/3j/Bf8V/wH/if+o/6j/Bf8V/wH/if+I/7j/Bf8V/wH/if+o/5j/Bf8V/wH/if+o/0z/Bf8V/wH/if+o/1z/Bf8V/wH/if+o/3z/Bf8V/wH/if+o/6z/Bf8V/wH/if+I/7z/Bf8V/wH/if+o/5z/Bf8V/wH/if+o/1D/Bf8V/wH/if+o/2D/Bf8V/wH/if+o/4D/Bf8V/wH/if+o/7D/Bf8V/wH/if+I/8D/Bf8V/wH/if+o/6D/Bf8V/wH/Bf+E/wD/AP8A/z3/AP9C/wD/AP8P/4L/U/////////+D//r/Af90/wn/g//6/wP/D/+F/7L/AP8A/wD/M//A/43/dv8A/zP/yf+9/wH/AP8A/wD/if+I/0D/R/8V/wH/if+I/0T/R/8V/wH/if+I/1T/R/8V/wH/if+I/3T/R/8V/wH/if+I/6T/R/8V/wH/if+o/7T/R/8V/wH/if+I/5T/R/8V/wH/if+I/0j/R/8V/wH/if+I/1j/R/8V/wH/if+I/3j/R/8V/wH/if+I/6j/R/8V/wH/if+o/7j/R/8V/wH/if+I/5j/R/8V/wH/if+I/0z/R/8V/wH/if+I/1z/R/8V/wH/if+I/3z/R/8V/wH/if+I/6z/R/8V/wH/if+o/7z/R/8V/wH/if+I/5z/R/8V/wH/if+I/1D/R/8V/wH/if+I/2D/R/8V/wH/if+I/4D/R/8V/wH/if+I/7D/R/8V/wH/if+o/8D/R/8V/wH/if+I/6D/R/8V/wH/Bf+E/wD/AP8A/z3/AP9C/wD/AP8P/4L/U/////////+D//r/Av90/wn/g//6/wP/D/+F/7L/AP8A/wD/M//A/43/dv8A/zP/yf+6/wH/AP8A/wD/if+I/0D/if8V/wH/if+I/0T/if8V/wH/if+I/1T/if8V/wH/if+I/3T/if8V/wH/if+I/6T/if8V/wH/if+Q/7T/if8V/wH/if+I/5T/if8V/wH/if+I/0j/if8V/wH/if+I/1j/if8V/wH/if+I/3j/if8V/wH/if+I/6j/if8V/wH/if+Q/7j/if8V/wH/if+I/5j/if8V/wH/if+I/0z/if8V/wH/if+I/1z/if8V/wH/if+I/3z/if8V/wH/if+I/6z/if8V/wH/if+Q/7z/if8V/wH/if+I/5z/if8V/wH/if+I/1D/if8V/wH/if+I/2D/if8V/wH/if+I/4D/if8V/wH/if+I/7D/if8V/wH/if+Q/8D/if8V/wH/if+I/6D/if8V/wH/Bf+E/wD/AP8A/z3/AP9A/wj/AP8P/4L/U/////////9d/8P/kP8=
+  symbols:
+  - kind: Function
+    name: ?init_cache@@YAXK@Z
+    size: 592
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,4 +1,84 @@
 - symbol: 0
+  hash: 4cd8555b4a6d2f803b76dc9f99f8091c51a8ee16
+  signature: Vf+L/+z/gf/s/1D/Av8A/wD/jf+F/7D//f//////UP///3X/CP///xX/AAAAAAAAAACF/8D/df8/////Ff8AAAAAAAAAAGr/Av9Z/zv/wf9y/w//g//4/wP/dv8l/4P/+P8I/3T/FP+D//j/Ev90/xv/x/8F/wAAAAAAAAAAFv8A/wD/AP+D/8j////J/8P/x/8F/wAAAAAAAAAADP8A/wD/AP/r/+//if8N/wAAAAAAAAAA6//n/4v/hf+w//3//////1b/i/91/wz/Lf+A/wD/AP8A//f/2P8b/8D/V/8j/4X/sP/9//////+J/wb/jf+F/7T//f//////UP/o/wAAAAAAAAAAif9G/wT/jf+F/7z//f//////UP/o/wAAAAAAAAAAif9G/wj/jf+F/8T//f//////UP/o/wAAAAAAAAAAg//E/wz/if9G/wz/av8B/2r/AP9q/wD///+1/8z//f//////6P8AAAAAAAAAAIv/jf/Q//3//////zP///8D/8H/E//X/4n/Rv8Q/4n/Vv8U/43/hf/c//3//////4P/xv8Y/1D/Vv/o/wAAAAAAAAAAWf8z/8D/Wf9f/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __wfindnexti64
+    size: 227
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FindNextFileW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___timet_from_ft
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __allmul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 59
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 86
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 128
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 143
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 181
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 215
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+- symbol: 0
   hash: ee1a9db0eb52216643a194471c2975512c534625
   signature: Vf+L/+z/gf/s/1D/Av8A/wD/jf+F/7D//f//////Vv9Q////df8I////Ff8AAAAAAAAAAIX/wP91/0X///8V/wAAAAAAAAAAav8C/17/O//G/3L/D/+D//j/A/92/yr/g//4/wj/dP8Y/4P/+P8S/3T/IP/o/wAAAAAAAAAAx/8A/xb/AP8A/wD/g//I////6f+Z/wD/AP8A/+j/AAAAAAAAAADH/wD/DP8A/wD/AP/r/+v/6P8AAAAAAAAAAIn/MP/r/+L/i/+F/7D//f//////i/91/wz/Lf+A/wD/AP8A/1f/9//Y/xv/wP8j/4X/sP/9//////+J/wb/jf+F/7T//f//////UP/o/wAAAAAAAAAAif9G/wT/jf+F/7z//f//////UP/o/wAAAAAAAAAAif9G/wj/jf+F/8T//f//////UP/o/wAAAAAAAAAAg//E/wz/if9G/wz/av8B/2r/AP9q/wD///+1/8z//f//////6P8AAAAAAAAAAIv/jf/Q//3//////zP///8D/8H/E//X/4n/Rv8Q/4n/Vv8U/43/hf/c//3//////4P/xv8Y/1D/Vv/o/wAAAAAAAAAAWf8z/8D/Wf9f/17/yf/D/w==
   symbols:

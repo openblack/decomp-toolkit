@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 864b34d6ac4db375ac44aa333a7876fed5e51e6b
+  signature: 8/8P/xD/Df8AAAAAAAAAAPP/D/9T/+D/D/9W/8j/8/8P/xD/9P8P/y//Df8AAAAAAAAAAPP/D/8Q/x3/cP8B/wD/AP8P/4P/mf8A/wD/AP/z/w//Wf/2//P/D/8Q/y3/gP8B/wD/AP/z/w//WP/u//P/D/8Q/z3/YP8B/wD/AP/z/w//U//t//P/D/9Z/+v/8/8P/xD/Hf9Q/wH/AP8A//P/D/9Y//7/8/8P/1j/7//z/w//EP89/0D/Af8A/wD/8/8P/1P/7f/z/w//Wf/r//P/D/8Q/x3/MP8B/wD/AP/z/w//WP/+//P/D/9Y/+//8/8P/xD/Pf8g/wH/AP8A//P/D/9T/+3/8/8P/1n/6//z/w//EP8d/xD/Af8A/wD/8/8P/1j//v/z/w//EP8V/wAAAAAAAAAA8/8P/1n/4//z/w//WP/v//P/D/8Q/z3/AAAAAAAAAADz/w//U//t//P/D/9Z/+z/D/9U/8L/D/9W/8f/8/8P/1z/xf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _am_atan_ess@16
+    size: 193
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_sign_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_m1
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_pi_o_2
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 152
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 168
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 2588eaa51d91353750e48c464df9dcfff22fd47e
+  signature: i/9M/yT/CP+F/8n/fP9n/4P/+f8I/33/Yv+L/1T/JP8E/1P/i/9c/yT/EP+N/wT/if9W/1f/jf98/0L/HP+L//P/pf+l/2b/pf+L/0L/BP9m/4v/e/8I/8H/6P8L/wP/wf++////f/8A/wD/g//g/wf/I//+/3T/D/8z/8n/O//+/w//lP/B/0n/g//h//7/Qf9B/+v/Ev+D/zv/AP91/wr/g/97/wT/AP91/wT/av8B/+v/Av9q/wL/Wf9R/4P/wv8I/1D/Uv/o/wAAAAAAAAAAg//E/wz/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __SetFpRegVal
+    size: 112
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __SetTag
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 101
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: ddc66f2f296e49d50ed393162155add4e52e775b
+  signature: Vf+L/+z/g//s/xD/i/9F/wj/g//A/wT/if9F//z/g/99/wz/AP8P/4z/sv8A/wD/AP+D/33/DP8I/w//jf+o/wD/AP8A/4v/Tf8Q/4v/Vf8M/2v/0v8K/4v/Rf8I/43/VP8Q/xz/i/8B/4n/Av+L/0H/BP+J/0L/BP9m/4v/Sf8I/2b/if9K/wj/i/9V//z/i/8C/8H/6P8L/4P/4P8H/wP/Rf8M/zP/0v+5/wj/AP8A/wD/9//x/4n/Vf/0/4v/Vf8Q/zP/wP9m/4v/Qv8I/yX///9//wD/AP+J/0X/8P+D/33/8P8A/3T/C/+B/33/8P///3//AP8A/3T/Jf/r/yz/i/9N/xD/g/85/wD/df8S/4v/Vf8Q/4P/ev8E/wD/df8J/8f/Rf/4/wH/AP8A/wD/6/8H/8f/Rf/4/wL/AP8A/wD/6/8Q/8f/Rf/4/wL/AP8A/wD/6/8H/8f/Rf/4/wD/AP8A/wD/i/9F//j/UP+L/03/9P9R/4v/Vf8I/4P/wv8I/1L/6P8AAAAAAAAAAIP/xP8M/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: __SetFpRegVal
+    size: 207
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __SetTag
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 196
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

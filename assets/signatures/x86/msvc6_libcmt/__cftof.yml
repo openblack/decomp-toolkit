@@ -35,3 +35,97 @@
     kind: x86_rel32
     symbol: 3
     addend: -4
+- symbol: 0
+  hash: 98d62ca27bd3c98a7401e9c01b219650277fdbb3
+  signature: gP89/wAAAAAAAAAAAP9T/1X/i/9s/yT/EP9W/1f/dP8q/6H/AAAAAAAAAACL/1z/JP8c/4v/Nf8AAAAAAAAAADv/w/91/0f/M//J/4P/Pv8t/w//lP/B/wP/yP8D/83/i//B/8b/AP8w/4D/YP8B/wD/6/8w/4v/RP8k/xT/Uf9R/93/AP/d/xz/JP/o/wAAAAAAAAAAi/9c/yT/JP+L//D/Vv+L/0b/BP8D/8P/UP8z/8D/g/8+/y3/D/+U/8D/A//F/1D/6P8AAAAAAAAAAIP/xP8U/4P/Pv8t/4v//f91/wf/xv9F/wD/Lf+N/33/Af+L/0b/BP+F/8D/f/8Q/2r/Af9X/+j/AAAAAAAAAABZ/8b/B/8w/1n/R//r/wL/A//4/4X/2/9+/0H/av8B/1f/6P8AAAAAAAAAAKD/AAAAAAAAAABZ/4j/B/+L/3b/BP9H/1n/hf/2/33/KP+A/z3/AAAAAAAAAAAA/3T/BP/3/97/6/8G//f/3v87/97/fP8C/4v/3v9T/1f/6P8AAAAAAAAAAFP/av8w/1f/6P8AAAAAAAAAAIP/xP8U/1//i//F/17/Xf9b/8P/
+  symbols:
+  - kind: Function
+    name: __cftof
+    size: 222
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _g_fmt
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _g_magnitude
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _g_pflt
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __fltout
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fptostr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __shift
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___decimal_point
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 132
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 159
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 177
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 199
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 208
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

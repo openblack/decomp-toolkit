@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: df6901987a7c8b17fcc21cfb1b04d7590c3bd88d
+  signature: Vv+L//H/6P8AAAAAAAAAAIX/wP90/xf///90/yT/CP+L/87/aP8AAAAAAAAAAOj/AAAAAAAAAACL/87/6P8AAAAAAAAAAIv/xv9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??6ostream@@QAEAAV0@PBD@Z
+    size: 41
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?opfx@ostream@@QAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_00A@?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?writepad@ostream@@AAEAAV1@PBD0@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?osfx@ostream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 24
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

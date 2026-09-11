@@ -17,3 +17,35 @@
     kind: x86_rel32
     symbol: 1
     addend: -4
+- symbol: 0
+  hash: 8f589a0e9a60f685c8d7ebbe5f48229d92b9116a
+  signature: Vf+L/+z/g//s/xj/of8AAAAAAAAAAIP/Tf/o////if9F//D/of8AAAAAAAAAAIn/Rf/0/6H/AAAAAAAAAABW/1f/if9F//j/i/9F/wj/av8G/43/df/o/1n/i//4//P/pf9f/17/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?seekoff@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE?AV?$fpos@H@2@JW4seekdir@ios_base@2@H@Z
+    size: 55
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Fpz@std@@3_JB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Stz@?$fpos@H@std@@0HA
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 186f6b7151e7f0efae9eb4ea91ec97176ad97b2d
+  signature: Vf+L/+z/Uf+L/0X/DP+D/2X//P8A/4X/wP90/0P/i/8I/43/Vf8M/1L/aP8AAAAAAAAAAFD///8R/4X/wP98/zH/i/9F/wz/Vv///3X/EP+L/wj/UP///1H/DP+L//D/i/9F/wz/UP+L/wj///9R/wj/hf/2/17/df8U/43/Rf/8/1D/av8A////Ff8AAAAAAAAAAIX/wP90/wT/g/9l//z/AP///3X//P///3X/CP/o/wAAAAAAAAAAyf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: ?_com_issue_errorex@@YGXJPAUIUnknown@@ABU_GUID@@@Z
+    size: 97
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __GUID_df0b3d60_548f_101b_8e65_08002b2bd119
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__GetErrorInfo@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_com_raise_error@@YGXJPAUIErrorInfo@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 89
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

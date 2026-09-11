@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: cffbdfb657808985ef9c3813b91a831f293c3562
+  signature: i/8B/4v/TP8k/wT/O/9I/wz/c/8I/4v/UP8I/4v/FP+K/+v/Av8z/9L/hf/S/3X/If84/1T/JP8I/3T/G/84/1D/FP90/xb/of8AAAAAAAAAADv/SP8M/3P/CP+L/0D/CP+L/wT/iP/r/wb/M//A/+v/Av+L/8L/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?_Getfacet@locale@std@@QBEPBVfacet@12@I_N@Z
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Global@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 37
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 53671a3deac0346d711f02ea4e6c7dd4a3da66f1
   signature: Vf+L/+z/Uf9W/4v/8f+N/03//P/o/wAAAAAAAAAAi/8G/4v/Tf8I/zv/SP8M/3P/CP+L/1D/CP+L/zT/iv/r/wL/M//2/4X/9v91/yD/gP99/wz/AP90/xr/gP94/xT/AP90/xT/of8AAAAAAAAAADv/SP8M/3P/CP+L/0D/CP+L/zT/iP/r/wL/M//2/43/Tf/8/+j/AAAAAAAAAACL/8b/Xv/J/8L/CP8A/w==
   symbols:

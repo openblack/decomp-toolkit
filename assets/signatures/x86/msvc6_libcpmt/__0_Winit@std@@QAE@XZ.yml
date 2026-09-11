@@ -1,4 +1,213 @@
 - symbol: 0
+  hash: 0253830aff890b3de9a34bd412b4f37fecb90852
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/M//A/4n/Tf/w/zn/Bf8AAAAAAAAAAIn/Rf/s/3z/C////wX/AAAAAAAAAADp/zH/Af8A/wD/Vv9X/2r/Af++/wAAAAAAAAAAX/+J/3X/7P+J/z3/AAAAAAAAAACJ/0X//P+L/8b/hf/A/3T/DP9o/wAAAAAAAAAAi//O/+j/AAAAAAAAAAC5/wAAAAAAAAAAif9N/+z/i//B/4n/ff/8/4X/wP90/wr/aP8AAAAAAAAAAOj/AAAAAAAAAAC5/wAAAAAAAAAAif9N/+z/i//B/8f/Rf/8/wL/AP8A/wD/hf/A/3T/Cv9o/wAAAAAAAAAA6P8AAAAAAAAAAFP/u/8AAAAAAAAAAIn/Xf/s/4v/w//H/0X//P8D/wD/AP8A/4X/wP90/wr/V/9X/1b/i//L/+j/AAAAAAAAAAC//wAAAAAAAAAAif99/+z/i//H/8f/Rf/8/wT/AP8A/wD/hf/A/3T/Ev9q/wH/av8B/2r/Af9o/wAAAAAAAAAAi//P/+j/AAAAAAAAAACh/wAAAAAAAAAAvv8AAAAAAAAAAIn/df/s/4v/QP8E/4n/fP8Y/yz/A//D/4v/xv/H/0X//P8F/wD/AP8A/4X/wP9b/3T/Ev9q/wH/av8B/2r/Af9o/wAAAAAAAAAAi//O/+j/AAAAAAAAAACh/wAAAAAAAAAAuf8AAAAAAAAAAIn/Tf/s/4v/QP8E/4n/fP8w/yz/A//G/6H/AAAAAAAAAACL/0D/BP+D/0z/MP8M/wL/A//G/4v/wf/H/0X//P8G/wD/AP8A/4X/wP90/xD/av8B/2r/Af9q/wH/aP8AAAAAAAAAAOj/AAAAAAAAAACh/wAAAAAAAAAAi/9A/wT/if+4/wAAAAAAAAAAX/9e/4v/Tf/0/4v/Rf/w/2T/if8N/wAAAAAAAAAAyf/D/w==
+  symbols:
+  - kind: Function
+    name: ??0_Winit@std@@QAE@XZ
+    size: 359
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L10567
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Init_cnt@_Winit@std@@0HA
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: _wfin
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$basic_filebuf@GU?$char_traits@G@std@@@std@@QAE@PAU_iobuf@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _wfout
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _wferr
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ?wcin@std@@3V?$basic_istream@GU?$char_traits@G@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0?$basic_istream@GU?$char_traits@G@std@@@std@@QAE@PAV?$basic_streambuf@GU?$char_traits@G@std@@@1@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?wcout@std@@3V?$basic_ostream@GU?$char_traits@G@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0?$basic_ostream@GU?$char_traits@G@std@@@std@@QAE@PAV?$basic_streambuf@GU?$char_traits@G@std@@@1@_N1@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?wcerr@std@@3V?$basic_ostream@GU?$char_traits@G@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?wclog@std@@3V?$basic_ostream@GU?$char_traits@G@std@@@1@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 75
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 80
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 102
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 107
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 128
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 133
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 139
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 165
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 170
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 197
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 204
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 209
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 214
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 251
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 258
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 263
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 268
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 285
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 319
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 324
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 329
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 338
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 353
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+- symbol: 0
   hash: 7ab86f8f994ae16335a4bd604dd4cc4710678689
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/U/9W/4n/Tf/s/zP/9v+N/03/8P+J/3X/8P/o/wAAAAAAAAAAOf81/wAAAAAAAAAAfP8K////Bf8AAAAAAAAAADL/2//r/wz/x/8F/wAAAAAAAAAAAf8A/wD/AP+z/wH/jf9N//D/6P8AAAAAAAAAAIT/2/8P/4T/JP8B/wD/AP9X/7//AAAAAAAAAACJ/33/8P+L/8f/if91//z/hf/A/3T/DP9o/wAAAAAAAAAAi//P/+j/AAAAAAAAAAC5/wAAAAAAAAAAif9N//D/i//B/8f/Rf/8/wH/AP8A/wD/hf/A/3T/Cv9o/wAAAAAAAAAA6P8AAAAAAAAAALv/AAAAAAAAAACJ/13/8P+L/8P/x/9F//z/Av8A/wD/AP+F/8D/dP8M/2j/AAAAAAAAAACL/8v/6P8AAAAAAAAAAL7/AAAAAAAAAACJ/3X/8P+L/8b/x/9F//z/A/8A/wD/AP+F/8D/dP8M/2r/Af9q/wH/V/+L/87/6P8AAAAAAAAAAL//AAAAAAAAAACJ/33/8P+L/8f/x/9F//z/BP8A/wD/AP+F/8D/dP8S/2r/Af9q/wH/av8B/2j/AAAAAAAAAACL/8//6P8AAAAAAAAAAKH/AAAAAAAAAACL/0D/BP+J/3z/MP8s/wP/xv++/wAAAAAAAAAAif91//D/i//G/8f/Rf/8/wX/AP8A/wD/hf/A/3T/Dv9q/wH/av8B/2r/Af9T/4v/zv/o/wAAAAAAAAAAof8AAAAAAAAAALn/AAAAAAAAAACJ/03/8P+L/0D/BP+J/3z/MP8s/wP/xv+h/wAAAAAAAAAAi/9A/wT/g/9M/zD/DP8C/wP/xv+L/8H/x/9F//z/Bv8A/wD/AP+F/8D/dP8M/2r/Af9q/wH/av8B/1P/6P8AAAAAAAAAAKH/AAAAAAAAAACL/0D/BP+J/7j/AAAAAAAAAABf/4v/Tf/0/4v/Rf/s/17/W/9k/4n/Df8AAAAAAAAAAMn/w/8=
   symbols:

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 4937cf5aa2731583e6ef3b523707c1eb5393c676
+  signature: Vv+L//H///90/yT/CP+L/wb/i/9A/wT/i/9M/zD/BP/o/wAAAAAAAAAAhf/A/3X/FP+L/wb/i/9A/wT/jf8M/zD/i/9E/zD/CP8M/wL/UP/o/wAAAAAAAAAAXv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?attach@ofstream@@QAEXH@Z
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?attach@filebuf@@QAEPAV1@H@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?clear@ios@@QAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

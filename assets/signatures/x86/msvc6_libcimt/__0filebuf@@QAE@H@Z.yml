@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 8408de569743f60cacae389de232a042b841fb2d
+  signature: Vv+L//H/6P8AAAAAAAAAAIv/RP8k/wj/g/9m/1D/AP+J/0b/TP/H/wb/AAAAAAAAAACL/8b/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0filebuf@@QAE@H@Z
+    size: 31
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0streambuf@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7filebuf@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

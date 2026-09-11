@@ -26,3 +26,43 @@
     kind: x86_rel32
     symbol: 2
     addend: -4
+- symbol: 0
+  hash: fc736d4ed1cbbc5857649a759a263be725c1382b
+  signature: //8N/wAAAAAAAAAAeP8W/4v/Df8AAAAAAAAAAIr/RP8k/wT/iP8B////Bf8AAAAAAAAAAA//tv/A/8P/aP8AAAAAAAAAAP//dP8k/wj/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: __fputchar
+    size: 47
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 5262b64215ceb9ade7f876223a202b9aac83288f
+  signature: V/9V/4P/7P8M/4v/VP8k/xj/M//A/4v/6P+L//r/kP+J/yz/JP/o/wAAAAAAAAAARf+B//3/AP8Q/wD/AP98/+//i//X/8f/BP8k/wD/AP8A/wD/if9U/yT/BP/o/wAAAAAAAAAAg//E/wz/Xf9f/8P/
+  symbols:
+  - kind: Function
+    name: ?__psa_for_all_cands@@YAXP6AXIII@Z@Z
+    size: 57
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?stride_hist_eval@@YAXH@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?output_sorted_pc@@YAXHP6AXIII@Z@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

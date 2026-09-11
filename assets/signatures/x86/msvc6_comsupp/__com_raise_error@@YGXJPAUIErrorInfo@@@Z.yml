@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 0dc73ae9a86396df2ec76e9a9043ef93b146006c
+  signature: Vf+L/+z/g//s/xD/av8A/43/Tf/w////df8M////df8I/+j/AAAAAAAAAACN/0X/8P9o/wAAAAAAAAAAUP/o/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: ?_com_raise_error@@YGXJPAUIErrorInfo@@@Z
+    size: 36
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0_com_error@@QAE@JPAUIErrorInfo@@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __TI1?AV_com_error@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 32
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

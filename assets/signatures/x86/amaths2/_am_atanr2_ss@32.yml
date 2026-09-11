@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 962011ca1ca422c1cb06fca707a443b4d971383d
+  signature: 8/8P/xH/RP8k/+j/8/8P/1n/wf/z/w//Ef9M/yT/5P+D/+z/EP/o/wAAAAAAAAAAD/9X////8/8P/xD/TP8k/+T/D/8v/8//8/8P/xD/ZP8k/+j/D/+D/xL/AP8A/wD/D/9U/yX/AAAAAAAAAAAP/1b/Jf8AAAAAAAAAAPP/D/9Y/8T/
+  symbols:
+  - kind: Function
+    name: _am_atanr2_ss@32
+    size: 66
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _am_atan_ss@16
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_sign_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_pi
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 51
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

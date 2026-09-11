@@ -1,4 +1,49 @@
 - symbol: 0
+  hash: f8e37298d00a426f0cf0809ce954deffe3527a9e
+  signature: U/9W/1f/g//L////M////zP/9v+5/wAAAAAAAAAAi/8B/4X/wP90/zf/jf+Q/wD/Af8A/wD/O//C/3P/HP/2/0D/BP8B/3T/Bf+D/8D/CP/r//H/g/8I////K/8B/8H/+P8D/wP/xv+L/9j/g//7////df9U/4P/wf8E/0f/g//G/yD/gf/5/wAAAAAAAAAAfP/F/+v/Q/++/wD/Af8A/wD/Vv/o/wAAAAAAAAAAhf/A/1n/dP8z/4P/Bf8AAAAAAAAAACD/jf8M/73/AAAAAAAAAACN/5D/AP8B/wD/AP+J/wH/O//C/3P/FP+A/2D/BP8A/4P/CP///8b/QP8F/wr/i/8R/4P/wP8I/wP/1v/r/+j/wf/n/wX/i//f/1//i//D/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: __alloc_osfhnd
+    size: 149
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 83
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 94
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 102
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 3ef0012e6e8140f8a892ea5e56cf049dc4eb196a
   signature: Uf9R/1P/Vf9W/1f/av8S/4P/z////+j/AAAAAAAAAAAz/9v/Wf+J/1z/JP8Q/4n/XP8k/xT/vf8AAAAAAAAAAIv/df8A/4X/9v8P/4T/mf8A/wD/AP+N/4b/gP8E/wD/AP87//D/c/90//b/Rv8E/wH/df9E/4P/fv8I/wD/df8j/2r/Ef/o/wAAAAAAAAAAg/9+/wj/AP9Z/3X/Df+N/0b/DP9Q////Ff8AAAAAAAAAAP//Rv8I/2r/Ef/o/wAAAAAAAAAAWf+N/17/DP9T////Ff8AAAAAAAAAAPb/Rv8E/wH/dP8Y/1P///8V/wAAAAAAAAAAi/9c/yT/EP+L/0X/AP+D/8b/JP8F/4D/BP8A/wD/6/+l/4P/Dv///4v/xv8r/0X/AP9q/yT/Wf+Z//f/+f+L//j/A/98/yT/FP+D//////91/23/i/9c/yT/EP+D/0T/JP8U/yD/g//F/wT/Q/+B//3/AAAAAAAAAACJ/1z/JP8Q/w//jP9e/////////+v/Tv++/4D/BP8A/wD/Vv/o/wAAAAAAAAAAhf/A/1n/dP8+/4P/Bf8AAAAAAAAAACD/jf8M/53/AAAAAAAAAACN/5D/gP8E/wD/AP+J/wH/O//C/3P/GP+A/2D/BP8A/4P/CP///4P/YP8I/wD/xv9A/wX/Cv+L/xH/g//A/yT/A//W/+v/5P/B/+P/Bf+L//v/V//o/wAAAAAAAAAAWf9q/xL/6P8AAAAAAAAAAFn/i//H/1//Xv9d/1v/Wf9Z/8P/
   symbols:

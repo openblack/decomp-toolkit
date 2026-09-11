@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: b71ebf1b5b71ca8bc2882bebf857990ccce3d373
+  signature: Vf+D/+z/CP+K/1T/JP8Q/6D/av/L/x3/Af+E/8D/df9F/4D/+v8B/3T/Yf+E/9L/df9Y/6H/rP8C/xX/Af+J/wT/JP/o/wAAAAAAAAAAof+s/wL/Ff8B/2n/6P+o/wj/AP8A/4v/Ff+g/wL/Ff8B/4n/lf8A/wD/AP8A/4v/Df+k/wL/Ff8B/4n/jf8E/wD/AP8A/8b/hf8I/wD/AP8A/wH/g//E/wj/Xf/D/4D/+v8B/3X/F/+h/6z/Av8V/wH/af/Q/6j/CP8A/wD/i/+K/yT/AP8A/wD/if8N/7D/Av8V/wH/g//E/wj/Xf/D/4v/Df+s/wL/Ff8B/2n/wf+o/wj/AP8A/4v/kP+k/wj/AP8A/0L/gf/6/wD/Af8A/wD/if+Q/6T/CP8A/wD/dP8//4v/Lf+k/wL/Ff8B/4v/iP8E/wD/AP8A//f/2f8D/83/if+M/9D/pP8A/wD/AP+J/6j/BP8A/wD/AP/H/4T/0P+o/wD/AP8A/wH/AP8A/wD///+A/xD/AP8A/wD/i/+E/9D/pP8A/wD/AP+j/7D/Av8V/wH/g//E/wj/Xf/D/4n/DP8k/+j/AAAAAAAAAAAz/9L/of+s/wL/Ff8B/2n/wP+o/wj/AP8A/+v/qv8=
+  symbols:
+  - kind: Function
+    name: ?sc_update@@YAX_N@Z
+    size: 238
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?clear_sc_entry@@YAXH@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?stride_hist_eval@@YAXH@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 35
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 219
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

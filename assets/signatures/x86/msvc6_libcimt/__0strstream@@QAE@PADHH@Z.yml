@@ -1,0 +1,118 @@
+- symbol: 0
+  hash: 4abf94779564149c38b9f7bc7790affde8d2cdd1
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/U/9W/1f/M//b/zn/Xf8U/4v/8f9q/wH/if91/+z/if9d//D/X/90/xv/jf9O/xT/x/8G/wAAAAAAAAAAx/9G/wz/AAAAAAAAAADo/wAAAAAAAAAAif99//D/if9d//z/av9k/+j/AAAAAAAAAABZ/4v/yP+J/03/FP87/8v/if99//z/dP8Q////df8I////df8M////df8I/+j/AAAAAAAAAADr/wL/M//A/1P/UP+L/87/iP9d//z/6P8AAAAAAAAAAIv/Dv9q/wL/WP+L/0n/BP+J/0X//P+E/0X/EP/H/wT/Mf8AAAAAAAAAAIv/Dv+L/0n/BP+J/3z/Mf8c/4v/Dv+L/0n/BP+J/3z/Mf8c/3T/Gf/2/0X/EP8M/3T/E/9T////df8I/+j/AAAAAAAAAABZ/1D/jf9O/wz/6P8AAAAAAAAAAIv/Tf/0/4v/xv9f/17/W/9k/4n/Df8AAAAAAAAAAMn/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ??0strstream@@QAE@PADHH@Z
+    size: 195
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L19146
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_8strstream@@7Bistream@@@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_8strstream@@7Bostream@@@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0ios@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0strstreambuf@@QAE@PADH0@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0iostream@@QAE@PAVstreambuf@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7strstream@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?seekp@ostream@@QAEAAV1@JW4seek_dir@ios@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 127
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 162
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 172
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 187
+    kind: x86_abs32
+    symbol: 12
+    addend: 0

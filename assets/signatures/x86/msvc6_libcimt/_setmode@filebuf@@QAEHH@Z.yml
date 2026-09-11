@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 82034eeb26cdef6ecf78a2772b17152492f749e9
+  signature: Vv9X/4v/fP8k/wz/i//x/zv/Pf8AAAAAAAAAAHT/Df87/z3/AAAAAAAAAAB0/wX/g//I////6/9G/4P/fv8w/wD/ff8K/43/Rv80/1D/6P8AAAAAAAAAAFn/g/9+/0z///90/xv/i/8G/4v/zv///1D/BP+D//j///90/w//V////3b/TP/o/wAAAAAAAAAAWf+L//j/Wf/r/wP/g//P////g/9+/zD/AP99/wr/g//G/zT/Vv/o/wAAAAAAAAAAWf+L/8f/X/9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?setmode@filebuf@@QAEHH@Z
+    size: 104
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?binary@filebuf@@2HB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?text@filebuf@@2HB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 92
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

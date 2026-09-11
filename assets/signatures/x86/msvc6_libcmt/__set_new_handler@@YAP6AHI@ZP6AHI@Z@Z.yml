@@ -1,4 +1,27 @@
 - symbol: 0
+  hash: c2835c6863d5b91bbcfbe1b10b104e012e2339d1
+  signature: i/9M/yT/BP+h/wAAAAAAAAAAif8N/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ?_set_new_handler@@YAP6AHI@ZP6AHI@Z@Z
+    size: 16
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_pnhHeap@@3P6AHI@ZA
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 07fa80a6b4d9671375a878a2f804bf6504b665fa
   signature: Vv9q/wn/6P8AAAAAAAAAAIv/RP8k/wz/i/81/wAAAAAAAAAAav8J/6P/AAAAAAAAAADo/wAAAAAAAAAAWf+L/8b/Wf9e/8P/
   symbols:

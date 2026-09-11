@@ -1,4 +1,50 @@
 - symbol: 0
+  hash: 8125123e727eaac119ed12df6b49ba09630b6b2d
+  signature: Vv+L/3T/JP8I/1f/Vv+L/37/EP/o/wAAAAAAAAAAg/9m/wz/z/+D//////9Z/3T/Fv+L/8f/i//P/8H/+P8F/4P/4f8f/4v/BP+F/wAAAAAAAAAAjf8E/8j/6/8F/7j/AAAAAAAAAACA/2D/BP/9/4v/Rv8M/6j/gP90/wX/JP/8/4n/Rv8M/2r/AP9q/wD/V//o/wAAAAAAAAAAg//E/wz/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: _rewind
+    size: 84
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 74
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
   hash: d8d18d7b44a3fbf400919b0dcc98f6f7fac6966a
   signature: Vv+L/3T/JP8I/1f/Vv+L/37/EP/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAg/9m/wz/z/9Z/4P//////1n/dP8Z/4v/z/+L/8f/wf/5/wX/g//g/x//i/8M/43/AAAAAAAAAACN/wT/wP+N/wT/gf/r/wX/uP8AAAAAAAAAAID/YP8E//3/i/9G/wz/qP+A/3T/Bf8k//z/if9G/wz/av8A/2r/AP9X/+j/AAAAAAAAAABW/+j/AAAAAAAAAACD/8T/EP9f/17/w/8=
   symbols:

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 536f9c288881fed3597d0457f7cad71b13881135
+  signature: Vv9T/4P/7P8M/4v/RP8k/xj/i/9U/yT/HP+L/wT/hf8g/wP/Ff8B/4X/wP90/yH/i//Y/4v/8v+N/3T/Jv8A/4v/C/+J/wz/JP+J/3T/JP8E/+j/AAAAAAAAAACF/8D/dP8P/4v/W/8I/4X/2/91/+f/M//A/4P/xP8M/1v/Xv/D/4v/w/+D/8T/DP9b/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?get_from_hash@@YAPAUbase_id_struct@@HPAD@Z
+    size: 73
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?strcmp@@YAHPAD0@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

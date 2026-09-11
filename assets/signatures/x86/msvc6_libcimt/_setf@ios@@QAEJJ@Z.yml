@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 484acacd4df7d0b8eb7b0e5328b2a4f383d5618e
+  signature: Vv+L//H/V/+D/37/NP8A/33/Cv+N/0b/OP9Q/+j/AAAAAAAAAABZ/4v/fv8k/4v/x/8L/0T/JP8M/4P/fv80/wD/if9G/yT/ff8K/4P/xv84/1b/6P8AAAAAAAAAAFn/i//H/1//Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?setf@ios@@QAEJJ@Z
+    size: 55
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

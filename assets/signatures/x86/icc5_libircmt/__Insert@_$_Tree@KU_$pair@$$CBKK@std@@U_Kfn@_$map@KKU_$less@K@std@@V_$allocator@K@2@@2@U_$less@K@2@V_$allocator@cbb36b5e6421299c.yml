@@ -1,0 +1,62 @@
+- symbol: 0
+  hash: de16672669bba979bc1e042df3003351cb905cec
+  signature: V/9W/1X/U/+D/+z/DP+L/+n/i/9c/yT/IP+L/3T/JP8o/4v/fP8k/yz/x/8E/yT/GP8A/wD/AP/o/wAAAAAAAAAAif9w/wT/x/9A/xT/AP8A/wD/AP+L/xX/AAAAAAAAAACJ/xD/i/8V/wAAAAAAAAAAif9Q/wj/i//Q/4P/wv8M/3T/C/+L/xf/if9Q/wz/i/9X/wT/if9Q/xD///9F/wz/O/91/wT/dP8Q/4v/VP8k/yT/O/8V/wAAAAAAAAAAD/+E/3v/Af8A/wD/if8G/4v/Vf8E/zv/8v8P/4T/Xf8B/wD/AP87/zL/df8F/4n/Av+L/1X/BP+L//j/O/9C/wT/D/+E/2n/AP8A/wD/i//Y/43/tP8m/wD/AP8A/wD/jf9H/wT/i/93/wT/i/9O/xT/hf/J/3T/CP+L/8P/i/9c/yT/IP/r/0v/i/9W/wT/O/8y/w//hP+Q/wD/AP8A/4v/Vv8E/4v/Ev+L/0r/FP+F/8n/dP9k/zv/Pv90/0j/x/9G/xT/Af8A/wD/AP+L/xD/i/9S/wT/x/9C/xT/AP8A/wD/AP+L/zD/i/9W/wT/Uv+L/83/6P8AAAAAAAAAAIv/Vf8E/zv/ev8E/3X/qP/p/xn/Af8A/wD/jf92/wD/i/9S/wT/x/9C/xT/Af8A/wD/AP+J/wP/i//D/4P/xP8M/1v/Xf9e/1//wv8Q/wD/i//+/4v/zf9W/+j/AAAAAAAAAACN/0b/BP+L/3b/BP/r/6b/jf+2/wD/AP8A/wD/v/8B/wD/AP8A/4n/fv8U/4n/ev8U/4v/OP+L/3f/BP/H/0b/FP8A/wD/AP8A/4v/EP+L/3r/BP/r/6L/i//2/4v/Vv8E/4v/Uv8I/4v/Sv8U/4X/yf90/1P/O/9+/wj/dP8u/8f/Rv8U/wH/AP8A/wD/i/8Q/4v/Uv8E/8f/Qv8U/wD/AP8A/wD/i/8w/4v/Vv8E/1L/i//N/+j/AAAAAAAAAADp/2n/////////i//2/43/vP8n/wD/AP8A/wD/i//+/4v/zf9W/+j/AAAAAAAAAACN/0b/BP+L/3b/BP/r/8D/jf+0/yb/AP8A/wD/AP+N/7z/J/8A/wD/AP8A/7//Af8A/wD/AP+J/37/FP+J/3r/FP+L/zj/i/93/wT/x/9G/xT/AP8A/wD/AP+L/xD/i/96/wT/6f8f/////////5D/jf+0/yb/AP8A/wD/AP+N/7z/J/8A/wD/AP8A/4n/Qv8E/4v/Vf8E/4n/Qv8I/4v/Vf8E/+n/m//+//////+L/xf/O/9W/wz/D/+C/3r//v//////if9G/wj/i/9V/wT/O/9y/wj/D/+F/4H//v//////if9C/wj/i/9V/wT/6f92//7//////4v/w/+L/1z/JP8g/+n/3//+//////+Q/w==
+  symbols:
+  - kind: Function
+    name: ?_Insert@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@IAE?AViterator@12@PAU_Node@12@0ABU?$pair@$$CBKK@2@@Z
+    size: 530
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Nil@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@1PAU_Node@12@A
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: ?_Lrotate@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@IAEXPAU_Node@12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Rrotate@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@IAEXPAU_Node@12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 220
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 270
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 366
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 390
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

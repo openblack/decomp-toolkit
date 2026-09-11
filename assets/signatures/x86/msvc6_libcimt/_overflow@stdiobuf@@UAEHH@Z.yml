@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: bbd17df8c7b01523692e1f0ae4a64b6db2cb1a9c
+  signature: Vv9X/4v/8f/o/wAAAAAAAAAAg//4////dP9G/4P/fv8I/wD/df9F/4P/fv8g/wD/dP8//4v/Rv8Y/4v/fv8c/yv/+P+F////fv8z////dv9M/1f/av8B/1D/6P8AAAAAAAAAAIP/xP8Q/4P/fv8g/wD/dP8D/yn/Rv8c/zv/x/90/xf/i/92/xj/K//4/wP/xv9X/1D/Vv/o/wAAAAAAAAAAg//E/wz/g//I////6/9M/4v/fv8I/4X///91/yT/Of9+/yD/df8f/4v/Tv8U/4v/Vv8Q/zv/yv92/wb/i//B/yv/wv/r/wL/M//A/9H/+P8D/8L/if9O/yD/if9G/xj/if9G/xz/g/98/yT/DP///3T/F/+F////df8b/4v/Rv8c/zv/Rv8g/3P/E////3T/JP8M/4v/zv/o/wAAAAAAAAAAav8B/1j/X/9e/8L/BP8A////dv9M////dP8k/xD/6P8AAAAAAAAAAFn/Wf/r/+v/
+  symbols:
+  - kind: Function
+    name: ?overflow@stdiobuf@@UAEHH@Z
+    size: 186
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?allocate@streambuf@@IAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fwrite
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sputc@streambuf@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fputc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 178
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

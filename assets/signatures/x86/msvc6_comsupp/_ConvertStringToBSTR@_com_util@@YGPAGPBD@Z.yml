@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 12e02eda2d4a17d96f912e0a82bbe435a70e5db2
+  signature: Vf+L/+z/g/99/wj/AP9W/1f/df8E/zP/wP/r/13///91/wj///8V/wAAAAAAAAAAi//w/0b/jf8E/zb/g//A/wP/JP/8/+j/AAAAAAAAAACL//z/Vv9X/2r//////3X/CP9m/4P/J/8A/2r/AP9q/wD///8V/wAAAAAAAAAAhf/A/3X/Iv+L/zX/AAAAAAAAAAD//9b/hf/A/3T/Dv///9b/Jf//////AP8A/w3/AP8A/wf/gP/r/wL/M//A/1D/6P8AAAAAAAAAAFf///8V/wAAAAAAAAAAjf9l//j/X/9e/13/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?ConvertStringToBSTR@_com_util@@YGPAGPBD@Z
+    size: 117
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__lstrlenA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloca_probe
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_com_issue_error@@YGXJ@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SysAllocString@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 59
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 97
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 104
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

@@ -35,3 +35,84 @@
     kind: x86_rel32
     symbol: 3
     addend: -4
+- symbol: 0
+  hash: 51f1f562e1e62f80daa1cfe4cd2e3507c4dccb6a
+  signature: Vf+L/+z/gf/s/wj/Af8A/wD/U/+L/13/CP+F/9v/dP9S/1P/6P8AAAAAAAAAAIX/wP9Z/3X/Gf/H/wX/AAAAAAAAAAAP/wD/AP8A/8f/Bf8AAAAAAAAAAA3/AP8A/wD/M//A/1v/yf/D/43/Rf/8/4D/Zf8L/wD/UP+N/4X/+P/+//////9Q/43/Rf8I/4D/w/9A/2j/BP8B/wD/AP9Q/4j/Xf8I/8b/Rf8J/zr/xv9F/wr/Lv///xX/AAAAAAAAAADr/xL/jf+F//j//v//////UP9o/wT/Af8A/wD///8V/wAAAAAAAAAAhf/A/3T/t/9A/z3/BP8B/wD/AP93/6//i/9N/wz/hf/J/3X/If87/0X/EP9//wP/i/9F/xD/UP/o/wAAAAAAAAAAWf+L/8j/hf/J/3X/IP/H/wX/AAAAAAAAAAAM/wD/AP8A/+v/h/87/0X/EP9+/w//x/8F/wAAAAAAAAAAIv8A/wD/AP/p/3P/////////jf+F//j//v//////UP9R/+j/AAAAAAAAAABZ/1n/6f9h/////////w==
+  symbols:
+  - kind: Function
+    name: __getdcwd
+    size: 209
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __validdrive
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFullPathNameA@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCurrentDirectoryA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 93
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 113
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 146
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 159
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 176
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 198
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 904b604d98de46127d3a9b102617d623af20d093
+  signature: g/95/wj/AP91/xX/g/95/xD/AP91/w//i/8B////UP8o/0D/9//Y/xv/wP+D/+D/Av9I/8P/M//A/8P/
+  symbols:
+  - kind: Function
+    name: ?allocate@streambuf@@IAEHXZ
+    size: 30
+    flags: 1
+    section: .text
+  relocations: []

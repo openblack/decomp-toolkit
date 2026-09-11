@@ -62,3 +62,149 @@
     kind: x86_rel32
     symbol: 6
     addend: -4
+- symbol: 0
+  hash: 6a9d1c2a988787edd83724132978b43dc6b03cc8
+  signature: Vf+L/+z/uP8A/xD/AP8A/+j/AAAAAAAAAABT/4v/Xf8I/1b/M//2/zv/Hf8AAAAAAAAAAA//g/8V/wH/AP8A/4v/w/+L/8v/wf/4/wX/g//h/x//i/8E/4X/AAAAAAAAAAD2/0T/yP8E/wH/D/+E//n/AP8A/wD/av8B/1b/U//o/wAAAAAAAAAAg//E/wz/g//4////if9F/wj/D/+E/+v/AP8A/wD/av8C/1b/U//o/wAAAAAAAAAAg//E/wz/g//4////D/+E/9b/AP8A/wD/V/+L/33/DP8r//j/hf///37/b/9o/wD/EP8A/wD/jf+F/wD/8P//////Vv9Q/+j/AAAAAAAAAABo/wD/gP8A/wD/U//o/wAAAAAAAAAAg//E/xT/if9F/wz/uP8A/xD/AP8A/zv/+P99/wL/i//H/1D/jf+F/wD/8P//////UP9T/+j/AAAAAAAAAACD/8T/DP+D//j///90/wj/K//4/4X///9+/xj/6//X/4P/Pf8AAAAAAAAAAAX/df8K/8f/Bf8AAAAAAAAAAA3/AP8A/wD/g//O//////91/wz/U//o/wAAAAAAAAAAWf9Z/+v/QP99/z7/av8A////df8M/1P/6P8AAAAAAAAAAFP/6P8AAAAAAAAAAIP/xP8Q/1D///8V/wAAAAAAAAAAi//w//f/3v8b//b/9//e/07/g//+////df8V/8f/Bf8AAAAAAAAAAA3/AP8A/wD///8V/wAAAAAAAAAAo/8AAAAAAAAAAGr/AP///3X/CP9T/+j/AAAAAAAAAACD/8T/DP+L/8b/X//r/w3/x/8F/wAAAAAAAAAACf8A/wD/AP+D/8j///9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __chsize
+    size: 326
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __chkstk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memset
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __write
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetEndOfFile@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 89
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 140
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 171
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 193
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 202
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 218
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 235
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 241
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 251
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 271
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 281
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 286
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 297
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 311
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

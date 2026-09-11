@@ -71,3 +71,89 @@
     kind: x86_rel32
     symbol: 7
     addend: -4
+- symbol: 0
+  hash: e6d5cb2bb3f7c1c650e4e538c51c1e9df9b16745
+  signature: i/9E/yT/BP9T/zv/Bf8AAAAAAAAAAFb/V/9z/3P/i//I/4v/8P/B//n/Bf+D/+b/H/+N/zz/jf8AAAAAAAAAAMH/5v8D/4v/D//2/0T/Mf8E/wH/dP9W/1D/6P8AAAAAAAAAAIP/+P///1n/df8M/8f/Bf8AAAAAAAAAAAn/AP8A/wD/6/9P////dP8k/xj/av8A////dP8k/xz/UP///xX/AAAAAAAAAACL/9j/g//7////df8I////Ff8AAAAAAAAAAOv/Av8z/8D/hf/A/3T/Cf9Q/+j/AAAAAAAAAABZ/+v/IP+L/wf/gP9k/zD/BP/9/43/RP8w/wT/i//D/+v/FP+D/yX/AAAAAAAAAAAA/8f/Bf8AAAAAAAAAAAn/AP8A/wD/g//I////X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __lseek
+    size: 154
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetFilePointer@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 58
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 94
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 108
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 132
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 139
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

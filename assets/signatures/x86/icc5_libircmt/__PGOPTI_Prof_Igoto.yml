@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3bbf2bfc7c24dd0194ab6f442e35985bf208163b
+  signature: i/9U/yT/BP+L/0T/JP8I/4n/Qv8M/8P/
+  symbols:
+  - kind: Function
+    name: __PGOPTI_Prof_Igoto
+    size: 12
+    flags: 1
+    section: .text
+  relocations: []

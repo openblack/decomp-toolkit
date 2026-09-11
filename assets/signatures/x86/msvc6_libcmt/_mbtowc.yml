@@ -71,3 +71,79 @@
     kind: x86_rel32
     symbol: 7
     addend: -4
+- symbol: 0
+  hash: 9f607ebd936a33cc50d1eae3cbe03a797ba09e8d
+  signature: Vf+L/+z/U/9W/4v/df8M/zP/2/87//P/dP8V/zn/Xf8Q/3T/EP+K/wb/Ov/D/3X/EP+L/0X/CP87/8P/dP8D/2b/if8Y/zP/wP9e/1v/Xf/D/zn/Hf8AAAAAAAAAAHX/E/+L/03/CP87/8v/dP8H/2b/D/+2/8D/Zv+J/wH/av8B/1j/6//h/4v/Df8AAAAAAAAAAA//tv/A//b/RP9B/wH/gP90/03/of8AAAAAAAAAAIP/+P8B/37/Kv85/0X/EP98/y//M//J/zn/Xf8I/w//lf/B/1H///91/wj/UP9W/2r/Cf///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/of8AAAAAAAAAAHX/nf85/0X/EP9y/wX/OP9e/wH/df+T/8f/Bf8AAAAAAAAAACr/AP8A/wD/g//I////6/+E/zP/wP85/13/CP8P/5X/wP9Q////df8I/2r/Af9W/2r/Cf///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/D/+F/3n/////////6//K/w==
+  symbols:
+  - kind: Function
+    name: _mbtowc
+    size: 200
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 43
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 85
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 117
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 130
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 148
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 180
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 186
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 5410f46801d552ca934da1980394d71480bafa9c
+  signature: Vv9T/4P/7P8U/4v/XP8k/yD/i/9E/yT/JP+L/1T/JP8o/43/NP8Q/43/TP8Q////O/9L/xj/cv8c/8f/BP8k/wAAAAAAAAAAx/9E/yT/BP8AAAAAAAAAAMf/RP8k/wj/vf8B/wD/AP/o/wAAAAAAAAAAi/9D/xT/jf8U/4P///9E/7L/MP+D/8T/FP9b/17/w/8=
+  symbols:
+  - kind: Function
+    name: __PGOPTI_Prof_Computed_Goto
+    size: 73
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CH@LLGKOJDF@loc?5?$CL?5ctrl?5?9?51?5?$DM?5PGOPTI_other_cn@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Object
+    name: ??_C@_08A@pgopti?4c?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Function
+    name: __assert
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 32
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

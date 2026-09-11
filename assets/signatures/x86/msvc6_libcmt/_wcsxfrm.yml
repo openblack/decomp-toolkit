@@ -1,4 +1,93 @@
 - symbol: 0
+  hash: ce54efecd32dce339346a3d39ad0b4a68447eb1a
+  signature: Vf+L/+z/g/89/wAAAAAAAAAAAP9X/7//////////f/91/x7///91/xD///91/wz///91/wj/6P8AAAAAAAAAAP//df8M/+j/AAAAAAAAAACD/8T/EP/p/4X/AP8A/wD/U/9W////df8Q/+j/AAAAAAAAAACL/9j/Wf+F/9v/dP9p////Nf8AAAAAAAAAAL7/AP8E/wD/AP///3X/EP9T/2r//////3X/DP9W////Nf8AAAAAAAAAAOj/AAAAAAAAAACL//j/M//A/4P/xP8c/zv/+P91/yn///81/wAAAAAAAAAAUP9Q/2r//////3X/DP9W////Nf8AAAAAAAAAAOj/AAAAAAAAAACL//j/g//E/xz/hf///3X/G/+//////////3//6/8V/37/Ev+L/03/CP9m/w//tv8U/xj/Zv+J/xH/QP9B/0H/O//H/3z/8f9P/1P/6P8AAAAAAAAAAFn/Xv+L/8f/W/9f/13/w/8=
+  symbols:
+  - kind: Function
+    name: _wcsxfrm
+    size: 184
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcsncpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_collate_cp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringW
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 67
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 93
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 110
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 124
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 129
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 172
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+- symbol: 0
   hash: 29dd5503ebd4aa05b233e13ad7986f21f3a3dbaa
   signature: Vf+L/+z/Uf9R/1P/Vv8z//b/V/85/zX/AAAAAAAAAAC//////////3//dP9N/7v/AAAAAAAAAABT////Ff8AAAAAAAAAADn/Nf8AAAAAAAAAAHT/GP9T////Ff8AAAAAAAAAAGr/E//o/wAAAAAAAAAAWf/H/0X//P8B/wD/AP8A/+v/A/+J/3X//P85/zX/AAAAAAAAAAB1/zT/Of91//z/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wf/U////xX/AAAAAAAAAAD//3X/EP///3X/DP///3X/CP/o/wAAAAAAAAAA//91/wz/6P8AAAAAAAAAAIP/xP8Q/+n/nv8A/wD/AP///3X/EP/o/wAAAAAAAAAAO//G/1n/if9F//j/dP9s////Nf8AAAAAAAAAAL7/AP8E/wD/AP///3X/EP9Q/2r//////3X/DP9W////Nf8AAAAAAAAAAOj/AAAAAAAAAACL//j/M//A/4P/xP8c/zv/+P91/yn///81/wAAAAAAAAAAUP9Q/2r//////3X/DP9W////Nf8AAAAAAAAAAOj/AAAAAAAAAACL//j/g//E/xz/hf///3X/Hv+//////////3//6/8Y/37/Ff+L/03/CP+L/1X/+P9m/w//tv8U/xD/Zv+J/xH/QP9B/0H/O//H/3z/7v9P/4P/ff/8/wD/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wf/U////xX/AAAAAAAAAAD//3X/+P/o/wAAAAAAAAAAWf+L/8f/X/9e/1v/yf/D/w==
   symbols:

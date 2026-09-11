@@ -1,4 +1,36 @@
 - symbol: 0
+  hash: a8b7d9ca22ea280159124456a902926e63d5fbbe
+  signature: g/95/yT/CP9z/xv/i/9B/yT/i/8U/4X/AAAAAAAAAACF/9L/dP8N/zv/0f90/wn/QP+D//j/CP+J/0H/JP9y/+X/i/9B/yT/if8M/4X/AAAAAAAAAACL/0n/JP/+/4H/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: ?_Addstd@ios_base@std@@IAEXXZ
+    size: 53
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _stdstr
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _stdopens
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: 1e247bfc0f501eb5414cbc3e20fd1029a1427cef
   signature: Vf+L/+z/Uf9W/4v/8f+N/03//P/o/wAAAAAAAAAAg/9+/yT/CP9z/xv/i/9G/yT/i/8M/4X/AAAAAAAAAACF/8n/dP8N/zv/zv90/wn/QP+D//j/CP+J/0b/JP9y/+X/i/9G/yT/jf9N//z/if80/4X/AAAAAAAAAACL/3b/JP/+/4b/AAAAAAAAAADo/wAAAAAAAAAAXv/J/8P/
   symbols:

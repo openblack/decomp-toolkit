@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a597f08b4f4f888d7b94d9b93b51879b6832b805
+  signature: Vv+L//H/i/9G/xz/O/9G/yD/cv9O/4P/fv9M/wD/dP8K/+j/AAAAAAAAAACD//j///91/wX/g//I////6/9T/4P/fv8g/wD/df8X/4v/Rv8s/yv/Rv8k/wP/Rv8Q/4n/Rv8Y/4n/Rv8c/4v/Rv8U/4n/Rv8g/+v/HP+L/07/FP+L/0b/GP+L/1b/HP+J/0b/HP+F/8n/if9O/yD/dP8J/4v/yP8r/8j/A//K/4n/Tv8c/4v/RP8k/wj/g//4////dP8O/4v/Tv8c/4j/Af+D/37/IP8A/3T/A////0b/HP9q/wH/WP9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?overflow@strstreambuf@@UAEHH@Z
+    size: 119
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?doallocate@strstreambuf@@MAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

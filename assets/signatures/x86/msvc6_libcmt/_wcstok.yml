@@ -1,4 +1,27 @@
 - symbol: 0
+  hash: 63d33a20af751dfed96c8767b72a3f01cf1b97ff
+  signature: Vf+L/+z/i/9N/wj/hf/J/3X/Bv+L/w3/AAAAAAAAAABm/4v/Af9W/2b/hf/A/1f/dP8v/4v/Vf8M/2b/i/86/4v/Vf8M/2b/hf///3T/Ef+L//f/Zv87//D/dP8K/0L/Qv9m/4v/Mv9m/4X/9v91//H/Zv+D/zr/AP90/wr/Qf9B/2b/i/8B/2b/hf/A/3X/1/9m/4v/Af+J/03/CP9m/4X/wP90/zf/i/9V/wz/Zv+L/zr/i/9V/wz/Zv+F////dP8R/4v/9/9m/zv/8P90/wr/Qv9C/2b/i/8y/2b/hf/2/3X/8f9m/4P/Ov8A/3X/DP9B/0H/Zv+L/wH/Zv+F/8D/df/X/+v/Bv9m/4P/If8A/0H/Qf+L/0X/CP9f/yv/wf+J/w3/AAAAAAAAAAD3/9j/G//A/17/I/9F/wj/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _wcstok
+    size: 161
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?nextoken@?1??wcstok@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 147
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 7c3d5e77c1cf10d9965a49304a7dec0255a04516
   signature: Vf+L/+z/Uf/o/wAAAAAAAAAAi/9N/wj/if9F//z/hf/J/3X/A/+L/0j/HP9m/4v/Ef9W/2b/hf/S/1f/dP8v/4v/Rf8M/2b/i/8A/4v/df8M/2b/hf/A/3T/Ef+L//j/Zv87//r/dP8K/0b/Rv9m/4v/Pv9m/4X///91//H/Zv+D/z7/AP90/wr/Qf9B/2b/i/8R/2b/hf/S/3X/1/9m/4v/Ef+J/03/CP9m/4X/0v90/zf/i/9F/wz/Zv+L/wD/i/91/wz/Zv+F/8D/dP8R/4v/+P9m/zv/+v90/wr/Rv9G/2b/i/8+/2b/hf///3X/8f9m/4P/Pv8A/3X/DP9B/0H/Zv+L/xH/Zv+F/9L/df/X/+v/Bv9m/4P/If8A/0H/Qf+L/0X//P9f/17/if9I/xz/i/9F/wj/K//B//f/2P8b/8D/I/9F/wj/yf/D/w==
   symbols:

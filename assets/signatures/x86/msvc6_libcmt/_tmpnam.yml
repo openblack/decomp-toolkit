@@ -1,4 +1,63 @@
 - symbol: 0
+  hash: bd32d9fe07bfa980e2c0a7f280c756cac0a54ff0
+  signature: gP89/wAAAAAAAAAAAP9W/77/AAAAAAAAAAB1/xb/av8A/+j/AAAAAAAAAABZ/2r/AP9W/+j/AAAAAAAAAABZ/4X/wP9Z/3X/D/9W/+j/AAAAAAAAAACF/8D/Wf90/+f/M//A/17/w/9X/4v/fP8k/wz/hf///3X/BP+L//7/6/8J/1b/V//o/wAAAAAAAAAAWf9Z/4v/x/9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: _tmpnam
+    size: 79
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _namebuf0
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _init_namebuf
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __access
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _genfname
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _strcpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+- symbol: 0
   hash: 7a411821e5e14ee9b6897a1d2e6f022fc26a8ef4
   signature: U/9W/1f/av8D/+j/AAAAAAAAAAAz/9v/Wf84/x3/AAAAAAAAAAC+/wAAAAAAAAAAdf8U/1P/6P8AAAAAAAAAAFn/U/9W/+j/AAAAAAAAAABZ/4X/wP9Z/3X/D/9W/+j/AAAAAAAAAACF/8D/Wf90/+j/M////+v/M/+L/3z/JP8Q/zv/+/91/yL/6P8AAAAAAAAAAIv/+P85/1//KP91/xP/av8O/+j/AAAAAAAAAAA7/8P/Wf+J/0f/KP91/wT/i//+/+v/DP+L/3//KP9W/1f/6P8AAAAAAAAAAFn/Wf9q/wP/6P8AAAAAAAAAAFn/i//H/1//Xv9b/8P/
   symbols:

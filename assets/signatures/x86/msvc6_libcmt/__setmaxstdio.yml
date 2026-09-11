@@ -1,4 +1,82 @@
 - symbol: 0
+  hash: 57ec11009f61d6e96c90ade492e9f1849c096946
+  signature: Vv+L/3T/JP8I/4P//v8U/w//jP+0/wD/AP8A/4H//v8A/wj/AP8A/w//j/+o/wD/AP8A/6H/AAAAAAAAAABT/zv/8P9X/37/Pf+L/8b/wf/g/wL/UP///zX/AAAAAAAAAADo/wAAAAAAAAAAi//Q/1n/hf/S/1n/dP97/6H/AAAAAAAAAAA7/8b/ff8L/4v/zv+N/zz/gv8r/8j/M//A//P/q/+J/zX/AAAAAAAAAACL/97/if8V/wAAAAAAAAAA6/9a/3X/BP+L/9j/6/9U/4v/3v+N/3j///87//7/fP8f/6H/AAAAAAAAAACL/wT/uP+F/8D/dP8N//b/QP8M/4P/df8K/1D/6P8AAAAAAAAAAFn/T//r/+D/g//L////g//7////dP8n/4v/xv/B/+D/Av9Q////Nf8AAAAAAAAAAOj/AAAAAAAAAABZ/4X/wP9Z/3T/Df+J/zX/AAAAAAAAAACj/wAAAAAAAAAA6/8D/4P/y////4v/w/9f/1v/Xv/D/4P/yP///17/w/8=
+  symbols:
+  - kind: Function
+    name: __setmaxstdio
+    size: 199
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 50
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 63
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 84
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 114
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 133
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 157
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 162
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 174
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 179
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: 7bab3644dcc713136522ebab9d037a26ba6c1dfa
   signature: Vv+L/3T/JP8I/4P//v8U/w//jP/E/wD/AP8A/4H//v8A/wj/AP8A/w//j/+4/wD/AP8A/1P/V/9q/wL/6P8AAAAAAAAAAKH/AAAAAAAAAABZ/zv/8P9+/z3/i//G/8H/4P8C/1D///81/wAAAAAAAAAA6P8AAAAAAAAAAIv/0P9Z/4X/0v9Z/3T/e/+h/wAAAAAAAAAAO//G/33/C/+L/87/jf88/4L/K//I/zP/wP/z/6v/if81/wAAAAAAAAAAi//e/4n/Ff8AAAAAAAAAAOv/Wv91/wT/i//Y/+v/VP+L/97/jf94////O//+/3z/H/+h/wAAAAAAAAAAi/8E/7j/hf/A/3T/Df/2/0D/DP+D/3X/Cv9Q/+j/AAAAAAAAAABZ/0//6//g/4P/y////4P/+////3T/J/+L/8b/wf/g/wL/UP///zX/AAAAAAAAAADo/wAAAAAAAAAAWf+F/8D/Wf90/w3/if81/wAAAAAAAAAAo/8AAAAAAAAAAOv/A/+D/8v///9q/wL/6P8AAAAAAAAAAFn/i//D/1//W/9e/8P/g//I////Xv/D/w==
   symbols:

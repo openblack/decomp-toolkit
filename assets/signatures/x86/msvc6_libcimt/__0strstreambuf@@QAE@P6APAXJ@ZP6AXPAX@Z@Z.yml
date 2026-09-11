@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: f64cb6159668d21ab6366e908045bb57fbb6a551
+  signature: Vv+L//H/6P8AAAAAAAAAAGr/Af+D/2b/WP8A/1j/x/8G/wAAAAAAAAAAif9G/1D/if9G/0z/i/9E/yT/CP+J/0b/XP+L/0T/JP8M/4n/Rv9g/4v/xv9e/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0strstreambuf@@QAE@P6APAXJ@ZP6AXPAX@Z@Z
+    size: 47
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0streambuf@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7strstreambuf@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

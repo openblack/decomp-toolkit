@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 635634623d94af4b9d39bbb91ca3ed83015ccb81
+  signature: gP9M/yT/Bv9A/9n/RP8k/wT/w/8=
+  symbols:
+  - kind: Function
+    name: _quietf
+    size: 10
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 75a81959ded063525d9b086a86130eb112c4553a
+  signature: Vf+L/+z/Uf+N/0X/CP+J/0X//P+L/03//P+L/xH/gf/K/wD/AP9A/wD/i/9F//z/if8Q/9n/Rf8I/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: _quietf
+    size: 33
+    flags: 2
+    section: .text
+  relocations: []

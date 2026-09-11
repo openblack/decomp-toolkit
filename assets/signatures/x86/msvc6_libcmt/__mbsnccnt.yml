@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: 22b2a611a997b9741675030adb62e4d8986167e4
+  signature: Vv+L/3T/JP8M/zP/wP+L/87/Tv+F/8n/dP8s/4v/TP8k/wj/iv8R/4T/0v90/yL/D/+2/9L/9v+C/wAAAAAAAAAABP90/w3/i//W/07/hf/S/3T/D/9B/4D/Of8A/3T/Cf9A/0H/i//W/07/hf/S/3X/2P9e/8P/
+  symbols:
+  - kind: Function
+    name: __mbsnccnt
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 9323f247ba8dd4a17bcf1f288960b68adbf29d2e
   signature: Vv9q/xn/6P8AAAAAAAAAAIv/VP8k/xD/M//2/4v/wv9K/4X/wP9Z/3T/LP+L/0T/JP8I/4r/CP+E/8n/dP8i/w//tv/J//b/gf8AAAAAAAAAAAT/dP8N/4v/yv9K/4X/yf90/w//QP+A/zj/AP90/wn/Rv9A/4v/yv9K/4X/yf91/9j/av8Z/+j/AAAAAAAAAABZ/4v/xv9e/8P/
   symbols:

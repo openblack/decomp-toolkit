@@ -17,3 +17,43 @@
     kind: x86_abs32
     symbol: 1
     addend: 0
+- symbol: 0
+  hash: 7a0eb663bbb1075f81240eba104fe04887aa9761
+  signature: i/9U/yT/BP+L/w3/AAAAAAAAAAA5/xX/AAAAAAAAAABW/7j/AAAAAAAAAAB0/xb/jf80/0n/jf80/7X/AAAAAAAAAACD/8D/DP87/8b/c/8F/zn/UP8E/3X/9P+N/wz/Sf9e/43/DP+N/wAAAAAAAAAAO//B/3P/Bf85/1D/BP90/wL/M//A/8P/
+  symbols:
+  - kind: Function
+    name: _siglookup
+    size: 69
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __XcptActTabCount
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __XcptActTab
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

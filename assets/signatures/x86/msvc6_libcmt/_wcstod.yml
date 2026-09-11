@@ -1,4 +1,86 @@
 - symbol: 0
+  hash: efdb74fd9e31e28b3bfe8d63cdb64acf9a158693
+  signature: Vf+L/+z/Uf9R/1P/Vv+L/3X/CP9X/4v//v8z/9v/Zv+L/wb/av8I/1D/6P8AAAAAAAAAAFn/hf/A/1n/dP8J/0f/av8I/0f/Zv+L/wf/6//r/1f/6P8AAAAAAAAAAI3/RP8A/wL/UP/o/wAAAAAAAAAAZv+D/z//AP9Z/1n/i//I/4n/Tf/4/3T/K/+L/8f/if9N//z/i//3/2b/i/8A/1D///91//z/6P8AAAAAAAAAAFn/hf/A/1n/fv8P/wP/2P///0X//P9G/0b/i//G/2b/g/8+/wD/df/f/4v/df8I/4v/Rf/4/2r/AP9q/wD/gP8k/xj/AP9D/1P/UP/o/wAAAAAAAAAA//91//j/i//Y/+j/AAAAAAAAAACL/0X/DP+D/8T/FP+F/8D/dP8I/4v/S/8E/43/DP9P/4n/CP+L/wv/Zv/3/8H/QP8C/3T/Cv+F/8D/2f/u/3T/L/+J/zD/6/8r//b/wf+B/3T/Gv9m/4P/P/8t/93/Bf8AAAAAAAAAAHX/Av/Z/+D/x/8F/wAAAAAAAAAAIv8A/wD/AP/r/wz/9v/F/wH/dP8E/9n/7v/r/+v/3f9D/xD/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _wcstod
+    size: 227
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _iswctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcslen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wctomb
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fltin
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __HUGE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 128
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 138
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 190
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 200
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+- symbol: 0
   hash: 749758654900e0c78b30590bcf4871263e7688cd
   signature: Vf+L/+z/g//s/yT/U/9W/4v/df8I/1f/i//+/zP/2/9m/4v/Bv9q/wj/UP/o/wAAAAAAAAAAWf+F/8D/Wf90/wn/R/9q/wj/R/9m/4v/B//r/+v/V//o/wAAAAAAAAAAjf9E/wD/Av9Q/+j/AAAAAAAAAABm/4P/P/8A/1n/Wf+L/8j/if9N//j/dP8r/4v/x/+J/03//P+L//f/Zv+L/wD/UP///3X//P/o/wAAAAAAAAAAWf+F/8D/Wf9+/w//A//Y////Rf/8/0b/Rv+L/8b/Zv+D/z7/AP91/9//i/91/wj/i/9F//j/av8A/2r/AP+A/yT/GP8A/0P/U/9Q/43/Rf/c/1D/6P8AAAAAAAAAAP//df/4/4v/2P/o/wAAAAAAAAAAi/9F/wz/g//E/xj/hf/A/3T/CP+L/0v/BP+N/wz/T/+J/wj/i/8L/2b/9//B/0D/Av90/wr/hf/A/9n/7v90/zb/if8w/+v/Mv/2/8H/gf90/yH/Zv+D/z//Lf/d/wX/AAAAAAAAAAB1/wL/2f/g/93/Xf/0/+j/AAAAAAAAAADd/0X/9P/H/wD/Iv8A/wD/AP/r/wz/9v/F/wH/dP8E/9n/7v/r/+T/3f9D/xD/X/9e/1v/yf/D/w==
   symbols:

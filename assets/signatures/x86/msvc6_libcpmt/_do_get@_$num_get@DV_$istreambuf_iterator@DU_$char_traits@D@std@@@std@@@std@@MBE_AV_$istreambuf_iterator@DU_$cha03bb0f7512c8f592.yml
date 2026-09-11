@@ -1,4 +1,99 @@
 - symbol: 0
+  hash: e99507544f8393882415a6fca72dc0d53e5fd38d
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/JP+D/yX/AAAAAAAAAAAA/1b/i/91/xz/jf9F/xz/V/9Q/4v/zv/o/wAAAAAAAAAAi/92/wz/UP+N/0X/FP+D/2X//P8A/1b/UP+N/0X/DP9Q/43/Rf/Q/1D/6P8AAAAAAAAAAIP/Tf/8////g//E/xT/jf9N/xz/i//w/+j/AAAAAAAAAACA/33/0P8t/43/ff/R/3T/A/+N/33/0P+N/0X/8P9W/1D/V//o/wAAAAAAAAAAg//E/wz/i//w/43/Rf8U/43/Tf8M/1D/6P8AAAAAAAAAAIT/wP+L/0X/IP90/wP/g/8I/wH/Of99//D/dP8h/4P/Pf8AAAAAAAAAAAD/df8Y/4H//v//////AP8A/3f/EP+A/33/0P8t/3X/Av/3/97/i/9F/yT/Zv+J/zD/6/8D/4P/CP8C/4v/Rf8I/4v/Tf8M/1//Xv+J/wj/i/9N/xD/if9I/wT/i/9N//T/ZP+J/w3/AAAAAAAAAADJ/8L/IP8A/w==
+  symbols:
+  - kind: Function
+    name: ?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAAG@Z
+    size: 200
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L13270
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?getloc@ios_base@std@@QBE?AVlocale@2@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getifld@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@CAHPADAAV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@1HABVlocale@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strtoul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?equal@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@QBE_NABV12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 15
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 32
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 58
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 136
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 192
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+- symbol: 0
   hash: 14556a59d1c88522c27f9f5735ace63a4f9f3a0b
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/JP9T/1b/V//o/wAAAAAAAAAAg/8g/wD/i/91/xz/jf9F/xz/i//O/1D/6P8AAAAAAAAAAIv/dv8M/1D/jf9F/xT/g/9l//z/AP9W/1D/jf9F/wz/UP+N/0X/0P9Q/+j/AAAAAAAAAACD/03//P///4P/xP8U/43/Tf8c/4v/8P/o/wAAAAAAAAAAgP99/9D/Lf+N/33/0f90/wP/jf99/9D/jf9F//D/Vv9Q/1f/6P8AAAAAAAAAAIP/xP8M/4v/8P+N/0X/FP+N/03/DP9Q/+j/AAAAAAAAAACL/13/IP+E/8D/dP8D/4P/C/8B/zn/ff/w/3T/Iv/o/wAAAAAAAAAAg/84/wD/df8Y/4H//v//////AP8A/3f/EP+A/33/0P8t/3X/Av/3/97/i/9F/yT/Zv+J/zD/6/8D/4P/C/8C/4v/Rf8I/4v/Tf8M/1//Xv+J/wj/i/9N/xD/if9I/wT/i/9N//T/W/9k/4n/Df8AAAAAAAAAAMn/wv8g/wD/
   symbols:

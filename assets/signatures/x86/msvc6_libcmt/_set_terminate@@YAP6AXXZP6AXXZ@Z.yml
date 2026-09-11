@@ -1,4 +1,27 @@
 - symbol: 0
+  hash: c2835c6863d5b91bbcfbe1b10b104e012e2339d1
+  signature: i/9M/yT/BP+h/wAAAAAAAAAAif8N/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ?set_terminate@@YAP6AXXZP6AXXZ@Z
+    size: 16
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?__pTerminate@@3P6AXXZA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 041f5a43c6d5057515a70a1e7b0d13b282c6bb4f
   signature: Vv/o/wAAAAAAAAAAi/9w/2D/6P8AAAAAAAAAAIv/TP8k/wj/if9I/2D/i//G/17/w/8=
   symbols:

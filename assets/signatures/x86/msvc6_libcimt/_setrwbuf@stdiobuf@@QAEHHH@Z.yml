@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: eb46717ebbba53af9afb9f5184f7824ecdca0da1
+  signature: U/+L/1z/JP8M/1b/V/+L/3z/JP8Q/4v/8f8z/8D/jf8M/x//hf/J/w//lP/A/4X/wP+J/0b/CP90/wT/M//A/+v/Zv9R/+j/AAAAAAAAAACF/8D/Wf91/wX/g//I////6/9W/43/DP84/2r/Af8D/8v/Uf9Q/4v/zv/o/wAAAAAAAAAAM//J/zv/+f90/xD/i/9G/xD/if9G/yT/A//H/4n/Rv8o/4n/Rv8s/+v/Cf+J/07/JP+J/07/KP+J/07/LP+D/07/DP///zv/2f90/xP/i/9G/xD/A//H/4n/Rv8Y/4n/Rv8c/4v/Rv8U/4n/Rv8g/+v/Cf+J/07/GP+J/07/HP+J/07/IP9q/wH/WP9f/17/W//C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?setrwbuf@stdiobuf@@QAEHHH@Z
+    size: 142
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?setb@streambuf@@IAEXPAD0H@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 36
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

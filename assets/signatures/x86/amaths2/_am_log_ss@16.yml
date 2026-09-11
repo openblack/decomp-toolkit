@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: c7fa4a33f883744d68606d6684f8a3f34a8335e6
+  signature: 8/8P/1//Bf8AAAAAAAAAAPP/D/8Q/z3/AAAAAAAAAADz/w//EP8N/wAAAAAAAAAA8/8P/xH/RP8k//z/D/9U/8f/D/9W/8H/8/8P/xD/+P+L/1T/JP/8//P/D/9Y//n/8/8P/1z/wf/z/w//U/////P/D/9Z/8f/8/8P/1j/wP/B/+r/F//z/w//EP/Q/4P/6v9///P/D/9Z/9L/8/8P/xD/Jf8w/wP/AP8A//P/D/8Q/zX/IP8D/wD/AP/z/w//Wf/i//P/D/8Q/y3/EP8D/wD/AP/z/w//Wf/y//P/D/8Q/z3/AP8D/wD/AP/z/w//WP/l//P/D/9Y//f/8/8P/xD/Lf/w/wL/AP8A//P/D/9Z/+L/8/8P/yr/yv/z/w//EP89/+D/Av8A/wD/8/8P/1n/8v/z/w//WP/l//P/D/9Y//f/8/8P/xD/Lf/Q/wL/AP8A//P/D/9Z/+L/8/8P/1P/9v/z/w//Wf/g//P/D/9Z/83/8/8P/1n/5v/z/w//WP/B//P/D/9Y/8T/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _am_log_ss@16
+    size: 201
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_min_norm_pos
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_inv_mant_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

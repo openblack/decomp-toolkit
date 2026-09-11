@@ -26,3 +26,43 @@
     kind: x86_rel32
     symbol: 2
     addend: -4
+- symbol: 0
+  hash: 78da46b966a132c389242d0971a43c87fbaf291f
+  signature: //8N/wAAAAAAAAAAeP8P/6H/AAAAAAAAAAAP/7b/AP///wX/AAAAAAAAAADD/2j/AAAAAAAAAADo/wAAAAAAAAAAWf/D/w==
+  symbols:
+  - kind: Function
+    name: __fgetchar
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __filbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

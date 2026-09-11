@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 64e3877bb63c98fa8107fe24fa779f609f328826
+  signature: D/9X/+3/8/8P/xD/Ff8AAAAAAAAAAPP/D//C/+j/Af/z/w//X/8F/wAAAAAAAAAA8/8P/xD/Pf8AAAAAAAAAAA//KP/Y/w//VP/C/w//Vv/H//P/D/8R/2z/JP/8/w//KP/g/2b/D/9u/xX/EP8C/wD/AP/z/w//XP/H//P/D/9Y/+f/Zv8P/3L/0/8X//P/D/9T/+T/8/8P/1n/xP9m/w//+v/a//P/D/9Y/8D/D/8o/9D/8/8P/1n/wP/z/w//EP8l/zD/A/8A/wD/8/8P/xD/Nf8g/wP/AP8A//P/D/9Z/+D/8/8P/xD/Lf8Q/wP/AP8A//P/D/9Z//D/8/8P/xD/Pf8A/wP/AP8A//P/D/9Y/+X/8/8P/1j/9//z/w//EP8t//D/Av8A/wD/8/8P/1n/4P/z/w//EP89/+D/Av8A/wD/8/8P/1n/8P/z/w//WP/l//P/D/8Q/y3/QP8D/wD/AP/z/w//WP/3/w//W//7//P/D/9Z/8T/8/8P/1P/9v/z/w//Wf/G//P/D/8Q/yX/wP8C/wD/AP/z/w//Wf/C//P/D/8Q/zX/sP8C/wD/AP/z/w//Wf/V//P/D/9Z/8X/8/8P/1j/1//z/w//EP8d/wAAAAAAAAAA8/8P/1j/wv8P/1f/0v9m/w//bv8t/0D/AP8A/wD/8/8P/1n/wf/z/w//Xf/E//P/D/8Q/yX/gP8C/wD/AP/z/w//X//G//P/D/8Q/zX/kP8C/wD/AP/z/w//WP/Y//P/D//C/9P/Bf9m/w//2//V//P/D/9b/9v/Zv8P//r/2v8P/1v/0//z/w//XP/C/w//KP/Q//P/D/9Z/8D/Zv8P//7/Hf8Q/wL/AP8A//P/D/9Z/+D/8/8P/1n/8P/z/w//WP8l/2D/Av8A/wD/8/8P/1j/Nf9w/wL/AP8A//P/D/9Z/+D/8/8P/1j/Jf9Q/wL/AP8A//P/D/9Z/9T/8/8P/xD/Bf8AAAAAAAAAAPP/D/9c//L/Zv8P/3L/8/8X//P/D/9T//b/8/8P/xD/bP8k//z/8/8P/1n/1v8P/1T/3f/z/w//WP/S//P/D/9Y/8L/8/8P/1n/w//C/yD/AP8=
+  symbols:
+  - kind: Function
+    name: _am_pow_ess@32
+    size: 412
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_inv_mant_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_min_norm_pos
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_0p5
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 233
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 367
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

@@ -1,0 +1,63 @@
+- symbol: 0
+  hash: fa84d58f958732ece8077053362d95c4a30b3338
+  signature: U/9W/4v/8f9X/zP///+L/wb/i/9A/wT/A//G/zn/eP80/33/Cv+D/8D/OP9Q/+j/AAAAAAAAAABZ/4v/XP8k/xD/O//f/3T/A/+J/37/CP+L/wb/i/9A/wT/jf8M/zD/i/9E/zD/CP87/8f/dP8H/wz/Av+J/0H/CP/r/3//Of95/yD/dP8e/zv/3/90/wz/i/9J/wT/6P8AAAAAAAAAADv/2P9+/w7/i/8G/4v/QP8E/4v/TP8w/yD/6P8AAAAAAAAAAIv/Bv+L/0D/BP+L/0T/MP8E/zn/eP8w/33/Cv+D/8D/NP9Q/+j/AAAAAAAAAABZ/zv/3/91/1r/i/8G/4v/QP8E//b/RP8w/yT/Af90/07/i//O/+j/AAAAAAAAAACL/wb/i/9A/wT/jf9M/zD/CP+L/0T/MP8I/zv/x/90/zb/DP8C/4n/Af+L/wb/i/9A/wT/i/9E/zD/BP85/3j/MP99/wr/g//A/zT/UP/o/wAAAAAAAAAAWf+L/wb/i/9A/wT/A//G/zn/eP80/33/Cv+D/8D/OP9Q/+j/AAAAAAAAAABZ/zP/wP/r/wP/av8B/1j/X/9e/1v/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?ipfx@istream@@QAEHH@Z
+    size: 225
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?in_avail@streambuf@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?flush@ostream@@QAEAAV1@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?eatwhite@istream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 94
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 141
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 185
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 207
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

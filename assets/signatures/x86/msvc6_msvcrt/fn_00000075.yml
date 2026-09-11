@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: a8265461bff255b27d08746d8e0be9cca241080b
+  signature: g/99/+T/AP91/xX/i/9N/xT/Uf+L/1X/EP9S/4v/Rf8M/1D/i/9N/wj/Uf/o/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: fn_00000075
+    size: 28
+    flags: 0
+    section: .text
+  - kind: Function
+    name: ?__ArrayUnwind@@YGXPAXIHP6EX0@Z@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

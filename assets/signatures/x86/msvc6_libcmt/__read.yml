@@ -71,3 +71,105 @@
     kind: x86_rel32
     symbol: 7
     addend: -4
+- symbol: 0
+  hash: be039d5c38516261d0244d79ec5173d2f9d62b69
+  signature: Vf+L/+z/g//s/wz/U/9W/4v/df8I/1f/O/81/wAAAAAAAAAAD/+D/8X/Af8A/wD/i//G/4P/5v8f/8H/+P8F/8H/5v8D/43/HP+F/wAAAAAAAAAAi/8E/4X/AAAAAAAAAAAD/8b/iv9Q/wT/9v/C/wH/D/+E/57/Af8A/wD/g/9l//j/AP+L/33/DP+D/33/EP8A/4v/z/90/2f/9v/C/wL/df9i//b/wv9I/3T/Hf+K/0D/Bf88/wr/dP8W////Tf8Q/4j/B/+L/wP/jf9P/wH/x/9F//j/Af8A/wD/AP/G/0T/MP8F/wr/jf9F//T/av8A/1D/i/8D////df8Q/1H///80/zD///8V/wAAAAAAAAAAhf/A/3X/Ov///xX/AAAAAAAAAABq/wX/Wf87/8H/df8V/8f/Bf8AAAAAAAAAAAn/AP8A/wD/if8N/wAAAAAAAAAA6f8+/wH/AP8A/4P/+P9t/3X/B/8z/8D/6f81/wH/AP8A/1D/6P8AAAAAAAAAAFn/6f8m/wH/AP8A/4v/A/+L/1X/9P8B/1X/+P+N/0z/MP8E/4r/RP8w/wT/qP+A/w//hP/4/wD/AP8A/4X/0v90/wn/gP8//wr/df8E/wz/BP/r/wL/JP/7/4j/Af+L/0X/DP+L/03/+P+J/0X/EP8D/8j/O//B/4n/Tf/4/w//g//L/wD/AP8A/4v/Rf8Q/4r/AP88/xr/D/+E/67/AP8A/wD/PP8N/3T/C/+I/wf/R////0X/EP/p/5H/AP8A/wD/Sf85/03/EP9z/xj/i/9F/xD/QP+A/zj/Cv91/wb/g/9F/xD/Av/r/17/xv8H/w3/R/+J/0X/EP/r/3P/jf9F//T/av8A/1D///9F/xD/jf9F////av8B/1D/i/8D////NP8w////Ff8AAAAAAAAAAIX/wP91/wr///8V/wAAAAAAAAAAhf/A/3X/R/+D/33/9P8A/3T/Qf+L/wP/9v9E/zD/BP9I/3T/E/+K/0X///88/wr/dP8X/8b/B/8N/4v/C/9H/4j/RP8x/wX/6/8p/zv/ff8M/3X/C/+A/33///8K/3X/Bf/G/wf/Cv/r/xj/av8B/2r//////3X/CP/o/wAAAAAAAAAAg//E/wz/gP99////Cv90/wT/xv8H/w3/R/+L/03/+P85/03/EP8P/4L/R//////////r/xD/i/8D/43/dP8w/wT/iv8G/6j/QP91/wT/DP8C/4j/Bv8r/33/DP+J/33/+P+L/0X/+P/r/xT/g/8l/wAAAAAAAAAAAP/H/wX/AAAAAAAAAAAJ/wD/AP8A/4P/yP///1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __read
+    size: 502
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__ReadFile@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 134
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 144
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 157
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 167
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 190
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 343
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 353
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 419
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 479
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 486
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

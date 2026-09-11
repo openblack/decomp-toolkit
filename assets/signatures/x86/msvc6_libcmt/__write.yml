@@ -71,3 +71,109 @@
     kind: x86_rel32
     symbol: 7
     addend: -4
+- symbol: 0
+  hash: cfc711d55c476844297dcbc691b0e1993b85e9f4
+  signature: Vf+L/+z/gf/s/xT/BP8A/wD/i/9N/wj/U/87/w3/AAAAAAAAAABW/1f/D/+D/3n/Af8A/wD/i//B/4v/8f/B//j/Bf+D/+b/H/+N/xz/hf8AAAAAAAAAAMH/5v8D/4v/A/+K/0T/MP8E/6j/Af8P/4T/V/8B/wD/AP8z////Of99/xD/if99//j/if99//D/df8H/zP/wP/p/1f/Af8A/wD/qP8g/3T/DP9q/wL/V/9R/+j/AAAAAAAAAACD/8T/DP+L/wP/A//G//b/QP8E/4D/D/+E/8H/AP8A/wD/i/9F/wz/Of99/xD/if9F//z/if99/wj/D/+G/+f/AP8A/wD/jf+F/+z/+///////i/9N//z/K/9N/wz/O/9N/xD/c/8p/4v/Tf/8////Rf/8/4r/Cf+A//n/Cv91/wf///9F//D/xv8A/w3/QP+I/wj/QP+L/8j/jf+V/+z/+///////K//K/4H/+f8A/wT/AP8A/3z/zP+L//j/jf+F/+z/+///////K//4/43/Rf/0/2r/AP9Q/43/hf/s//v//////1f/UP+L/wP///80/zD///8V/wAAAAAAAAAAhf/A/3T/Q/+L/0X/9P8B/0X/+P87/8f/fP8L/4v/Rf/8/yv/Rf8M/zv/Rf8Q/3L/iv8z////i/9F//j/O//H/w//hf+L/wD/AP8A/zn/ff8I/3T/X/9q/wX/WP85/0X/CP91/0z/x/8F/wAAAAAAAAAACf8A/wD/AP+j/wAAAAAAAAAA6f+A/wD/AP8A////Ff8AAAAAAAAAAIn/Rf8I/+v/x/+N/03/9P9X/1H///91/xD///91/wz///8w////Ff8AAAAAAAAAAIX/wP90/wv/i/9F//T/if99/wj/if9F//j/6/+n////Ff8AAAAAAAAAAIn/Rf8I/+v/nP///3X/CP/o/wAAAAAAAAAAWf/r/z3/i/8D//b/RP8w/wT/QP90/wz/i/9F/wz/gP84/xr/D/+E/83//v//////x/8F/wAAAAAAAAAAHP8A/wD/AP+J/z3/AAAAAAAAAADr/xb/K/9F//D/6/8U/4P/Jf8AAAAAAAAAAAD/x/8F/wAAAAAAAAAACf8A/wD/AP+D/8j///9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: __write
+    size: 429
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__WriteFile@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 90
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 218
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 275
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 284
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 295
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 319
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 340
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 353
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 383
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 393
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 406
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 413
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

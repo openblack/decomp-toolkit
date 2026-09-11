@@ -1,0 +1,100 @@
+- symbol: 0
+  hash: c551df380ee05f9ad7df205c4b5b1a30ccb00d41
+  signature: g/89/wAAAAAAAAAA//91/wz///90/yT/BP///xX/AAAAAAAAAABZ/8P/aP8AAAAAAAAAAGj/AAAAAAAAAAD//3T/JP8M/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: __onexit
+    size: 44
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___onexitbegin
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: __imp___onexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitend
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___dllonexit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: cb7e09f5ee20cd81ac1a568e9ad333d1e69888ca
+  signature: Vf+L/+z/Uf+D/z3/AAAAAAAAAAD//3X/Ev+L/0X/CP9Q////Ff8AAAAAAAAAAIP/xP8E/4n/Rf/8/+v/Gf9o/wAAAAAAAAAAaP8AAAAAAAAAAIv/Tf8I/1H/6P8AAAAAAAAAAIP/xP8M/4n/Rf/8/4v/Rf/8/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: __onexit
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___onexitbegin
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: __imp___onexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitend
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___dllonexit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 46
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

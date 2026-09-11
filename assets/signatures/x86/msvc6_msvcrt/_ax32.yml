@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 4631431760f35d803476b926b855838ec25e4de5
+  signature: i/9E/yT/CP+L/0z/JP8M/2r/BP+L/4D/sP8A/wD/AP8D/wH/i/9M/yT/CP+J/wH/WP/D/w==
+  symbols:
+  - kind: Function
+    name: _ax32
+    size: 26
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: a47c3e584266de6db03cc564fd87bba145faa81a
+  signature: Vf+L/+z/i/9F/wz/i/+I/7D/AP8A/wD/i/9V/xD/A/8K/4v/Rf8I/4n/CP+4/wT/AP8A/wD/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _ax32
+    size: 29
+    flags: 2
+    section: .text
+  relocations: []

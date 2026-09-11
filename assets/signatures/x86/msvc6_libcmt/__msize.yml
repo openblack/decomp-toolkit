@@ -1,14 +1,14 @@
 - symbol: 0
-  hash: a54ec0233bdd2558b563b404a7bba6ea5932bc83
-  signature: Vv9q/wn/6P8AAAAAAAAAAIv/dP8k/wz/Vv/o/wAAAAAAAAAAWf+F/8D/Wf90/xD/i/92//z/av8J/4P/7v8J/+j/AAAAAAAAAABZ/+v/Gf9q/wn/6P8AAAAAAAAAAFn/Vv9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAi//w/4v/xv9e/8P/
+  hash: da91881e841b12f8e06c2211237706f4757b9255
+  signature: Vf+L/+z/Uf9R/6H/AAAAAAAAAABW/4P/+P8D/3X/Gf+L/3X/CP9W/+j/AAAAAAAAAACF/8D/Wf90/wj/i/9G//z/g//o/wn/6/84/1b/6/8n/4P/+P8C/3X/H/+N/0X//P9Q/43/Rf/4/1D///91/wj/6P8AAAAAAAAAAIP/xP8M/4X/wP90/wj/D/+2/wD/wf/g/wT/6/8R////df8I/2r/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAABe/8n/w/8=
   symbols:
   - kind: Function
     name: __msize
-    size: 69
+    size: 97
     flags: 1
     section: .text
-  - kind: Function
-    name: __lock
+  - kind: Object
+    name: ___active_heap
     size: 0
     flags: 1
     section: null
@@ -18,7 +18,7 @@
     flags: 1
     section: null
   - kind: Function
-    name: __unlock
+    name: ___old_sbh_find_block
     size: 0
     flags: 1
     section: null
@@ -33,27 +33,100 @@
     flags: 1
     section: null
   relocations:
-  - offset: 4
-    kind: x86_rel32
+  - offset: 6
+    kind: x86_abs32
     symbol: 1
-    addend: -4
-  - offset: 14
+    addend: 0
+  - offset: 21
     kind: x86_rel32
     symbol: 2
     addend: -4
-  - offset: 33
+  - offset: 58
     kind: x86_rel32
     symbol: 3
     addend: -4
-  - offset: 43
-    kind: x86_rel32
-    symbol: 3
-    addend: -4
-  - offset: 53
+  - offset: 84
     kind: x86_abs32
     symbol: 4
     addend: 0
-  - offset: 59
+  - offset: 90
     kind: x86_abs32
     symbol: 5
+    addend: 0
+- symbol: 0
+  hash: 0e83e20387482c9e902d636aef7f5e17876b07a4
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8c/1P/Vv9X/6H/AAAAAAAAAACD//j/A/91/0b/av8J/+j/AAAAAAAAAABZ/4P/Zf/8/wD/i/91/wj/Vv/o/wAAAAAAAAAAWf+J/0X/5P+F/8D/dP8L/4v/dv/8/4P/7v8J/4n/df/g/+v/A/+L/3X/4P+D/03//P///+j/AAAAAAAAAACD/33/5P8A/+v/Vf+L/3X/4P8=
+  symbols:
+  - kind: Function
+    name: __msize
+    size: 106
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_find_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: fn_0000006A
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 48
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 7
     addend: 0

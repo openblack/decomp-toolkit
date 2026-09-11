@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 13f395d50cac0b7e636f889e536892b913737a5f
+  signature: i/9E/yT/BP9p/8j/qP8I/wD/AP8z/9L/if+R/wD/AP8A/wD/if+R/wT/AP8A/wD/iP+R/wj/AP8A/wD/if+R/xD/AP8A/wD/if+R/xT/AP8A/wD/if+R/xj/AP8A/wD/if+R/xz/AP8A/wD/if+R/yD/AP8A/wD/if+R/yT/AP8A/wD/if+R/yj/AP8A/wD/if+R/yz/AP8A/wD/if+R/zD/AP8A/wD/if+R/zT/AP8A/wD/if+R/zj/AP8A/wD/if+R/zz/AP8A/wD/if+R/0D/AP8A/wD/if+R/0T/AP8A/wD/if+R/0j/AP8A/wD/if+R/0z/AP8A/wD/if+R/1D/AP8A/wD/if+R/1T/AP8A/wD/if+R/1j/AP8A/wD/if+R/1z/AP8A/wD/if+R/2D/AP8A/wD/if+R/2T/AP8A/wD/if+R/2j/AP8A/wD/if+R/2z/AP8A/wD/if+R/3D/AP8A/wD/if+R/3T/AP8A/wD/if+R/3j/AP8A/wD/if+R/3z/AP8A/wD/if+R/4D/AP8A/wD/if+R/4T/AP8A/wD/if+R/4j/AP8A/wD/if+R/4z/AP8A/wD/if+R/5D/AP8A/wD/if+R/5T/AP8A/wD/if+R/5j/AP8A/wD/if+R/5z/AP8A/wD/if+R/6D/AP8A/wD/x/+B/6T/CP8A/wD////////////D/w==
+  symbols:
+  - kind: Function
+    name: ?clear_sc_entry@@YAXH@Z
+    size: 263
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ca5bdaebc06eb47690b57d625cc527473fd7e155
+  signature: i/9E/yT/BP9W/4v/8f+L/0j/BP+J/07/BP+L/0D/CP+D/2b/DP8A/4n/Rv8I/4X/wP/H/wb/AAAAAAAAAAB0/wb/i/8I/1D///9R/wT/i//G/17/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??0_com_error@@QAE@ABV0@@Z
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7_com_error@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

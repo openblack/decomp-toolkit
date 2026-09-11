@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 7bb00b6eac95eb2c2f963bc9df6e33e4c4deceb2
+  signature: Vv+L//H/i/8G/4v/QP8E/wP/xv+D/3j/NP8A/33/Cv+D/8D/OP9Q/+j/AAAAAAAAAABZ/4v/Bv+L/0D/BP+N/wz/MP+L/0T/MP8I/4X/wP90/yD/DP8C/4n/Qf8I/4v/Bv+L/0D/BP8D/8b/g/94/zT/AP99/wr/g//A/zj/UP/o/wAAAAAAAAAAWf8z/8D/Xv/D/4v/Sf8g/4X/yf90/wX/6P8AAAAAAAAAAIv/Bv+L/0D/BP+L/3T/MP8E/4P/fv8w/wD/ff8K/4P/xv80/1b/6P8AAAAAAAAAAFn/av8B/1j/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?opfx@ostream@@QAEHXZ
+    size: 116
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?flush@ostream@@QAEAAV1@XZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

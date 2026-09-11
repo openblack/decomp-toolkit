@@ -1,0 +1,611 @@
+- symbol: 0
+  hash: 98f8a40b0b79ae29556c085c38b6b13c5a60ea2b
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P9o/1P/Vv9X/4n/Zf/o/zP/2/+J/13//P9q/wL///8V/wAAAAAAAAAAWf+D/w3/AAAAAAAAAAD//4P/Df8AAAAAAAAAAP////8V/wAAAAAAAAAAi/8N/wAAAAAAAAAAif8I////Ff8AAAAAAAAAAIv/Df8AAAAAAAAAAIn/CP+h/wAAAAAAAAAAi/8A/6P/AAAAAAAAAADo/wAAAAAAAAAAOf8d/wAAAAAAAAAAdf8M/2j/AAAAAAAAAAD//xX/AAAAAAAAAABZ/+j/AAAAAAAAAABo/wAAAAAAAAAAaP8AAAAAAAAAAOj/AAAAAAAAAACh/wAAAAAAAAAAif9F/5T/jf9F/5T/UP///zX/AAAAAAAAAACN/0X/nP9Q/43/Rf+Q/1D/jf9F/6D/UP///xX/AAAAAAAAAABo/wAAAAAAAAAAaP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/JP+h/wAAAAAAAAAAi/8w/4n/df+M/4D/Pv8i/3X/Ov9G/4n/df+M/4r/Bv86/8P/dP8E/zz/Iv91//L/gP8+/yL/df8E/0b/if91/4z/iv8G/zr/w/90/wT/PP8g/3b/8v+J/13/0P+N/0X/pP9Q////Ff8AAAAAAAAAAPb/Rf/Q/wH/dP8R/w//t/9F/9T/6/8O/4D/Pv8g/3b/2P9G/4n/df+M/+v/9f9q/wr/WP9Q/1b/U/9T////Ff8AAAAAAAAAAFD/6P8AAAAAAAAAAIn/Rf+Y/1D///8V/wAAAAAAAAAAi/9F/+z/i/8I/4v/Cf+J/03/iP9Q/1H/6P8AAAAAAAAAAFn/Wf/D/w==
+  symbols:
+  - kind: Function
+    name: _WinMainCRTStartup
+    size: 338
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17379
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____set_app_type
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitend
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitbegin
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____p__fmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __fmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____p__commode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __commode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __imp___adjust_fdiv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __adjust_fdiv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setargv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___defaultmatherr
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __matherr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____setusermatherr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setdefaultprecision
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xi_z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xi_a
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __initterm
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __newmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __dowildcard
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____getmainargs
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xc_z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xc_a
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __imp___acmdln
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetStartupInfoA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetModuleHandleA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _WinMain@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __XcptFilter
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 47
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 61
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 82
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 95
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 102
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 107
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 113
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 120
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 126
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 132
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 137
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 19
+    addend: 0
+  - offset: 147
+    kind: x86_rel32
+    symbol: 20
+    addend: -4
+  - offset: 152
+    kind: x86_abs32
+    symbol: 21
+    addend: 0
+  - offset: 165
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 183
+    kind: x86_abs32
+    symbol: 23
+    addend: 0
+  - offset: 188
+    kind: x86_abs32
+    symbol: 24
+    addend: 0
+  - offset: 193
+    kind: x86_abs32
+    symbol: 25
+    addend: 0
+  - offset: 198
+    kind: x86_rel32
+    symbol: 20
+    addend: -4
+  - offset: 206
+    kind: x86_abs32
+    symbol: 26
+    addend: 0
+  - offset: 262
+    kind: x86_abs32
+    symbol: 27
+    addend: 0
+  - offset: 298
+    kind: x86_abs32
+    symbol: 28
+    addend: 0
+  - offset: 304
+    kind: x86_rel32
+    symbol: 29
+    addend: -4
+  - offset: 314
+    kind: x86_abs32
+    symbol: 30
+    addend: 0
+  - offset: 331
+    kind: x86_rel32
+    symbol: 31
+    addend: -4
+- symbol: 0
+  hash: 45ca54807ffc3d92bc081852788afff0be28c89e
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/xP+U/1P/Vv9X/4n/Zf/o/8f/Rf/8/wD/AP8A/wD/av8C////Ff8AAAAAAAAAAIP/xP8E/8f/Bf8AAAAAAAAAAP//////////of8AAAAAAAAAAKP/AAAAAAAAAAD//xX/AAAAAAAAAACL/w3/AAAAAAAAAACJ/wj///8V/wAAAAAAAAAAi/8V/wAAAAAAAAAAif8Q/6H/AAAAAAAAAACL/wj/if8N/wAAAAAAAAAA6P8AAAAAAAAAAIP/Pf8AAAAAAAAAAAD/df8O/2j/AAAAAAAAAAD//xX/AAAAAAAAAACD/8T/BP/o/wAAAAAAAAAAaP8AAAAAAAAAAGj/AAAAAAAAAADo/wAAAAAAAAAAg//E/wj/i/8V/wAAAAAAAAAAif9V/5T/jf9F/5T/UP+L/w3/AAAAAAAAAABR/43/Vf+c/1L/jf9F/5D/UP+N/03/oP9R////Ff8AAAAAAAAAAIP/xP8U/2j/AAAAAAAAAABo/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8I/4v/Ff8AAAAAAAAAAIv/Av+J/0X/jP+L/03/jP8z/9L/iv8R/4P/+v8i/3X/Of+L/0X/jP+D/8D/Af+J/0X/jP+L/03/jP8z/9L/iv8R/4X/0v90/w7/i/9F/4z/M//J/4r/CP+D//n/Iv90/wL/6//e/4v/Vf+M/zP/wP+K/wL/g//4/yL/df8J/4v/Tf+M/4P/wf8B/4n/Tf+M/+v/F/+L/1X/jP8z/8D/iv8C/4P/+P8g/37/C/+L/03/jP+D/8H/Af+J/03/jP/r/+n/i/9V/4z/M//A/4r/Av+F/8D/dP8X/4v/Tf+M/zP/0v+K/xH/g//6/yD/f/8L/4v/Rf+M/4P/wP8B/4n/Rf+M/+v/3v/H/0X/0P8A/wD/AP8A/43/Tf+k/1H///8V/wAAAAAAAAAAi/9V/9D/g//i/wH/hf/S/3T/Df+L/0X/1P8l//////8A/wD/if9F/4T/6/8H/8f/Rf+E/wr/AP8A/wD/i/9N/4T/Uf+L/1X/jP9S/2r/AP9q/wD///8V/wAAAAAAAAAAUP/o/wAAAAAAAAAAif9F/5j/i/9F/5j/UP///xX/AAAAAAAAAACL/03/7P+L/xH/i/8C/4n/Rf+I/4v/Tf/s/1H/i/9V/4j/Uv/o/wAAAAAAAAAAg//E/wj/w/+L/2X/6P+L/0X/iP9Q////Ff8AAAAAAAAAAIv/Tf/w/2T/if8N/wAAAAAAAAAAX/9e/1v/i//l/13/w/8=
+  symbols:
+  - kind: Function
+    name: _WinMainCRTStartup
+    size: 505
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T17381
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____set_app_type
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitend
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitbegin
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____p__fmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __fmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____p__commode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __commode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __imp___adjust_fdiv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __adjust_fdiv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setargv
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___defaultmatherr
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __matherr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____setusermatherr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setdefaultprecision
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xi_z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xi_a
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __initterm
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __newmode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __dowildcard
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp____getmainargs
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xc_z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xc_a
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __imp___acmdln
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetStartupInfoA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetModuleHandleA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _WinMain@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __XcptFilter
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp___exit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 67
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 72
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 84
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 98
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 105
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 113
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 118
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 124
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 132
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 138
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 146
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 151
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 156
+    kind: x86_abs32
+    symbol: 19
+    addend: 0
+  - offset: 161
+    kind: x86_rel32
+    symbol: 20
+    addend: -4
+  - offset: 170
+    kind: x86_abs32
+    symbol: 21
+    addend: 0
+  - offset: 183
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 202
+    kind: x86_abs32
+    symbol: 23
+    addend: 0
+  - offset: 210
+    kind: x86_abs32
+    symbol: 24
+    addend: 0
+  - offset: 215
+    kind: x86_abs32
+    symbol: 25
+    addend: 0
+  - offset: 220
+    kind: x86_rel32
+    symbol: 20
+    addend: -4
+  - offset: 229
+    kind: x86_abs32
+    symbol: 26
+    addend: 0
+  - offset: 377
+    kind: x86_abs32
+    symbol: 27
+    addend: 0
+  - offset: 425
+    kind: x86_abs32
+    symbol: 28
+    addend: 0
+  - offset: 431
+    kind: x86_rel32
+    symbol: 29
+    addend: -4
+  - offset: 444
+    kind: x86_abs32
+    symbol: 30
+    addend: 0
+  - offset: 467
+    kind: x86_rel32
+    symbol: 31
+    addend: -4
+  - offset: 484
+    kind: x86_abs32
+    symbol: 32
+    addend: 0
+  - offset: 494
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

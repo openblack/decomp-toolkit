@@ -1,4 +1,148 @@
 - symbol: 0
+  hash: 8b9ccc501060c91152a328456c192e051937c33e
+  signature: Vf+L/+z/g//s/xj/jf9N//j/6P8AAAAAAAAAAKH/AAAAAAAAAACK/wD/hP/A/w//hP+N/wD/AP8A/w//vv/A/4P/wP/Q/4P/+P8H/3f/fv///yT/hf8AAAAAAAAAAGj/AAAAAAAAAADr/xP/aP8AAAAAAAAAAOv/DP9o/wAAAAAAAAAA6/8F/2j/AAAAAAAAAACN/03/+P/o/wAAAAAAAAAAof8AAAAAAAAAAA//vv8A////Bf8AAAAAAAAAAIP/6P8x/3T/DP9I/0j/dP8I/0j/SP90/wT/SP9I/3X/KP+N/0X/+P+N/03/6P9Q/43/Rf/w/1D/aP8AAAAAAAAAAOj/AAAAAAAAAACL/8j/6P8AAAAAAAAAAI3/Rf/w/43/Tf/4/1D/6P8AAAAAAAAAAIv/Tf8I/43/Rf/4/1D/6P8AAAAAAAAAAOv/Dv9q/wH/6/8C/2r/Av+L/03/CP/o/wAAAAAAAAAAi/9F/wj/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?getEnumType@UnDecorator@@CA?AVDName@@XZ
+    size: 185
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Unknown
+    name: $L4391
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_05MGEE@char?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_06EFPO@short?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_04FHKM@int?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_05FFFH@long?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??4DName@@QAEAAV0@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_09OKF@unsigned?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0DName@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 55
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 77
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 82
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 124
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 129
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 136
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 148
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 160
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 176
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+- symbol: 0
   hash: 758efb41ff38265c5c7818b67e24078b44dd34a2
   signature: Vf+L/+z/g//s/yD/jf9N//j/6P8AAAAAAAAAAKH/AAAAAAAAAACK/wD/hP/A/w//hP+a/wD/AP8A/w//vv/A/4P/wP/Q/4P/+P8H/w//h/+H/wD/AP8A////JP+F/wAAAAAAAAAAaP8AAAAAAAAAAOv/E/9o/wAAAAAAAAAA6/8M/2j/AAAAAAAAAADr/wX/aP8AAAAAAAAAAI3/Tf/4/+j/AAAAAAAAAACh/wAAAAAAAAAAD/++/wD///8F/wAAAAAAAAAAg//o/zH/dP8M/0j/SP90/wj/SP9I/3T/BP9I/0j/df8x/43/Rf/4/43/Tf/g/1D/jf9F/+j/UP9o/wAAAAAAAAAA6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAUP+N/03/8P/o/wAAAAAAAAAAjf9F//D/jf9N//j/UP/o/wAAAAAAAAAAi/9N/wj/jf9F//j/UP/o/wAAAAAAAAAA6/8O/2r/Af/r/wL/av8C/4v/Tf8I/+j/AAAAAAAAAACL/0X/CP/J/8P/
   symbols:
@@ -18,7 +162,7 @@
     flags: 1
     section: .bss
   - kind: Unknown
-    name: $L4568
+    name: ''
     size: 0
     flags: 2
     section: .text

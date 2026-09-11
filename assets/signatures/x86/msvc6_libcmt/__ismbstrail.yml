@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: 8b673983e9b2f0b66ea7afbe17c95473dbd529ec
+  signature: g/89/wAAAAAAAAAAAP90/y//i/9E/yT/BP87/0T/JP8I/3f/Jf+K/wj/hP/J/3T/H/8P/7b/yf/2/4H/AAAAAAAAAAAE/3T/DP9A/zv/RP8k/wj/dP8I/4D/OP8A/3T/B/9A/+v/2f+D/8j////D/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: __ismbstrail
+    size: 59
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: 03fd98f7d744fe79d4c4c45894c591a71690690c
   signature: g/89/wAAAAAAAAAAAP9W/3T/Tv9q/xn/6P8AAAAAAAAAAIv/RP8k/wz/Wf87/0T/JP8M/3f/NP+K/wj/hP/J/3T/Lv8P/7b/yf/2/4H/AAAAAAAAAAAE/3T/DP9A/zv/RP8k/wz/dP8I/4D/OP8A/3T/CP9A/+v/2f+D/87////r/wL/M//2/2r/Gf/o/wAAAAAAAAAAWf+L/8b/Xv/D/2r/Gf/o/wAAAAAAAAAAWf8z/8D/Xv/D/w==
   symbols:

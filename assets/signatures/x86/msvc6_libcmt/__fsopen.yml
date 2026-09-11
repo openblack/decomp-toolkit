@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: fb7e3d4408263aa969afe0780e2de99318b0be41
+  signature: 6P8AAAAAAAAAAIX/wP91/wH/w/9Q////dP8k/xD///90/yT/EP///3T/JP8Q/+j/AAAAAAAAAACD/8T/EP/D/w==
+  symbols:
+  - kind: Function
+    name: __fsopen
+    size: 32
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __getstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __openfile
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 24
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: 315ad100561fcfcd6e5c178ed47885f80d3e75e7
   signature: Vv/o/wAAAAAAAAAAi//w/4X/9v91/wL/Xv/D/1f/Vv///3T/JP8Y////dP8k/xj///90/yT/GP/o/wAAAAAAAAAAVv+L//j/6P8AAAAAAAAAAIP/xP8U/4v/x/9f/17/w/8=
   symbols:

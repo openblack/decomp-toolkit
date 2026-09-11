@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 96454be94bd96f6bdf10877279e8c13ab0b1f9ed
+  signature: Vv+L//H/V/+D/37/TP///3T/VP+D/37/MP8A/33/Cv+N/0b/NP9Q/+j/AAAAAAAAAABZ/4v/Bv+L/87///9Q/wT///92/0z/i//4/+j/AAAAAAAAAACD//j///9Z/3T/Hf+D//////90/xj/g/9O/0z///+D/37/MP8A/33/Cv+N/0b/NP9Q/+j/AAAAAAAAAABZ/4v/xv/r/xL/g/9+/zD/AP99/wr/g//G/zT/Vv/o/wAAAAAAAAAAWf8z/8D/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ?close@filebuf@@QAEPAV1@XZ
+    size: 99
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __close
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 89
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

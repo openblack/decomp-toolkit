@@ -1,4 +1,45 @@
 - symbol: 0
+  hash: 7c9cf797336916bb22f5a0cfc3b621e048cd4293
+  signature: Vf+L/+z/i/9F/xT/M//J/zn/Tf8M/3T/Fv87/8H/df8F/7j/AAAAAAAAAABR/1D///91/xD///91/wz///91/wj/6/8U/zv/wf91/wX/uP8AAAAAAAAAAFH/UP///3X/EP9o/wAAAAAAAAAAUf/o/wAAAAAAAAAAg//E/xT/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _mbrtowc
+    size: 65
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?mbst@?1??mbrtowc@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_00A@?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __Mbrtowc
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 56
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
   hash: 22d7a2c121f8affa4d54ee0a195e7142ae1012ec
   signature: Vf+L/+z/Uf9T/1b/vv8AAAAAAAAAAFf/Vv///xX/AAAAAAAAAAAz////Of89/wAAAAAAAAAAdP8Y/1b///8V/wAAAAAAAAAAav8T/+j/AAAAAAAAAABZ/8f/Rf/8/wH/AP8A/wD/6/8D/4n/ff/8/zn/ff8M/4v/Rf8U/3T/Fv87/8f/df8F/7j/AAAAAAAAAABX/1D///91/xD///91/wz///91/wj/6/8U/zv/x/91/wX/uP8AAAAAAAAAAFf/UP///3X/EP9o/wAAAAAAAAAAV//o/wAAAAAAAAAAg//E/xT/Of99//z/i//Y/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8H/1b///8V/wAAAAAAAAAAX/+L/8P/Xv9b/8n/w/8=
   symbols:

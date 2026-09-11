@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 79ddbcd578a353a204209c2c3c530b142f3b557d
+  signature: D/8o/xX/AAAAAAAAAAAP/1f/2/+L/8z/D/8o/y3/AAAAAAAAAAAP/1T/0P8P/1n/wf+D/+H/8P8P/1b/Ff8AAAAAAAAAAA//wv/Z/wL/D/8o/zX/AAAAAAAAAAAP/1P/4P8P/8L/6P8B/w//wv/w/wb/D/8o/w3/gP8B/wD/AP8P/1b/7v8P/yn/Uf/w/w//Kf9Z/+D/D/9U/+X/D/8o/xX/cP8B/wD/AP8P/yj//f8P/1X/6P8P/yj/Hf9g/wH/AP8A/w//Vv/l/w//KP/E/w//KP81/1D/Af8A/wD/D/9Z/+T/D/9Y/8z/D/8o/y3/QP8B/wD/AP8P/1P/yf8P/1n/yv8P/yj/Ff8w/wH/AP8A/w//WP/c/w//WP/L/w//KP8d/yD/Af8A/wD/D/9T/8n/D/9Z/87/D/8o/zX/EP8B/wD/AP8P/1j/7P8P/1j/zf8P/yj/Lf8AAAAAAAAAAA//U//J/w//Wf/K/w//WP/c/w//KP8l/wAAAAAAAAAAD/9Z//D/D/9Y/8v/D/9U/8X/D/9T/8n/D/8o/1n/4P8P/1n/zv8P/1b/xP8P/1z/wf8P/yj/Uf/w/w//VP/H/w//Vf/5/w//Vv/H/w//KP/I/w//VP/D/w//WP/K/w//Vf/Z/w//Vv/D/8L/IP8A/5D/
+  symbols:
+  - kind: Function
+    name: _am_atanr2_ps@32
+    size: 249
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_sign_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_pi
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_m1
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_pi_o_2
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 172
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 188
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

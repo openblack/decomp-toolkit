@@ -1,4 +1,80 @@
 - symbol: 0
+  hash: a8caf2cfd8f525390c96bc04c231981f929ed584
+  signature: Vf+L/+z/of8AAAAAAAAAAFP/hf/A/7v/////////f/91/yP/Of8F/wAAAAAAAAAAdf8b////df8Q////df8M////df8I/+j/AAAAAAAAAAD//3X/DP/o/wAAAAAAAAAAg//E/xD/6/9R/1b/av8B////Nf8AAAAAAAAAAL7/AP8E/wD/AP9q/wD/av8A/2r//////3X/DP9W/1D/6P8AAAAAAAAAAIP/xP8g/4X/wP90/yn/O/9F/xD/i//Y/3//Iv9q/wH///81/wAAAAAAAAAA//91/xD///91/wj/av//////df8M/1b///81/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8g/4v/w/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: _strxfrm
+    size: 137
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strncpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_collate_cp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 36
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 58
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 79
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 101
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 119
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 124
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+- symbol: 0
   hash: f673d4039acc784bbcd83b0a9616d0d5aac8cd80
   signature: Vf+L/+z/Uf9R/1P/Vv8z//b/V/85/zX/AAAAAAAAAADH/0X/+P////////9//3X/CP85/zX/AAAAAAAAAAB0/1T/v/8AAAAAAAAAAFf///8V/wAAAAAAAAAAOf81/wAAAAAAAAAAi/8d/wAAAAAAAAAAdP8U/1f////T/2r/E//o/wAAAAAAAAAAWf/H/0X//P8B/wD/AP8A/+v/A/+J/3X//P+h/wAAAAAAAAAAO//G/3X/Nf85/zX/AAAAAAAAAAB1/y3/Of91//z/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wP/V////9P///91/xD///91/wz///91/wj/6P8AAAAAAAAAAP//df8M/+j/AAAAAAAAAACD/8T/EP/r/2L/av8B////Nf8AAAAAAAAAAFb/Vv9q////vv8A/wT/AP8A////df8M/1b/UP/o/wAAAAAAAAAAg//E/yD/hf/A/3T/Kv87/0X/EP+J/0X/+P9//yL/av8B////Nf8AAAAAAAAAAP//df8Q////df8I/2r//////3X/DP9W////Nf8AAAAAAAAAAOj/AAAAAAAAAACD/8T/IP+D/33//P8A/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8D/1f////T/4v/Rf/4/1//Xv9b/8n/w/8=
   symbols:

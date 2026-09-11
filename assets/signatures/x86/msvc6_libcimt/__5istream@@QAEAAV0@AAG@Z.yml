@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 1fde943bb6a0adc9dc1f98ade08f848041b56268
+  signature: Vf+L/+z/g//s/xD/Vv+L//H/av8A/+j/AAAAAAAAAACF/8D/dP9i/43/Rf/w/1f/UP+L/87/6P8AAAAAAAAAAFD/jf9F//D/av8A/1D/6P8AAAAAAAAAAIv/+P+D/8T/DP+B/////////wD/AP92/wj/gf//////f///////dv8P/4P//////3X/Iv/o/wAAAAAAAAAAg/84/yL/df8Y/4v/Rf8I/2b/gf8I//////+L/wb/i/9A/wT/g/9M/zD/CP8C/43/RP8w/wj/6/8G/4v/Rf8I/2b/if84/4v/zv/o/wAAAAAAAAAAX/+L/8b/Xv/J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??5istream@@QAEAAV0@AAG@Z
+    size: 125
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ipfx@istream@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?getint@istream@@AAEHPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strtoul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?isfx@istream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 113
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

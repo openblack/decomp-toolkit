@@ -1,4 +1,107 @@
 - symbol: 0
+  hash: 9f5801710a7421b7f93ad8b0a80f43870f33186a
+  signature: gP89/wAAAAAAAAAAAP9T/1X/Vv9X/7//AAAAAAAAAAB1/wr/av8B/+j/AAAAAAAAAABZ/+v/C/9X/+j/AAAAAAAAAACF/8D/Wf91/3D/6P8AAAAAAAAAAIv/8P+F//b/dP9l/2j/gP8B/wD/AP+7/0L/hf8A/wD/av9A/1P/V//o/wAAAAAAAAAAi//o/4P/xP8Q/4P//f///3X/Mf+D/z3/AAAAAAAAAAAR/3X/I/9X/+j/AAAAAAAAAACF/8D/Wf91/xj/aP+A/wH/AP8A/2r/QP9T/1f/6P8AAAAAAAAAAIv/6P+D/8T/EP+D//3///90/9T/g//9////dP8X/1f/6P8AAAAAAAAAAFn/if9G/xz/M//J/zv/wf91/wv/Vf/o/wAAAAAAAAAAWf8z/8D/6/8X/4n/Tv8E/4n/Dv+J/07/CP+h/wAAAAAAAAAADP+A/4n/bv8Q/4n/Rv8M/4v/xv9f/17/Xf9b/8P/
+  symbols:
+  - kind: Function
+    name: _tmpfile
+    size: 183
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _namebuf1
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _init_namebuf
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _genfname
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __getstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __sopen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __strdup
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __close
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __commode
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 81
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 90
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 130
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 164
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+- symbol: 0
   hash: f8aad3a9d6324fd17dd4045691f3e2486b25c0e9
   signature: U/9V/1b/V/9q/wP/6P8AAAAAAAAAAID/Pf8AAAAAAAAAAAD/Wf+//wAAAAAAAAAAdf8K/2r/Af/o/wAAAAAAAAAAWf/r/wv/V//o/wAAAAAAAAAAhf/A/1n/df94/+j/AAAAAAAAAACL//D/hf/2/3T/bf9o/4D/Af8A/wD/u/9C/4X/AP8A/2r/QP9T/1f/6P8AAAAAAAAAAIv/6P+D/8T/EP+D//3///91/zL/6P8AAAAAAAAAAIP/OP8R/3X/I/9X/+j/AAAAAAAAAACF/8D/Wf91/xj/aP+A/wH/AP8A/2r/QP9T/1f/6P8AAAAAAAAAAIv/6P+D/8T/EP+D//3///90/9P/g//9////dP8X/1f/6P8AAAAAAAAAAFn/if9G/xz/M//J/zv/wf91/xL/Vf/o/wAAAAAAAAAAWf9W/+j/AAAAAAAAAABZ/zP/9v/r/xz/if9O/wT/if8O/4n/Tv8I/6H/AAAAAAAAAAAM/4D/Vv+J/0b/DP+J/27/EP/o/wAAAAAAAAAAWf9q/wP/6P8AAAAAAAAAAFn/i//G/1//Xv9d/1v/w/8=
   symbols:

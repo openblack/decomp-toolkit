@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 90d41b9ec6e979d02ce8924901b5d698eea62bfd
+  signature: Vv9T/4P/7P8M/6H/HP8A/wD/AP8D/wX/IP8A/wD/AP8z//b/u/8B/wD/AP8A/4v/Df9c/8v/Hf8B/4P/+f8B/3b/Mf9p/9P/qP8I/wD/AP+J/3z/JP8E/43/dP8m/wD/i/+6/xz/AP8A/wD/A/+6/yD/AP8A/wD/O//H/3b/BP+L/8f/i//z/4H/wv+o/wj/AP8A/0P/O//Z/3L/4f+L/3z/JP8E/4v/xv+D/8T/DP9b/17/w/+Q/w==
+  symbols:
+  - kind: Function
+    name: ?find_sc_entry@@YAKH@Z
+    size: 92
+    flags: 1
+    section: .text
+  relocations: []

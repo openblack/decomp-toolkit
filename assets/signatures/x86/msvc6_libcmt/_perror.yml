@@ -1,4 +1,93 @@
 - symbol: 0
+  hash: be4ead12db7a1ac06444db395e676de062e2f4ca
+  signature: Vv+L/3T/JP8I/4X/9v90/yX/gP8+/wD/dP8g/1b/6P8AAAAAAAAAAFD/Vv9q/wL/6P8AAAAAAAAAAGr/Av9o/wAAAAAAAAAAav8C/+j/AAAAAAAAAACD/8T/HP+h/wAAAAAAAAAAi/8N/wAAAAAAAAAAhf/A/3z/BP87/8H/fP8C/4v/wf+L/zT/hf8AAAAAAAAAAFb/6P8AAAAAAAAAAFD/Vv9q/wL/6P8AAAAAAAAAAGr/Af9o/wAAAAAAAAAAav8C/+j/AAAAAAAAAACD/8T/HP9e/8P/
+  symbols:
+  - kind: Function
+    name: _perror
+    size: 108
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __write
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_02HFBK@?3?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_nerr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __sys_errlist
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_01BJG@?6?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 32
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 39
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 47
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 76
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 92
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 99
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: 027091f34b9904f922f38d7edbfe600b4a294c1f
   signature: Vv9X/2r/Av9f/1f/6P8AAAAAAAAAAIv/dP8k/xD/Wf+F//b/dP8i/4D/Pv8A/3T/Hf9W/+j/AAAAAAAAAABQ/1b/V//o/wAAAAAAAAAAV/9o/wAAAAAAAAAAV//o/wAAAAAAAAAAg//E/xz/6P8AAAAAAAAAAIP/OP8A/3z/GP/o/wAAAAAAAAAAi/8A/zv/Bf8AAAAAAAAAAH3/Cf/o/wAAAAAAAAAAi/8A/+v/Bf+h/wAAAAAAAAAAi/80/4X/AAAAAAAAAABW/+j/AAAAAAAAAABQ/1b/V//o/wAAAAAAAAAAav8B/2j/AAAAAAAAAABX/+j/AAAAAAAAAABX/+j/AAAAAAAAAACD/8T/IP9f/17/w/8=
   symbols:

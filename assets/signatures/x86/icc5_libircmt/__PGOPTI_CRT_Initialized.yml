@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: fb03a2b6b3daa81f509209ca8e233b4f6ab000cb
+  signature: x/8F/xj/AP8A/wD/Af8A/wD/AP/D/5D/
+  symbols:
+  - kind: Function
+    name: __PGOPTI_CRT_Initialized
+    size: 12
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 4039f6e9fbe09d8cbb7bd7a509952df65c2dfd16
+  signature: Vv+L//H/6P8AAAAAAAAAAIX/wP90/zf/i/9M/yT/CP/o/wAAAAAAAAAAg//4////dP8i/1D/i/8G/4v/QP8E/4v/TP8w/wT/6P8AAAAAAAAAAIP/+P///3X/3v+L/wb/i/9A/wT/g/9M/zD/CP8C/43/RP8w/wj/i//O/+j/AAAAAAAAAACL/8b/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??6ostream@@QAEAAV0@PAVstreambuf@@@Z
+    size: 73
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?opfx@ostream@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sbumpc@streambuf@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sputc@streambuf@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?osfx@ostream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

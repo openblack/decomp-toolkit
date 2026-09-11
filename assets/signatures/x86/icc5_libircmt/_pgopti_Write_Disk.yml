@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 174d95c28b22613509c421dd654328f3fea4326b
+  signature: g//s/xT/i/9E/yT/GP+L/1T/JP8c/4X/0v92/yr/if8E/yT/of8Q/wD/AP8A/4n/VP8k/wT/x/9E/yT/CP8B/wD/AP8A/4n/RP8k/wz/6P8AAAAAAAAAAKH/EP8A/wD/AP+L/1D/DP/2/8L/IP91/wT/g//E/xT/w//H/wT/JP8AAAAAAAAAAOj/AAAAAAAAAADo/wAAAAAAAAAAi//2/w==
+  symbols:
+  - kind: Function
+    name: _pgopti_Write_Disk
+    size: 80
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _fwrite
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BP@A@PGOPTI?5error?5writing?5?4dyn?5file?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Function
+    name: _perror
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _abort
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 40
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 64
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 69
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

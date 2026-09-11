@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 4aba09aeabe808ce0f0c981ded0be40213989624
+  signature: Vv++/wAAAAAAAAAAV/9W/+j/AAAAAAAAAACL/z3/AAAAAAAAAABZ/4P///8H/3z/Bf+D/8/////r/wf/R/+J/z3/AAAAAAAAAABW/+j/AAAAAAAAAABZ/4v/x/9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?xalloc@ios@@SAHXZ
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?x_lockc@ios@@0U_CRT_CRITICAL_SECTION@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?x_curindex@ios@@0HA
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 15
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 39
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

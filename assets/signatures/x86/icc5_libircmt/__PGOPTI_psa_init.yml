@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: 362819591ff15f3ccb3f93b44eea985444edd925
+  signature: V/9W/4P/7P8M/4v/fP8k/xj/i/90/yT/HP+g/wD/Av8V/wH/hP/A/3T/G/+L/wb/hf/A/3//D/+h/wT/Av8V/wH/if8G/4n/PP8k/+j/AAAAAAAAAACD/8T/DP9e/1//w/+4/wH/AP8A/wD/ov8A/wL/Ff8B/6P/BP8C/xX/Af/H/wT/JP8AAAAAAAAAAOj/AAAAAAAAAACh/wT/Av8V/wH/if8G/4n/PP8k/+j/AAAAAAAAAADH/wT/JP8D/wD/AP8A/+j/AAAAAAAAAADo/wAAAAAAAAAAx/8E/yT/AP8A/wD/AP/o/wAAAAAAAAAAx/8E/yT/AP+B/4r/AP/o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/17/X//D/5D/
+  symbols:
+  - kind: Function
+    name: __PGOPTI_psa_init
+    size: 144
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?insert_base_id_str@@YAXPAD@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __PGOPTI_psa_dump
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?init_cache@@YAXK@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?set_knobs_default@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?init_sc@@YAXPAUsc_struct@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?init_current_state@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 67
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 99
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 104
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 128
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

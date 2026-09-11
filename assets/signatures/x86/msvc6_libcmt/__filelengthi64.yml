@@ -1,4 +1,67 @@
 - symbol: 0
+  hash: 63e49d96fe5f889e7f96f992492649972adc3074
+  signature: Vf+L/+z/g//s/xD/V/+L/33/CP87/z3/AAAAAAAAAABz/3P/i//H/4v/z//B//j/Bf+D/+H/H/+L/wT/hf8AAAAAAAAAAPb/RP/I/wT/Af90/1v/U/9W/zP/9v9q/wH/Vv9W/1f/6P8AAAAAAAAAAIv/2P+J/1X/9P8j/8L/g//K////g//E/xD/O//C/3X/CP+J/1X/+P+J/1X//P/r/yr/av8C/1b/Vv9X/+j/AAAAAAAAAACD/8T/EP87/9j/if9F//j/if9V//z/df8F/zn/Vf/0/3T/Dv9W////df/0/1P/V//o/wAAAAAAAAAAg//E/xD/i/9F//j/i/9V//z/Xv9b/+v/Fv+D/yX/AAAAAAAAAAAA/4P/yv///8f/Bf8AAAAAAAAAAAn/AP8A/wD/i//C/1//yf/D/w==
+  symbols:
+  - kind: Function
+    name: __filelengthi64
+    size: 158
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseeki64
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 52
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 135
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 145
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
   hash: 97122a880e53e1ef5a46a8ba1fbcbce2a606c13a
   signature: Vf+L/+z/g//s/xD/Vv+L/3X/CP87/zX/AAAAAAAAAAAP/4P/g/8A/wD/AP+L/87/i//G/8H/+f8F/4P/4P8f/4v/DP+N/wAAAAAAAAAAjf8E/8D/9v9E/4H/BP8B/3T/aP9T/1f/Vv/o/wAAAAAAAAAAM////2r/Af9X/1f/Vv/o/wAAAAAAAAAAi//Y/4n/Vf/0/yP/wv+D/8r///+D/8T/FP87/8L/df8I/4n/Vf/4/4n/Vf/8/+v/Kv9q/wL/V/9X/1b/6P8AAAAAAAAAAIP/xP8Q/zv/2P+J/0X/+P+J/1X//P91/wX/Of9V//T/dP8O/1f///91//T/U/9W/+j/AAAAAAAAAACD/8T/EP9W/+j/AAAAAAAAAACL/0X/+P+L/1X//P9Z/1//W//r/xj/6P8AAAAAAAAAAMf/AP8J/wD/AP8A/+j/AAAAAAAAAACD/yD/AP+D/8r///+L/8L/Xv/J/8P/
   symbols:

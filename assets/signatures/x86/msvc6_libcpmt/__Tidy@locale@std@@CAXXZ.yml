@@ -1,4 +1,50 @@
 - symbol: 0
+  hash: 58c33279f5035acbffac127188168187b338c76c
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACh/wAAAAAAAAAAg/9k/yT/CP8A/4X/wP90/yP/i/9I/wT/hf/J/3b/Cf+D//n///9z/wT/Sf+J/0j/BP+L/0j/BP/3/9n/G//J//f/0f8j/8j/dP8G/4v/Af9q/wH///8Q/4v/TP8k/wD/ZP+J/w3/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ?_Tidy@locale@std@@CAXXZ
+    size: 72
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L10028
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Global@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 11
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
   hash: b389abf26bf76f22afb92fd9f68aaec106192268
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/43/Tf/w/+j/AAAAAAAAAACL/w3/AAAAAAAAAACD/2X//P8A/4X/yf90/xH/6P8AAAAAAAAAAIX/wP90/wj/i/8Q/2r/Af+L/8j///8S/4P/Tf/8////jf9N//D/6P8AAAAAAAAAAIv/Tf/0/2T/if8N/wAAAAAAAAAAyf/D/w==
   symbols:

@@ -1,12 +1,114 @@
 - symbol: 0
-  hash: 7ccdb3218c121e39de5ba1ebc8300eb44877d14a
-  signature: Vv9q//7/Xv9q/wn/6P8AAAAAAAAAAFn/6P8AAAAAAAAAAIX/wP99/wP/av/8/17/av8J/+j/AAAAAAAAAABZ/2r/AP9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAhf/A/3X/Jv///xX/AAAAAAAAAACD//j/eP91/xj/6P8AAAAAAAAAAMf/AP94/wD/AP8A/+j/AAAAAAAAAADH/wD/KP8A/wD/AP/r/wP/av/8/17/i//G/17/w/8=
+  hash: befd99f48a7214dff4d135046e918a28c2e3126d
+  signature: of8AAAAAAAAAAFb/av/+/4P/+P8D/17/df8H/+j/AAAAAAAAAADr/wr/g//4/wL/df8M/+j/AAAAAAAAAACF/8D/ff8D/2r//P9e/2r/AP9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAhf/A/3X/Iv///xX/AAAAAAAAAABq/3j/Wf87/8H/df8S/4n/Df8AAAAAAAAAAMf/Bf8AAAAAAAAAACj/AP8A/wD/6/8D/2r//P9e/4v/xv9e/8P/
   symbols:
   - kind: Function
     name: __heapchk
-    size: 94
+    size: 96
     flags: 1
     section: .text
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_heap_check
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___old_sbh_heap_check
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __crtheap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__HeapValidate@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 73
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+- symbol: 0
+  hash: 94a98db3e6d4447db781feb3f673dfe7f88c09d7
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/8f/Rf/k//7/////////of8AAAAAAAAAAIP/+P8D/3X/XP9q/wn/6P8AAAAAAAAAAFn/g/9l//z/AP/o/wAAAAAAAAAAhf/A/33/B//H/0X/5P/8/////////4P/Tf/8////6P8AAAAAAAAAAGr/AP9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAhf/A/3X/Yv///xX/AAAAAAAAAABq/3j/Xv87/8b/df9O/+j/AAAAAAAAAACJ/zD/6P8AAAAAAAAAAMf/AP8o/wD/AP8A/+v/Qf/r/y//g//4/wL/df/E/2r/Cf/o/wAAAAAAAAAAWf/H/0X//P8B/wD/AP8A/+j/AAAAAAAAAACF/8D/ff8H/8f/Rf/k//z/////////g/9N//z////o/wAAAAAAAAAA6/+a/w==
+  symbols:
+  - kind: Function
+    name: __heapchk
+    size: 191
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
   - kind: Function
     name: __lock
     size: 0
@@ -18,10 +120,10 @@
     flags: 1
     section: null
   - kind: Function
-    name: __unlock
+    name: fn_000000BF
     size: 0
-    flags: 1
-    section: null
+    flags: 0
+    section: .text
   - kind: Object
     name: __crtheap
     size: 0
@@ -47,36 +149,73 @@
     size: 0
     flags: 1
     section: null
+  - kind: Function
+    name: ___old_sbh_heap_check
+    size: 0
+    flags: 1
+    section: null
   relocations:
-  - offset: 7
-    kind: x86_rel32
+  - offset: 6
+    kind: x86_abs32
     symbol: 1
-    addend: -4
-  - offset: 13
-    kind: x86_rel32
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
     symbol: 2
-    addend: -4
-  - offset: 27
-    kind: x86_rel32
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
     symbol: 3
-    addend: -4
-  - offset: 38
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 43
     kind: x86_abs32
     symbol: 4
     addend: 0
-  - offset: 44
-    kind: x86_abs32
+  - offset: 55
+    kind: x86_rel32
     symbol: 5
-    addend: 0
-  - offset: 54
-    kind: x86_abs32
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
     symbol: 6
-    addend: 0
-  - offset: 64
+    addend: -4
+  - offset: 85
     kind: x86_rel32
     symbol: 7
-    addend: -4
-  - offset: 75
-    kind: x86_rel32
+    addend: 0
+  - offset: 95
+    kind: x86_abs32
     symbol: 8
+    addend: 0
+  - offset: 101
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 111
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 123
+    kind: x86_rel32
+    symbol: 11
     addend: -4
+  - offset: 130
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 152
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 165
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 185
+    kind: x86_rel32
+    symbol: 7
+    addend: 0

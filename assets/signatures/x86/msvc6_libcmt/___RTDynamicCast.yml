@@ -8,7 +8,7 @@
     flags: 1
     section: .text
   - kind: Object
-    name: $T17070
+    name: ''
     size: 0
     flags: 2
     section: .rdata

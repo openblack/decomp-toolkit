@@ -116,3 +116,129 @@
     kind: x86_abs32
     symbol: 12
     addend: 0
+- symbol: 0
+  hash: dcb3f71423632e4973056aeb1be4d0bfb3e364be
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/VP+L/0X/EP9T/4v/2f9W/1f/if9d//D/if9D/wT/g/9l//z/AP/H/wP/AAAAAAAAAABo/wAAAAAAAAAAjf9N/6D/xv9F//z/Af/o/wAAAAAAAAAAjf9F/+D/UP/o/wAAAAAAAAAAjf97/wj/i//w/6X/pf+l/6X/M//2/1n/Of81/wAAAAAAAAAAdf8W/4v/Q/8Q/2j/AAAAAAAAAACj/wAAAAAAAAAA6P8AAAAAAAAAAFn/if9z/xT/jf9N/6D/6P8AAAAAAAAAADn/c/8U/3T/DP///3P/EP/o/wAAAAAAAAAAWf+J/3P/FP+L/0X/CP87/8b/df8K/6H/AAAAAAAAAACJ/0P/EP/r/wr/if9D/xD/D/+2/0X/DP+J/0P/FP+L/03/9P9f/4v/w/9e/1v/ZP+J/w3/AAAAAAAAAADJ/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0?$ctype@D@std@@QAE@PBF_NI@Z
+    size: 176
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7?$ctype@D@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_01FKHJ@C?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0_Locinfo@std@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __Getctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Cltab@?$ctype@D@std@@0PBFB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Term@?$ctype@D@std@@KAXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1_Locinfo@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 77
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 87
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 97
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 122
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 138
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 168
+    kind: x86_abs32
+    symbol: 12
+    addend: 0

@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: ad2762ae8e5eecebfc91e9fbad2743e903e50b8c
+  signature: i/9E/yT/BP+D/2D/DP/P/4v/QP8Q/4P/+P///3T/FP+L/8j/wf/5/wX/g//g/x//i/8M/43/AAAAAAAAAACN/wT/wf/r/wX/uP8AAAAAAAAAAID/YP8E//3/w/8=
+  symbols:
+  - kind: Function
+    name: _clearerr
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: d296a376336fa0317a759520c75595ffde3fca77
   signature: Vv+L/3T/JP8I/1b/6P8AAAAAAAAAAIv/Rv8Q/4P/Zv8M/8//g//4////Wf90/xf/i//I/8H/+f8F/4P/4P8f/4v/DP+N/wAAAAAAAAAAjf8E/8D/jf8E/4H/6/8F/7j/AAAAAAAAAACA/2D/BP/9/1b/6P8AAAAAAAAAAFn/Xv/D/w==
   symbols:

@@ -1,4 +1,121 @@
 - symbol: 0
+  hash: 523ab93c3fef4cc3bff5af6320c105f271529771
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/LP9T/1b/i/91/yD/M//b/1f/if9d//D/jf99/+j/i/9N/xz/jf9F/yD/UP+J/x3/AAAAAAAAAADo/wAAAAAAAAAAUP+N/0X/FP9o/wD/CP8A/wD/UP+N/0X/DP+J/13//P9Q/43/Rf/I/1D/6P8AAAAAAAAAAFD/jf9F/+z/UP+N/0X/yP9Q/+j/AAAAAAAAAACD/03//P///4P/xP8g/43/Tf8g/4n/B//o/wAAAAAAAAAAjf9F/xT/jf9N/wz/UP/o/wAAAAAAAAAAhP/A/3T/A/+D/w7/Af+N/0X/yP85/0X/7P90/0T/Of8d/wAAAAAAAAAAdf88////Rf/w/4P/x/8E/4P/ff/w/wH/ff8z/43/Rf8U/43/Tf8M/1D/6P8AAAAAAAAAAIT/wP91/yD/OP9d/xD/df8I/43/Tf8M/+j/AAAAAAAAAACA/33/Ef86/3X/Df+N/03/DP/o/wAAAAAAAAAA6f9W/////////4P/Dv8C//b/Bv8C/1//Xv9b/3X/CP+L/0X/JP+L/03/6P+J/wj/i/9F/wj/i/9N/wz/if8I/4v/Tf8Q/4n/SP8E/4v/Tf/0/2T/if8N/wAAAAAAAAAAyf/C/yD/AP8=
+  symbols:
+  - kind: Function
+    name: ?do_get@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@V32@0AAVios_base@2@AAHAAPAX@Z
+    size: 244
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L14046
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?getloc@ios_base@std@@QBE?AVlocale@2@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getifld@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@CAHPADAAV?$istreambuf_iterator@DU?$char_traits@D@std@@@2@1HABVlocale@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strtoul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?equal@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@QBE_NABV12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Peek@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@AAEDXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Inc@?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 41
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 110
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 131
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 157
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 174
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 188
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 236
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+- symbol: 0
   hash: e602b94cb6f047b4362117a46a9831c2031082b1
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/LP9T/1b/i/91/yD/M//b/1f/if9d//D/jf99/+j/6P8AAAAAAAAAAIv/Tf8c/4n/GP+N/0X/IP9Q/+j/AAAAAAAAAABQ/43/Rf8U/2j/AP8I/wD/AP9Q/43/Rf8M/4n/Xf/8/1D/jf9F/8j/UP/o/wAAAAAAAAAAUP+N/0X/7P9Q/43/Rf/I/1D/6P8AAAAAAAAAAIP/Tf/8////g//E/yD/jf9N/yD/if8H/+j/AAAAAAAAAACN/0X/FP+N/03/DP9Q/+j/AAAAAAAAAACE/8D/dP8D/4P/Dv8B/43/Rf/I/zn/Rf/s/3T/Rf/o/wAAAAAAAAAAOf8Y/3X/PP///0X/8P+D/8f/BP+D/33/8P8B/33/M/+N/0X/FP+N/03/DP9Q/+j/AAAAAAAAAACE/8D/df8g/zj/Xf8Q/3X/CP+N/03/DP/o/wAAAAAAAAAAgP99/xH/Ov91/w3/jf9N/wz/6P8AAAAAAAAAAOn/VP////////+D/w7/Av/2/wb/Av9f/17/W/91/wj/i/9F/yT/i/9N/+j/if8I/4v/Rf8I/4v/Tf8M/4n/CP+L/03/EP+J/0j/BP+L/03/9P9k/4n/Df8AAAAAAAAAAMn/wv8g/wD/
   symbols:

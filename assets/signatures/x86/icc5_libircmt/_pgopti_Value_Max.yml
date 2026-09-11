@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2b0adc6508ca9b80d4696092aad73f07482ff5f4
+  signature: i/9E/yT/BP+L/1T/JP8I/zv/wv92/wH/w/+L/8L/w/8=
+  symbols:
+  - kind: Function
+    name: _pgopti_Value_Max
+    size: 16
+    flags: 2
+    section: .text
+  relocations: []

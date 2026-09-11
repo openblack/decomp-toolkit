@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: 107167903fa3da4c6acfee9a012c5aedb8ccee58
+  signature: i/9M/yT/CP///0n/BP94/w7/i/8R/4r/RP8k/wT/iP8C////Af8P/7b/wP/D/1H///90/yT/CP/o/wAAAAAAAAAAWf9Z/8P/
+  symbols:
+  - kind: Function
+    name: _fputc
+    size: 36
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
   hash: e6e949a1880e197cef671a5b15186d49a30dbb9f
   signature: Vv+L/3T/JP8M/1f/Vv/o/wAAAAAAAAAA//9O/wT/Wf94/w//i/8O/4r/RP8k/wz/D/+2//j/iP8B////Bv/r/w7/Vv///3T/JP8Q/+j/AAAAAAAAAABZ/4v/+P9Z/1b/6P8AAAAAAAAAAFn/i//H/1//Xv/D/w==
   symbols:

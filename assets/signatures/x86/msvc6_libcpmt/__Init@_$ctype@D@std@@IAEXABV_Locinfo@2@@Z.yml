@@ -1,4 +1,54 @@
 - symbol: 0
+  hash: 5c6eaef0cfe5b565c429c78bc1f347bbb40dfc13
+  signature: g//s/xD/jf9E/yT/AP9T/1b/V/+L/9n/UP/o/wAAAAAAAAAAjf97/wj/i//w/6X/pf+l/6X/g/89/wAAAAAAAAAAAP9Z/3X/F/+L/0P/EP9o/wAAAAAAAAAAo/8AAAAAAAAAAOj/AAAAAAAAAACD/2P/FP8A/1n/X/9e/1v/g//E/xD/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?_Init@?$ctype@D@std@@IAEXABV_Locinfo@2@@Z
+    size: 69
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __Getctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Cltab@?$ctype@D@std@@0PBFB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Term@?$ctype@D@std@@KAXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
   hash: 7eadb0bdffdbb69a44cc570a6cc5791f68b6d428
   signature: Vf+L/+z/g//s/xT/U/+L/9n/Vv9X/43/Tf/8/+j/AAAAAAAAAACN/0X/7P9Q/+j/AAAAAAAAAACN/3v/CP+L//D/pf+l/6X/pf+D/z3/AAAAAAAAAAAA/1n/df8X/4v/Q/8Q/2j/AAAAAAAAAACj/wAAAAAAAAAA6P8AAAAAAAAAAIP/Y/8U/wD/Wf+N/03//P/o/wAAAAAAAAAAX/9e/1v/yf/C/wT/AP8=
   symbols:

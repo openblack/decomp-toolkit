@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: d31fe6b4c0ace7eb36d9b15934efd18a92f9637c
+  signature: 8/8P/xH/RP8k//T/8/8P/xD/Df8AAAAAAAAAAIv/RP8k//T/8/8P/1n/Bf8AAAAAAAAAAA//VP/B/yX/AP8A/wD/gP/z/w//LP/Q/4v/yv+J/3T/JP/0/4v/8v+D/8L/Af/B/+H/Hv/B/+L/Hv/z/w//EP8l/wAAAAAAAAAA8/8P/yr/3v+J/0T/JP/4/4P/5v8B//P/D/9c/8P/8/8P/xD/HP+1/3j/AP8A/wD/8/8P/13/xP/z/w//XP/g//P/D/8Q//T/D/9U/+P/gf/h/wD/AP8A/4D/8/8P/xD/0/8P/1X/2P+B/+L/AP8A/wD/gP/z/w//EP98/yT/+P8P/1T/wv+J/0z/JP/4/4n/VP8k//z/D/9W/+P/i/9E/yT/FP+L/1T/JP8Y/w//Vf/W/w//Vv/C//P/D/8Q/1T/JP/4//P/D/8Q/8j/8/8P/xD/7P8P/1f/+v/z/w//EP8d/zD/AP8A/wD/8/8P/1n/wP/z/w//Wf/k//P/D/8Q/9D/8/8P/xD/9P8P/1b/z//z/w//EP89/yD/AP8A/wD/8/8P/1n/w//z/w//Wf/j//P/D/8Q/x3/EP8A/wD/AP/z/w//WP/H//P/D/9Y/+f/8/8P/xD/Pf8A/wD/AP8A//P/D/9Z/8L/8/8P/1n/5v/z/w//WP/D//P/D/9Y/+P/8/8P/xD/XP8k//z/8/8P/1n/wv/z/w//Wf/m/w//Vv/r/4v/dP8k//T/8/8P/1j/x//z/w//WP/n//P/D/9Z/8H/8/8P/1n/5f8P/yn/AP8P/yn/Iv/C/yD/AP8=
+  symbols:
+  - kind: Function
+    name: _am_sincos_ss@24
+    size: 301
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_inv_sign_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_2_o_pi
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 59
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

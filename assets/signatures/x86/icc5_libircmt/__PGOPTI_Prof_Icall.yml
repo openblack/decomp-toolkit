@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 086068d5914f8a09b8cfd95a01a3cf0145a3e1b4
+  signature: V/9V/4P/7P8M/4v/TP8k/xj/i/9U/yT/HP+L/3z/JP8g/4v/bP8k/yT/i/9B/xT/A/9B/xj/A/9B/xz/jf8E/4X/N/8A/wD/AP+D/+D//P8D/0T/JP8Y/43/DP/V/wD/AP8A/wD/jf8U/5H/A//C/4n/BP8k/4n/fP8k/wT/6P8AAAAAAAAAAIX/wP90/xD/O/84/3T/Ev+J/zj/if9o/wT/x/9A/wj/Af8A/wD/AP+D/8T/DP9d/1//w////0D/CP+D/8T/DP9d/1//w/8=
+  symbols:
+  - kind: Function
+    name: __PGOPTI_Prof_Icall
+    size: 103
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _pgopti_itarg_hash
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 64
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -17,3 +17,35 @@
     kind: x86_rel32
     symbol: 1
     addend: -4
+- symbol: 0
+  hash: 584c748a1b0b5779e0647ae03dd986f8152b07d5
+  signature: Vf+L/+z/i/9F/wz/i/9V/xT/U/9W/43/NP8C/4v/Qf8g/1f/i/8Q/4X/0v90/wj/Of9R/zz/c/8D/4n/Uf88/4P/z////zv/9/8P/4T/hf8A/wD/AP/2/0X/JP8B/3T/T/+L/1H/HP+L/xL/hf/S/3T/Rv+F//b/fP9w/4v/Qf8M/4v/Wf88/4v/AP8r/9j/O//z/3//Yv8r/8L/i/9R/yz/A//G/yn/Av+L/1H/HP8B/wL/9v9F/yT/Av90/1D/i/9R/yD/i/8a/4X/2/90/0f/i/9B/xz/i/84/4v/Qf8w/4v/AP+J/zr/i/9J/zD/A//D/yv/x/+J/wH/6/8w//b/Rf8k/wL/dP8o/4v/EP+F/9L/dP8i/4X/9v98/x7/i/9B/wz/i/9Z/zz/i/8A/yv/2P87//P/f/8Q/yv/wv+L/1H/MP8D/8b/Kf8C/4v/Sf8g/wH/Af/r/wL/i//3/6H/AAAAAAAAAABq/wb/if9F/xT/of8AAAAAAAAAAIn/Rf8Y/6H/AAAAAAAAAACJ/0X/HP+L/0X/CP+J/3X/DP9Z/43/df8M/4v/+P/z/6X/X/9e/1v/Xf/C/yD/AP8=
+  symbols:
+  - kind: Function
+    name: ?seekpos@strstreambuf@std@@MAE?AV?$fpos@H@2@V32@H@Z
+    size: 223
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Fpz@std@@3_JB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Stz@?$fpos@H@std@@0HA
+    size: 4
+    flags: 1
+    section: null
+  relocations:
+  - offset: 177
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 187
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 195
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

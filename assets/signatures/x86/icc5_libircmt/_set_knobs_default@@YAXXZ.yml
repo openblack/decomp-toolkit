@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 0d26187c66ff34d081831a5f483060e2d04f19b6
+  signature: Mv/A/6L/YP/L/x3/Af+i/2n/y/8d/wH/x/8F/2T/y/8d/wH/AAAAAAAAAACi/2r/y/8d/wH/ov9r/8v/Hf8B/8P/kP8=
+  symbols:
+  - kind: Function
+    name: ?set_knobs_default@@YAXXZ
+    size: 34
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0N@A@input_ma?4txt?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

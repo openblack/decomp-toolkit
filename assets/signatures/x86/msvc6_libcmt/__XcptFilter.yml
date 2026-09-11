@@ -61,3 +61,120 @@
     kind: x86_abs32
     symbol: 5
     addend: 0
+- symbol: 0
+  hash: a410c390b9ed99a749924f2507d6766221fa120a
+  signature: Vf+L/+z/U////3X/CP/o/wAAAAAAAAAAhf/A/1n/D/+E/yD/Af8A/wD/i/9Y/wj/hf/b/w//hP8V/wH/AP8A/4P/+/8F/3X/DP+D/2D/CP8A/2r/Af9Y/+n/Df8B/wD/AP+D//v/Af8P/4T/9v8A/wD/AP+L/w3/AAAAAAAAAACJ/03/CP+L/03/DP+J/w3/AAAAAAAAAACL/0j/BP+D//n/CP8P/4X/yP8A/wD/AP+L/w3/AAAAAAAAAACL/xX/AAAAAAAAAAAD/9H/Vv87/8r/ff8V/43/NP9J/yv/0f+N/zT/tf8AAAAAAAAAAIP/Jv8A/4P/xv8M/0r/df/3/4v/AP+L/zX/AAAAAAAAAAA9/47/AP8A/8D/df8M/8f/Bf8AAAAAAAAAAIP/AP8A/wD/6/9w/z3/kP8A/wD/wP91/wz/x/8F/wAAAAAAAAAAgf8A/wD/AP/r/13/Pf+R/wD/AP/A/3X/DP/H/wX/AAAAAAAAAACE/wD/AP8A/+v/Sv89/5P/AP8A/8D/df8M/8f/Bf8AAAAAAAAAAIX/AP8A/wD/6/83/z3/jf8A/wD/wP91/wz/x/8F/wAAAAAAAAAAgv8A/wD/AP/r/yT/Pf+P/wD/AP/A/3X/DP/H/wX/AAAAAAAAAACG/wD/AP8A/+v/Ef89/5L/AP8A/8D/df8K/8f/Bf8AAAAAAAAAAIr/AP8A/wD///81/wAAAAAAAAAAav8I////0/9Z/4n/Nf8AAAAAAAAAAFn/Xv/r/wj/g/9g/wj/AP9R////0/9Z/4v/Rf8I/6P/AAAAAAAAAACD/8j////r/wn///91/wz///8V/wAAAAAAAAAAW/9d/8P/
+  symbols:
+  - kind: Function
+    name: __XcptFilter
+    size: 321
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _xcptlookup
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __pxcptinfoptrs
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: __First_FPE_Indx
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __Num_FPE
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __XcptActTab
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __fpecode
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: __imp__UnhandledExceptionFilter@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 60
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 72
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 90
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 96
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 115
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 132
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 145
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 164
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 183
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 202
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 221
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 240
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 259
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 269
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 280
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 300
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 314
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

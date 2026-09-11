@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 704fa09cc3efed1aec70ed80904ccb519a9a8c4d
+  signature: Vv+L/0T/JP8I/4P/+P8F/3X/Bf/o/wAAAAAAAAAAg//E/wT/w/8=
+  symbols:
+  - kind: Function
+    name: ?process_sc@@YAXK@Z
+    size: 19
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?perform_sc_ld@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

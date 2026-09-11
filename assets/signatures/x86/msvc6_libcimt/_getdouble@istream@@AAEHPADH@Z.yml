@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 2e59415c17e143d96c1ade2b7308a1a26cde5423
+  signature: Vf+L/+z/g//s/wz/Vv9X/zP///+L//H/V/+J/33/9P+J/33/+P+J/33//P/o/wAAAAAAAAAAhf/A/w//hP8O/wH/AP8A/4v/Bv9T/4v/QP8E/4v/TP8w/wT/6P8AAAAAAAAAADn/ff8M/4v/2P8P/47/1/8A/wD/AP+D//v///90/3r/M//J/2r/Af87//n/WP90/wX/Of9F//z/df8K/4P/+/8t/3T/Sf+D//v/K/90/0T/g//7/y7/df8P/zn/Tf/8/3X/If85/03/+P91/xz/if9F//j/6/8w/4P/+/9F/3T/Bf+D//v/Zf91/w3/Of9N//z/df8I////Rf/4/4n/Rf/8/+v/Gf9T/+j/AAAAAAAAAACF/8D/Wf90/zr/g/99//z/AP90/wX///9F//z/6/8D////Rf/0/4v/Rf8I/4j/HP8H/4v/Bv+L/0D/BP+L/0z/MP8E/+j/AAAAAAAAAABH/4v/2P87/33/DP98/4P/6/8O/4v/Bv+L/0D/BP+D/0z/MP8I/wH/jf9E/zD/CP+D/33//P8B/3X/Of+L/0X/CP+K/wT/B/9Q/4v/Bv+L/0D/BP+L/0z/MP8E/+j/AAAAAAAAAACD//j///90/xH/i/8G/0//i/9A/wT/g/9k/zD/CP/+/43/RP8w/wj/6/8O/4v/Bv+L/0D/BP+D/0z/MP8I/wL/jf9E/zD/CP+D/33/9P8A/3T/Bf87/33/DP91/w7/i/8G/4v/QP8E/4P/TP8w/wj/Av+N/0T/MP8I/4v/Rf8I/4v/zv+A/yT/B/8A/+j/AAAAAAAAAABb/4v/x/9f/17/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?getdouble@istream@@AAEHPADH@Z
+    size: 313
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ipfx@istream@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sgetc@streambuf@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _isdigit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?snextc@streambuf@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sputbackc@streambuf@@QAEHD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isfx@istream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 135
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 174
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 225
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 300
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

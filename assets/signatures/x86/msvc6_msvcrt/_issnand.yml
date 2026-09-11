@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 66aeb41db10cf6574c51fd90b61b60db93ecbdf9
+  signature: i/9E/yT/CP8l/wD/AP/4/3//Pf8A/wD/8P9//3X/Ff/3/0T/JP8I//////8H/wD/df8H/4P/fP8k/wT/AP90/wT/av8B/1j/w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: _issnand
+    size: 40
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 1f67a08d148c02e92d4b98c5b5ee998010d248d2
+  signature: Vf+L/+z/Uf+N/0X/CP+J/0X//P+L/03//P+L/1H/BP+B/+L/AP8A//j/f/+B//r/AP8A//D/f/91/x//i/9F//z/i/9I/wT/gf/h//////8H/wD/hf/J/3X/CP+L/1X//P+D/zr/AP90/wf/uP8B/wD/AP8A/+v/Av8z/8D/i//l/13/w/8=
+  symbols:
+  - kind: Function
+    name: _issnand
+    size: 67
+    flags: 2
+    section: .text
+  relocations: []

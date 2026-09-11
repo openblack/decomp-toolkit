@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 4182f1683c44214090d90b46a10a4219d6f662b2
+  signature: U/+D/+z/CP+L/0z/JP8Q/2r/Cv/o/wAAAAAAAAAAi//Y/4n/HP8k/+j/AAAAAAAAAACL/8P/g//E/wj/W//D/w==
+  symbols:
+  - kind: Function
+    name: ?endl@@YAAAVostream@@AAV1@@Z
+    size: 32
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??6ostream@@QAEAAV0@E@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?flush@@YAAAVostream@@AAV1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

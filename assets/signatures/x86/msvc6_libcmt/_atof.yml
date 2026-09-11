@@ -1,4 +1,59 @@
 - symbol: 0
+  hash: a8a775b28538cdb1c12374ccbbfcbbe0c3bfd5ad
+  signature: Vv+L/3T/JP8I/4P/Pf8AAAAAAAAAAAH/fv8P/w//tv8G/2r/CP9Q/+j/AAAAAAAAAABZ/1n/6/8P/w//tv8G/4v/Df8AAAAAAAAAAIr/BP9B/4P/4P8I/4X/wP90/wP/Rv/r/9L/av8A/2r/AP9W/+j/AAAAAAAAAABZ/1D/Vv/o/wAAAAAAAAAA3f9A/xD/g//E/xD/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _atof
+    size: 77
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __isctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __fltin
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 34
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 57
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+- symbol: 0
   hash: 540be92a3473e23dac3d44ad68c579a2e750ad1f
   signature: Vf+L/+z/g//s/xj/Vv+L/3X/CP+D/z3/AAAAAAAAAAAB/37/D/8P/7b/Bv9q/wj/UP/o/wAAAAAAAAAAWf9Z/+v/D/8P/7b/Bv+L/w3/AAAAAAAAAACK/wT/Qf+D/+D/CP+F/8D/dP8D/0b/6//S/2r/AP9q/wD/Vv/o/wAAAAAAAAAAWf9Q/43/Rf/o/1b/UP/o/wAAAAAAAAAA3f9A/xD/g//E/xT/Xv/J/8P/
   symbols:

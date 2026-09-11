@@ -1,4 +1,41 @@
 - symbol: 0
+  hash: 31fda1cf5634e81cc2097f8c5e8edcd98a3ca94a
+  signature: Vv+L/3T/JP8I/4n/Nf8AAAAAAAAAAIv/Rv8E/4P/+P///3P/BP9A/4n/Rv8E/2j/AAAAAAAAAADo/wAAAAAAAAAAWf+L/8b/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Save@?$_Tidyfac@V?$messages@D@std@@@std@@SAPAV?$messages@D@2@PAV32@@Z
+    size: 38
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Facsav@?$_Tidyfac@V?$messages@D@std@@@std@@0PAV?$messages@D@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?_Tidy@?$_Tidyfac@V?$messages@D@std@@@std@@SAXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
   hash: cd99cd90f065784cdfe11ac4421b6786d712ae57
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/jf9N//D/6P8AAAAAAAAAAIv/df8I/4P/Zf/8/wD/i//O/4n/Nf8AAAAAAAAAAOj/AAAAAAAAAABo/wAAAAAAAAAA6P8AAAAAAAAAAIP/Tf/8////Wf+N/03/8P/o/wAAAAAAAAAAi/9N//T/i//G/17/ZP+J/w3/AAAAAAAAAADJ/8P/
   symbols:

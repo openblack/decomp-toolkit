@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 3a9badee7c1eae07b1a85dceaf5371579c99ead1
+  signature: V/9W/1P/g//s/wj/i/98/yT/GP+L/3T/JP8c/4v/XP8k/yD/6P8AAAAAAAAAAIv/R/8E/4X/wP90/xT/av8A/2j/AP8A/wD/AP///xX/AAAAAAAAAACD/8T/CP9b/17/X//D/6H/AP8A/wD/AP+L/xX/FP8A/wD/AP+F/9L/if9H/wT/if89/wD/AP8A/wD/if81/wz/AP8A/wD/if8d/wj/AP8A/wD/df/I/6H/GP8A/wD/AP+F/8D/dP+//8f/BP8k/wAAAAAAAAAA6P8AAAAAAAAAAMf/Bf8U/wD/AP8A/wH/AP8A/wD/6/+n/w==
+  symbols:
+  - kind: Function
+    name: __PGOPTI_Prof_Begin
+    size: 119
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _pgopti_wait
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __imp__InterlockedExchange@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __PGOPTI_Prof_Dump
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _atexit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 39
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 98
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 103
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 209d829084a52f6b013557cadf1382c5abe77331
+  signature: Vv+L//H/av8B/+j/AAAAAAAAAACF/8D/dP80/4v/Bv///3T/JP8M/4v/QP8E////dP8k/wz/i/9M/zD/BP+L/wH///9Q/xj/O/9E/yT/DP+J/0b/CP9z/w7/i/8G/4v/QP8E/4P/TP8w/wj/A/+N/0T/MP8I/4v/zv/o/wAAAAAAAAAAi//G/17/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?read@istream@@QAEAAV1@PADH@Z
+    size: 72
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ipfx@istream@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?isfx@istream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

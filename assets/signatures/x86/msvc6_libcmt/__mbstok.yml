@@ -1,4 +1,84 @@
 - symbol: 0
+  hash: 68cdb9d387674453ce406ab362699256d4250361
+  signature: Vf+L/+z/U/8z/9v/Of8d/wAAAAAAAAAAVv91/w////91/wz///91/wj/6P8AAAAAAAAAAFn/Wf/r/3r/Of9d/wj/dP8K/4v/Rf8I/6P/AAAAAAAAAADr/wn/of8AAAAAAAAAADv/w/90/2D///91/wz/UP/o/wAAAAAAAAAAi//w/1n/O//z/1n/dP9P/4r/Bv86/8P/dP9J/w//tv/A//b/gP8AAAAAAAAAAAT/dP8F/zj/Xv8B/3T/OP///3X/DP9W/+j/AAAAAAAAAABZ/zv/w/9Z/3T/H/+K/wj/Ov/L/3T/Gf8P/7b/yf/2/4H/AAAAAAAAAAAE/3T/A/+I/xj/QP+I/xj/QP+j/wAAAAAAAAAA6/8G/4n/Hf8AAAAAAAAAAIv/xv/r/wL/M//A/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: __mbstok
+    size: 156
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strtok
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?nextoken@?1??_mbstok@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __mbsspnp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbspbrk
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 82
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 99
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 120
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 134
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
   hash: 34f391a11402fde63c179012397fbad0919a7636
   signature: Vf+L/+z/Vv9X/+j/AAAAAAAAAACD/z3/AAAAAAAAAAAA/4v/+P91/xL///91/wz///91/wj/6P8AAAAAAAAAAFn/Wf/p/4H/AP8A/wD/i/9F/wj/hf/A/3X/B/+L/0f/IP+F/8D/dP8R////df8M/1D/6P8AAAAAAAAAAIv/8P9Z/4X/9v9Z/3X/BP8z/8D/6/9e/2r/Gf/o/wAAAAAAAAAAiv8G/1n/hP/A/3T/RP8P/7b/wP/2/4D/AAAAAAAAAAAE/3T/Bv+A/37/Af8A/3T/Mv///3X/DP9W/+j/AAAAAAAAAABZ/4X/wP9Z/3T/HP+K/wj/hP/J/3T/Fv8P/7b/yf/2/4H/AAAAAAAAAAAE/3T/BP+A/yD/AP9A/4D/IP8A/0D/6/8C/zP/wP+J/0f/IP/r/wL/M//2/2r/Gf/o/wAAAAAAAAAAWf+L/8b/X/9e/13/w/8=
   symbols:

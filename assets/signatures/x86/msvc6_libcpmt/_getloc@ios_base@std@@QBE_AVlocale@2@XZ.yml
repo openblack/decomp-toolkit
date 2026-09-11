@@ -17,3 +17,13 @@
     kind: x86_rel32
     symbol: 1
     addend: -4
+- symbol: 0
+  hash: 86970f928d51e637dd2bcbb4747e479d540b439b
+  signature: Vf+L/+z/Uf+L/0X/CP+L/0n/IP+D/2X//P8A/4n/CP+L/1H/BP+D//r///9z/wT/Qv+J/1H/BP/J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?getloc@ios_base@std@@QBE?AVlocale@2@XZ
+    size: 32
+    flags: 1
+    section: .text
+  relocations: []

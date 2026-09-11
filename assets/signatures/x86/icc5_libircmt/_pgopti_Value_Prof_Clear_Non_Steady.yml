@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d3cc57f69e77c02ba39b13f4bf29931e3ae57be4
+  signature: Vf9T/4P/7P8M/4v/XP8k/xj/i/9s/yT/HP+h/wT/AP8A/wD/i/9T/xT/jf8M/5P/i/9U/6n/bP8D/9L/if8U/yT/if9E/yT/BP/o/wAAAAAAAAAAi/9T/xT/jf8M/5P/if+E/6n/kP8A/wD/AP+L/0P/FP+N/xT/g/8z/8D/if9E/6r/SP+L/1P/FP+N/xT/k/+J/0T/qv9w/4v/U/8U/43/FP+T/4n/RP+q/0z/i/9T/xT/jf8U/5P/if9E/6r/dP+L/1P/FP+N/xT/k/+J/0T/qv9Q/4v/U/8U/43/FP+T/4n/RP+q/3j/i/9T/xT/jf8U/5P/if9E/6r/VP+L/1P/FP+N/xT/k/+J/0T/qv98/4v/U/8U/43/FP+T/4n/RP+q/1j/i/9T/xT/jf8c/5P/if+E/6v/gP8A/wD/AP+D/8T/DP9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: _pgopti_Value_Prof_Clear_Non_Steady
+    size: 166
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _pgopti_Value_Max
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 38
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

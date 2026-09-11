@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: d8dc6103e71c5cc6bae255922e629ea5fe3dd446
+  signature: D/8o//j/D/9U/wX/AAAAAAAAAACL/8z/D/9U/z3/AAAAAAAAAAAP/1n/Bf8AAAAAAAAAAIP/4f/w/w//Ev/Q/w//LP/A/w//b//Q/w//LP/K/w//cv/y/x7/D/9v/9n/D/9y//P/Hv8P/9v/Ff9Q/wD/AP8A/w//f/9R/+D/D//b/x3/UP8A/wD/AP8P/3//Wf/o/w//Kv/h/w//2/8N/0D/AP8A/wD/D/8W/+T/D//v////D/8o/y3/AAAAAAAAAAAP/yr/4P8P/9v/Bf9A/wD/AP8A/w//dv/P/w//XP/E/w//f/9J//j/D/9d/8X/D/92/8f/D/9c/+j/D/9//0H/8P8P/yj/cf/w/w//VP/G/w//Vf/1/w//KP8d/zD/AP8A/wD/D/9W/8b/D/8o/y3/IP8A/wD/AP8P/yj/yP8P/1n/wP8P/1f/ef/g/w//KP/Q/w//Wf/D/w//KP8d/xD/AP8A/wD/D/9Y/8X/D/8o/y3/AP8A/wD/AP8P/1n/wv8P/1j/w/8P/1n/wv8P/1b/z/8P/1j/xf8P/1n/wf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _am_sin_ps@16
+    size: 211
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_inv_sign_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_sign_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_2_o_pi
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 93
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

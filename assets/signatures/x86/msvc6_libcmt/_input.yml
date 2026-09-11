@@ -28,7 +28,7 @@
     flags: 2
     section: .text
   - kind: Function
-    name: __ungetch_lk
+    name: ''
     size: 0
     flags: 1
     section: null

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1ce0c94e6a2167090aa525281dc83d80b1f9504b
+  signature: U/+L/1T/JP8I/4v/TP8k/wz/D/++/xr/D/++/wH/O//Y/3X/EP+F/9v/dP8S/0L/Qf8P/77/Gv8P/77/Af87/9j/dP/w/yv/2P+L/8P/W//D/zP/wP9b/8P/
+  symbols:
+  - kind: Function
+    name: ?strcmp@@YAHPAD0@Z
+    size: 45
+    flags: 1
+    section: .text
+  relocations: []

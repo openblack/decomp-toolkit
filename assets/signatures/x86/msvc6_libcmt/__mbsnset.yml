@@ -1,4 +1,49 @@
 - symbol: 0
+  hash: 06cfb14ec56641dc57675733b889b068c8aa5f4d
+  signature: Vf+L/+z/i/9N/wj/Vv8z//b/if9N/wj/Of81/wAAAAAAAAAAdf8U////df8Q////df8M/1H/6P8AAAAAAAAAAIP/xP8M/+n/q/8A/wD/AP+L/0X/DP9T/4v/0P9X/4v/ff8Q/8H/6v8I/4T/0v90/1v/i//f/0//hf/b/w//hP+K/wD/AP8A/4r/Gf+E/9v/dP94/4X/9v91/xH/D/+2//P/9v+G/wAAAAAAAAAABP90/wX/av8B/17/6/8C/zP/9v+I/xH/iv9Z/wH/Qf+E/9v/dP8c/4X/9v91/xH/D/+2//P/9v+G/wAAAAAAAAAABP90/wX/av8B/17/6/8C/zP/9v+I/wH/Qf/r/wT/xv9B////IP+L/9//T/+F/9v/df+y/+v/Lv+L/9f/T/+F/9L/dP8z/4r/Ef+E/9L/dP8h/4X/9v91/xH/D/+2/9L/9v+C/wAAAAAAAAAABP90/wX/av8B/17/6/8C/zP/9v+I/wH/Qf+L/9f/T/+F/9L/df/Z/4X/9v90/wj/gP85/wD/dP8D/8b/Af8g/4v/Rf8I/1//W/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: __mbsnset
+    size: 214
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __strnset
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 83
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 116
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 170
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
   hash: 288fdd329b01344fb42613181e1f5b08cb989c7e
   signature: Vf+L/+z/Vv+L/3X/CP9X/zP///85/z3/AAAAAAAAAACJ/3X/CP91/xT///91/xD///91/wz/Vv/o/wAAAAAAAAAAg//E/wz/6f+8/wD/AP8A/1P/av8Z/+j/AAAAAAAAAACL/1X/DP9Z/4v/wv/B/+j/CP+E/8D/dP9e/4v/Xf8Q/4v/y/9L/4X/yf8P/4T/jf8A/wD/AP+K/w7/hP/J/3T/e/+F////df8R/w//tv/J//b/gf8AAAAAAAAAAAT/dP8F/2r/Af9f/+v/Av8z////iP8G/4r/Tv8B/0b/hP/J/3T/HP+F////df8R/w//tv/J//b/gf8AAAAAAAAAAAT/dP8F/2r/Af9f/+v/Av8z////iP8W/0b/6/8E/8b/Rv///yD/i//L/0v/hf/J/3X/sv/r/zH/i/9N/xD/i//B/0n/hf/A/3T/M/+K/wb/hP/A/3T/If+F////df8R/w//tv/A//b/gP8AAAAAAAAAAAT/dP8F/2r/Af9f/+v/Av8z////iP8W/0b/i//B/0n/hf/A/3X/2f+F////dP8I/4D/Pv8A/3T/A//G/wb/IP9q/xn/6P8AAAAAAAAAAIv/Rf8I/1n/W/9f/17/Xf/D/w==
   symbols:

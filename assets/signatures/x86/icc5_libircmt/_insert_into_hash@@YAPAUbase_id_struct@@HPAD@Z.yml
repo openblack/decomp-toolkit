@@ -1,0 +1,150 @@
+- symbol: 0
+  hash: 829f0a8dcb78a1799fd9ca98d319c1c6c6111850
+  signature: V/9W/1X/U/+D/+z/DP+L/3T/JP8g/4v/bP8k/yT/i/88/7X/IP8D/xX/Af+F////D/+E/8f/AP8A/wD/i//2/4v/B/+J/wT/JP+J/2z/JP8E/+j/AAAAAAAAAACF/8D/D/+E/3z/Af8A/wD/i//f/4v/f/8I/4X///91/+H/x/8E/yT/DP8A/wD/AP/o/wAAAAAAAAAAi//4/4n/e/8I/4X///90/3D/if8s/yT/6P8AAAAAAAAAAED/if8E/yT/6P8AAAAAAAAAAIn/B/+F/8D/dP8t/4n/BP8k/4n/bP8k/wT/6P8AAAAAAAAAAMf/R/8I/wD/AP8A/wD/i/8V/wT/Av8V/wH/i//H/4n/V/8E/0L/if8V/wT/Av8V/wH/g//E/wz/W/9d/17/X//D/7n/AAAAAAAAAABo/wAAAAAAAAAA6P8AAAAAAAAAAIn/BP8k/+j/AAAAAAAAAADH/wT/tf8g/wP/Ff8B/wD/AP8A/wD/M//A/4P/xP8M/1v/Xf9e/1//w/+5/wAAAAAAAAAAaP8AAAAAAAAAAOj/AAAAAAAAAACJ/wT/JP/o/wAAAAAAAAAAM//A/4P/xP8M/1v/Xf9e/1//w//H/wT/JP8M/wD/AP8A/+j/AAAAAAAAAACJ/wT/tf8g/wP/Ff8B/4X/wP8P/4T/kf8A/wD/AP+J/yz/JP/o/wAAAAAAAAAAQP+J/wT/JP/o/wAAAAAAAAAAi/8U/7X/IP8D/xX/Af+J/wL/i/8E/7X/IP8D/xX/Af+L/wD/hf/A/3T/Pv+J/wT/JP+J/2z/JP8E/+j/AAAAAAAAAACL/xT/tf8g/wP/Ff8B/6H/BP8C/xX/Af/H/0L/CP8A/wD/AP8A/4v/DP+1/yD/A/8V/wH/if9B/wT/QP+j/wT/Av8V/wH/i/8E/7X/IP8D/xX/Af+D/8T/DP9b/13/Xv9f/8P/uf8AAAAAAAAAAGj/AAAAAAAAAADo/wAAAAAAAAAAif8E/yT/6P8AAAAAAAAAAMf/BP+1/yD/A/8V/wH/AP8A/wD/AP8z/8D/g//E/wz/W/9d/17/X//D/7n/AAAAAAAAAABo/wAAAAAAAAAA6P8AAAAAAAAAAIn/BP8k/+j/AAAAAAAAAAAz/8D/g//E/wz/W/9d/17/X//D/4v/V/8I/4n/U/8I/4v/DP+1/yD/A/8V/wH/if9P/wj/i/8E/7X/IP8D/xX/Af+J/3j/CP+L/8f/g//E/wz/W/9d/17/X//D/w==
+  symbols:
+  - kind: Function
+    name: ?insert_into_hash@@YAPAUbase_id_struct@@HPAD@Z
+    size: 470
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?strcmp@@YAHPAD0@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?strlen@@YAHPAD@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?strcpy@@YAXPAD0@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ?cout@@3Vostream_withassign@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BE@A@Problem?5with?5malloc?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Function
+    name: ??6ostream@@QAEAAV0@PBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?endl@@YAAAVostream@@AAV1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 97
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 153
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 158
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 163
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 171
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 197
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 202
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 207
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 215
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 237
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 260
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 269
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 303
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 358
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 363
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 368
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 376
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 402
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 407
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 412
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 420
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

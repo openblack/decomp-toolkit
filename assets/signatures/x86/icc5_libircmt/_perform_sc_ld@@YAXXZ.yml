@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: bcfd26c3be6d17b80b419aaf0ea9a6b71072be63
+  signature: g//s/wz/of8g/wL/Ff8B/6P/oP8C/xX/Af+L/xX/JP8C/xX/Af+L/w3/NP8C/xX/Af+J/xX/pP8C/xX/Af+h/yz/Av8V/wH/if8N/7T/Av8V/wH/o/+4/wL/Ff8B/6H/MP8C/xX/Af+j/7z/Av8V/wH/6P8AAAAAAAAAAKD/wP8C/xX/Af+I/wT/JP/o/wAAAAAAAAAAoP/A/wL/Ff8B/zz/Af91/yj/of+w/wL/Ff8B/7r/Af8A/wD/AP8B/wX/JP8C/xX/Af+J/xX/LP8C/xX/Af/H/wX/MP8C/xX/Af8A/wD/AP8A/4n/FP8k/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: ?perform_sc_ld@@YAXXZ
+    size: 128
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?sc_lookup@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?sc_update@@YAX_N@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?process_ma@@YAXK@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 58
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 120
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

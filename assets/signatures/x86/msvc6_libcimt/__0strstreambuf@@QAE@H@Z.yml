@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 56d865dd8e6ba9af43a0d2be0ba172e03d3962b3
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4n/df/w/+j/AAAAAAAAAAD//3X/CP8z/8D/i//O/4n/Rf/8/1D/x/8G/wAAAAAAAAAAx/9G/0z/Af8A/wD/AP+J/0b/WP+J/0b/XP+J/0b/YP/o/wAAAAAAAAAAi/9N//T/i//G/17/ZP+J/w3/AAAAAAAAAADJ/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0strstreambuf@@QAE@H@Z
+    size: 77
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L18627
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0streambuf@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7strstreambuf@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?setbuf@strstreambuf@@UAEPAVstreambuf@@PADH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 35
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 56
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 69
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

@@ -1,4 +1,149 @@
 - symbol: 0
+  hash: d36a4cb8e13bee348c8e346c86a30d036dc3e109
+  signature: Vf+L/+z/Vv9X/4v/ff8I/4v/x/9I/0j/dP9Z/0j/SP90/0b/g//o/wT/dP9B/4P/6P8D/3T/PP+D/+j/BP90/yr/g//o/wb/dP8Y/0j/dP8I/4P/yP///+n/+P8A/wD/AP+L/zX/AAAAAAAAAAC4/wAAAAAAAAAA6/80/4v/Nf8AAAAAAAAAALj/AAAAAAAAAADr/yf/i/81/wAAAAAAAAAAuP8AAAAAAAAAAOv/Gv9X/+j/AAAAAAAAAACL/3D/CP+D/8D/CP9Z/+v/C/+L/zX/AAAAAAAAAAC4/wAAAAAAAAAAg//+/wH/df8H/zP/wP/p/6v/AP8A/wD/hf/2/3X/B/9q/wP/6P8AAAAAAAAAAFP/av8I/1n/O//5/3T/Cv+D////C/90/wX/g////wT/df8m/4v/Hf8AAAAAAAAAAIP/Jf8AAAAAAAAAAAD/O//5/3X/RP+L/xX/AAAAAAAAAADH/wX/AAAAAAAAAACM/wD/AP8A/4n/Vf8I/+v/A/+L/13/CP87//n/df8o/6H/AAAAAAAAAACL/w3/AAAAAAAAAAAD/8j/O//B/33/Hv+N/xT/QP8r/8j/jf8U/5X/AAAAAAAAAACD/yL/AP+D/8L/DP9J/3X/9//r/wf/g/8g/wD/O//5/3X/Dv///zX/AAAAAAAAAABq/wj////W/1n/Wf/r/w7/V////9b/g////wv/Wf90/wX/g////wT/df8T/4P///8I/4n/Hf8AAAAAAAAAAHX/CP+L/0X/CP+j/wAAAAAAAAAAM//A/1v/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: _raise
+    size: 301
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _abort_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _ctrlbreak_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _term_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _siglookup
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _ctrlc_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __exit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pxcptinfoptrs
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __fpecode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __First_FPE_Indx
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __Num_FPE
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __XcptActTab
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 51
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 82
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 90
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 105
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 110
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 133
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 157
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 163
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 174
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 180
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 201
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 207
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 225
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 249
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 280
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 290
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+- symbol: 0
   hash: e565dfa6cea71cf25798375b9d7608b94432e881
   signature: Vf+L/+z/g//s/wz/i/9F/wj/g/9l//z/AP9I/1P/Vv9I/1f/dP9n/0j/SP90/0b/g//o/wT/dP9B/4P/6P8D/3T/PP+D/+j/BP90/yr/g//o/wb/dP8Y/0j/dP8I/4P/yP///+n/Rv8B/wD/AP+L/x3/AAAAAAAAAAC//wAAAAAAAAAA6/9C/4v/Hf8AAAAAAAAAAL//AAAAAAAAAADr/zX/i/8d/wAAAAAAAAAAv/8AAAAAAAAAAOv/KP/o/wAAAAAAAAAAi//w////dv9Q////df8I/+j/AAAAAAAAAACL//j/Wf+D/8f/CP9Z/4v/H//r/x3/i/8d/wAAAAAAAAAAv/8AAAAAAAAAAGr/Af/H/0X//P8B/wD/AP8A/+j/AAAAAAAAAACL/3X/CP9Z/4P/+/8B/3X/Fv+D/33//P8A/w//hP/U/wD/AP8A/1P/6P8AAAAAAAAAAFn/6f/I/wD/AP8A/zP/yf87/9n/df8U/zn/Tf/8/3T/CP9q/wH/6P8AAAAAAAAAAFn/av8D/+j/AAAAAAAAAACL/0X/CP+D//j/CP90/wr/g//4/wv/dP8F/4P/+P8E/3X/G/+L/1b/VP+D//j/CP+J/1X/+P+J/07/VP91/0n/i/9W/1j/x/9G/1j/jP8A/wD/AP+J/1X/9P+D//j/CP91/zf/i/8N/wAAAAAAAAAAof8AAAAAAAAAAAP/wf87/8j/ff8o/43/BP9J/8H/4P8C/4v/Vv9Q/4P/wP8M/4P/ZP8C//z/AP+L/xX/AAAAAAAAAACL/z3/AAAAAAAAAABB/wP/+v87/8//fP/i/+v/Av+J/w//g/99//z/AP90/wj/av8B/+j/AAAAAAAAAABZ/4P/ff8I/wj/df8L////dv9Y/2r/CP///9P/Wf9Z/+v/Ev///3X/CP///9P/g/99/wj/C/9Z/3T/Bv+D/33/CP8E/3X/Ev+L/0X/+P+D/33/CP8I/4n/Rv9U/3X/Bv+L/0X/9P+J/0b/WP8z/8D/X/9e/1v/yf/D/w==
   symbols:

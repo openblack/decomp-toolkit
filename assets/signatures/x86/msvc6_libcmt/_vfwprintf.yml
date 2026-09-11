@@ -1,4 +1,41 @@
 - symbol: 0
+  hash: 4838125d4c15e90daf961fe104aa23e7f923234a
+  signature: Vf+L/+z/Vv9X////df8I/+j/AAAAAAAAAAD//3X/EP+L//D///91/wz///91/wj/6P8AAAAAAAAAAP//df8I/4v/+P9W/+j/AAAAAAAAAACD/8T/GP+L/8f/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: _vfwprintf
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __stbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __woutput
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ftbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
   hash: 613aef9ce726225fa06bdc31294991b720ed4f2e
   signature: U/9W/4v/dP8k/wz/V/9W/+j/AAAAAAAAAABW/+j/AAAAAAAAAAD//3T/JP8g/4v/+P///3T/JP8g/1b/6P8AAAAAAAAAAFb/V/+L/9j/6P8AAAAAAAAAAFb/6P8AAAAAAAAAAIP/xP8g/4v/w/9f/17/W//D/w==
   symbols:

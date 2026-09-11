@@ -1,12 +1,32 @@
 - symbol: 0
-  hash: 2a3965b4bc9b19c32976e53cc27b519c9d4a8266
-  signature: U/9W/4v/dP8k/wz/V/8P/6//dP8k/xT/g//+/+D/i//e/3f/Df+F//b/df8D/2r/Af9e/4P/xv8P/4P/5v/w/zP///+D//7/4P93/zr/O/8d/wAAAAAAAAAAd/8d/2r/Cf/o/wAAAAAAAAAAU//o/wAAAAAAAAAAav8J/4v/+P/o/wAAAAAAAAAAg//E/wz/hf///3X/K/9W/2r/CP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACL//j/hf///3X/Iv+D/z3/AAAAAAAAAAAA/3T/Gf9W/+j/AAAAAAAAAACF/8D/Wf90/xT/6/+p/1P/av8A/1f/6P8AAAAAAAAAAIP/xP8M/4v/x/9f/17/W//D/zP/wP/r//j/
+  hash: ffa5f111b10b7b412954011ea81ae2876b3030de
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8Y/1P/Vv9X/4v/df8I/w//r/91/wz/if91/wz/if91/+T/g//+/+D/d/8U/zP/2/87//P/df8D/2r/Af9e/4P/xv8P/4P/5v/w/4n/df8M/+v/Av8z/9v/if9d/+D/g//+/+D/D/+H/6j/AP8A/wD/of8AAAAAAAAAAIP/+P8D/3X/Qf+L/33/5P87/z3/AAAAAAAAAAB3/3z/av8J/+j/AAAAAAAAAABZ/4n/Xf/8/1f/6P8AAAAAAAAAAFn/if9F/+D/g/9N//z////o/wAAAAAAAAAAOf9d/+D/dP9e////df/k/+v/SP8z/9v/i/91/wz/
   symbols:
   - kind: Function
     name: _calloc
-    size: 141
+    size: 153
     flags: 1
     section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
   - kind: Object
     name: ___sbh_threshold
     size: 0
@@ -23,7 +43,78 @@
     flags: 1
     section: null
   - kind: Function
-    name: __unlock
+    name: fn_00000099
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 102
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 111
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 121
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 8
+    addend: 0
+- symbol: 0
+  hash: 6474a69d10fe692bc86df5dca4df86c8c79305a6
+  signature: Vf+L/+z/Vv+L/3X/CP8P/6//df8M/4P//v/g/1f/if91/wj/d/8N/4X/9v91/wP/av8B/17/g//G/w//g//m//D/M////4P//v/g/3f/WP+h/wAAAAAAAAAAg//4/wP/df8a/4v/Rf8I/zv/Bf8AAAAAAAAAAHf/Lv9Q/+j/AAAAAAAAAACL//j/Wf+F////df9M/+v/H/+D//j/Av91/xr/O/81/wAAAAAAAAAAd/8S/4v/xv/B/+j/BP9Q/+j/AAAAAAAAAACL//j/Wf+F////df8//1b/av8I////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAAIv/+P+F////df8k/4P/Pf8AAAAAAAAAAAD/dP8b/1b/6P8AAAAAAAAAAIX/wP9Z/3T/Gf/r/4v///91/wj/av8A/1f/6P8AAAAAAAAAAIP/xP8M/4v/x/9f/17/Xf/D/1b/6//s/zP/wP/r//X/
+  symbols:
+  - kind: Function
+    name: _calloc
+    size: 177
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_threshold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_alloc_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___old_sbh_threshold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___old_sbh_alloc_block
     size: 0
     flags: 1
     section: null
@@ -57,35 +148,39 @@
     kind: x86_abs32
     symbol: 1
     addend: 0
-  - offset: 50
-    kind: x86_rel32
+  - offset: 55
+    kind: x86_abs32
     symbol: 2
-    addend: -4
-  - offset: 56
+    addend: 0
+  - offset: 63
     kind: x86_rel32
     symbol: 3
     addend: -4
-  - offset: 65
-    kind: x86_rel32
-    symbol: 4
-    addend: -4
-  - offset: 81
+  - offset: 83
     kind: x86_abs32
-    symbol: 5
+    symbol: 4
     addend: 0
-  - offset: 87
+  - offset: 96
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 112
     kind: x86_abs32
     symbol: 6
     addend: 0
-  - offset: 99
+  - offset: 118
     kind: x86_abs32
     symbol: 7
     addend: 0
-  - offset: 108
-    kind: x86_rel32
+  - offset: 130
+    kind: x86_abs32
     symbol: 8
-    addend: -4
-  - offset: 124
+    addend: 0
+  - offset: 139
     kind: x86_rel32
     symbol: 9
+    addend: -4
+  - offset: 157
+    kind: x86_rel32
+    symbol: 10
     addend: -4

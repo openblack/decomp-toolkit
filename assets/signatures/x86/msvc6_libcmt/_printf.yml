@@ -1,4 +1,50 @@
 - symbol: 0
+  hash: f6ce2957e6e7a3f7ca322c34c9232240c72ed8f6
+  signature: U/9W/77/AAAAAAAAAABX/1b/6P8AAAAAAAAAAIv/+P+N/0T/JP8Y/1D///90/yT/GP9W/+j/AAAAAAAAAABW/1f/i//Y/+j/AAAAAAAAAACD/8T/GP+L/8P/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: _printf
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __stbuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __output
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ftbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 36
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
   hash: aafe28545b8c0828250d165f5b6ec02a48c0c78c
   signature: U/9W/77/AAAAAAAAAABX/1b/av8B/+j/AAAAAAAAAABW/+j/AAAAAAAAAACL//j/jf9E/yT/IP9Q////dP8k/yD/Vv/o/wAAAAAAAAAAVv9X/4v/2P/o/wAAAAAAAAAAVv9q/wH/6P8AAAAAAAAAAIP/xP8o/4v/w/9f/17/W//D/w==
   symbols:

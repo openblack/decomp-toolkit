@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: a290dbf69f0625d929e0d6514dbb2644fe028508
+  signature: Vv+L//H/6P8AAAAAAAAAAIP/+P///3T/Z/9X/4v/fv8I/4X///91/zj/Of9+/yz/df8x/4v/Vv8Q/4v/Tv8U/zv/yv92/wb/i//B/yv/wv/r/wL/M//A/zv/yv92/wT/K//K/+v/Av8z/8n/0f/5/9H/+P8D/8r/A//C/4P/Tv8M////if9W/yT/if9O/yj/if9G/yz/hf///1//df9Q/4v/Rv8s/4X/wP90/0n/Of9G/yj/cv87/4v/Tv8k////dv9M/yv/wf9Q/2r/Af9R/+j/AAAAAAAAAACD/8T/EP+F/8D/df8F/4P/yP///17/w/+L/07/LP+L/1b/JP+D/07/DP///yv/yP87/8r/if9O/yj/dP8L/1D/Uv9R/+j/AAAAAAAAAACD/8T/DP+L/87/6P8AAAAAAAAAAF7/w////3b/TP/o/wAAAAAAAAAAWf9e/8P/
+  symbols:
+  - kind: Function
+    name: ?underflow@stdiobuf@@UAEHXZ
+    size: 171
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?allocate@streambuf@@IAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fread
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sbumpc@streambuf@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fgetc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 105
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 144
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 164
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

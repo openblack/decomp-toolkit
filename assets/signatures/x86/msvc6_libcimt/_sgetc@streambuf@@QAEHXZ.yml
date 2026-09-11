@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 72f310ee5e1d3f7c51dfdafc8d4a416e6bebd0c8
+  signature: Vv+L//H/g/9+/wj/AP90/xP/g/9+/wz///91/wj/i/8G////UP8g/4n/Rv8M/4v/Rv8M/17/w/+L/wb/i//O////UP8g/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?sgetc@streambuf@@QAEHXZ
+    size: 37
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,10 +1,10 @@
 - symbol: 0
-  hash: 067366127a64c321cc3467bcf9548f2f333941b3
-  signature: M//A/2r/AP85/0T/JP8I/2j/AP8Q/wD/AP8P/5T/wP9Q////Ff8AAAAAAAAAAIX/wP+j/wAAAAAAAAAAdP8V/+j/AAAAAAAAAACF/8D/df8P////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAADP/wP/D/2r/Af9Y/8P/
+  hash: 9a31f740b7e3d8063af7757f45d6216373d05219
+  signature: M//A/2r/AP85/0T/JP8I/2j/AP8Q/wD/AP8P/5T/wP9Q////Ff8AAAAAAAAAAIX/wP+j/wAAAAAAAAAAdP82/+j/AAAAAAAAAACD//j/A/+j/wAAAAAAAAAAdf8N/2j/+P8D/wD/AP/o/wAAAAAAAAAAWf/r/wr/g//4/wL/df8Y/+j/AAAAAAAAAACF/8D/df8P////Nf8AAAAAAAAAAP//Ff8AAAAAAAAAADP/wP/D/2r/Af9Y/8P/
   symbols:
   - kind: Function
     name: __heap_init
-    size: 60
+    size: 93
     flags: 1
     section: .text
   - kind: Function
@@ -18,7 +18,22 @@
     flags: 1
     section: null
   - kind: Function
+    name: ___heap_select
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___active_heap
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
     name: ___sbh_heap_init
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___old_sbh_new_region
     size: 0
     flags: 1
     section: null
@@ -40,11 +55,23 @@
     kind: x86_rel32
     symbol: 3
     addend: -4
-  - offset: 43
+  - offset: 41
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 53
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 76
     kind: x86_abs32
     symbol: 2
     addend: 0
-  - offset: 49
+  - offset: 82
     kind: x86_abs32
-    symbol: 4
+    symbol: 7
     addend: 0

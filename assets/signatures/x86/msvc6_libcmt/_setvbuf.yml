@@ -1,4 +1,50 @@
 - symbol: 0
+  hash: 1f9ad63c24a72dae8d0884b5498f95bef8a828d7
+  signature: Vf+L/+z/Uf+D/2X//P8A/1P/i/9d/xD/V/+L/33/FP+D//v/BP90/xv/g////wL/cv8R/4H///////////9//3f/Cf+F/9v/dP8K/4P/+/9A/3T/Bf+D/8j////r/23/Vv+L/3X/CP9W/4P/5//+/+j/AAAAAAAAAABW/+j/AAAAAAAAAABm/4H/Zv8M//P/wv9Z/1n/i/9O/wz/9v/D/wT/dP8O/4P/yf8E/2r/Av+J/07/DP+N/0b/FP9f/+v/LP+L/0X/DP+F/8D/df8f/1f/6P8AAAAAAAAAAIX/wP9Z/3X/DP///wX/AAAAAAAAAACD/03//P///+v/Gv9m/4H/Tv8M/wj/BP/r/wb/gP/N/wX/if9O/wz/g/9m/wT/AP+J/37/GP+J/0b/CP+J/wb/i/9F//z/Xv9f/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: _setvbuf
+    size: 161
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __freebuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __cflush
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 57
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 117
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
   hash: 0e46d72af0c4e35f85705a879123d0420152306d
   signature: Vf+L/+z/Uf+D/2X//P8A/1P/i/9d/xD/V/+L/33/FP+D//v/BP90/xv/g////wL/cv8R/4H///////////9//3f/Cf+F/9v/dP8K/4P/+/9A/3T/Bf+D/8j////r/3v/Vv+L/3X/CP9W/4P/5//+/+j/AAAAAAAAAABW/+j/AAAAAAAAAABW/+j/AAAAAAAAAABm/4H/Zv8M//P/wv+L/07/DP+D/8T/DP/2/8P/BP90/w7/g//J/wT/av8C/4n/Tv8M/43/Rv8U/1//6/8s/4v/Rf8M/4X/wP91/x//V//o/wAAAAAAAAAAhf/A/1n/df8M////Bf8AAAAAAAAAAIP/Tf/8////6/8a/2b/gf9O/wz/CP8E/+v/Bv+A/83/Bf+J/07/DP+D/2b/BP8A/4n/fv8Y/4n/Rv8I/4n/Bv9W/+j/AAAAAAAAAACL/0X//P9Z/17/X/9b/8n/w/8=
   symbols:

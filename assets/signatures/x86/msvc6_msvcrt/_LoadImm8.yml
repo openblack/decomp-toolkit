@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 92ba55c14d6c8b43c089a857bea8e84617a60d9c
+  signature: Vv9X/4v/fP8k/wz/uP8A/8D/AP8A/2r/Av+L/w//Xv+L/9H/I//Q/zv/0P90/z7/gf/h/wD/B/8A/wD/gf/5/wD/BP8A/wD/df8D/2r/A/9e/7j/AP9A/wD/AP87/9D/df8B/0b/gf/6/wD/gP8A/wD/df8D/4P/xv8E/4X/0v91/wv/gf/5/wD/Bf8A/wD/df8D/4P/xv8E/zv/0P91/wX/hf/J/3X/Af9G/w//tv8E/z7/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: _LoadImm8
+    size: 93
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 6212d963f2fd85b147e55a3f44d27e2bb194a188
+  signature: Vf+L/+z/g//s/wj/i/9F/wj/if9F//z/x/9F//j/Av8A/wD/AP+L/03/CP+L/xH/wf/q/w7/g//i/wP/g//6/wP/D/+E/7D/AP8A/wD/i/9F/wj/i/8I/8H/6f8I/4P/4f8H/4P/+f8E/3X/Cf+L/1X/+P+D/8L/Af+J/1X/+P+L/0X/CP+L/wj/wf/p/w7/g//h/wP/hf/J/3X/Bv+L/1X/+P+J/1X/+P+L/0X/CP+L/wj/wf/p/w7/g//h/wP/g//5/wH/df8J/4v/Vf/4/4P/wv8B/4n/Vf/4/4v/Rf8I/4v/CP/B/+n/Dv+D/+H/A/+D//n/Av91/wn/i/9V//j/g//C/wT/if9V//j/i/9F/wj/i/8I/8H/6f8O/4P/4f8D/4X/yf91/xn/i/9V/wj/i/8C/8H/6P8I/4P/4P8H/4P/+P8F/3X/Cf+L/03/+P+D/8H/BP+J/03/+P+L/1X/CP+L/wL/wf/o/w7/g//g/wP/g//4/wH/df8Y/4v/Tf8I/4v/Ef/B/+r/CP+D/+L/B/+F/9L/df8J/4v/Rf/4/4P/wP8B/4n/Rf/4/4v/Tf/8/wP/Tf/4/zP/wP+K/wH/i//l/13/w/8=
+  symbols:
+  - kind: Function
+    name: _LoadImm8
+    size: 229
+    flags: 1
+    section: .text
+  relocations: []

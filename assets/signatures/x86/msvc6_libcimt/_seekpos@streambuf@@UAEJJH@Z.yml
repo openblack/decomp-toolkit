@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 040a0caa69eb322e1e22052ea40d7ec7dbd4a5de
+  signature: //90/yT/CP+L/wH/av8A////dP8k/wz///9Q/wz/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?seekpos@streambuf@@UAEJJH@Z
+    size: 18
+    flags: 1
+    section: .text
+  relocations: []

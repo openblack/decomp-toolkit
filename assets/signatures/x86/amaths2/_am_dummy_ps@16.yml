@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 8c195b7ce0efa1636ce2db086cc006826254ce6b
+  signature: wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _am_dummy_ps@16
+    size: 3
+    flags: 1
+    section: .text
+  relocations: []

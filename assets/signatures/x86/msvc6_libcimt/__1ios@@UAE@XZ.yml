@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: d03a3e198f56a00af963aabbea11398b419a3217
+  signature: Vv+L//H/g/9O/zT////H/wb/AAAAAAAAAAD//w3/AAAAAAAAAAB1/wv/aP8AAAAAAAAAAOj/AAAAAAAAAABZ/43/Rv84/1D/6P8AAAAAAAAAAIP/fv8c/wD/Wf90/w3/i/9O/wT/hf/J/3T/Bv+L/wH/av8B////EP+D/2b/BP8A/8f/Rv8I/wT/AP8A/wD/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??1ios@@UAE@XZ
+    size: 74
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7ios@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ?fLockcInit@ios@@0HA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?x_lockc@ios@@0U_CRT_CRITICAL_SECTION@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __mtlockterm
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

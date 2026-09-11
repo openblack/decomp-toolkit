@@ -1,4 +1,77 @@
 - symbol: 0
+  hash: e0747b3d58623c8eecad7fe529413c57ccb53a4d
+  signature: i/9E/yT/BP87/wX/AAAAAAAAAABz/z3/i//I/4v/0P/B//n/Bf+D/+L/H/+L/wz/jf8AAAAAAAAAAPb/RP/R/wT/Af90/yX/UP/o/wAAAAAAAAAAWf9Q////Ff8AAAAAAAAAAIX/wP91/wj///8V/wAAAAAAAAAA6/8C/zP/wP+F/8D/dP8S/6P/AAAAAAAAAADH/wX/AAAAAAAAAAAJ/wD/AP8A/4P/yP///8P/
+  symbols:
+  - kind: Function
+    name: __commit
+    size: 87
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FlushFileBuffers@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 38
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 46
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+- symbol: 0
   hash: 848128119bfa16b8bb0df861b65e4944c4137e38
   signature: U/+L/1z/JP8I/zv/Hf8AAAAAAAAAAFb/V/9z/3L/i//D/8H/+P8F/43/PP+F/wAAAAAAAAAAi//D/4P/4P8f/43/NP/A/4v/B//B/+b/Av/2/0T/MP8E/wH/dP9S/1P/6P8AAAAAAAAAAIv/B/9Z//b/RP8w/wT/Af90/yn/U//o/wAAAAAAAAAAWf9Q////Ff8AAAAAAAAAAIX/wP91/wr///8V/wAAAAAAAAAAi//w/+v/Av8z//b/hf/2/3T/Ff/o/wAAAAAAAAAAif8w/+j/AAAAAAAAAADH/wD/Cf8A/wD/AP+D/87///9T/+j/AAAAAAAAAABZ/4v/xv/r/w7/6P8AAAAAAAAAAMf/AP8J/wD/AP8A/4P/yP///1//Xv9b/8P/
   symbols:

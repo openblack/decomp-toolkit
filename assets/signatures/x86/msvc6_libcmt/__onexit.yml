@@ -1,4 +1,82 @@
 - symbol: 0
+  hash: 18d544e6012a0069e1166e72c4ad0c33aed90220
+  signature: Vv///zX/AAAAAAAAAADo/wAAAAAAAAAAi/8V/wAAAAAAAAAAWf+L/w3/AAAAAAAAAACL//H/K//y/4P/xv8E/zv/xv9e/3P/Ov9S/+j/AAAAAAAAAACD/8D/EP9Q////Nf8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+F/8D/df8B/8P/i/8N/wAAAAAAAAAAK/8N/wAAAAAAAAAAo/8AAAAAAAAAAMH/+f8C/43/DP+I/4n/Df8AAAAAAAAAAIv/RP8k/wT/if8B/4P/Bf8AAAAAAAAAAAT/w/8=
+  symbols:
+  - kind: Function
+    name: __onexit
+    size: 109
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___onexitbegin
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __msize
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitend
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 8
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 39
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 49
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 54
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 68
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 103
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
   hash: 10a8b32e0bea047cef3f1fc57b8d0fe5fab7d740
   signature: Vv/o/wAAAAAAAAAA//81/wAAAAAAAAAA6P8AAAAAAAAAAIv/Ff8AAAAAAAAAAFn/i/8N/wAAAAAAAAAAi//x/yv/8v+D/8b/BP87/8b/c/89/1L/6P8AAAAAAAAAAIP/wP8Q/1D///81/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4X/wP91/wT/M//2/+v/LP+L/w3/AAAAAAAAAAAr/w3/AAAAAAAAAACj/wAAAAAAAAAAwf/5/wL/jf8M/4j/if8N/wAAAAAAAAAAi/9E/yT/CP+J/wH/g/8F/wAAAAAAAAAABP+L//D/6P8AAAAAAAAAAIv/xv9e/8P/
   symbols:

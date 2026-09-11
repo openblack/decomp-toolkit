@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: 4afaa95b95ce6bb5696216b62481a09e9590ccc0
+  signature: uP8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: ___doserrno
+    size: 6
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: cbf792aaad9f2145c0ce57a2f86005ce332aba03
   signature: 6P8AAAAAAAAAAIP/wP8M/8P/
   symbols:

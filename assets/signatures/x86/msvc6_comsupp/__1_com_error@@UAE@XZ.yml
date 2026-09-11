@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: bd79cda5bbcc877871a9dbd905a335030e5c2b0f
+  signature: Vv+L//H/i/9G/wj/x/8G/wAAAAAAAAAAhf/A/3T/Bv+L/wj/UP///1H/CP+L/3b/DP+F//b/dP8H/1b///8V/wAAAAAAAAAAXv/D/w==
+  symbols:
+  - kind: Function
+    name: ??1_com_error@@UAE@XZ
+    size: 38
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7_com_error@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__LocalFree@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

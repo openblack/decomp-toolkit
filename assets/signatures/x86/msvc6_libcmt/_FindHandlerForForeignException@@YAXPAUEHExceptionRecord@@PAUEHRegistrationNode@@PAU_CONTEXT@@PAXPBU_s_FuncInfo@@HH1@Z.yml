@@ -1,4 +1,50 @@
 - symbol: 0
+  hash: 0096c77796934f865ef2c3fb5ee048d83dbb186b
+  signature: Vf+L/+z/Uf9R/4P/Pf8AAAAAAAAAAAD/Vv9X/3T/If///3X/JP///3X/IP///3X/GP///3X/FP///3X/EP///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/xz/hf/A/3X/c/+L/33/HP+N/0X/+P9Q/43/Rf/8/1D/V////3X/IP///3X/GP/o/wAAAAAAAAAAg//E/xT/i//w/4v/Rf/8/zv/Rf/4/3P/T/87/z7/fP9D/zv/fv8E/3//Pv+L/0b/DP+L/07/EP/B/+D/BP8D/8H/i/9I//T/hf/J/3T/Bv+A/3n/CP8A/3X/Jv9q/wH/g//A//D///91/yT///91/yD/Vv9q/wD/UP///3X/GP///3X/FP///3X/EP///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/yz///9F//z/g//G/xT/6/+p/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?FindHandlerForForeignException@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@HH1@Z
+    size: 168
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ?__pSETranslator@@3P6AXIPAU_EXCEPTION_POINTERS@@@ZA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_CallSETranslator@@YAHPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAX2PBU_s_FuncInfo@@H1@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_GetRangeOfTrysToCheck@@YAPBU_s_TryBlockMapEntry@@PBU_s_FuncInfo@@HHPAI1@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CatchIt@@YAXPAUEHExceptionRecord@@PAUEHRegistrationNode@@PAU_CONTEXT@@PAXPBU_s_FuncInfo@@PBU_s_HandlerType@@PBU_s_CatchableType@@PBU_s_TryBlockMapEntry@@H1E@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 149
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
   hash: 9984cf37f372e2be9e6c7f82fba9bb2389a7961f
   signature: Vf+L/+z/Uf9R/1b/V//o/wAAAAAAAAAAg/94/2j/AP90/yH///91/yT///91/yD///91/xj///91/xT///91/xD///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8c/4X/wP91/3P/i/99/xz/jf9F//j/UP+N/0X//P9Q/1f///91/yD///91/xj/6P8AAAAAAAAAAIP/xP8U/4v/8P+L/0X//P87/0X/+P9z/0//O/8+/3z/Q/87/37/BP9//z7/i/9G/wz/i/9O/xD/wf/g/wT/A//B/4v/SP/0/4X/yf90/wb/gP95/wj/AP91/yb/av8B/4P/wP/w////df8k////df8g/1b/av8A/1D///91/xj///91/xT///91/xD///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8s////Rf/8/4P/xv8U/+v/qf9f/17/yf/D/w==
   symbols:

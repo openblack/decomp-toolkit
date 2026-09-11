@@ -1,4 +1,276 @@
 - symbol: 0
+  hash: 7180d3f61cfcc7de65822a22647aeab5c6467c4f
+  signature: Vf+L/+z/gf/s/7j/AP8A/wD/U/9W/1f/jf9N//j/6P8AAAAAAAAAADL/2/++/wAAAAAAAAAA9v9F//z/D/8P/4X/6f8B/wD/AP+//wD/EP8A/wD/of8AAAAAAAAAAIr/AP+E/8D/D/+E/9X/Af8A/wD/PP9A/w//hP/N/wH/AP8A/43/Tf/4/+j/AAAAAAAAAACF/8D/df9V/43/Rf/4/43/jf9w/////////1D/jf9F/+D/UP9W/+j/AAAAAAAAAACL/8j/6P8AAAAAAAAAAI3/Rf/g/43/Tf/4/1D/6P8AAAAAAAAAAIT/2/90/yr/jf9F//j/jf+N/2j/////////UP+N/0X/yP9Q/2r/W//o/wAAAAAAAAAAi//I/+j/AAAAAAAAAACN/0X/yP+N/03/+P9Q/+j/AAAAAAAAAAAy/9v/of8AAAAAAAAAAID/OP8//w//hf8y/wH/AP8A/0D/o/8AAAAAAAAAAIr/EP8P/77/yv+D/+n/JP8P/4T/CP8B/wD/AP9J/w//hP/K/wD/AP8A/4P/6f8a/3T/dv+D/+n/Cv90/zX/hf89/wAAAAAAAAAAdf8c/43/Rf/4/1D/jf+F/1j/////////UP+N/4X/SP////////9Q/+j/AAAAAAAAAADp//r/AP8A/wD/jf+F/2D/////////UP/o/wAAAAAAAAAA6f+I/wD/AP8A/0D/o/8AAAAAAAAAAI3/Rf/4/1D/jf9F/6D/UP+N/0X/uP9q/13/UP+N/0X/kP9Q/+j/AAAAAAAAAABZ/4v/yP/o/wAAAAAAAAAAi//I/+j/AAAAAAAAAABQ/43/Tf/4/+j/AAAAAAAAAACz/wH/6f++/wD/AP8A/4X/Pf8AAAAAAAAAAHX/O/+N/4X/UP////////9Q/+j/AAAAAAAAAABZ/1D/jf9F//D/UP9q/2D/jf9N/4D/6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAjf9F//j/jf9N//D/UP+N/0X/sP9Q/43/Rf+o/2r/J/9Q/+j/AAAAAAAAAADr/2v/jf9F/5j/UP/o/wAAAAAAAAAAWf/r/2//gP/6/0D/dP8L/0D/o/8AAAAAAAAAAID/OP9A/3X/9f9A/43/Tf+I/6P/AAAAAAAAAACN/0X/+P9Q/43/Rf/o/1D/aP8AAAAAAAAAAOj/AAAAAAAAAACL/8j/6P8AAAAAAAAAAI3/Rf/o/+v/L/9I/6P/AAAAAAAAAACN/0X/+P9Q/43/hf94/////////1D/jf9F/9D/6/8L/43/Rf/4/1D/jf9F/8D/UP+N/0X/2P9Q/+j/AAAAAAAAAABZ/4v/yP/o/wAAAAAAAAAAUP+N/03/+P/o/wAAAAAAAAAA9v9F//z/D/8P/4T/HP/+//////+h/wAAAAAAAAAAiv8A/4T/wP90/xD/PP9A/3T/Sv9q/wH/jf9N//j/6P8AAAAAAAAAAOv/Pv+N/03/+P/o/wAAAAAAAAAAhf/A/3T/BP9q/wL/6//m/43/Rf/4/43/Tf/Q/1D/jf9F/9j/UP+N/0X/wP9W/1D/av8C/+j/AAAAAAAAAACL/8j/6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAUP+N/03/+P/o/wAAAAAAAAAAi/9N/wj/jf9F//j/UP/o/wAAAAAAAAAAi/9F/wj/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?getScope@UnDecorator@@CA?AVDName@@XZ
+    size: 635
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_02NNPM@?3?3?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ?gName@UnDecorator@@0PBDB
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?isEmpty@DName@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??4DName@@QAEAAV0@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@D@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?disableFlags@UnDecorator@@0KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?getLexicalFrame@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getZName@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@D@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?getDecoratedName@UnDecorator@@CA?AVDName@@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BG@LHIO@?$GAanonymous?5namespace?8?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??4DName@@QAEAAV0@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@W4DNameStatus@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??HDName@@QBE?AV0@PBD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0DName@@QAE@ABV0@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 69
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 144
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 156
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 163
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 178
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 215
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 240
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 257
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 268
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 291
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 299
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 306
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 315
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 328
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 342
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 358
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 365
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 387
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 398
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 412
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 426
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 439
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 444
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 451
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 462
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 495
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 503
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 512
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 527
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 547
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 557
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 588
+    kind: x86_rel32
+    symbol: 16
+    addend: -4
+  - offset: 595
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 602
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 611
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 623
+    kind: x86_rel32
+    symbol: 18
+    addend: -4
+- symbol: 0
   hash: 2d351dc67ee5d8fb849eb1f564b6ec919ed6ff29
   signature: Vf+L/+z/gf/s/9j/AP8A/wD/U/9W/1f/jf9N//j/6P8AAAAAAAAAADL/2/++/wAAAAAAAAAA9v9F//z/D/8P/4X/Gf8C/wD/AP+//wD/EP8A/wD/of8AAAAAAAAAAIr/AP+E/8D/D/+E/wX/Av8A/wD/PP9A/w//hP/9/wH/AP8A/43/Tf/4/+j/AAAAAAAAAACF/8D/df9t/43/Rf/4/43/jf9I/////////1D/jf+F/0D/////////UP9W/+j/AAAAAAAAAACL/8j/6P8AAAAAAAAAAFD/jf9N/+D/6P8AAAAAAAAAAI3/Rf/g/43/Tf/4/1D/6P8AAAAAAAAAAIT/2/90/zb/jf9F//j/jf+N/yj/////////UP+N/4X/OP////////9Q/2r/W//o/wAAAAAAAAAAi//I/+j/AAAAAAAAAABQ/43/Tf/I/+j/AAAAAAAAAACN/0X/yP+N/03/+P9Q/+j/AAAAAAAAAAAy/9v/of8AAAAAAAAAAID/OP8//w//hf9K/wH/AP8A/0D/o/8AAAAAAAAAAIr/EP8P/77/yv+D/+n/JP8P/4T/IP8B/wD/AP9J/w//hP/T/wD/AP8A/4P/6f8a/3T/c/+D/+n/Cv90/zL/hf89/wAAAAAAAAAAdf8Z/43/Rf/4/1D/jf+F/zD/////////UP+N/0X/oP9Q/+j/AAAAAAAAAADp/xX/Af8A/wD/jf+F/2D/////////UP/o/wAAAAAAAAAA6f+U/wD/AP8A/0D/o/8AAAAAAAAAAI3/Rf/4/1D/jf9F/5D/UP+N/0X/uP9q/13/UP+N/0X/gP9Q/+j/AAAAAAAAAABZ/4v/yP/o/wAAAAAAAAAAi//I/+j/AAAAAAAAAABQ/43/Tf/4/+j/AAAAAAAAAACz/wH/6f/Z/wD/AP8A/4X/Pf8AAAAAAAAAAHX/R/+N/4X/UP////////9Q/+j/AAAAAAAAAABZ/1D/jf+F/3D/////////UP9q/2D/jf9N/7D/6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAUP+N/03/8P/o/wAAAAAAAAAAjf9F//j/jf9N//D/UP+N/0X/qP9Q/43/Rf+Y/2r/J/9Q/+j/AAAAAAAAAADr/3r/jf9F/4j/UP/o/wAAAAAAAAAAWf/r/37/gP/6/0D/dP8L/0D/o/8AAAAAAAAAAID/OP9A/3X/9f9A/43/jf9o/////////6P/AAAAAAAAAACN/0X/+P9Q/43/hf94/////////1D/aP8AAAAAAAAAAOj/AAAAAAAAAACL/8j/6P8AAAAAAAAAAFD/jf9N/+j/6P8AAAAAAAAAAI3/Rf/o/+v/L/9I/6P/AAAAAAAAAACN/0X/+P9Q/43/hf9Y/////////1D/jf9F/9D/6/8L/43/Rf/4/1D/jf9F/8D/UP+N/0X/2P9Q/+j/AAAAAAAAAABZ/4v/yP/o/wAAAAAAAAAAUP+N/03/+P/o/wAAAAAAAAAA9v9F//z/D/8P/4T/7P/9//////+h/wAAAAAAAAAAiv8A/4T/wP90/xD/PP9A/3T/Sv9q/wH/jf9N//j/6P8AAAAAAAAAAOv/Pv+N/03/+P/o/wAAAAAAAAAAhf/A/3T/BP9q/wL/6//m/43/Rf/4/43/Tf/Q/1D/jf9F/9j/UP+N/0X/wP9W/1D/av8C/+j/AAAAAAAAAACL/8j/6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAUP+N/03/+P/o/wAAAAAAAAAAi/9N/wj/jf9F//j/UP/o/wAAAAAAAAAAi/9F/wj/X/9e/1v/yf/D/w==
   symbols:

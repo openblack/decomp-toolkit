@@ -1,0 +1,45 @@
+- symbol: 0
+  hash: 300e8058e048d0f032336b878fbdc5c2a6e0d158
+  signature: V/9W/1X/U/+D/+z/FP+J/0z/JP8Q/4v/Sf8E/4v/Wf8E/4v/6f+6/wH/AP8A/wD/i/81/wAAAAAAAAAAO//e/3T/J/+L/0T/JP8s/4v/AP+Q/43/tP8m/wD/AP8A/wD/i//r/zP/0v87/0P/DP8P/5L/wv+F/9L/D/+F/9D/AP8A/wD/i/9b/wj/O//e/3X/5/+L/3T/JP8Q/4r/Rv8I/4T/wP8P/4X/j/8A/wD/AP+L/8X/hf/S/4n/LP8k/3T/D/87/yn/dP9X/43/DP8k/+j/AAAAAAAAAACL/wT/JP+L/0j/DP+L/1T/JP8s/zv/Cv9y/xb/i/9U/yT/KP+J/wL/xv9C/wT/AP+L/8L/g//E/xT/W/9d/17/X//C/wj/AP+N/0T/JP8M/4v/VP8k/yz/Uv9V/1P/UP+L/87/6P8AAAAAAAAAAIv/VP8k/wz/i/9E/yT/KP+J/xD/xv9A/wT/Af+D/8T/FP9b/13/Xv9f/8L/CP8A/43/RP8k/wj/i/9U/yT/LP9S/1X/U/9Q/4v/zv/o/wAAAAAAAAAAi/9U/yT/CP+L/0T/JP8o/4n/EP/G/0D/BP8B/4P/xP8U/1v/Xf9e/1//wv8I/wD/jf9E/yT/BP+L/1T/JP8s/1L/Vf9T/1D/i//O/+j/AAAAAAAAAACL/1T/JP8E/4v/RP8k/yj/if8Q/8b/QP8E/wH/g//E/xT/W/9d/17/X//C/wj/AP+L/xv/6f8s/////////w==
+  symbols:
+  - kind: Function
+    name: ?insert@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@QAE?AU?$pair@Viterator@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@_N@2@ABU?$pair@$$CBKK@2@@Z
+    size: 281
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Nil@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@1PAU_Node@12@A
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: ?_Dec@const_iterator@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Insert@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@IAE?AViterator@12@PAU_Node@12@0ABU?$pair@$$CBKK@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 105
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 160
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 203
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 246
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

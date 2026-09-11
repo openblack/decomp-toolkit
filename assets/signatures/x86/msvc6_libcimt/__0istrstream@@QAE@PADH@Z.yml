@@ -1,0 +1,91 @@
+- symbol: 0
+  hash: be5042c52d551980efee6d0726d182a7d734adfa
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/U/9W/1f/M//b/zn/Xf8Q/4v/8f9q/wH/if91/+z/if9d//D/X/90/xT/jf9O/wz/x/8G/wAAAAAAAAAA6P8AAAAAAAAAAIn/ff/w/4n/Xf/8/2r/ZP/o/wAAAAAAAAAAWf+L/8j/if9N/xD/O//L/4n/ff/8/3T/Dv9T////df8M////df8I/+j/AAAAAAAAAADr/wL/M//A/1P/UP+L/87/iP9d//z/6P8AAAAAAAAAAIv/Bv+L/03/9P+L/0D/BP/H/wT/MP8AAAAAAAAAAIv/Bv+L/0D/BP+J/3z/MP8c/4v/xv9f/17/W/9k/4n/Df8AAAAAAAAAAMn/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ??0istrstream@@QAE@PADH@Z
+    size: 141
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L19040
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_8istrstream@@7B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0ios@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0strstreambuf@@QAE@PADH0@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0istream@@QAE@PAVstreambuf@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7istrstream@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 97
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 112
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 133
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

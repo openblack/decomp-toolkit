@@ -35,3 +35,49 @@
     kind: x86_rel32
     symbol: 3
     addend: -4
+- symbol: 0
+  hash: ef2f26452d25ef91134b8f3970e9790f737919b0
+  signature: Vf+L/+z/Vv+L/3X/CP9X/4v/Rv8M/6j/g/90/3D/i/99/xT/hf///3T/Cv+D////Af90/wX/g////wL/df9f/yT/7/+D////Af+J/0b/DP91/w//Vv/o/wAAAAAAAAAAAf9F/wz/Wf8R/1X/EP8z////Vv/o/wAAAAAAAAAAi/9G/wz/Wf+o/4D/dP8H/yT//P+J/0b/DP/r/xT/qP8B/3T/EP+o/wj/dP8M//b/xP8E/3X/B//H/0b/GP8A/wL/AP8A/1f///91/xD///91/wz///92/xD/6P8AAAAAAAAAACP/wv+D/8T/EP+D//j///90/w7/M//A/+v/Df/H/wX/AAAAAAAAAAAW/wD/AP8A/4P/yP///1//Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: __fseeki64
+    size: 144
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __ftelli64
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseeki64
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 44
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 129
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

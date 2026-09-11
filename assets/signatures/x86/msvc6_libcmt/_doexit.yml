@@ -1,4 +1,143 @@
 - symbol: 0
+  hash: 1f99b2fbe0b3dd00368871ca91feeef12648fc8a
+  signature: V/9q/wH/X/85/z3/AAAAAAAAAAB1/xH///90/yT/CP///xX/AAAAAAAAAABQ////Ff8AAAAAAAAAAIP/fP8k/wz/AP9T/4v/XP8k/xT/if89/wAAAAAAAAAAiP8d/wAAAAAAAAAAdf88/6H/AAAAAAAAAACF/8D/dP8i/4v/Df8AAAAAAAAAAFb/jf9x//z/O//w/3L/E/+L/wb/hf/A/3T/Av///9D/g//u/wT/O/81/wAAAAAAAAAAc//t/17/aP8AAAAAAAAAAGj/AAAAAAAAAADo/wAAAAAAAAAAWf9Z/2j/AAAAAAAAAABo/wAAAAAAAAAA6P8AAAAAAAAAAFn/Wf+F/9v/W/91/xD///90/yT/CP+J/z3/AAAAAAAAAAD//xX/AAAAAAAAAABf/8P/
+  symbols:
+  - kind: Function
+    name: _doexit
+    size: 153
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __C_Exit_Done
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __imp__GetCurrentProcess@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__TerminateProcess@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __C_Termination_Done
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: __exitflag
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ___onexitbegin
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___onexitend
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xp_z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xp_a
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __initterm
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___xt_z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___xt_a
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__ExitProcess@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 47
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 89
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 102
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 107
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 114
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 119
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 124
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 141
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 147
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+- symbol: 0
   hash: 5114c14b1d3dacc2b29b54c73688bf291d6d5eb1
   signature: V//o/wAAAAAAAAAAav8B/1//Of89/wAAAAAAAAAAdf8R////dP8k/wj///8V/wAAAAAAAAAAUP///xX/AAAAAAAAAACD/3z/JP8M/wD/U/+L/1z/JP8U/4n/Pf8AAAAAAAAAAIj/Hf8AAAAAAAAAAHX/PP+h/wAAAAAAAAAAhf/A/3T/Iv+L/w3/AAAAAAAAAABW/43/cf/8/zv/8P9y/xP/i/8G/4X/wP90/wL////Q/4P/7v8E/zv/Nf8AAAAAAAAAAHP/7f9e/2j/AAAAAAAAAABo/wAAAAAAAAAA6P8AAAAAAAAAAFn/Wf9o/wAAAAAAAAAAaP8AAAAAAAAAAOj/AAAAAAAAAABZ/1n/hf/b/1v/dP8H/+j/AAAAAAAAAABf/8P///90/yT/CP+J/z3/AAAAAAAAAAD//xX/AAAAAAAAAABf/8P/
   symbols:

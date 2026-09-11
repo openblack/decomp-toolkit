@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 4810e8729834d7617290148ff8edc85722cd94c9
+  signature: Vf+L/+z/Vv+L//H/6P8AAAAAAAAAAIX/wP90/2b/i/8G/1f/i/9A/wT/A//G/4P/eP8w/wD/dP8c/4r/Rf8I/4D/Zf8L/wD/iP9F/wr/jf9F/wr/UP9o/wAAAAAAAAAAi//O/+j/AAAAAAAAAADr/zT/D/+2/33/CP+L/0j/BP9X/+j/AAAAAAAAAACD//j///91/yL/i/8G/1f/i/9A/wT/i/9M/zD/BP+L/wH///9Q/xz/g//4////df8O/4v/Bv+L/0D/BP+D/0z/MP8I/wb/jf9E/zD/CP+L/87/6P8AAAAAAAAAAF//i//G/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??6ostream@@QAEAAV0@E@Z
+    size: 124
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?opfx@ostream@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_00A@?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?writepad@ostream@@AAEAAV1@PBD0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sputc@streambuf@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?osfx@ostream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: d473ff495baf1337d8f582beddc8084b8d92cc8f
+  signature: Vv+L/3T/JP8I/+j/AAAAAAAAAACD//7/Bf90/0b/g//+/wb/df8R/6H/NP8C/xX/Af+D//j/Af90/zz/6P8AAAAAAAAAAF7/w/+D//7/Af90/yT/g//+/wL/dP8Y/4P//v8D/3T/DP+D//7/BP91/yH/6P8AAAAAAAAAAF7/w//o/wAAAAAAAAAAXv/D/+j/AAAAAAAAAABe/8P/6P8AAAAAAAAAAF7/w//o/wAAAAAAAAAAXv/D/w==
+  symbols:
+  - kind: Function
+    name: ?process_ma@@YAXK@Z
+    size: 92
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?check_mem_type@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?perform_st@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?perform_prefnta@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?perform_preft2@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?perform_preft1@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?perform_preft0@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?perform_ld@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 58
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 86
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

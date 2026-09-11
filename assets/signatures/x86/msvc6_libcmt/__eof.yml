@@ -1,4 +1,67 @@
 - symbol: 0
+  hash: b45401ba002bed6e4b11908177b4c4ab9fa77461
+  signature: Vv+L/3T/JP8I/zv/Nf8AAAAAAAAAAHP/Xv+L/8b/i//O/8H/+P8F/4P/4f8f/4v/BP+F/wAAAAAAAAAA9v9E/8j/BP8B/3T/Rv9X/2r/Af9q/wD/Vv/o/wAAAAAAAAAAi//4/4P/xP8M/4P//////3T/K/9q/wL/av8A/1b/6P8AAAAAAAAAAIP/xP8M/4P/+P///3T/Gf87//j/df8F/2r/Af9Y/+v/E/9q/wD/V/9W/+j/AAAAAAAAAACD/8T/DP8z/8D/6/8D/4P/yP///1//Xv/D/4P/Jf8AAAAAAAAAAAD/x/8F/wAAAAAAAAAACf8A/wD/AP+D/8j///9e/8P/
+  symbols:
+  - kind: Function
+    name: __eof
+    size: 129
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 44
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 64
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 109
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 116
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
   hash: e13f341da3fe8bac93c6e4bc95896a9dfa3a4fbc
   signature: Vv+L/3T/JP8I/zv/Nf8AAAAAAAAAAHP/cP+L/87/i//G/8H/+f8F/4P/4P8f/4v/DP+N/wAAAAAAAAAAjf8E/8D/9v9E/4H/BP8B/3T/Vf9X/1b/6P8AAAAAAAAAAGr/Af9q/wD/Vv/o/wAAAAAAAAAAi//4/4P/xP8Q/4P//////3T/K/9q/wL/av8A/1b/6P8AAAAAAAAAAIP/xP8M/4P/+P///3T/Gf87//j/df8F/2r/Af9f/+v/E/9q/wD/V/9W/+j/AAAAAAAAAACD/8T/DP8z////6/8D/4P/z////1b/6P8AAAAAAAAAAFn/i//H/1//Xv/D/+j/AAAAAAAAAADH/wD/Cf8A/wD/AP/o/wAAAAAAAAAAg/8g/wD/g//I////Xv/D/w==
   symbols:

@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: 7287abb88649a520c2d453e63806519eaf1982f4
+  signature: U/9W/4v/dP8k/xD/V/9q/wT/jf98/yT/FP9b////Tv8E/3j/Cv+L/wb/iv8P/4j/CP///wb/6/8M/w//vv8H/1b/UP/o/wAAAAAAAAAAWf9Z/0f/S/91/+H/9v9G/wz/IP9f/17/W/90/wT/g//I////w/+L/0T/JP8E/8P/
+  symbols:
+  - kind: Function
+    name: __putw
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flsbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 35
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
   hash: 964ce68fd85941d6e88a9abc668eb3d3d5dff269
   signature: U/9W/4v/dP8k/xD/V/9W/43/fP8k/xT/6P8AAAAAAAAAAFn/av8E/1v///9O/wT/eP8K/4v/Bv+K/w//iP8I////Bv/r/wz/D/++/wf/Vv9Q/+j/AAAAAAAAAABZ/1n/R/9L/3X/4f/2/0b/DP8g/3T/Bf+D/8/////r/wT/i/98/yT/EP9W/+j/AAAAAAAAAABZ/4v/x/9f/17/W//D/w==
   symbols:

@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 50cff41bba227fb11ac829ed2ad06b0d04fa068f
+  signature: Vv+L//H/av8B/+j/AAAAAAAAAACF/8D/dP9y/4v/Bv9T/1f/i/9A/wT/i/9M/zD/BP/o/wAAAAAAAAAAD/++/1z/JP8U/4v/+P87//v/dP9O/4v/Bv+D//////+L/0D/BP90/zv/i/9M/zD/BP/o/wAAAAAAAAAAi/9M/yT/EP///0b/CP9X/+j/AAAAAAAAAACD//j///91/w7/i/8G/4v/QP8E/4P/TP8w/wj/Av+N/0T/MP8I/4v/Bv+L/0D/BP+L/0z/MP8E/+j/AAAAAAAAAACL//j/6/+3/4P/TP8w/wj/Af+N/0T/MP8I/4v/zv/o/wAAAAAAAAAAX/9b/4v/xv9e/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?get@istream@@QAEAAV1@AAVstreambuf@@D@Z
+    size: 134
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ipfx@istream@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sgetc@streambuf@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?stossc@streambuf@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sputc@streambuf@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?isfx@istream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 102
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 122
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

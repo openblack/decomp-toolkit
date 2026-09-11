@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: abf4e37bb8c6754e4139a73a660eb9eb6ca09dce
+  signature: w/8=
+  symbols:
+  - kind: Function
+    name: __setargv
+    size: 1
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 84213f29e41b3d1fa0bfe3e083daf7bf7650897d
+  signature: Vf+L/+z/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __setargv
+    size: 5
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: df53b32f12651d247731380fb13bbbda1a102c8f
+  signature: Vf+L/+z/g//s/xT/U/9W/6H/AAAAAAAAAABX/77/AAAAAAAAAACN/33//P9m/6X/pP+J/0X/+P8z/8D/jf99////i//Z/6r/6P8AAAAAAAAAAIX/wP90/27/g/99/wj/AP90/z//i/8L/4v/Qf8E/4v/RP8D/yT/qP9g/3T/Kf+o/0D/dP8R/8H/6P8E//b/0P8k/yD/DP9Y/4j/Rf/6/4j/Rf/9/+v/BP/G/0X/+v9v/4v/Qf8E//b/RP8D/yT/gP90/w//xv9F//z/MP/r/wn/9v/E/wT/dP8E/8b/Rf/8/yv///91/wj/jf9F//j/UP+N/0X/7P9Q/+j/AAAAAAAAAACD/8T/DP+N/0X/7P+L/8v/UP+N/0X//P9Q/+j/AAAAAAAAAACL/8v/6P8AAAAAAAAAAF//i//D/17/W//J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??6ostream@@QAEAAV0@K@Z
+    size: 164
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_03JGAL@?$CFlu?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_02A@?$AA?$AA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?opfx@ostream@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _sprintf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?writepad@ostream@@AAEAAV1@PBD0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?osfx@ostream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 126
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 144
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 151
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

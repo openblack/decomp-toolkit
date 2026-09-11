@@ -1,4 +1,130 @@
 - symbol: 0
+  hash: 3d91123fb08fafe13b1aa46d87acef20fc32f33c
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/LP9T/1b/i/91/yD/M//b/1f/if9d//D/jf99/+j/i/9N/xz/jf9F/yD/UP+J/x3/AAAAAAAAAADo/wAAAAAAAAAAUP+N/0X/FP9o/wD/CP8A/wD/UP+N/0X/DP+J/13//P9Q/43/Rf/I/1D/6P8AAAAAAAAAAFD/jf9F/+z/UP+N/0X/yP9Q/+j/AAAAAAAAAACD/03//P///4P/xP8g/43/Tf8g/4n/B//o/wAAAAAAAAAAjf9F/xT/jf9N/wz/UP/o/wAAAAAAAAAAhP/A/3T/A/+D/w7/Af+N/0X/yP85/0X/7P90/0z/Of8d/wAAAAAAAAAAdf9E////Rf/w/4P/x/8E/4P/ff/w/wH/ff87/43/Rf8U/43/Tf8M/1D/6P8AAAAAAAAAAIT/wP91/yj/OP9d/xD/df8I/43/Tf8M/+j/AAAAAAAAAABq/zr/6P8AAAAAAAAAAGb/Of9F/xL/Wf91/w3/jf9N/wz/6P8AAAAAAAAAAOn/Tv////////+D/w7/Av/2/wb/Av9f/17/W/91/wj/i/9F/yT/i/9N/+j/if8I/4v/Rf8I/4v/Tf8M/4n/CP+L/03/EP+J/0j/BP+L/03/9P9k/4n/Df8AAAAAAAAAAMn/wv8g/wD/
+  symbols:
+  - kind: Function
+    name: ?do_get@?$num_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@MBE?AV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@V32@0AAVios_base@2@AAHAAPAX@Z
+    size: 252
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L16388
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?getloc@ios_base@std@@QBE?AVlocale@2@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Getifld@?$num_get@GV?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@@std@@CAHPADAAV?$istreambuf_iterator@GU?$char_traits@G@std@@@2@1HABVlocale@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _strtoul
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1locale@std@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?equal@?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@QBE_NABV12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Peek@?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@AAEGXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _btowc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Inc@?$istreambuf_iterator@GU?$char_traits@G@std@@@std@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 41
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 110
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 131
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 157
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 174
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 181
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 196
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 244
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+- symbol: 0
   hash: a8428b3b14d8fa6f700634d7dc5f928e47fc7917
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/LP9T/1b/i/91/yD/M//b/1f/if9d//D/jf99/+j/6P8AAAAAAAAAAIv/Tf8c/4n/GP+N/0X/IP9Q/+j/AAAAAAAAAABQ/43/Rf8U/2j/AP8I/wD/AP9Q/43/Rf8M/4n/Xf/8/1D/jf9F/8j/UP/o/wAAAAAAAAAAUP+N/0X/7P9Q/43/Rf/I/1D/6P8AAAAAAAAAAIP/Tf/8////g//E/yD/jf9N/yD/if8H/+j/AAAAAAAAAACN/0X/FP+N/03/DP9Q/+j/AAAAAAAAAACE/8D/dP8D/4P/Dv8B/43/Rf/I/zn/Rf/s/3T/Tf/o/wAAAAAAAAAAOf8Y/3X/RP///0X/8P+D/8f/BP+D/33/8P8B/33/O/+N/0X/FP+N/03/DP9Q/+j/AAAAAAAAAACE/8D/df8o/zj/Xf8Q/3X/CP+N/03/DP/o/wAAAAAAAAAAav86/+j/AAAAAAAAAABm/zn/Rf8S/1n/df8N/43/Tf8M/+j/AAAAAAAAAADp/0z/////////g/8O/wL/9v8G/wL/X/9e/1v/df8I/4v/Rf8k/4v/Tf/o/4n/CP+L/0X/CP+L/03/DP+J/wj/i/9N/xD/if9I/wT/i/9N//T/ZP+J/w3/AAAAAAAAAADJ/8L/IP8A/w==
   symbols:

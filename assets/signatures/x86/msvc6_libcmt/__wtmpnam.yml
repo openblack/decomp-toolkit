@@ -1,4 +1,63 @@
 - symbol: 0
+  hash: f3839215b6fe7322ee1d7e4114bfa19764e7472d
+  signature: Zv+D/z3/AAAAAAAAAAAA/1b/vv8AAAAAAAAAAHX/Fv9q/wD/6P8AAAAAAAAAAFn/av8A/1b/6P8AAAAAAAAAAFn/hf/A/1n/df8P/1b/6P8AAAAAAAAAAIX/wP9Z/3T/5/8z/8D/Xv/D/1f/i/98/yT/DP+F////df8E/4v//v/r/wn/Vv9X/+j/AAAAAAAAAABZ/1n/i//H/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __wtmpnam
+    size: 80
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _namebuf0
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _winit_namebuf
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __waccess
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wgenfname
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 28
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+- symbol: 0
   hash: c736ee7b0ec47facdc9fb9b4fabcd3994a607926
   signature: U/9W/1f/av8D/+j/AAAAAAAAAAAz/9v/Wf9m/zn/Hf8AAAAAAAAAAL7/AAAAAAAAAAB1/xT/U//o/wAAAAAAAAAAWf9T/1b/6P8AAAAAAAAAAFn/hf/A/1n/df8P/1b/6P8AAAAAAAAAAIX/wP9Z/3T/6P8z////6/8z/4v/fP8k/xD/O//7/3X/Iv/o/wAAAAAAAAAAi//4/zn/X/8s/3X/E/9q/xr/6P8AAAAAAAAAADv/w/9Z/4n/R/8s/3X/BP+L//7/6/8M/4v/f/8s/1b/V//o/wAAAAAAAAAAWf9Z/2r/A//o/wAAAAAAAAAAWf+L/8f/X/9e/1v/w/8=
   symbols:

@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: af5e207f67fb4c2b21edced608e199331173c2d8
+  signature: i/9E/yT/BP9W/4v/8f+J/0b/BP/H/wb/AAAAAAAAAAD3/9j/G//A/4P/Tv80////JP/8/8f/Rv8o/wb/AP8A/wD/g//A/wT/xv9G/yz/IP+J/0b/CP8z/8D/if9G/wz/if9G/xD/if9G/yD/if9G/yT/if9G/zD/if9G/xz/jf9G/zj/UP/o/wAAAAAAAAAAof8AAAAAAAAAAP//Bf8AAAAAAAAAAIX/wP9Z/3X/C/9o/wAAAAAAAAAA6P8AAAAAAAAAAFn/i//G/17/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??0ios@@QAE@PAVstreambuf@@@Z
+    size: 105
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7ios@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __mtlockinit
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?fLockcInit@ios@@0HA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?x_lockc@ios@@0U_CRT_CRITICAL_SECTION@@A
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 68
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 73
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 79
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 89
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 94
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

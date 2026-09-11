@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: 08e22326fbd32fae70792056cc1cb87728511d33
+  signature: //90/yT/DP/G/wX/AAAAAAAAAAAB////dP8k/wz///90/yT/DP/o/wAAAAAAAAAAgP8l/wAAAAAAAAAAAP+D/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: __cftof_g
+    size: 35
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _g_fmt
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __cftof
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

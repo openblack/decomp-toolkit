@@ -71,3 +71,89 @@
     kind: x86_rel32
     symbol: 7
     addend: -4
+- symbol: 0
+  hash: 65db5f0ca12779b59f53d59a448d00d39cfe67a8
+  signature: Vf+L/+z/Uf9R/4v/Rf8I/1b/O/8F/wAAAAAAAAAAV/8P/4P/gP8A/wD/AP+L/8j/i//w/8H/+f8F/4P/5v8f/43/PP+N/wAAAAAAAAAAwf/m/wP/i/8P//b/RP8x/wT/Af90/2P/i/9N/wz/UP+J/03/+P+L/03/EP+J/03//P/o/wAAAAAAAAAAg//4////Wf91/wz/x/8F/wAAAAAAAAAACf8A/wD/AP/r/1D///91/xT/jf9N//z/Uf///3X/+P9Q////Ff8AAAAAAAAAAIP/+P///4n/Rf/4/3X/E////xX/AAAAAAAAAACF/8D/dP8J/1D/6P8AAAAAAAAAAFn/6/8k/4v/B/+A/2T/MP8E//3/i/9V//z/jf9E/zD/BP+L/0X/+P/r/xf/g/8l/wAAAAAAAAAAAP/H/wX/AAAAAAAAAAAJ/wD/AP8A/4P/yP///4P/yv///1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: __lseeki64
+    size: 177
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetFilePointer@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 77
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 100
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 114
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 124
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 152
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 159
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

@@ -8,7 +8,7 @@
     flags: 1
     section: .text
   - kind: Unknown
-    name: $ReturnPoint$16650
+    name: ''
     size: 0
     flags: 2
     section: .text

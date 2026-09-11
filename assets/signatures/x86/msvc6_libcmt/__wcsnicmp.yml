@@ -1,4 +1,36 @@
 - symbol: 0
+  hash: d298285dcaabde86572b84a3d1ff57476c5e72c0
+  signature: Vf+L/+z/M//A/zn/Rf8Q/w//hP+G/wD/AP8A/zn/Bf8AAAAAAAAAAFP/df9B/4v/Vf8M/4v/Tf8I/2b/i/8B/2b/Pf9a/wD/d/8J/2b/Pf9B/wD/jf9Y/yD/c/8C/4v/2P9m/4v/Av9m/z3/Wv8A/3f/Cf9m/z3/Qf8A/3L/A/+D/8D/IP9B/0H/Qv9C////Tf8Q/3T/P/9m/4X/2/90/zr/Zv87/9j/dP/H/+v/M/9W/4v/df8I/1f/i/99/wz/Zv+L/wb/Rv9Q/0b/6P8AAAAAAAAAAIv/2P9m/4v/B/9H/1D/R//o/wAAAAAAAAAA//9N/xD/Wf9Z/3T/Cv9m/4X/2/90/wX/Zv87/9j/dP/X/1//Xv8P/7f/yP8P/7f/w/8r/8H/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: __wcsnicmp
+    size: 150
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _towlower
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 103
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: ea562a9028655167fd22972cf89c03e49d228c96
   signature: Vf+L/+z/Uf9W/zP/9v8z/8D/Of91/xD/D/+E/+P/AP8A/wD/Of81/wAAAAAAAAAAU/91/1H/i/9V/wz/i/9N/wj/Zv+L/wH/Zv89/1r/AP93/wn/Zv89/0H/AP9y/wP/g//A/yD/if9F/wz/Zv+L/wL/Zv89/1r/AP93/wn/Zv89/0H/AP9y/wP/g//A/yD/Qf+J/0X/CP9B/0L/Qv///03/EP8P/4T/kv8A/wD/AP+L/0X/DP9m/zv/xv8P/4T/hv8A/wD/AP9m/zv/Rf8I/3T/t//r/37/u/8AAAAAAAAAAFP///8V/wAAAAAAAAAAOf81/wAAAAAAAAAAdP8Y/1P///8V/wAAAAAAAAAAav8T/+j/AAAAAAAAAABZ/8f/Rf/8/wH/AP8A/wD/6/8D/4n/df/8/4v/df8I/1f/i/99/wz/Zv+L/wb/Rv9Q/0b/6P8AAAAAAAAAAIn/Rf8M/2b/i/8H/0f/UP9H/+j/AAAAAAAAAAD//03/EP9Z/1n/if9F/wj/dP8N/2b/g/99/wz/AP90/wb/Zv85/0X/DP90/9D/g/99//z/AP9f/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8H/1P///8V/wAAAAAAAAAAD/+3/03/CP8P/7f/Rf8M/yv/wf9b/17/yf/D/w==
   symbols:

@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 32e3059b4e074630b163365d91bb0e9c29e983a5
+  signature: Vv+L//H/i/8G/4v/QP8E/wP/xv+D/3j/CP8A/3X/V/+L/0D/BP+D/3j/MP8A/33/Cv+D/8D/NP9Q/+j/AAAAAAAAAABZ/4v/Bv///3T/JP8I/4v/QP8E/4v/TP8w/wT/6P8AAAAAAAAAAIP/+P///3X/FP+L/wb/i/9A/wT/jf8M/zD/i/9E/zD/CP8M/wL/UP/o/wAAAAAAAAAAi/8G/4v/QP8E/4v/RP8w/wT/g/94/zD/AP99/wr/g//A/zT/UP/o/wAAAAAAAAAAWf+L/8b/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?putback@istream@@QAEAAV1@D@Z
+    size: 109
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sputbackc@streambuf@@QAEHD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?clear@ios@@QAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 30
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 49
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

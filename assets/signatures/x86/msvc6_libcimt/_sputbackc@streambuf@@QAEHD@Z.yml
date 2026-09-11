@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b265d8be967de940ab6fa6bb83064bb49213c0f9
+  signature: i/9B/yj/Of9B/yT/c/8P/0j/if9B/yj/iv9M/yT/BP+I/wj/D/++/8H/6/8L/w//vv9U/yT/BP+L/wH/Uv///1D/JP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?sputbackc@streambuf@@QAEHD@Z
+    size: 37
+    flags: 1
+    section: .text
+  relocations: []

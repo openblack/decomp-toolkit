@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 6b1bf543b5f5fdab2386fd05158baa0d8b23126d
+  signature: D/9d/wX/wP8C/wD/AP8P/yj/Df8AAAAAAAAAAA//X/8F/7D/Av8A/wD/D/9X/9L/D/9Y/8j/D//C/9H/Bf9m/w//2/8V/0D/AP8A/wD/8/8P/1v/yf9m/w//+v/K/w//KP8l/4D/Av8A/wD/D/8o/zX/kP8C/wD/AP8P/1v/0f8P/1z/wv8P/yj/0P8P/1n/wP9m/w///v8N/xD/Av8A/wD/D/9Z/+D/D/9Z//D/D/9Y/yX/YP8C/wD/AP8P/1j/Nf9w/wL/AP8A/w//Wf/g/w//WP8l/1D/Av8A/wD/D/9Z/9T/D/9c//L/Zv8P/3L/8f8X/w//U//2/w//KP8F/wAAAAAAAAAAD/9Z/9b/D/9Y/9L/D/9Y/8L/D/9Z/8H/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _am_exp2_eps@16
+    size: 147
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_0p5
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 128
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

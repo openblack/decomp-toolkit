@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: cab8057e719da6632ace1ad2b75636caddf396c3
+  signature: i/9E/yT/BP+F/8D/df8D/zP/wP/D/4v/Df8c/wD/AP8A/43/FP8I/4v/wf+J/xX/HP8A/wD/AP/D/w==
+  symbols:
+  - kind: Function
+    name: _pgopti_Disk_Alloc
+    size: 29
+    flags: 2
+    section: .text
+  relocations: []

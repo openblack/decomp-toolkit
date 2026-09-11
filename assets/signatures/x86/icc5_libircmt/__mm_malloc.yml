@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e1e1ad8df2e11cd6d139f35055dca6b663c97acc
+  signature: U/+D/+z/CP+L/0T/JP8Q/4v/XP8k/xT/jf9U/xj/BP+J/xT/JP/o/wAAAAAAAAAAg//7/wT/d/8F/7v/BP8A/wD/AP+N/1P///+D//L///+N/0z/A/8D/yP/yv+J/0H//P+L/8H/g//E/wj/W//D/5D/
+  symbols:
+  - kind: Function
+    name: __mm_malloc
+    size: 57
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

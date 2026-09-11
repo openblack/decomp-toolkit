@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 810c8d19b1177963fdcc1a0fbee78a4f562920c0
+  signature: Vv+L//H/g/9+/0z///90/wr/g/9+/xT/AP90/wT/M//A/+v/Tf9T/1f/i/98/yT/EP+F////dP84/4v/XP8k/xT/hf/b/37/MP+D/37/MP8A/33/Cv+N/0b/NP9Q/+j/AAAAAAAAAABZ/43/BP8f/2r/AP9Q/1f/i//O/+j/AAAAAAAAAACD/37/MP8A/33/E/+N/0b/NP9Q/+j/AAAAAAAAAABZ/+v/B//H/0b/CP8B/wD/AP8A/1//i//G/1v/Xv/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?setbuf@filebuf@@UAEPAVstreambuf@@PADH@Z
+    size: 100
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?setb@streambuf@@IAEXPAD0H@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 48
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 78
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

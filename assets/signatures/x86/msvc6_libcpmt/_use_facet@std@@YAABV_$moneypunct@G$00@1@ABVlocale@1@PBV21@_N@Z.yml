@@ -1,4 +1,179 @@
 - symbol: 0
+  hash: c1f40d4788eb1a102263f7d3453cbd90b619af03
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/DP+h/wAAAAAAAAAAg/9l//z/AP+F/8D/df8Q////Bf8AAAAAAAAAAKH/AAAAAAAAAACj/wAAAAAAAAAAi/9N/wj/av8B/1D/6P8AAAAAAAAAAIX/wP91/1b/OP9F/xD/dP9d/4v/Tf8I/+j/AAAAAAAAAACE/8D/dP9R/6H/AAAAAAAAAACF/8D/df88/1b/av8s/+j/AAAAAAAAAACL//D/Wf+J/3X/EP+F//b/xv9F//z/Af90/xP/av8B/2r/AP+L/87/6P8AAAAAAAAAAMf/Bv8AAAAAAAAAAOv/Av8z//b/gP9l//z/AP9W/+j/AAAAAAAAAABZ/6P/AAAAAAAAAABe/4v/Tf/0/2T/if8N/wAAAAAAAAAAyf/D/43/Rf8Q/43/Tf/o/1D/x/9F/xD/AAAAAAAAAADo/wAAAAAAAAAAjf9F/+j/aP8AAAAAAAAAAFD/x/9F/+j/AAAAAAAAAADo/wAAAAAAAAAA
+  symbols:
+  - kind: Function
+    name: ?use_facet@std@@YAABV?$moneypunct@G$00@1@ABVlocale@1@PBV21@_N@Z
+    size: 195
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L23326
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?id@?$moneypunct@G$00@std@@2V0locale@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?_Id_cnt@id@locale@std@@0HA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Getfacet@locale@std@@QBEPBVfacet@12@I_N@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Iscloc@locale@std@@QBE_NXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Psave@?1??use_facet@std@@YAABV?$moneypunct@G$00@2@ABVlocale@2@PBV32@_N@Z@4PBVfacet@42@B
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$_Mpunct@G@std@@QAE@I_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$moneypunct@G$00@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Save@?$_Tidyfac@V?$moneypunct@G$00@std@@@std@@SAPAV?$moneypunct@G$00@2@PAV32@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BF@MMAA@missing?5locale?5facet?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0exception@@QAE@ABQBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __TI2?AVbad_cast@std@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Object
+    name: ??_7bad_cast@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 14
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 49
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 75
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 87
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 118
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 132
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 138
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 149
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 165
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 170
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 178
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 186
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 191
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+- symbol: 0
   hash: 2c7f8663e42681defc837cc2185a6bc6c49510fb
   signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/EP9W/43/Tf/w/+j/AAAAAAAAAACD/2X//P8A/7n/AAAAAAAAAADo/wAAAAAAAAAAi/9N/wj/av8B/1D/6P8AAAAAAAAAAIv/8P+F//b/df9X/zj/Rf8Q/3T/bf+L/03/CP/o/wAAAAAAAAAAhP/A/3T/Yf+L/zX/AAAAAAAAAACF//b/df88/2r/LP/o/wAAAAAAAAAAi//w/1n/if91/xD/hf/2/8b/Rf/8/wH/dP8T/2r/Af9q/wD/i//O/+j/AAAAAAAAAADH/wb/AAAAAAAAAADr/wL/M//2/4D/Zf/8/wD/Vv/o/wAAAAAAAAAAWf+j/wAAAAAAAAAAi//w/4P/Tf/8////jf9N//D/6P8AAAAAAAAAAIv/Tf/0/4v/xv9e/2T/if8N/wAAAAAAAAAAyf/D/43/Rf8Q/43/Tf/k/1D/x/9F/xD/AAAAAAAAAADo/wAAAAAAAAAAjf9F/+T/aP8AAAAAAAAAAFD/x/9F/+T/AAAAAAAAAADo/wAAAAAAAAAA
   symbols:

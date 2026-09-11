@@ -1,0 +1,124 @@
+- symbol: 0
+  hash: 70bcc44266a3321985400b257ae13e7521e47784
+  signature: Vf+L/+z/U/+L/13/CP9W/4v/df8M/1f/i/99/xD/hf/2/3X/Cf+D/z3/AAAAAAAAAAAA/+v/Jv+D//7/Af90/wX/g//+/wL/df8i/6H/AAAAAAAAAACF/8D/dP8J/1f/Vv9T////0P+F/8D/dP8M/1f/Vv9T/+j/AAAAAAAAAACF/8D/df8E/zP/wP/r/07/V/9W/1P/6P8AAAAAAAAAAIP//v8B/4n/Rf8M/3X/DP+F/8D/df83/1f/UP9T/+j/AAAAAAAAAACF//b/dP8F/4P//v8D/3X/Jv9X/1b/U//o/wAAAAAAAAAAhf/A/3X/A/8h/0X/DP+D/33/DP8A/3T/Ef+h/wAAAAAAAAAAhf/A/3T/CP9X/1b/U////9D/if9F/wz/i/9F/wz/X/9e/1v/Xf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: __DllMainCRTStartup@12
+    size: 157
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___proc_attached
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __pRawDllMain
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __CRT_INIT@12
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _DllMain@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 60
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 113
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 131
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: ba02cf5f0416652c6126a5b6340d7fabb95fa8ff
+  signature: Vf+L/+z/Uf/H/0X//P8B/wD/AP8A/4P/ff8M/wD/df8Q/4P/Pf8AAAAAAAAAAAD/df8H/zP/wP/p/8z/AP8A/wD/g/99/wz/Af90/wb/g/99/wz/Av91/0L/g/89/wAAAAAAAAAAAP90/xX/i/9F/xD/UP+L/03/DP9R/4v/Vf8I/1L///8V/wAAAAAAAAAAif9F//z/g/99//z/AP90/xT/i/9F/xD/UP+L/03/DP9R/4v/Vf8I/1L/6P8AAAAAAAAAAIn/Rf/8/4P/ff/8/wD/df8E/zP/wP/r/37/i/9F/xD/UP+L/03/DP9R/4v/Vf8I/1L/6P8AAAAAAAAAAIn/Rf/8/4P/ff8M/wH/df8V/4P/ff/8/wD/df8P/4v/Rf8Q/1D/av8A/4v/Tf8I/1H/6P8AAAAAAAAAAIP/ff8M/wD/dP8G/4P/ff8M/wP/df9A/4v/Vf8Q/1L/i/9F/wz/UP+L/03/CP9R/+j/AAAAAAAAAACF/8D/df8H/8f/Rf/8/wD/AP8A/wD/g/99//z/AP90/x7/g/89/wAAAAAAAAAAAP90/xX/i/9V/xD/Uv+L/0X/DP9Q/4v/Tf8I/1H///8V/wAAAAAAAAAAif9F//z/i/9F//z/i//l/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: __DllMainCRTStartup@12
+    size: 243
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___proc_attached
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __pRawDllMain
+    size: 4
+    flags: 1
+    section: null
+  - kind: Function
+    name: __CRT_INIT@12
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _DllMain@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 47
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 94
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 124
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 183
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 206
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 227
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

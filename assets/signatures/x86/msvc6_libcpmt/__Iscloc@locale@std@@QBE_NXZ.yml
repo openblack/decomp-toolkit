@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: 27f6656d51f0a27a8879457377b9563a15153706
+  signature: i/8B/4v/Df8AAAAAAAAAADv/wf90/xH/gP94/xT/AP90/wj/Of8N/wAAAAAAAAAAdP8D/zL/wP/D/7D/Af/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Iscloc@locale@std@@QBE_NXZ
+    size: 32
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Clocptr@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?_Global@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: b70b56eac1ab16487b81fef11ac646b60360a794
   signature: Vf+L/+z/Uf9T/1b/i//x/43/Tf/8/+j/AAAAAAAAAACL/wb/i/8N/wAAAAAAAAAAO//B/3T/D/8y/9v/OP9Y/xT/dP8K/zn/Df8AAAAAAAAAAHX/Av+z/wH/jf9N//z/6P8AAAAAAAAAAIr/w/9e/1v/yf/D/w==
   symbols:

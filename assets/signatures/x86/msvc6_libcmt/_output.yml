@@ -13,7 +13,7 @@
     flags: 1
     section: null
   - kind: Unknown
-    name: $L17885
+    name: ''
     size: 0
     flags: 2
     section: .text

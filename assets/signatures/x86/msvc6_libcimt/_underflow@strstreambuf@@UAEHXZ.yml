@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2278fdebd8cb6ada25b0988bd0ffd6f60217b641
+  signature: i/9B/yz/Vv+L/3H/KP87//D/cv8t/4v/Uf8c/zv/wv9z/xn/i/9B/xD/V/+L/3n/JP+J/0H/JP8r/8f/if9R/yz/A//G/4P/Sf8M////if9B/yj/X/+L/3H/KP87/3H/LP9y/wX/g//I////Xv/D/w//tv8G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?underflow@strstreambuf@@UAEHXZ
+    size: 61
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 6794b56e9130134fe66e88e573ae1970f89665b3
+  signature: i/9B/xz/O/9B/yD/c/8O/4r/VP8k/wT/iP8Q////Qf8c/w//tv/C/+v/Cf+L/wH///90/yT/BP///1D/HP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?sputc@streambuf@@QAEHH@Z
+    size: 34
+    flags: 1
+    section: .text
+  relocations: []

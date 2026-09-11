@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 627f0a7cb8d8d1a853a233bbd0cf293c2421551a
+  signature: Vf+L/+z/av8g/1j/6P8AAAAAAAAAAFb/i//x/2r/AP/o/wAAAAAAAAAAhf/A/3T/Kv+N/0X/4P9q/yD/UP+L/87/6P8AAAAAAAAAAIX/wP9+/xL/jf9F/+D/av8A/1D/6P8AAAAAAAAAAIv/Rf8I/1n/Wf/d/xj/i//O/+j/AAAAAAAAAACL/8b/Xv/J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??5istream@@QAEAAV0@AAO@Z
+    size: 74
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __chkstk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?ipfx@istream@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?getdouble@istream@@AAEHPADH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strtod
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?isfx@istream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 34
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 49
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

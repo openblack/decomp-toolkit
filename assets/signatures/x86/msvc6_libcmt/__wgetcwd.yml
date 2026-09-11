@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: 807c521444b42b58f37f8f182338b19c693e94db
+  signature: //90/yT/CP///3T/JP8I/2r/AP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: __wgetcwd
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __wgetdcwd
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
   hash: 65c8b9e7c5adbb7ca8a241a038eadbea1ca21d49
   signature: Vv9q/wz/6P8AAAAAAAAAAP//dP8k/xD///90/yT/EP9q/wD/6P8AAAAAAAAAAGr/DP+L//D/6P8AAAAAAAAAAIP/xP8U/4v/xv9e/8P/
   symbols:

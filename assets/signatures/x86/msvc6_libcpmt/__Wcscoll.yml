@@ -1,4 +1,59 @@
 - symbol: 0
+  hash: eed263a0cbca3df04ac3f4ed6d7ffbaf97d5052e
+  signature: Vf+L/+z/i/9F/xj/Vv+L/3X/DP9X/4v/ff8U/yv/df8I/yv/ff8Q/9H//v/R////hf/A/3X/B/+h/wAAAAAAAAAA6/8C/4v/AP+F/8D/df8m/zv/9/+L/8b/cv8C/4v/x/9Q////df8Q////df8I/+j/AAAAAAAAAACD/8T/DP+F/8D/df88/zv/9/90/zj/G//A/yT//v9A/+v/Mf///zX/AAAAAAAAAABX////df8Q/1b///91/wj/av8A/1D/6P8AAAAAAAAAAIP/xP8c/4X/wP91/xH/x/8F/wAAAAAAAAAAFv8A/wD/AP+4/////////3//6/8D/4P/wP/+/1//Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: __Wcscoll
+    size: 132
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __Wmemcmp
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ___lc_collate_cp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtCompareStringW
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 57
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 81
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 97
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 110
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
   hash: 1dc2cc7a527f72b72050c106d55d184fbfc83a08
   signature: Vf+L/+z/U/9W/4v/df8M/1f/i/99/xT/K/91/wj/K/99/xD/u/8AAAAAAAAAAFP/0f/+/9H//////xX/AAAAAAAAAACD/z3/AAAAAAAAAAAA/3T/GP9T////Ff8AAAAAAAAAAGr/E//o/wAAAAAAAAAAWf/H/0X/DP8B/wD/AP8A/+v/BP+D/2X/DP8A/4v/Rf8Y/4X/wP91/wf/of8AAAAAAAAAAOv/Av+L/wD/hf/A/3X/PP85/0X/DP90/wr/av8T/+j/AAAAAAAAAABZ/+v/B/9T////Ff8AAAAAAAAAADv/9/+L/8b/cv8C/4v/x/9Q////df8Q////df8I/+j/AAAAAAAAAACD/8T/DP+F/8D/df9s/zv/9/90/2j/G//A/yT//v9A/+v/Yf///zX/AAAAAAAAAABX////df8Q/1b///91/wj/av8A/1D/6P8AAAAAAAAAAIv/8P+D/8T/HP+F//b/df8o/zn/Rf8M/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8H/1P///8V/wAAAAAAAAAA6P8AAAAAAAAAAMf/AP8W/wD/AP8A/7j/////////f//r/xr/g/99/wz/AP90/wr/av8T/+j/AAAAAAAAAABZ/+v/B/9T////Ff8AAAAAAAAAAI3/Rv/+/1//Xv9b/13/w/8=
   symbols:

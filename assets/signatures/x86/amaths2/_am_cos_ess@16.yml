@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 5d412ff55e14e9e7f0059b76a475e4a73faf2116
+  signature: 8/8P/xD/Df8AAAAAAAAAAPP/D/8Q/xX/AAAAAAAAAADz/w//EP8d/wAAAAAAAAAAD/9U/8H/8/8P/1j/wv/z/w//Wf/D/2b/D//v/9v/Zv8P/27/Lf9A/wD/AP8A//P/D/8Q/yX/AAAAAAAAAADz/w//W//Q/2b/D//b/+r/Zv8P/27/Df9g/wD/AP8A/2b/D/92/+v/D/9b//L/Zv8P/9v/0f9m/w//cv/y/x7/8/8P/1z/xv/z/w//EP8d/zD/AP8A/wD/8/8P/13/xP/z/w//XP/g/w//VP/F/w//Vf/s/w//Vv/F/w//KP/I//P/D/8Q/yX/IP8A/wD/AP/z/w//Wf/A//P/D/8Q/y3/EP8A/wD/AP8P/1b/yv8P/yj/+P/z/w//Wf/D//P/D/8Q/zX/AP8A/wD/AP/z/w//WP/E//P/D/9Z/8f/8/8P/1j/xf/z/w//Wf/H//P/D/9Y/8b/8/8P/1n/wf/C/xD/AP+Q/w==
+  symbols:
+  - kind: Function
+    name: _am_cos_ess@16
+    size: 185
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_inv_sign_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_pi_o_2
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_2_o_pi
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

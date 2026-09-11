@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 0283a0e6f5ef17222d6f6d94f96d63071f46eb47
+  signature: Vv9X/2b/i/98/yT/EP+L//H/Zv+D////A/90/xb/Zv+D////Cv90/xb/Zv+D////C/90/wr/aP9X/wD/B/+A/+j/AAAAAAAAAABm/4P///8K/3X/B/9m/8f/Bv8K/wD/6/8c/2b/g////wv/df8R/4v/RP8k/wz/Zv+J/z7/9//Y/xv/wP9m/4n/Rv8I/+v/DP9m/8f/Bv8D/wD/i/9E/yT/DP+J/0b/CP+L/8b/X/9e/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0_variant_t@@QAE@JG@Z
+    size: 92
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_com_issue_error@@YGXJ@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 33
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

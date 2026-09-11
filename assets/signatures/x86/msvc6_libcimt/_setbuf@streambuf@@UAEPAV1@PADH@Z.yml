@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 306c27940760df2dae79e8571d0e8292962693b1
+  signature: i//B/4P/eP8Q/wD/df8n/4v/TP8k/wT/hf/J/3T/Fv+L/1T/JP8I/4X/0v90/w7/if9I/xD/A//K/4P/YP8I/wD/if9I/xT/6/8L/8f/QP8I/wH/AP8A/wD/6/8C/zP/wP/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?setbuf@streambuf@@UAEPAV1@PADH@Z
+    size: 52
+    flags: 1
+    section: .text
+  relocations: []

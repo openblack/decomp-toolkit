@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 02064abd25d287b7d0b6e915e2c54bcda5c60eb7
+  signature: Vv+L//H/g/9+/0z///90/wT/M//A/+v/Y/+D/37/MP8A/33/Cv+N/0b/NP9Q/+j/AAAAAAAAAABZ/4v/RP8k/wj/g//4////if9G/0z/dP81/4P/fv8I/wD/df8v/4P/fv8U/wD/df8p/2j/AP8C/wD/AP/o/wAAAAAAAAAAhf/A/1n/df8J/8f/Rv8I/wH/AP8A/wD/6/8R/43/iP8A/wL/AP8A/2r/Af9R/1D/i//O/+j/AAAAAAAAAACD/37/MP8A/33/Cv+N/0b/NP9Q/+j/AAAAAAAAAABZ/4v/xv9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?attach@filebuf@@QAEPAV1@H@Z
+    size: 116
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?setb@streambuf@@IAEXPAD0H@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 105
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

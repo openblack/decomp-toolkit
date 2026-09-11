@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 67752c7e29737b12df8fba4390d9378b319871d8
+  signature: i/9E/yT/BP+F/8D/dP8M/yT//P///3D//P///xX/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: __aligned_free
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 12a92087071624ac5233ecc6af8b57249deea72e
+  signature: Vf+L/+z/Uf+D/33/CP8A/3X/Av/r/yf/i/9F/wj/if9F//z/i/9N//z/g//h//z/g//p/wT/if9N//z/i/9V//z/i/8C/4n/Rf/8/4v/Tf/8/1H///8V/wAAAAAAAAAAg//E/wT/i//l/13/w/8=
+  symbols:
+  - kind: Function
+    name: __aligned_free
+    size: 55
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 44
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

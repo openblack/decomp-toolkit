@@ -1,4 +1,41 @@
 - symbol: 0
+  hash: 6c7009d41816d2c0c5e5ce68d5e628d0a75040b8
+  signature: Vf+L/+z/g/89/wAAAAAAAAAAAP91/w////91/wz///91/wj/6P8AAAAAAAAAAFn/Wf9d/8P/i/9N/wj/Zv8P/7b/Af9m/4X/wP90/zr/D/+2/9D/9v+C/wAAAAAAAAAABP90/xr/iv9R/wH/Qf+E/9L/dP8d/w//t//A/w//tv/S/8H/4P8I/wv/wv85/0X/DP90/xH/6/8I/w//t//Q/zn/Vf8M/3T/DP9B/+v/xv8z/8D/Xf/D/43/Qf///13/w/8P/7f/0P+L/0X/DP8r/8L/9//Y/xv/wP/3/9D/I//B/13/w/8=
+  symbols:
+  - kind: Function
+    name: __mbschr
+    size: 115
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
   hash: 7d3bc5249c4c45c7abf4a34ca162195a66fd000c
   signature: Vf+L/+z/g/89/wAAAAAAAAAAAP9T/1b/df8P////df8M////df8I/+j/AAAAAAAAAABZ/1n/6/92/2r/Gf/o/wAAAAAAAAAAi/91/wj/Wf9m/w//tv8e/2b/hf/b/3T/Sv8P/7b/w//2/4D/AAAAAAAAAAAE/3T/Gv+K/0b/Af9G/4T/wP90/x3/D/+3/8v/D/+2/8D/wf/h/wj/C//I/zn/Tf8M/3T/Gf/r/wj/D/+3/8P/Of9F/wz/dP8c/0b/6//G/2r/Gf/o/wAAAAAAAAAAWf8z/8D/6/8l/2r/Gf/o/wAAAAAAAAAAWf+N/0b////r/xj/av8Z/+j/AAAAAAAAAACL/0X/DP9Z/w//t//L/yv/wf/3/9j/G//A//f/0P8j/8b/Xv9b/13/w/8=
   symbols:

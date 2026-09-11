@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: b4f1501582471dbed842cd57612e21f8a3e50401
+  signature: Vf+L/+z/g/99/wz/AP9T/4v/Xf8I/1f/i//7/3//BP8z/8D/6/82////Tf8M/1b/dP8q/4v/df8Q////Tv8E/3j/Cv+L/w7/D/+2/wH/Qf+J/w7/6/8H/1b/6P8AAAAAAAAAAFn/g//4////dP8W/4j/B/9H/zz/Cv90/wX///9N/wz/df/Z/4D/J/8A/4v/w/9e/1//W/9d/8P/O/99/wj/df/x/zP/2//r//D/
+  symbols:
+  - kind: Function
+    name: _fgets
+    size: 87
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __filbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 46
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
   hash: 78b79aa82c503f528718595be20aeb5f648ab68c
   signature: Vf+L/+z/g/99/wz/AP9T/4v/Xf8I/1f/i//7/3//BP8z/8D/6/9K/1b/i/91/xD/Vv/o/wAAAAAAAAAAWf///03/DP90/y3///9O/wT/eP8K/4v/Dv8P/7b/Af9B/4n/Dv/r/wf/Vv/o/wAAAAAAAAAAWf+D//j///90/wn/iP8H/0f/PP8K/3T/C//r/9f/O/99/wj/df8E/zP/2//r/wP/gP8n/wD/Vv/o/wAAAAAAAAAAWf+L/8P/Xv9f/1v/Xf/D/w==
   symbols:

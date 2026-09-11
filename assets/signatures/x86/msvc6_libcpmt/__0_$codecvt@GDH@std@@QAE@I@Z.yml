@@ -8,7 +8,7 @@
     flags: 1
     section: .text
   - kind: Unknown
-    name: $L22695
+    name: ''
     size: 0
     flags: 2
     section: .text$x

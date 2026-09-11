@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: acf66a2482f51adab4c8c2321f6a043e455aee2a
+  signature: D/9X/+3/D//C/+j/Af+L/8z/D/9f/wX/AAAAAAAAAAAP/yj/Pf8AAAAAAAAAAA//KP/Y/4P/4f/w/w//VP8F/wAAAAAAAAAAD/9W/8f/D/8p/2n/8P8P/yj/4P8P/1z/x/8P/1j/5/9m/w//cv/T/xf/D/9T/+T/D/9Z/8T/Zv8P//r/Hf8Q/wL/AP8A/w//WP/A/w//KP/Q/w//Wf/A/w//KP8l/zD/A/8A/wD/D/8o/zX/IP8D/wD/AP8P/1n/4P8P/yj/Lf8Q/wP/AP8A/w//Wf/w/w//KP89/wD/A/8A/wD/D/9Y/+X/D/9Y//f/D/8o/y3/8P8C/wD/AP8P/1n/4P8P/yj/Pf/g/wL/AP8A/w//Wf/w/w//WP/l/w//KP8t/0D/A/8A/wD/D/9Y//f/D/9b//v/D/9Z/8T/D/9T//b/D/9Z/8b/D/8o/yX/wP8C/wD/AP8P/1n/wv8P/yj/Nf+w/wL/AP8A/w//Wf/V/w//Wf/F/w//WP/X/w//KP8d/wAAAAAAAAAAD/9Y/8L/D/9X/9L/D/9Z/8H/D/9d/8T/D/8o/yX/gP8C/wD/AP8P/1//xv8P/yj/Nf+Q/wL/AP8A/w//WP/Y/w//wv/T/wX/Zv8P/9v/Ff9A/wD/AP8A//P/D/9b/9v/Zv8P//r/2v8P/yj/Lf9g/wL/AP8A/w//W//T/w//KP89/3D/Av8A/wD/D/9c/8L/D/8o/9D/D/9Z/8D/Zv8P//7/Hf8Q/wL/AP8A/w//Wf/g/w//Wf/w/w//WP/l/w//WP/3/w//Wf/g/w//KP9p//D/Zv8P/3L/8/8X/w//WP8l/1D/Av8A/wD/D/9Z/9T/D/8o/wX/AAAAAAAAAAAP/1z/8v8P/1T/3f8P/1P/9v8P/1n/1v8P/1j/0v8P/1j/wv8P/1n/w//C/yD/AP8=
+  symbols:
+  - kind: Function
+    name: _am_pow_eps@32
+    size: 349
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_min_norm_pos
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_inv_mant_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_0p5
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 194
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 321
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

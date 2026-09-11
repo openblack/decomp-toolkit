@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: 71685ef517fe9dbe211f372a0ff5a0822c742c21
+  signature: g/89/wAAAAAAAAAAAP9W/3X/BP8z/8D/Xv/D/4v/dP8k/wj/g//I////iv8O/4T/yf90/xj/UP9R/0b/6P8AAAAAAAAAAFn/Wf+L/0z/JP8M////TP8k/wz/hf/J/3T/Bf/r/+L/g//I////Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __mbsbtype
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __mbbtype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: af86f2d27a88d7eaf5e5182d687842973605707d
   signature: g/89/wAAAAAAAAAAAP91/wP/M//A/8P/Vv9q/xn/6P8AAAAAAAAAAIv/dP8k/wz/Wf+D/8j///+K/w7/hP/J/3T/GP9Q/1H/Rv/o/wAAAAAAAAAAWf9Z/4v/TP8k/wz///9M/yT/DP+F/8n/dP8H/+v/4v+D/87////r/wL/i//w/2r/Gf/o/wAAAAAAAAAAWf+L/8b/Xv/D/w==
   symbols:

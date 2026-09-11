@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: e6b27b2f30cbb4254faaccb3a24e12cc8603c177
+  signature: jf9E/yT/DP9Q////dP8k/wz///90/yT/DP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: _fwscanf
+    size: 22
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __winput
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
   hash: 7c3d1867bea275d9e1c28283747a6b714e4c8bd5
   signature: Vf+L/+z/Vv///3X/CP/o/wAAAAAAAAAAjf9F/xD/UP///3X/DP///3X/CP/o/wAAAAAAAAAA//91/wj/i//w/+j/AAAAAAAAAACD/8T/FP+L/8b/Xv9d/8P/
   symbols:

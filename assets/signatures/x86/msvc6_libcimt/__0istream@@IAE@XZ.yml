@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 98fa5fd2fa09eee959af665e1300049e82d9eef6
+  signature: Vf+L/+z/Uf+D/2X//P8A/4P/ff8I/wD/Vv+L//H/dP8O/43/Tv8M/8f/Bv8AAAAAAAAAAOj/AAAAAAAAAACL/wb/i/9A/wT/x/8E/zD/AAAAAAAAAACL/wb/i/9A/wT/g/9M/zD/JP8B/4P/Zv8I/wD/g/9m/wT/AP+N/0T/MP8k/4v/xv9e/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??0istream@@IAE@XZ
+    size: 72
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_8istream@@7B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0ios@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7istream@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

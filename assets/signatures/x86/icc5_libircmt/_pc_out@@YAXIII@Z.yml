@@ -1,0 +1,27 @@
+- symbol: 0
+  hash: ca2b288607d92841995397365b85cd9cc4f35936
+  signature: Vv+L/w3/IP8F/xX/Af+N/0T/JP8I/2r/BP9Q/+j/AAAAAAAAAACL/w3/IP8F/xX/Af+N/0T/JP8M/2r/BP9Q/+j/AAAAAAAAAACL/w3/IP8F/xX/Af+N/0T/JP8Q/2r/BP9Q/+j/AAAAAAAAAACD/8T/BP/D/5D/
+  symbols:
+  - kind: Function
+    name: ?pc_out@@YAXIII@Z
+    size: 60
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?write@ostream@@QAEAAV1@PBDH@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

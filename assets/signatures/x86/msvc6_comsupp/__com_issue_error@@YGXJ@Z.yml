@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 6edb3b9086a31e316f49042d81f148901e43b7c0
+  signature: av8A////dP8k/wj/6P8AAAAAAAAAAML/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_com_issue_error@@YGXJ@Z
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_com_raise_error@@YGXJPAUIErrorInfo@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,83 @@
+- symbol: 0
+  hash: 8e119730fb088d0afa534f920a88c5b675b5a657
+  signature: U/9W/1f/i/98/yT/FP+N/0f///+F/8f/dP8O////Ff8AAAAAAAAAAMf/AP8W/wD/AP8A/+v/Kv+D////BP93/wP/av8E/1//i/9c/yT/GP+L/0T/JP8Q/43/c/8D/4P/5v/8/wP/xv+N/0T/OP8E/1D///8V/wAAAAAAAAAAWf+L/8j/hf/J/3X/BP8z/8D/6/8V/43/BP8x/43/RP84/wT/T//3/9f/I//H/4v/0P8r/9b/K//D/4n/Sv/8/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: __aligned_offset_malloc
+    size: 99
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp___errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 59
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 5ffb090f38f9964e2cafe4a98e7cbbe6a2c1b8f6
+  signature: Vf+L/+z/g//s/xT/U/9W/1f/i/9F/wz/g//o/wH/i/9N/wz/I//I/4X/yf90/z7/M//S/4X/0v91/x//aP8AAAAAAAAAAGr/AP9q/23/aP8AAAAAAAAAAGr/Av///xX/AAAAAAAAAACD/8T/FP+D//j/Af91/wH/zP8z/8D/hf/A/3X/1f///xX/AAAAAAAAAADH/wD/Fv8A/wD/AP8z/8D/6f+E/wD/AP8A/4P/ff8M/wT/dv8I/4v/Tf8M/4n/Tf/s/+v/B//H/0X/7P8E/wD/AP8A/4v/Vf/s/4n/Vf8M/4v/Rf8Q/4P/wP8D/yT//P+J/0X/9P+L/03/9P8D/03/CP+L/1X/DP+N/0T/Ef8E/1D///8V/wAAAAAAAAAAg//E/wT/if9F//z/g/99//z/AP91/wT/M//A/+v/Ov+L/03//P8D/03/DP+L/1X/9P+N/0T/Ef8E/4v/Tf8M/4P/6f8B//f/0f8j/8H/if9F//D/i/9V//D/K/9V//T/g//q/wT/if9V//j/i/9F//D/K/9F/xD/if9F//D/i/9N//j/i/9V//z/if8R/4v/Rf/w/1//Xv9b/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: __aligned_offset_malloc
+    size: 225
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CG@OIKL@?$CI?$CCalignment?5must?5be?5a?5power?5of?52@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_07HCJA@align?4c?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp___CrtDbgReport
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp___errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 31
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 140
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

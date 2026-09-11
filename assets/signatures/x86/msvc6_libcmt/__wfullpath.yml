@@ -1,4 +1,85 @@
 - symbol: 0
+  hash: 247c8594c3b2c507548ffe83f8e5d0cfabcd8e61
+  signature: Vf+L/+z/U/9W/1f/i/99/wz/hf///w//hP+E/wD/AP8A/2b/g/8//wD/dP9+/4v/Xf8I/4X/2/91/yb/aP8I/wL/AP8A/+j/AAAAAAAAAACL//D/Wf+F//b/df8M/8f/Bf8AAAAAAAAAAAz/AP8A/wD/6/9S/8f/Rf8Q/wT/Af8A/wD/6/8C/4v/8/+N/0X/CP9Q/1b///91/xD/V////xX/AAAAAAAAAAA7/0X/EP9y/xf/hf/b/3X/B/9W/+j/AAAAAAAAAABZ/8f/Bf8AAAAAAAAAACL/AP8A/wD/6/8c/4X/wP91/xz/hf/b/3X/B/9W/+j/AAAAAAAAAABZ////Ff8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/M//A/+v/Ef+L/8b/6/8N////df8Q////df8I/+j/AAAAAAAAAABZ/1n/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __wfullpath
+    size: 167
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFullPathNameW@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __wgetcwd
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 36
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 49
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 96
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 103
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 123
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 130
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 136
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 156
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+- symbol: 0
   hash: 70fba599af10871e6bb74790dd4e4a2c0bb56ee6
   signature: Vf+L/+z/U/9W/1f/i/99/wz/hf///w//hP+K/wD/AP8A/2b/g/8//wD/D/+E/4D/AP8A/wD/i/9d/wj/hf/b/3X/J/9o/wj/Av8A/wD/6P8AAAAAAAAAAIv/8P9Z/4X/9v91/w3/6P8AAAAAAAAAAMf/AP8M/wD/AP8A/+v/U//H/0X/EP8E/wH/AP8A/+v/Av+L//P/jf9F/wj/UP9W////df8Q/1f///8V/wAAAAAAAAAAO/9F/xD/cv8Y/4X/2/91/wf/Vv/o/wAAAAAAAAAAWf/o/wAAAAAAAAAAx/8A/yL/AP8A/wD/6/8c/4X/wP91/xz/hf/b/3X/B/9W/+j/AAAAAAAAAABZ////Ff8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/M//A/+v/Ef+L/8b/6/8N////df8Q////df8I/+j/AAAAAAAAAABZ/1n/X/9e/1v/Xf/D/w==
   symbols:

@@ -1,14 +1,24 @@
 - symbol: 0
-  hash: c952c5c3e1c4b63523d15310b15112106680c474
-  signature: of8AAAAAAAAAAMP/
+  hash: 830fe2ee375744c666d212b5d3bf4c92f587fe69
+  signature: of8AAAAAAAAAAIP/+P8D/3X/Bv+h/wAAAAAAAAAAw/9I/0j/9//Y/xv/wP/3/9D/I/8F/wAAAAAAAAAAw/8=
   symbols:
   - kind: Function
     name: __get_sbh_threshold
-    size: 6
+    size: 31
     flags: 1
     section: .text
   - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
     name: ___sbh_threshold
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___old_sbh_threshold
     size: 0
     flags: 1
     section: .data
@@ -16,4 +26,12 @@
   - offset: 1
     kind: x86_abs32
     symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 3
     addend: 0

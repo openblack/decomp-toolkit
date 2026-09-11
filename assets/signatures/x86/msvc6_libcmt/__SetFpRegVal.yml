@@ -1,10 +1,10 @@
 - symbol: 0
-  hash: 3c6b4229a05a3233b7833916eabe9ef92f2f53b0
-  signature: U/+L/1z/JP8I/4v/Q/8E/8H/6P8L/4P/4P8H/wP/RP8k/wz/eP9b/4P/+P8I/33/Vv9W/43/DP+A/1f/i//7/9H/4f8r//n/i/9M/yT/GP+D/8f/Yv+L//H/pf+l/2b/pf9m/4v/cf8I/7r///9//wD/AP8j//L/dP8P/zP/yf87//L/D/+U/8H/Sf+D/+H//v9B/0H/6/8S/4P/Of8A/3X/Cv+D/3n/BP8A/3X/BP9q/wH/6/8C/2r/Av9Z/1H/g//D/wj/UP9T/+j/AAAAAAAAAACD/8T/DP9f/17/W//D/w==
+  hash: 2588eaa51d91353750e48c464df9dcfff22fd47e
+  signature: i/9M/yT/CP+F/8n/fP9n/4P/+f8I/33/Yv+L/1T/JP8E/1P/i/9c/yT/EP+N/wT/if9W/1f/jf98/0L/HP+L//P/pf+l/2b/pf+L/0L/BP9m/4v/e/8I/8H/6P8L/wP/wf++////f/8A/wD/g//g/wf/I//+/3T/D/8z/8n/O//+/w//lP/B/0n/g//h//7/Qf9B/+v/Ev+D/zv/AP91/wr/g/97/wT/AP91/wT/av8B/+v/Av9q/wL/Wf9R/4P/wv8I/1D/Uv/o/wAAAAAAAAAAg//E/wz/X/9e/1v/w/8=
   symbols:
   - kind: Function
     name: __SetFpRegVal
-    size: 113
+    size: 112
     flags: 1
     section: .text
   - kind: Function
@@ -13,7 +13,7 @@
     flags: 1
     section: .text
   relocations:
-  - offset: 102
+  - offset: 101
     kind: x86_rel32
     symbol: 1
     addend: -4

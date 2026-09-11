@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: be8280c30579d3f7f64507c9b9c7ed6cfa916278
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4n/df/w/8f/Bv8AAAAAAAAAAIP/Zf/8/wD/6P8AAAAAAAAAAIP/Tf/8////i//O/+j/AAAAAAAAAACL/03/9P9e/2T/if8N/wAAAAAAAAAAyf/D/w==
+  symbols:
+  - kind: Function
+    name: ??1stdiobuf@@UAE@XZ
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L18394
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7stdiobuf@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?sync@stdiobuf@@UAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1streambuf@@UAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 50
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

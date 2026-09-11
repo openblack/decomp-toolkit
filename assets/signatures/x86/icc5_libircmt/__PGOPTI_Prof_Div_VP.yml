@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 2e919c530ecbd00084d174d2f25106e30ac0546b
+  signature: V/9W/1X/U/+D/+z/FP+L/3T/JP8o/4v/bP8k/yz/i/98/yT/MP87/27/GP9y/xz/x/8E/yT/AAAAAAAAAADH/0T/JP8E/wAAAAAAAAAAx/9E/yT/CP8M/wL/AP8A/+j/AAAAAAAAAACL/0b/FP+N/xT/hv///4T/qv+M/wD/AP8A/4v/Tv8U/43/FP+O/4v/hP+q/4T/AP8A/wD/O//H/3X/EP+N/xz/rf9U/wD/AP8A////hP+q/4j/AP8A/wD/6/9A/43/HP+t/1T/AP8A/wD/if80/yT/if9s/yT/BP+J/0T/JP8I/4v/hP+q/4j/AP8A/wD/if9E/yT/DP/o/wAAAAAAAAAAi/9G/xT/jf8U/4b/x/+E/6r/iP8A/wD/AP8B/wD/AP8A/4v/Tv8U/43/BP+O/4n/vP+o/4T/AP8A/wD/i/9G/xT/jf8E/4b/jf88/63/XP8A/wD/AP+N/xT/OP+L/4z/qP+Q/wD/AP8A/4X/yf91/1X/if80/yT/i/+U/6j/hP8A/wD/AP+L/0T/A/80/4n/bP8k/wT/if9U/yT/CP+J/0T/JP8M/+j/AAAAAAAAAACL/0b/FP+N/xT/hv/H/0T/E/80/wD/AP8A/wD/if80/yT/if9s/yT/BP/o/wAAAAAAAAAAif80/yT/if9s/yT/BP/o/wAAAAAAAAAAi/9W/xT/jf8E/5b/jf8U/zj/i/+M/6j/kP8A/wD/AP9J/4n/Sv80/4P/xP8U/1v/Xf9e/1//w/8=
+  symbols:
+  - kind: Function
+    name: __PGOPTI_Prof_Div_VP
+    size: 286
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BM@A@loc?5?$DM?5PGOPTI_other_cnt?$CIvar?$CJ?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Object
+    name: ??_C@_08A@pgopti?4c?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Function
+    name: __assert
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _pgopti_Value_Prof_LFE_Insert
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _pgopti_Value_Prof_Sort
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _pgopti_Value_Prof_Clear_Non_Steady
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 48
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 128
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 216
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 242
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 254
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

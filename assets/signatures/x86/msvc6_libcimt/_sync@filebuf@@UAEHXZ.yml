@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 365eaabbf37744d55643c6d347cb2ea246e273be
+  signature: U/9W/4v/8f+D/8j///9X/4v/Tv9M/zv/yP8P/4T/xP8A/wD/AP8z/9v/Of9e/wj/D/+F/7f/AP8A/wD/i/9+/xz/i/9G/xj/O//4/3L/BP8r//j/6/8C/zP///87//v/dP8v/1f/UP9R/+j/AAAAAAAAAACD/8T/DP87/8f/dP8g/zv/w/9+/3z/Of9e/yD/dP8D/yn/Rv8c/4v/dv8Y/yv/+P8D/8b/V/9Q/1b/6P8AAAAAAAAAAIP/xP8M/+v/YP+L/87/if9e/xj/if9e/xz/if9e/yD/6P8AAAAAAAAAADv/w/9+/1P/i/9W/0z/i//6/4v/yv/B////Bf+D/+H/H/+L/zz/vf8AAAAAAAAAAI3/DP/J/4r/XP+P/wT/9v/D/4D/dP8Z/4v/Tv8o/4v/fv8s/zv/z/9z/wn/gP85/wr/df8B/0D/Qf/r//P/9v/D/wL/dP8B/0D/9//Y/2r/Af9Q/1L/6P8AAAAAAAAAAIP/xP8M/4P/+P///3X/Bf+D/8j////r/xH/M//b/4P/Tv8M////if9e/yT/if9e/yj/if9e/yz/M//A/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: ?sync@filebuf@@UAEHXZ
+    size: 219
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __write
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?in_avail@streambuf@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __lseek
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 54
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 133
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 181
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 63c8e9d46e962d897261b1c35260d5fb0cdef230
+  signature: Vf+L/+z/Uf+D/2X//P8A/1P/i/9d/wz/Vv+L/8P/S/+F/8D/V/+L//H/dP81/4v/ff8I/4P/fv8I/wD/df8R/4v/Rv8c/zv/Rv8g/3P/Cf+K/w//iP8I////Rv8c/+v/EP8P/7b/D/+L/wb/Uf+L/87///9Q/xz/g//4////dP8L/0f///9F//z/i//D/0v/hf/A/3X/zv+L/0X//P9f/17/W//J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?xsputn@streambuf@@UAEHPBDH@Z
+    size: 86
+    flags: 1
+    section: .text
+  relocations: []

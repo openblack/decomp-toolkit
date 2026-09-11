@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: 4afaa95b95ce6bb5696216b62481a09e9590ccc0
+  signature: uP8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: __errno
+    size: 6
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: e4c8dcf1cc0a3bec65c2456dac23428e3e6c2841
   signature: 6P8AAAAAAAAAAIP/wP8I/8P/
   symbols:

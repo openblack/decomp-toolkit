@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7eae860637c28a410c915607e6ec9eb40022baf9
+  signature: g/9h/0z/AP+L/0H/EP/D/w==
+  symbols:
+  - kind: Function
+    name: ?str@strstreambuf@@QAEPADXZ
+    size: 8
+    flags: 1
+    section: .text
+  relocations: []

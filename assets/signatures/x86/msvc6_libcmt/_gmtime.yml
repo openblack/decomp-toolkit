@@ -1,4 +1,77 @@
 - symbol: 0
+  hash: a7b7b1c5c86cf3ce0617906f235519b6e62f534d
+  signature: Vf+L/2z/JP8I/1b/M//2/4v/Tf8A/4X/yf99/wf/M//A/+n/4P8A/wD/AP+L/8H/U/9X/7//gP8f/4b/B/+Z//f///+L/9D/af/S/4D/4P95//j/A//K/7r/gP8z/+H/Af87/8r/jf8E/4X/Rv8A/wD/AP98/xv/K//K/0D/O//K/3z/FP8r/8r/uv8A/4X/4v8B/0D/O//K/3z/Bf9A/yv/yv/r/wP/av8B/17/o/8AAAAAAAAAAIv/wf+7/4D/Uf8B/wD/mf+L//v/9////4v/0P+j/wAAAAAAAAAAaf/S/4D/rv/+////A//K/4X/9v++/wAAAAAAAAAAdf8F/77/AAAAAAAAAABq/wH/jf9+/wT/Wv85/wf/ff8G/0L/g//H/wT/6//2/0r/av8H/4n/Ff8AAAAAAAAAACv/BP+W/17/av88/6P/AAAAAAAAAACL/0X/AP+Z//f/+/+D/8D/BP+Z//f//v+L/8H/vv8Q/w7/AP8A/4n/Ff8AAAAAAAAAAJn/9//+/17/X/9b/6P/AAAAAAAAAABp/8D/8P/x//////8D/8j/i//B/5n/9//+/6P/AAAAAAAAAABr/8D/PP8r/8j/g/8l/wAAAAAAAAAAAP+J/w3/AAAAAAAAAAC4/wAAAAAAAAAAXv9d/8P/
+  symbols:
+  - kind: Function
+    name: _gmtime
+    size: 249
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _tb
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: __lpdays
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __days
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 88
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 122
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 129
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 154
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 165
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 190
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 201
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 219
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 230
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 237
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 242
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 0c2d025ae49af10750bffdc11ce9eae57eed09bb
   signature: i/9E/yT/BP9T/1b/V/+L/zD/M//b/+j/AAAAAAAAAACF//b/i//4/33/B/8z/8D/6f/p/wD/AP8A/4P/f/9A/wD/df8U/2r/JP/o/wAAAAAAAAAAWf+J/0f/QP+F/8D/uf8AAAAAAAAAAHT/A/+L/0//QP+L/8b/v/+A/x//hv8H/5n/9////4v/0P9p/9L/gP/g/3n/+P8D//L/jf8U/4X/Rv8A/wD/AP+4/4D/M//h/wH/O//w/3z/G/8r//D/Qv87//D/fP8U/yv/8P+4/wD/hf/i/wH/Qv87//D/fP8F/0L/K//w/+v/A/9q/wH/W/+L/8b/if9R/xT/mf+//4D/Uf8B/wD/9////7//AAAAAAAAAACJ/0H/HP9p/8D/gP+u//7///8D//D/hf/b/3X/Bf+//wAAAAAAAAAAi/9R/xz/av8B/1j/jf9f/wT/Of8T/33/Bv9A/4P/w/8E/+v/9v+L/1H/HP9I/4n/Qf8Q/2r/B/8r/xT/h/+L/0T/JP8U/7//gP9R/wH/AP+J/1H/DP+L/wD/mf/3////X/9q/zz/g//A/wT/mf/3////i//G/7//EP8O/wD/AP+J/1H/GP+Z//f///9f/4n/Qf8I/2n/wP/w//H//////wP/8P+L/8b/mf/3////if9B/wT/a//A/zz/K//w/4P/Yf8g/wD/if8x/4v/wf9f/17/W//D/w==
   symbols:

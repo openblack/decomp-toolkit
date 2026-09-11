@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 0fbad45e5e18770cc60a942559c7b8cbe3a9361d
+  signature: g//s/wz/i/9E/yT/EP+F/8D/dP8L/4v/QP/8/4n/BP8k/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: __mm_free
+    size: 26
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

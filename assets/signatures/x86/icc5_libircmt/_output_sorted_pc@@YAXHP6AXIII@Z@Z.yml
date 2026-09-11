@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 300d91f393547000720aa50b7380886be532b32b
+  signature: V/9W/1X/uP8Y/4H/AP8A/+j/AAAAAAAAAACL/4z/JP8o/4H/AP8A/4v/rP8k/yz/gf8A/wD/M//S/zP/wP+Q/4P/+f8B/w//hP+H/wH/AP8A/4P/+f8C/w//hP9u/wH/AP8A/4P/+f8D/w//hP9F/wH/AP8A/4P/+f8E/w//hP8s/wH/AP8A/2n/8v+o/wj/AP8A/4P/+f8F/w//hP8P/wH/AP8A/4v/vv8c/wD/AP8A/wP/vv8g/wD/AP8A/4n/VP/U/xD/Bf+o/wj/AP8A/4n/fP/U/xT/Qv+B//r/AP8Q/wD/AP98/6v/sP8B/zP/0v+N/7T/Jv8A/wD/AP8A/4v/TP/U/xT/i/98/9T/HP9C/zv/z/9z/x7/i/9E/9T/CP+L/3z/1P8Q/4n/fP/U/wj/i/98/9T/FP+J/3z/1P8M/4n/RP/U/xD/if9M/9T/FP8y/8D/gf/6////D/8A/wD/fP/N/4T/wP90/77/M//S/zP/yf8z/8D/jf92/wD/i/98/8T/FP+D/8D/BP+F////dv8D/0L/i//K/4v/fP/E//z/hf///3b/A/9C/4v/yv+L/3z/xP8E/4X///92/wP/Qv+L/8r/i/98/8T/DP+F////dv8D/0L/i//K/z3/AP8Q/wD/AP98/8r/if+M/yT/EP+B/wD/AP+L/w3/IP8F/xX/Af+N/4T/JP8Q/4H/AP8A/2r/BP9Q/+j/AAAAAAAAAAAz/8D/i//9/4v/6P+Q/43/tP8m/wD/AP8A/wD/i/9U/+z/FP9F/4X/0v92/yf/i/9U/+z/CP9p/8r/qP8I/wD/AP+L/5H/AP8A/wD/AP+J/xT/JP+L/5H/JP8A/wD/AP+J/1T/JP8E/8f/RP8k/wj/Af8A/wD/AP///9f/gf/9/wD/EP8A/wD/fP/I/4H/xP8Y/4H/AP8A/13/Xv9f/8P/i/++/xj/AP8A/wD/6f/y//7//////43/dv8A/4v/uP8U/wD/AP8A/+n/5P/+//////+Q/43/dP8m/wD/i/+4/xT/AP8A/wD/A/+4/xj/AP8A/wD/6f/O//7//////5D/jf+0/yb/AP8A/wD/AP+N/7z/J/8A/wD/AP8A/4v/uP8g/wD/AP8A/+n/tP/+//////+Q/43/dP8m/wD/i/+4/xz/AP8A/wD/6f+k//7//////5D/
+  symbols:
+  - kind: Function
+    name: ?output_sorted_pc@@YAXHP6AXIII@Z@Z
+    size: 444
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __chkstk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?write@ostream@@QAEAAV1@PBDH@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 270
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

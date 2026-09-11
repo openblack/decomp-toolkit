@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 9db70a9a2a776d0710cb3627309787a50ff5adf5
+  signature: D/+3/0T/JP8E/4v/VP8k/wj/wf/i/xD/C//C/8P/kP8=
+  symbols:
+  - kind: Function
+    name: ?create_load_id@@YAIIH@Z
+    size: 16
+    flags: 2
+    section: .text
+  relocations: []

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7c1188cc238572958e596bff109eda2fed64a5d7
+  signature: M//S/4n/Ff8g/wL/Ff8B/7j/Af8A/wD/AP+J/xX/JP8C/xX/Af+J/xX/KP8C/xX/Af+J/xX/LP8C/xX/Af+j/zD/Av8V/wH/if8V/zT/Av8V/wH/ov84/wL/Ff8B/4j/Ff85/wL/Ff8B/4n/Ff88/wL/Ff8B/4n/Ff9A/wL/Ff8B/4n/Ff9E/wL/Ff8B/4n/Ff9I/wL/Ff8B/4n/Ff9M/wL/Ff8B/4n/Ff9Q/wL/Ff8B/4n/Ff9U/wL/Ff8B/4n/Ff9Y/wL/Ff8B/4j/Ff9c/wL/Ff8B/4n/Ff9g/wL/Ff8B/6P/ZP8C/xX/Af+J/xX/aP8C/xX/Af+i/2z/Av8V/wH/iP8V/23/Av8V/wH/if8V/3D/Av8V/wH/if8V/3T/Av8V/wH/if8V/3j/Av8V/wH/if8V/3z/Av8V/wH/if8V/4D/Av8V/wH/if8V/4T/Av8V/wH/if8V/4j/Av8V/wH/if8V/4z/Av8V/wH/iP8V/5D/Av8V/wH/if8V/5T/Av8V/wH/o/+Y/wL/Ff8B/4n/Ff+c/wL/Ff8B/4n/Ff+g/wL/Ff8B/4n/Ff+k/wL/Ff8B/4j/Ff+o/wL/Ff8B/4n/Ff+s/wL/Ff8B/4n/Ff+w/wL/Ff8B/4n/Ff+0/wL/Ff8B/4n/Ff+4/wL/Ff8B/6P/vP8C/xX/Af+I/xX/wP8C/xX/Af+J/xX/xP8C/xX/Af+J/xX/yP8C/xX/Af+J/xX/zP8C/xX/Af+J/xX/0P8C/xX/Af+J/xX/1P8C/xX/Af+J/xX/2P8C/xX/Af+J/xX/3P8C/xX/Af+J/xX/4P8C/xX/Af+J/xX/5P8C/xX/Af+J/xX/6P8C/xX/Af+J/xX/7P8C/xX/Af+J/xX/9P8C/xX/Af+J/xX/8P8C/xX/Af+J/xX//P8C/xX/Af+J/xX/+P8C/xX/Af+J/xX/BP8D/xX/Af+J/xX/AP8D/xX/Af+J/xX/CP8D/xX/Af+J/xX/EP8D/xX/Af+J/xX/DP8D/xX/Af+J/xX/GP8D/xX/Af+J/xX/FP8D/xX/Af/D/5D/
+  symbols:
+  - kind: Function
+    name: ?init_current_state@@YAXXZ
+    size: 393
+    flags: 2
+    section: .text
+  relocations: []

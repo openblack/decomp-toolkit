@@ -1,4 +1,49 @@
 - symbol: 0
+  hash: 9f5b74a9cc4db9903bf13b4d412bcb69116fb79b
+  signature: U/9W/1f/M//2/zP/2/8z////Of81/wAAAAAAAAAAfv9N/6H/AAAAAAAAAACL/wT/sP+F/8D/dP84/4v/SP8M//b/wf+D/3T/MP+D/3z/JP8Q/wH/df8P/1D/6P8AAAAAAAAAAIP/+P///1n/dP8d/0P/6/8a/4P/fP8k/xD/AP91/xP/9v/B/wL/dP8O/1D/6P8AAAAAAAAAAIP/+P///1n/df8C/wv/+P9G/zv/Nf8AAAAAAAAAAHz/s/+D/3z/JP8Q/wH/i//D/3T/Av+L/8f/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: _flsall
+    size: 109
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __nstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___piob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fflush
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 88
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 5c390fee8ac0b9f2fb4afde9c48ecb98722719f7
   signature: U/9W/1f/av8C/zP/2/8z////6P8AAAAAAAAAADP/9v9Z/zn/Nf8AAAAAAAAAAH7/dP+h/wAAAAAAAAAAi/8E/7D/hf/A/3T/X//2/0D/DP+D/3T/Wf9Q/1b/6P8AAAAAAAAAAKH/AAAAAAAAAABZ/1n/i/8E/7D/i/9I/wz/9v/B/4P/dP8w/4P/fP8k/xD/Af91/w//UP/o/wAAAAAAAAAAg//4////Wf90/x3/Q//r/xr/g/98/yT/EP8A/3X/E//2/8H/Av90/w7/UP/o/wAAAAAAAAAAg//4////Wf91/wL/C//4/6H/AAAAAAAAAAD//zT/sP9W/+j/AAAAAAAAAABZ/1n/Rv87/zX/AAAAAAAAAAB8/4z/av8C/+j/AAAAAAAAAACD/3z/JP8U/wH/Wf+L/8P/dP8C/4v/x/9f/17/W//D/w==
   symbols:

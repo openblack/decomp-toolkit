@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 0e302d0aa6b4709f4ec80476ead5d02d90d40364
+  signature: Vv+L//H/i/9G/yT/O/9G/yj/c/8L////dP8k/wj/6P8AAAAAAAAAAOv/Qv9q/wH/av8B/2r///+L/87/6P8AAAAAAAAAAIP/+P///3X/BP8L/8D/6/8s/4P/fv8I/wD/U/+L/1z/JP8M/3X/Hv+L/0b/LP+F/8D/dP8X/4v/Tv8o/yv/wf9I/1D/Uf9B/1H/6P8AAAAAAAAAAIv/Rv8o/4P/xP8M/4j/GP+L/8P/W/9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?pbackfail@stdiobuf@@UAEHH@Z
+    size: 92
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?sputbackc@streambuf@@QAEHD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?seekoff@stdiobuf@@UAEJJW4seek_dir@ios@@H@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

@@ -35,3 +35,49 @@
     kind: x86_rel32
     symbol: 3
     addend: -4
+- symbol: 0
+  hash: 10ffb89951d9c25a553b996ff0a0bd365e61f26d
+  signature: Vv+L/3T/JP8I/1f/g//P////i/9G/wz/qP9A/3T/Bf+D/8j////r/zr/qP+D/3T/NP9W/+j/AAAAAAAAAABW/4v/+P/o/wAAAAAAAAAA//92/xD/6P8AAAAAAAAAAIP/xP8M/4X/wP99/wX/g//P////6/8S/4v/Rv8c/4X/wP90/wv/UP/o/wAAAAAAAAAAg/9m/xz/AP9Z/4v/x/+D/2b/DP8A/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _fclose
+    size: 86
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __freebuf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __close
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 27
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

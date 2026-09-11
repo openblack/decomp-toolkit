@@ -1,10 +1,10 @@
 - symbol: 0
-  hash: 79e32dbb4386b83ddbd1dbfb56349e900a27dedc
-  signature: i/9E/yT/CP9W/4v/dP8k/wj/hf/A/37/QP9T/1f/jf9+/wj/i//Y/4v/Rv8E/2r/A//B/+j/C/+D/+D/B/9Q/1f/6P8AAAAAAAAAAIv/Rv8E/4P/xP8M/4v/yP9m/4H/4f8A//j/gf/B/wD/CP8A/wD/M//I/4H/4f8A/zj/AP8A/zP/yP9L/4n/Tv8E/3X/y/9f/1v/Xv/D/33/K/+L/07/BP9q/wD/i//B/4P/xv8I/2b/Jf8A//j/SP8z/8H/Jf8A/zj/AP8A/zP/wf+J/0b//P/B/+j/C/+D/+D/B/9Q/1b/6P8AAAAAAAAAAIP/xP8M/17/w/8=
+  hash: 56f1d0115742a9d3d0f95fbab5dd16ee8ea303db
+  signature: Vf+L/+z/g//s/1D/Vv+L/3X/CP9X/4v/ff8M/4X///9+/3j/U/+N/17/CP+J/33/CP+L/0b/BP9q/wP/wf/o/wv/g//g/wf/UP9T/+j/AAAAAAAAAACL/0b/BP+D/8T/DP+L/8j/Zv+B/+H/AP/4/4H/wf8A/wj/AP8A/zP/yP+B/+H/AP84/wD/AP8z/8j///9N/wj/if9O/wT/df/J/43/PP+//43/Xv8c/9H/5/9X/43/Rf+w/1P/UP/o/wAAAAAAAAAAav9Q/1j/K//H/1D/jf9E/zf/HP9Q/1P/6P8AAAAAAAAAACv/9/+N/0X/sP9X/4P/xv9s/1D/Vv/o/wAAAAAAAAAAg//E/yT/W//r/zz/ff86/4v/Tv8E/2r/AP+L/8H/Zv8l/wD/+P9I/zP/wf8l/wD/OP8A/wD/M//B/4n/Rv8E/8H/6P8L/4P/4P8H/1D/jf9G/wj/UP/o/wAAAAAAAAAAjf9G/xz/av9G/4P/xv8m/1D/Vv/o/wAAAAAAAAAAg//E/xj/X/9e/8n/w/8=
   symbols:
   - kind: Function
     name: __AdjustStack
-    size: 124
+    size: 202
     flags: 1
     section: .text
   - kind: Function
@@ -12,12 +12,38 @@
     size: 0
     flags: 1
     section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
   relocations:
-  - offset: 34
+  - offset: 39
     kind: x86_rel32
     symbol: 1
     addend: -4
-  - offset: 115
+  - offset: 95
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 128
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 176
     kind: x86_rel32
     symbol: 1
+    addend: -4
+  - offset: 191
+    kind: x86_rel32
+    symbol: 3
     addend: -4

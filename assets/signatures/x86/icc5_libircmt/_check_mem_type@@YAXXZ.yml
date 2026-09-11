@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 6bfaef6bcea6b10e77a33ab93e94ca4c09be1668
+  signature: of8k/wL/Ff8B/z3/AP8A/wr/AP9y/xH/Pf//////Cv8A/3f/Cv/H/wX/NP8C/xX/Af8B/wD/AP8A/z3/AP8A/wv/AP9y/xH/Pf//////C/8A/3f/Cv/H/wX/NP8C/xX/Af8B/wD/AP8A/8P/
+  symbols:
+  - kind: Function
+    name: ?check_mem_type@@YAXXZ
+    size: 54
+    flags: 2
+    section: .text
+  relocations: []

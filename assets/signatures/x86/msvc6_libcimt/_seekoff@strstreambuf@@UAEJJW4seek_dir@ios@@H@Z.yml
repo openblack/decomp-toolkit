@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 174724fc0405917e2f0f828f0cd3e738887f7384
+  signature: Vf+L/+z/U/9W/1f/g//P////9v9F/xD/Af+L//H/i//f/3T/PP/o/wAAAAAAAAAAi/9F/wz/g//o/wD/dP8Q/0j/dP8I/0j/df9P/4v/Rv8s/+v/CP+L/0b/KP/r/wP/i/9G/yT/A/9F/wj/i/9O/yT/i//Y/yv/2f87/8H/cv80/4v/Tv8s/zv/wf93/y3/hf/J/3T/A/+J/0b/KP/2/0X/EP8C/3T/cP+D/37/IP8A/3X/DP9X/4v/zv/o/wAAAAAAAAAAO//H/3T/Dv+L/0X/DP+D/+j/AP90/xT/SP90/wz/SP90/wT/i//H/+v/Tv+L/37/IP/r/wj/i/9+/xz/6/8D/4v/fv8Y/wP/ff8I/4v/Rv8Y/4v/3/8r/9j/O//4/3L/I/87/37/IP92/yP/g/9+/0z/AP90/xj/i/9G/1D/O//D/3//Av+L/8P/i//O/4n/Rv9Q/+j/AAAAAAAAAACD//j///91/wX/g//I////6/8L/4P/fv8g/wD/dP8D/4n/fv8c/4v/w/9f/17/W/9d/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ?seekoff@strstreambuf@@UAEJJW4seek_dir@ios@@H@Z
+    size: 206
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?underflow@strstreambuf@@UAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?overflow@strstreambuf@@UAEHH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?doallocate@strstreambuf@@MAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 174
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

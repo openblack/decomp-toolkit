@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2a5c82b602ffd6b9b9c71f70a30bf81507d05da4
+  signature: V/9W/1X/U/9W/4v/XP8k/xj/i/9E/yT/HP+L/0n/BP+L/2n/BP+L/9H/i/89/wAAAAAAAAAAO//v/3T/EP+L/zD/O/91/wz/d/8m/4v/1f+L/23/AP87/+//df/y/zv/0f91/w7/if8L/4v/w/+D/8T/BP9b/13/Xv9f/8L/CP8A/4v/AP87/0L/DP9y/+v/if8T/+v/6f+L/23/CP/r/9r/kP8=
+  symbols:
+  - kind: Function
+    name: ?find@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@QAE?AViterator@12@ABK@Z
+    size: 82
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Nil@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@1PAU_Node@12@A
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

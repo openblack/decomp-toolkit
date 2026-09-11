@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 3efd68275328522d495e5259e24dfd264f9b8de1
+  signature: av8A////dP8k/xT///90/yT/FP9q/wL///90/yT/GP///3T/JP8Y/+j/AAAAAAAAAACD/8T/GP/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?_com_dispatch_raw_propget@@YGJPAUIDispatch@@JGPAX@Z
+    size: 31
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_com_dispatch_raw_method@@YAJPAUIDispatch@@JGGPAXPBGZZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

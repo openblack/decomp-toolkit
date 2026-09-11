@@ -1,4 +1,36 @@
 - symbol: 0
+  hash: cbb161aea08ed05adf6b95d356aaffaa841111bd
+  signature: Vv++/wAAAAAAAAAAi/8G/4X/wP90/wr/UP/o/wAAAAAAAAAAg/8m/wD/Wf+D/8b/BP+B//7/AAAAAAAAAAB8/+X/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: __ioterm
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 256
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 14
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: b89c4154be63942f05c20ea42c41a0c56160a8dc
   signature: U/9W/1f/vv8AAAAAAAAAAIv/Bv+F/8D/dP83/4v/+P8F/4D/BP8A/wD/O//4/3P/If+N/1//DP+D/3v//P8A/3T/B/9T////Ff8AAAAAAAAAAIv/Bv+D/8f/JP8F/4D/BP8A/wD/g//D/yT/O//4/3L/4v///zb/6P8AAAAAAAAAAIP/Jv8A/1n/g//G/wT/gf/+/wAAAAAAAAAAfP+4/1//Xv9b/8P/
   symbols:

@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: a1d61be39f7fa5f2875a8fde4bcfd80ef7827ee8
+  signature: Vf+L/+z/g/99/wz/AP9W/1f/i/99/wj/i//3/3//BP8z/8D/6/8z////Tf8M/3T/KP///3X/EP/o/wAAAAAAAAAAD/+3/8D/Pf//////AP8A/1n/dP8N/2b/if8G/0b/Rv9m/z3/Cv8A/3T/Cv/r/9v/O//3/3X/BP8z////6/8E/2b/g/8m/wD/i//H/1//Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: _fgetws
+    size: 75
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fgetwc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
   hash: c88ba07e57c679b82b9c1d88f753400d7bff3c1c
   signature: Vf+L/+z/g/99/wz/AP9W/1f/i/99/wj/i//3/3//BP8z/8D/6/9F////df8Q/+j/AAAAAAAAAABZ////Tf8M/3T/KP///3X/EP/o/wAAAAAAAAAAD/+3/8D/Pf//////AP8A/1n/dP8N/2b/if8G/0b/Rv9m/z3/Cv8A/3T/Cv/r/9v/O//3/3X/BP8z////6/8E/2b/g/8m/wD///91/xD/6P8AAAAAAAAAAFn/i//H/1//Xv9d/8P/
   symbols:

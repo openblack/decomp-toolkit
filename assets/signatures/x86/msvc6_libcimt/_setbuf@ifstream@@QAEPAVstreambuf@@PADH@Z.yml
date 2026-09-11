@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d452b15b519e6f2ef10f86d63c7998de2638b757
+  signature: Vv+L//H/i/8G/4v/QP8E/4v/TP8w/wT/g/95/0z///91/xz///90/yT/DP+L/wH///90/yT/DP///1D/CP+F/8D/dP8L/4v/Bv+L/0D/BP+L/0T/MP8E/+v/Fv+L/wb/i/9A/wT/jf8M/zD/i/9E/zD/CP8M/wL/UP/o/wAAAAAAAAAAM//A/17/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?setbuf@ifstream@@QAEPAVstreambuf@@PADH@Z
+    size: 72
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?clear@ios@@QAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 62
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

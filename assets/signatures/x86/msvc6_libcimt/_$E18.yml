@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 937849bd840302411acd0134b23c3854fed1ee05
+  signature: Vv++/wAAAAAAAAAAi//O/+j/AAAAAAAAAACL/87/6P8AAAAAAAAAAF7/w/8=
+  symbols:
+  - kind: Function
+    name: _$E18
+    size: 22
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ''
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1ios@@UAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 9
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 16
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

@@ -13,7 +13,7 @@
     flags: 1
     section: .bss
   - kind: Unknown
-    name: $L4285
+    name: ''
     size: 0
     flags: 2
     section: .text

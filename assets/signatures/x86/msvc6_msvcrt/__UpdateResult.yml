@@ -1,0 +1,74 @@
+- symbol: 0
+  hash: b5facbae8a0d829a1f5e90d1eb25822795bf049e
+  signature: Vf+L/+z/i/9F/xD/Vv+D//j/DP9X/w//j//B/wD/AP8A/w//hP+m/wD/AP8A/4X/wP8P/4z/7P8A/wD/AP+D//j/B/8P/47/hP8A/wD/AP+D//j/Cf90/zT/g//4/wr/dP8b/4P/+P8L/w//hf/Q/wD/AP8A/4v/Rf8I/4v/Tf8M/4v/QP8U/4v/Cf+J/wj/6f++/wD/AP8A/4v/Rf8I/4v/Tf8M/4v/QP8U/2b/i/8J/2b/if8I/+n/qv8A/wD/AP+L/0X/DP+L/wD/g//o/wD/dP8z/0j/dP8n/0j/dP8T/0j/D/+F/5P/AP8A/wD/i/9F/wj/gP9I/wX/Rf/p/4f/AP8A/wD/i/9F/wj/i/9I/wT/gP/l/7v/gP/N/wH/if9I/wT/6/92/4v/Rf8I/4D/YP8F/7r/6/9t/4v/Rf8I/4v/SP8E/4D/5f/6/4D/zf9A/+v/5P///3X/DP9Q////df8I/+j/AAAAAAAAAACD/8T/DP/r/07/i/9F/wj/i/9I/xT/i/9F/wz/i/8Q/4n/Ef+L/0D/BP+J/0H/BP/r/zn/g//o/w3/dP8n/0j/dP8V/0j/dP8D/0j/df8r/4v/Rf8I/4v/df8M/4v/eP8U/6X/pf9m/6X/6/8c/4v/Rf8I/4v/Tf8M/4v/QP8U/93/Af/d/xj/6/8N/4v/Rf8I/4v/Tf8M/4v/QP8U/9n/Af/Z/xj/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: __UpdateResult
+    size: 271
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __SetFpRegVal
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 180
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: e58b740b451f51d6572b2a8eef6949483e0bf4e1
+  signature: Vf+L/+z/g//s/wj/U/9W/1f/i/9F/xD/if9F//z/g/99//z/Ef8P/4f/cv8B/wD/AP+L/03//P///yT/jf8AAAAAAAAAAIv/Vf8M/1L/i/9F/xD/UP+L/03/CP9R/+j/AAAAAAAAAACD/8T/DP/p/0//Af8A/wD/i/9V/wz/i/9F/wj/i/9I/xT/i/8C/4n/Af+L/0L/BP+J/0H/BP9m/4v/Uv8I/2b/if9R/wj/6f8v/wH/AP8A/4v/Rf8I/4v/SP8U/4v/Vf8M/2b/i/8C/2b/if8B/+n/G/8B/wD/AP+L/03/CP+L/1H/FP+L/0X/DP+L/wj/if8K/+n/Cf8B/wD/AP+L/1X/DP+L/wL/i/9K/wT/i/9V/wj/i/9S/xT/if8C/4n/Sv8E/+n/8f8A/wD/AP+L/0X/CP+L/0j/FP+L/1X/DP+L/wL/if8B/4v/Uv8E/4n/Uf8E/+n/2f8A/wD/AP+L/0X/CP+L/0j/FP+L/1X/DP+L/wL/if8B/+n/x/8A/wD/AP+L/03/DP+L/1X/CP+L/0L/FP+L/xH/if8Q/4v/Uf8E/4n/UP8E/2b/i/9J/wj/Zv+J/0j/CP/p/6f/AP8A/wD/i/9V/wz/i/8C/4n/Rf/4/4P/ff/4/wP/d/9q/4v/Tf/4////JP+N/wAAAAAAAAAAi/9V/wj/i/9C/wT/gP/M/0D/i/9N/wj/if9B/wT/i/9V/wj/i/9C/wT/gP/k//r/i/9N/wj/if9B/wT/6/9A/4v/Vf8I/4v/Qv8E/4D/5P+6/4v/Tf8I/4n/Qf8E/+v/L/+L/1X/CP+L/0L/BP+A/8z/Af+L/03/CP+J/0H/BP+L/1X/CP+L/0L/BP+A/+T/u/+L/03/CP+J/0H/BP/r/w//i/9V/wj/i/9C/wT/gP/M/0X/i/9N/wj/if9B/wT/6/8t/7r/Af8A/wD/AP+F/9L/dP8e/2r/AP9q/wD/aP9L/wT/AP8A/2j/AAAAAAAAAABq/wL/6P8AAAAAAAAAAIP/xP8U/4P/+P8B/3X/Af/M/zP/wP+F/8D/df/T/1//Xv9b/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: __UpdateResult
+    size: 402
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L17317
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __SetFpRegVal
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L17318
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0O@HFDC@i386?2filter?4c?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CrtDbgReport
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 31
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 48
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 248
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 369
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 376
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 1c9a46560bbf239e6b60e773650b2c3fad511ab5
+  signature: Vf+L/+z/aP8AAAAAAAAAAGr/BP/o/wAAAAAAAAAAg//E/wj/uP8AAAAAAAAAAGr/AP9Q/+j/AAAAAAAAAACD/8T/CP+F/8D/df8M/w//KP/A/7j/Af8A/wD/AP+L/+X/Xf/D/zP/wP+L/+X/Xf/D/5D/
+  symbols:
+  - kind: Function
+    name: _has_osfxsr_set
+    size: 57
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _catch_illegal_instruction
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _signal
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __jump_buffer
+    size: 64
+    flags: 1
+    section: null
+  - kind: Function
+    name: __setjmp3
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

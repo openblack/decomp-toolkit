@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 0d3ada63647c741aaedb89396a679f853e4ee877
+  signature: Vv+D/+z/CP+L/3T/JP8Q/4n/NP8k/+j/AAAAAAAAAACJ/wT/JP+J/3T/JP8E/+j/AAAAAAAAAACD/8T/CP9e/8P/kP8=
+  symbols:
+  - kind: Function
+    name: ?insert_base_id_str@@YAXPAD@Z
+    size: 34
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?base_id_hash@@YAHPAD@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?insert_into_hash@@YAPAUbase_id_struct@@HPAD@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 24
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

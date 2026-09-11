@@ -17,3 +17,22 @@
     kind: x86_rel32
     symbol: 1
     addend: -4
+- symbol: 0
+  hash: 84d6a45dbf07ef1b9f74e3dd3d4fcc1e833b7821
+  signature: x/8F/wAAAAAAAAAAKP8A/wD/AP+D/8j////D/w==
+  symbols:
+  - kind: Function
+    name: __heapadd
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

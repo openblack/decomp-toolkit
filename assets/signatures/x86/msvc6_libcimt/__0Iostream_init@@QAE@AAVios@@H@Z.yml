@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 928f249e6873e503d882d6c23553564873c86851
+  signature: g/98/yT/CP8A/1b/i//x/4v/TP8k/wj/x/9B/xz/Af8A/wD/AP98/xP/x/9B/yD/AAAAAAAAAAB+/wr/aP8A/yD/AP8A/+j/AAAAAAAAAACL/8b/Xv/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ??0Iostream_init@@QAE@AAVios@@H@Z
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?cout@@3Vostream_withassign@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?setf@ios@@QAEJJ@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

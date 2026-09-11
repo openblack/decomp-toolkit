@@ -1,4 +1,141 @@
 - symbol: 0
+  hash: 3ea654a107124fb3e2394876af9cae95d2d73e5d
+  signature: Vf+L/+z/g//s/1T/U/9X/4v/ff8I/zP/2/87/z3/AAAAAAAAAACJ/13//P8P/4P/S/8C/wD/AP+L/8f/g//n/x//wf/4/wX/wf/n/wP/jf8E/4X/AAAAAAAAAACJ/0X/+P+L/wD/A//H//b/QP8E/wH/D/+E/yj/Av8A/wD/Vv///zD///8V/wAAAAAAAAAAgP/k/3//g//4/wH/D/+E/4z/AP8A/wD/g//4/wL/dP8k/4P/+P8D/3T/Kv87/8P/D/+F/6n/AP8A/wD/x/8F/wAAAAAAAAAACf8A/wD/AP+D/03//P///4v/Rf/8/17/6f/3/wH/AP8A/4v/df8M/2b/x/9G/wb/AP8g/+v/Cf+L/3X/DP9m/8f/Rv8G/wD/EP+L/03/CP+D//j/Av+J/w7/if9O/xD/Zv/H/0b/CP8B/wD/Zv+J/17/BP9m/4n/Xv8M/2b/if9e/wr/if9e/yD/if9e/xz/if9e/xj/df8F/4n/Xv8U/+v/tv+N/0X/DP9T/1D/i/9F//j/U/9T/4v/AP9T////NP84////Ff8AAAAAAAAAAIX/wP90/+H/i/9F/wz/if9G/xT/6/+U/4v/df8M/43/Rf+s/1D/i/9F//j/Zv+J/17/Bv9m/4n/Xv8M/2b/if9e/wr/Zv+J/17/BP9m/8f/Rv8I/wH/AP+L/wD///80/zj///8V/wAAAAAAAAAAhf/A/3X/Ev///xX/AAAAAAAAAABQ/+j/AAAAAAAAAABZ/+n/T//////////2/0X/rP8B/3T/CP9m/4H/Tv8G/yT/Af/r/wb/Zv+B/07/Bv+2/wH/jf9F//D/UP+N/0X/wP9Q////Ff8AAAAAAAAAAIX/wP8P/4T/Jf////////+N/0X/4P9Q/43/Rf/w/1D///8V/wAAAAAAAAAAhf/A/w//hP8P/////////w//t/9F/+z/g//P////V/9Q/w//t/9F/+r/UP8P/7f/Rf/o/1D/D/+3/0X/5v9Q/w//t/9F/+L/UP8P/7f/Rf/g/1D/6P8AAAAAAAAAAIP/xP8c/zn/Xf+4/4n/Rv8c/3X/Bf85/13/vP90/1P/jf9F//D/UP+N/0X/uP9Q////Ff8AAAAAAAAAAIX/wP8P/4T/sf8A/wD/AP+N/0X/4P9Q/43/Rf/w/1D///8V/wAAAAAAAAAAhf/A/w//hP+b/wD/AP8A/w//t/9F/+z/V/9Q/w//t/9F/+r/UP8P/7f/Rf/o/1D/D/+3/0X/5v9Q/w//t/9F/+L/UP8P/7f/Rf/g/1D/6P8AAAAAAAAAAIP/xP8c/zn/Xf+w/4n/Rv8Y/3X/Cv85/13/tP91/wX/i/9G/xz/6/9L/43/Rf/w/1D/jf9F/7D/UP///xX/AAAAAAAAAACF/8D/dP9Q/43/Rf/g/1D/jf9F//D/UP///xX/AAAAAAAAAACF/8D/dP8+/w//t/9F/+z/V/9Q/w//t/9F/+r/UP8P/7f/Rf/o/1D/D/+3/0X/5v9Q/w//t/9F/+L/UP8P/7f/Rf/g/1D/6P8AAAAAAAAAAIP/xP8c/4D/Tv8H/4D/if9G/yD/i/9F/9D/if8e/4n/Rv8U/4n/Xv8Q/+n/Ff/+//////+J/33//P/p/w3//v//////x/8F/wAAAAAAAAAACf8A/wD/AP+D/8j///9f/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __fstat
+    size: 632
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFileType@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__PeekNamedPipe@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFileInformationByHandle@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FileTimeToLocalFileTime@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__FileTimeToSystemTime@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___loctotime_t
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 68
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 104
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 208
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 263
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 273
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 279
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 319
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 341
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 388
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 418
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 440
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 484
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 519
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 537
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 577
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 617
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
   hash: 04b6508d661577b7e7801ae6100a8ebbee763692
   signature: Vf+L/+z/g//s/1D/i/9N/wj/g/9l//z/AP87/w3/AAAAAAAAAABT/1f/D/+D/2b/Av8A/wD/i//B/8H/+P8F/43/HP+F/wAAAAAAAAAAi//B/4P/4P8f/43/PP/A/4v/A//B/+f/Av/2/0T/OP8E/wH/D/+E/0L/Av8A/wD/Vv9R/+j/AAAAAAAAAACL/wP/Wf///zT/OP///xX/AAAAAAAAAACA/+T/f/+D//j/Af8P/4T/m/8A/wD/AP+D//j/Av90/y7/g//4/wP/dP80/4X/wP8P/4X/t/8A/wD/AP/o/wAAAAAAAAAAx/8A/wn/AP8A/wD/g/9N//z//////3X/CP/o/wAAAAAAAAAAi/9F//z/Wf9e/+n//v8B/wD/AP+L/3X/DP9m/8f/Rv8G/wD/IP/r/wn/i/91/wz/Zv/H/0b/Bv8A/xD/i/9N/wj/Zv/H/0b/CP8B/wD/if8O/4n/Tv8Q/zP/yf+D//j/Av9m/4n/Tv8E/2b/if9O/wz/Zv+J/07/Cv+J/07/IP+J/07/HP+J/07/GP91/wX/if9O/xT/6/+r/43/Rf8M/1H/UP+L/wP/Uf9R/1H///80/zj///8V/wAAAAAAAAAAhf/A/3T/CP+L/0X/DP+J/0b/FP/r/4z/g/9m/xT/AP/r/4b/i/91/wz/M//A/2b/if9G/wb/Zv+J/0b/DP9m/4n/Rv8K/2b/if9G/wT/jf9F/7D/Zv/H/0b/CP8B/wD/UP+L/wP///80/zj///8V/wAAAAAAAAAAhf/A/3X/Ev///xX/AAAAAAAAAABQ/+j/AAAAAAAAAABZ/+n/Qv/////////2/0X/sP8B/3T/CP9m/4H/Tv8G/yT/Af/r/wb/Zv+B/07/Bv+2/wH/jf9F//T/UP+N/0X/xP9Q////Ff8AAAAAAAAAAIX/wP8P/4T/GP////////+N/0X/5P9Q/43/Rf/0/1D///8V/wAAAAAAAAAAhf/A/w//hP8C/////////w//t/9F//D/g//L////U/9Q/w//t/9F/+7/UP8P/7f/Rf/s/1D/D/+3/0X/6v9Q/w//t/9F/+b/UP8P/7f/Rf/k/1D/6P8AAAAAAAAAADP///+D/8T/HP85/33/vP+J/0b/HP91/wX/Of99/8D/dP9T/43/Rf/0/1D/jf9F/7z/UP///xX/AAAAAAAAAACF/8D/D/+E/7H/AP8A/wD/jf9F/+T/UP+N/0X/9P9Q////Ff8AAAAAAAAAAIX/wP8P/4T/m/8A/wD/AP8P/7f/Rf/w/1P/UP8P/7f/Rf/u/1D/D/+3/0X/7P9Q/w//t/9F/+r/UP8P/7f/Rf/m/1D/D/+3/0X/5P9Q/+j/AAAAAAAAAACD/8T/HP85/33/tP+J/0b/GP91/wr/Of99/7j/df8F/4v/Rv8c/+v/S/+N/0X/9P9Q/43/Rf+0/1D///8V/wAAAAAAAAAAhf/A/3T/UP+N/0X/5P9Q/43/Rf/0/1D///8V/wAAAAAAAAAAhf/A/3T/Pv8P/7f/Rf/w/1P/UP8P/7f/Rf/u/1D/D/+3/0X/7P9Q/w//t/9F/+r/UP8P/7f/Rf/m/1D/D/+3/0X/5P9Q/+j/AAAAAAAAAACD/8T/HP+A/07/B/+A/4n/Rv8g/4v/Rf/U/4n/Pv+J/0b/FP+J/37/EP/p/wb//v//////if9d//z/6f/+//3//////+j/AAAAAAAAAADH/wD/Cf8A/wD/AP+D/8j///9f/1v/yf/D/w==
   symbols:

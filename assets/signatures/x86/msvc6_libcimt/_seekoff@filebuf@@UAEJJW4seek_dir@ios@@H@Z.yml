@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: dc0e90ceeb20b347896b40ab1c049d0dc0dc928f
+  signature: i/9E/yT/CP9T/zP/2/9W/yv/w/+L//H/dP8N/0j/dP8H/0j/df8o/2r/Av/r/wL/av8B/1v/i//O/+j/AAAAAAAAAACD//j///90/xX/U////3T/JP8Q////dv9M/+j/AAAAAAAAAACD/8T/DP+D//j///91/wP/g//I////Xv9b/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ?seekoff@filebuf@@UAEJJW4seek_dir@ios@@H@Z
+    size: 68
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?sync@filebuf@@UAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __lseek
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 30
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

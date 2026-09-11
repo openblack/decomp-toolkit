@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: 643a3cb396570390f1f9a914a7fe58ad9d2ab9fe
+  signature: Vv+L//H/6P8AAAAAAAAAAIn/Bv+h/wAAAAAAAAAAi/9I/wT/g//5////c/8E/0H/if9I/wT/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0locale@std@@QAE@XZ
+    size: 31
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Init@locale@std@@CAPAV_Locimp@12@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Global@_Locimp@locale@std@@0PAV123@A
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: 242c1b1638f12072b1825608108b8088973c48c4
   signature: Vf+L/+z/Uf9W/4v/8f/o/wAAAAAAAAAAjf9N//z/if8G/+j/AAAAAAAAAACL/w3/AAAAAAAAAADo/wAAAAAAAAAAjf9N//z/6P8AAAAAAAAAAIv/xv9e/8n/w/8=
   symbols:

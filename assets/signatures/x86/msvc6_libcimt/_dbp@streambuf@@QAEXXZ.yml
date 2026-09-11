@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: c204b6ab055a1bcffafcbed15d5aeb0e405083ce
+  signature: Vf+L/+z/uP8A/wH/AP8A/+j/AAAAAAAAAACD/3n/CP8A/3T/F/9R/43/hf8A/////////2j/AAAAAAAAAABQ/+j/AAAAAAAAAACD/8T/DP/r/0f/i/9B/xT/i/9R/xD/U/+L/1n/KP9W/1f/i/95/yz/O//C/3b/Bv+L//D/K//y/+v/Av8z//b/V/9T////cf8k////cf8g////cf8c////cf8Y/1b/UP9S/43/hf8A////////////cf8E/1H/aP8AAAAAAAAAAFD/6P8AAAAAAAAAAIP/xP80/1//Xv9b/1D/jf+F/wD/////////UP9q/wH/6P8AAAAAAAAAAIP/xP8M/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?dbp@streambuf@@QAEXXZ
+    size: 133
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __chkstk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CM@KHCP@?6STREAMBUF?5DEBUG?5INFO?3?5this?$DN?$CFp?0?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _sprintf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0JF@KAKA@?6STREAMBUF?5DEBUG?5INFO?3?5this?$DN?$CFp?0?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __write
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 97
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 103
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 124
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

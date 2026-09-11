@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 1a0741d23aab165e304ad778252d477262035385
+  signature: Vv+L//H/6P8AAAAAAAAAAIv/RP8k/wj/x/8G/wAAAAAAAAAAif9G/0z/x/9G/wj/Af8A/wD/AP+L/8b/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??0stdiobuf@@QAE@PAU_iobuf@@@Z
+    size: 34
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0streambuf@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7stdiobuf@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 14
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

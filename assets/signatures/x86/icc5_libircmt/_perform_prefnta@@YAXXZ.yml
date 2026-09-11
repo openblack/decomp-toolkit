@@ -1,0 +1,44 @@
+- symbol: 0
+  hash: f356de14853260ed6c9500071de9e31c38c41b0e
+  signature: g//s/wz/oP84/wL/Ff8B/zz/Af90/wT/g//E/wz/w/+h/yD/Av8V/wH/i/8V/yT/Av8V/wH/i/8N/zT/Av8V/wH/o/9I/wL/Ff8B/6H/LP8C/xX/Af+J/xX/UP8C/xX/Af+J/w3/aP8C/xX/Af+j/2D/Av8V/wH/of8w/wL/Ff8B/6P/ZP8C/xX/Af/H/wT/JP8B/wD/AP8A/+j/AAAAAAAAAACg/1z/Av8V/wH/PP8B/w//hP/G/wD/AP8A/4T/wP91/6n/of9I/wL/Ff8B/4v/Ff9Q/wL/Ff8B/4v/Df9o/wL/Ff8B/6P/fP8C/xX/Af+h/2D/Av8V/wH/if8V/4T/Av8V/wH/if8N/5z/Av8V/wH/o/+U/wL/Ff8B/6H/ZP8C/xX/Af+j/5j/Av8V/wH/x/8E/yT/Av8A/wD/AP/o/wAAAAAAAAAAx/8E/yT/Af8A/wD/AP/o/wAAAAAAAAAAoP85/wL/Ff8B/zz/Af8P/4X/Tv////////+h/0j/Av8V/wH/i/8V/1D/Av8V/wH/i/8N/2j/Av8V/wH/o/98/wL/Ff8B/6H/YP8C/xX/Af+J/xX/hP8C/xX/Af+J/w3/nP8C/xX/Af+j/5T/Av8V/wH/of9k/wL/Ff8B/6P/mP8C/xX/Af/H/wT/JP8C/wD/AP8A/+j/AAAAAAAAAACg/5D/Av8V/wH/PP8B/3X/DP/H/wT/JP8C/wD/AP8A/+j/AAAAAAAAAAAy/8D/ov85/wL/Ff8B/6L/bf8C/xX/Af+D/8T/DP/D/4v/Ff88/wL/Ff8B/4v/wv/B/+D/B/+N/wT/kP+L/xX/QP8C/xX/Af+L/4z/kP+k/0f/Ff8B/4P/+f8B/w//hf/D//7//////4v/hP+Q/7T/R/8V/wH/hf/A/w//hf+0//7//////6H/YP8C/xX/Af+D//j/Af90/xP/g//4/wL/dP8O/4P/+P8D/3T/Cf+D//j/BP8P/4X/l//+//////+h/2T/Av8V/wH/g//4/wH/D/+F/4n//v//////x/8E/yT/Af8A/wD/AP/o/wAAAAAAAAAAg//E/wz/w/8=
+  symbols:
+  - kind: Function
+    name: ?perform_prefnta@@YAXXZ
+    size: 403
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?cache_lookup@@YAXK@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?cache_update@@YAXK@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 78
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 161
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 173
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 252
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 273
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 395
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

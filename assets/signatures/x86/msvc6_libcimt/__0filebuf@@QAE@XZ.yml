@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 1613d197173fc0c93b6e632150c192667013b32f
+  signature: Vv+L//H/6P8AAAAAAAAAAIP/Zv9Q/wD/g/9O/0z////H/wb/AAAAAAAAAACL/8b/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??0filebuf@@QAE@XZ
+    size: 26
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0streambuf@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7filebuf@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

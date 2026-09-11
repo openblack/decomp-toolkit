@@ -1,0 +1,140 @@
+- symbol: 0
+  hash: fe83d11ae18127fcd3005f6187f3eac8a3968a52
+  signature: Vf+L/+z/av8U/1j/6P8AAAAAAAAAAFb/i//x/2r/AP/o/wAAAAAAAAAAhf/A/w//hP+h/wD/AP8A/43/Rf/s/2r/FP9Q/4v/zv/o/wAAAAAAAAAAhf/A/w//jv+F/wD/AP8A/43/Rf/s/2r/AP9Q/+j/AAAAAAAAAADc/xX/AAAAAAAAAABZ/1n/3//g/57/dv8P/93/2P/Z/wX/AAAAAAAAAACL/0X/CP/Z/xj/6/9e/9z/Ff8AAAAAAAAAAN//4P+e/3P/Cv/d/9j/2f8F/wAAAAAAAAAA6//k/9z/Ff8AAAAAAAAAAN//4P+e/3b/Ff/c/xX/AAAAAAAAAADf/+D/nv9z/wr/3f/Y/9n/Bf8AAAAAAAAAAOv/xP/c/xX/AAAAAAAAAADf/+D/nv9z/xX/3P8V/wAAAAAAAAAA3//g/57/dv8K/93/2P/Z/wX/AAAAAAAAAADr/6T/i/9F/wj/2f/A/9n/GP/d/9j/i//O/+j/AAAAAAAAAACL/8b/Xv/J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ??5istream@@QAEAAV0@AAM@Z
+    size: 197
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __chkstk
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?ipfx@istream@@QAEHH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?getdouble@istream@@AAEHPADH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strtod
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __real@8@407effffff0000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@4@407effffff0000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@c07effffff0000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@4@c07effffff0000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@00000000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@3f818000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@4@3f818000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@8@bf818000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __real@4@bf818000000000000000
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?isfx@istream@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 17
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 63
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 104
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 136
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 144
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 155
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 168
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 186
+    kind: x86_rel32
+    symbol: 14
+    addend: -4

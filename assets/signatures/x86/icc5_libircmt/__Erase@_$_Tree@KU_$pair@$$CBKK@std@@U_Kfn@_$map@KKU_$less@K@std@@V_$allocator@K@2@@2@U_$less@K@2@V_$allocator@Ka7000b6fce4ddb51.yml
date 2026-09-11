@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 0f28248fd82be32c8ffd289b577d03952bda3c7f
+  signature: g//s/xz/i/9E/yT/IP+L/9D/O/8F/wAAAAAAAAAAdP89/4n/XP8k/xT/i//Y/4n/dP8k/xD/i//y/4n/fP8k/wz/i//5/4v/Rv8I/4v/z/9Q/+j/AAAAAAAAAACL/zb/if8c/yT/6P8AAAAAAAAAAIv/3v87/zX/AAAAAAAAAAB1/+H/i/9c/yT/FP+L/3T/JP8Q/4v/fP8k/wz/g//E/xz/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?_Erase@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@IAEXPAU_Node@12@@Z
+    size: 84
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Nil@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@1PAU_Node@12@A
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Function
+    name: ?_Erase@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@IAEXPAU_Node@12@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 42
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 60
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

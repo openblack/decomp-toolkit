@@ -1,4 +1,49 @@
 - symbol: 0
+  hash: 8b07d000bd7f4894bc52270d5608070c3f0318c6
+  signature: U/+L/1z/JP8I/zv/Hf8AAAAAAAAAAFb/V/98/0z/vv8AAAAAAAAAAL//AP8B/wD/AP+D/z7/AP91/zL/V//o/wAAAAAAAAAAhf/A/1n/dP84/4P/Bf8AAAAAAAAAACD/if8G/43/iP8A/wH/AP8A/zv/wf9z/xT/gP9g/wT/AP+D/wj////G/0D/Bf8K/4v/Dv+D/8D/CP8D/8//6//o/4P/xv8E/zv/Hf8AAAAAAAAAAH3/vv8z/8D/X/9e/1v/w/+D/8j////r//f/
+  symbols:
+  - kind: Function
+    name: _extend_ioinfo_arrays
+    size: 102
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 32
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 43
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 85
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: ccb52e60af1a9f529a368c0a2caf59cf67164b6c
   signature: U/+L/1z/JP8I/zv/Hf8AAAAAAAAAAFb/V/98/1D/vv8AAAAAAAAAAL//gP8E/wD/AP+D/z7/AP91/zb/V//o/wAAAAAAAAAAhf/A/1n/dP88/4P/Bf8AAAAAAAAAACD/if8G/43/iP+A/wT/AP8A/zv/wf9z/xj/gP9g/wT/AP+D/wj///+D/2D/CP8A/8b/QP8F/wr/i/8O/4P/wP8k/wP/z//r/+T/g//G/wT/O/8d/wAAAAAAAAAAff+6/zP/wP9f/17/W//D/4P/yP///+v/9/8=
   symbols:

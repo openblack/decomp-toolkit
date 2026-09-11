@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 91944f83222eb852903a182d66342f380eaeb675
+  signature: Vf+L/+z/Uf9T/1b/V/+L//H/av8B/4v/fv9Q/1v/O//7/37/Av+L/9//i/9O/xT/i/9W/xD/O//K/3b/Bv+L/8H/K//C/+v/Av8z/8D/A//D/zv/+P9+/wX/if99//z/6/8X/4P///8B/3//A/9q/wH/X/87/8r/dv8E/yv/yv/r/wL/M//J/wP/z/+J/03//P+L/0b/XP///3X//P8z////hf/A/3T/BP///9D/6/8F/+j/AAAAAAAAAACL/9j/Wf+F/9v/df8I/4P/yP///+n/l/8A/wD/AP+L/07/FP+L/0b/EP87/8j/dv8G/4v/0f8r/9D/6/8C/zP/0v+F/9L/dP8c/zv/yP92/wT/K//I/+v/Av8z/8n/Uf9Q/1P/6P8AAAAAAAAAAIv/Rv8Q/4v/+/+D/8T/DP8r//j/i/9O/2D/UP+F/8n/dP8E////0f/r/wX/6P8AAAAAAAAAAIv/Rf/8/1n/A//D/2r/AP9Q/1P/i//O/+j/AAAAAAAAAACF////dP8W/4v/Rv8s/4X/wP90/w//Af9+/yT/Af9+/yj/A//H/4P/Tv8M////if9G/yz/i/9O/yD/hf/J/3T/H/+L/1b/GP+L/17/HP8D/8//jf8E/zr/if9O/yD/hf/J/4n/Rv8Y/4n/Rv8c/3T/B/8r/8L/A//D/4n/Rv8c/2r/Af9Y/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?doallocate@strstreambuf@@MAEHXZ
+    size: 265
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?setb@streambuf@@IAEXPAD0H@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 90
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 172
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

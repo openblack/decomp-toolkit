@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 4adcb88f014de27a5747acf2f1b610d4e0ee9a16
+  signature: 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
+  symbols:
+  - kind: Function
+    name: _pgopti_Dump_Segment
+    size: 828
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __PGOPTI_Sizeof_Segment
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _pgopti_Disk_Alloc
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: _pgopti_Write_Disk
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 165
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 177
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 229
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 364
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 506
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 582
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 624
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 666
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 798
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

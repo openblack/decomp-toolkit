@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: ac8151a9d2397d289a49dd88ed7b56406d82d554
+  signature: Vv+L//H/i/8G/4v/QP8E/4v/RP8w/wT/g/94/zD/AP99/wr/g//A/zT/UP/o/wAAAAAAAAAAWf+L/wb/i/9A/wT/i/9M/zD/BP/o/wAAAAAAAAAAg//4////dP8b/1D/6P8AAAAAAAAAAIX/wP9Z/3T/JP+L/wb/i/9A/wT/i/9M/zD/BP/o/wAAAAAAAAAA6//g/4v/Bv+L/0D/BP+N/wz/MP+L/0T/MP8I/wz/Af9Q/+j/AAAAAAAAAACL/wb/i/9A/wT/i/90/zD/BP+D/37/MP8A/33/Cv+D/8b/NP9W/+j/AAAAAAAAAABZ/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?eatwhite@istream@@QAEXXZ
+    size: 121
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtlock
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?sgetc@streambuf@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _isspace
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?snextc@streambuf@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?clear@ios@@QAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 49
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 114
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

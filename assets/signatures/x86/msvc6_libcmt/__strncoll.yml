@@ -1,4 +1,59 @@
 - symbol: 0
+  hash: 5b3f37909abd413c5c2391ea395ce27c0072a742
+  signature: Vf+L/+z/i/9N/xD/hf/J/3X/BP8z/8D/Xf/D/6H/AAAAAAAAAACF/8D/df8R/1H///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8M/13/w////zX/AAAAAAAAAABR////df8M/1H///91/wj/aP8A/xD/AP8A/1D/6P8AAAAAAAAAAIP/xP8c/4X/wP91/xH/x/8F/wAAAAAAAAAAFv8A/wD/AP+4/////////3//Xf/D/4P/wP/+/13/w/8=
+  symbols:
+  - kind: Function
+    name: __strncoll
+    size: 94
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strncmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_collate_cp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtCompareStringA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 61
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 74
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
   hash: 7d7341da193c2c45ed56cae3191b8fc2c3dc36c9
   signature: Vf+L/+z/Uf9T/zP/2/85/13/EP9W/1f/df8H/zP/wP/p/8f/AP8A/wD/Of8d/wAAAAAAAAAAdP9M/77/AAAAAAAAAABW////Ff8AAAAAAAAAADn/Hf8AAAAAAAAAAIv/Pf8AAAAAAAAAAHT/FP9W////1/9q/xP/6P8AAAAAAAAAAFn/x/9F//z/Af8A/wD/AP/r/wP/if9d//z/of8AAAAAAAAAADv/w/91/yX/Of9d//z/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wP/Vv///9f///91/xD///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8M/+v/YP///zX/AAAAAAAAAAD//3X/EP///3X/DP///3X/EP///3X/CP9o/wD/EP8A/wD/UP/o/wAAAAAAAAAAi//Y/4P/xP8c/4X/2/91/yT/Of9F//z/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wP/Vv///9f/6P8AAAAAAAAAAMf/AP8W/wD/AP8A/7j/////////f//r/xb/g/99//z/AP90/wr/av8T/+j/AAAAAAAAAABZ/+v/A/9W////1/+N/0P//v9f/17/W//J/8P/
   symbols:

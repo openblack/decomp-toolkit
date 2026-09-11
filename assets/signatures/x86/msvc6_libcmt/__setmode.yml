@@ -62,3 +62,44 @@
     kind: x86_rel32
     symbol: 6
     addend: -4
+- symbol: 0
+  hash: 13d1d6a02493d83b75d3dc00c72e267820713781
+  signature: i/9E/yT/BP9W/zv/Bf8AAAAAAAAAAHP/Wv+L/8j/g//g/x//wf/5/wX/i/8M/43/AAAAAAAAAACN/1T/wf8E/4r/TP/B/wT/9v/B/wH/dP8+/4r/wf++/wD/gP8A/wD/Jf+A/wD/AP8A/zn/dP8k/wz/df8F/4D/4f9//+v/Df+B/3z/JP8M/wD/QP8A/wD/df8R/4D/yf+A//f/2P8b/8D/iP8K/2b/Jf8A/8D/A//G/17/w//H/wX/AAAAAAAAAAAW/wD/AP8A/+v/Cv/H/wX/AAAAAAAAAAAJ/wD/AP8A/4P/yP///17/w/8=
+  symbols:
+  - kind: Function
+    name: __setmode
+    size: 118
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 93
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 105
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

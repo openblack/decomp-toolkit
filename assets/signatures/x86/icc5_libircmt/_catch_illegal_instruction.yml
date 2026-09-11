@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 3ce3efa32276cb4e1c36e449d9e573fe710d16f6
+  signature: Vf+L/+z/g//s/wj/x/8E/yT/AAAAAAAAAADH/0T/JP8E/wH/AP8A/wD/6P8AAAAAAAAAAI3/tv8A/wD/AP8A/w==
+  symbols:
+  - kind: Function
+    name: _catch_illegal_instruction
+    size: 32
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __jump_buffer
+    size: 64
+    flags: 1
+    section: null
+  - kind: Function
+    name: _longjmp
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

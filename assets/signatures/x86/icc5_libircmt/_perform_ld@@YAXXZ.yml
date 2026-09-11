@@ -1,0 +1,52 @@
+- symbol: 0
+  hash: 3ab77d7ae9110a4e8d994949477af21c0dff1579
+  signature: g//s/wz/oP84/wL/Ff8B/zz/Af90/wT/g//E/wz/w/+h/yD/Av8V/wH/i/8V/yT/Av8V/wH/i/8N/zT/Av8V/wH/o/9I/wL/Ff8B/6H/LP8C/xX/Af+J/xX/UP8C/xX/Af+J/w3/aP8C/xX/Af+j/2D/Av8V/wH/of8w/wL/Ff8B/6P/ZP8C/xX/Af/H/wT/JP8B/wD/AP8A/+j/AAAAAAAAAACg/1z/Av8V/wH/PP8B/w//hP8g/wH/AP8A/4T/wP91/6n///8F//j/Av8V/wH/of9I/wL/Ff8B/4v/Ff9Q/wL/Ff8B/6P/fP8C/xX/Af+L/w3/aP8C/xX/Af+h/2D/Av8V/wH/if8V/4T/Av8V/wH/if8N/5z/Av8V/wH/o/+U/wL/Ff8B/6H/ZP8C/xX/Af+j/5j/Av8V/wH/x/8E/yT/Av8A/wD/AP/o/wAAAAAAAAAAoP+Q/wL/Ff8B/zz/Af8P/4T/sP8A/wD/AP///wX/DP8D/xX/Af/H/wT/JP8C/wD/AP8A/+j/AAAAAAAAAACg/23/Av8V/wH/PP8B/3X/B//G/wX/bf8C/xX/Af8A/8f/BP8k/wH/AP8A/wD/6P8AAAAAAAAAAKD/Of8C/xX/Af88/wH/D/+F/xn/////////of9I/wL/Ff8B/4v/Ff9Q/wL/Ff8B/4v/Df9o/wL/Ff8B/6P/fP8C/xX/Af+h/2D/Av8V/wH/if8V/4T/Av8V/wH/if8N/5z/Av8V/wH/o/+U/wL/Ff8B/6H/ZP8C/xX/Af+j/5j/Av8V/wH/x/8E/yT/Av8A/wD/AP/o/wAAAAAAAAAAoP+Q/wL/Ff8B/zz/Af90/xb///8F//D/Av8V/wH/Mv/A/6L/Of8C/xX/Af+i/23/Av8V/wH/g//E/wz/w////wX/9P8C/xX/Af/H/wT/JP8C/wD/AP8A/+j/AAAAAAAAAADr/9z///8F/xD/A/8V/wH/x/8E/yT/Av8A/wD/AP/o/wAAAAAAAAAA6f9b////////////Bf/8/wL/Ff8B/8f/BP8k/wH/AP8A/wD/6P8AAAAAAAAAAIP/xP8M/8P/
+  symbols:
+  - kind: Function
+    name: ?perform_ld@@YAXXZ
+    size: 405
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?cache_lookup@@YAXK@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?cache_update@@YAXK@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 78
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 167
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 198
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 226
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 305
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 354
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 374
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 397
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

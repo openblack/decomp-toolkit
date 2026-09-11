@@ -1,0 +1,74 @@
+- symbol: 0
+  hash: 7c50b6895b66ae1cb83675b1ce9d831999588cfe
+  signature: Vf+L/+z/g//s/wz/Vv+N/0X/CP9X/1D/jf9F//T/UP/o/wAAAAAAAAAAWf+N/3X/9P9Z/2j/AAAAAAAAAABq/wD/av8R/4P/7P8M/4v//P+l/6X/Zv+l/+j/AAAAAAAAAACj/wAAAAAAAAAAg//E/xj/D/++/wX/AAAAAAAAAACj/wAAAAAAAAAAX/8P/7//Bf8AAAAAAAAAAKP/AAAAAAAAAADH/wX/AAAAAAAAAAAAAAAAAAAAALj/AAAAAAAAAABe/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __fltout
+    size: 100
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ___dtold
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _fos
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _$I10_OUTPUT
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _ret
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 50
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 73
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 84
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 93
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

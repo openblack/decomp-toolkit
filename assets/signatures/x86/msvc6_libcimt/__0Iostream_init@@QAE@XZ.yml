@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7a8b0c5c418b567f3f9c76647e9ea37e6284fff0
+  signature: i//B/8P/
+  symbols:
+  - kind: Function
+    name: ??0Iostream_init@@QAE@XZ
+    size: 3
+    flags: 1
+    section: .text
+  relocations: []

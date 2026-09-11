@@ -1,4 +1,49 @@
 - symbol: 0
+  hash: 99417012ec091b4543bf0548f93ba9292519bea8
+  signature: Vf+L/+z/g/99/xD/AP9T/1b/V/8P/4T/rf8A/wD/AP+D/z3/AAAAAAAAAAAA/3X/Fv///3X/EP///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/wz/6f+Q/wD/AP8A////Tf8Q/4v/df8M/4v/ff8I/2b/D/+2/xf/D/+2/8L/R//2/4D/AAAAAAAAAAAE/3T/Kf+D/33/EP8A/3X/EP8P/7b/Bv8z/9L/9v+A/wAAAAAAAAAABP91/2D/6/9A/4r/B/+E/8D/df8E/zP/0v/r/wn/M//J/0f/iv/q/4r/yP+L/9H/Zv8P/7b/Bv8P/7b/yP9G//b/gf8AAAAAAAAAAAT/dP8c/4P/ff8Q/wD/dP8J/4r/Dv///03/EP+E/8n/df8E/zP/wP/r/wn/M//b/0b/iv/4/4r/2f+L/8P/Zv87/8L/df8R/2b/hf/S/3T/FP+L/0X/EP///03/EP+F/8D/dP8K/+v/g/8b/8D/g//g/wL/SP/r/wL/M//A/1//Xv9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: __mbsnbcmp
+    size: 196
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___ismbcodepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strncmp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __mbctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 66
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 86
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 124
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
   hash: 079b28e6506d7fc02b4b4c46a15e8c9499416bf0
   signature: Vf+L/+z/U/8z/9v/Of9d/xD/Vv9X/w//hP/X/wD/AP8A/zn/Hf8AAAAAAAAAAHX/Fv///3X/EP///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/wz/6f+7/wD/AP8A/2r/Gf/o/wAAAAAAAAAA//9N/xD/i/91/wz/i/99/wj/Wf9m/w//tv8P/w//tv/B/0f/if9N/wz/9v+A/wAAAAAAAAAABP90/y3/Of9d/xD/df8T/w//tv8G/4n/Xf8M//b/gP8AAAAAAAAAAAT/df94/4v/2P/r/0L/iv8H/4T/wP91/wX/if9d/wz/6/8K/zP/0v9H/4r/8f+K/9D/if9V/wz/Zv8P/7b/Hv8P/7b/w/9G//b/gP8AAAAAAAAAAAT/dP8c/4P/ff8Q/wD/dP8J/4r/Bv///03/EP+E/8D/df8E/zP/2//r/wn/M//J/0b/iv/r/4r/yP+L/9n/Zv85/13/DP91/xj/Zv+D/33/DP8A/3T/Jf+L/0X/EP///03/EP+F/8D/dP8b/zP/2//p/3T/////////av8Z/+j/AAAAAAAAAABm/zv/Xf8M/1n/G//A/4P/4P8C/0j/6/8K/2r/Gf/o/wAAAAAAAAAAWf8z/8D/X/9e/1v/Xf/D/w==
   symbols:

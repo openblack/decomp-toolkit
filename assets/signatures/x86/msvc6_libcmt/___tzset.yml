@@ -1,4 +1,36 @@
 - symbol: 0
+  hash: 247ddda2b45c14387dabf9367c6eb98d7643fd15
+  signature: g/89/wAAAAAAAAAAAP91/wv/6P8AAAAAAAAAAP//Bf8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: ___tzset
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?first_time@?1??__tzset@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __tzset
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 10
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 996bbb25dfd5fc1ab7cafaa361f2d8bf9c2799c2
   signature: g/89/wAAAAAAAAAAAP91/yT/av8L/+j/AAAAAAAAAACD/z3/AAAAAAAAAAAA/1n/df8L/+j/AAAAAAAAAAD//wX/AAAAAAAAAABq/wv/6P8AAAAAAAAAAFn/w/8=
   symbols:

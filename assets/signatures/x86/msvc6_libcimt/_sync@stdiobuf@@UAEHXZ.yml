@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: c434fdecfc29a7c61f2c34aefe990f0b68998b1e
+  signature: U/9W/4v/8f+D/37/CP8A/3X/f/+D/8v///9T/+j/AAAAAAAAAAA7/8P/dP9l/4v/zv/o/wAAAAAAAAAAhf/A/37/Z/+L/1b/TP9X/4v/Sv8Q/zv/y/90/xf/i//5/8H///8F/4P/4f8f/4v/PP+9/wAAAAAAAAAAjf8M/8n/jf8M/4//6/8F/7n/AAAAAAAAAAD2/0H/BP+A/3T/Gv+L/07/KP+L/37/LP87/8//c/8J/4D/Of8K/3X/Af9A/0H/6//z//b/Qv8N/yD/dP8B/0D/av8B/2r/Af/3/9j/UP+L/87/6P8AAAAAAAAAADv/w/9f/3X/BP+L/8P/6/8L/4v/Rv8s/4n/Xv8M/4n/Rv8o/zP/wP9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: ?sync@stdiobuf@@UAEHXZ
+    size: 142
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?overflow@stdiobuf@@UAEHH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?in_avail@streambuf@@QBEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___badioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?seekoff@stdiobuf@@UAEJJW4seek_dir@ios@@H@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 26
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 69
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 115
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

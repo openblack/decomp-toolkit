@@ -1,10 +1,10 @@
 - symbol: 0
-  hash: 675aabdc6d1138c14ffc6b8fc80c793d07a3465a
-  signature: aP9A/wH/AP8A/2r/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/o/8AAAAAAAAAAHX/Af/D/4P/Jf8AAAAAAAAAAAD/g/8l/wAAAAAAAAAAAP9q/wH/o/8AAAAAAAAAAMf/Bf8AAAAAAAAAABD/AP8A/wD/WP/D/w==
+  hash: 76f9c64abd08d1bcf8ea67fda7b934ea3986f930
+  signature: aP9A/wH/AP8A/2r/AP///zX/AAAAAAAAAAD//xX/AAAAAAAAAACF/8D/o/8AAAAAAAAAAHX/Af/D/4v/TP8k/wT/g/8l/wAAAAAAAAAAAP+D/yX/AAAAAAAAAAAA/2r/Af+j/wAAAAAAAAAAif8N/wAAAAAAAAAAx/8F/wAAAAAAAAAAEP8A/wD/AP9Y/8P/
   symbols:
   - kind: Function
     name: ___sbh_heap_init
-    size: 62
+    size: 72
     flags: 1
     section: .text
   - kind: Object
@@ -38,6 +38,11 @@
     flags: 1
     section: null
   - kind: Object
+    name: ___sbh_threshold
+    size: 4
+    flags: 1
+    section: null
+  - kind: Object
     name: ___sbh_sizeHeaderList
     size: 4
     flags: 1
@@ -55,19 +60,23 @@
     kind: x86_abs32
     symbol: 3
     addend: 0
-  - offset: 31
+  - offset: 35
     kind: x86_abs32
     symbol: 4
     addend: 0
-  - offset: 38
+  - offset: 42
     kind: x86_abs32
     symbol: 5
     addend: 0
-  - offset: 46
+  - offset: 50
     kind: x86_abs32
     symbol: 6
     addend: 0
-  - offset: 52
+  - offset: 56
     kind: x86_abs32
     symbol: 7
+    addend: 0
+  - offset: 62
+    kind: x86_abs32
+    symbol: 8
     addend: 0

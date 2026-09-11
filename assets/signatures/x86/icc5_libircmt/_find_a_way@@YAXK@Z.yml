@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ae77ee70b9192f6ae2008577d89592f7d30bb6ce
+  signature: Vv+L/0T/JP8I/4P/+P8B/3X/C/+g/zj/Av8V/wH/PP8B/3T/Gv/r/xb/hf/A/3T/Ev+D//j/Av91/w3/oP9s/wL/Ff8B/zz/Af8P/4T/5/8A/wD/AP9e/8P/i/8V/zz/Av8V/wH/i//C/8H/4P8H/4v/jP+Q/0D/R/8V/wH/M//A/4n/Df9E/wL/Ff8B/4v/Df88/wL/Ff8B/4v/0f/H/wX/QP8C/xX/Af8E/wD/AP8A/8H/4v8H/43/NP+K/8b/Bf85/wL/Ff8B/wD/i/+2/3T/R/8V/wH/hf/2/w//hP+X/wD/AP8A/7j/Af8A/wD/AP+L/7T/iv94/0f/Ff8B/4X/9v8P/4T/g/8A/wD/AP+4/wL/AP8A/wD/i/+0/4r/fP9H/xX/Af+F//b/dP9z/7j/A/8A/wD/AP+L/5T/iv+A/0f/Ff8B/4X/0v90/2P/of9A/wL/Ff8B/4P/+P8D/w//hv91/////////6H/RP8C/xX/Af+o/wH/dP8S/6j/BP90/wf/vv8D/wD/AP8A/+v/FP++/wL/AP8A/wD/6/8N/6j/Av90/wf/vv8B/wD/AP8A/+v/Av8z//b/if81/0D/Av8V/wH/i/8V/zz/Av8V/wH/i//C/8H/4P8H/43/DP+Q/4v/tP+x/3T/R/8V/wH/g//+/wL/D/+F/yn/////////xv8F/zn/Av8V/wH/Af9e/8P/o/9A/wL/Ff8B/+v/m/+L/xX/cP8C/xX/Af+L/8L/wf/g/wf/i/+M/5D/QP+J/xX/Af8z/8D/if8N/3j/Av8V/wH/i/8N/3D/Av8V/wH/i//R/8f/Bf90/wL/Ff8B/wT/AP8A/wD/wf/i/wf/jf80/4r/xv8F/23/Av8V/wH/AP+L/7b/dP+J/xX/Af+F//b/D/+E/5f/AP8A/wD/uP8B/wD/AP8A/4v/tP+K/3j/if8V/wH/hf/2/w//hP+D/wD/AP8A/7j/Av8A/wD/AP+L/7T/iv98/4n/Ff8B/4X/9v90/3P/uP8D/wD/AP8A/4v/lP+K/4D/if8V/wH/hf/S/3T/Y/+h/3T/Av8V/wH/g//4/wP/D/+G/5D//v//////of94/wL/Ff8B/6j/Af90/xL/qP8E/3T/B/++/wP/AP8A/wD/6/8U/77/Av8A/wD/AP/r/w3/qP8C/3T/B/++/wH/AP8A/wD/6/8C/zP/9v+J/zX/dP8C/xX/Af+L/xX/cP8C/xX/Af+L/8L/wf/g/wf/jf8M/5D/i/+0/7H/dP+J/xX/Af+D//7/Av8P/4X/RP/+///////G/wX/bf8C/xX/Af8B/17/w/+j/3T/Av8V/wH/6/+b/w==
+  symbols:
+  - kind: Function
+    name: ?find_a_way@@YAXK@Z
+    size: 503
+    flags: 2
+    section: .text
+  relocations: []

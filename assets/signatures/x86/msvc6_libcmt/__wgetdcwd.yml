@@ -35,3 +35,84 @@
     kind: x86_rel32
     symbol: 3
     addend: -4
+- symbol: 0
+  hash: af4d43e4900f97b7440231cde9b0984b8d5222df
+  signature: Vf+L/+z/gf/s/xD/Av8A/wD/Vv+L/3X/CP+F//b/dP9Z/1b/6P8AAAAAAAAAAIX/wP9Z/3X/Gf/H/wX/AAAAAAAAAAAP/wD/AP8A/8f/Bf8AAAAAAAAAAA3/AP8A/wD/M//A/17/yf/D/43/Rf8I/2b/g/9l//7/AP+D/8b/QP9Q/43/hf/w//3//////2b/if91//j/UP++/wT/Af8A/wD/jf9F//j/Vv9Q/2b/x/9F//r/Ov8A/2b/x/9F//z/Lv8A////Ff8AAAAAAAAAAOv/E/+N/4X/8P/9//////++/wT/Af8A/wD/UP9W////Ff8AAAAAAAAAAIX/wP90/6//QP87/8b/d/+q/4v/Tf8M/4X/yf91/yP/O/9F/xD/f/8D/4v/Rf8Q/wP/wP9Q/+j/AAAAAAAAAABZ/4v/yP+F/8n/df8g/8f/Bf8AAAAAAAAAAAz/AP8A/wD/6/+A/zv/Rf8Q/37/D//H/wX/AAAAAAAAAAAi/wD/AP8A/+n/bP////////+N/4X/8P/9//////9Q/1H/6P8AAAAAAAAAAFn/Wf/p/1r/////////
+  symbols:
+  - kind: Function
+    name: __wgetdcwd
+    size: 216
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __validdrive
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetFullPathNameW@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetCurrentDirectoryW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 100
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 121
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 153
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 166
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 183
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 205
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

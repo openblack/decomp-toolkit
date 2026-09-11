@@ -1,4 +1,45 @@
 - symbol: 0
+  hash: f893618c8044dd33e57b3628c91719648faac5a5
+  signature: Vf+L/+z///91/wz/jf9F/xD/UP+N/0X/FP9Q////df8U////df8Q/+j/AAAAAAAAAACD/8T/FP+D//j///91/wT/C//A/13/w/9W////df8Q////df8U////df8M////df8I/+j/AAAAAAAAAAD//3X/FP+L//D/6P8AAAAAAAAAAP//df8Q/+j/AAAAAAAAAACD/8T/GP+L/8b/Xv9d/8P/
+  symbols:
+  - kind: Function
+    name: _comexecmd
+    size: 81
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __cenvarg
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dospawn
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 61
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
   hash: 42295dbc40b2e50689ac3364571eeb595b9e23e0
   signature: Vf+L/+z///91/wj/jf9F/wz/UP+N/0X/EP9Q////df8Q////df8M/+j/AAAAAAAAAACD/8T/FP+D//j///91/wT/C//A/13/w/9W////df8M////df8Q////df8I/2r/Av/o/wAAAAAAAAAA//91/xD/i//w/+j/AAAAAAAAAAD//3X/DP/o/wAAAAAAAAAAg//E/xj/i//G/17/Xf/D/w==
   symbols:
@@ -40,16 +81,21 @@
     symbol: 3
     addend: -4
 - symbol: 0
-  hash: f893618c8044dd33e57b3628c91719648faac5a5
-  signature: Vf+L/+z///91/wz/jf9F/xD/UP+N/0X/FP9Q////df8U////df8Q/+j/AAAAAAAAAACD/8T/FP+D//j///91/wT/C//A/13/w/9W////df8Q////df8U////df8M////df8I/+j/AAAAAAAAAAD//3X/FP+L//D/6P8AAAAAAAAAAP//df8Q/+j/AAAAAAAAAACD/8T/GP+L/8b/Xv9d/8P/
+  hash: 76b98b9755f8fb5c09da348ff71c0ef1b86241a5
+  signature: Vf+L/+z///91/wj/jf9F/wz/UP+N/0X/EP9Q////df8Q////df8M/+j/AAAAAAAAAACD/8T/FP+D//j///91/wT/C//A/13/w/9W////df8M////df8Q////df8I////Nf8AAAAAAAAAAOj/AAAAAAAAAAD//3X/EP+L//D/6P8AAAAAAAAAAP//df8M/+j/AAAAAAAAAACD/8T/GP+L/8b/Xv9d/8P/
   symbols:
   - kind: Function
     name: _comexecmd
-    size: 81
+    size: 84
     flags: 2
     section: .text
   - kind: Function
     name: __cenvarg
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __p_overlay
     size: 0
     flags: 1
     section: null
@@ -68,15 +114,19 @@
     kind: x86_rel32
     symbol: 1
     addend: -4
-  - offset: 51
-    kind: x86_rel32
+  - offset: 49
+    kind: x86_abs32
     symbol: 2
-    addend: -4
-  - offset: 61
+    addend: 0
+  - offset: 54
     kind: x86_rel32
     symbol: 3
     addend: -4
-  - offset: 69
+  - offset: 64
     kind: x86_rel32
-    symbol: 3
+    symbol: 4
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 4
     addend: -4

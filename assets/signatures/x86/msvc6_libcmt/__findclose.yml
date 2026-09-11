@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: 57fb23077161e3f6f272897e9c5336af8381e18f
+  signature: //90/yT/BP///xX/AAAAAAAAAACF/8D/df8O/8f/Bf8AAAAAAAAAABb/AP8A/wD/g//I////w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: __findclose
+    size: 31
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FindClose@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: 04d6aff42f72a04209f4fe5a754a402e8e3fa393
   signature: //90/yT/BP///xX/AAAAAAAAAACF/8D/df8P/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP+D/8j////D/zP/wP/D/w==
   symbols:

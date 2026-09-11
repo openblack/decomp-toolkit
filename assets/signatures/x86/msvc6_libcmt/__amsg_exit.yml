@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 7a6e264d9159c82a579e8e06024e902316cc215e
-  signature: g/89/wAAAAAAAAAAAv90/wX/6P8AAAAAAAAAAP//dP8k/wT/6P8AAAAAAAAAAGj///8A/wD/AP///xX/AAAAAAAAAABZ/1n/w/8=
+  hash: be0df37b25d912d12341c68bc771a94d980a81d5
+  signature: g/89/wAAAAAAAAAAAf91/wX/6P8AAAAAAAAAAP//dP8k/wT/6P8AAAAAAAAAAGj///8A/wD/AP///xX/AAAAAAAAAABZ/1n/w/8=
   symbols:
   - kind: Function
     name: __amsg_exit
@@ -45,8 +45,8 @@
     symbol: 4
     addend: 0
 - symbol: 0
-  hash: be0df37b25d912d12341c68bc771a94d980a81d5
-  signature: g/89/wAAAAAAAAAAAf91/wX/6P8AAAAAAAAAAP//dP8k/wT/6P8AAAAAAAAAAGj///8A/wD/AP///xX/AAAAAAAAAABZ/1n/w/8=
+  hash: 7a6e264d9159c82a579e8e06024e902316cc215e
+  signature: g/89/wAAAAAAAAAAAv90/wX/6P8AAAAAAAAAAP//dP8k/wT/6P8AAAAAAAAAAGj///8A/wD/AP///xX/AAAAAAAAAABZ/1n/w/8=
   symbols:
   - kind: Function
     name: __amsg_exit

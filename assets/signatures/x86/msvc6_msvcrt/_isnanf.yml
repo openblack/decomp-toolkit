@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 163601b58a2ce87c29cd01a2229f311b04f509a5
+  signature: i/9M/yT/BP+4/wD/AP+A/3//I//I/zv/yP91/w7/9/9E/yT/BP//////f/8A/3T/BP9q/wH/WP/D/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: _isnanf
+    size: 32
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: a0681fe7b612e5df372f88ffab57bfd2c346b684
+  signature: Vf+L/+z/Uf+N/0X/CP+J/0X//P+L/03//P+L/xH/gf/i/wD/AP+A/3//gf/6/wD/AP+A/3//df8W/4v/Rf/8/4v/CP+B/+H//////3//AP+F/8n/dP8H/7j/Af8A/wD/AP/r/wL/M//A/4v/5f9d/8P/
+  symbols:
+  - kind: Function
+    name: _isnanf
+    size: 57
+    flags: 2
+    section: .text
+  relocations: []

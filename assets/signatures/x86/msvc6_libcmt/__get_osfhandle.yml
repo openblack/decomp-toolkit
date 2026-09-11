@@ -1,4 +1,50 @@
 - symbol: 0
+  hash: 24f6b6c17ae15a31ec83966cfb1b7a5705459f5d
+  signature: i/9E/yT/BP87/wX/AAAAAAAAAABz/xz/i//I/4P/4P8f/8H/+f8F/4v/DP+N/wAAAAAAAAAA9v9E/8H/BP8B/43/BP/B/3T/A/+L/wD/w/+D/yX/AAAAAAAAAAAA/8f/Bf8AAAAAAAAAAAn/AP8A/wD/g//I////w/8=
+  symbols:
+  - kind: Function
+    name: __get_osfhandle
+    size: 61
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
   hash: 5a409f956d8e651f15e23e880a94b990c8bcc4c9
   signature: i/9E/yT/BP87/wX/AAAAAAAAAABz/x//i//I/4P/4P8f/8H/+f8F/43/BP/A/4v/DP+N/wAAAAAAAAAA9v9E/4H/BP8B/43/BP+B/3T/A/+L/wD/w//o/wAAAAAAAAAAx/8A/wn/AP8A/wD/6P8AAAAAAAAAAIP/IP8A/4P/yP///8P/
   symbols:

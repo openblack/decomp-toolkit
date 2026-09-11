@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: c2d5b6b982d5d9b4bc7130ba1bce5c373ccebf81
+  signature: V/9W/4P/7P8U/4v/dP8k/yD/i/98/yT/JP87/37/FP9y/xz/x/8E/yT/AAAAAAAAAADH/0T/JP8E/wAAAAAAAAAAx/9E/yT/CP+L/wH/AP8A/+j/AAAAAAAAAAD//0T/vv80/4P/xP8U/17/X//D/5D/
+  symbols:
+  - kind: Function
+    name: __PGOPTI_Prof_Count
+    size: 57
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BM@A@loc?5?$DM?5PGOPTI_block_cnt?$CIvar?$CJ?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Object
+    name: ??_C@_08A@pgopti?4c?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Function
+    name: __assert
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 42
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

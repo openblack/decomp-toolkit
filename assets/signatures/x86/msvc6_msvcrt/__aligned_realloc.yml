@@ -1,0 +1,141 @@
+- symbol: 0
+  hash: 350af765f8e1954de82a5cae8d06c6883b8de40e
+  signature: Vf+L/+z/Uf+D/33/CP8A/1P/Vv9X/3X/Dv///xX/AAAAAAAAAADH/wD/Fv8A/wD/AP/r/z//i/9F/wj/i/91/xD/JP/8/4v/eP/8/43/Rv///4X/xv+J/33//P91/93/g//+/wT/d/8D/2r/BP9e/1f///8V/wAAAAAAAAAAK/99/wj/i//Y/4v/Rf8M/wP/3/+N/0T/MP8E/1D///8V/wAAAAAAAAAAWf+F/8D/Wf91/wT/M//A/+v/LP+N/3z/MP8E/07/9//W/yP//v87/13/DP+J/0f//P92/wP/i/9d/wz/U////3X/CP9X/+j/AAAAAAAAAAD//3X//P///xX/AAAAAAAAAACD/8T/EP+L/8f/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: __aligned_realloc
+    size: 143
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp___errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp___msize
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 59
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 120
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 129
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
+  hash: 9959047234b47f325ac38cd36704595d961bfccf
+  signature: Vf+L/+z/g//s/xz/U/9W/1f/g/99/wj/AP91/xP///8V/wAAAAAAAAAAx/8A/xb/AP8A/wD/M//A/+n/IP8B/wD/AP+L/0X/CP+J/0X/7P+L/03/7P+D/+H//P+D/+n/BP+J/03/7P+L/1X/7P+L/wL/if9F/+z/i/9N/xD/g//p/wH/i/9V/xD/I//R/4X/0v90/0H/M//A/4X/wP91/yL/aP8AAAAAAAAAAGr/AP9o/7X/AP8A/wD/aP8AAAAAAAAAAGr/Av///xX/AAAAAAAAAACD/8T/FP+D//j/Af91/wH/zP8z/8n/hf/J/3X/0v///xX/AAAAAAAAAADH/wD/Fv8A/wD/AP8z/8D/6f+2/wD/AP8A/4P/ff8Q/wT/dv8I/4v/Vf8Q/4n/Vf/o/+v/B//H/0X/6P8E/wD/AP8A/4v/Rf/o/4n/Rf8Q/4v/Tf/s/1H///8V/wAAAAAAAAAAg//E/wT/i/9V/wj/K/9V/+z/K//C/4n/Rf/8/4v/Rf8Q/4v/Tf8M/43/VP8B/wT/Uv///xX/AAAAAAAAAACD/8T/BP+J/0X/+P+D/33/+P8A/3X/BP8z/8D/6/9i/4v/Rf8Q/4v/Tf/4/43/VP8B/wT/i/9F/xD/g//o/wH/9//Q/yP/0P+J/1X/8P+L/03/8P+D/+n/BP+J/03/9P+L/1X/9P+L/0X/+P+J/wL/i/9N//z/O/9N/wz/dv8I/4v/Vf8M/4n/Vf/k/+v/Bv+L/0X//P+J/0X/5P+L/03/5P9R/4v/Vf8I/1L/i/9F//D/UP/o/wAAAAAAAAAAg//E/wz/i/9N/+z/Uf///xX/AAAAAAAAAACD/8T/BP+L/0X/8P9f/17/W/+L/+X/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __aligned_realloc
+    size: 329
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp___errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CG@OIKL@?$CI?$CCalignment?5must?5be?5a?5power?5of?52@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_07HCJA@align?4c?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp___CrtDbgReport
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp___msize
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 82
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 94
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 102
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 173
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 204
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 299
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 312
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

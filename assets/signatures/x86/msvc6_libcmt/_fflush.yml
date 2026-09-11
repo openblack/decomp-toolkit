@@ -44,3 +44,40 @@
     kind: x86_rel32
     symbol: 4
     addend: -4
+- symbol: 0
+  hash: a61a5d48928d3f7ffc6eb992643b1331299bc668
+  signature: Vv+L/3T/JP8I/4X/9v91/wn/Vv/o/wAAAAAAAAAAWf9e/8P/Vv/o/wAAAAAAAAAAhf/A/1n/dP8F/4P/yP///17/w//2/0b/Df9A/3T/D////3b/EP/o/wAAAAAAAAAA9//Y/1n/Xv8b/8D/w/8z/8D/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: _fflush
+    size: 59
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _flsall
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __commit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

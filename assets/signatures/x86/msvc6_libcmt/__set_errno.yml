@@ -1,4 +1,27 @@
 - symbol: 0
+  hash: b6286a6a3872850508b1c1ab8f2b425f5c364c9f
+  signature: i/9E/yT/BP+D//j/Af90/xL/fv8a/4P/+P8D/3//Ff/H/wX/AAAAAAAAAAAi/wD/AP8A/8P/x/8F/wAAAAAAAAAAIf8A/wD/AP/D/w==
+  symbols:
+  - kind: Function
+    name: __set_errno
+    size: 38
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
   hash: 8c68a78bdac99324fe9ec52d32fd46b26084e6f3
   signature: i/9E/yT/BP+D//j/Af90/xP/fv8c/4P/+P8D/3//F//o/wAAAAAAAAAAx/8A/yL/AP8A/wD/w//o/wAAAAAAAAAAx/8A/yH/AP8A/wD/w/8=
   symbols:

@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: bb472ee44978882862aa595a0f27f1eebcf7d0e7
+  signature: Vv+L//H/i/8G/4v/QP8E/4v/RP8w/wT/g/94/zD/AP99/wr/g//A/zT/UP/o/wAAAAAAAAAAWf+L/wb/i/9A/wT/A//G/17/g/94/zT/AP99/wr/g//A/zj/UP/o/wAAAAAAAAAAWf/D/w==
+  symbols:
+  - kind: Function
+    name: ?isfx@istream@@QAEXXZ
+    size: 53
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __mtunlock
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

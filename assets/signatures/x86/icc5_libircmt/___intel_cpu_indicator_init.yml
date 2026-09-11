@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: f926287e19486edb081956d8001567ec31f61536
+  signature: UP9S/1H/U/9X/1b/Vf+L/+z/g//s/zD/nP9Y/4v/yP81/wD/AP8g/wD/UP+d/5z/WP87/8H/D/+E/xT/AP8A/wD/Uf+d/7j/Af8A/wD/AP8P/6L/if9F//z/if9V//j/6f8AAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: ___intel_cpu_indicator_init
+    size: 53
+    flags: 1
+    section: .text
+  - kind: Function
+    name: TAG_PACKET_1
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 49
+    kind: x86_rel32
+    symbol: 1
+    addend: 0

@@ -1,12 +1,32 @@
 - symbol: 0
-  hash: 2e3b9dfca97e27a3b01704da618eb7110c65efdb
-  signature: Vv+L/3T/JP8I/zv/Nf8AAAAAAAAAAFf/d/8h/2r/Cf/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAav8J/4v/+P/o/wAAAAAAAAAAg//E/wz/hf///3T/BP+L/8f/6/8c/4X/9v91/wP/av8B/17/g//G/w//g//m//D/Vv9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAX/9e/8P/
+  hash: 88eb1142ad9257c0b80532bb276ba8f24687361b
+  signature: Vf+L/+z/av///2j/AAAAAAAAAABo/wAAAAAAAAAAZP+h/wAAAAAAAAAAUP9k/4n/Jf8AAAAAAAAAAIP/7P8M/1P/Vv9X/6H/AAAAAAAAAACD//j/A/91/0P/i/91/wj/O/81/wAAAAAAAAAAD/+H/5P/AP8A/wD/av8J/+j/AAAAAAAAAABZ/4P/Zf/8/wD/Vv/o/wAAAAAAAAAAWf+J/0X/5P+D/03//P///+j/AAAAAAAAAACL/0X/5P+F/8D/dP9t/+n/hv8A/wD/AP8=
   symbols:
   - kind: Function
     name: __heap_alloc
-    size: 78
+    size: 103
     flags: 1
     section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __except_handler3
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
   - kind: Object
     name: ___sbh_threshold
     size: 0
@@ -23,7 +43,78 @@
     flags: 1
     section: null
   - kind: Function
-    name: __unlock
+    name: fn_00000067
+    size: 0
+    flags: 0
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 11
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 63
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 8
+    addend: 0
+- symbol: 0
+  hash: d1c3df896c2584511d9d5b75fe6812740f112d21
+  signature: of8AAAAAAAAAAFb/i/90/yT/CP+D//j/A/91/xX/O/81/wAAAAAAAAAAd/8//1b/6P8AAAAAAAAAAIX/wP9Z/3T/NP9e/8P/g//4/wL/df8t/4v/RP8k/wj/hf/A/3T/CP+N/3D/D/+D/+b/8P/r/wP/av8Q/17/O/81/wAAAAAAAAAAd/8f/4v/xv/B/+j/BP9Q/+j/AAAAAAAAAACF/8D/Wf91/x7/6/8N/4X/9v91/wP/av8B/17/g//G/w//g//m//D/Vv9q/wD///81/wAAAAAAAAAA//8V/wAAAAAAAAAAXv/D/w==
+  symbols:
+  - kind: Function
+    name: __heap_alloc
+    size: 116
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___active_heap
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___sbh_threshold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___sbh_alloc_block
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___old_sbh_threshold
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___old_sbh_alloc_block
     size: 0
     flags: 1
     section: null
@@ -38,27 +129,31 @@
     flags: 1
     section: null
   relocations:
-  - offset: 7
+  - offset: 1
     kind: x86_abs32
     symbol: 1
     addend: 0
   - offset: 17
-    kind: x86_rel32
+    kind: x86_abs32
     symbol: 2
-    addend: -4
-  - offset: 23
+    addend: 0
+  - offset: 25
     kind: x86_rel32
     symbol: 3
     addend: -4
-  - offset: 32
-    kind: x86_rel32
-    symbol: 4
-    addend: -4
-  - offset: 65
+  - offset: 62
     kind: x86_abs32
-    symbol: 5
+    symbol: 4
     addend: 0
-  - offset: 71
+  - offset: 75
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 104
     kind: x86_abs32
     symbol: 6
+    addend: 0
+  - offset: 110
+    kind: x86_abs32
+    symbol: 7
     addend: 0

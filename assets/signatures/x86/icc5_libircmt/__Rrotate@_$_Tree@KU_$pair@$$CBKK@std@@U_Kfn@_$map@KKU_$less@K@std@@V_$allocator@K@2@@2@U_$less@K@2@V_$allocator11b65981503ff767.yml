@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 342ace2ea431173f58e81f1af82d215444d384ce
+  signature: V/+L/1T/JP8I/4v/Av+L/3j/CP+J/zr/i/94/wj/O/89/wAAAAAAAAAAdP8D/4n/V/8E/4v/ev8E/4n/eP8E/4v/Sf8E/zv/Uf8E/3T/Gf+L/0r/BP87/1H/CP90/wz/if8B/4n/UP8I/4n/Qv8E/1//wv8E/wD/if9B/wj/6//x/4n/Qf8E/+v/7P8=
+  symbols:
+  - kind: Function
+    name: ?_Rrotate@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@IAEXPAU_Node@12@@Z
+    size: 70
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Nil@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@1PAU_Node@12@A
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

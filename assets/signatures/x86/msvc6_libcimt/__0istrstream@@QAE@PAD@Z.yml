@@ -1,0 +1,91 @@
+- symbol: 0
+  hash: 1541a775c25d87e35dea8ba262d8221466beb752
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/U/9W/1f/M//b/zn/Xf8M/4v/8f9q/wH/if91/+z/if9d//D/X/90/xT/jf9O/wz/x/8G/wAAAAAAAAAA6P8AAAAAAAAAAIn/ff/w/4n/Xf/8/2r/ZP/o/wAAAAAAAAAAWf+L/8j/if9N/wz/O//L/4n/ff/8/3T/DP9T/1P///91/wj/6P8AAAAAAAAAAOv/Av8z/8D/U/9Q/4v/zv+I/13//P/o/wAAAAAAAAAAi/8G/4v/Tf/0/4v/QP8E/8f/BP8w/wAAAAAAAAAAi/8G/4v/QP8E/4n/fP8w/xz/i//G/1//Xv9b/2T/if8N/wAAAAAAAAAAyf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ??0istrstream@@QAE@PAD@Z
+    size: 139
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L19014
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_8istrstream@@7B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0ios@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0strstreambuf@@QAE@PADH0@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0istream@@QAE@PAVstreambuf@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7istrstream@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 110
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 131
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

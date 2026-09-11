@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: dd857c0ba0b1498f8b2184e202d9c6157db54f1d
+  signature: x/8B/wAAAAAAAAAAi/9J/wT/hf/J/3T/B/9R/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: ??1type_info@@UAE@XZ
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7type_info@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: da87d3471196fc8610c4abb820af8563bbd0b0fe
   signature: Vv+L//H/av8b/8f/Bv8AAAAAAAAAAOj/AAAAAAAAAACL/3b/BP9Z/4X/9v90/wf/Vv/o/wAAAAAAAAAAWf9q/xv/6P8AAAAAAAAAAFn/Xv/D/w==
   symbols:

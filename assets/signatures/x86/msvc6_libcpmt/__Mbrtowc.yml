@@ -71,3 +71,83 @@
     kind: x86_rel32
     symbol: 7
     addend: -4
+- symbol: 0
+  hash: 6a5277426bbd96d37fd650f752948aec38f6b0d0
+  signature: Vf+L/+z/U/9W/1f/i/99/wz/M//b/zv/+/90/xX/Of9d/xD/dP8Q/4r/F/86/9P/df8R/4v/Rf8I/zv/w/90/wP/Zv+J/xj/M//A/1//Xv9b/13/w/+L/0X/GP87/8P/df8N/4v/Df8AAAAAAAAAAKH/AAAAAAAAAADr/wX/i/8I/4v/QP8E/zv/y/91/xP/i/9F/wj/O//D/3T/B/9m/w//tv/K/2b/if8I/2r/Af9Y/+v/y/+L/3X/FP85/x7/dP9C/4j/Vv8B/4P/Pf8AAAAAAAAAAAH/fv8l/zP/yf85/13/CP8P/5X/wf9R////df8I/2r/Av9W/2r/Cf9Q////Ff8AAAAAAAAAAIX/wP90/wn/if8e/6H/AAAAAAAAAADr/5P/if8e/8f/Bf8AAAAAAAAAACr/AP8A/wD/g//I////6/+C/4v/Hf8AAAAAAAAAAA//tv/K//b/RP9L/wH/gP90/zz/i/8N/wAAAAAAAAAAOf9N/xD/c/8G/4j/Fv9q//7/6/+T/4P/+f8B/37/G/8z/9L/Of9V/wj/D/+V/8L/Uv///3X/CP9R/1f/av8J/1D///8V/wAAAAAAAAAAhf/A/3X/p/+A/3//Af8A/3X/of+D/yb/AP/r/6X/M//J/zn/Tf8I/w//lf/B/1H///91/wj/av8B/1f/av8J/1D///8V/wAAAAAAAAAAhf/A/w//hf9G/////////+v/g/8=
+  symbols:
+  - kind: Function
+    name: __Mbrtowc
+    size: 274
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_codepage
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mb_cur_max
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MultiByteToWideChar@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __pctype
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 52
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 57
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 103
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 130
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 141
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 151
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 166
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 182
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 221
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 260
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

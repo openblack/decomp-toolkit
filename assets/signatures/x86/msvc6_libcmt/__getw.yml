@@ -1,4 +1,23 @@
 - symbol: 0
+  hash: 699afeabc1b790cff286a8d6a2bc5bf965c337ad
+  signature: Vf+L/+z/U/9W/4v/df8I/1f/av8E/43/ff8I/1v///9O/wT/eP8K/4v/Dv8P/7b/Af9B/4n/Dv/r/wf/Vv/o/wAAAAAAAAAAWf+I/wf/R/9L/3X/5P/2/0b/DP8w/1//Xv9b/3X/Bf+L/0X/CP9d/8P/g//I////Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __getw
+    size: 62
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __filbuf
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 32
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
   hash: 1ce55c229338c3973f98367972a9a1849070112f
   signature: Vf+L/+z/U/9W/4v/df8I/1f/Vv+N/33/CP/o/wAAAAAAAAAAWf9q/wT/W////07/BP94/wr/i/8O/w//tv8B/0H/if8O/+v/B/9W/+j/AAAAAAAAAABZ/4j/B/9H/0v/df/k//b/Rv8M/zD/df8F/4v/ff8I/+v/A/+D/8////9W/+j/AAAAAAAAAABZ/4v/x/9f/17/W/9d/8P/
   symbols:

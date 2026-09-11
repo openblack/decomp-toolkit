@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 5991008170a1bf94f75013bbab852a23cc751276
+  signature: Vf+L/+z///91/wz/6P8AAAAAAAAAAIX/wP9Z/3T/Jf+L/03/CP+L/4H/xP8A/wD/AP87/0H/MP92/xf/VP9Y/4n/Rf8I/4v/Qf8w/4P/wP8E/zn/Rf8I/3f/B//H/0X/DP8f/wD/AP8A/4v/Rf8M/13/w/8=
+  symbols:
+  - kind: Function
+    name: __PreventStackOverwrite
+    size: 58
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __IsMemoryLocation
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 081fadf61b8bf69d27aba37c15df7985041f6688
+  signature: Vf+L/+z/Uf9T/1b/V/+L/0X/DP9Q/+j/AAAAAAAAAACD/8T/BP+F/8D/dP8r/4v/Tf8I/4v/Vf8I/4v/gf/E/wD/AP8A/zv/Qv8w/3b/Gv9U/1j/if9F//z/i/9N/wj/i/9R/zD/g//C/wT/Of9V//z/d/8H/8f/Rf8M/x//AP8A/wD/i/9F/wz/X/9e/1v/i//l/13/w/8=
+  symbols:
+  - kind: Function
+    name: __PreventStackOverwrite
+    size: 76
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __IsMemoryLocation
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

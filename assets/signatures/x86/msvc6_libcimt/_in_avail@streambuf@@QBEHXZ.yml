@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 2fd51f82ac4976625cbe300960684eade1e733c7
+  signature: i/9R/yj/i/9B/yz/O//Q/3P/A/8r/8L/w/8z/8D/w/8=
+  symbols:
+  - kind: Function
+    name: ?in_avail@streambuf@@QBEHXZ
+    size: 16
+    flags: 1
+    section: .text
+  relocations: []

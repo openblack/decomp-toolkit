@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b8cd55bc8e9f0241c65f6780d97b3cfa91e1eb8d
+  signature: g//s/wz/i/9U/yT/EP9p/8L/qP8I/wD/AP+L/4j/pP8I/wD/AP9B/4n/iP+k/wj/AP8A/4H/+f8A/wH/AP8A/3T/Bv+L/8H/g//E/wz/w/+J/xT/JP/o/wAAAAAAAAAAM//J/+v/7v8=
+  symbols:
+  - kind: Function
+    name: ?find_stride_entry@@YAHK@Z
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?stride_hist_eval@@YAXH@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 44
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

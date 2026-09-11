@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 36db395eca31953043a080d33c1b67151036fdbf
+  signature: Vv+L//H/M//A/4P/Tv8M////g/9O/zD///+J/0b/BP+J/0b/CP+J/0b/EP+J/0b/FP+J/0b/GP+J/0b/HP+J/0b/IP+J/0b/JP+J/0b/KP+J/0b/LP+N/0b/NP/H/wb/AAAAAAAAAABQ/+j/AAAAAAAAAABZ/4v/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: ??0streambuf@@IAE@XZ
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7streambuf@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __mtlockinit
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 48
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 54
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

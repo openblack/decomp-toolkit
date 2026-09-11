@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 8e7f5e790d7e174990aa5ba27aa4f2ea9c00af25
+  signature: D/9X/+T/D//C/+D/Af8P/1//Bf8AAAAAAAAAAIv/zP8P/yj/Pf8AAAAAAAAAAIP/4f/w/w//KP8d/wAAAAAAAAAAD/8p/0H/8P8P/1T/x/8P/1b/w/8P/yj/+P8P/1z/w/8P/1j/+/8P/2//Qf/w/w//U////w//Wf/H/w//b/9J//j/D/9Y/8D/D/9v/z3/EP8C/wD/AP8P/3L/0P8X/w//cv/R/xf/D/8p/2H/4P8P/yj/0P8P//r/x/8P/1n/0v8P//r/z/8P/yj/Jf8w/wP/AP8A/w//KP81/yD/A/8A/wD/D/9Z/+L/D/8o/y3/EP8D/wD/AP8P/1n/8v8P/yj/Pf8A/wP/AP8A/w//WP/l/w//WP/3/w//KP8t//D/Av8A/wD/D/9Z/+L/D/8q/9n/D/8o/z3/4P8C/wD/AP8P/1n/8v8P/xb/2/8P/1j/5f8P/1j/9/8P/yj/Lf9A/wP/AP8A/w//Wf/i/w//Kv/Y/w//U//2/w//Wf/p/w//Wf/m/w//KP81/8D/Av8A/wD/D/9Z/+D/D/9Y/8T/D/8o/yX/sP8C/wD/AP8P/1n/2f8P/1n/xf8P/yj/Lf8AAAAAAAAAAA//V////w//WP/D/w//KP8d/wAAAAAAAAAAD/9d/8b/D/9f/8T/D/9Y/9j/D/8o/9P/D/8s/8P/D//C/9f/Af8P/xL/2/8P/1T/1f8P/yz/y/8P/2//Lf8Q/wL/AP8A/w//Lf/S/w//Ev/S/w//Lf/a/w//+v/C/w//+v/L/w//Kv/Z/w//Fv/b/w///v/N/w//Kv/Y/w///v/F/w//XP/D/w//KP/Q/w//Wf/S/w//KP81/5D/Av8A/wD/D/8o/yX/gP8C/wD/AP8P/1n/8v8P/yj/Pf9w/wL/AP8A/w//Wf/i/w//KP8t/2D/Av8A/wD/D/9Y//f/D/9y//D/F/8P/1j/5f8P/yj/Lf9Q/wL/AP8A/w//Wf/i/w//cv/x/xf/D/8o/1n/4P8P/1j/5f8P/3//Qf/w/w//Wf/g/w//f/9J//j/D/9c//T/D/8o/z3/AAAAAAAAAAAP/1P/9v8P/1n/5v8P/yj/Qf/w/w//WP/k/w//WP/n/w//Wf/E/w//VP/D/8L/IP8A/w==
+  symbols:
+  - kind: Function
+    name: _am_pow_ps@32
+    size: 425
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __ps_am_min_norm_pos
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_inv_mant_mask
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_1
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: __ps_am_0p5
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 223
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 236
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 396
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 03d2867bebe7bb4e8cb8422e9ff149573fd9e316
+  signature: Vv+L/0z/JP8I/+j/AAAAAAAAAACD/8T/BP/D/w==
+  symbols:
+  - kind: Function
+    name: ?flush@@YAAAVostream@@AAV1@@Z
+    size: 14
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?flush@ostream@@QAEAAV1@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

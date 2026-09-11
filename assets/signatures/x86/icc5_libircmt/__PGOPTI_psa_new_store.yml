@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 497b4cf5ac235d5d1dcdbcc8d984f32718784a09
+  signature: g//s/wz/i/9E/yT/EP+L/1T/JP8U/7n/Bv8A/wD/AP///wX/zP8C/xX/Af+j/yD/Av8V/wH/if8V/yT/Av8V/wH/x/8F/zD/Av8V/wH/Af8A/wD/AP+J/w3/LP8C/xX/Af///wX/1P8C/xX/Af+J/wz/JP/o/wAAAAAAAAAAof8s/wL/Ff8B/4n/BP8k/+j/AAAAAAAAAACD/8T/DP/D/w==
+  symbols:
+  - kind: Function
+    name: __PGOPTI_psa_new_store
+    size: 80
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?process_ma@@YAXK@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?process_sc@@YAXK@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 59
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

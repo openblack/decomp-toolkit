@@ -1,0 +1,36 @@
+- symbol: 0
+  hash: ea9fa0124169150bae96eb15f465b76e36955fe7
+  signature: Vv+L//H/i/8G/4v/QP8E/4v/TP8w/wT/6P8AAAAAAAAAAIX/wP90/xn/i/8G/2r/AP+L/0j/BP8D/87/6P8AAAAAAAAAAIv/Bv9q/wD/i/9I/wT/A//O/+v/I/+L/wb/i/9A/wT/jf8M/zD/i/9E/zD/CP8M/wL/UP/o/wAAAAAAAAAAi/8G/4v/QP8E/43/DP8w/4v/RP8w/wj/DP8C/1D/6P8AAAAAAAAAAF7/w/8=
+  symbols:
+  - kind: Function
+    name: ?close@fstream@@QAEXXZ
+    size: 88
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?close@filebuf@@QAEPAV1@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?clear@ios@@QAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 31
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

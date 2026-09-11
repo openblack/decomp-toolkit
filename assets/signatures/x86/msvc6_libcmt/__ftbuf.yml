@@ -17,3 +17,26 @@
     kind: x86_rel32
     symbol: 1
     addend: -4
+- symbol: 0
+  hash: 1a1415f5e8673b759a9ce30b18cdd3820aa14ef2
+  signature: g/98/yT/BP8A/1b/dP8i/4v/dP8k/wz/9v9G/w3/EP90/yn/Vv/o/wAAAAAAAAAAgP9m/w3/7v+D/2b/GP8A/4P/Jv8A/4P/Zv8I/wD/Wf9e/8P/i/9E/yT/DP/2/0D/Df8Q/3T/B/9Q/+j/AAAAAAAAAABZ/17/w/8=
+  symbols:
+  - kind: Function
+    name: __ftbuf
+    size: 61
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __flush
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

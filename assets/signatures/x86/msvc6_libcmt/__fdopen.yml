@@ -1,4 +1,59 @@
 - symbol: 0
+  hash: d4e6e37b325bc0b43f80f7afedaccedc0c361e7a
+  signature: Vf+L/+z/i/9F/wj/U/87/wX/AAAAAAAAAABz/zX/i//I/2r/Af/B//n/Bf+D/+D/H/9b/4v/DP+N/wAAAAAAAAAAhP9c/8H/BP90/x3/6P8AAAAAAAAAAIX/wP90/xT/i/9V/wz/iv8K/4D/+f9h/3T/FP+A//n/cv90/wr/gP/5/3f/dP8K/zP/wP9b/13/w/+J/1j/DP/r/wf/x/9A/wz/Av8A/wD/AP+L/w3/AAAAAAAAAABW/1f/M////yH/ff8M/wn/SP8M/4v/8/+K/0r/Af9C/4T/yf90/1r/hf/2/3T/Vv8P/77/yf+D/+n/K/90/zf/g//p/zf/dP8n/0n/dP8Y/4P/6f8L/3T/B/+D/+n/Bv90/xr/6/8r/4X///91/yf/gP9g/w3/v/+L//v/6//M/4X///91/xv/gP9I/w3/QP+L//v/6//A/4P/ff8M/wD/df8N/4n/Xf8M/+v/tf+L/0j/DP/2/8H/gP90/wT/M//2/+v/qf+D/+H//P+A/8n/gP+J/0j/DP/r/57/i/9N/wj///8F/wAAAAAAAAAAX/+J/0j/EP9e/+n/av////////8=
+  symbols:
+  - kind: Function
+    name: __fdopen
+    size: 220
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __getstream
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __commode
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __cflush
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 87
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 206
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
   hash: 2d2a77737e24fbea05af20912098ba5ec88d9145
   signature: Vf+L/+z/i/9F/wj/U/87/wX/AAAAAAAAAABW/w//g//Z/wD/AP8A/4v/yP+D/+D/H//B//n/Bf9q/wH/jf8E/8D/i/8M/43/AAAAAAAAAABb/4T/XP+B/wT/D/+E/7r/AP8A/wD/6P8AAAAAAAAAAIv/8P+F//b/D/+E/6v/AP8A/wD/i/9N/wz/iv8B/zz/Yf90/xT/PP9y/3T/C/88/3f/dP8M/zP/9v/p/4j/AP8A/wD/if9e/wz/6/8H/8f/Rv8M/wL/AP8A/wD/of8AAAAAAAAAAFf/M////4v/0/8h/33/DP8J/0b/DP+K/0H/Af9B/4T/wP90/1f/hf/S/3T/U/8P/77/wP+D/+j/K/90/zf/g//o/zf/dP8n/0j/dP8Y/4P/6P8L/3T/B/+D/+j/Bv90/xr/6/8q/4X///91/yb/gP9m/w3/v/+L//v/6//M/4X///91/xr/gP9O/w3/QP+L//v/6//A/4P/ff8M/wD/df8M/4n/Xf8M/+v/tf+L/0b/DP+o/4D/dP8E/zP/0v/r/6r/JP/8/wz/gP+J/0b/DP/r/6H/i/9F/wj///8F/wAAAAAAAAAAif9G/xD/X/9W/+j/AAAAAAAAAABZ/4v/xv/r/wL/M//A/17/W/9d/8P/
   symbols:

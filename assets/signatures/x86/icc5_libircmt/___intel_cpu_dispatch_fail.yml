@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 1faaad00fcae4090a79c3203b5e2e2ebacc597c1
+  signature: x/8F/wD/AP8A/wD/Af8A/wD/AP/D/5D/
+  symbols:
+  - kind: Function
+    name: ___intel_cpu_dispatch_fail
+    size: 12
+    flags: 1
+    section: .text
+  relocations: []

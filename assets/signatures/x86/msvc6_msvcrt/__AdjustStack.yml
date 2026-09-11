@@ -1,0 +1,98 @@
+- symbol: 0
+  hash: 56f1d0115742a9d3d0f95fbab5dd16ee8ea303db
+  signature: Vf+L/+z/g//s/1D/Vv+L/3X/CP9X/4v/ff8M/4X///9+/3j/U/+N/17/CP+J/33/CP+L/0b/BP9q/wP/wf/o/wv/g//g/wf/UP9T/+j/AAAAAAAAAACL/0b/BP+D/8T/DP+L/8j/Zv+B/+H/AP/4/4H/wf8A/wj/AP8A/zP/yP+B/+H/AP84/wD/AP8z/8j///9N/wj/if9O/wT/df/J/43/PP+//43/Xv8c/9H/5/9X/43/Rf+w/1P/UP/o/wAAAAAAAAAAav9Q/1j/K//H/1D/jf9E/zf/HP9Q/1P/6P8AAAAAAAAAACv/9/+N/0X/sP9X/4P/xv9s/1D/Vv/o/wAAAAAAAAAAg//E/yT/W//r/zz/ff86/4v/Tv8E/2r/AP+L/8H/Zv8l/wD/+P9I/zP/wf8l/wD/OP8A/wD/M//B/4n/Rv8E/8H/6P8L/4P/4P8H/1D/jf9G/wj/UP/o/wAAAAAAAAAAjf9G/xz/av9G/4P/xv8m/1D/Vv/o/wAAAAAAAAAAg//E/xj/X/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __AdjustStack
+    size: 202
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __SetTag
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 112
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 128
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 176
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 191
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: a90779fd18752ba1143efa4049b5428673fd9b12
+  signature: Vf+L/+z/g//s/1j/i/9F/wj/g//A/wT/if9F//z/g/99/wz/AP8P/47/x/8A/wD/AP/H/0X/+P8A/wD/AP8A/+v/Cf+L/03/+P+D/8H/Af+J/03/+P+L/1X/+P87/1X/DP99/0L/av8D/4v/Rf/8/4v/CP/B/+n/C/+D/+H/B/9R/4v/Vf8I/4P/wv8I/1L/6P8AAAAAAAAAAIP/xP8M/4v/Rf/8/4v/CP/B/+n/C/+D/+H/B/+D/8H/Af+D/+H/B//B/+H/C/+L/1X//P+L/wL/gP/k/8f/C//B/4v/Tf/8/4n/Af/r/63/i/9V/wz/a//S/wr/Uv+L/0X/CP+D/8D/HP9Q/43/Tf+o/1H/6P8AAAAAAAAAAIP/xP8M/7r/CP8A/wD/AP8r/1X/DP9r/9L/Cv9S/4v/Rf8M/2v/wP8K/4v/Tf8I/43/VP8B/xz/Uv+L/0X/CP+D/8D/HP9Q/+j/AAAAAAAAAACD/8T/DP+L/03/DP9r/8n/Cv9R/43/Vf+o/1L/uP8I/wD/AP8A/yv/Rf8M/2v/wP8K/4v/Tf8I/43/VP8B/xz/Uv/o/wAAAAAAAAAAg//E/wz/6/9e/4P/ff8M/wD/ff9Y/4v/Rf/8/4v/CP/B/+n/C/+D/+H/B/+D/+n/Af+D/+H/B//B/+H/C/+L/1X//P+L/wL/gP/k/8f/C//B/4v/Tf/8/4n/Af9q/wD/i/9V//z/i/8C/8H/6P8L/4P/4P8H/1D/i/9N/wj/g//B/wj/Uf/o/wAAAAAAAAAAg//E/wz/av9G/4v/Vf8I/4P/wv8c/1L/i/9F/wj/g//A/yb/UP/o/wAAAAAAAAAAg//E/wz/i//l/13/w/8=
+  symbols:
+  - kind: Function
+    name: __AdjustStack
+    size: 322
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __SetTag
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 73
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 136
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 177
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 215
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 287
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 311
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: 58c6e06c793d4c35c8d2d97e210d582292ddd340
+  signature: Vf+L/+z/uP9b/wH/AP8A/zn/Rf8M/3//A/+L/0X/DP9W/1f/i/99/wj/vv8AAAAAAAAAAFf/UP9W/+j/AAAAAAAAAACL/03/FP+D/8T/DP8z/8D/g/8//y3/D/+U/8D/if8B/4v/Tf8Q/4v/R/8E/1//if8B/4v/xv9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: __fpcvt
+    size: 64
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _buf
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __fptostr
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: 8f4d23622f99839c8dd0f3881121a7cc8c588814
   signature: Vf+L/+z/Vv/o/wAAAAAAAAAAi//w/4P/fv9E/wD/df8S/2j/Xf8B/wD/AP/o/wAAAAAAAAAAhf/A/1n/if9G/0T/dP83/4v/dv9E/7j/W/8B/wD/AP85/0X/DP9//wP/i/9F/wz/V/+L/33/CP9X/1D/Vv/o/wAAAAAAAAAAi/9N/xT/g//E/wz/M//A/4P/P/8t/w//lP/A/4n/Af+L/03/EP+L/0f/BP9f/4n/Af+L/8b/Xv9d/8P/
   symbols:

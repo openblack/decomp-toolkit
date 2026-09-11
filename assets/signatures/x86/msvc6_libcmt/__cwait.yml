@@ -1,4 +1,81 @@
 - symbol: 0
+  hash: ea61697cf2fef54ea8a7cf0cc5868609b8bfc2b7
+  signature: Vf+L/+z/V/+L/33/DP+D//////90/2//g/////7/dP9q/1b/av///1f///8V/wAAAAAAAAAAhf/A/3X/E/+N/0X/DP9Q/1f///8V/wAAAAAAAAAAhf/A/3T/BP+L//f/6/8x/4v/Nf8AAAAAAAAAAP//1v9q/wb/Wf87/8H/df8S/8f/Bf8AAAAAAAAAAAr/AP8A/wD/if8N/wAAAAAAAAAA6/8J////1v9Q/+j/AAAAAAAAAABZ/4P/zv///4P/Tf8M////V////xX/AAAAAAAAAACL/0X/CP+F/8D/dP8F/4v/Tf8M/4n/CP+L/8b/Xv/r/w3/x/8F/wAAAAAAAAAACv8A/wD/AP+D/8j///9f/13/w/8=
+  symbols:
+  - kind: Function
+    name: __cwait
+    size: 139
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__WaitForSingleObject@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetExitCodeProcess@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 52
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 67
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 87
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 102
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 125
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
   hash: 74283ef59b8eb8a15e12f74d907c75c7a3860a6e
   signature: Vf+L/+z/U/+L/13/DP+D//v///90/3L/g//7//7/dP9t/1b/av///1P///8V/wAAAAAAAAAAhf/A/3X/E/+N/0X/DP9Q/1P///8V/wAAAAAAAAAAhf/A/3T/BP+L//P/6/80/4v/Nf8AAAAAAAAAAP//1v+D//j/Bv91/xj/6P8AAAAAAAAAAMf/AP8K/wD/AP8A/+j/AAAAAAAAAADH/wD/Bv8A/wD/AP/r/wn////W/1D/6P8AAAAAAAAAAFn/g//O////if91/wz/U////xX/AAAAAAAAAACL/0X/CP+F/8D/dP8F/4v/Tf8M/4n/CP+L/8b/Xv/r/w7/6P8AAAAAAAAAAMf/AP8K/wD/AP8A/4P/yP///1v/Xf/D/w==
   symbols:

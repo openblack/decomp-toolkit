@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: f503371ac6f975717ceef0addddbd99b3e740dc9
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1P/Vv+L//H/V/+J/3X/8P/o/wAAAAAAAAAAi/9F/wz/g/9l//z/AP+D/2b/TP8A/4v/ff8I/4X/wP/H/wb/AAAAAAAAAADH/0b/WP8B/wD/AP8A/3X/Df9X/+j/AAAAAAAAAACL/9j/Wf8D/9//6/8M/4X/wP99/wX/g//L////6/8D/43/HP8H/2r/AP9T/1f/i//O/+j/AAAAAAAAAACL/0X/EP8z/8n/O//B/4n/fv8k/4n/fv8o/3T/Ev+D/07/DP///4n/Rv8s/4n/Rv8Y/4n/Rv8c/4n/Xv8g/+v/EP+D/07/DP///4n/Xv8s/4n/Tv8Y/4n/Tv8c/4n/Tv8g/4v/Tf/0/4v/xv9f/17/W/9k/4n/Df8AAAAAAAAAAMn/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ??0strstreambuf@@QAE@PADH0@Z
+    size: 159
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L18663
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0streambuf@@IAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7strstreambuf@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _strlen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?setb@streambuf@@IAEXPAD0H@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 42
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 57
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 151
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

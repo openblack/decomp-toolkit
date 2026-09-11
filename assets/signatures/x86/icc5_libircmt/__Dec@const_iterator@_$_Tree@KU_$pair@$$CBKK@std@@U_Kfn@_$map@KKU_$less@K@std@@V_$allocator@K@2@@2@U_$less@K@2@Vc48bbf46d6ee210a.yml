@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e2591b1b4ecdf0f8806595aff8231e98eea786a5
+  signature: U/+L/wH/i/9Q/xT/hf/S/3T/Q/+L/xX/AAAAAAAAAAA7/xD/df8b/4v/UP8E/zv/Av91/xD/kP+N/3T/Jv8A/4v/wv+J/xH/i/9S/wT/O/8C/3T/9f+J/xH/W//D/4v/GP+L/0P/CP87/8L/dP8R/5D/jf+0/yb/AP8A/wD/AP+L/9j/i/9A/wj/O//C/3X/9/+J/xn/W//D/4v/UP8E/zv/Qv8E/3X/tf+L/0D/CP+J/wH/W//D/w==
+  symbols:
+  - kind: Function
+    name: ?_Dec@const_iterator@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@QAEXXZ
+    size: 92
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?_Nil@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@1PAU_Node@12@A
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

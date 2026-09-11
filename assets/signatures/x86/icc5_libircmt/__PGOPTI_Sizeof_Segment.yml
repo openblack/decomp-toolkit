@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2a5760c4636eb277397aabaf64921e02b2085d5b
+  signature: V/9W/1X/U/9W/4v/bP8k/xj/i/9U/yT/HP8z/9v/g//6/wP/dP9b/4P/+v8C/3T/Fv+D//r/Af91/wj/i/9N/xT/i/9V/xz/6/80/4X/0v90/zj/6P8AAAAAAAAAAIv/Tf8Q/4v/Vf8c/4v/+v/B/+f/BP+L//L/wf/m/wX/A//+/wP/+/+N/xz/z/+L/03/FP+L/3X/AP/B/+7/BP/3/8b/Af8A/wD/AP90/wP/jf8c/8v/A/9N/xj/A//K/43/HP+L/4P/w/80/4v/w/+D/8T/BP9b/13/Xv9f/8P/i/99/yT/M//A/4r/N/+L/8//hP/2/3T/CP9B/0D/iv8R/4T/0v91//j/i//w/4P/xv8E/4P/5v/8/4v/ff8w/zP/wP+K/zf/i//P/4T/9v90/wj/Qf9A/4r/Ef+E/9L/df/4/4v/2P+D/8P/BP+D/+P//P8D/97/M//2/4v/Tf8Q/4X/yf8P/4b/ev////////+Q/43/tP8m/wD/AP8A/wD/i/9N/xz/i/9V/xT/A/9V/xj/A/9V/xz/jf88/5X/N/8A/wD/AP+D/+f//P8D//3/i//R/8H/4v8E/8H/4f8F/wP/0f8D//r/i/88/7f/M//A/4r/N/+L/8//hP/2/3T/CP9B/0D/iv8R/4T/0v91//j/g//A/wT/g//g//z/A//Y/4v/Tf8Q/0b/O//x/3L/t//p/yT/////////
+  symbols:
+  - kind: Function
+    name: __PGOPTI_Sizeof_Segment
+    size: 270
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _abort
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 43
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

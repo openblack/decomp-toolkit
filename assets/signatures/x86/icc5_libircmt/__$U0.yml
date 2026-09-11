@@ -1,0 +1,58 @@
+- symbol: 0
+  hash: 4f43b3ea0ad672aaa23b785ccd9a21f46b3bf758
+  signature: g//s/xT/i/8V/0T/yv8d/wH/i/8C/7n/QP/K/x3/Af+J/0T/JP8I/4n/VP8k/wz/g//E//T/jf9E/yT/HP+N/1T/JP8E/4n/BP8k/43/RP8k/xT/i/8A/4n/Av+N/0T/JP8I/43/VP8k/xj/i/8S/4n/EP/o/wAAAAAAAAAAof9E/8r/Hf8B/4n/BP8k/+j/AAAAAAAAAAAz/8D/i/8V/wAAAAAAAAAASv+j/0T/yv8d/wH/o/9M/8r/Hf8B/4n/Ff8AAAAAAAAAAHT/BP+D/8T/FP/D/6H/AAAAAAAAAACJ/wT/JP/o/wAAAAAAAAAAx/8F/wAAAAAAAAAAAP8A/wD/AP+D/8T/FP/D/w==
+  symbols:
+  - kind: Function
+    name: __$U0
+    size: 134
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?erase@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@QAE?AViterator@12@V312@0@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?_Nilrefs@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@1IA
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: ?_Nil@?$_Tree@KU?$pair@$$CBKK@std@@U_Kfn@?$map@KKU?$less@K@std@@V?$allocator@K@2@@2@U?$less@K@2@V?$allocator@K@2@@std@@1PAU_Node@12@A
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 59
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 80
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 108
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 116
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 122
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

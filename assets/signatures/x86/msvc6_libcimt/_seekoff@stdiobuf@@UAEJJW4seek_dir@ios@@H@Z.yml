@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 207bd2414ed6eedf63abc72cf984d2d212ed4833
+  signature: i/9E/yT/CP9T/zP/2/9W/yv/w/+L//H/dP8N/0j/dP8H/0j/df8y/2r/Av/r/wL/av8B/1v/av///4v/zv/o/wAAAAAAAAAAU////3T/JP8Q////dv9M/+j/AAAAAAAAAACD/8T/DP+F/8D/df8O////dv9M/+j/AAAAAAAAAACD//j///9Z/3X/A/+D/8j///9e/1v/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?seekoff@stdiobuf@@UAEJJW4seek_dir@ios@@H@Z
+    size: 78
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?overflow@stdiobuf@@UAEHH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _fseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _ftell
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 32
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 45
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

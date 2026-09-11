@@ -1,4 +1,74 @@
 - symbol: 0
+  hash: 915eab62b58d9598dd33bf70daef66e9f3c3764b
+  signature: U/9V/1b/i/90/yT/EP9X/7//AAAAAAAAAACL/07/GP+L/8f/jf8s/0n/i/9O/xD/jf8U/0n/M//J/4r/nP8p/wAAAAAAAAAAQf+I/xj/iv+c/wr/AAAAAAAAAACI/5n/AAAAAAAAAABA/4P/+f8D/3z/4//G/wD/IP+D/8D/BP/G/wD/IP///3b/DP9A/1D/6P8AAAAAAAAAAMb/AP8g////dv8I/0D/UP/o/wAAAAAAAAAAxv8A/zr///92/wT/QP9Q/+j/AAAAAAAAAADG/wD/Ov///zb/QP9Q/+j/AAAAAAAAAACL/8j/av9k/1v/xv8B/yD/i/9G/xT/mf/3//v/g//A/xP/Qf9Q/1H/6P8AAAAAAAAAAIv/yP+L/0b/FP9T/5n/Xv/3//7/Uv9R/+j/AAAAAAAAAACD/8T/MP/G/wD/Cv+A/2D/Af8A/4v/x/9f/17/Xf9b/8P/
+  symbols:
+  - kind: Function
+    name: _asctime
+    size: 174
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _buf
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ___dnames
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___mnames
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _store_dt
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 86
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 99
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 136
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 153
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
   hash: 7c615fbaa8eaf0b2312b6fc824211eb8051a8ba3
   signature: U/9V/1b/V//o/wAAAAAAAAAAi//w/4P/fv84/wD/df8U/2r/Gv/o/wAAAAAAAAAAif9G/zj/Wf+F/8D/uP8AAAAAAAAAAHT/A/+L/0b/OP+L/3T/JP8U/4v/2P+L/07/GP+N/zz/Sf+L/07/EP+N/yz/Sf8z/8n/iv+U/w//AAAAAAAAAABB/4j/EP+K/5T/Kf8AAAAAAAAAAIj/UP8E/0D/g//5/wP/fP/m/8b/AP8g/4P/wP8E/8b/AP8g////dv8M/0D/UP/o/wAAAAAAAAAAxv8A/yD///92/wj/QP9Q/+j/AAAAAAAAAADG/wD/Ov///3b/BP9A/1D/6P8AAAAAAAAAAMb/AP86////Nv9A/1D/6P8AAAAAAAAAAIv/yP9q/2T/X//G/wH/IP+L/0b/FP+Z//f///+D/8D/E/9B/1D/Uf/o/wAAAAAAAAAAi//I/4v/Rv8U/1f/mf9e//f//v9S/1H/6P8AAAAAAAAAAIP/xP8w/8b/AP8K/4D/YP8B/wD/i//D/1//Xv9d/1v/w/8=
   symbols:

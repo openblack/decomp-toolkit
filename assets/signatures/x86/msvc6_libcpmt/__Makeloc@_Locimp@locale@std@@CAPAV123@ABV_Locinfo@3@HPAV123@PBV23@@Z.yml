@@ -384,3 +384,491 @@
     kind: x86_abs32
     symbol: 32
     addend: 0
+- symbol: 0
+  hash: a5027a89d473aa8eae79921c0fbce40e0c07c0ab
+  signature: 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
+  symbols:
+  - kind: Function
+    name: ?_Makeloc@_Locimp@locale@std@@CAPAV123@ABV_Locinfo@3@HPAV123@PBV23@@Z
+    size: 805
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L12552
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7?$ctype@D@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Init@?$ctype@D@std@@IAEXABV_Locinfo@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?id@?$ctype@D@std@@2V0locale@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?_Id_cnt@id@locale@std@@0HA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?use_facet@std@@YAABV?$ctype@D@1@ABVlocale@1@PBV21@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Addfac@_Locimp@locale@std@@AAEXPAVfacet@23@I@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ?id@?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?use_facet@std@@YAABV?$num_get@DV?$istreambuf_iterator@DU?$char_traits@D@std@@@std@@@1@ABVlocale@1@PBV21@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ?id@?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@std@@2V0locale@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?use_facet@std@@YAABV?$num_put@DV?$ostreambuf_iterator@DU?$char_traits@D@std@@@std@@@1@ABVlocale@1@PBV21@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$numpunct@D@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_Init@?$numpunct@D@std@@IAEXABV_Locinfo@2@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?id@?$numpunct@D@std@@2V0locale@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?use_facet@std@@YAABV?$numpunct@D@1@ABVlocale@1@PBV21@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$codecvt@DDH@std@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __Getcvt
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?id@?$codecvt@DDH@std@@2V0locale@2@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?use_facet@std@@YAABV?$codecvt@DDH@1@ABVlocale@1@PBV21@_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Makexloc@_Locimp@locale@std@@CAXABV_Locinfo@3@HPAV123@PBV23@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Makewloc@_Locimp@locale@std@@CAXABV_Locinfo@3@HPAV123@PBV23@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_Getname@_Locinfo@std@@QBE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 75
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 90
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 101
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 106
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 111
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 117
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 126
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 134
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 139
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 144
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 150
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 161
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 172
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 192
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 206
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 216
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 224
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 230
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 236
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 242
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 250
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 258
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 263
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 268
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 274
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 285
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 296
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 316
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 330
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 340
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 348
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 354
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 360
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 366
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 374
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 382
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 387
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 392
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 398
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 409
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 420
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 440
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 468
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 473
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 483
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 494
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 499
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 504
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 510
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 519
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 527
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 532
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 537
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 543
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 554
+    kind: x86_rel32
+    symbol: 19
+    addend: -4
+  - offset: 565
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 586
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 602
+    kind: x86_abs32
+    symbol: 20
+    addend: 0
+  - offset: 607
+    kind: x86_rel32
+    symbol: 21
+    addend: -4
+  - offset: 623
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 631
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 636
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 641
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 647
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 656
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 664
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 669
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 674
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 680
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 691
+    kind: x86_rel32
+    symbol: 23
+    addend: -4
+  - offset: 702
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 717
+    kind: x86_rel32
+    symbol: 24
+    addend: -4
+  - offset: 733
+    kind: x86_rel32
+    symbol: 25
+    addend: -4
+  - offset: 751
+    kind: x86_rel32
+    symbol: 26
+    addend: -4
+  - offset: 757
+    kind: x86_abs32
+    symbol: 27
+    addend: 0
+  - offset: 771
+    kind: x86_rel32
+    symbol: 28
+    addend: -4
+  - offset: 784
+    kind: x86_rel32
+    symbol: 29
+    addend: -4
+  - offset: 799
+    kind: x86_abs32
+    symbol: 30
+    addend: 0

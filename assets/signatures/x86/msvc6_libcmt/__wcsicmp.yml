@@ -1,4 +1,36 @@
 - symbol: 0
+  hash: 8045cf76eda388e137e0c1a46803e27e4796c4cf
+  signature: g/89/wAAAAAAAAAAAP9T/3X/PP+L/1T/JP8M/4v/TP8k/wj/Zv+L/xn/Zv+D//v/Wv93/wn/Zv+D//v/Qf9y/wP/g//D/yD/Zv+L/wL/Zv89/1r/AP93/wn/Zv89/0H/AP9y/wP/g//A/yD/Qf9B/0L/Qv9m/4X/2/90/zf/Zv87/9j/dP/O/+v/MP9W/4v/dP8k/wz/V/+L/3z/JP8U/2b/i/8G/0b/UP9G/+j/AAAAAAAAAACL/9j/Zv+L/wf/R/9Q/0f/6P8AAAAAAAAAAFn/Zv+F/9v/Wf90/wX/Zv87/9j/dP/c/1//Xv8P/7f/yP8P/7f/w/8r/8H/W//D/w==
+  symbols:
+  - kind: Function
+    name: __wcsicmp
+    size: 128
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _towlower
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 87
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: ae450aa2c102f8734194df43f7eadfacbb8acd28
   signature: Vf+L/+z/Uf9T/1b/M//2/zn/Nf8AAAAAAAAAAHX/SP+L/1X/DP+L/03/CP9m/4v/Af9m/z3/Wv8A/3f/Cf9m/z3/Qf8A/3L/A/+D/8D/IP+J/0X/DP9m/4v/Av9m/z3/Wv8A/3f/Cf9m/z3/Qf8A/3L/A/+D/8D/IP9B/4n/Rf8I/4v/Rf8M/0H/Qv9C/2b/O//G/w//hP+B/wD/AP8A/2b/O/9F/wj/dP/A/+v/ef+7/wAAAAAAAAAAU////xX/AAAAAAAAAAA5/zX/AAAAAAAAAAB0/xj/U////xX/AAAAAAAAAABq/xP/6P8AAAAAAAAAAFn/x/9F//z/Af8A/wD/AP/r/wP/if91//z/i/91/wj/V/+L/33/DP9m/4v/Bv9G/1D/Rv/o/wAAAAAAAAAAif9F/wz/Zv+L/wf/R/9Q/0f/6P8AAAAAAAAAAGb/g/99/wz/AP9Z/1n/if9F/wj/dP8G/2b/Of9F/wz/dP/V/4P/ff/8/wD/X/90/wr/av8T/+j/AAAAAAAAAABZ/+v/B/9T////Ff8AAAAAAAAAAA//t/9N/wj/D/+3/0X/DP9e/yv/wf9b/8n/w/8=
   symbols:

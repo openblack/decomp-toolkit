@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ef2ad9b97df57796d9ef7d5a04a7fa0fcd325049
+  signature: g//I////wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?seekoff@streambuf@@UAEJJW4seek_dir@ios@@H@Z
+    size: 6
+    flags: 1
+    section: .text
+  relocations: []

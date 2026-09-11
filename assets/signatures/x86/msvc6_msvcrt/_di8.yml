@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: d7dc646b86f5d42346f2314bc2d443ec3a90ea26
+  signature: i/9E/yT/DP+L/0z/JP8I/2r/Af8P/7b/AP+L/4n/nP8A/wD/AP8D/8j/i/9E/yT/CP+J/wj/WP/D/w==
+  symbols:
+  - kind: Function
+    name: _di8
+    size: 29
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: a6525c3339dca9d129fc360dac26f9e2a9596c19
+  signature: Vf+L/+z/i/9F/xD/M//J/4r/CP+L/1X/DP+L/4L/nP8A/wD/AP8D/8H/i/9N/wj/if8B/7j/Af8A/wD/AP9d/8P/
+  symbols:
+  - kind: Function
+    name: _di8
+    size: 33
+    flags: 2
+    section: .text
+  relocations: []

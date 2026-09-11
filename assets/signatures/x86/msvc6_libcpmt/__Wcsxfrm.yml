@@ -1,4 +1,76 @@
 - symbol: 0
+  hash: b8acf31e7679775f670c618221d4ad2e6aba8540
+  signature: Vf+L/+z/i/9F/xj/U/9W/4v/df8U/yv/df8Q/1f/i/99/wz/u/////////9//yv/ff8I/9H//v/R////hf/A/3X/B/+h/wAAAAAAAAAA6/8C/4v/AP+F/8D/if9F/wz/df8a/zv/9/93/xL/jf8E/zb/UP///3X/EP///3X/CP/o/wAAAAAAAAAAg//E/wz/i//G/+v/ev9X/+j/AAAAAAAAAACF/8D/Wf+J/0X/FP90/2H///81/wAAAAAAAAAAV/9Q/1b/v/8A/wT/AP8A////df8Q/1f///91/wz/6P8AAAAAAAAAAIv/2P8z/8D/g//E/xz/O//Y/3X/Jf///zX/AAAAAAAAAABQ/1D/Vv///3X/EP9X////df8M/+j/AAAAAAAAAACL/9j/g//E/xz/hf/b/3X/Hv+7/////////3//6/8X/37/Ff+L/03/CP+L/1X/FP9m/w//tv8U/xD/Zv+J/xH/QP9B/0H/O//D/3z/7v///3X/FP/o/wAAAAAAAAAAWf+L/8P/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: __Wcsxfrm
+    size: 203
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ___lc_handle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memcpy
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _malloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___lc_collate_cp
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___crtLCMapStringW
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 35
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 78
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 92
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 112
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 129
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 144
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 191
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+- symbol: 0
   hash: 1e6de2c5bb78612e93bd7a03a1fadfba0ee47349
   signature: Vf+L/+z/Uf9T/1b/i/91/xT/V/+L/33/DP8r/3X/EP8r/33/CP+7/wAAAAAAAAAAU//H/0X/FP////////9//9H////R//7///8V/wAAAAAAAAAAg/89/wAAAAAAAAAAAP90/xj/U////xX/AAAAAAAAAABq/xP/6P8AAAAAAAAAAFn/x/9F//z/Af8A/wD/AP/r/wT/g/9l//z/AP+L/0X/GP+F/8D/df8H/6H/AAAAAAAAAADr/wL/i/8A/4X/wP+J/0X/DP91/zP/Of9F//z/dP8K/2r/E//o/wAAAAAAAAAAWf/r/wf/U////xX/AAAAAAAAAAA7//f/d/8S/43/BP82/1D///91/xD///91/wj/6P8AAAAAAAAAAIP/xP8M/4v/xv/p/5b/AP8A/wD/V//o/wAAAAAAAAAAhf/A/1n/if9F/xj/dP9l////Nf8AAAAAAAAAAFf/UP9W/7//AP8E/wD/AP///3X/EP9X////df8M/+j/AAAAAAAAAAAz/8n/g//E/xz/O//B/4n/Rf8U/3X/KP///zX/AAAAAAAAAABR/1H/Vv///3X/EP9X////df8M/+j/AAAAAAAAAACD/8T/HP+J/0X/FP+F/8D/df8g/8f/Rf8U/////////3//6/8X/37/Ff+L/1X/CP+L/3X/GP9m/w//tv80/zH/Zv+J/zL/Qf9C/0L/O//I/3z/7v+D/33//P8A/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8H/1P///8V/wAAAAAAAAAA//91/xj/6P8AAAAAAAAAAIv/Rf8U/1n/X/9e/1v/yf/D/w==
   symbols:

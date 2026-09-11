@@ -1,4 +1,40 @@
 - symbol: 0
+  hash: 3d78d707c67df263ddea63cc8b75601e0a8ef08b
+  signature: g/98/yT/BP8A/3X/Dv+h/wAAAAAAAAAAuf8AAAAAAAAAAGr/Av/r/wz/of8AAAAAAAAAALn/AAAAAAAAAABq/xX/hf/A/1r/dP8P/4P/+P8B/3T/B/+D/yH/AP9S////0P9Z/2r/Af9Y/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: _ctrlevent_capture@4
+    size: 56
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _ctrlc_action
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _ctrlbreak_action
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
   hash: c64054b93b9f772492eab7803e95167c52342cb6
   signature: U/9W/1f/av8B/1v/U//o/wAAAAAAAAAAg/98/yT/FP8A/1n/df8P/4v/Nf8AAAAAAAAAALj/AAAAAAAAAABq/wL/6/8N/4v/Nf8AAAAAAAAAALj/AAAAAAAAAABq/xX/hf/2/1//df8L/1P/6P8AAAAAAAAAAFn/M//A/+v/HP87//P/dP8P/4P/IP8A/1P/6P8AAAAAAAAAAFf////W/1n/6/8G/1P/6P8AAAAAAAAAAFn/i//D/1//Xv9b/8L/BP8A/w==
   symbols:

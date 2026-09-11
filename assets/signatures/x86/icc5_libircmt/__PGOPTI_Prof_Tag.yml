@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: ca7605dcfc540a11017b823c864e3b635aabe9e2
+  signature: V/9W/4P/7P8U/4v/fP8k/yD/i/90/yT/JP+L/0f/DP+N/xT/Bv87/1f/GP9y/x//x/8E/yT/AAAAAAAAAADH/0T/JP8E/wAAAAAAAAAAx/9E/yT/CP/O/wH/AP8A/+j/AAAAAAAAAACL/0f/DP+N/xT/t/+L/0//FP+N/zT/iv///0T/hv80/8f/R/8M/wD/AP8A/wD/g//E/xT/Xv9f/8P/kP8=
+  symbols:
+  - kind: Function
+    name: __PGOPTI_Prof_Tag
+    size: 82
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DE@FICKIJCA@PGOPTI_igoto_src?$CIvar?$CJ?5?$CL?5loc?5?$DM?5PG@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Object
+    name: ??_C@_08A@pgopti?4c?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Function
+    name: __assert
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 48
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

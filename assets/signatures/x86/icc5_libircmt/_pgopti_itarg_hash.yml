@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 9e5e3a20dd35ed746cc19933345c1be3d0549050
+  signature: Vv9T/1b/i/9M/yT/EP+L/1T/JP8U/zP/wP+N/3b/AP+N/xz/Af87/xP/dP8g/4v/dP8I/wj/hf/2/3T/EP+D/8D/DP+D//j/MP98/+n/M//A/4P/xP8E/1v/Xv/D/4v/w/+D/8T/BP9b/17/w/+L/8P/g//E/wT/W/9e/8P/kP8=
+  symbols:
+  - kind: Function
+    name: _pgopti_itarg_hash
+    size: 64
+    flags: 2
+    section: .text
+  relocations: []

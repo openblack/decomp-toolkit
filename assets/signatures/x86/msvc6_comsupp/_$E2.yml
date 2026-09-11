@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 4f1e8c225d1ec183bc64cff96e138d30b3fd768e
+  signature: aP8AAAAAAAAAAP//Ff8AAAAAAAAAAIX/wP99/wb/UP/o/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: _$E2
+    size: 22
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ?vtMissing@@3V_variant_t@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __imp__VariantClear@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_com_issue_error@@YGXJ@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 7
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 17
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

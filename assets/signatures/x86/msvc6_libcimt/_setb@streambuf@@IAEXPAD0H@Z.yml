@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 15ca900daa3929c9c20f83b66ef042fd28628dc3
+  signature: Vv+L//H/g/9+/wT/AP90/w7/i/9G/xD/hf/A/3T/B/9Q/+j/AAAAAAAAAABZ/4v/RP8k/wj/if9G/xD/i/9E/yT/EP+J/0b/BP+L/0T/JP8M/4n/Rv8U/17/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?setb@streambuf@@IAEXPAD0H@Z
+    size: 48
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

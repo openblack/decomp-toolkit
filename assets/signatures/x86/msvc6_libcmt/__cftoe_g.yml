@@ -1,0 +1,32 @@
+- symbol: 0
+  hash: 93ca6790ba3b02ef4462d7cb1b2f2ea51c6b493e
+  signature: //90/yT/EP/G/wX/AAAAAAAAAAAB////dP8k/xD///90/yT/EP///3T/JP8Q/+j/AAAAAAAAAACA/yX/AAAAAAAAAAAA/4P/xP8Q/8P/
+  symbols:
+  - kind: Function
+    name: __cftoe_g
+    size: 39
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _g_fmt
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __cftoe
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

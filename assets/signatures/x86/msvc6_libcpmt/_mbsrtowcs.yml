@@ -1,4 +1,36 @@
 - symbol: 0
+  hash: d8394c590fd6a0ec69e1fe5c13cb5d076e33328d
+  signature: Vf+L/+z/Uf+L/0X/DP9T/zP/2/9X/zn/Xf8U/4v/OP+J/13//P91/wf/x/9F/xT/AAAAAAAAAAA5/13/CP91/yj/U/+N/0X/Cv///3X/FP9o/////////3//V/9Q/+j/AAAAAAAAAACD/8T/FP87/8P/fP8J/3T/Sf///0X//P8D//j/6//d/4P/yP///+v/QP85/13/EP92/zP/U////3X/FP9o/////////3//V////3X/CP/o/wAAAAAAAAAAg//E/xT/O//D/3z/Ev90/xb///9F//z/g/9F/wj/Av8D//j///9N/xD/df/X/+v/CP+D/03//P///+v/Av8z////i/9F/wz/if84/4v/Rf/8/1//W//J/8P/
+  symbols:
+  - kind: Function
+    name: _mbsrtowcs
+    size: 141
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _?mbst@?1??mbsrtowcs@@9@9
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: __Mbrtowc
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 48
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 92
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: 75a582f85514dc4e7e9e198317791aa12995d5d2
   signature: Vf+L/+z/Uf9R/4v/Rf8M/1P/Vv8z//b/Of91/xT/V/+L/zj/if91//z/df8H/8f/Rf8U/wAAAAAAAAAAu/8AAAAAAAAAAFP///8V/wAAAAAAAAAAOf81/wAAAAAAAAAAdP8Y/1P///8V/wAAAAAAAAAAav8T/+j/AAAAAAAAAABZ/8f/Rf/4/wH/AP8A/wD/6/8D/4n/df/4/zn/df8I/3X/Rf9W/77/////////f////3X/FP9W/43/Rf8K/1f/UP/o/wAAAAAAAAAAg//E/xT/hf/A/3z/Dv90/2f///9F//z/av8A////df8U/wP/+P/r/+D/g/99//j/AP90/wr/av8T/+j/AAAAAAAAAABZ/+v/B/9T////Ff8AAAAAAAAAAIP/yP///+v/Wf85/3X/EP92/zX/vv////////9//2r/AP///3X/FP9W/1f///91/wj/6P8AAAAAAAAAAIP/xP8U/4X/wP98/xL/dP8W////Rf/8/4P/Rf8I/wL/A//4////Tf8Q/3X/2v/r/wj/g/9N//z////r/wL/M////4v/Rf8M/4n/OP+D/33/+P8A/3T/Cv9q/xP/6P8AAAAAAAAAAFn/6/8H/1P///8V/wAAAAAAAAAAi/9F//z/X/9e/1v/yf/D/w==
   symbols:

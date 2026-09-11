@@ -1,4 +1,32 @@
 - symbol: 0
+  hash: 68091b763b64b329d8510bdcf63915c08ff48c42
+  signature: U/+L/1z/JP8I/1b/V/+L//P/v/8AAAAAAAAAAFf/6P8AAAAAAAAAAA//t//A/4P/+P8K/1n/dP8W/z3//////wD/AP90/wf/Zv+J/wb/Rv9G/+v/4/87//P/df8E/zP/2//r/wT/Zv+D/yb/AP9f/4v/w/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: __getws
+    size: 61
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __iob
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fgetwc
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
   hash: 77b3e13926368ab6fef748921836528e1dd6f90a
   signature: U/+L/1z/JP8I/1b/vv8AAAAAAAAAAFf/Vv9q/wD/i//7/+j/AAAAAAAAAABW/+j/AAAAAAAAAACD/8T/DP8P/7f/wP+D//j/Cv90/x3/Pf//////AP8A/3T/Dv9m/4n/B/9H/1b/R//o/wAAAAAAAAAAWf/r/+P/O//7/3X/BP8z/9v/6/8E/2b/g/8n/wD/Vv9q/wD/6P8AAAAAAAAAAFn/i//D/1n/X/9e/1v/w/8=
   symbols:

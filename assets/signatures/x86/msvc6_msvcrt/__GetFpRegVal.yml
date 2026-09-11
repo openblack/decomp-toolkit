@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: f16ebd4c3a653a12a450ad49e42893b78ee82517
+  signature: i/9E/yT/DP9W/4X/wP9X/3z/Ev+D//j/CP99/w3/i/9M/yT/EP+N/wT/gP+N/3T/Qf8c/+v/Bf++/wAAAAAAAAAAi/9E/yT/DP+L//j/pf+l/2b/pf9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: __GetFpRegVal
+    size: 46
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __zero80
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 29
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 65852667170105692c53781dfb8d1aa6ee2efdda
+  signature: Vf+L/+z/g/99/xD/AP98/y3/g/99/xD/CP99/yf/i/9F/xD/a//A/wr/i/9N/wz/jf9U/wH/HP+L/0X/CP+L/wr/if8I/4v/Sv8E/4n/SP8E/2b/i/9S/wj/Zv+J/1D/CP+L/0X/CP/r/yL/i/9F/wj/i/8N/wAAAAAAAAAAif8I/4v/Ff8AAAAAAAAAAIn/UP8E/2b/i/8N/wAAAAAAAAAAZv+J/0j/CP+L/0X/CP9d/8P/
+  symbols:
+  - kind: Function
+    name: __GetFpRegVal
+    size: 90
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __zero80
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 59
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 67
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

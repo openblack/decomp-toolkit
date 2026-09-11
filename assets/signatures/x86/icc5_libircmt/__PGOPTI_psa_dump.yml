@@ -1,0 +1,109 @@
+- symbol: 0
+  hash: ea47b3b2fe86115002900be5760db10e589661f1
+  signature: g//s/2T/x/9E/yT/EP8K/9z/AP8A/8f/BP8k/wD/AP8A/wD/6P8AAAAAAAAAAI3/VP8k/xT/if8U/yT/x/9E/yT/BP8AAAAAAAAAAIn/RP8k/wj/6P8AAAAAAAAAAI3/TP8k/yj/jf9U/yT/FP+h/wAAAAAAAAAAav8B/1D/aP+A/wD/AP8A/1L/6P8AAAAAAAAAAI3/TP8k/yj/jf9E/yT/EP+J/w3/IP8F/xX/Af9q/wT/UP/o/wAAAAAAAAAA6P8AAAAAAAAAAMf/BP8k/wAAAAAAAAAA6P8AAAAAAAAAAI3/TP8k/zD/6P8AAAAAAAAAAI3/TP8k/zD/6P8AAAAAAAAAAIP/xP9k/8P/
+  symbols:
+  - kind: Function
+    name: __PGOPTI_psa_dump
+    size: 135
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _time
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_06A@?$CFx?4lsi?$AA@
+    size: 0
+    flags: 1
+    section: .data1
+  - kind: Function
+    name: _sprintf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?openprot@filebuf@@2HB
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0ofstream@@QAE@PBDHH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?write@ostream@@QAEAAV1@PBDH@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?base_id_dump@@YAXXZ
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?pc_out@@YAXIII@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?__psa_for_all_cands@@YAXP6AXIII@Z@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ??1ofstream@@UAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1ios@@UAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 34
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 70
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 92
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 97
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 104
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 109
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 118
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 11
+    addend: -4

@@ -71,3 +71,106 @@
     kind: x86_rel32
     symbol: 7
     addend: -4
+- symbol: 0
+  hash: c72794df379394da220af802af8b6e5c40b99abf
+  signature: U/9V/1b/V/+L/3z/JP8U/zv/Pf8AAAAAAAAAAA//g/+G/wD/AP8A/4v/x/+L//f/wf/4/wX/g//m/x//jf8c/4X/AAAAAAAAAADB/+b/A/+L/wP/9v9E/zD/BP8B/3T/af9X/+j/AAAAAAAAAACD//j///9Z/3T/PP+D////Af90/wX/g////wL/df8W/2r/Av/o/wAAAAAAAAAAav8B/4v/6P/o/wAAAAAAAAAAWf87/8X/Wf90/xz/V//o/wAAAAAAAAAAWf9Q////Ff8AAAAAAAAAAIX/wP91/wr///8V/wAAAAAAAAAAi//o/+v/Av8z/+3/V//o/wAAAAAAAAAAi/8D/1n/gP9k/zD/BP8A/4X/7f90/wn/Vf/o/wAAAAAAAAAAWf/r/xX/M//A/+v/FP+D/yX/AAAAAAAAAAAA/8f/Bf8AAAAAAAAAAAn/AP8A/wD/g//I////X/9e/13/W//D/w==
+  symbols:
+  - kind: Function
+    name: __close
+    size: 179
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __nhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ___pioinfo
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __get_osfhandle
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __free_osfhnd
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __dosmaperr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __doserrno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 83
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 95
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 103
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 113
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 125
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 143
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 156
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 163
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

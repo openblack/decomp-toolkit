@@ -1,4 +1,75 @@
 - symbol: 0
+  hash: 419c86a16667040de23c79c8af1e7270c186cf8a
+  signature: Vf+L/+z/gf/s/1D/Av8A/wD/jf+F/7D//f//////V/9Q////df8I////Ff8AAAAAAAAAAIv/+P+D//////91/z////8V/wAAAAAAAAAAav8C/1n/O//B/3L/D/+D//j/A/92/yX/g//4/wj/dP8U/4P/+P8S/3T/G//H/wX/AAAAAAAAAAAW/wD/AP8A/4P/yP///+v/e//H/wX/AAAAAAAAAAAM/wD/AP8A/+v/7/+J/w3/AAAAAAAAAADr/+f/i/+F/7D//f//////Vv+L/3X/DP8t/4D/AP8A/wD/9//Y/xv/wP8j/4X/sP/9//////+J/wb/jf+F/7T//f//////UP/o/wAAAAAAAAAAif9G/wT/jf+F/7z//f//////UP/o/wAAAAAAAAAAif9G/wj/jf+F/8T//f//////UP/o/wAAAAAAAAAAif9G/wz/i/+F/9D//f//////if9G/xD/jf+F/9z//f//////g//G/xT/UP9W/+j/AAAAAAAAAACD/8T/FP+L/8f/Xv9f/8n/w/8=
+  symbols:
+  - kind: Function
+    name: __wfindfirst
+    size: 202
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__FindFirstFileW@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _errno
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ___timet_from_ft
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _wcscpy
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 63
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 90
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 161
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+- symbol: 0
   hash: 7773b589982ebbccae073928347fd3fcec439219
   signature: Vf+L/+z/gf/s/1D/Av8A/wD/Vv+N/4X/sP/9//////9X/1D///91/wj///8V/wAAAAAAAAAAi//4/4P//////3X/Qv///xX/AAAAAAAAAABq/wL/Xv87/8b/cv8P/4P/+P8D/3b/J/+D//j/CP90/xX/g//4/xL/dP8d/+j/AAAAAAAAAADH/wD/Fv8A/wD/AP+D/8j////r/3v/6P8AAAAAAAAAAMf/AP8M/wD/AP8A/+v/7v/o/wAAAAAAAAAAif8w/+v/5f+L/4X/sP/9//////+L/3X/DP8t/4D/AP8A/wD/9//Y/xv/wP8j/4X/sP/9//////+J/wb/jf+F/7T//f//////UP/o/wAAAAAAAAAAif9G/wT/jf+F/7z//f//////UP/o/wAAAAAAAAAAif9G/wj/jf+F/8T//f//////UP/o/wAAAAAAAAAAif9G/wz/i/+F/9D//f//////if9G/xD/jf+F/9z//f//////g//G/xT/UP9W/+j/AAAAAAAAAACD/8T/FP+L/8f/X/9e/8n/w/8=
   symbols:
