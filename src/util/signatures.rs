@@ -361,6 +361,45 @@ fn inside_size_known_function(obj: &ObjInfo, sec: SectionIndex, va: u32) -> bool
     })
 }
 
+/// Apply a signature symbol, then restore whatever size this image had already
+/// derived for it.
+///
+/// A signature's sizes come from the `.obj` it was generated from, and the linked
+/// PE's copy of the same function can be a different length (a different library
+/// build, a trimmed tail, an `/OPT:ICF` fold), so a signature size must never win
+/// over one derived from the image — nor invent one where the image has none, in
+/// which case the size comes from the function-entry gaps later.
+///
+/// Clearing unconditionally instead would also drop a size the image *did* have,
+/// leaving a zero-size function that `create_gap_symbols` skips (it only walks
+/// size-known symbols) and then covers with a duplicate `gap_*` symbol at the
+/// same address.
+fn apply_symbol_keep_size(
+    obj: &mut ObjInfo,
+    target: SectionAddress,
+    sig_symbol: &OutSymbol,
+) -> Result<SymbolIndex> {
+    // Snapshot every symbol already at this address, so that whichever one
+    // apply_symbol merges into can be identified by index afterwards. A brand-new
+    // symbol won't be in the snapshot and keeps no size.
+    let prior: Vec<(SymbolIndex, u64, bool)> = obj
+        .symbols
+        .at_section_address(target.section, target.address)
+        .map(|(idx, symbol)| (idx, symbol.size, symbol.size_known))
+        .collect();
+    let sym_idx = apply_symbol(obj, target, sig_symbol)?;
+    let (size, size_known) = prior
+        .iter()
+        .find(|&&(idx, _, _)| idx == sym_idx)
+        .map_or((0, false), |&(_, size, size_known)| (size, size_known));
+    let symbol = &obj.symbols[sym_idx];
+    if symbol.size != size || symbol.size_known != size_known {
+        let symbol = symbol.clone();
+        obj.symbols.replace(sym_idx, ObjSymbol { size, size_known, ..symbol })?;
+    }
+    Ok(sym_idx)
+}
+
 pub fn apply_signature_x86(
     obj: &mut ObjInfo,
     addr: SectionAddress,
@@ -372,14 +411,7 @@ pub fn apply_signature_x86(
         return Ok(());
     }
     let in_symbol = &sig.symbols[sig.symbol as usize];
-    let sym_idx = apply_symbol(obj, addr, in_symbol)?;
-    // Don't trust signature sizes in a PE — the linker layout may differ from
-    // the .obj the signature was generated from.  Let the split system derive
-    // sizes from function-entry gaps instead.
-    {
-        let sym = obj.symbols[sym_idx].clone();
-        obj.symbols.replace(sym_idx, ObjSymbol { size: 0, size_known: false, ..sym })?;
-    }
+    apply_symbol_keep_size(obj, addr, in_symbol)?;
 
     for sig_reloc in &sig.relocations {
         let reloc_va = addr.address + sig_reloc.offset;
@@ -401,10 +433,8 @@ pub fn apply_signature_x86(
         if inside_size_known_function(obj, target_sec, target_va) {
             continue;
         }
-        let callee_idx = apply_symbol(obj, SectionAddress::new(target_sec, target_va), sig_symbol)?;
-        // Same: clear size_known for callees.
-        let callee = obj.symbols[callee_idx].clone();
-        obj.symbols.replace(callee_idx, ObjSymbol { size: 0, size_known: false, ..callee })?;
+        // Same: a callee keeps whatever size this image derived for it.
+        apply_symbol_keep_size(obj, SectionAddress::new(target_sec, target_va), sig_symbol)?;
     }
     Ok(())
 }
