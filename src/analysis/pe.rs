@@ -184,13 +184,45 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
     for (sec_idx, sec) in obj.sections.iter().filter(|(_, s)| s.kind == ObjSectionKind::Code) {
         let base = sec.address as u32;
         let d = &sec.data;
+
+        // The byte scan below cannot tell a linker-emitted import thunk from a
+        // `jmp dword ptr [__imp__Foo]` tail call sitting in the middle of a real
+        // function — both are the same six bytes. Collect the candidate offsets
+        // first so each one can be judged by what precedes it.
+        let candidates: std::collections::BTreeSet<usize> = (0..d.len().saturating_sub(5))
+            .filter(|&i| {
+                d[i] == 0xFF
+                    && d[i + 1] == 0x25
+                    && iat_map.contains_key(&u32::from_le_bytes(
+                        d[i + 2..i + 6].try_into().unwrap(),
+                    ))
+            })
+            .collect();
+
+        // A real thunk either sits in a run — the linker emits them packed six
+        // bytes apart, so a neighbour on either side is enough — or stands alone
+        // and is reached only after whatever ended the previous function: NOP or
+        // INT3 padding, or the RET itself when the linker left no gap. A tail
+        // call is preceded by the instruction that set up its arguments
+        // (`mov ecx, <this>` and friends), so it matches neither.
+        //
+        // Zero bytes are deliberately not treated as padding: an immediate
+        // operand ending in 0x00 is exactly what precedes a typical tail call.
+        let is_thunk = |i: usize| -> bool {
+            let in_run = (i >= 6 && candidates.contains(&(i - 6))) || candidates.contains(&(i + 6));
+            let after_gap = matches!(i.checked_sub(1).map(|p| d[p]), Some(0x90 | 0xCC | 0xC3));
+            in_run || after_gap
+        };
+
         let mut i = 0usize;
         while i + 6 <= d.len() {
             if d[i] == 0xFF && d[i + 1] == 0x25 {
                 let target = u32::from_le_bytes(d[i + 2..i + 6].try_into().unwrap());
                 if let Some(imp_name) = iat_map.get(&target) {
                     let thunk_va = base + i as u32;
-                    if obj.symbols.at_section_address(sec_idx, thunk_va).next().is_some() {
+                    if obj.symbols.at_section_address(sec_idx, thunk_va).next().is_some()
+                        || !is_thunk(i)
+                    {
                         i += 1;
                         continue;
                     }
