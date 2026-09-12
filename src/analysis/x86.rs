@@ -707,7 +707,18 @@ pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) 
                 entries.get(pos).copied()
             })
             .unwrap_or(sec_end);
-        let cap = next_fn.min(sec_end);
+        // Also cap at the end of the translation unit this function belongs to.
+        // The padding skip below would otherwise run past the unit's last byte
+        // and swallow the alignment gap the linker left between two objects,
+        // which makes the symbol overhang its own split (`ends within symbol`).
+        let split_end = obj.sections[fn_sec_idx]
+            .splits
+            .for_range(..=fn_va)
+            .next_back()
+            .filter(|(_, split)| split.end > fn_va)
+            .map(|(_, split)| split.end)
+            .unwrap_or(u32::MAX);
+        let cap = next_fn.min(sec_end).min(split_end);
 
         // 1. Skip NOP / INT3 padding.
         let mut fn_end = raw_end.min(cap);
