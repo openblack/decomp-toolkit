@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: 3a6649e4e5a9c6fa362a502853bea67902fddf23
+  signature: i/9B/wz/M//S/4X/wP90/xz/O/9E/yT/BP90/wb/i//Q/4v/AP/r//D/i/8A/4X/0v91/wX/if9B/wz/6/8C/4n/Av///0n/CP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?Unlink@?$ListT@VCD3duContextNode@@@@UAEXPAVCD3duContextNode@@@Z
+    size: 40
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 96e50b6f584f7fe1d08e7dd925d20ba3844dce5f
+  signature: Vf+L/+z/g/99/wj/AP9W/4v/8f91/xT/aP8AAAAAAAAAAGr/Nv9o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4v/Rv8M/zP/yf+F/8D/dP8b/zv/Rf8I/3T/Bv+L/8j/i/8A/+v/8f+L/wD/hf/J/3X/Bf+J/0b/DP/r/wL/if8B////Tv8I/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?Unlink@?$ListT@VCD3duContextNode@@@@UAEXPAVCD3duContextNode@@@Z
+    size: 73
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_09HPHF@pUnlinkMe?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@LOKF@?4?2listtemplate?4h?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

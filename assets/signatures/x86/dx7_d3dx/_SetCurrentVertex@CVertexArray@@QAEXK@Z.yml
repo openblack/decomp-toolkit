@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 57b3b8119733472b797bd71d131f1792e652f845
+  signature: i/9E/yT/BP87/0H/DP+J/0H/HP92/wv/i/9R/wj/A//Q/1L/6P8AAAAAAAAAAML/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?SetCurrentVertex@CVertexArray@@QAEXK@Z
+    size: 26
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?AllocateMemory@CVertexArray@@IAEXK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: df0a681e6ea290ad1b8f085dde0afffd9673e180
+  signature: Vf+L/+z/i/9F/wj/O/9B/wz/if9B/xz/dv8L/4v/Uf8I/wP/0P9S/+j/AAAAAAAAAABd/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?SetCurrentVertex@CVertexArray@@QAEXK@Z
+    size: 29
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?AllocateMemory@CVertexArray@@IAEXK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 3285e143213ced17e2113d9daa268908f353a5b5
+  signature: Vf+L/+z/Uf9R/9n/Rf8c/9j/Tf8c/4v/Tf8M/4v/Vf8Q/1b/i/91/xT/2f/A/9j/Tf8c/1f/i/99/xj/i/9F/wj/2f/A/9j/Df8AAAAAAAAAANn/wv/Y/w3/AAAAAAAAAADY/+n/2P8t/wAAAAAAAAAA2f9d//z/2f/C/9z/wP/Y/+r/2P9F/xz/2f9d/xz/2f/C/9j/Df8AAAAAAAAAANj/6f/Z/13/+P/d/9j/3v/h/9n/Rf/8/9j/Cf/Z/0X/HP/Y/wr/3v/B/9n/Rf/4/9j/Dv/e/8H/2f/B/9j/D//e/8H/2f8Y/9n/Qf8E/9j/Tf/8/9n/Qv8E/9j/Tf8c/97/wf/Z/0b/BP/Y/03/+P/e/8H/2f9H/wT/2P/K/1//Xv/e/8H/2f9Y/wT/3f/Y/8n/wv8Y/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXVec2Hermite@24
+    size: 156
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41921
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41922
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 37
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 76
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 756c55e11447b844dcb91f8affe00a91144bca8a
+  signature: Vf+L/+z/i/9F/wj/Vv+F/8D/V/8P/4T/rv8A/wD/AP+L/33/DP+F////D/+E/6P/AP8A/wD/i/91/xD/hf/2/w//hP+Y/wD/AP8A/4v/Vf8U/4X/0v8P/4T/jf8A/wD/AP+L/03/GP+F/8n/D/+E/4L/AP8A/wD/2f9F/xz/2P9N/xz/2f/A/9j/Tf8c/9n/wP/Y/w3/AAAAAAAAAADZ/8L/2P8N/wAAAAAAAAAA2P/p/9j/Lf8AAAAAAAAAANn/Xf8M/9n/wv/c/8D/2P/q/9j/Rf8c/9n/Xf8c/9n/wv/Y/w3/AAAAAAAAAADY/+n/2f9d/wj/3f/Y/97/4f/Z/0X/DP/Y/w//2f/B/9j/Cf/e/8H/2f9F/xz/2P8O/97/wf/Z/0X/CP/Y/wr/3v/B/9n/GP/Z/0H/BP/Y/8n/2f9G/wT/2P9N/xz/3v/B/9n/Qv8E/9j/Tf8I/97/wf/Z/0f/BP/Y/03/DP/e/8H/2f9Y/wT/3f/Y/+v/Av8z/8D/X/9e/13/wv8Y/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXVec2Hermite@24
+    size: 198
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42040
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42041
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 75
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 114
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

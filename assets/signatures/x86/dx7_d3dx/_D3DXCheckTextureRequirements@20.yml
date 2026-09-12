@@ -1,0 +1,162 @@
+- symbol: 0
+  hash: e10beb5a37e520443025d89c634ca629eb7b9f68
+  signature: Vf+L/+z/gf/s/xT/A/8A/wD/g/9l//T/AP9T/1b/i/91/wj/jf9F//T/V/9Q/1b/6P8AAAAAAAAAAFn/hf/A/1n/D/+M/6X/Av8A/wD/i/9F/xj/g/9l/+D/AP+F/8D/df8D/43/Rf/g/4v/ff8Q/4P/Tf/Y////hf///3X/CP+N/03/2P+J/03/EP+L//n/i/9d/xT/g/9N/9T///8z/8n/O//Z/3X/CP+N/1X/1P+J/1X/FP+L/9r/Of8L/w//hP9i/wL/AP8A/zn/D/8P/4T/Wv8C/wD/AP85/03/DP+J/03/0P91/wb/jf9V/9D/if9V/wz/g/84////df8C/4n/CP9Q////MP9W/+j/AAAAAAAAAACD/8T/DP+J/0X/CP+F/8D/ff8V/4v/Rf/0/4X/wP90/wb/i/8I/1D///9R/wj/i/9F/wj/6f8i/wL/AP8A/4v/B/9q/wH/if9F/xj/i/8D/4n/Rf8I/1v/uP8A/wT/AP8A/2r/O/+J/0X/+P+J/0X//P+D/2X/8P8A/1n/M//A/43/vf/k//7///////P/q/+L/wb/jf+N/+T//v//////Uf9W/4n/Xf/k/4n/Xf/c/4n/Xf/o/4n/Xf/s////UP8M/4X/wP8P/4z/L/8B/wD/AP9q/xD/v/8AAAAAAAAAAFn/jf91/6j/M//A//P/pv90/xX/av8Q/7//AAAAAAAAAABZ/43/df+o/zP/wP/z/6b/D/+F/wn/Af8A/wD/av9f/zP/wP9Z/43/vf/s//z///////P/q/+L/0X/9P+N/5X/7P/8///////H/4X/7P/8//////98/wH/AP8A/2r/AP+L/wj/Uv9Q////Uf8s/4v/df8M/7n/AP8B/wD/AP+F/8D/fP8h/4v/Bv+F/8H/df8N//b/hf9a//7//////0D/df8E/wv/wf+J/wb/i/+9//T//P//////gf/n/wD/EP8A/wD/6/8D/4v/ff/c//b/hf9A/////////wL/df8Q/4X/jf9A/////////3X/CP+F/w7/dP8E/4P/Zf/k/wD/9v+F/0D/////////IP90/wP/if9d//D/i/+F/2D/////////if9N//z/hf/A/4n/Tf/4/4n/Xf/s/4n/Xf/o/3T/A/+J/0X/6P+L/4X/ZP////////+F/8D/dP8D/4n/Rf/s/4v/hf9o/////////4X/wP90/wP/if9F//j/i/+F/2z/////////hf/A/3T/A/+J/0X//P+F////df9H/2r/H/8z/8D/Wf+N/73/aP/+///////z/6v/i/9F//T/jf+V/2j//v//////x/+F/2j//v//////fP8A/wD/AP9S/4v/CP9Q////Uf8w/4X/wP98/xz/i/+F/3T//v//////Of9F//j/dv8D/4n/Rf/4/4P/ff/w/wD/dP8I/zn/Rf/8/3b/A/+J/0X//P+D/33/5P8A/3T/Ov+L/0X/EP+J/13/GP+L/wD/O//D/3b/Ef+L/03/GP8D/8n/O/9N//j/d/8H/zv/yP+J/03/GP9y/+//i/9F/xT/if9d/wj/i/8A/zv/w/92/xH/i/9N/wj/A//J/zv/Tf/8/3f/B/87/8j/if9N/wj/cv/v/4P/ff/w/wD/dP8R/4v/Rf8Y/zv/Rf8I/3b/A/+J/0X/CP+L/0X/CP+J/0X/GP+L/0X/+P85/0X/GP9y/wP/if9F/xj/i/9F//z/Of9F/wj/cv8D/4n/Rf8I/4v/Rf/o/zn/Rf8Y/3f/A/+J/0X/GP+L/0X/7P85/0X/CP93/wP/if9F/wj/i/9N/xD/i/9F/xj/if8B/4v/Tf8U/4v/Rf8I/4n/Af+L/0X/9P+F/8D/dP8G/4v/CP9Q////Uf8I/zP/wP/r/wX/uP/E/wv/d//I/1//Xv9b/8n/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXCheckTextureRequirements@20
+    size: 723
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetDDFromD3DDevice@@YAJPAUIDirect3DDevice7@@PAPAUIDirectDraw7@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?ChooseTextureFormat@@YAJPAUIDirect3DDevice7@@W4_D3DX_SURFACEFORMAT@@PAW42@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DHALDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DTnLHalDevice
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 135
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 247
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 264
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
+  hash: 18133c7bb35fe8987bf9306ed8d0a4d7363a6281
+  signature: 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
+  symbols:
+  - kind: Function
+    name: _D3DXCheckTextureRequirements@20
+    size: 799
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetDDFromD3DDevice@@YAJPAUIDirect3DDevice7@@PAPAUIDirectDraw7@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0CE@BMCI@Cannot?5obtain?5Ddraw?5from?5d3d?5dev@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?ChooseTextureFormat@@YAJPAUIDirect3DDevice7@@W4_D3DX_SURFACEFORMAT@@PAW42@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DG@PEKD@Can?8t?5find?5any?5good?5texture?5form@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _IID_IDirect3DHALDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DTnLHalDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CO@FACA@GetCaps?5failed?5for?5the?5current?5D@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DF@GHDE@GetDisplayMode?5failed?5for?5the?5cu@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@MNIK@width?5or?5height?5cannot?5be?5zero?6?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 39
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 150
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 165
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 171
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 277
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 294
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 399
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 406
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 597
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 604
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 775
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 781
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

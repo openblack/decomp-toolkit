@@ -1,0 +1,233 @@
+- symbol: 0
+  hash: da751d419be81cc15c4b8f45d39eb3dcb9c7c13a
+  signature: Vf+L/+z/gf/s/4j/AP8A/wD/Vv8z//b/Of81/wAAAAAAAAAAD/+F/7b/AP8A/wD/V/9q/1z/Wf8z/8D/v/8AAAAAAAAAAGr/DP/z/6v/6P8AAAAAAAAAADv/xv9Z/3T/Cv+J/3D/BP+J/3D/CP+J/zD/6/8C/zP/wP9q/wz/o/8AAAAAAAAAAOj/AAAAAAAAAAA7/8b/Wf90/wr/if9w/wT/if9w/wj/if8w/+v/Av8z/8D/Of81/wAAAAAAAAAAo/8AAAAAAAAAAHT/BP87/8b/df9Y/7//AAAAAAAAAACD/8n///8z/8D/jf+V/3j/////////8v+u//f/0f8r//n/x/9F//j/uP8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/eP////////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/eP/////////H/0X//P8n/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAA6P8AAAAAAAAAAOj/AAAAAAAAAABf////Bf8AAAAAAAAAADP/wP9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?_d3dxCopyAddRef@@YAJXZ
+    size: 217
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _InitCount$S42480
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ?FnTable@@3PAUTABLEENTRY@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?ArrayCopySpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?ArrayFilterSpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CN@GJPP@_d3dxInitConvert?5?9?5Memory?5alloca@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?RegisterLines@@YAJXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?RegisterBlts@@YAJXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 64
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 69
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 92
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 108
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 183
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 191
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 196
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 201
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 208
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 300f4a3249782c44d80dfc5f857428414cd69bf4
+  signature: Vf+L/+z/gf/s/xD/Af8A/wD/Vv8z//b/Of81/wAAAAAAAAAAD/+F/8H/AP8A/wD/V/9q/1z/Wf8z/8D/v/8AAAAAAAAAAGr/DP/z/6v/6P8AAAAAAAAAADv/xv9Z/3T/Cv+J/3D/BP+J/3D/CP+J/zD/6/8C/zP/wP9q/wz/o/8AAAAAAAAAAOj/AAAAAAAAAAA7/8b/Wf90/wr/if9w/wT/if9w/wj/if8w/+v/Av8z/8D/Of81/wAAAAAAAAAAo/8AAAAAAAAAAHT/BP87/8b/df9j/43/jf94/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf94//////////L/rv/3/9H/K//5/8f/Rf/4/7j/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F//D//v//////g//h/wP/8/+k/1n/jf+1/3j/////////jf+9//D//v//////x/9F//z/J/8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAOj/AAAAAAAAAADo/wAAAAAAAAAAX////wX/AAAAAAAAAAAz/8D/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?_d3dxCopyAddRef@@YAJXZ
+    size: 228
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _InitCount$S42491
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ?FnTable@@3PAUTABLEENTRY@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?ArrayCopySpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?ArrayFilterSpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CN@GJPP@_d3dxInitConvert?5?9?5Memory?5alloca@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?RegisterLines@@YAJXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?RegisterBlts@@YAJXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 64
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 69
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 92
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 114
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 119
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 194
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 202
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 207
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 212
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 219
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: fcbe074d8e8d47a8313edd5d5716cbb11d7f4776
+  signature: i/9B/wz/Vv+F/8D/dP8h/4v/TP8k/wz/i/8R/zn/UP8E/3X/EP+L/3D/CP87/3H/BP91/wj/i/9w/wz/O/9x/wj/dP8X/4v/AP+F/8D/df/l/4v/RP8k/wj/hf/A/3T/A/+D/yD/AP8z/8D/Xv/C/wj/AP+L/0z/JP8I/4X/yf90/wL/if8B/2r/Af9Y/+v/7f8=
+  symbols:
+  - kind: Function
+    name: ?GetVideoModeNode@CVideoModeList@@QAEHPAPAVCVideoModeNode@@PAU_D3DX_VIDMODEDESC@@@Z
+    size: 73
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: cec4953d6c031a50255740afa2e09155088bea60
+  signature: Vf+L/+z/Vv+L/3X/DP9X/4v/+f+F//b/df8X/2j/AAAAAAAAAABo/5f/Av8A/wD/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+L/0f/DP+F/8D/dP8d/4v/Dv85/0j/BP91/xD/i/9Q/wj/O/9W/wT/df8I/4v/UP8M/zv/Vv8I/3T/GP+L/wD/hf/A/3X/5f+L/0X/CP+F/8D/dP8D/4P/IP8A/zP/wP9f/17/Xf/C/wj/AP+L/03/CP+F/8n/dP8C/4n/Af9q/wH/WP/r/+z/
+  symbols:
+  - kind: Function
+    name: ?GetVideoModeNode@CVideoModeList@@QAEHPAPAVCVideoModeNode@@PAU_D3DX_VIDMODEDESC@@@Z
+    size: 105
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0L@IDHA@pVideoMode?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@BMII@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

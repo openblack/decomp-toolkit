@@ -1,0 +1,98 @@
+- symbol: 0
+  hash: 341ed98f858c566b317faa2a0815e1abd9e3050c
+  signature: Vf+L/+z/g//s/yD/U/9W/1f/x/9F/+D/AP8E/wD/AP/H/0X/5P8A/wj/AP8A/8f/Rf/o/wD/EP8A/wD/x/9F/+z/AP8g/wD/AP/H/0X/8P8A/0D/AP8A/8f/Rf/0/wD/gP8A/wD/M//b/43/ff/g/4v/N/+F/3X/FP90/1n/jf9F//z/UP9W////df8Q/+j/AAAAAAAAAACD/8T/DP+F/8D/fP9Q/43/Rf/4/1D/Vv///3X/DP/o/wAAAAAAAAAAi//w/4P/xP8M/4X/9v98/z////91/xj/av8A/2r/AP///3X//P9q//////91//j///91/wj/6P8AAAAAAAAAAIv/8P+L/0X//P9Q/4v/CP///1H/CP+L/0X/+P9Q/4v/CP///1H/CP+F//b/fP8Z/0P/g//H/wT/g//7/wb/fP+X/zP/wP9f/17/W//J/8P/i/9F//z/UP+L/wj///9R/wj/i//G/+v/7v8=
+  symbols:
+  - kind: Function
+    name: ?LoadCubeMapFromCubeMap@@YAJPAUIDirect3DDevice7@@PAUIDirectDrawSurface7@@1KW4_D3DX_FILTERTYPE@@@Z
+    size: 181
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetTopCubeFace@@YAJPAUIDirectDrawSurface7@@KPAPAU1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXLoadTextureFromSurface@28
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 72
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 92
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 124
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 6efe7bb408a6370eaf1b7deaf8fb70aded33c76b
+  signature: Vf+L/+z/g//s/yj/U/8z/9v/jf9F/9j/Vv9X/8f/Rf/Y/wD/BP8A/wD/x/9F/9z/AP8I/wD/AP/H/0X/4P8A/xD/AP8A/8f/Rf/k/wD/IP8A/wD/x/9F/+j/AP9A/wD/AP/H/0X/7P8A/4D/AP8A/4n/Xf/4/4n/Rf/8/4v/Rf/8/4v/MP+F/3X/FP90/1n/jf9F//T/UP9W////df8Q/+j/AAAAAAAAAACL//j/g//E/wz/O//7/3z/V/+N/0X/8P9Q/1b///91/wz/6P8AAAAAAAAAAIv/8P+D/8T/DP87//P/fP9S////df8Y/1P/U////3X/9P9q//////91//D///91/wj/6P8AAAAAAAAAAIv/8P+L/0X/9P9Q/4v/CP///1H/CP+L/0X/8P9Q/4v/CP///1H/CP87//P/fP89////Rf/4/4P/Rf/8/wT/g/99//j/Bv98/5D/M//A/1//Xv9b/8n/w/9o/wAAAAAAAAAAU//o/wAAAAAAAAAAWf+L/8f/Wf/r/+r/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAIv/Rf/0/1n/Wf+L/wj/UP///1H/CP/r/w3/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAFn/Wf+L/8b/6//B/w==
+  symbols:
+  - kind: Function
+    name: ?LoadCubeMapFromCubeMap@@YAJPAUIDirect3DDevice7@@PAUIDirectDrawSurface7@@1KW4_D3DX_FILTERTYPE@@@Z
+    size: 239
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetTopCubeFace@@YAJPAUIDirectDrawSurface7@@KPAPAU1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXLoadTextureFromSurface@28
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BO@KNBE@Error?5trying?5to?5load?5cube?9map?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 81
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 182
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 188
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 199
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 205
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 223
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 229
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 4c5371667b81f3f7bc281550c6118037d5742813
+  signature: Vf+L/+z/i/9F/xD/U/+L/13/CP9X/4v/QP98/zP///8z/8n/hf/b/37/VP+L/1X/DP9W/4v/8P+J/13/EP+L/wL/O//H/3T/N/8z/8n/i//4/4X/wP90/y//i//Y/4v/yP/B/+v/B/+B/+H/AP8A//j/AP+B/+P/AP8A/wD/Af8L/8v/i//Y/8H/6f8D/4H/4/8A//j/AP8A/yX/+P8A/wD/AP8L/8v/wf/p/wP/C//I/8H/6f8D/2b/if8O/4P/wv8E/0b/Rv///03/EP91/7b/Xv9f/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?PutDstSpan_A1R5G5B5@@YAXJPAKPAUBLT_DATA@@@Z
+    size: 110
+    flags: 2
+    section: .text
+  relocations: []

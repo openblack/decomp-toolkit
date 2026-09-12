@@ -1,0 +1,98 @@
+- symbol: 0
+  hash: d25f199dd038e5356b7bde78d213aaafdb2cbeb1
+  signature: Vf+L/+z/gf/s/wD/Af8A/wD///81/wAAAAAAAAAAjf+F/wD/////////aP8AAAAAAAAAAFD/6P8AAAAAAAAAAIP/xP8M/43/hf8A/////////1D/av8A/+j/AAAAAAAAAABZ/43/hf8A/////////1n///81/wAAAAAAAAAAaP8AAAAAAAAAAFD/6P8AAAAAAAAAAIP/xP8M/43/hf8A/////////1D/av8A/+j/AAAAAAAAAABZ/43/hf8A/////////1n///81/wAAAAAAAAAAaP8AAAAAAAAAAFD/6P8AAAAAAAAAAIP/xP8M/43/hf8A/////////1D/av8A/+j/AAAAAAAAAABZ/1n/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?DPF_ShowAllocStats@@YAXXZ
+    size: 137
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_dwNumAllocations@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_0DD@LPHH@DPF_ShowAllocStats?$CI?$CJ?3?5?$CFd?5calls?5t@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _sprintf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_dwNumFrees@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_0EI@IBEL@DPF_ShowAllocStats?$CI?$CJ?3?5?$CFd?5calls?5t@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ?g_dwTotalUnfreedMemory@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_0EH@OMGN@DPF_ShowAllocStats?$CI?$CJ?3?5?$CFd?5bytes?5o@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 45
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 59
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 64
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 70
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 101
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 106
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 112
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

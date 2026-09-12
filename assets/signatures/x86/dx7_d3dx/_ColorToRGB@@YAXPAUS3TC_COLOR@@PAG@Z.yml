@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 29e95527e5e3b21a6edd18c7555d204574cc4568
+  signature: i/9M/yT/BP+K/0H/Av+K/1H/Af+K/wn/wP/o/wP/Zv8P/7b/wP/A/+r/Av9m/w//tv/S/2b/D/+2/8D/wP/p/wP/Zv8P/7b/0v9m/w//tv/J/8H/4P8G/wv/wv9m/w//tv/J/8H/4P8F/wv/wf+L/0z/JP8I/2b/if8B/8P/
+  symbols:
+  - kind: Function
+    name: ?ColorToRGB@@YAXPAUS3TC_COLOR@@PAG@Z
+    size: 63
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: af04ce48742df6276b216a0bedfc93f4db1cebdd
+  signature: Vf+L/+z/i/9N/wj/iv9B/wL/iv9R/wH/iv8J/8D/6P8D/2b/D/+2/8D/wP/q/wL/Zv8P/7b/0v9m/w//tv/A/8D/6f8D/2b/D/+2/9L/Zv8P/7b/yf/B/+D/Bv8L/8L/Zv8P/7b/yf/B/+D/Bf8L/8H/i/9N/wz/Zv+J/wH/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?ColorToRGB@@YAXPAUS3TC_COLOR@@PAG@Z
+    size: 65
+    flags: 2
+    section: .text
+  relocations: []

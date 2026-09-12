@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: 0b0c6fa6cab9b8ed0b046a14db2fc9033d72953e
+  signature: Vf+L/+z/gf/s/5j/AP8A/wD/U/+L/13/CP9W/1f/i/8D/1P///9Q/wT/i/9F/wz/M//2/8f/Rf/k/wD/EP8A/wD/x/9F/+j/AP8A/wH/AP+L/wD/if91/+z/if91//D/if9F/wj/O//e/w//hP8t/wH/AP8A/2r/H/8z/8D/Wf+N/73/aP/////////z/6v/av8f/43/vf9o/////////1n/8/+r/1b/jf+N/2j/////////av8B/8f/hf9o/////////3z/AP8A/wD/i/8D/1H/Vv9T////UP9k/4v/+P87//7/D/+M/8//AP8A/wD/9v+F/27/////////CP90/zP/i/+N/3j/////////i/9F/wj/jf8U/wH/O/9V/xD/D/+H/7v/AP8A/wD/i/99/4z/i//w/4v/wf/B/+n/Av/z/6X/i//I/4P/4f8D//P/pP+L/4X/eP////////8B/0X/CP/r/1//i/+F/3T/////////i/99/4z/D/+v/0X/vP/B/+j/A/+L/8j/if99//j/D/+v/43/cP////////8D/03/CP87/03/EP93/3n/Of+1/3D/////////if91//z/dv8y/4v/df8I/4v/yP+L/9H/Af9F/wj/wf/p/wL/8/+l/4v/yv+D/+H/A//z/6T/i/99//j/A/+9/3j///////////9F//z/i/9N//z/O/+N/3D/////////if99//j/cv/Q/zP/9v+L/wP/Vv9T////kP+A/wD/AP8A/4v/A/+N/03/9P9R/43/Tf/k/1H/U////1D/MP+L//j/i/8D/1P///9Q/wj/M//b/zv//v8P/4z/9P/+//////+L/13/9P/p/+z//v//////i/8D/1P///9Q/wj/i//H/+v/If+L/wP/Vv9T////kP+A/wD/AP8A/4v/A/9T////UP8I/7j/2v8L/3f/yP/r/wr/i/9N/wz/i/9F/wj/if8B/zP/wP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?CopyInSingleMipChain@@YAJPAUIDirectDrawSurface7@@PAPAEPAE@Z
+    size: 375
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: f8c783809cf632f429495cae0d75da35b74b11f1
+  signature: Vf+L/+z/gf/s/5j/AP8A/wD/U/+L/13/CP9W/1f/i/8D/1P///9Q/wT/i/9F/wz/M//2/8f/Rf/k/wD/EP8A/wD/x/9F/+j/AP8A/wH/AP+L/wD/if91/+z/if91//D/if9F/wj/O//e/w//hP9c/wH/AP8A/2r/H/8z/8D/Wf+N/73/aP/////////z/6v/av8f/43/vf9o/////////1n/8/+r/1b/jf+N/2j/////////av8B/8f/hf9o/////////3z/AP8A/wD/i/8D/1H/Vv9T////UP9k/4v/+P87//7/D/+M/+T/AP8A/wD/9v+F/27/////////CP90/zP/i/+N/3j/////////i/9F/wj/jf8U/wH/O/9V/xD/D/+H/93/AP8A/wD/i/99/4z/i//w/4v/wf/B/+n/Av/z/6X/i//I/4P/4f8D//P/pP+L/4X/eP////////8B/0X/CP/r/2P/i/+F/3T/////////i/99/4z/D/+v/0X/vP/B/+j/A/+L/8j/if99//j/D/+v/43/cP////////8D/03/CP87/03/EP8P/4f/l/8A/wD/AP85/7X/cP////////+J/3X//P92/zL/i/91/wj/i//I/4v/0f8B/0X/CP/B/+n/Av/z/6X/i//K/4P/4f8D//P/pP+L/33/+P8D/73/eP///////////0X//P+L/03//P87/43/cP////////+J/33/+P9y/9D/M//2/4v/A/9W/1P///+Q/4D/AP8A/wD/O//G/33/Df9o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf9Z/4v/A/+N/03/9P9R/43/Tf/k/1H/U////1D/MP+L//j/i/8D/1P///9Q/wj/M//b/zv//v8P/4z/3//+//////+L/13/9P/p/9f//v//////aP8AAAAAAAAAAFb/6P8AAAAAAAAAAIv/A/9Z/1n/U////1D/CP+L/8f/6/8u/2j/AAAAAAAAAABW/+j/AAAAAAAAAACL/wP/Wf9Z/1b/U////5D/gP8A/wD/AP+L/wP/U////1D/CP+4/9r/C/93/8j/6/8K/4v/Tf8M/4v/Rf8I/4n/Af8z/8D/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?CopyInSingleMipChain@@YAJPAUIDirectDrawSurface7@@PAPAEPAE@Z
+    size: 422
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CI@CGMK@Unlock?5failed?5while?5loading?5DDS?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CF@CODE@Invalid?5file?5format?5for?5DDS?5surf@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 296
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 302
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 349
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 355
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 372
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 378
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

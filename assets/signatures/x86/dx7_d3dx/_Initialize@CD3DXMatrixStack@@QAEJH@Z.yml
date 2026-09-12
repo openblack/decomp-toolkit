@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d8291525961a9666c9226685152c53e69c43f21c
+  signature: Vf+L/+z/Vv+L//H/V/+D/37/CP8A/3T/B/+4/wX/QP8A/4D/6/9B/4v/ff8I/4v/x//B/+D/Bv9Q/+j/AAAAAAAAAACF/8D/Wf90/wj/jf9P////if9N/wj/6/8C/zP/wP8z/8n/if9G/wj/hf/A/w//lP/B/4T/yf90/wf/uP+4/wv/d//I/+v/D/+L/wb/g/9m/wz/AP9W/4n/fv8E////UP8U/zP/wP9f/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?Initialize@CD3DXMatrixStack@@QAEJH@Z
+    size: 91
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 30
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

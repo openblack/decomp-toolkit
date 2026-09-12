@@ -1,0 +1,149 @@
+- symbol: 0
+  hash: a1815ff7fa68ae6e434e9b1e1e5b8fa0cc7b79cf
+  signature: Vf+L/+z/gf/s/xT/Af8A/wD/U/+L/9n/M//S/1b/i/9L/yT/V/87/8r/df8J/zn/U/8o/w//hP/N/wH/AP8A/4v/Q/9w/4n/Vf/8/4v/gP8A/wT/AP8A/zv/wv90/x3/9v9A/w3/BP90/w3/Of9I/xT/df8I/4v/cP8Y/zv/c/8o/3T/BP+L/wD/6//l/4P/wP8I/4n/Rf/8/zn/Vf/8/3X/Xv+//wAAAAAAAAAAg//J////M//A/43/lf/s//7///////L/rv/3/9H/K//5/8f/hf9s/////////8L/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3T/////////g//h/wP/8/+k/1n/jf+1/+z//v//////jf+9/3T/////////x/+F/3D/////////NP8F/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAGr/H/8z/8D/Wf+N/73/+P/+///////z/6v/i/9D/zz/i/91//z/if+F/wT/////////i/9D/zj/if+F/wD/////////i/9D/3T/av8I/w3/AP8A/wL/AP9Z/43/vf9A/////////8f/hf/4//7//////3z/AP8A/wD/x/+F//z//v//////B/8Q/wD/AP+J/4X/YP////////+L/0P/fP/z/6X/i/8I/43/s/+g/wD/AP8A/2r/AP+N/5X/+P/+//////9W/1L/UP+J/3X//P///1H/GP+F/8D/ff9X/4n/Rf/0/7//AAAAAAAAAACD/8n///8z/8D/8v+u//f/0f8r//n/jf+V/3T/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3T/////////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/3T/////////x/9F//j/R/8F/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/df/8/4v/m/+U/wD/AP8A////Nv+L/wP/U////1D/DP+L//j/hf///33/Y/+L/wb/hf/A/3T/Cf+L/wj/UP///1H/CP+D/yb/AP+J/33/9P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf90/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf90/////////4P/4f8D//P/pP9Z/43/tf90/////////43/vf90/////////8f/Rf/4/1L/Bf8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABf/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?_CreateZBuffer@CD3duContext@@AAEXXZ
+    size: 498
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DO@JHFK@CD3duContext?3?3_CreateZBuffer?5?9?5Z@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DK@MNBN@CD3duContext?3?3_CreateZBuffer?5?9?5C@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 83
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 164
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 172
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 291
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 359
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 367
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 413
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 481
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 489
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 2b365e2d0a8754defa8cef7258f74a81496d6361
+  signature: Vf+L/+z/gf/s/5D/Af8A/wD/U/+L/9n/M//S/1b/i/9L/yT/V/87/8r/df8J/zn/U/8o/w//hP/q/wH/AP8A/4v/Q/9w/4n/Vf/8/4v/gP8A/wT/AP8A/zv/wv90/x3/9v9A/w3/BP90/w3/Of9I/xT/df8I/4v/cP8Y/zv/c/8o/3T/BP+L/wD/6//l/4P/wP8I/4n/Rf/8/zn/Vf/8/3X/Y/+N/43/dP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/dP/////////y/67/9//R/yv/+f/H/0X/9P/C/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9w//7//////4P/4f8D//P/pP9Z/43/tf90/////////43/vf9w//7//////8f/Rf/4/zT/Bf8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABq/x//M//A/1n/jf+9//j//v//////8/+r/4v/Q/88/4v/df/8/4n/hf8E/////////4v/Q/84/4n/hf8A/////////4v/Q/90/2r/CP8N/wD/AP8C/wD/Wf+N/73/QP/////////H/4X/+P/+//////98/wD/AP8A/8f/hf/8//7//////wf/EP8A/wD/if+F/2D/////////i/9D/3z/8/+l/4v/CP+N/7P/oP8A/wD/AP9q/wD/jf+V//j//v//////Vv9S/1D/if91//z///9R/xj/i//4/4X///99/2L/jf+N/3T/////////6P8AAAAAAAAAAIn/ff/0/7//AAAAAAAAAACD/8n///8z/8D/8v+u//f/0f8r//n/jf+V/3T/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3D//v//////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/3D//v//////x/9F//j/R/8F/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/df/8/4v/m/+U/wD/AP8A////Nv+L/wP/U////1D/DP+L//j/hf///33/bv+L/wb/hf/A/3T/Cf+L/wj/UP///1H/CP+D/yb/AP+N/43/dP/////////o/wAAAAAAAAAAif99//T/v/8AAAAAAAAAAIP/yf///zP/wP/y/67/9//R/yv/+f+N/5X/dP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/cP/+//////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/cP/+///////H/0X/+P9S/wX/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_CreateZBuffer@CD3duContext@@AAEXXZ
+    size: 527
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DO@JHFK@CD3duContext?3?3_CreateZBuffer?5?9?5Z@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DK@MNBN@CD3duContext?3?3_CreateZBuffer?5?9?5C@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 89
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 94
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 169
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 177
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 301
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 309
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 377
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 385
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 434
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 442
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 510
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 518
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 029b0b1ddafa84fbd4830cf5961449df7cc71d29
+  signature: i/9M/yT/BP+L/0T/JP8I/1b/V/87/0H/IP9z/yH/jf+x/5D/AP8A/wD/i//4/8H/5/8C/4v/Bv+L/wT/OP+F/8D/dP8N/4v/CP9Q////Uf8E/4v/Bv+L/wT/OP/r/wL/M//A/1//Xv/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetBackBuffer@CD3duContext@@UAGPAUIDirectDrawSurface7@@K@Z
+    size: 55
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 81a854fe4bc3b1cf5dcffb47736c62197035599a
+  signature: Vf+L/+z/i/9N/wj/i/9F/wz/Vv9X/zv/Qf8g/3L/Fv9o/wAAAAAAAAAAav8A/+j/AAAAAAAAAABZ/1n/M//A/1//Xv9d/8L/CP8A/43/sf+Q/wD/AP8A/4v/+P/B/+f/Av+L/wb/i/8E/zj/hf/A/3T/5P+L/wj/UP///1H/BP+L/wb/i/8E/zj/6//Z/w==
+  symbols:
+  - kind: Function
+    name: ?GetBackBuffer@CD3duContext@@UAGPAUIDirectDrawSurface7@@K@Z
+    size: 71
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DJ@MIF@CD3duContext?3?3GetBackBuffer?5?9?5DW@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

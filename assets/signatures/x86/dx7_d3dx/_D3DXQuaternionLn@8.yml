@@ -1,0 +1,92 @@
+- symbol: 0
+  hash: f76e5e77ba4e583d592ebfbf2fc553753ad0ae6a
+  signature: Vv+L/3T/JP8M/9n/Rv8M/9j/Hf8AAAAAAAAAAN//4P+e/3P/Tv/Z/0b/DP/o/wAAAAAAAAAA2f/A/9n//v/Z/wX/AAAAAAAAAADY/9n/3//g/57/d/8L/9j/Ff8AAAAAAAAAAN//4P+e/3b/Jv/Z/8H/2P/x/4v/RP8k/wj/3f/a/93/2P/Z/wb/2P/J/9n/GP/Z/0b/BP/Y/8n/2f9Y/wT/2f9G/wj/2P/J/9n/WP8I/93/2P/r/xj/3f/Y/93/2P/Z/wb/i/9E/yT/CP/Z/xj/i/9O/wT/if9I/wT/i/9O/wj/if9I/wj/2f/u/17/2f9Y/wz/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionLn@8
+    size: 126
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __CIacos
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T41914
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41915
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
+  hash: f71cf36696a609c3fda8578439a2baf89cf43ff0
+  signature: Vf+L/+z/Vv+L/3X/CP+F//b/V/90/3j/i/99/wz/hf///3T/cf/Z/0f/DP/Y/x3/AAAAAAAAAADf/+D/nv9z/0r/2f9H/wz/6P8AAAAAAAAAANn/wP/Z//7/2f8F/wAAAAAAAAAA2P/Z/9//4P+e/3f/C//Y/xX/AAAAAAAAAADf/+D/nv92/yL/2f/B/9j/8f/d/9r/3f/Y/9n/wP/Y/w//2f8e/9n/R/8E/9j/yf/Z/17/BP/Z/0f/CP/Y/8n/2f9e/wj/3f/Y/+v/FP/d/9j/3f/Y/4v/B/+J/wb/i/9H/wT/if9G/wT/i/9H/wj/if9G/wj/2f/u/4v/xv/Z/17/DP/r/wL/M//A/1//Xv9d/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionLn@8
+    size: 140
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __CIacos
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T42032
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42033
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 47
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

@@ -1,0 +1,29 @@
+- symbol: 0
+  hash: 3033158792b16a196ca911989346eb95bfadddc5
+  signature: Vf+L/+z/i/9F/wj/2f9A/zz/2P9I/yj/2f9A/zj/2P9I/yz/3v/p/9n/QP8k/9j/SP88/9n/QP80/9j/SP8s/97/6f/Z/0D/JP/Y/0j/OP/Z/0D/NP/Y/0j/KP/e/+n/2f9A/zz/2P9I/yD/2f9A/yz/2P9I/zD/3v/p/9n/QP84/9j/SP8g/9n/QP8o/9j/SP8w/97/6f/Z/0D/NP/Y/0j/IP/Z/0D/JP/Y/0j/MP/e/+n/2f9d/wj/2f/E/9j/SP8U/9n/xP/Y/0j/GP/e/+n/2f/D/9j/SP8c/97/wf/Y/wj/2f/F/9j/SP8Q/9n/w//Y/0j/GP/e/+n/2f/C/9j/SP8c/97/wf/Y/0j/BP/e/+n/2f/E/9j/SP8Q/9n/w//Y/0j/FP/e/+n/2f9F/wj/2P9I/xz/3v/B/9j/SP8I/97/wf/Z/8P/2P9I/xD/2f/C/9j/SP8U/97/6f/Z/0X/CP/Y/0j/GP/e/8H/2P9I/wz/3v/p/93/3f/d/9j/3f/Y/93/2P/d/9j/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixfDeterminant@4
+    size: 202
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 295e8ff4edf9c0b56dd1ef30ca936de9f2912b3c
+  signature: Vf+L/+z/i/9F/wj/hf/A/3X/C//Z/wX/AAAAAAAAAADp/8D/AP8A/wD/2f9A/zz/2P9I/yj/2f9A/yz/2P9I/zj/3v/p/9n/QP8k/9j/SP88/9n/QP80/9j/SP8s/97/6f/Z/0D/JP/Y/0j/OP/Z/0D/NP/Y/0j/KP/e/+n/2f9A/zz/2P9I/yD/2f9A/yz/2P9I/zD/3v/p/9n/QP84/9j/SP8g/9n/QP8o/9j/SP8w/97/6f/Z/0D/NP/Y/0j/IP/Z/0D/JP/Y/0j/MP/e/+n/2f9d/wj/2f/E/9j/SP8U/9n/xP/Y/0j/GP/e/+n/2f/D/9j/SP8c/97/wf/Y/wj/2f/F/9j/SP8Q/9n/w//Y/0j/GP/e/+n/2f/C/9j/SP8c/97/wf/Y/0j/BP/e/+n/2f/E/9j/SP8Q/9n/w//Y/0j/FP/e/+n/2f9F/wj/2P9I/xz/3v/B/9j/SP8I/97/wf/Z/8P/2P9I/xD/2f/C/9j/SP8U/97/6f/Z/0X/CP/Y/0j/GP/e/8H/2P9I/wz/3v/p/93/3f/d/9j/3f/Y/93/2P/d/9j/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixfDeterminant@4
+    size: 217
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42130
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

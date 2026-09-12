@@ -1,0 +1,65 @@
+- symbol: 0
+  hash: 6d7aa180f7ff0b5d7968c95d4c0d1cde50d9b5d8
+  signature: U/+L/1z/JP8M/1b/V/+D/+z/EP+N/3P/DP+L//z///9z/wT/pf///zP/i/9L/wj/pf///3T/JP8o/6X/pf/o/wAAAAAAAAAAhf/A/3X/C/+L/0P/CP+D/2D/BP8A/zP/wP/r/wn/i/9L/wj/av8B/1j/if9B/wT/X/9e/1v/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?_D3DEnumCBListSurfaceFormats@CDDrawDeviceNode@@SGJPAU_DDPIXELFORMAT@@PAX@Z
+    size: 66
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?AddSurfaceFormat@CSurfaceFormatList@@QAEHPAU_DDPIXELFORMAT@@PAUIDirect3D7@@PAUIDirectDraw7@@U_GUID@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 32
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 3ca88820201e0279827fb4f44b200f66b97da569
+  signature: Vf+L/+z/U/+L/13/DP9W/1f/hf/b/3T/Bv+D/3v/CP8A/3X/F/9o/wAAAAAAAAAAaP9t/wL/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/g//s/xD/jf9z/wz/i//8////c/8E/6X///8z/4v/S/8I/6X///91/wj/pf+l/+j/AAAAAAAAAACF/8D/df8L/4v/Q/8I/4P/YP8E/wD/M//A/+v/Cf+L/0v/CP9q/wH/WP+J/0H/BP9f/17/W/9d/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_D3DEnumCBListSurfaceFormats@CDDrawDeviceNode@@SGJPAU_DDPIXELFORMAT@@PAX@Z
+    size: 101
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CL@BOPJ@pContext?5?$CG?$CG?5pContext?9?$DOm_pSurface@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@OFOJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?AddSurfaceFormat@CSurfaceFormatList@@QAEHPAU_DDPIXELFORMAT@@PAUIDirect3D7@@PAUIDirectDraw7@@U_GUID@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 35
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: f601edd45a756f8e9566f307a358ef7fc78ecfdb
+  signature: Vf+L/+z/Uf9R/4v/Tf8M/1b/i/91/wj/2f9B/wT/2f9B/wj/2f8B/9n/wv/Y/8v/2f/C/9j/y/+N/0b/DP+J/0X/CP+N/0X/DP/e/8H/if9F//j/2f/B/9j/yv/e/8H/2f/6/93/2//d/9j/3f/Y/9n/Xf/8/4v/Rf/4/4v/Vf8I/9n/Rf/8/9n/+//Z/xr/2f8Y/9n/Bf8AAAAAAAAAANj/Xf8M/9//4P+e/3f/JP/Z/0X/DP/Y/x3/AAAAAAAAAADf/+D/nv93/xb/O//x/3T/LP+L/wH/if8G/4v/Qf8E/4n/Rv8E/4v/Qf8I/4n/Rv8I/+v/Gv/Z/0X/DP/Y/3X//P/Z/wH/2P/J/9n/Hv/Z/8D/2P9J/wT/2f9e/wT/2P9J/wj/2f9e/wj/i//G/17/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionExp@8
+    size: 157
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41914
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41915
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 76
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 93
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: c3898d1b68cfd7d59d0a2eb316b31e9ae9044a8c
+  signature: Vf+L/+z/Uf9R/1b/i/91/wj/hf/2/w//hP+Z/wD/AP8A/4v/Tf8M/4X/yf8P/4T/jv8A/wD/AP/Z/0H/BP/Z/0H/CP/Z/wH/2f/C/9j/y//Z/8L/2P/L/43/Rv8M/4n/Rf/8/43/Rf8I/97/wf+J/0X/+P/Z/8H/2P/K/97/wf/Z//r/3f/b/93/2P/d/9j/2f9d/wz/i/9F//j/i/9V//z/2f9F/wz/2f/7/9n/Gv/Z/xj/2f8F/wAAAAAAAAAA2P9d/wj/3//g/57/d/8k/9n/Rf8I/9j/Hf8AAAAAAAAAAN//4P+e/3f/Fv87//H/dP8s/4v/Af+J/wb/i/9B/wT/if9G/wT/i/9B/wj/if9G/wj/6/8a/9n/Rf8I/9j/df8M/9n/wP/Y/wn/2f8e/9n/wP/Y/0n/BP/Z/17/BP/Y/0n/CP/Z/17/CP+L/8b/6/8C/zP/wP9e/8n/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionExp@8
+    size: 177
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42032
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42033
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 92
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 109
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

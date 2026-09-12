@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: 98c3a317c93ab25363e1024cd26a2924f4db3683
+  signature: Vf+L/+z/gf/s/wD/Af8A/wD/of8AAAAAAAAAADv/Rf8I/3L/U/9W/4v/Nf8AAAAAAAAAAI3/hf8A/////////2j/AAAAAAAAAABQ////1v9Z/43/hf8A/////////1n///91/wz/UP///xX/AAAAAAAAAACN/4T/Bf8A/////////1D////W/1n/jf+F/wD/////////Wf9o/wAAAAAAAAAAUP///xX/AAAAAAAAAACN/4X/AP////////9Q////Ff8AAAAAAAAAAF7/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 104
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_dwDebugLevel@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: __imp__wsprintfA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_06FILL@D3DX?3?5?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__lstrlenA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_02PIMC@?$AN?6?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__lstrcatA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__OutputDebugStringA@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 84
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

@@ -1,0 +1,110 @@
+- symbol: 0
+  hash: 10a36bce76cc74175cc7964a2ddb22b7d890111c
+  signature: Vf+L/+z/gf/s/wT/Af8A/wD/i/9B/yD/jf9V/4T/x/9F/4T/fP8A/wD/AP9S/4v/CP9Q////Uf8w/4X/wP99/1v/V/+J/4X/fP////////+//wAAAAAAAAAAg//J////M//A/1b/8v+u//f/0f8r//n/jf+V//z//v//////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F//z//v//////g//h/wP/8/+k/1n/jf+1//z//v//////jf+9//z//v//////x/9F/4D/+P8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAF7/X/+L/0X/CP+L/03/kP+J/wj/i/9N/4z/if9I/wT/i/9N/5z/if9I/wz/i/9N/9j/if9I/wj/yf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetCurrentVideoMode@CDDrawDeviceNode@@QAEXPAU_D3DX_VIDMODEDESC@@@Z
+    size: 154
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EK@LFDD@CDDrawDeviceNode?3?3GetCurrentVide@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 41
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 110
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 118
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 0132cb57c2e71832e937ba9779d6e4cb7ee7833c
+  signature: Vf+L/+z/gf/s/4z/Af8A/wD/U/+L/13/CP9W/1f/hf/b/4v/8f90/wb/g/9+/yD/AP91/xf/aP8AAAAAAAAAAGj/8P8A/wD/AP9o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4v/Rv8g/43/Vf+E/8f/Rf+E/3z/AP8A/wD/Uv+L/wj/UP///1H/MP+L//D/hf/2/33/Yv+N/43//P/+///////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+J/7X/fP/////////y/67/9//R/yv/+f+N/5X//P/+//////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/dP/+//////+D/+H/A//z/6T/Wf+N/7X//P/+//////+N/73/dP/+///////H/0X/gP/4/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9F/5D/X/+J/wP/i/9F/4z/if9D/wT/i/9F/5z/if9D/wz/i/9F/9j/if9D/wj/Xv9b/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?GetCurrentVideoMode@CDDrawDeviceNode@@QAEXPAU_D3DX_VIDMODEDESC@@@Z
+    size: 204
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BE@LDEF@pVideoMode?5?$CG?$CG?5m_pDD?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@OFOJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EK@LFDD@CDDrawDeviceNode?3?3GetCurrentVide@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 83
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 88
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 162
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 170
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

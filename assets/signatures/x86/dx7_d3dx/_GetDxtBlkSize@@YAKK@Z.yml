@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 1e0b4c920b202823d489289938bf4934672bbc5d
+  signature: i/9E/yT/BP89/0T/WP9U/zH/dP8j/z3/RP9Y/1T/Mv90/xj/Pf9E/1j/VP8z/3T/Ef89/0T/WP9U/zT/dP8K/z3/RP9Y/1T/Nf90/wP/M//A/8P/av8Q/1j/w/9q/wj/WP/D/w==
+  symbols:
+  - kind: Function
+    name: ?GetDxtBlkSize@@YAKK@Z
+    size: 50
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: f595a5907330d9b199da9f11d847fed9b16e426b
+  signature: Vf+L/+z/i/9F/wj/Pf9E/1j/VP8x/3T/JP89/0T/WP9U/zL/dP8Z/z3/RP9Y/1T/M/90/xL/Pf9E/1j/VP80/3T/C/89/0T/WP9U/zX/dP8E/zP/wP9d/8P/av8Q/+v/Av9q/wj/WP9d/8P/
+  symbols:
+  - kind: Function
+    name: ?GetDxtBlkSize@@YAKK@Z
+    size: 54
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,171 @@
+- symbol: 0
+  hash: 82f82719acb91baaa68a69e177779bf2dc5ec706
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P/U/wD/AP8A/1P/i/9d/wz/Vv9X/zP/9v+D//v///+J/2X/8P+J/3X//P91/wP/av8B/1v/Of91/wj/df8K/7j/uf8L/3f/yP/p/43/Af8A/wD/g//7/wj/D/+H/3//Af8A/wD/av8Y/+j/AAAAAAAAAABZ/4v/yP+J/03/DP87/87/xv9F//z/Af90/wr/6P8AAAAAAAAAAIn/Rf/s/+v/A/+J/3X/7P+A/2X//P8A/zn/df/s/w//hP/k/wD/AP8A/2r/CP8z/8D/Wf+N/33/rP+J/3X/pP/H/0X/qP8C/wD/AP8A//P/q/+N/3v/Av87/8P/c/8L/8f/RP+F/6z/Bf8A/wD/AP9A/+v/8f9q/2z/6P8AAAAAAAAAAFn/i//I/4n/Tf8M/zv/zv/G/0X//P8C/3T/Cf/o/wAAAAAAAAAAi//Y/+v/Av8z/9v/gP9l//z/AP87/97/D/+E/5L/AP8A/wD/Vv+N/0X/pP9X/1D/aP+5/wf/AP8A/4v/y////3X/CP9W/+j/AAAAAAAAAACL/8v/6P8AAAAAAAAAAIn/df8M/4H/ff8M/7n/B/8A/wD/c/9T/4v/df8M/2r/CP/B/+b/Bf+B/8b/AAAAAAAAAABZ/43/ff/M//P/pf/Z/0X/4P9R/9n/HP8k/9n/Rf/c/1H/2f8c/yT/2f9F/9j/Uf+L/8v/2f8c/yT/6P8AAAAAAAAAANn/Rf/U/1H/2f8c/yT/2f9F/9D/Uf/Z/xz/JP/Z/0X/zP9R/4v/y//Z/xz/JP/o/wAAAAAAAAAA//9F/wz/M//2/+v/pP+L/8v/6P8AAAAAAAAAAGj/qv9Y/wD/AP/o/wAAAAAAAAAAO//G/1n/df8H/7j/uP8L/3f/yP/r/2r/uf8q/xb/AP8A/77/AAAAAAAAAACL//j/8/+l/2b/pf+L/3X/7P+J/0b/EP/H/0b/FP9V/yz/AP8A/4v/A/+J/0b/CP9Q/4v/CP///1H/BP+F/9v/dP8O/4v/y//o/wAAAAAAAAAAU//o/wAAAAAAAAAAWf+L/0X/CP+J/0b/DP9Q/4v/CP///1H/BP+L/0X/EP+J/zD/M//A/+v/G/+N/43/HP/////////o/wAAAAAAAAAAuP8AAAAAAAAAAMP/i/9F/5z/6/8F/7j/xP8L/3f/yP+L/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXCreateTeapot@12
+    size: 468
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duShape@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CVertexArray@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Init@CVertexArray@@QAEXPAUIDirect3D7@@PAUIDirect3DDevice7@@KPAW4_D3DXVERTEXCOMPONENT@@KK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Begin@CVertexArray@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?teapotVertices@@3PAU_D3DVERTEX@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Normal@CVertexArray@@QAEXMMM@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Vertex@CVertexArray@@QAEXMMM@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?End@CVertexArray@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?teapotIndices@@3PAGA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1CVertexArray@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 85
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 151
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 170
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 210
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 217
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 243
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 277
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 305
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 319
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 329
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 351
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 392
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 398
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 431
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 436
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 459
+    kind: x86_abs32
+    symbol: 17
+    addend: 0

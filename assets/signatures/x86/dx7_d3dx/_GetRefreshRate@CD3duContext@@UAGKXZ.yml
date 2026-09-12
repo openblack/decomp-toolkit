@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 405b88fa177a0061cf43eccb1727949dd6489e03
+  signature: Vf+L/+z/g//s/3z/i/9V/wj/i/9C/zT/hf/A/3X/If9X/2r/H/9Z/43/ff+E//P/q/+L/0L/fP+N/1X/hP/H/0X/hP98/wD/AP8A/1L/i/8I/1D///9R/zD/i/9F/5z/X//J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?GetRefreshRate@CD3duContext@@UAGKXZ
+    size: 53
+    flags: 1
+    section: .text
+  relocations: []

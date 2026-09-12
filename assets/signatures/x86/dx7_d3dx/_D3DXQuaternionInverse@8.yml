@@ -1,0 +1,146 @@
+- symbol: 0
+  hash: 39b7a56789a268cb4d7e3940427ff75abe9be359
+  signature: Vf+L/+z/Uf9W////df8M/+j/AAAAAAAAAADZ/1X//P/Y/x3/AAAAAAAAAABZ/9//4P+e/3b/Q////3X/DP+L/3X/CP9W/+j/AAAAAAAAAADZ/0X//P/Y/yX/AAAAAAAAAADZ/wX/AAAAAAAAAABZ/9j/2f9Z/9//4P+e/3f/Df/Y/x3/AAAAAAAAAADf/+D/nv92/yr/6/8C/93/2P/Z/0X//P9R/4v/zv/Z/xz/JP/o/wAAAAAAAAAA6/8W/4v/df8I/9n/7v/Z/x7/2f/u/9n/Xv8E/9n/7v/Z/17/CP/Z/+7/2f9e/wz/i//G/17/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionInverse@8
+    size: 124
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXQuaternionLengthSq@@YAMPBUD3DXQUATERNION@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41916
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ?D3DXQuaternionConjugate@@YAPAUD3DXQUATERNION@@PAU1@PBU1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41914
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41915
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ??_0D3DXQUATERNION@@QAEAAU0@M@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 36
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 45
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 89
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+- symbol: 0
+  hash: 21205b390fb5145c71a4a38a71d95ce27fb6a002
+  signature: Vf+L/+z/Vv+L/3X/CP+F//b/dP90/4P/ff8M/wD/dP9u////df8M/+j/AAAAAAAAAADZ/1X/CP/Y/x3/AAAAAAAAAABZ/9//4P+e/3b/QP///3X/DP9W/+j/AAAAAAAAAADZ/0X/CP/Y/yX/AAAAAAAAAADZ/wX/AAAAAAAAAABZ/9j/2f9Z/9//4P+e/3f/Df/Y/x3/AAAAAAAAAADf/+D/nv92/yf/6/8C/93/2P/Z/0X/CP9R/4v/zv/Z/xz/JP/o/wAAAAAAAAAA6/8T/9n/7v/Z/x7/2f/u/9n/Xv8E/9n/7v/Z/17/CP/Z/+7/2f9e/wz/i//G/+v/Av8z/8D/Xv9d/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionInverse@8
+    size: 134
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXQuaternionLengthSq@@YAMPBUD3DXQUATERNION@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42034
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ?D3DXQuaternionConjugate@@YAPAUD3DXQUATERNION@@PAU1@PBU1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42032
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42033
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ??_0D3DXQUATERNION@@QAEAAU0@M@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 54
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 75
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 98
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

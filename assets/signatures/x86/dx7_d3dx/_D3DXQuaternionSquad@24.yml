@@ -1,0 +1,54 @@
+- symbol: 0
+  hash: 49413015d4cf8d63ba669f66f87d075f40a4a83f
+  signature: Vf+L/+z/g//s/yD/2f9F/xz/Uf+N/0X/4P/Z/xz/JP///3X/GP///3X/DP9Q/+j/AAAAAAAAAADZ/0X/HP9R/43/Rf/w/9n/HP8k////df8U////df8Q/1D/6P8AAAAAAAAAANn/6P9R/43/Rf/w/9j/Zf8c/9j/Tf8c/9z/wP/Z/xz/JP9Q/43/Rf/g/1D///91/wj/6P8AAAAAAAAAAIv/Rf8I/8n/wv8Y/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionSquad@24
+    size: 87
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXQuaternionSlerp@16
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: fa41cdd915b8dd56dadd2abdd5284504af8c8113
+  signature: Vf+L/+z/g//s/yD/M//A/zn/Rf8I/3T/Y/85/0X/DP90/17/Of9F/xD/dP9Z/zn/Rf8U/3T/VP85/0X/GP90/0//2f9F/xz/Uf+N/0X/4P/Z/xz/JP///3X/GP///3X/DP9Q/+j/AAAAAAAAAADZ/0X/HP9R/43/Rf/w/9n/HP8k////df8U////df8Q/1D/6P8AAAAAAAAAANn/6P9R/43/Rf/w/9j/Zf8c/9j/Tf8c/9z/wP/Z/xz/JP9Q/43/Rf/g/1D///91/wj/6P8AAAAAAAAAAIv/Rf8I/+v/Av8z/8D/yf/C/xj/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionSquad@24
+    size: 118
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXQuaternionSlerp@16
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 51
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

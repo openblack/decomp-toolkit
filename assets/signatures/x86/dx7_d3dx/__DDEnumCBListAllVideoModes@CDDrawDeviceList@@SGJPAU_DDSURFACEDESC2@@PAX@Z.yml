@@ -1,0 +1,155 @@
+- symbol: 0
+  hash: b51def17c38b1d1af0f0f220aa38153b9ef2749e
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+Y/wD/AP8A/4v/Rf8I/1P/Vv9X/4v/SP8M/4P/Zf/8/wD/if9N/+D/i/9I/wj/if9N/+T/i/9I/1T/i/9A/xj/if9l//D/if9F/+z/jf9F/+D/UP+L/0X/DP+J/03/6P+N/0j/XP/o/wAAAAAAAAAAav8B/1j/6/8a/43/jf9Y/////////+j/AAAAAAAAAACL/0X/DP+D/2D/cP8A/7j/AAAAAAAAAADD/zP/wP+L/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?_DDEnumCBListAllVideoModes@CDDrawDeviceList@@SGJPAU_DDSURFACEDESC2@@PAX@Z
+    size: 117
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43554
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?AddVideoMode@CVideoModeList@@QAEXPAU_D3DX_VIDMODEDESC@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L43551
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 93
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 108
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+- symbol: 0
+  hash: 8c589647da96e32e13f9c563968e2ee3b744d2e1
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+c/wD/AP8A/4P/Zf/s/wD/g/9l//z/AP9T/1b/i/91/wz/V/+F//b/if9l//D/df8X/2j/AAAAAAAAAABo/33/A/8A/wD/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+L/0X/CP+J/3X/7P+L/0j/DP+J/03/3P+L/0j/CP+J/03/4P+L/0j/VP+L/0D/GP+J/03/5P+J/0X/6P+N/0X/3P9Q/43/Tv9c/+j/AAAAAAAAAABq/wH/WP/r/xr/jf+N/1T/////////6P8AAAAAAAAAAIv/Rf/s/4P/YP9w/wD/uP8AAAAAAAAAAMP/M//A/4v/Tf/0/1//Xv9k/4n/Df8AAAAAAAAAAFv/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?_DDEnumCBListAllVideoModes@CDDrawDeviceList@@SGJPAU_DDSURFACEDESC2@@PAX@Z
+    size: 151
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43577
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_09HINL@lpContext?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@OFOJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?AddVideoMode@CVideoModeList@@QAEXPAU_D3DX_VIDMODEDESC@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L43574
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 54
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 99
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 127
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

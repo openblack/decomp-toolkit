@@ -1,0 +1,65 @@
+- symbol: 0
+  hash: 4f47241dffdca81c095a0e7dbe5b12a45fe5cce0
+  signature: Vv9X/2r/Af+L/8H/Wv8z/8n/x/8A/wAAAAAAAAAAav8Q/4n/UP8E/4n/UP8g/1r/if9I/wj/if9Q/yT/if9Q/xj/uv8AAAAAAAAAAIn/SP8M/4n/SP8Q/43/eP9A/4v/8v+J/0j/FP+J/0j/KP+J/0j/HP+J/0j/NP+J/0j/bP/H/0D/OP/g/wH/AP8A/8f/QP88/4D/Av8A/wD/pf/Z/+j/pf+l/6X/jf94/1D/i//y/6X/pf+l/6X/2f+Y/6j/AP8A/wD/X/+J/0j/YP+J/0j/ZP+J/0j/aP+J/0j/cP/H/0D/dP8A/wj/AP8A/4n/SP98/4n/iP+A/wD/AP8A/4n/SP94/4n/iP+E/wD/AP8A/4n/iP+I/wD/AP8A/4n/iP+M/wD/AP8A/4n/iP+Q/wD/AP8A/4n/iP+U/wD/AP8A/4n/iP+g/wD/AP8A/4n/iP+Y/wD/AP8A/4n/iP+c/wD/AP8A/4n/iP+k/wD/AP8A/4n/iP+s/wD/AP8A/4n/iP+w/wD/AP8A/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CD3duContext@@QAE@XZ
+    size: 199
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CD3duContext@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _GUID_NULL
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 34
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 8bcb05c850e2c8bf901e6817dd8b439a143f56aa
+  signature: U/+L/9n/Vv9X/43/c/8E/4v/zv/o/wAAAAAAAAAAav8B/8f/A/8AAAAAAAAAAFn/M//A/2r/EP+J/w7/if9L/yD/Wf+J/0v/JP+J/0v/GP+J/0P/CP+5/wAAAAAAAAAAif9D/wz/if9D/xD/jf97/0D/i//x/4n/Q/8U/4n/Q/8o/4n/Q/8c/4n/Q/80/4n/Q/9s/8f/Q/84/+D/Af8A/wD/x/9D/zz/gP8C/wD/AP+l/9n/6P+l/6X/pf+N/3v/UP+L//H/pf+l/6X/pf/Z/5v/qP8A/wD/AP+J/0P/YP+J/0P/ZP+J/0P/aP+J/0P/cP+J/0P/fP+J/4P/gP8A/wD/AP+J/0P/eP+J/4P/hP8A/wD/AP+J/4P/iP8A/wD/AP+J/4P/jP8A/wD/AP+J/4P/kP8A/wD/AP+J/4P/lP8A/wD/AP+J/4P/oP8A/wD/AP+J/4P/mP8A/wD/AP+J/4P/nP8A/wD/AP+J/4P/pP8A/wD/AP+J/4P/rP8A/wD/AP+J/4P/sP8A/wD/AP9f/8f/Q/90/wD/CP8A/wD/i//D/17/W//D/w==
+  symbols:
+  - kind: Function
+    name: ??0CD3duContext@@QAE@XZ
+    size: 212
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7CD3duContext@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _GUID_NULL
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 19
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

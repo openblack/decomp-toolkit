@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 0dd7843cf9dfac4c3bead8c000920fa20b1de38d
+  signature: Vf+L/+z/g//s/xz/jf9F//z/Vv+J/0X/9P+N/0X/+P9X/4n/Rf/w/4v/Rf/w/4v/Vf/0/9n/Rf8Q/9n/+//Z/xr/2f8Y/4v/df8M/43/ff/k/6X/2f/o/9j/Zf/8/43/Rf/k/6X/2f9d/xD/UP+N/0X/5P9Q/6X/6P8AAAAAAAAAANn/Rf8Q/9n/Rf/k/9n/Rf/o/9n/wf/Y/8n/i/9F/wj/2P/L/9n/wf/Y/03/7P/Y/8z/2f9d/wz/2f9F/+z/2P/L/9j/zP/Z/13/EP/Z/8L/2P/L/9j/zP/Y/0X//P/Z/xj/2f9F/+z/2P9N//j/2f/B/9j/wf/Z/1j/BP/Z/8L/2P9N//j/2f9V/wj/2f9F/xD/2P/h/9n/WP8I/93/2P/Z/+7/2f9Y/wz/2f/B/9j/4f/Z/1j/EP/d/9j/3f/Y/9n/wP/Y/8n/2P/L/9j/Rf/8/9n/WP8U/93/2P/Y/03/+P/Z/0X/DP/Y/8H/2f9Y/xj/2f/u/9n/WP8c/9n/Rf8Q/9j/Rf8I/9n/WP8g/9n/Rf8M/9j/4f/Z/1j/JP/d/9j/2f9F/+z/2P9N/+z/2P/J/9j/Rf/8/1//Xv/Z/1j/KP/d/9j/2f/u/9n/WP8s/9n/7v/Z/1j/MP/Z/+7/2f9Y/zT/2f/u/9n/WP84/9n/6P/Z/1j/PP/J/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixRotationAxis@12
+    size: 257
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3Normalize@8
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 61
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 284274f22a8c93f91fd4677aaecee2c667f777f6
+  signature: Vf+L/+z/g//s/xT/U/+L/13/CP9W/1f/hf/b/w//hP/8/wD/AP8A/4v/df8M/4X/9v8P/4T/8f8A/wD/AP+N/0X/CP+J/0X//P+N/0X/DP+J/0X/+P+L/0X/+P+L/1X//P/Z/0X/EP/Z//v/2f8a/9n/GP+N/33/7P+N/0X/7P+l/9n/6P/Y/2X/CP+l/9n/Xf8Q/1D/jf9F/+z/UP+l/+j/AAAAAAAAAADZ/0X/EP/Z/0X/7P/Z/0X/8P/Z/8H/2P/J/9j/y//Z/8H/2P9N//T/2P/M/9n/Xf/8/9n/Rf/0/9j/y//Y/8z/2f9d/xD/2f/C/9j/y//Y/8z/2P9F/wj/2f8b/9n/Rf/0/9j/Tf8M/9n/wf/Y/8H/2f9b/wT/2f/C/9j/Tf8M/9n/Vf/4/9n/Rf8Q/9j/4f/Z/1v/CP/d/9j/2f/u/9n/W/8M/9n/wf/Y/+H/2f9b/xD/3f/Y/93/2P/Z/8D/2P/J/9j/y//Y/0X/CP/Z/1v/FP/d/9j/2P9N/wz/2f9F//z/2P/B/9n/W/8Y/9n/7v/Z/1v/HP/Z/0X/EP/Y/0X/+P/Z/1v/IP/Z/0X//P/Y/+H/2f9b/yT/3f/Y/9n/Rf/0/9j/Tf/0/9j/yf/Y/0X/CP/Z/1v/KP/d/9j/2f/u/9n/W/8s/9n/7v+L/8P/2f9b/zD/2f/u/9n/W/80/9n/7v/Z/1v/OP/Z/+j/2f9b/zz/6/8C/zP/wP9f/17/W//J/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixRotationAxis@12
+    size: 281
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3Normalize@8
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 81
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

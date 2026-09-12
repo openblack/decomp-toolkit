@@ -1,0 +1,180 @@
+- symbol: 0
+  hash: dde38c5ad9dbf10e82f1248c69679c3f97142644
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/QP8J/wD/AP+D/z3/AAAAAAAAAAAA/3//B/+4/8f/C/93/8j/6/9t/1b/jf+N/7T/9v////////91/xD///91/wj/6P8AAAAAAAAAAP//df8U/4P/Zf/8/wD/jf+N/1T/+/////////91/wz/6P8AAAAAAAAAAP//df8Y/43/hf9U//v//////8b/Rf/8/wH///91/xT///91/xD/UP+N/4X/tP/2//////9Q/+j/AAAAAAAAAACA/2X//P8A/4P/xP8U/43/jf9U//v//////4v/8P/o/wAAAAAAAAAAg/9N//z///+N/43/tP/2///////o/wAAAAAAAAAAi//G/17/i/9N//T/ZP+J/w3/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ?_d3dxCopy@@YAJPAUIDirectDrawSurface7@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 153
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43418
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _InitCount$S42480
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@PAUIDirectDrawSurface7@@PAUtagRECT@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?InternalCopy@@YAJPAVCSurfaceLock@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ??1CSurfaceLock@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 99
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 119
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 147
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+- symbol: 0
+  hash: f5c4ff6ebc5dda895809533126f4ca078ee38ead
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/QP8J/wD/AP+D/z3/AAAAAAAAAAAA/3//Ff9o/wAAAAAAAAAAav8A/+j/AAAAAAAAAABZ/7j/x/8L/3f/yP9Z/+v/bf9W/43/jf+0//b/////////df8Q////df8I/+j/AAAAAAAAAAD//3X/FP+D/2X//P8A/43/jf9U//v/////////df8M/+j/AAAAAAAAAAD//3X/GP+N/4X/VP/7///////G/0X//P8B////df8U////df8Q/1D/jf+F/7T/9v//////UP/o/wAAAAAAAAAAgP9l//z/AP+D/8T/FP+N/43/VP/7//////+L//D/6P8AAAAAAAAAAIP/Tf/8////jf+N/7T/9v//////6P8AAAAAAAAAAIv/xv9e/4v/Tf/0/2T/if8N/wAAAAAAAAAAyf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_d3dxCopy@@YAJPAUIDirectDrawSurface7@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 167
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43470
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _InitCount$S42491
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_0CF@FIGM@D3DXInitialize?5must?5be?5called?5fi@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@PAUIDirectDrawSurface7@@PAUtagRECT@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?InternalCopy@@YAJPAVCSurfaceLock@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ??1CSurfaceLock@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 33
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 113
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 148
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 161
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

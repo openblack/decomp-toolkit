@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: 81583296df98d6fa5c8f3e8eba8594276c03de48
+  signature: Vf+L/+z/g//s/3z/i/9V/wj/V/+F/9L/dP8l/2r/H/8z/8D/Wf+N/33/hP/z/6v/i/8C/43/Tf+E/1H/Uv/H/0X/hP98/wD/AP8A////UP9Y/4X/wP98/wb/9v9F/4r/Av91/wX/av8B/1j/6/8D/4v/Rf+c/1//yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?D3DXGetNumMipmaps@@YAKPAUIDirectDrawSurface7@@@Z
+    size: 62
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 07cd4f750607b7a286f85d55b2c2c954019dc594
+  signature: Vf+L/+z/g//s/3z/i/9V/wj/V/+F/9L/df8H/2j/AAAAAAAAAADr/yT/av8f/zP/wP9Z/43/ff+E//P/q/+L/wL/jf9N/4T/Uf9S/8f/Rf+E/3z/AP8A/wD///9Q/1j/hf/A/33/EP9o/wAAAAAAAAAAav8A/+j/AAAAAAAAAABZ/1n/6/8G//b/Rf+K/wL/df8F/2r/Af9Y/+v/A/+L/0X/nP9f/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?D3DXGetNumMipmaps@@YAKPAUIDirectDrawSurface7@@@Z
+    size: 85
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DN@FOBH@D3DXGetNumMipmaps?3?5Bad?5parameter@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DF@IMJJ@D3DXGetNumMipmaps?3?5GetSurfaceDes@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 60
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

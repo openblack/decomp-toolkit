@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 4b90c7b696d50442c0c52f57b26cbec30e304138
+  signature: Vf+L/+z/i/9N/wz/i/9F/wj/hf/J/3T/Bf+L/1D/GP+J/xH/i/9N/xD/hf/J/3T/Bf+L/1D/JP+J/xH/i/9N/xT/hf/J/3T/Bf+L/1D/HP+J/xH/i/9N/xj/hf/J/3T/Bf+L/0D/KP+J/wH/M//A/13/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: ?GetNumBits@CD3duContext@@UAGJPAK000@Z
+    size: 60
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: a7bde3f0912645828f6397ee65fe88612da5f282
+  signature: Vf+L/+z/gf/s/wD/Av8A/wD///91/xD/jf+F/wD//v////////91/wz///91/wj/aP8AAAAAAAAAAFD///8V/wAAAAAAAAAAg//E/xT/jf+F/wD//v//////UP9q/wD/6P8AAAAAAAAAAFn/Wf///xX/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CG@BKNG@ASSERTION?5FAILED?$CB?5File?5?$CFs?5Line?5?$CF@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__wsprintfA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__DebugBreak@0
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 49
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 57
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

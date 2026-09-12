@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 2ce6c8b5b5a79eaa650d7aa4dd741c5b5bc48e9d
+  signature: Vf+L/+z/g//s/xz/i/9F/wz/2f8F/wAAAAAAAAAA2f8A/9j/yf/Z/13//P/Z/0D/BP/Y/8n/2f9d/wz/2P9I/wj/2f9F//z/2P9I/wz/2f9d/+z/2f9F/wz/2P9I/wz/2f9d//D/2f/A/9j/SP8M/9n/Xf/4/9n/Rf/8/9j/CP/Z/13/5P/Z/0X/DP/Y/wj/2f9d//z/2f/A/9j/CP/Z/13/9P/Z/0X/DP/Y/0j/BP/Z/13/6P/Z/8D/2P9I/wT/2f9d/wz/2P9I/wj/2f/o/4v/Rf8I/9j/Zf/o/9j/4f/Z/xj/2f9F//z/2P9F//j/2f9Y/wT/2f9F//T/2P9l//D/2f9Y/wj/2f/u/9n/WP8M/9n/Rf/8/9j/Zf/4/9n/WP8Q/9n/6P/Y/2X/5P/Z/1X/CP/Y/+H/2f9Y/xT/3f/Y/9n/Rf8M/9j/Rf/s/9n/WP8Y/9n/7v/Z/1j/HP/Z/0X/9P/Y/0X/8P/Z/1j/IP/Z/0X/DP/Y/2X/7P/Z/1j/JP/Z/0X/CP/Y/2X/6P/Z/1j/KP/Z/+7/2f9Y/yz/2f/u/9n/WP8w/9n/7v/Z/1j/NP/Z/+7/2f9Y/zj/2f/o/9n/WP88/8n/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixRotationQuaternion@8
+    size: 231
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41923
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 20146e7a391863a052368e50fb3a7a200d7446b3
+  signature: Vf+L/+z/g//s/xj/i/9F/wj/hf/A/w//hP/k/wD/AP8A/4v/Tf8M/4X/yf8P/4T/2f8A/wD/AP/Z/wX/AAAAAAAAAADZ/wH/2P/J/9n/Xf8M/9n/Qf8E/9j/yf/Z/13/CP/Y/0n/CP/Z/0X/DP/Y/0n/DP/Z/13/8P/Z/0X/CP/Y/0n/DP/Z/13/9P/Z/8D/2P9J/wz/2f9d//z/2f8B/9j/Tf8M/9n/Xf/o/9n/Af/Y/03/CP/Z/13/DP/Z/wH/2P/J/9n/Xf/4/9n/Rf8I/9j/Sf8E/9n/Xf/s/9n/wP/Y/0n/BP/Z/13/CP/Y/0n/CP/Z/+j/2P9l/+z/2P/h/9n/GP/Z/0X/DP/Y/0X//P/Z/1j/BP/Z/0X/+P/Y/2X/9P/Z/1j/CP/Z/+7/2f9Y/wz/2f9F/wz/2P9l//z/2f9Y/xD/2f/o/9j/Zf/o/9n/Vf8M/9j/4f/Z/1j/FP/d/9j/2f9F/wj/2P9F//D/2f9Y/xj/2f/u/9n/WP8c/9n/Rf/4/9j/Rf/0/9n/WP8g/9n/Rf8I/9j/Zf/w/9n/WP8k/9n/Rf8M/9j/Zf/s/9n/WP8o/9n/7v/Z/1j/LP/Z/+7/2f9Y/zD/2f/u/9n/WP80/9n/7v/Z/1j/OP/Z/+j/2f9Y/zz/6/8C/zP/wP/J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixRotationQuaternion@8
+    size: 251
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42042
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 30
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

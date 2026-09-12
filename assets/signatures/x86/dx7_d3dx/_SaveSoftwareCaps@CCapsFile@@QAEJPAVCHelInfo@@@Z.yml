@@ -1,0 +1,123 @@
+- symbol: 0
+  hash: 791de02261cb9a0d4a1a380b2d05f1c2bb920080
+  signature: Vf+L/+z/g//s/xD/U/+L/13/CP9W/1f/hf/b/4v/+f91/wr/uP9X/wD/B/+A/+n/e/8B/wD/AP+L/8//6P8AAAAAAAAAAIX/wP91/wr/uP8F/0D/AP+A/+n/Zv8B/wD/AP+L/8//6P8AAAAAAAAAAIX/wP+J/0X/9P8P/4T/W/8B/wD/AP++/1P/V/8A/wD/i//P/1b/UP/o/wAAAAAAAAAAhf/A/4n/Rf8I/3X/NP9Q/1b/i//P/+j/AAAAAAAAAACL//D/hf/2/4n/df8I/w//hP8w/wH/AP8A////df/0/4v/z//o/wAAAAAAAAAAUP9W/4v/z//o/wAAAAAAAAAAVv+L/8////91//T/6P8AAAAAAAAAAL7/Mv9E/wD/AP+L/8//Vv///3X/CP/o/wAAAAAAAAAAhf/A/3X/Mv9Q/1P/Vv+L/8//6P8AAAAAAAAAAIv/8P+F//b/D/+E/+r/AP8A/wD///91/wj/i//P/+j/AAAAAAAAAABQ/1b/i//P/+j/AAAAAAAAAABW/4v/z////3X/CP/o/wAAAAAAAAAAg/9l//j/AP+L/3X/CP+L/0X/+P+D/+j/AP90/zb/SP90/xv/SP91/0b/i/+D/4T/Af8A/wD/i/+z/5D/Af8A/wD/if9F//T/x/9F//z/M/9E/07/TP/r/y7/i/+D/4D/Af8A/wD/i/+z/4z/Af8A/wD/if9F//T/x/9F//z/M/9E/1L/Rv/r/xb/i/+D/3z/Af8A/wD/i/+z/4j/Af8A/wD/if9F//T/x/9F//z/M/9E/wD/AP+D/33/9P8A/3T/Vf+F//b/dP9R////df/8/4v/z////3X/CP/o/wAAAAAAAAAAhf/A/3X/QP+N/4b/9P8A/wD/AP+L/8//UP+N/0b/CP9q/wD/UP///3X//P/o/wAAAAAAAAAAhf/A/4n/Rf/w/3T/OP///3X/CP+L/8//6P8AAAAAAAAAAFD/i//P////df/w/+j/AAAAAAAAAAD//3X/8P+L/8////91/wj/6P8AAAAAAAAAAP//Rf/4/4P/ff/4/wP/D/+M/0T/////////M//A/1//Xv9b/8n/wv8E/wD/uP+4/wv/d//I/+v/8v8=
+  symbols:
+  - kind: Function
+    name: ?SaveSoftwareCaps@CCapsFile@@QAEJPAVCHelInfo@@@Z
+    size: 421
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?IsOpen@CD3dxFile@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreateVersion@CCapsFile@@IAEKXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreateEntry@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetChild@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?SetSibling@CD3dxFile@@QAEXKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?SetChild@CD3dxFile@@QAEXKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Create2D@CCapsFile@@IAEKKPAU_DDCAPS_DX7@@PAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Create3D@CCapsFile@@IAEKKPAU_D3DDeviceDesc7@@PADPAVCSurfaceFormatList@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 31
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 116
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 136
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 152
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 166
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 186
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 195
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 206
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 320
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 347
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 364
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 375
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 388
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

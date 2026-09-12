@@ -1,0 +1,297 @@
+- symbol: 0
+  hash: f4eff776765f77b5af180afab33c978d0b8961de
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P8Q/wH/AP8A/4P/Zf/8/wD/g/89/wAAAAAAAAAAAP9T/1b/V/+J/2X/8P91/1j/v/8AAAAAAAAAAIP/yf///zP/wP+N/5X/aP/////////y/67/9//R/yv/+f/H/0X/6P/H/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9o/////////4P/4f8D//P/pP9Z/43/tf9o/////////43/vf9o/////////8f/Rf/s/yf/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/zX/AAAAAAAAAACF//b/dP8O/4v/zv/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf+D/yX/AAAAAAAAAAAA/+j/AAAAAAAAAAAz/8D/6/8X/43/jf/g//7//////+j/AAAAAAAAAAC4/wAAAAAAAAAAw/+L/4X/YP////////+L/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/w/8=
+  symbols:
+  - kind: Function
+    name: _D3DXUninitialize@0
+    size: 202
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L44741
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_0DG@FCOJ@D3DXUninitialize?5?9?5Need?5to?5call?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1CD3duGlobals@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_d3dxCopyRelease@@YAJXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L44728
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 120
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 126
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 137
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 143
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 150
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 156
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 171
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 176
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 195
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+- symbol: 0
+  hash: 3c2635f2154849bc2a415b39d41e1f56fbbfb107
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+Y/wH/AP8A/4P/Zf/8/wD/g/89/wAAAAAAAAAAAP9T/1b/V/+J/2X/8P91/2P/jf+N/2j/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/2j/////////8v+u//f/0f8r//n/x/9F/+j/x/8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/4P/+//////+D/+H/A//z/6T/Wf+N/7X/aP////////+N/73/4P/+///////H/0X/7P8n/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/81/wAAAAAAAAAAhf/2/3T/Dv+L/87/6P8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/g/8l/wAAAAAAAAAAAP9o/wAAAAAAAAAAav8A/+j/AAAAAAAAAABZ/1n/6P8AAAAAAAAAAOj/AAAAAAAAAADo/wAAAAAAAAAAM//A/+v/F/+N/43/WP/+///////o/wAAAAAAAAAAuP8AAAAAAAAAAMP/i/+F/9j//v//////i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8P/
+  symbols:
+  - kind: Function
+    name: _D3DXUninitialize@0
+    size: 237
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L44760
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DG@FCOJ@D3DXUninitialize?5?9?5Need?5to?5call?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1CD3duGlobals@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3CD3duAlloc@@SAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CL@IICM@D3DXUninitialize?5?9?5Printing?5memo@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DPF_ShowAllocStats@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DPF_ListUnfreedMemory@@YAXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_d3dxCopyRelease@@YAJXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L44754
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 48
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 137
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 148
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 161
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 167
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 174
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 181
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 186
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 191
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 206
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 211
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 230
+    kind: x86_abs32
+    symbol: 17
+    addend: 0

@@ -1,0 +1,281 @@
+- symbol: 0
+  hash: 12a903e0fe530afe5273348cb9030d548a416207
+  signature: Vf+L/+z/gf/s/5j/AP8A/wD/U/9W/4v/df8Q/4v/Rf8U/1f/M//b/2j/AP8g/wD/AP9T/1P/U////3X/CP+J/x7/if8Y/1P///8V/wAAAAAAAAAAi/89/wAAAAAAAAAAUP///9f/O//D/4n/Rf8Q/3X/Of9o/xD/IP8A/wD/U/9T/1P///91/wj/U////9f/O//D/4n/Rf8Q/3X/JP+L/zX/AAAAAAAAAAD//9b/hf/A/3//B////9b/6f+U/wH/AP8A////1v8l//////8A/wD/Df8A/wD/B/+A/+n/g/8B/wD/AP+N/0X/5P9Q/2r/GP///3X/EP///xX/AAAAAAAAAABm/4P/ff/2/xD/av8B/1r/df8L/4v/Rf8U/8f/AP8E/wD/AP8A/+v/IP9m/4P/ff/2/xj/df8H/4v/Rf8U/4n/EP/r/xL/i/9N/xT/M//A/2b/g/99//b/IP8P/5X/wP+D/8D/A/+J/wH/av8f/zP/wP9Z/43/vf9o//////////P/q/+N/0X/sP/H/4X/aP////////98/wD/AP8A/1D/Uv/H/4X/bP////////8H/xD/AP8A/+j/AAAAAAAAAACL/0X/6P9T/4n/hf90/////////4v/Rf/s/4n/hf9w/////////4v/Rf8M/43/lf9o/////////1b/i/8I/1L/UP/H/0X/0P9A/wj/AP8A////Uf8Y/4v/+P87//v/fP9w/4v/Bv+N/1X//P9S/1D/i/8I////Uf9E/zv/w/+J/0X/CP99/xj/i/8G/1D/i/8I////Uf8I////df8Q/4n/Hv///xX/AAAAAAAAAADp/7X/AP8A/wD/U////xX/AAAAAAAAAAA7/8P/if9F/xT/df9E/4v/Pf8AAAAAAAAAAP//1/+F/8D/f/8G////1/+L//j/6/8Q////1/+L//j/gf/n//////8A/wD/gf/P/wD/AP8H/4D/i/8G////df/8/4v/CP9Q////Uf9o/4v/Bv9Q/4v/CP///1H/CP+J/x7///91/xD///8V/wAAAAAAAAAAi//H/+v/Zv///3X/EP+L/z3/AAAAAAAAAABQ////1/9o/yD/AP/M/wD/U/9T/4n/Rf8M////df8U////tf9w////////////tf90/////////1P/U////3X//P///xX/AAAAAAAAAACL/zb///91//z/i/8G/1b///9Q/2j///91/wz///91/xT////X////df8U////Ff8AAAAAAAAAAP//df8Q////Ff8AAAAAAAAAAIv/Rf8Y/4v/Tf/o/4n/CP+L/03/7P+J/0j/BP+L/0X/CP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?LoadFromGDI@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@@Z
+    size: 507
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetModuleHandleA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__LoadImageA@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetObjectA@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMakeDDPixelFormat@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__DeleteObject@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CreateCompatibleDC@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SelectObject@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__BitBlt@36
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DeleteDC@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 38
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 126
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 222
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 309
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 321
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 334
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 392
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 405
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 444
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 472
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 481
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+- symbol: 0
+  hash: 12031363aba6c0887e5ced29d0b300d338a9cd73
+  signature: Vf+L/+z/gf/s/5j/AP8A/wD/U/9W/4v/df8Q/4v/Rf8U/1f/M//b/2j/AP8g/wD/AP9T/1P/U////3X/CP+J/x7/if8Y/1P///8V/wAAAAAAAAAAi/89/wAAAAAAAAAAUP///9f/O//D/4n/Rf8Q/3X/Rv9o/xD/IP8A/wD/U/9T/1P///91/wj/U////9f/O//D/4n/Rf8Q/3X/Mf9o/wAAAAAAAAAAU//o/wAAAAAAAAAAi/81/wAAAAAAAAAAWf9Z////1v+F/8D/f/8H////1v/p/8D/Af8A/wD////W/yX//////wD/AP8N/wD/AP8H/4D/6f+v/wH/AP8A/43/Rf/k/1D/av8Y////df8Q////Ff8AAAAAAAAAAGb/g/99//b/EP9q/wH/Wv91/wv/i/9F/xT/x/8A/wT/AP8A/wD/6/8g/2b/g/99//b/GP91/wf/i/9F/xT/if8Q/+v/Ev+L/03/FP8z/8D/Zv+D/33/9v8g/w//lf/A/4P/wP8D/4n/Af9q/x//M//A/1n/jf+9/2j/////////8/+r/43/Rf+w/8f/hf9o/////////3z/AP8A/wD/UP9S/8f/hf9s/////////wf/EP8A/wD/6P8AAAAAAAAAAIv/Rf/o/1P/if+F/3T/////////i/9F/+z/if+F/3D/////////i/9F/wz/jf+V/2j/////////Vv+L/wj/Uv9Q/8f/Rf/Q/0D/CP8A/wD///9R/xj/i//4/zv/+/99/xL/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAFn/Wf/p/4r/AP8A/wD/i/8G/43/Vf/8/1L/UP+L/wj///9R/0T/O//D/4n/Rf8I/33/Jf9o/wAAAAAAAAAAU//o/wAAAAAAAAAAi/8G/1n/Wf+L/wj/UP///1H/CP///3X/EP+J/x7///8V/wAAAAAAAAAA6f/C/wD/AP8A/1P///8V/wAAAAAAAAAAO//D/4n/Rf8U/3X/Uf9o/wAAAAAAAAAAU//o/wAAAAAAAAAAi/89/wAAAAAAAAAAWf9Z////1/+F/8D/f/8G////1/+L//j/6/8Q////1/+L//j/gf/n//////8A/wD/gf/P/wD/AP8H/4D/i/8G////df/8/4v/CP9Q////Uf9o/4v/Bv9Q/4v/CP///1H/CP+J/x7///91/xD///8V/wAAAAAAAAAAi//H/+v/Zv///3X/EP+L/z3/AAAAAAAAAABQ////1/9o/yD/AP/M/wD/U/9T/4n/Rf8M////df8U////tf9w////////////tf90/////////1P/U////3X//P///xX/AAAAAAAAAACL/zb///91//z/i/8G/1b///9Q/2j///91/wz///91/xT////X////df8U////Ff8AAAAAAAAAAP//df8Q////Ff8AAAAAAAAAAIv/Rf8Y/4v/Tf/o/4n/CP+L/03/7P+J/0j/BP+L/0X/CP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?LoadFromGDI@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@@Z
+    size: 564
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetModuleHandleA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__LoadImageA@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BB@GFPG@LoadImage?5failed?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetObjectA@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMakeDDPixelFormat@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CM@LAHL@Failed?5to?5create?5surface?5for?5spe@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@GPBK@Failed?5to?5get?5DC?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__DeleteObject@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CreateCompatibleDC@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BK@JNLC@CreateCompatibleDC?5failed?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__SelectObject@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__BitBlt@36
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DeleteDC@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 38
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 86
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 92
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 139
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 235
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 289
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 295
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 326
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 332
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 353
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 365
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 377
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 383
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 389
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 449
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 462
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 501
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 529
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 538
+    kind: x86_abs32
+    symbol: 10
+    addend: 0

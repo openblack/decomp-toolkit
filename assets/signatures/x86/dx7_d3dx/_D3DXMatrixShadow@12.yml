@@ -1,0 +1,74 @@
+- symbol: 0
+  hash: 3646ef84272dc373a26cbcbbc50a163f11e16bd5
+  signature: Vf+L/+z/g//s/yD/U/9W/1f/jf9F//D///91/xD/UP/o/wAAAAAAAAAAi/9d/wz/jf9F//D/U/9Q/+j/AAAAAAAAAADZ/13/EP9Z/43/Rf/g/1n/UP+N/03/8P/o/wAAAAAAAAAAi//w/43/ff/w/6X/2f9F/xD/2f8D/6X/pf+L/0X/CP+l/9j/Tf/w/9j/wf9f/9n/GP/Z/wP/2P9N//T/2f9Y/xD/2f8D/9j/Tf/4/9n/WP8g/9n/A//Y/03//P/Z/1j/MP/Z/0X/8P/Y/0v/BP/Z/1j/BP/Z/0X/9P/Y/0v/BP/Y/8H/2f9Y/xT/2f9F//j/2P9L/wT/2f9Y/yT/2f9F//z/2P9L/wT/2f9Y/zT/2f9F//D/2P9L/wj/2f9Y/wj/2f9F//T/2P9L/wj/2f9Y/xj/2f9F//j/2P9L/wj/2P/B/9n/WP8o/9n/Rf/8/9j/S/8I/9n/WP84/9n/Rf/w/9j/S/8M/9n/WP8M/9n/Rf/0/9j/S/8M/9n/WP8c/9n/Rf/4/9j/S/8M/9n/WP8s/9n/Rf/8/9j/S/8M/9j/wf/Z/1j/PP/d/9j/Xv9b/8n/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixShadow@12
+    size: 222
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXPlaneNormalize@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXPlaneDot@@YAMPBUD3DXPLANE@@PBUD3DXVECTOR4@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??GD3DXPLANE@@QBE?AU0@XZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: ac25bf21c98429791d26d31ee5f84b810ad36129
+  signature: Vf+L/+z/g//s/yD/g/99/wj/AP9T/1b/V/8P/4T/4v8A/wD/AP+L/13/DP+F/9v/D/+E/9f/AP8A/wD/g/99/xD/AP8P/4T/zf8A/wD/AP///3X/EP+N/0X/8P9Q/+j/AAAAAAAAAACN/0X/8P9T/1D/6P8AAAAAAAAAANn/Xf8Q/1n/jf9F/+D/Wf9Q/43/Tf/w/+j/AAAAAAAAAACL//D/jf99//D/pf/Z/0X/EP/Z/wP/pf+l/4v/Rf8I/6X/2P9N//D/2P/B/9n/GP/Z/wP/2P9N//T/2f9Y/xD/2f8D/9j/Tf/4/9n/WP8g/9n/A//Y/03//P/Z/1j/MP/Z/0X/8P/Y/0v/BP/Z/1j/BP/Z/0X/9P/Y/0v/BP/Y/8H/2f9Y/xT/2f9F//j/2P9L/wT/2f9Y/yT/2f9F//z/2P9L/wT/2f9Y/zT/2f9F//D/2P9L/wj/2f9Y/wj/2f9F//T/2P9L/wj/2f9Y/xj/2f9F//j/2P9L/wj/2P/B/9n/WP8o/9n/Rf/8/9j/S/8I/9n/WP84/9n/Rf/w/9j/S/8M/9n/WP8M/9n/Rf/0/9j/S/8M/9n/WP8c/9n/Rf/4/9j/S/8M/9n/WP8s/9n/Rf/8/9j/S/8M/9j/wf/Z/1j/PP/d/9j/6/8C/zP/wP9f/17/W//J/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixShadow@12
+    size: 254
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXPlaneNormalize@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXPlaneDot@@YAMPBUD3DXPLANE@@PBUD3DXVECTOR4@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??GD3DXPLANE@@QBE?AU0@XZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 48
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 58
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

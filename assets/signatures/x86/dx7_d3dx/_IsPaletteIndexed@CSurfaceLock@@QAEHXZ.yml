@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 36058c9985c37047126d9a89713a32ce3d53d6ff
+  signature: Vv+L//H/6P8AAAAAAAAAAIX/wP90/xL/i/9G/wj/g//4/wb/dP8F/4P/+P8H/3X/Bf9q/wH/WP9e/8P/M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?IsPaletteIndexed@CSurfaceLock@@QAEHXZ
+    size: 34
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?IsValid@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

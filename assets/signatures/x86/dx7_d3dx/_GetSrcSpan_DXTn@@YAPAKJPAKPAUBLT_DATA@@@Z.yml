@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 0d6f2343be88f04bcf141252ab5ff568bcade4e2
+  signature: Vf+L/+z/Uf+L/0X/EP9T/1b/i/+I/5D/AP8A/wD/i/+w/6z/AP8A/wD/i/+Y/6j/AP8A/wD/if9N//z/i/9N/wj/wf/+/xD/hf/J/37/L/+D/8D/FP9X/4v/ff8M/4n/Rf8I/4n/Tf8Q////df8I/4v/w//B//j/EP9W/1D/6P8AAAAAAAAAAIv/AP8D/13//P+J/wf/g//E/wz/g//H/wT///9N/xD/df/f/1//i/9F/wz/Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?GetSrcSpan_DXTn@@YAPAKJPAKPAUBLT_DATA@@@Z
+    size: 94
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GetPtrToCachedPixel@@YAPAKJJPAUSURFACE_DATA@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 64
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,92 @@
+- symbol: 0
+  hash: 8493c5a5f0071731c30053e7d414b0f3d1ade09a
+  signature: U/9W/4v/8f9X/4v/fP8k/xD/jf9e/wz/x/+G/5z/BP8A/wD/Bf9A/wD/gP+F////x/8D/3z/AP8A/wD/dP9y/4P/fP8k/xT/AP91/wn/g/+m/5j/AP8A/wD/AP/r/xv/av8Q/43/hv+I/wD/AP8A////dP8k/xj/if+G/5j/AP8A/wD/UP/o/wAAAAAAAAAAg//E/wz/i/8H/2r/AP9o/wH/CP8A/wD/U////3T/JP8g/1f///9Q/2T/hf/A/4n/hv+c/wT/AP8A/3z/K/+N/0b/VP9Q/+j/AAAAAAAAAACL/87/if9G/wj/if8+/+j/AAAAAAAAAACF/8D/dP8O/4v/Bv+N/1b/BP9S/1D/i/8I////Uf9Q/+v/BP+D/2b/BP8A/4v/xv9f/17/W//C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@PAUIDirectDrawSurface7@@PAUtagRECT@@@Z
+    size: 154
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?IsPaletteIndexed@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 68
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 108
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 120
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: a1cf2efb4a94d87a092fec88f48ea0424b595a7b
+  signature: Vf+L/+z/U/9W/4v/8f9X/4v/ff8I/43/Xv8M/8f/hv+c/wT/AP8A/wX/QP8A/4D/hf///8f/A/98/wD/AP8A/3T/f/+D/33/DP8A/3X/Cf+D/6b/mP8A/wD/AP8A/+v/Gv9q/xD/jf+G/4j/AP8A/wD///91/wz/if+G/5j/AP8A/wD/UP/o/wAAAAAAAAAAg//E/wz/i/8H/2r/AP9o/wH/CP8A/wD/U////3X/DP9X////UP9k/4X/wP+J/4b/nP8E/wD/AP99/xD/aP8AAAAAAAAAAGr/AP/o/wAAAAAAAAAAWf9Z/+v/K/+N/0b/VP9Q/+j/AAAAAAAAAACL/87/if9G/wj/if8+/+j/AAAAAAAAAACF/8D/dP8O/4v/Bv+N/1b/BP9S/1D/i/8I////Uf9Q/+v/BP+D/2b/BP8A/4v/xv9f/17/W/9d/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@PAUIDirectDrawSurface7@@PAUtagRECT@@@Z
+    size: 170
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BH@NHMF@Failed?5to?5lock?5surface?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?IsPaletteIndexed@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 68
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 103
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 110
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 123
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 135
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 341dd801609102485260764223551315675b8001
+  signature: Vf+L/+z/Uf9R/9n/6P+L/0X/CP/Y/3X/DP/Z/0H/DP/Y/8n/2f9d//j/2f9B/wj/2P/J/9n/Xf/8/9n/Qf8E/9j/yf/Z/13/DP/Y/wn/i/9N/wz/if9I/wT/i/9N//z/if9I/wj/i/9N//j/2f8Y/4n/SP8M/8n/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ??KD3DXVECTOR4@@QBE?AU0@M@Z
+    size: 63
+    flags: 1
+    section: .text
+  relocations: []

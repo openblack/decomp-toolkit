@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 537ebdf1b60f2e47862681976320338eae0f084f
+  signature: Vf+L/+z/g//s/2j/U/+L/13/EP9W/1f/i/9D/yT/jf9z/1T/jf99/8z/if9F/+z/pf+l/43/g/+s/wD/AP8A/7n/Af+A//////8B/4v/qP8A/wD/AP+L/1P/IP8B/wj/i/8A/6X/pf+L/3X/7P+L/8j/wf/5/xD/D/+v//H/A/9z/yj/g/9l/xD/AP8P/7f/wP/B/+r/A/87/03/0P+J/1X/5P+J/0X/+P99/x3/jf9B/wH/x/9F/xD/A/8A/wD/AP87/0X/0P99/wf/x/9F/xD/D/8A/wD/AP/H/0X/+P//////AP8A/43/Qf8B/zv/Rf/Y/3z/FP+D/03/EP8M/zv/Tf/Y/3z/B//H/0X/EP8P/wD/AP8A/4P/Zf/4/wD/g/99/xD/D/91/w//i/9N/wj/i/99/wz/M//A//P/q//p/2X/Af8A/wD/i/9F/wj/hf/A/w//jv9a/wH/AP8A/4v/Tf8M/4n/Rf/g/4n/Tf8I/4v/i/+o/wD/AP8A/4v/wf/B//j/EP87/0X/zP8P/7f/+f+L/03/EP+J/03//P99/xP/g//J/wX/if9N//z/jf9I/wH/O/9N/8z/fP8W/7///////wD/AP+N/0j/Af87/03/1P98/xb/g/9N//z/Cv87/0X/1P98/wv/i/9F/wj/g/8g/wD/6f/w/wD/AP8A/zP///8P/6//wv+L/03//P8D/8b/if9F/5j/if+L/7T/AP8A/wD/i/9N/+z/A//C/4n/Rf+c/wP/wf+J/0X/pP8r/8L/g/9l/6j/AP+J/0X/oP+N/0X/rP9T/1D/jf9F/5j/UP///5P/uP8A/wD/AP+D/8T/DP+D/7v/tP8A/wD/AP8P/3X/C/+L/0X/CP+D/yD/AP/p/57/AP8A/wD/i/9N//j/i//H/w//r//B/8H/6P8Q/7r/AP8A/wH/AP8r/8j/K//Q/yv/+P8r/9H/if99/8D/wf9t/8D/CP8r/9f/x/9F//T/Af8A/wD/AP/B/+r/CP+J/1X/vP/B/+n/CP/B/+j/CP8z/9L/if9N/8T/if9F/8j/if9V/+j/if9V//D/if9V//z/uf///wD///8A/4v/g/+0/wD/AP8A/4X/Rf/0/3X/KP+L/1X//P+L/0T/Ff+s/4v/VP8V/7z/i//4/yP/wf/B/+//CP8P/6//wv8j//n/if9V/9z/D/+v//r/i/9V/+j/Af99//D/A//Q/4n/Vf/o/4P/Rf/8/wT/0f9l//T/g/99//z/EP98/8D/i/9F//D/wf/q/wj/I//R/yX/AP///wD///8L/9D/i/9F/wj/if8Q/4v/Vf/k/4v/g/+Q/wD/AP8A/4P/Rf8I/wT/Af+D/6j/AP8A/wD///9N/+D/D/+F/6///v//////i/9F/wz/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?GetBiLinearSrcSpan@@YAPAKJPAKPAUBLT_DATA@@@Z
+    size: 530
+    flags: 2
+    section: .text
+  relocations: []

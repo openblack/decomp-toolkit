@@ -1,0 +1,110 @@
+- symbol: 0
+  hash: bcee99311420e16ca6cf9d0722c5d2bb5402ba20
+  signature: Vf+L/+z/Uf/Z/+j/Vv+L/3X/EP/Y/2X/FP9X/4v/ff8M/1b/V//Z/13//P/o/wAAAAAAAAAA2f9V/xD/2P8d/wAAAAAAAAAAWf9Z/9//4P+e/3L/BP/Z/+j/6/8G/9n/Bf8AAAAAAAAAANn/wP/Y/03/EP/Z/1X/EP/Z/+j/2P/h/9j/Hf8AAAAAAAAAAN//4P+e/3b/Nf/Z/8D/2P/J/9j/Lf8AAAAAAAAAANn/+v/d/9n/2f/A/9n/Rf8Q/9n/8//Z/13/EP/Z/+j/3v/x/9n/Rf8Q/9j/Tf/8/9n//v/Y/8n/2f9d//z/2f9F/xD/2P9N/xT/2f/+/97/yf/r/wX/3f/Y/9n/Rf8U/9n/wf/Y/8n/i/9F/wj/3f/a/93/2P/Z/wb/2P/J/9n/B//Y/03//P/e/8H/2f8Y/9n/R/8E/9j/Tf/8/9n/Rv8E/9j/yv/e/8H/2f9Y/wT/2f9H/wj/2P9N//z/2f9G/wj/2P/K/97/wf/Z/1j/CP/Z/0f/DP/Y/03//P/Z/0b/DP/Y/8r/X/9e/97/wf/Z/1j/DP/d/9j/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionSlerp@16
+    size: 214
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXQuaternionDot@@YAMPBUD3DXQUATERNION@@0@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42105
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42053
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41915
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 67
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 82
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+- symbol: 0
+  hash: 7dec9060d104ac2a21309e91e748c6ec7dfc3d04
+  signature: Vf+L/+z/U/+L/13/CP9W/1f/hf/b/w//hP/b/wD/AP8A/4v/ff8M/4X///8P/4T/0P8A/wD/AP+L/3X/EP+F//b/D/+E/8X/AP8A/wD/2f/o/1b/V//Y/2X/FP/Z/13/CP/o/wAAAAAAAAAA2f9V/wz/2P8d/wAAAAAAAAAAWf9Z/9//4P+e/3L/BP/Z/+j/6/8G/9n/Bf8AAAAAAAAAANn/wP/Y/03/DP/Z/1X/DP/Z/+j/2P/h/9j/Hf8AAAAAAAAAAN//4P+e/3b/Nf/Z/8D/2P/J/9j/Lf8AAAAAAAAAANn/+v/d/9n/2f/A/9n/Rf8M/9n/8//Z/13/DP/Z/+j/3v/x/9n/Rf8M/9j/Tf8I/9n//v/Y/8n/2f9d/wj/2f9F/wz/2P9N/xT/2f/+/97/yf/r/wX/3f/Y/9n/Rf8U/9n/wf/Y/8n/i//D/93/2v/d/9j/2f9F/wj/2P8P/9n/wf/Y/w7/3v/B/9n/G//Z/0f/BP/Y/03/CP/Z/0b/BP/Y/8r/3v/B/9n/W/8E/9n/Rv8I/9j/yf/Z/0f/CP/Y/03/CP/e/8H/2f9b/wj/2f9G/wz/2P/J/9n/R/8M/9j/Tf8I/97/wf/Z/1v/DP/d/9j/6/8C/zP/wP9f/17/W/9d/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionSlerp@16
+    size: 245
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXQuaternionDot@@YAMPBUD3DXQUATERNION@@0@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42130
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42206
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42033
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 50
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 59
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 76
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 94
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 109
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

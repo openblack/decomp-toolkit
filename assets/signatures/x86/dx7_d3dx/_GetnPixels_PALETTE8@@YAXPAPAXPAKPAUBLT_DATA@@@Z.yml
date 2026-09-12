@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 50c999974ce9d0e3379bb488ed2ef70bc496a7d4
+  signature: Vf+L/+z/Uf+L/0X/CP9W/4v/df8Q/8f/Rf8Q/wH/AP8A/wD/g/84/wD/i/+O/7T/AP8A/wD/if9N//z/dP9B/1f/i/99/wz/U/8r//j/hf9N/xD/df8o/4v/CP+L/1b/LP8z/9v/D/+2/wn/i/8M/4r/if9N/wj/i//R/4r/Xf8K/4H/yv8A/////////8H/4v8Q/4r//f+L/03//P8L/9P/if8U/wf/0f9l/xD/g//A/wT/g/84/wD/df/I/1v/X/+J/47/tP8A/wD/AP9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?GetnPixels_PALETTE8@@YAXPAPAXPAKPAUBLT_DATA@@@Z
+    size: 106
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 8cedd808581af751849d8b28096b03cabb3fe5d5
+  signature: Vf+L/+z/Uf+L/03/CP9W/4v/df8Q/8f/Rf8Q/wH/AP8A/wD/g/85/wD/i/+G/7T/AP8A/wD/if9F//z/dP9G/1f/i/99/wz/U/8r//n/hf9F/xD/df8t/4v/Af+L/1b/LP8P/7b/AP+L/wT/gv8z/9L/i//Y/4n/Rf8I/4r/Vf8K/4H/y/8A/////////8H/4/8Q/wv/0/8l/wD///8A/wD/C//Q/4v/Rf/8/4n/FP8P/9H/Zf8Q/4P/wf8E/4P/Of8A/3X/w/9b/1//if+G/7T/AP8A/wD/Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?GetnPixels_PALETTE8@@YAXPAPAXPAKPAUBLT_DATA@@@Z
+    size: 111
+    flags: 2
+    section: .text
+  relocations: []

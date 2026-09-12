@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 1eda8c94e24e2a91a5888623372f434508c20aa5
+  signature: Vf+L/+z/Uf9T/4v/Xf8Q/1b/V/+L/3P/fP8z/8D/M////zn/Rf8I/4n/Rf/8/37/K/+L/03/DP+J/03/EP+L/03/EP+L/wn/O/9N//z/dP8O////c/9M/4n/Tf/8/1H/6P8AAAAAAAAAAFn/Wf+D/0X/EP8E/4j/BP8+/0f/O/99/wj/fP/b/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?PutDstSpan_PALETTE8@@YAXJPAKPAUBLT_DATA@@@Z
+    size: 73
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?FindClosest_PALETTE8@@YAEKPAUtagPALETTEENTRY@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 49
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

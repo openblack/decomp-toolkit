@@ -1,0 +1,287 @@
+- symbol: 0
+  hash: 8c5b6eebb0e328ce9a60b58cc6cf5cdaa4ecf193
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P8c/wH/AP8A/1P/Vv8z/9v/V/85/x3/AAAAAAAAAACJ/2X/8P+J/13//P91/1j/v/8AAAAAAAAAAIP/yf///zP/wP+N/5X/XP/////////y/67/9//R/yv/+f/H/0X/3P/H/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9c/////////4P/4f8D//P/pP9Z/43/tf9c/////////43/vf9c/////////8f/Rf/g/1j/Af8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/w3/AAAAAAAAAADo/wAAAAAAAAAAi/99/xD/O//7/3X/Cv85/13/FP91/wX/Of9d/xj/dP96/4v/Df8AAAAAAAAAAI3/Rf8I/1D/6P8AAAAAAAAAAP//df8I/4v/Df8AAAAAAAAAAOj/AAAAAAAAAACL/03/GP+N/1X/7P/3/9n/G//J/1P/I//K/43/Vf/k/1H/i/9N/xT/9//Z/xv/yf8j/8r/jf9V/+j/Uf+L/8//9//Z/xv/yf8j/8r/Uf+L/8j///91/wz/6P8AAAAAAAAAADv/+/90/wj/i/91/+j/av87/1n/8/+l/zn/Xf8U/3T/C/+L/3X/5P+L/33/FP9q/1//Wf/z/6X/Of9d/xj/dP8L/4v/df/s/4v/ff8Y/2r/X/9Z//P/pf8z/8D/6/8X/43/jf/U//7//////+j/AAAAAAAAAAC4/wAAAAAAAAAAw/+L/4X/VP////////+L/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXGetDeviceCaps@20
+    size: 318
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L44933
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_0CH@HDJK@D3DXInitialize?$CI?$CJ?5must?5be?5called?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?InitializeIfNeeded@CD3duGlobals@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CheckAndMapD3duHandle@CD3duGlobals@@QAEXPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetD3duDeviceNode@CD3duGlobals@@QAEPAVCD3duDeviceNode@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetCapsAtVideoMode@CD3duDeviceNode@@QAEXPAU_D3DX_VIDMODEDESC@@PAPAU_D3DDeviceDesc7@@PAPAU_DDCAPS_DX7@@2PAPAVCSurfaceFormatList@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L44926
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 24
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 120
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 126
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 154
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 163
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 172
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 177
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 226
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 285
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 290
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 309
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+- symbol: 0
+  hash: b62b5bfa5aa22f58e8c01b77d28a864f78bef147
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+k/wH/AP8A/1P/Vv8z/9v/V/85/x3/AAAAAAAAAACJ/2X/8P+J/13//P91/2P/jf+N/1z/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/1z/////////8v+u//f/0f8r//n/x/9F/9z/x/8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/1P/+//////+D/+H/A//z/6T/Wf+N/7X/XP////////+N/73/1P/+///////H/0X/4P9Y/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/8N/wAAAAAAAAAA6P8AAAAAAAAAAIv/ff8Q/zv/+/91/wr/Of9d/xT/df8F/zn/Xf8Y/3T/ev+L/w3/AAAAAAAAAACN/0X/CP9Q/+j/AAAAAAAAAAD//3X/CP+L/w3/AAAAAAAAAADo/wAAAAAAAAAAi/9N/xj/jf9V/+z/9//Z/xv/yf9T/yP/yv+N/1X/6P9R/4v/Tf8U//f/2f8b/8n/I//K/43/Vf/k/1H/i//P//f/2f8b/8n/I//K/1H/i//I////df8M/+j/AAAAAAAAAAA7//v/dP8I/4v/df/k/2r/O/9Z//P/pf85/13/FP90/wv/i/91/+j/i/99/xT/av9f/1n/8/+l/zn/Xf8Y/3T/C/+L/3X/7P+L/33/GP9q/1//Wf/z/6X/M//A/+v/F/+N/43/TP/+///////o/wAAAAAAAAAAuP8AAAAAAAAAAMP/i/+F/8z//v//////i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8L/FP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXGetDeviceCaps@20
+    size: 329
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L44937
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CH@HDJK@D3DXInitialize?$CI?$CJ?5must?5be?5called?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?InitializeIfNeeded@CD3duGlobals@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CheckAndMapD3duHandle@CD3duGlobals@@QAEXPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetD3duDeviceNode@CD3duGlobals@@QAEPAVCD3duDeviceNode@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetCapsAtVideoMode@CD3duDeviceNode@@QAEXPAU_D3DX_VIDMODEDESC@@PAPAU_D3DDeviceDesc7@@PAPAU_DDCAPS_DX7@@2PAPAVCSurfaceFormatList@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L44930
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 24
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 48
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 137
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 142
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 165
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 174
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 183
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 188
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 237
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 296
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 301
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 320
+    kind: x86_abs32
+    symbol: 14
+    addend: 0

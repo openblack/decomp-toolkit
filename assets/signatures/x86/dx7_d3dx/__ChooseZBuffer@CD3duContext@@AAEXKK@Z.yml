@@ -1,0 +1,83 @@
+- symbol: 0
+  hash: 1e75fa85915f561f25b1712a61bf761189595bc2
+  signature: Vf+L/+z/gf/s/8j/BP8A/wD/U/+L/13/DP9W/4v/8f9X/4v/ff8I/zP/yf87//n/df8P/zv/2f91/wv/if9O/yj/if9O/yT/6f9Y/wH/AP8A/4v/Rv9g/4P/Tf/8////g/9N//j///+D//j/+/+J/03/9P+J/03/8P90/wX/g//4//r/df9Y/4v/Rv98/1H/jf+N/zj/+///////i/8Q/1H/UP///1L/bP+B/73/QP/////////S/xL/AP8A/3T/DP+B/73/QP/////////e/xD/AP8A/3X/L/+L/0b/GP9q/xD/Wf87/8H/dP8b/4P/+P8g/w//hf+b/wD/AP8A/2r/GP/H/0X/+P8I/wD/AP8A/1j/if9F//z/if9F//T/6/8K/4P/Zf/4/wD/if9N//z/if9N//T/g///////dP8Q/zv/ff/0/3L/df87/33//P93/3D/if99//z/if99//T/g//7////dP8L/zv/Xf/4/3f/YP+J/13/+P+J/13/8P+L/0b/cP8z////i/+A/wD/BP8A/wD/hf/A/3T/R//2/0D/Df8E/3T/Pf+L/0j/FP+L/1D/GP87/03/9P9y/zL/O/9N//z/d/8t/zv/Vf/w/3L/KP87/1X/+P93/yP/hf///3T/DP87/1X/DP93/wf/df8Y/zv/Tf8I/3b/E/87/03//P9q/wH/X/+J/03/CP+J/1X/DP91/wX/O/9V//j/dP8E/4v/AP/r/7X/hf///3X/Wv+//wAAAAAAAAAAg//J////M//A/43/lf9o//////////L/rv/3/9H/K//5/8f/Rf/o/7//C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/2j/////////g//h/wP/8/+k/1n/jf+1/2j/////////jf+9/2j/////////x/9F/+z/EP8F/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAOv/DP+L/0X/CP+J/0b/JP+L/0X/DP+J/0b/KP9f/17/W//J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_ChooseZBuffer@CD3duContext@@AAEXKK@Z
+    size: 392
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DI@IFMJ@_ChooseZBuffer?5?9?5No?5suitable?5dep@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 284
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 359
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 367
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 362d35f04ae0203a2d898a8cf5c7d0f63d0c8505
+  signature: Vf+L/+z/gf/s/1D/Bf8A/wD/U/+L/13/DP9W/4v/8f9X/4v/ff8I/zP/yf87//n/df8P/zv/2f91/wv/if9O/yj/if9O/yT/6f9j/wH/AP8A/4v/Rv9g/4P/Tf/4////g/9N//z///+D//j/+/+J/03/9P+J/03/8P90/wX/g//4//r/df9Y/4v/Rv98/1H/jf+N/7D/+v//////i/8Q/1H/UP///1L/bP+B/73/uP/+///////S/xL/AP8A/3T/DP+B/73/uP/+///////e/xD/AP8A/3X/L/+L/0b/GP9q/xD/Wf87/8H/dP8b/4P/+P8g/w//hf+b/wD/AP8A/2r/GP/H/0X//P8I/wD/AP8A/1j/if9F//j/if9F//T/6/8K/4P/Zf/8/wD/if9N//j/if9N//T/g///////dP8Q/zv/ff/0/3L/df87/33/+P93/3D/if99//j/if99//T/g//7////dP8L/zv/Xf/8/3f/YP+J/13//P+J/13/8P+L/0b/cP8z////i/+A/wD/BP8A/wD/hf/A/3T/R//2/0D/Df8E/3T/Pf+L/0j/FP+L/1D/GP87/03/9P9y/zL/O/9N//j/d/8t/zv/Vf/w/3L/KP87/1X//P93/yP/hf///3T/DP87/1X/DP93/wf/df8Y/zv/Tf8I/3b/E/87/03/+P9q/wH/X/+J/03/CP+J/1X/DP91/wX/O/9V//z/dP8E/4v/AP/r/7X/hf///3X/Zf+N/43/aP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/aP/////////y/67/9//R/yv/+f/H/0X/6P+//wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/g//7//////4P/4f8D//P/pP9Z/43/tf9o/////////43/vf/g//7//////8f/Rf/s/xD/Bf8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAADr/wz/i/9F/wj/if9G/yT/i/9F/wz/if9G/yj/X/9e/1v/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?_ChooseZBuffer@CD3duContext@@AAEXKK@Z
+    size: 403
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DI@IFMJ@_ChooseZBuffer?5?9?5No?5suitable?5dep@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 290
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 295
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 370
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 378
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

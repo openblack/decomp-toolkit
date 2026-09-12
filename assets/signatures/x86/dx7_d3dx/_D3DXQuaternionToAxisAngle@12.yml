@@ -1,0 +1,92 @@
+- symbol: 0
+  hash: 54b00863096f3e6d81dc26b0dc96a40038f65cb1
+  signature: Vf+L/+z/Vv+L/3X/CP9X/1b/6P8AAAAAAAAAANj/Ff8AAAAAAAAAAFn/3//g/57/dv88/4v/Rf8M/4X/wP90/x7/2f/6/9j/Pf8AAAAAAAAAANn/Bv/Y/8n/2f8Y/9n/Rv8E/9j/yf/Z/1j/BP/Z/0b/CP/Y/8n/2f9Y/wj/i/99/xD/hf///93/2P90/zD/2f9G/wz/6P8AAAAAAAAAANz/wP/Z/x//6/8i/4v/Rf8M/4X/wP/d/9j/dP8O/9n/6P/Z/xj/2f/u/9n/WP8E/9n/7v/Z/1j/CP+L/0X/EP+F/8D/dP8E/9n/7v/Z/xj/X/9e/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionToAxisAngle@12
+    size: 126
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXQuaternionLengthSq@@YAMPBUD3DXQUATERNION@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41916
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __CIacos
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 16
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 76
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: 74fd3b600420e62d86f942f5d4d4027f47a3ac44
+  signature: Vf+L/+z/Vv+L/3X/CP+F//b/V/90/3D/Vv/o/wAAAAAAAAAA2P8V/wAAAAAAAAAAWf/f/+D/nv92/zz/i/9F/wz/hf/A/3T/Hv/Z//r/2P89/wAAAAAAAAAA2f8G/9j/yf/Z/xj/2f9G/wT/2P/J/9n/WP8E/9n/Rv8I/9j/yf/Z/1j/CP+L/33/EP+F////3f/Y/3T/MP/Z/0b/DP/o/wAAAAAAAAAA3P/A/9n/H//r/yL/i/9F/wz/hf/A/93/2P90/w7/2f/o/9n/GP/Z/+7/2f9Y/wT/2f/u/9n/WP8I/4v/Rf8Q/4X/wP90/wT/2f/u/9n/GP9f/17/Xf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionToAxisAngle@12
+    size: 130
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXQuaternionLengthSq@@YAMPBUD3DXQUATERNION@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42034
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __CIacos
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 80
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

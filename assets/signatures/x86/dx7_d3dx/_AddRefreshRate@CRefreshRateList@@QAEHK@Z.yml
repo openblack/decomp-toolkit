@@ -1,0 +1,92 @@
+- symbol: 0
+  hash: 3cd6949205f2874227e9e627ff49afe4f30f7811
+  signature: Vv9X/4v/fP8k/wz/i//x/1f/6P8AAAAAAAAAAIX/wP91/y3/av8I/+j/AAAAAAAAAABZ/zP/yf87/8H/dP8H/4n/CP+J/0j/BP/r/wL/M//A/zv/wf91/wf/if9O/wT/M//A/+v/Ef+J/3j/BP+L/xb/UP+L/87///9S/xD/av8B/1j/if9G/wT/X/9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?AddRefreshRate@CRefreshRateList@@QAEHK@Z
+    size: 74
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FindRefreshRate@CRefreshRateList@@QAEHK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 853e672593dd749f2f36958f7d8bed68350f98ed
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/V////3X/CP+L//n/6P8AAAAAAAAAAIX/wP91/0T/av8I/+j/AAAAAAAAAACL//D/Wf+J/3X/8P+D/2X//P8A/4X/9v90/xD/i//O/+j/AAAAAAAAAACD/yb/AP+D/2b/BP8A/+v/Av8z//b/g/9N//z///+F//b/df8H/yH/d/8E/zP/wP/r/xT/i/9F/wj/Vv+J/0b/BP+L/wf/i//P////UP8Q/2r/Af9Y/4n/R/8E/4v/Tf/0/1//ZP+J/w3/AAAAAAAAAABe/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?AddRefreshRate@CRefreshRateList@@QAEHK@Z
+    size: 117
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43450
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?FindRefreshRate@CRefreshRateList@@QAEHK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2CD3duAlloc@@SAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 19
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 108
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

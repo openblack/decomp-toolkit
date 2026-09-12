@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: 606eb8bc70dc0b42bdb898208b32144072cb6b90
+  signature: i//B/zP/yf/H/wD/AAAAAAAAAADH/0D/BP8B/wD/AP8A/4n/SP8I/4n/SP8M/4n/SP8Q/4n/SP8U/8P/
+  symbols:
+  - kind: Function
+    name: ??0CD3duShape@@QAE@XZ
+    size: 30
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CD3duShape@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 1f58aba0fc4dd40f49f60c8dd0280cd66f8c4533
+  signature: Vv+L//H/V/+N/37/BP+L/8//6P8AAAAAAAAAADP/wP/H/wf/Af8A/wD/AP+J/0b/CP+J/0b/DP+J/0b/EP+J/0b/FP/H/wb/AAAAAAAAAACL/8b/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ??0CD3duShape@@QAE@XZ
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7CD3duShape@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

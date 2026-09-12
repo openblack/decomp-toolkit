@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: e1c306984f65a39f5acf414e922a7d102537bb2b
+  signature: Vf+L/+z/g//s/xz/i/9N/xT/i/9F/xD/i/9V/wz/Vv/Z/0H/DP/Y/0j/CP/Z/0H/CP/Y/0j/DP/Z/0D/BP/Y/0n/DP/Z/0H/BP/Y/0j/DP9X/97/6f/Z/13/EP/Z/0D/BP/Y/0n/CP/Z/13/+P/Z/0H/BP/Y/0j/CP/Z/13//P/Z/8H/2P/h/9j/Sv8E/9n/Rf8Q/9j/Sv8I/97/6f/Z/0X/+P/Y/2X//P/Y/0r/DP/e/8H/2f9d/+T/2f8B/9j/SP8M/9n/Xf8M/9n/AP/Y/0n/DP/Z/13/FP/Z/wH/2P9I/wj/2f8A/9j/Sf8I/97/6f/Z/13/9P/Y/+H/2P8K/9n/Rf8M/9j/Zf8U/9j/Sv8I/97/6f/Z/0X/9P/Y/0r/DP/e/8H/2f9d/+j/3f/Y/9n/AP/Y/0n/BP/Z/wH/2P9I/wT/2f8C/9j/Tf8Q/9n/Rf8U/9j/Zf8M/9j/Sv8E/97/6f/Z/8L/2P/i/9j/Sv8M/97/wf/Z/13/7P/Z/0X//P/Y/2X/+P/Y/wr/2f9F//T/2P9K/wT/i/9F/wj/jf91/+T/i//4/97/6f/Z/8H/2P/j/9j/Sv8I/97/wf/Z/13/8P+l/93/2P/d/9j/pf+l/6X/X/9e/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXVec4Cross@16
+    size: 240
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 1c88c27e6b4479b5461f8cf5b8472ef6c678f7d5
+  signature: Vf+L/+z/g//s/xz/g/99/wj/AP9W/1f/D/+E//3/AP8A/wD/i/9V/wz/hf/S/w//hP/y/wD/AP8A/4v/Tf8Q/4X/yf8P/4T/5/8A/wD/AP+L/0X/FP+F/8D/D/+E/9z/AP8A/wD/2f9B/wj/2P9I/wz/2f9A/wj/2P9J/wz/2f9B/wT/2P9I/wz/2f9A/wT/2P9J/wz/3v/p/9n/Xf8M/9n/Qf8E/9j/SP8I/9n/Xf/4/9n/QP8E/9j/Sf8I/9n/Xf/8/9n/wf/Y/+H/2P9K/wT/2f9F/wz/2P9K/wj/3v/p/9n/Rf/4/9j/Zf/8/9j/Sv8M/97/wf/Z/13/5P/Z/wD/2P9J/wz/2f9d/xT/2f8B/9j/SP8M/9n/Xf8Q/9n/AP/Y/0n/CP/Z/wH/2P9I/wj/3v/p/9n/Xf/0/9j/4f/Y/wr/2f9F/xT/2P9l/xD/2P9K/wj/3v/p/9n/Rf/0/9j/Sv8M/97/wf/Z/13/6P/d/9j/2f8B/9j/SP8E/9n/AP/Y/0n/BP/Z/wL/2P9N/wz/2f9F/xD/2P9l/xT/2P9K/wT/3v/p/9n/wv/Y/+L/2P9K/wz/3v/B/9n/Xf/s/9n/Rf/8/9j/Zf/4/9j/Cv/Z/0X/9P/Y/0r/BP/e/+n/2f/B/9j/4//Y/0r/CP+L/33/CP+N/3X/5P+L/0X/CP/e/8H/2f9d//D/pf/d/9j/3f/Y/6X/pf+l/+v/Av8z/8D/X/9e/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXVec4Cross@16
+    size: 279
+    flags: 1
+    section: .text
+  relocations: []

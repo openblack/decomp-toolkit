@@ -1,0 +1,110 @@
+- symbol: 0
+  hash: c9426cc94749464a78a9c7ee313e55321d4f2931
+  signature: Vf+L/+z/gf/s/wT/Af8A/wD/U/9W/4v/8f9X/4v/Rv8g/4X/wP8P/4T/oP8A/wD/AP+N/1X/hP/H/0X/hP98/wD/AP8A/4v/CP9S/1D///9R/zD/i/9N/wj/i/9V/xT/Of9N/5D/i/99/xD/i/9d/wz/df8T/zn/Xf+M/3X/Dv85/33/2P91/wn/hf/S/3T/cP85/1X/nP90/2v///91/xj/i/9G/yD/i/8w/1L/V/9T/1H/UP///1b/VP+F/8D/ff9X/4n/hf98/////////7//AAAAAAAAAACD/8n///8z/8D/8v+u//f/0f8r//n/jf+V//z//v//////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F//z//v//////g//h/wP/8/+k/1n/jf+1//z//v//////jf+9//z//v//////x/9F/4D/iv8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAF//Xv9b/8n/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: ?SetDisplayMode@CDDrawDeviceNode@@QAEXKKKKK@Z
+    size: 192
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CL@MBKB@CDDrawDeviceNode?3?3SetDisplayMode@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 105
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 173
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 181
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 12bf3ee077b928f29fe347cbc63498cbca987b96
+  signature: Vf+L/+z/gf/s/4z/Af8A/wD/U/9W/4v/8f9X/4P/fv8g/wD/df8U/2j/AAAAAAAAAABq/3j/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+L/0b/IP+F/8D/D/+E/63/AP8A/wD/jf9V/4T/x/9F/4T/fP8A/wD/AP+L/wj/Uv9Q////Uf8w/4v/Tf8I/4v/Vf8U/zn/Tf+Q/4v/ff8Q/4v/Xf8M/3X/E/85/13/jP91/w7/Of99/9j/df8J/4X/0v90/33/Of9V/5z/dP94////df8Y/4v/Rv8g/4v/MP9S/1f/U/9R/1D///9W/1T/i//w/4X/9v99/2L/jf+N//z//v//////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/if+1/3z/////////8v+u//f/0f8r//n/jf+V//z//v//////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3T//v//////g//h/wP/8/+k/1n/jf+1//z//v//////jf+9/3T//v//////x/9F/4D/iv8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAF//Xv9b/8n/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: ?SetDisplayMode@CDDrawDeviceNode@@QAEXKKKKK@Z
+    size: 231
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_05OEGI@m_pDD?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@OFOJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CL@MBKB@CDDrawDeviceNode?3?3SetDisplayMode@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 138
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 212
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 220
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

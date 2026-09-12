@@ -1,0 +1,62 @@
+- symbol: 0
+  hash: dd0d308c07cc622a8b2b9912d878f3004ef09492
+  signature: Vf+L/+z/Uf9T/1b/jf9F//z/V/9Q////df8I/+j/AAAAAAAAAACL/3X/EP9Z/1n/jf9F//z/Vv9Q/+j/AAAAAAAAAABZ/43/Rf/8/1n/UP///3X/DP/o/wAAAAAAAAAAWf+N/37/Av9Z/43/Rf/8/1f/UP/o/wAAAAAAAAAAZv+L/wb/Wf9Z/2b/i/8P/2b/O//I/xv/0v8z/9v/9//a/4P/ff8U/xD/D/+U/8P/M//T/3T/Bv9m/4n/Dv9m/4n/B/+N/0X//P9Q/1b/6P8AAAAAAAAAAFn/jf9F//z/Wf///3X/CP9Q/+j/AAAAAAAAAABZ/43/Rf/8/1n/UP9X/+j/AAAAAAAAAABZ/43/Rf/8/1n///91/wz/UP/o/wAAAAAAAAAAWf9Z/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?Quantize@@YAXPAUFCOLOR@@0PAUS3TCBlockRGB@@H@Z
+    size: 154
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?FcolorToColor@@YAXPAUFCOLOR@@PAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?ColorToRGB@@YAXPAUS3TC_COLOR@@PAG@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?RGBToColor@@YAXPAGPAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?ColorToFcolor@@YAXPAUS3TC_COLOR@@PAUFCOLOR@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 143
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

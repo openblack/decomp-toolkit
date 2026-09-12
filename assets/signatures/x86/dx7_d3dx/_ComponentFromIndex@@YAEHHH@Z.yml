@@ -1,0 +1,74 @@
+- symbol: 0
+  hash: a14daae79afd58e46af710faa5e7b919aa75e8da
+  signature: i/9E/yT/BP+L/0z/JP8M/9P/+P+L/0z/JP8I/0n/dP8d/0n/dP8Q/0n/dP8D/zL/wP/D/4P/4P8H/4r/gP8AAAAAAAAAAMP/g//g/wP/iv+A/wAAAAAAAAAAw/+D/+D/Af+K/4D/AAAAAAAAAADD/w==
+  symbols:
+  - kind: Function
+    name: ?ComponentFromIndex@@YAEHHH@Z
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _abThreeToEight$S42474
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _abTwoToEight$S42475
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _abOneToEight$S42476
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 31
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
+  hash: effa32350039364e929d42f9ddc8a554c655c3ed
+  signature: Vf+L/+z/i/9F/wj/i/9N/xD/0//4/4v/Tf8M/0n/dP8g/0n/dP8S/0n/dP8E/zL/wP9d/8P/g//g/wf/iv+A/wAAAAAAAAAAXf/D/4P/4P8D/4r/gP8AAAAAAAAAAF3/w/+D/+D/Af+K/4D/AAAAAAAAAABd/8P/
+  symbols:
+  - kind: Function
+    name: ?ComponentFromIndex@@YAEHHH@Z
+    size: 60
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _abThreeToEight$S42485
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _abTwoToEight$S42486
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: _abOneToEight$S42487
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 32
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 54
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

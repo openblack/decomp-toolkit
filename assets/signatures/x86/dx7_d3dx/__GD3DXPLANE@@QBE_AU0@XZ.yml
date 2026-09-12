@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 8afc0a1b7d49c7a9345d0d84e0efbc25c375e9d3
+  signature: 2f9B/wz/2f/g/9n/Qf8I/9n/4P/Z/0H/BP+L/0T/JP8E/9n/4P/Z/wH/2f/g/9n/GP/Z/1j/BP/Z/1j/CP/Z/1j/DP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??GD3DXPLANE@@QBE?AU0@XZ
+    size: 37
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 591e488d0a001ce122c07bc8775be07ce444caea
+  signature: Vf+L/+z/2f9B/wz/2f/g/9n/Qf8I/9n/4P/Z/0H/BP+L/0X/CP/Z/+D/2f8B/9n/4P/Z/xj/2f9Y/wT/2f9Y/wj/2f9Y/wz/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ??GD3DXPLANE@@QBE?AU0@XZ
+    size: 40
+    flags: 1
+    section: .text
+  relocations: []

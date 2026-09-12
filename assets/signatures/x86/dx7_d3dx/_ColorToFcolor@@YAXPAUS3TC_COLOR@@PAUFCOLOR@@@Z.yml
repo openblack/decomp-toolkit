@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 8e466062af0934e5956013818bf5664aaea8b2c8
+  signature: Vf+L/+z/i/9F/wz/uv8AAAAAAAAAADP/yf9W/yv/0P+L/3X/CP8P/7b/NP8x/4n/df8M/0H/2/9F/wz/2P8M/wL/2P8N/wAAAAAAAAAA2f8Y/4P/wP8E/4P/+f8D/3z/3/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?ColorToFcolor@@YAXPAUS3TC_COLOR@@PAUFCOLOR@@@Z
+    size: 52
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 7
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

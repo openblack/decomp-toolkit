@@ -1,0 +1,29 @@
+- symbol: 0
+  hash: c6e99f8dd9ff99e349c85a981727faf4668bb888
+  signature: i//B/zP/yf+D/4j/BP8B/wD/AP///4P/iP8I/wH/AP8A////iP8I/4n/iP8M/wH/AP8A/4n/iP8U/wH/AP8A/8P/
+  symbols:
+  - kind: Function
+    name: ??0CD3dxFile@@QAE@XZ
+    size: 33
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: fcf65a379535eaf8ce570db9bc43ec4fb32603bc
+  signature: Vv+L//H/6P8AAAAAAAAAAIP/jv8E/wH/AP8A////g/+O/wj/Af8A/wD///8z/8D/iP8G/4n/hv8M/wH/AP8A/4n/hv8U/wH/AP8A/4v/xv9e/8P/
+  symbols:
+  - kind: Function
+    name: ??0CD3dxFile@@QAE@XZ
+    size: 42
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

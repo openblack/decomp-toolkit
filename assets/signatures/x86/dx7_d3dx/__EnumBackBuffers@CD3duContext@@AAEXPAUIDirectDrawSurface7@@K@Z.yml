@@ -1,0 +1,197 @@
+- symbol: 0
+  hash: 3da87adaa608215b1f1188b40ddb8a5af9d19510
+  signature: Vf+L/+z/gf/s/xj/Af8A/wD/U/+L/9n/Vv9X/4v/Q/8g/8H/4P8C/1D/6P8AAAAAAAAAAIX/wP9Z/4n/g/+Q/wD/AP8A/3X/Vv+//wAAAAAAAAAAg//J////8v+u//f/0f8r//n/jf+V/3D/////////i//B/4v/9/+L//r/x/9F//D/uP8L/3f/yP/B/+n/Av/z/6X/i//I/2r/Iv+D/+H/A/+N/4X/cP/////////z/6T/Wf+N/7X/cP////////+N/73/cP/////////H/0X/9P+C/wb/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9F/wz/i/+L/5D/AP8A/wD/O/9D/yD/if9F//j/if9N//z/c/9//4v/Tf8I/4v/Af+N/1X/+P9o/wAAAAAAAAAAUv9R////UP8k/4X/wP99/1T/if9F//D/v/8AAAAAAAAAAIP/yf///zP/wP/y/67/9//R/yv/+f+N/5X/cP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/6P/+//////+D/+H/A//z/6T/Wf+N/7X/cP////////+N/73/6P/+///////H/0X/9P+S/wb/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/+L/5D/AP8A/wD/i/9F//j/i/8M/4H/QP87/0P/IP+J/0X/+P9y/4T/X/9e/1v/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?_EnumBackBuffers@CD3duContext@@AAEXPAUIDirectDrawSurface7@@K@Z
+    size: 277
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DM@JBAG@CD3duContext?3?3_EnumBackBuffers?5?9@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_EnumSurfacesCallback2@CD3duContext@@CGJPAUIDirectDrawSurface7@@PAU_DDSURFACEDESC2@@PAX@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EL@KLDH@CD3duContext?3?3_CreateFullscreenB@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 22
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 111
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 119
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 152
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 169
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 237
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 245
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: f21bc5f9d7efc67b25f2475532d425e7c24abaf7
+  signature: Vf+L/+z/gf/s/xj/Af8A/wD/g/99/wj/AP9T/1b/V/+L/9n/vv8AAAAAAAAAAHX/E/9o/wAAAAAAAAAAaP95/wb/AP8A/1b/6P8AAAAAAAAAAIP/xP8M/4P/u/+Q/wD/AP8A/wD/dP8T/2j/AAAAAAAAAABo/3r/Bv8A/wD/Vv/o/wAAAAAAAAAAg//E/wz/i/9D/yD/wf/g/wL/UP/o/wAAAAAAAAAAhf/A/1n/if+D/5D/AP8A/wD/df9j/43/jf9w/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf9w//////////L/rv/3/9H/K//5/8f/Rf/w/7j/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/+j//v//////g//h/wP/8/+k/1n/jf+1/3D/////////jf+9/+j//v//////x/9F//T/gv8G/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/Rf8M/4v/i/+Q/wD/AP8A/4n/Rf/4/4n/Tf/8/zv/Q/8g/w//g/+P/wD/AP8A/4v/Rf8I/43/Vf/4/2j/AAAAAAAAAABS/4v/CP9Q////Uf8k/4v/8P+F//b/ff9f/43/jf9w/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/4n/df/w//L/rv/3/9H/K//5/43/lf9w/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/o//7//////4P/4f8D//P/pP9Z/43/tf9w/////////43/vf/o//7//////8f/Rf/0/5L/Bv8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/4v/kP8A/wD/AP+L/0X/+P+L/wz/gf9A/4n/Tf8I/4n/Rf/4/+n/aP////////9f/17/W//J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_EnumBackBuffers@CD3duContext@@AAEXPAUIDirectDrawSurface7@@K@Z
+    size: 368
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DK@JJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_04KAHH@pdds?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BD@MABO@?$CBm_ppddsBackBuffer?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DM@JBAG@CD3duContext?3?3_EnumBackBuffers?5?9@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_EnumSurfacesCallback2@CD3duContext@@CGJPAUIDirectDrawSurface7@@PAU_DDSURFACEDESC2@@PAX@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EL@KLDH@CD3duContext?3?3_CreateFullscreenB@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 54
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 80
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 102
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 107
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 182
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 190
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 225
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 249
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 254
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 325
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 333
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

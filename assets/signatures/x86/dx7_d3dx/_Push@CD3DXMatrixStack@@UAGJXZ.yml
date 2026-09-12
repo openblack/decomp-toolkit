@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 8dc2a8f13a289a01b119e2e3f68ae6745dc73d08
+  signature: Vf+L/+z/U/+L/13/CP9W/1f///9D/wz/i/9L/wz/i/9D/wT/O//I/3z/Z/+N/zT/AP+L/8b/wf/g/wb/UP/o/wAAAAAAAAAAhf/A/1n/dP8J/07/if91/wj/if9F/wj/6/8E/4P/Zf8I/wD/i/99/wj/M//A/4X///8P/5T/wP+E/8D/dP8H/7j/uP8L/3f/yP/r/0j/i/9z/wj/hf/2/3T/Hf+L/0v/BP/B/+H/Bv+L/8H/wf/p/wL/8/+l/4v/yP+D/+H/A//z/6T///9z/wj/6P8AAAAAAAAAAFn/i/9F/wj/if9D/wj/i/9D/wT/0f/g/4n/Q/8E/4v/Q/8M/4v/S/8I/8H/4P8G/2r/EP+N/zz/Af9Z/zP/wP+N/3f/wP/z/6X/X/9e/1v/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?Push@CD3DXMatrixStack@@UAGJXZ
+    size: 154
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 32
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

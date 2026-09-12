@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 719a652c43f2461b0ee14f7ff11a737a96f30a76
+  signature: //90/yT/CP///3T/JP8I/+j/AAAAAAAAAADC/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?ReadData@CD3dxFile@@QAEPBXKPAK@Z
+    size: 16
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EditData@CD3dxFile@@QAEPAXKPAK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: c584874310547a1e7daabacbff4967841b0e7ee4
+  signature: Vf+L/+z///91/wz///91/wj/6P8AAAAAAAAAAF3/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?ReadData@CD3dxFile@@QAEPBXKPAK@Z
+    size: 18
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EditData@CD3dxFile@@QAEPAXKPAK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

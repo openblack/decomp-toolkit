@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 5d6acb173151adaaa76f74633a40708cb414748f
+  signature: Vf+L/+z/2f9F/xT/3P/A/4v/Rf8I/9n/wP/Y/3X/DP/H/0D/LP8A/wD/gP+//9n/GP/Z/+7/2f9Y/wT/2f/u/9n/WP8I/9n/7v/Z/1j/DP/Z/+7/2f9Y/xD/2P91/xD/2f9Y/xT/2f/u/9n/WP8Y/9n/7v/Z/1j/HP/Z/+7/2f9Y/yD/2f/u/9n/WP8k/9n/Rf8U/9j/Zf8Y/9j/ff8Y/9n/UP8o/9n/7v/Z/1j/MP/Z/+7/2f9Y/zT/2f9F/xT/2P/J/9n/WP84/93/2P/Z/+7/2f9Y/zz/Xf/C/xT/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixPerspective@20
+    size: 112
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 3217190867e7f8816f22b152e137f5713c4fea96
+  signature: Vf+L/+z/i/9F/wj/hf/A/3T/Zv/Z/0X/FP/c/8D/x/9A/yz/AP8A/4D/v//Z/8D/2P91/wz/2f8Y/9n/7v/Z/1j/BP/Z/+7/2f9Y/wj/2f/u/9n/WP8M/9n/7v/Z/1j/EP/Y/3X/EP/Z/1j/FP/Z/+7/2f9Y/xj/2f/u/9n/WP8c/9n/7v/Z/1j/IP/Z/+7/2f9Y/yT/2f9F/xT/2P9l/xj/2P99/xj/2f9Q/yj/2f/u/9n/WP8w/9n/7v/Z/1j/NP/Z/0X/FP/Y/8n/2f9Y/zj/3f/Y/9n/7v/Z/1j/PP9d/8L/FP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixPerspective@20
+    size: 116
+    flags: 1
+    section: .text
+  relocations: []

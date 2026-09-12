@@ -1,0 +1,65 @@
+- symbol: 0
+  hash: d6dd823fc54935c2274490fd4a92c5d155d643b3
+  signature: Vf+L/+z/gf/s/4z/AP8A/wD/U/9W/4v/df8I/1f/av8f/zP/wP9Z/43/vf90//////////P/q/+L/wb/jf+N/3T/////////Uf9W/8f/hf90/////////3z/AP8A/wD///9Q/1j/9v+F/3r/////////Av90/2P/M//A/43/ff/w/6v/q/+r/6v/i/8G/1b/x/9F//D/AP8Q/0D/AP///1D/BP+L/0X/jP8z/9v/SP+F/8D/dv89/4v/Bv+N/03/CP9R/43/Tf/w/1H/Vv///1D/MP+F/8D/fP8r////df8M/2r/AP9q/wD///91/wj/Vv/o/wAAAAAAAAAAg//E/xT/i//4/4v/Bv9W////UP8I/4v/df8I/4X///98/wn/i/9F/4z/Q/9I/zv/2P9y/8P/i/8G/1b///9Q/wj/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?GenerateMipMaps@@YAXPAUIDirectDrawSurface7@@W4_D3DX_FILTERTYPE@@@Z
+    size: 164
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_d3dxCopy@@YAJPAUIDirectDrawSurface7@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 122
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 0026b597e1b4be683a7ef8605ee5e6c48b8e1818
+  signature: Vf+L/+z/gf/s/5D/AP8A/wD/U/9W/4v/df8I/1f/av8f/zP/wP9Z/43/vf9w//////////P/q/+L/wb/jf+N/3D/////////Uf9W/8f/hf9w/////////3z/AP8A/wD///9Q/1j/9v+F/3b/////////Av90/33/M//A/43/ff/s/6v/q/+r/6v/i/8G/1b/x/9F/+z/AP8Q/0D/AP///1D/BP+L/0X/iP8z////SP+J/33/CP+F/8D/dv9U/4v/Bv+N/03//P9R/43/Tf/s/1H/Vv///1D/MP87/8f/fP8u////df8M/1f/V////3X//P9W/+j/AAAAAAAAAACD/8T/FP+L/9j/i/8G/1b///9Q/wj/i/91//z/O//f/3z/Ff+L/0X/iP///0X/CP9I/zn/Rf8I/3L/wv/r/xT/aP8AAAAAAAAAAOv/Bf9o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf9Z/4v/Bv9W////UP8I/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?GenerateMipMaps@@YAXPAUIDirectDrawSurface7@@W4_D3DX_FILTERTYPE@@@Z
+    size: 190
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_d3dxCopy@@YAJPAUIDirectDrawSurface7@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CE@DAIB@Failed?5to?5update?5all?5mip?9map?5lev@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0FC@PFP@Error?5trying?5to?5load?5texture?5fro@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 123
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 160
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 167
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 173
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

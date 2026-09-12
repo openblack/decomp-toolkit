@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: c29761d21815c3d9da1476c69f1b43eb06a328e2
+  signature: Vf+L/+z/gf/s/4D/AP8A/wD/2f9F/xD/Vv9X/1H/jf9F/8D/2f8c/yT///91/wz/UP/o/wAAAAAAAAAAi/91/wj/i/9G/wz/wf/g/wb/A/9G/wj/UP+N/0X/wP9Q/43/Rf+A/1D/6P8AAAAAAAAAAIv/fv8M/2r/EP/B/+f/Bv8D/37/CP9Z/43/df+A/zP/wP/z/6X/X/9e/8n/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?RotateAxisLocal@CD3DXMatrixStack@@UAGJPBUD3DXVECTOR3@@M@Z
+    size: 81
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixRotationAxis@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: fd1f8023265ad1f62149ac37359137257465465c
+  signature: Vf+L/+z/gf/s/4D/AP8A/wD/g/99/wz/AP91/wf/uP+5/wv/d//I/+v/RP/Z/0X/EP9X/1b/Uf+N/0X/wP/Z/xz/JP///3X/DP9Q/+j/AAAAAAAAAACL/3X/CP+L/0b/DP/B/+D/Bv8D/0b/CP9Q/43/Rf/A/1D/jf9F/4D/UP/o/wAAAAAAAAAAi/9+/wz/av8Q/8H/5/8G/wP/fv8I/1n/jf91/4D/M//A//P/pf9e/1//yf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: ?RotateAxisLocal@CD3DXMatrixStack@@UAGJPBUD3DXVECTOR3@@M@Z
+    size: 94
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixRotationAxis@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

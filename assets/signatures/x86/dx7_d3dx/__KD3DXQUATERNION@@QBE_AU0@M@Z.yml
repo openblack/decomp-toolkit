@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: e36f3279c6bca1ac377d9d2e15c15baa7fccc2ef
+  signature: Vf+L/+z/Uf9R/9n/6P+L/0X/CP/Y/3X/DP/Z/0H/DP/Y/8n/2f9d//j/2f9B/wj/2P/J/9n/Xf/8/9n/Qf8E/9j/yf/Z/13/DP/Z/wH/i/9N/wz/2P/J/4n/SP8E/4v/Tf/8/4n/SP8I/4v/Tf/4/9n/GP+J/0j/DP/d/9j/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ??KD3DXQUATERNION@@QBE?AU0@M@Z
+    size: 67
+    flags: 1
+    section: .text
+  relocations: []

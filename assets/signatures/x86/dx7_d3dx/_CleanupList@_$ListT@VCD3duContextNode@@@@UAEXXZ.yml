@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: b741360dbcf425b4445ce31567120c0c5f5e162e
+  signature: Vv9X/4v/+f+L/3f/DP+F//b/dP8c/1P/i//e/4v/Nv+F/9v/dP8O/4v/y//o/wAAAAAAAAAAU//o/wAAAAAAAAAAWf+F//b/df/m/1v/g/9n/wz/AP+D/2f/CP8A/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCD3duContextNode@@@@UAEXXZ
+    size: 50
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CD3duContextNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ''
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

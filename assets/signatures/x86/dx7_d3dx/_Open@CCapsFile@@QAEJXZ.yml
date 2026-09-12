@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: 36d91c036401d3bc4a656f9fd9ecfc4708580c5f
+  signature: Vf+L/+z/gf/s/wD/Af8A/wD/U/9W/1f/i//Z/+j/AAAAAAAAAACF/8D/df96/43/hf8A/////////2j/AP8B/wD/AP9Q////Ff8AAAAAAAAAAL7/AAAAAAAAAACL/9D/i//+/4P/yf///zP/wP/G/4T/Ff8A/////////1z/8v+u//f/0f+L/8H/jf+8/xX/Af/////////B/+n/Av/z/6X/i//I/43/hf8A/////////4P/4f8D/1D/8/+k/4v/y//o/wAAAAAAAAAAhf/A/3z/Kf+L/8v/6P8AAAAAAAAAAD3/AP8A/xD/AP92/xn/i//L/+j/AAAAAAAAAACN/4X/AP////////+L/8v/UP/o/wAAAAAAAAAAhf/A/3z/Av8z/8D/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?Open@CCapsFile@@QAEJXZ
+    size: 152
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?IsOpen@CD3dxFile@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetWindowsDirectoryA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_08KPNL@d3dx?4dat?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?Open@CD3dxFile@@QAEJPBD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetSize@CD3dxFile@@QAEKXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CloseCorrupt@CD3dxFile@@QAEJXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 37
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 98
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 123
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

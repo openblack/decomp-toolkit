@@ -1,0 +1,152 @@
+- symbol: 0
+  hash: 44744fbe8a642a28a84c7b4374a089f8f6bc4912
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+4/wD/AP8A/1P/Vv9X/zP/9v+D/33/HP///4n/Zf/w/4n/df/8/3X/B//H/0X/HP8B/wD/AP8A/9n/Rf8M/9j/Hf8AAAAAAAAAAN//4P+e/3X/Bf/Z/+j/2f9d/wz/2f9F/xD/2P8d/wAAAAAAAAAA3//g/57/df8H/8f/Rf8Q/wD/AP8A/0D/g/99/xT///91/wf/x/9F/xT/CP8A/wD/AP+D/33/GP///3X/B//H/0X/GP8P/wD/AP8A/zn/df8I/3X/Cv+4/7n/C/93/8j/6f94/wH/AP8A/9n/Rf8M/9j/Hf8AAAAAAAAAAN//4P+e/w//gv9h/wH/AP8A/9n/Rf8Q/9j/Hf8AAAAAAAAAAN//4P+e/w//gv9P/wH/AP8A/4P/ff8U/wP/D/+C/0X/Af8A/wD/g/99/xj/A/8P/4L/O/8B/wD/AP+L/13/HP+D//v/CP8P/4f/L/8B/wD/AP9q/xj/6P8AAAAAAAAAAFn/i//I/4n/Tf/s/zv/zv/G/0X//P8B/3T/Cv/o/wAAAAAAAAAAif9F/+z/6/8D/4n/df/s/4D/Zf/8/wD/Of91/+z/dP9c/2r/CP8z/8D/Wf+N/33/yP+J/3X/wP/H/0X/xP8C/wD/AP8A//P/q/+D/8P/Av87/0X/HP9z/wv/x/9E/4X/yP8F/wD/AP8A/0D/6//w/4v/Rf8Y/2r/bP+N/3D/Af+L/0X/FP9A/w//r//w/+j/AAAAAAAAAABZ/4v/yP+J/03/6P+F/8n/xv9F//z/Av90/wn/6P8AAAAAAAAAAIv/+P/r/wL/M////4D/Zf/8/wD/hf///3X/Cv+4/7j/C/93/8j/6f+j/wD/AP8A/2r/AP+N/0X/wP9T/1D/Vv+L/8////91/wj/av8A/+j/AAAAAAAAAACL/0X/GP8P/6//Rf8U/43/NP9A/9H/5v+N/wT/Nv9Q/+j/AAAAAAAAAABZ/4v/2P9T/1b///91/xz/2f9F/xD///91/xT///91/xj/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/1f/6P8AAAAAAAAAAIv/Tf/s/4v/B/+D/8T/IP+J/0H/CP+L/wj/UP///1H/BP+L/8//6P8AAAAAAAAAAFf/6P8AAAAAAAAAAIv/ff/s/4v/Rf8I/1n/if9H/wz/i/8I/1D///9R/wT/i/9F/yD/if9f/xD/if93/xT/if84/zP/wP/r/xv/jf+N/zj/////////6P8AAAAAAAAAALj/AAAAAAAAAADD/4v/Rf+4/+v/Bf+4/8T/C/93/8j/i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8L/HP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXCreateTorus@28
+    size: 515
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duShape@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CVertexArray@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Init@CVertexArray@@QAEXPAUIDirect3D7@@PAUIDirect3DDevice7@@KPAW4_D3DXVERTEXCOMPONENT@@KK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?MakeTorus@@YAXPAVCVertexArray@@MMKKKKPAG@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CVertexArray@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 46
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 127
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 145
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 193
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 212
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 288
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 307
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 351
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 372
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 406
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 430
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 436
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 478
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 483
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 506
+    kind: x86_abs32
+    symbol: 14
+    addend: 0

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: f64d1a6ab64d0c2852979b3d9218fc314d91c0d1
+  signature: Vf+L/+z/g//s/xT/U/9W/4v/df8I/1f/i/9W/2T/i/9O/2z/i/9G/2j/K//K/4n/Tf/w/4v/Tv9w/yv/yP+L/37/KP+J/03//P+L/8r/K/9O/3T/if99//j/i//4/4v/2P8P/6//fv9E/4n/Tf8I/4v/Tv9A/8H/+f8D/w//r//K/4n/hv+E/wD/AP8A/43/Rf/s/yv/Xv94/1D///92/0D/A//5/wP/fv9I/4n/Vf/0////Nf8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+F/8D/D/+E/4r/AP8A/wD/D/+v/57/lP8A/wD/AP+L/4b/kP8A/wD/AP8D/57/jP8A/wD/AP8P/6//Rf8I/wP/hv+I/wD/AP8A/4n/nv+k/wD/AP8A/4v/Xf/8/4X/2/+J/4b/oP8A/wD/AP9+/1f/i/+G/6T/AP8A/wD/Vv+L/8j///91//D/wf/5/xD/D/+v/07/JP8D/03/+P+J/4b/rP8A/wD/AP+L/0X/9P+J/37/fP+J/47/sP8A/wD/AP+L/47/oP8A/wD/AP+J/47/qP8A/wD/AP+J/4b/gP8A/wD/AP///1X/7P+L/4b/lP8A/wD/AP8D/37/RP///4b/hP8A/wD/AP8B/4b/pP8A/wD/AP9Z/0v/Wf91/6n/av8B/1j/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?SimpleStretchCopy@@YAHAAUBLT_DATA@@@Z
+    size: 254
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ?ArrayCopySpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?FindLine@@YAHPAV?$TArray@ULINEENTRY@@@@KPAPAX@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 91
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 96
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

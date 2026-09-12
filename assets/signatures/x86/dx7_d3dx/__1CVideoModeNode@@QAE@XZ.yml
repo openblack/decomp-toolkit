@@ -1,0 +1,94 @@
+- symbol: 0
+  hash: a7a3d1a1835fb003182299deb3ae40fb9621f026
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/1f/if91//D///92/zj/x/9F//z/Av8A/wD/AP/o/wAAAAAAAAAAWf///3b/PP/o/wAAAAAAAAAAWf///3b/UP/o/wAAAAAAAAAAWf+//wAAAAAAAAAAjf9O/1T/xv9F//z/Af+J/zn/6P8AAAAAAAAAAID/Zf/8/wD/jf9O/0D/if85/+j/AAAAAAAAAACD/03//P///43/Tv8o/8f/Af8AAAAAAAAAAOj/AAAAAAAAAACL/03/9P9f/2T/if8N/wAAAAAAAAAAXv/J/8P/
+  symbols:
+  - kind: Function
+    name: ??1CVideoModeNode@@QAE@XZ
+    size: 117
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7?$ListT@VCSurfaceFormatNode@@@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCSurfaceFormatNode@@@@UAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$ListT@VCRefreshRateNode@@@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCRefreshRateNode@@@@UAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 53
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 67
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 81
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 94
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 99
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 110
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

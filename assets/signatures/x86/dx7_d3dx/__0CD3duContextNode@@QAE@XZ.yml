@@ -1,0 +1,29 @@
+- symbol: 0
+  hash: 7ba7d13ad65467c84977051d7e508a9e4ac3a762
+  signature: i//B/4P/IP8A/4P/YP8E/wD/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CD3duContextNode@@QAE@XZ
+    size: 10
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 5263afc55417ad491366b1b12edfc5d4815607d3
+  signature: Vv+L//H/6P8AAAAAAAAAAIP/Jv8A/4P/Zv8E/wD/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CD3duContextNode@@QAE@XZ
+    size: 19
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: ddc6077257c14a1d9d486b970d3b43e51165e49d
+  signature: i/9E/yT/BP9W/4v/dP8k/wz/V/+L/3j/DP9q/xD/wf/n/wb/A/94/wj/Wf8z/8D/8/+l/1//Xv/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?LoadMatrix@CD3DXMatrixStack@@UAGJPBUD3DXMATRIX@@@Z
+    size: 31
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 1340a63e6b6ebb92adae28754ad0118870504184
+  signature: Vf+L/+z/Vv+L/3X/DP+F//b/df8H/7j/uf8L/3f/yP/r/xX/i/9F/wj/V/9q/xD/i/94/wz/Wf/B/+f/Bv8D/3j/CP8z/8D/8/+l/1//Xv9d/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?LoadMatrix@CD3DXMatrixStack@@UAGJPBUD3DXMATRIX@@@Z
+    size: 44
+    flags: 1
+    section: .text
+  relocations: []

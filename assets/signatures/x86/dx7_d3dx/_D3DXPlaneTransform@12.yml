@@ -1,0 +1,92 @@
+- symbol: 0
+  hash: 83516637814a6c5de315eaf813d82d6af44564f0
+  signature: Vf+L/+z/g//s/xz/Vv+N/0X/5P///3X/DP9Q/+j/AAAAAAAAAADZ/0X/5P/Y/03/8P///3X/EP+N/0X/9P/Z/+D/2f9d//T/2f9F/+j/2P9N//D/UP+N/0X/9P9Q/9n/4P/Z/13/+P/Z/0X/7P/Y/03/8P/Z/+D/2f9d//z/6P8AAAAAAAAAAP//df8Q/4v/df8I/43/Rf/k/1D/Vv/o/wAAAAAAAAAAVv9W/+j/AAAAAAAAAADZ/0X/9P/Y/w7/2f9G/wT/2P9N//j/i//G/97/wf/Z/0b/CP/Y/03//P/e/8H/2f/g/9n/Xv8M/17/yf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXPlaneTransform@12
+    size: 124
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXPlaneNormalize@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3TransformCoord@12
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3TransformNormal@12
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3Normalize@8
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 64
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 80
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: 94519ed3c92b2b912aa219478be0bd76e627141a
+  signature: Vf+L/+z/g//s/xz/Vv+L/3X/CP+F//b/dP97/4P/ff8M/wD/dP91/4P/ff8Q/wD/dP9v////df8M/43/Rf/k/1D/6P8AAAAAAAAAANn/Rf/k/9j/Tf/w////df8Q/43/Rf/0/9n/4P/Z/13/9P/Z/0X/6P/Y/03/8P9Q/43/Rf/0/1D/2f/g/9n/Xf/4/9n/Rf/s/9j/Tf/w/9n/4P/Z/13//P/o/wAAAAAAAAAA//91/xD/jf9F/+T/UP9W/+j/AAAAAAAAAABW/1b/6P8AAAAAAAAAANn/Rf/0/9j/Dv/Z/0b/BP/Y/03/+P+L/8b/3v/B/9n/Rv8I/9j/Tf/8/97/wf/Z/+D/2f9e/wz/6/8C/zP/wP9e/8n/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXPlaneTransform@12
+    size: 144
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXPlaneNormalize@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3TransformCoord@12
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3TransformNormal@12
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3Normalize@8
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 83
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

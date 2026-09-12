@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: a9119cb3185f65a0f86ee1d9f9424d04077399ce
+  signature: Vv+L//H/6P8AAAAAAAAAAIX/wP90/xX/i/8G/4X/wP90/w////+2/5j/AP8A/wD/i/8I/1D///+R/4D/AP8A/wD/g/8m/wD/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??1CSurfaceLock@@QAE@XZ
+    size: 38
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?IsValid@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: fe4b2488d306639f58ad9e052f16852e01bf99e5
+  signature: Vv+L//H/6P8AAAAAAAAAAIX/wP90/yf/i/8G/4X/wP90/yH///+2/5j/AP8A/wD/i/8I/1D///+R/4D/AP8A/wD/hf/A/33/Dv9o/wAAAAAAAAAAav8A/+j/AAAAAAAAAABZ/1n/g/8m/wD/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??1CSurfaceLock@@QAE@XZ
+    size: 56
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?IsValid@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BJ@EBMO@Failed?5to?5unlock?5surface?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

@@ -1,0 +1,200 @@
+- symbol: 0
+  hash: ee5acc2dbdf87c96dee1805a31c58a15fef13006
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/kP8A/wD/AP9T/1b/V/+J/03/8P9o/0j/Bf8A/wD/6P8AAAAAAAAAAFn/i//I/4n/Tf/s/4P/Zf/8/wD/hf/J/3T/Cf/o/wAAAAAAAAAAi//Y/+v/Av8z/9v/g//J////hf/b/4n/Tf/8/3X/V/+//wAAAAAAAAAAM//A//L/rv/3/9H/K//5/43/lf9k/////////4v/wf+L//f/i//6/8f/Rf/k/7j/C/93/8j/wf/p/wL/8/+l/4v/yP9q/yL/g//h/wP/jf+F/2T/////////8/+k/1n/jf+1/2T/////////jf+9/2T/////////x/9F/+j/c/8B/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAOv/Nf+L/3X/DP+J/3P/BP+L/0b/IP+J/0P/CP9Q/4v/CP///1H/BP+L/0b/JP+J/0P/DP9Q/4v/CP///1H/BP+L/3X/CP9q/1D/jf+7/wT/BP8A/wD/Wf/z/6X/i/9N//D/U/+L/wH///9Q/wT/i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?AddD3duDeviceNode@CD3duDeviceList@@QAEXPAU_D3DX_DEVICEDESC@@PAVCDDrawDeviceNode@@@Z
+    size: 224
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43170
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duDeviceNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DI@GGJM@CD3duDeviceList?3?3AddD3duDeviceNo@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 28
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 68
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 140
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 148
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 215
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+- symbol: 0
+  hash: 6b5e80681916bb54775cf15fa0a4eb7a04dec3c3
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/FP8B/wD/AP+D/33/CP8A/1P/Vv+L/3X/DP9X/4n/Tf/w/3T/BP+F//b/df8X/2j/AAAAAAAAAABo/1v/Af8A/wD/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP9o/0j/Bf8A/wD/6P8AAAAAAAAAAFn/i//I/4n/Tf8M/4P/Zf/8/wD/hf/J/3T/Cf/o/wAAAAAAAAAAi//Y/+v/Av8z/9v/g/9N//z///+F/9v/df9l/43/jf9o/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf9o//////////L/rv/3/9H/K//5/8f/Rf/o/7j/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/+D//v//////g//h/wP/8/+k/1n/jf+1/2j/////////jf+9/+D//v//////x/9F/+z/c/8B/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAOv/Mv+J/3P/BP+L/0b/IP+J/0P/CP9Q/4v/CP///1H/BP+L/0b/JP+J/0P/DP9Q/4v/CP///1H/BP+L/3X/CP9q/1D/jf+7/wT/BP8A/wD/Wf/z/6X/i/9N//D/U/+L/wH///9Q/wT/i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?AddD3duDeviceNode@CD3duDeviceList@@QAEXPAU_D3DX_DEVICEDESC@@PAVCDDrawDeviceNode@@@Z
+    size: 269
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43215
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CE@CENK@pD3duDeviceDesc?5?$CG?$CG?5pDDrawDeviceN@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DJ@FLML@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2CD3duAlloc@@SAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duDeviceNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DI@GGJM@CD3duDeviceList?3?3AddD3duDeviceNo@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 36
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 64
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 83
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 108
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 113
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 188
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 196
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 260
+    kind: x86_abs32
+    symbol: 12
+    addend: 0

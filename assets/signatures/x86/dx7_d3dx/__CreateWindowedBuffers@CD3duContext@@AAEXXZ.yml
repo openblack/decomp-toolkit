@@ -1,0 +1,240 @@
+- symbol: 0
+  hash: 6de277ff64ebd31aaff3f13c2f89d4a8c6b9b9ed
+  signature: Vf+L/+z/gf/s/wj/Af8A/wD/U/+L/9n/Vv8z//b/i/9D/3D/Of+z/4z/AP8A/wD/V/+L/3j/BP8P/4X/BP8B/wD/AP9W/1b/i//P/+j/AAAAAAAAAACL/8//6P8AAAAAAAAAAIn/g/+M/wD/AP8A/4v/Q/98/43/i/+I/wD/AP8A/1b/i/8Q/1H/Vv9Q////Uv8Q/zv/xv99/1b/if9F//T/v/8AAAAAAAAAAIP/yf///zP/wP/y/67/9//R/yv/+f+N/5X/dP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/dP////////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/dP/////////H/0X/+P8B/wb/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAM//2/4v/g/+I/wD/AP8A////c/8I/43/u/+I/wD/AP8A/4v/CP9W/1D///9R/yD/O//G/3z/Ev+L/4P/jP8A/wD/AP///zf/i/8I/1D///9R/3D/O//G/33/Vv+J/0X/9P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf90/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf90/////////4P/4f8D//P/pP9Z/43/tf90/////////43/vf90/////////8f/Rf/4/wr/Bv8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAAAz//b/i/9T/yD/O//W/3X/C/+L/4P/jP8A/wD/AP/p//f/AP8A/wD/av8f/zP/wP9Z/43/vf/4//7///////P/q/+L/0P/PP/H/4X/+P/+//////98/wD/AP8A/4n/hf8E/////////4v/Q/84/4n/hf8A/////////4v/Q/90/2b/Df9A/yD/g//6/wH/x/+F//z//v//////B/8A/wD/AP+J/4X/YP////////92/xn/Sv8M/xj/x/+F//z//v//////J/8A/wD/AP+J/5X/DP////////+J/4X/YP////////+L/0P/fP+N/1X//P9W/1L/i/8I/43/lf/4//7//////1L/UP///1H/GP87/8b/ff9U/4n/Rf/0/7//AAAAAAAAAACD/8n///8z/8D/8v+u//f/0f8r//n/jf+V/3T/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3T/////////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/3T/////////x/9F//j/K/8G/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAGr/Af+L/8v///91//z/6P8AAAAAAAAAAIv/i/+Q/wD/AP8A/4v/Vf/8/43/g/+Q/wD/AP8A/4n/Ef+D/3v/IP8B/4v/AP91/wT/i/8A/+v/A/+L/0D/BP9f/4n/g/+U/wD/AP8A/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?_CreateWindowedBuffers@CD3duContext@@AAEXXZ
+    size: 570
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CreatePrimary@CDDrawDeviceNode@@QAEXHK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetPrimary@CDDrawDeviceNode@@QAEPAUIDirectDrawSurface7@@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EB@EFHI@CD3duContext?3?3_CreateWindowedBuf@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EB@LFOG@CD3duContext?3?3_CreateWindowedBuf@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0EI@KLJJ@CD3duContext?3?3_CreateWindowedBuf@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_EnumBackBuffers@CD3duContext@@AAEXPAUIDirectDrawSurface7@@K@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 82
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 150
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 158
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 212
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 280
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 288
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 435
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 503
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 511
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 523
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+- symbol: 0
+  hash: 5e0e4b8ac93569611c4d28a953ee046ec5f5a351
+  signature: Vf+L/+z/gf/s/5D/Af8A/wD/U/+L/9n/Vv9X/4v/Q/9w/zP///85/7v/jP8A/wD/AP+L/3D/BP8P/4X/OP8B/wD/AP9X/1f/i//O/+j/AAAAAAAAAACL/87/6P8AAAAAAAAAADv/x/+J/4P/jP8A/wD/AP91/xf/aP8AAAAAAAAAAGj/+v8F/wD/AP9o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4v/Q/98/43/i/+I/wD/AP8A/1f/Uf+L/xD/V/9Q////Uv8Q/4v/8P87//f/ff9f/43/jf90/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/4n/df/0//L/rv/3/9H/K//5/43/lf90/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9w//7//////4P/4f8D//P/pP9Z/43/tf90/////////43/vf9w//7//////8f/Rf/4/wH/Bv8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/4P/iP8A/wD/AP///3P/CP+N/7v/iP8A/wD/AP+L/wj/av8A/1D///9R/yD/i//w/4X/9v98/xT/i/+D/4z/AP8A/wD///83/4v/CP9Q////Uf9w/4v/8P+F//b/ff9f/43/jf90/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/4n/df/0//L/rv/3/9H/K//5/43/lf90/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9w//7//////4P/4f8D//P/pP9Z/43/tf90/////////43/vf9w//7//////8f/Rf/4/wr/Bv8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/1P/IP+F/9L/df8L/4v/g/+M/wD/AP8A/+n/Bf8B/wD/AP9q/x//M//A/1n/jf+9//j//v//////8/+r/4v/Q/88/8f/hf/4//7//////3z/AP8A/wD/if+F/wT/////////i/9D/zj/if+F/wD/////////i/9D/3T/Zv8N/0D/IP+D//r/Af/H/4X//P/+//////8H/wD/AP8A/4n/hf9g/////////3b/Gf9K/wz/GP/H/4X//P/+//////8n/wD/AP8A/4n/lf8M/////////4n/hf9g/////////4v/Q/98/43/Vf/8/2r/AP9S/4v/CP+N/5X/+P/+//////9S/1D///9R/xj/i//w/4X/9v99/1//jf+N/3T/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/if91//T/8v+u//f/0f8r//n/jf+V/3T/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3D//v//////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/3D//v//////x/9F//j/K/8G/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAGr/Af+L/8v///91//z/6P8AAAAAAAAAAIv/i/+Q/wD/AP8A/4v/Vf/8/43/g/+Q/wD/AP8A/4n/Ef+D/3v/IP8B/4v/AP91/wT/i/8A/+v/A/+L/0D/BP9f/4n/g/+U/wD/AP8A/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?_CreateWindowedBuffers@CD3duContext@@AAEXXZ
+    size: 636
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CreatePrimary@CDDrawDeviceNode@@QAEXHK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetPrimary@CDDrawDeviceNode@@QAEPAUIDirectDrawSurface7@@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BC@GPNH@m_pddsFrontBuffer?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@JJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EB@EFHI@CD3duContext?3?3_CreateWindowedBuf@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EB@LFOG@CD3duContext?3?3_CreateWindowedBuf@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0EI@KLJJ@CD3duContext?3?3_CreateWindowedBuf@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_EnumBackBuffers@CD3duContext@@AAEXPAUIDirectDrawSurface7@@K@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 61
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 71
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 76
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 114
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 119
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 190
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 198
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 258
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 263
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 334
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 342
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 493
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 498
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 569
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 577
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 589
+    kind: x86_rel32
+    symbol: 12
+    addend: -4

@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: dccb5c5a38a2b876479a0916b2c08d6e5e88ca0f
+  signature: i/9E/yT/BP+L/1H/DP+J/xD///9B/wj/if9B/wz/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?Prepend@?$ListT@VCRefreshRateNode@@@@UAEXPAVCRefreshRateNode@@@Z
+    size: 18
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 1b006b6dc64f15613189557099934adf91831161
+  signature: Vf+L/+z/Vv9X/4v/ff8I/4v/8f+F////df8U/2j/AAAAAAAAAABq/y3/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+L/0b/DP+J/wf///9G/wj/if9+/wz/X/9e/13/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?Prepend@?$ListT@VCRefreshRateNode@@@@UAEXPAVCRefreshRateNode@@@Z
+    size: 51
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_08FALO@pNewNode?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@LOKF@?4?2listtemplate?4h?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

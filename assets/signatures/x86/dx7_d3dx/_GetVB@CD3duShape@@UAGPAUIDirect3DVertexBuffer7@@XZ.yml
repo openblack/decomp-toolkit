@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: f4b65c230f4cdf7357a6f6538e3fa39a220ec2b8
+  signature: Vv+L/3T/JP8I/4v/Rv8I/4X/wP90/wb/i/8I/1D///9R/wT/i/9G/wj/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetVB@CD3duShape@@UAGPAUIDirect3DVertexBuffer7@@XZ
+    size: 25
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: dd3efa150e7195f4a25f6bf9a9af839b8f821709
+  signature: Vf+L/+z/Vv+L/3X/CP+L/0b/CP+F/8D/dP8G/4v/CP9Q////Uf8E/4v/Rv8I/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetVB@CD3duShape@@UAGPAUIDirect3DVertexBuffer7@@XZ
+    size: 28
+    flags: 1
+    section: .text
+  relocations: []

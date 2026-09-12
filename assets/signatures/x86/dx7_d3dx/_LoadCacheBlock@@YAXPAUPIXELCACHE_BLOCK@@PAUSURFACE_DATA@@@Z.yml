@@ -1,0 +1,74 @@
+- symbol: 0
+  hash: d51e903d5d00fb92b63b2f8a88332695a352b95a
+  signature: Vf+L/+z/U/9W/4v/df8I/1f/u/9E/1j/VP80/7//RP9Y/1T/Mv+L/07/CP+L/8H/JP/8/4n/Rv8I/4v/Rv8M/4v/0P+D/+L//P+J/1b/DP+L/1b/BP+B//r/RP9Y/1T/Mf90/1r/O//X/3T/Nf+B//r/RP9Y/1T/M/90/y3/O//T/3T/CP+B//r/RP9Y/1T/Nf91/2P/jf9W/xD/Uv+L/1X/DP/B//j/Av8P/6//Qv8Q/8H/+f8C/wP/wf/B/+D/BP8D/0L/FP9Q/+j/AAAAAAAAAADr/0D/jf9W/xD/Uv+L/1X/DP/B//j/Av8P/6//Qv8Q/8H/+f8C/wP/wf/B/+D/BP8D/0L/FP9Q/+j/AAAAAAAAAADr/x//jf9W/xD/Uv+L/1X/DP/B//j/Av8P/6//Qv8Q/8H/+f8C/wP/wf+L/0r/FP+N/wT/wf9Q/+j/AAAAAAAAAABZ/1n/i/9G/wT/O//H/3T/BP87/8P/df9h/2r/EP+N/37/EP9b/4v/B/+L/8j/wf/p/xj/hP/J/3X/Bf+D/yf/AP/r/0X/gP/5////c/9A/4v/0P8z//b/wf/q/xD/Ov/R/3b/Bf++/wD/AP///wD/i//Q/8H/6v8I/zr/0f92/wb/gf/O/wD///8A/wD/Ov/B/3b/Bv+B/87///8A/wD/AP+F//b/dP8T/w//tv/J/2n/yf8B/wH/Af8A/yP/zv/3/9b/I//G/wv/yP+J/w//g//H/wT/S/91/6X/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?LoadCacheBlock@@YAXPAUPIXELCACHE_BLOCK@@PAUSURFACE_DATA@@@Z
+    size: 287
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeBlockAlpha3@@YAXPAUS3TCBlockAlpha3@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeBlockAlpha4@@YAXPAUS3TCBlockAlpha4@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?XXDecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 102
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 135
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 168
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: c835a25c4ff93de695addfa70f43c03a01b0c42f
+  signature: U/9W/4v/dP8k/wz/V/+7/0T/WP9U/zT/v/9E/1j/VP8y/4v/Tv8I/4v/wf8k//z/if9G/wj/i/9G/wz/i//Q/4P/4v/8/4n/Vv8M/4v/Vv8E/4H/+v9E/1j/VP8x/3T/XP87/9f/dP82/4H/+v9E/1j/VP8z/3T/Lv87/9P/dP8I/4H/+v9E/1j/VP81/3X/Zv+N/1b/EP9S/4v/VP8k/xj/wf/4/wL/D/+v/0L/EP/B//n/Av8D/8H/wf/g/wT/A/9C/xT/UP/o/wAAAAAAAAAA6/9C/43/Vv8Q/1L/i/9U/yT/GP/B//j/Av8P/6//Qv8Q/8H/+f8C/wP/wf/B/+D/BP8D/0L/FP9Q/+j/AAAAAAAAAADr/yD/jf9W/xD/Uv+L/1T/JP8Y/8H/+P8C/w//r/9C/xD/wf/5/wL/A//B/4v/Sv8U/43/BP/B/1D/6P8AAAAAAAAAAFn/Wf+L/0b/BP87/8f/dP8E/zv/w/91/2L/av8Q/4P/xv8Q/1v/i/8W/4v/wv/B/+j/GP+E/8D/df8F/4P/Jv8A/+v/Rv88////c/9C/4v/yv8z////wf/p/xD/Ov/I/3b/Bf+//wD/AP///wD/i//K/8H/6f8I/zr/yP92/wb/gf/P/wD///8A/wD/Ov/Q/3b/Bv+B/8////8A/wD/AP+F////dP8V/w//tv/A/2n/wP8B/wH/Af8A/4v/z/8j/8f/9//R/yP/yv8L/8j/if8O/4P/xv8E/0v/df+k/1//Xv9b/8P/
+  symbols:
+  - kind: Function
+    name: ?LoadCacheBlock@@YAXPAUPIXELCACHE_BLOCK@@PAUSURFACE_DATA@@@Z
+    size: 288
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeBlockAlpha3@@YAXPAUS3TCBlockAlpha3@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeBlockAlpha4@@YAXPAUS3TCBlockAlpha4@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?XXDecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 101
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 135
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 169
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

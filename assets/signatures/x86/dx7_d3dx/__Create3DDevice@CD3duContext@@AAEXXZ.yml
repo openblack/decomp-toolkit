@@ -1,0 +1,175 @@
+- symbol: 0
+  hash: 27dd13468ebdc61b475066ea867f4f501eb3250b
+  signature: Vf+L/+z/gf/s/9D/AP8A/wD/U/+L/9n/Vv9X/4v/g/+A/wD/AP8A/43/c/94/1b/jf9T/1D///+z/5T/AP8A/wD/i/8I/4n/df/8/1L/UP///1H/EP+F/8D/ff9X/4n/Rf/w/7//AAAAAAAAAACD/8n///8z/8D/8v+u//f/0f8r//n/jf+V/3D/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3D/////////g//h/wP/8/+k/1n/jf+1/3D/////////jf+9/3D/////////x/9F//T/hP8E/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/df/8/9n/Bf8AAAAAAAAAAIv/Q/84/1H/g/9l//z/AP+J/0X/+P/Z/xz/JP+L/0P/PP9R/9n/6P/Z/xz/JP/f/23/+P+D/2X//P8A/4n/Rf/4/1H/jf+F/zD/////////2v91//j/2f8c/yT/2f8F/wAAAAAAAAAAUf/Z/xz/JP9Q/+j/AAAAAAAAAACL/wb/jf+V/zD/////////Uv9q/wP/i/8I/1D///9R/yz/hf/A/33/VP+J/0X/8P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf9w/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9w/////////4P/4f8D//P/pP9Z/43/tf9w/////////43/vf9w/////////8f/Rf/0/5P/BP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABf/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?_Create3DDevice@CD3duContext@@AAEXXZ
+    size: 312
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DN@FACF@CD3duContext?3?3_Create3DDevice?5?9?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T44006
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T44007
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixPerspectiveFovLH@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EC@FNEM@CD3duContext?3?3_InitViewport?5?9?5Co@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 51
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 119
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 127
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 136
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 188
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 198
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 227
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 295
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 303
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 11ee4c80f5df0dab4786abd846c5463af74c6ddc
+  signature: Vf+L/+z/gf/s/1j/Af8A/wD/U/+L/9n/Vv9X/4v/g/+A/wD/AP8A/43/c/94/1b/jf9T/1D///+z/5T/AP8A/wD/i/8I/4n/df/8/1L/UP///1H/EP+L//j/hf///33/Yv+N/43/cP/////////o/wAAAAAAAAAAif99//D/v/8AAAAAAAAAAIP/yf///zP/wP/y/67/9//R/yv/+f+N/5X/cP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/qP/+//////+D/+H/A//z/6T/Wf+N/7X/cP////////+N/73/qP/+///////H/0X/9P+E/wT/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/91//z/2f8F/wAAAAAAAAAAi/9D/zj/Uf+D/2X//P8A/4n/Rf/4/9n/HP8k/4v/Q/88/1H/2f/o/9n/HP8k/9//bf/4/4P/Zf/8/wD/if9F//j/Uf+N/4X/MP/////////a/3X/+P/Z/xz/JP/Z/wX/AAAAAAAAAABR/9n/HP8k/1D/6P8AAAAAAAAAAIv/Bv+N/5X/MP////////9S/2r/A/+L/wj/UP///1H/LP+L//D/hf/2/33/X/+N/43/cP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+J/3X/8P/y/67/9//R/yv/+f+N/5X/cP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/qP/+//////+D/+H/A//z/6T/Wf+N/7X/cP////////+N/73/qP/+///////H/0X/9P+T/wT/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_Create3DDevice@CD3duContext@@AAEXXZ
+    size: 338
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DN@FACF@CD3duContext?3?3_Create3DDevice?5?9?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T44077
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T44078
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixPerspectiveFovLH@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EC@FNEM@CD3duContext?3?3_InitViewport?5?9?5Co@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 56
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 64
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 132
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 140
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 149
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 201
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 211
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 245
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 250
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 321
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 329
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

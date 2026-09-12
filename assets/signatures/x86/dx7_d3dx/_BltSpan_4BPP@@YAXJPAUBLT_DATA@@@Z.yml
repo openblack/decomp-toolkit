@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 81334be3a97d44db605c08208f3d96bfeb399d8f
+  signature: Vf+L/+z/g//s/xD/i/9F/wz/i/9I/3z/i/+Q/4D/AP8A/wD/if9N//j/i/+I/7D/AP8A/wD/if9N//T/i/+I/6j/AP8A/wD/i/+A/5D/AP8A/wD/if9N//z/if9F//D/i/9F/wj/hf/A/37/Vv9X/1b/U/+J/0X/CP+L//L/i/9d//T/0f/u/wP/df/4/4v/+v/3/9f/g//n/wH/iv8G/4j/Rf8M/4v/wf/3/9H/wf/4/xH/wf/5/w7/iv8E/xj/gP/h/wT/wf/n/wL/0v/o/4v/z/+z/w//0v/j/yT/D//S/+D/i/9N//z/A/9N//D/9v/T/yL/Xf8M/4n/Tf/8/wr/w/9C////Tf8I/4j/Bv91/7P/W/9e/1//yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?BltSpan_4BPP@@YAXJPAUBLT_DATA@@@Z
+    size: 143
+    flags: 2
+    section: .text
+  relocations: []

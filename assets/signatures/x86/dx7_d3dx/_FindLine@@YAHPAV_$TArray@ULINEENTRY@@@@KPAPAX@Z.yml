@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: a0f5d826448333b6d5fbc34c35963b38c7230d42
+  signature: i/9E/yT/BP9W/1f/i/98/yT/FP+D/yf/AP+F/8D/dP8e/4v/SP8I/0n/eP8Y/4v/AP+N/wT/yP+L/zD/i/9Q/wT/O/90/yT/EP90/w3/Sf+D/+j/CP+F/8n/ff/t/zP/wP9f/17/w/9q/wH/if8X/1j/6//2/w==
+  symbols:
+  - kind: Function
+    name: ?FindLine@@YAHPAV?$TArray@ULINEENTRY@@@@KPAPAX@Z
+    size: 59
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 11327c1d0c49c251c0739a99a0567ebb1a24d051
+  signature: Vf+L/+z/U/+L/13/EP9W/1f/i/99/wj/g/8j/wD/hf///3T/O/+L/3f/CP9O/3j/Nf87/3f/CP99/wT/hf/2/33/F/9o/wAAAAAAAAAAaP/l/wD/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/i/8H/4v/DP/w/zv/Tf8M/4v/RP/w/wT/df/P/2r/Af+J/wP/WP/r/wL/M//A/1//Xv9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?FindLine@@YAHPAV?$TArray@ULINEENTRY@@@@KPAPAX@Z
+    size: 85
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0BM@EAMM@Index?5?$DM?5Count?5?$CG?$CG?5Index?5?$DO?$DN?50?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0N@JMCL@?4?2convhelp?4h?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 35
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 50
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

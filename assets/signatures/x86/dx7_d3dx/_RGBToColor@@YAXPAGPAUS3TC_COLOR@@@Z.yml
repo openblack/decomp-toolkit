@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3d552e267ef8a5dad47f610b15c449018cd4dca2
+  signature: Vf+L/+z/i/9F/wj/U/9m/4v/AP+J/0X/CP+K/03/CP9m/8H/bf8I/wX/iv9V/wj/Zv/B/23/CP8G/4r/Rf8I/8D/4f8D/4r/2f/A/+v/Bf8K/8v/W//A/+L/Av+I/03/CP+K/8r/wP/p/wb/wP/g/wP/Cv/R/4r/yP/A/+n/Bf8K/8H/iP9V/wn/iP9F/wr/i/9F/wz/i/9N/wj/if8I/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?RGBToColor@@YAXPAGPAUS3TC_COLOR@@@Z
+    size: 82
+    flags: 2
+    section: .text
+  relocations: []

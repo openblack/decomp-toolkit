@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: 67c990994a1f428489d6cc18a41602e6b2999567
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4n/df/w/4v/Rv8I/4P/Zf/8/wD/hf/A/3T/Bv+L/wj/UP///1H/CP+L/0b/DP+F/8D/dP8G/4v/CP9Q////Uf8I/4P/Tf/8////jf+O//T/A/8A/wD/x/8B/wAAAAAAAAAA6P8AAAAAAAAAAIv/Tf/0/17/ZP+J/w3/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ??1CD3duDeviceNode@@QAE@XZ
+    size: 81
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7?$ListT@VCSurfaceFormatNode@@@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCSurfaceFormatNode@@@@UAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 59
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 64
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 75
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

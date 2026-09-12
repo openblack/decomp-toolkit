@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 2836661b7e569aff33148ff62f191c742063fd23
+  signature: Vv+L/3T/JP8I/4P/vv+w/wD/AP8A/wD/df8E/zP/wP/r/3b/i/+G/4z/AP8A/wD/V/+N/77/jP8A/wD/AP9Q/4v/CP///1H/YP+F/8D/dP8I/4v/P/9X/4v/B////1D/bP+D/37/EP8A/3X/LP+D/37/IP8A/3T/Jv+L/4b/kP8A/wD/AP+N/77/kP8A/wD/AP+L/wD/hf/A/3T/FP+L/wj/UP///1H/YP+F/8D/dP8K/4v/B/+L/wD/UP+L/wj///9R/2z/i/+G/6D/AP8A/wD/gf/G/6D/AP8A/wD/hf/A/3T/Ev+L/wj/UP///1H/YP+F/8D/dP8I/4v/Nv9W/4v/Bv///1D/bP8z/8D/X/9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?RestoreSurfaces@CD3duContext@@UAGJXZ
+    size: 140
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 3d774b30f642e111c4ce3e17bf71de99253c79fd
+  signature: Vf+L/+z/Vv+L/3X/CP+D/77/sP8A/wD/AP8A/3X/BP8z/8D/6/92/4v/hv+M/wD/AP8A/1f/jf++/4z/AP8A/wD/UP+L/wj///9R/2D/hf/A/3T/CP+L/z//V/+L/wf///9Q/2z/g/9+/xD/AP91/yz/g/9+/yD/AP90/yb/i/+G/5D/AP8A/wD/jf++/5D/AP8A/wD/i/8A/4X/wP90/xT/i/8I/1D///9R/2D/hf/A/3T/Cv+L/wf/i/8A/1D/i/8I////Uf9s/4v/hv+g/wD/AP8A/4H/xv+g/wD/AP8A/4X/wP90/xL/i/8I/1D///9R/2D/hf/A/3T/CP+L/zb/Vv+L/wb///9Q/2z/M//A/1//Xv9d/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?RestoreSurfaces@CD3duContext@@UAGJXZ
+    size: 143
+    flags: 1
+    section: .text
+  relocations: []

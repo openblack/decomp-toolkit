@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 6b0681998de1d0705716f4ee57725ef146547fae
+  signature: Vf+L/+z/Uf+L/0X/EP+L/1X/CP+D/03//P///1b/i/+w/6j/AP8A/wD/V/+L/7j/kP8A/wD/AP+L/4D/sP8A/wD/AP8z/8n/hf/S/37/Wf9T/4v/Xf8M/4n/Xf8Q/4n/Vf8I/4v/1v/B//r/EP8P/7f/FP9Q/zv/Vf/8/3T/MP+J/1X//P+A/87/8P+L/9r/i//K/4H/4/8A/w//AP8A/4H/4f/w/wD/AP8A/8H/4/8E/wv/y/+D/+L/D//B/+H/BP8L/8r/i//R/4H/yv8A/wD/8P///8H/4v8E/wv/yv+L/1X/EP+D/0X/EP8E/wP/9////03/CP+J/wr/df+y/1v/i/9F/wz/X/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?GetSrcSpan_X4R4G4B4@@YAPAKJPAKPAUBLT_DATA@@@Z
+    size: 136
+    flags: 2
+    section: .text
+  relocations: []

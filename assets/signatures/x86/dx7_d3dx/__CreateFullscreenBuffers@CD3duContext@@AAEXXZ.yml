@@ -1,0 +1,256 @@
+- symbol: 0
+  hash: 6417eae64f11189600b42bd4688197eea9a1c8bb
+  signature: Vf+L/+z/gf/s/4z/AP8A/wD/U/+L/9n/Vv9X/4v/Q/9w/4P/u/+M/wD/AP8A/wD/i/9A/wT/if9F//z/dP9Y/7//AAAAAAAAAACD/8n///8z/8D/jf+V/3T/////////8v+u//f/0f8r//n/x/9F//T/0f8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/dP////////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/dP/////////H/0X/+P++/wX/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAA//9z/zT/i/9L/3D///9z/xj///9z/zj///9z/zz/6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAhf/A/3X/Vv+//wAAAAAAAAAAg//J////8v+u//f/0f8r//n/jf+V/3T/////////i//B/4v/9/+L//r/x/9F//T/w/8L/3f/yP/B/+n/Av/z/6X/i//I/2r/Iv+D/+H/A/+N/4X/dP/////////z/6T/Wf+N/7X/dP////////+N/73/dP/////////H/0X/+P/I/wX/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9D/zz/M//J/z3/QP8B/wD/AP91/xL/gf97/zj/yP8A/wD/AP91/wn/g/97/xj/CP91/wP/av8B/1n/Uf+L/03//P///3P/NP///3P/GP///3P/OP9Q/+j/AAAAAAAAAAD//3P/IP+L/03//P9q/wH/6P8AAAAAAAAAAIv/Tf/8/+j/AAAAAAAAAACD/3v/IP8A/4n/g/+M/wD/AP8A/3T/Ev9q/wD/UP+L/8v/6P8AAAAAAAAAAIv/g/+Q/wD/AP8A/4v/AP9f/4n/g/+U/wD/AP8A/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?_CreateFullscreenBuffers@CD3duContext@@AAEXXZ
+    size: 348
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DJ@IFHH@_CreateFullscreenBuffers?5?9?5Front@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetVideoModeList@CD3duDeviceNode@@QAEPAVCVideoModeList@@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DoesVideoModeExist@CVideoModeList@@QAEHKKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EO@PDIE@CD3duContext?3?3_CreateFullscreenB@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?SetDisplayMode@CDDrawDeviceNode@@QAEXKKKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreatePrimary@CDDrawDeviceNode@@QAEXHK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetPrimary@CDDrawDeviceNode@@QAEPAUIDirectDrawSurface7@@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_EnumBackBuffers@CD3duContext@@AAEXPAUIDirectDrawSurface7@@K@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 108
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 116
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 136
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 143
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 152
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 225
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 233
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 282
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 295
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 303
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 325
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+- symbol: 0
+  hash: 979838b097f51b2de025e90e014f8be84f978c0e
+  signature: Vf+L/+z/gf/s/xT/Af8A/wD/U/+L/9n/Vv9X/4v/Q/9w/4P/u/+M/wD/AP8A/wD/i/9A/wT/if9F//z/dP9j/43/jf90/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf90//////////L/rv/3/9H/K//5/8f/Rf/0/9H/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/+z//v//////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/+z//v//////x/9F//j/vv8F/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAP//c/80/4v/S/9w////c/8Y////c/84////c/88/+j/AAAAAAAAAACL/8j/6P8AAAAAAAAAAIX/wP91/2P/jf+N/3T/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/3T/////////8v+u//f/0f8r//n/x/9F//T/w/8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/7P/+//////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/7P/+///////H/0X/+P/I/wX/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9D/zz/M//J/z3/QP8B/wD/AP91/xL/gf97/zj/yP8A/wD/AP91/wn/g/97/xj/CP91/wP/av8B/1n/Uf+L/03//P///3P/NP///3P/GP///3P/OP9Q/+j/AAAAAAAAAAD//3P/IP+L/03//P9q/wH/6P8AAAAAAAAAAIv/Tf/8/+j/AAAAAAAAAACF/8D/if+D/4z/AP8A/wD/df8X/2j/AAAAAAAAAABo/97/Bf8A/wD/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+D/3v/IP8A/3X/CP+L/4P/jP8A/wD/AP/r/xf/av8A/4v/y////7P/jP8A/wD/AP/o/wAAAAAAAAAAi/+D/5D/AP8A/wD/i/8A/1//if+D/5T/AP8A/wD/Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?_CreateFullscreenBuffers@CD3duContext@@AAEXXZ
+    size: 412
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DJ@IFHH@_CreateFullscreenBuffers?5?9?5Front@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetVideoModeList@CD3duDeviceNode@@QAEPAVCVideoModeList@@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DoesVideoModeExist@CVideoModeList@@QAEHKKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EO@PDIE@CD3duContext?3?3_CreateFullscreenB@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?SetDisplayMode@CDDrawDeviceNode@@QAEXKKKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreatePrimary@CDDrawDeviceNode@@QAEXHK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetPrimary@CDDrawDeviceNode@@QAEPAUIDirectDrawSurface7@@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BC@GPNH@m_pddsFrontBuffer?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@JJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_EnumBackBuffers@CD3duContext@@AAEXPAUIDirectDrawSurface7@@K@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 119
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 127
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 147
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 154
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 169
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 174
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 249
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 257
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 306
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 319
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 327
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 342
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 352
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 357
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 389
+    kind: x86_rel32
+    symbol: 14
+    addend: -4

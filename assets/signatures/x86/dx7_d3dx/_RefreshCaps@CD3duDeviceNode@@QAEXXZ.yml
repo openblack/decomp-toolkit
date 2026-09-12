@@ -1,0 +1,155 @@
+- symbol: 0
+  hash: 5544ba58dbe8f8258bda22421e8418d572d4e5ee
+  signature: Vf+L/+z/gf/s/yj/Af8A/wD/U/+L/9n/Vv+N/03/9P9X/1H/jf9N//j/M//A/1H/jf9N/+z/Uf+N/03/8P9R/1D/i//L/4n/Rf/w/4n/Rf/s/4n/Rf/4/4n/Rf/0/+j/AAAAAAAAAACL/3X/8P9q/zv/jf+7/wj/A/8A/wD/Wf/z/6X/i/91/+z/av9f/43/e/8Q/1n/8/+l/4v/df/4/2r/X/+L/4P/9P8D/wD/AP+N/7v/jP8B/wD/AP9Z//P/pf+N/4v/9P8D/wD/AP+J/03/6P///xD/i/9F//T/M//2/4v/WP8M/zv/3v8P/4T/q/8A/wD/AP/r/wL/M//2/2r/LP/o/wAAAAAAAAAAi//Q/1n/O//W/3T/F/9q/wj/M//A/1n/jf96/wj/if8y/4n/Vf/8//P/q/+J/3L/BP+J/3L/KP/r/wP/if91//z/Of91//z/df9Y/7//AAAAAAAAAACD/8n///8z/8D/jf+V/2D/////////8v+u//f/0f8r//n/x/9F/+D/uP8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/2P/+//////+D/+H/A//z/6T/Wf+N/7X/YP////////+N/73/2P/+///////H/0X/5P9J/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9F//z/av8L/1n/i//z/4v/+P9Q//P/pf+L/03/6P+D/yD/AP+L/xH///9S/wT/i/8b/4X/2/8P/4X/V/////////9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?RefreshCaps@CD3duDeviceNode@@QAEXXZ
+    size: 300
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetCapsAtVideoMode@CD3duDeviceNode@@QAEXPAU_D3DX_VIDMODEDESC@@PAPAU_D3DDeviceDesc7@@PAPAU_DDCAPS_DX7@@2PAPAVCSurfaceFormatList@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DC@OBIA@CD3duDeviceNode?3?3RefreshCaps?5?9?5R@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 48
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 131
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 174
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 249
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 257
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+- symbol: 0
+  hash: f0c7af374f14541bc1e4dddf9d84c056c404c437
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/KP8B/wD/AP9T/4v/2f9W/43/Tf/o/1f/Uf+N/03/7P8z/8D/Uf+N/03/4P9R/43/Tf/k/1H/UP+L/8v/if9F/+T/if9F/+D/if9F/+z/if9F/+j/6P8AAAAAAAAAAIv/df/k/2r/O/+N/7v/CP8D/wD/AP9Z//P/pf+L/3X/4P9q/1//jf97/xD/Wf/z/6X/i/91/+z/av9f/4v/g//0/wP/AP8A/43/u/+M/wH/AP8A/1n/8/+l/43/i//0/wP/AP8A/4n/Tf/c////EP+L/0X/6P+L/1j/DP+F/9v/D/+E/67/AP8A/wD/av8s/+j/AAAAAAAAAABZ/4n/Rf/w/zP/9v87/8b/if91//z/dP8M/4v/yP/o/wAAAAAAAAAAif9F//D/6/8D/4n/df/w/4P/Tf/8////Of91//D/df9j/43/jf9U/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf9U//////////L/rv/3/9H/K//5/8f/Rf/U/7j/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/8z//v//////g//h/wP/8/+k/1n/jf+1/1T/////////jf+9/8z//v//////x/9F/9j/Sf8B/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/Rf/w/2r/C/9Z/4v/8/+L//j/UP/z/6X/i/9N/9z/g/8g/wD/i/8R////Uv8E/4v/G//p/0r/////////i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8P/
+  symbols:
+  - kind: Function
+    name: ?RefreshCaps@CD3duDeviceNode@@QAEXXZ
+    size: 318
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43198
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetCapsAtVideoMode@CD3duDeviceNode@@QAEXPAU_D3DX_VIDMODEDESC@@PAPAU_D3DDeviceDesc7@@PAPAU_DDCAPS_DX7@@2PAPAVCSurfaceFormatList@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2CD3duAlloc@@SAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CSurfaceFormatNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DC@OBIA@CD3duDeviceNode?3?3RefreshCaps?5?9?5R@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 55
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 132
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 152
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 180
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 185
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 260
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 268
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 311
+    kind: x86_abs32
+    symbol: 10
+    addend: 0

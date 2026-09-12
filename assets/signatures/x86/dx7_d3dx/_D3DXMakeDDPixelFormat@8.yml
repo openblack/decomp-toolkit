@@ -1,0 +1,94 @@
+- symbol: 0
+  hash: e06ae717bb0f17fe479df5a5477cef3f09f1179a
+  signature: Vv9X/4v/fP8k/xD/hf///3X/B/+4/7n/C/93/8j/6/8k/4v/VP8k/wz/hf/S/3T/F/8z/8D/uf8AAAAAAAAAADv/Ef90/xb/g//B/yj/QP+B//n/AAAAAAAAAABy//D/uP/E/wv/d//I/1//Xv/C/wj/AP+N/wT/gP9q/wj/jf80/8X/AAAAAAAAAABZ//P/pf8z/8D/6//o/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMakeDDPixelFormat@8
+    size: 77
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_d3dxDdpfSupportedPFs@@3PAU_D3DX_FORMATDESC@@A
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 70c98a2d37030e68e4d0a8205da0efcec6071187
+  signature: Vf+L/+z/Vv9X/4v/ff8M/zP/9v87//7/df8U/2j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/7j/uf8L/3f/yP9Z/+v/N/+L/1X/CP87/9b/df8H/2j/AAAAAAAAAADr/xz/M//A/7n/AAAAAAAAAAA7/xH/dP8k/4P/wf8o/0D/gf/5/wAAAAAAAAAAcv/w/2j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/7j/xP8L/3f/yP9Z/1//Xv9d/8L/CP8A/43/BP+A/2r/CP9Z/43/NP/F/wAAAAAAAAAAM//A//P/pf/r/+f/
+  symbols:
+  - kind: Function
+    name: _D3DXMakeDDPixelFormat@8
+    size: 114
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0O@PPEO@pddpf?5is?5NULL?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DC@DECC@Cannot?5create?5a?5DDPIXELFORMAT?5fo@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ?g_d3dxDdpfSupportedPFs@@3PAU_D3DX_FORMATDESC@@A
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: ??_C@_0BH@DEBO@Invalid?5surface?5format?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 42
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 72
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 78
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 104
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

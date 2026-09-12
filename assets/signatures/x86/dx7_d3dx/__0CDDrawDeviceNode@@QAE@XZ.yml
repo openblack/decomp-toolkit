@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: ef09b2a418fa2601764966cc24aab8bde3927a8b
+  signature: i//B/zP/yf+J/wj/if9I/2D/if9I/2T/if9I/2j/x/9A/1z/AAAAAAAAAACJ/0j/bP+J/0j/VP+J/0j/WP+J/0j/BP+J/0j/CP+J/0j/SP+J/0j/TP+J/0j/UP+J/0j/IP+J/0j/JP/H/0D/cP8B/wD/AP8A/4n/SP84/4n/SP88/4n/SP9E/4n/SP9A/4n/SP8o/4n/SP8s/4n/SP8w/4n/SP80/8P/
+  symbols:
+  - kind: Function
+    name: ??0CDDrawDeviceNode@@QAE@XZ
+    size: 84
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CVideoModeList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 4fac189824758014fad4832b73eabdcee7a7bd86
+  signature: U/9W/1f/i//x/+j/AAAAAAAAAACN/17/XP8z////i//L/4n/Pv/o/wAAAAAAAAAAx/8D/wAAAAAAAAAAif97/xD/if9+/1T/if9+/1j/if9+/wT/if9+/wj/if9+/0j/if9+/0z/if9+/1D/if9+/yD/if9+/yT/if9+/zj/if9+/zz/if9+/0T/if9+/0D/if9+/yj/if9+/yz/if9+/zD/if9+/zT/x/9G/3D/Af8A/wD/AP+L/8b/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CDDrawDeviceNode@@QAE@XZ
+    size: 97
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$ListT@VCVideoModeNode@@@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CVideoModeList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 6
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 26
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

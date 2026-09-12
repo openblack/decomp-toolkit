@@ -1,0 +1,166 @@
+- symbol: 0
+  hash: 3a31857c0d7cd5a94043504d79433e2caff668f3
+  signature: Vf+L/+z/gf/s/xz/Af8A/wD/9v9F/wz/EP9T/1b/V/+L/9n/dP8L/4P/ff8U/wD/df8Y////Q/84/+v/E/+D/33/FP8A/3T/A////0v/OP+D/3v/OP8A/w//hf9H/wH/AP8A/4P/ff8Q/wD/D/+E/8T/AP8A/wD/jf+F/+T//v//////x/+F/+T//v//////lP8A/wD/AP9Q////Ff8AAAAAAAAAAIP/vf/o//7//////wT/df8Q/4P/vf/s//7//////wD/d/8N/4P/vf/o//7//////wT/D/+G/47/AP8A/wD/g/+9//T//v//////Af90/xL/g/+9/+j//v//////BP92/3z/g/+9//T//v//////Av91/3P/i/9D/yD/aP+A/wD/AP8A////df8Q/4v/CP9Q////Uf9Q/4X/wP99/1T/if9F//j/v/8AAAAAAAAAAIP/yf///zP/wP/y/67/9//R/yv/+f+N/5X/eP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/eP////////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/eP/////////H/0X//P9T/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAg/99/wj/AP90/wT/gP9N/w3/Af///3X/DP+L/0P/IP///3X/CP+L/wj/UP///1H/UP+F/8D/ff9U/4n/Rf/4/7//AAAAAAAAAACD/8n///8z/8D/8v+u//f/0f8r//n/jf+V/3j/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3j/////////g//h/wP/8/+k/1n/jf+1/3j/////////jf+9/3j/////////x/9F//z/W/8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/Rf8I/4n/Q/9A/4v/Rf8Q/4n/Q/9E/4v/Rf8M/4n/Q/88/1//Xv9b/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ?SetDDCoopLevel@CDDrawDeviceNode@@QAEXPAUHWND__@@K0H@Z
+    size: 384
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetVersionExA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0ED@CIDB@CDDrawDeviceNode?5?9?5SetCooperativ@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CO@ELPE@CDDrawDeviceNode?5?9?5SetCooperativ@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 79
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 166
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 234
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 242
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 279
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 347
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 355
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: 0e62d2d9c12a025a705e20fb2d937fab9e4de0d5
+  signature: Vf+L/+z/gf/s/6T/Af8A/wD/U/9W/1f/i//Z/zP///85/3v/IP91/xT/aP8AAAAAAAAAAGr/Mf9o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M//b/Rf8M/xD/dP8K/zn/ff8U/3X/Fv///0P/OP/r/xH/Of99/xT/dP8D////S/84/zn/e/84/w//hf9o/wH/AP8A/zn/ff8Q/w//hP/Z/wD/AP8A/43/hf/k//7//////8f/hf/k//7//////5T/AP8A/wD/UP///xX/AAAAAAAAAACD/73/6P/+//////8E/3X/D/85/73/7P/+//////93/w3/g/+9/+j//v//////BP8P/4b/pP8A/wD/AP+D/73/9P/+//////8B/3T/Gv+D/73/6P/+//////8E/w//hv+O/wD/AP8A/4P/vf/0//7//////wL/D/+F/4H/AP8A/wD/i/9D/yD/aP+A/wD/AP8A////df8Q/4v/CP9Q////Uf9Q/4v/8P87//f/ff9h/43/jf94/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/4n/df/4//L/rv/3/9H/K//5/43/lf94/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9c//7//////4P/4f8D//P/pP9Z/43/tf94/////////43/vf9c//7//////8f/Rf/8/1P/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAAAz////Of99/wj/dP8E/4D/Tf8N/wH///91/wz/i/9D/yD///91/wj/i/8I/1D///9R/1D/i//w/zv/9/99/1//jf+N/3j/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/if91//j/8v+u//f/0f8r//n/jf+V/3j/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/1z//v//////g//h/wP/8/+k/1n/jf+1/3j/////////jf+9/1z//v//////x/9F//z/W/8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/Rf8I/4n/Q/9A/4v/Rf8Q/4n/Q/9E/4v/Rf8M/4n/Q/88/1//Xv9b/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ?SetDDCoopLevel@CDDrawDeviceNode@@QAEXPAUHWND__@@K0H@Z
+    size: 441
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_05OEGI@m_pDD?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@OFOJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetVersionExA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0ED@CIDB@CDDrawDeviceNode?5?9?5SetCooperativ@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CO@ELPE@CDDrawDeviceNode?5?9?5SetCooperativ@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 34
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 102
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 201
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 206
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 277
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 285
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 328
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 333
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 404
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 412
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

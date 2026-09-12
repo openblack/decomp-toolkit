@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: dc94ed9c3316bd37f98bf624b9342b0b4115dd5d
+  signature: i/9E/yT/CP+F/8D/dP8D/4P/IP8A/4v/TP8k/wT/hf/J/3T/EP+F/8D/dP8M/4v/Ef9Q/2j/AAAAAAAAAABR////Ev/D/7j/uf8L/3f/yP/D/w==
+  symbols:
+  - kind: Function
+    name: ?GetDDFromD3D@@YAJPAUIDirect3D7@@PAPAUIDirectDraw7@@@Z
+    size: 41
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _IID_IDirectDraw7
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 27
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 7c9fc028645a10d947069ed07a406a629f0bcd58
+  signature: Vf+L/+z/i/9F/wz/hf/A/3T/A/+D/yD/AP+L/03/CP+F/8n/dP8R/4X/wP90/w3/i/8R/1D/aP8AAAAAAAAAAFH///8S/13/w/+4/7n/C/93/8j/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?GetDDFromD3D@@YAJPAUIDirect3D7@@PAPAUIDirectDraw7@@@Z
+    size: 44
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _IID_IDirectDraw7
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

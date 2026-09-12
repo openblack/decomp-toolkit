@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 20b92df0b103a98eaf1a2345f23790b12ae177f8
+  signature: x/8B/wAAAAAAAAAAi/9J/wj/hf/J/3T/B/9R/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: ??1CD3DXMatrixStack@@QAE@XZ
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CD3DXMatrixStack@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 15
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

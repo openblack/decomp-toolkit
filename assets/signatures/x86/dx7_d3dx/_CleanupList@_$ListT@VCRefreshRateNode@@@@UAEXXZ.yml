@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: a828690a21883b2d7014854d3b49c93cff1c59af
+  signature: Vv9X/4v/+f+L/3f/DP+F//b/dP8N/4v/xv+L/zb/UP/o/wAAAAAAAAAAWf/r/+//g/9n/wz/AP+D/2f/CP8A/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCRefreshRateNode@@@@UAEXXZ
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3CD3duAlloc@@SAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: d8a0221b68b777e07a5665334c8e654de02ea751
+  signature: Vv9X/4v/+f+L/3f/DP+F//b/dP8R/4v/xv+L/zb/hf/A/3T/9P9Q/+j/AAAAAAAAAABZ/+v/6/+D/2f/DP8A/4P/Z/8I/wD/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCRefreshRateNode@@@@UAEXXZ
+    size: 39
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

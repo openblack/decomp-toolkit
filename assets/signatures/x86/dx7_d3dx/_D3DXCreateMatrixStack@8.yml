@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 15b3b4a096141806a8764af2d8f03dbe155a66d8
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABT/4v/Xf8M/1b/V/+F/9v/df8H/7j/uf8L/3f/yP/r/0z/av8U/+j/AAAAAAAAAABZ/4v/yP+J/03/DP+D/2X//P8A/4X/yf90/wn/6P8AAAAAAAAAAIv/8P/r/wL/M//2/4P/Tf/8////hf/2/3X/B/+4/7j/C/93/8j/6/8d/2r/EP+L/87/6P8AAAAAAAAAAIv/+P+F////ff8K/4v/Bv9W////UP8I/4v/x//r/wT/if8z/zP/wP+L/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXCreateMatrixStack@8
+    size: 120
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3DXMatrixStack@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Initialize@CD3DXMatrixStack@@QAEJH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 49
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 111
+    kind: x86_abs32
+    symbol: 6
+    addend: 0

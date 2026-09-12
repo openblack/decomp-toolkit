@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: da09e78f1fb78d930809076aec549c9ebf3877d4
+  signature: Vf+L/+z/g//s/yD/Vv+L/3X/CP9X/2r/CP9Z/43/ff/g//P/pf9m//f/Rf/k/zj/GP91/zD///91/wj/6P8AAAAAAAAAAIv/Vf8M/zP/9v+L/wr/a//J/1z/gf/B/wAAAAAAAAAAO/8B/3T/Cf9G/4P/wf8E/4P//v8X/3L/8/85/3L/CP92/wb/if9y/wj/if9C/wT/av8B/1j/X/9e/8n/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?_d3dxFindTextureCallback@@YGJPAU_DDPIXELFORMAT@@PAX@Z
+    size: 84
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_rgrgSurfaceFormatMatch@@3PAY0BH@W4_D3DX_SURFACEFORMAT@@A
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 31
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 47
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: f13622334d821890ea3f4d831788ef3e72371b3f
+  signature: Vf+L/+z/g//s/xj/i/9F/xD/Vv+L/3X/DP9X/4v/ff8I/9n/Bv/Y/yD/2f9d/+j/2f9G/wT/2P9g/wT/2f9d/+z/2f9G/wj/2P9g/wj/i/9F/xT/2f9d//D/2f8G/9j/IP/Z/13/9P/Z/0b/BP/Y/2D/BP/Z/13/+P/Z/0b/CP/Y/2D/CP+N/0X/9P9Q/43/Rf/o/1D/V//Z/13//P/o/wAAAAAAAAAAg//E/wz/V/9X/+j/AAAAAAAAAADZ/0f/BP/Y/07/BP/Z/0f/CP/Y/07/CP+L/8f/3v/B/9n/Bv/Y/w//3v/B/9n/4P/Z/1//DP9f/17/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXPlaneFromPoints@16
+    size: 127
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXVec3Cross@@YAPAUD3DXVECTOR3@@PAU1@PBU1@1@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3Normalize@8
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 80
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 918d9416e1f3161b133ecd0100a6a55fc764bd50
+  signature: Vf+L/+z/g//s/xj/Vv9X/4v/ff8I/4X///90/3z/i/91/wz/hf/2/3T/df+L/03/EP+F/8n/dP9u/4v/Rf8U/4X/wP90/2f/2f8G/9j/If/Z/13/6P/Z/0b/BP/Y/2H/BP/Z/13/7P/Z/0b/CP/Y/2H/CP/Z/13/8P/Z/wb/2P8g/9n/Xf/0/9n/Rv8E/9j/YP8E/9n/Xf/4/9n/Rv8I/9j/YP8I/43/Rf/0/1D/jf9F/+j/UP9X/9n/Xf/8/+j/AAAAAAAAAACD/8T/DP9X/1f/6P8AAAAAAAAAANn/R/8E/9j/Tv8E/9n/R/8I/9j/Tv8I/4v/x//e/8H/2f8G/9j/D//e/8H/2f/g/9n/X/8M/+v/Av8z/8D/X/9e/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXPlaneFromPoints@16
+    size: 147
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXVec3Cross@@YAPAUD3DXVECTOR3@@PAU1@PBU1@1@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3Normalize@8
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 96
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

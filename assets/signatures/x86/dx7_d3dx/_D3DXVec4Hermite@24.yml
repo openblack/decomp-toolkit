@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 42e26763427a4da7eb199019579eb232495a9881
+  signature: Vf+L/+z/Uf9R/9n/Rf8c/9j/Tf8c/4v/Tf8U/4v/Vf8Y/1b/i/91/wz/2f/A/9j/Tf8c/1f/i/99/xD/i/9F/wj/2f/A/9j/Df8AAAAAAAAAANn/wv/Y/w3/AAAAAAAAAADY/+n/2P8t/wAAAAAAAAAA2f9d//z/2f/C/9z/wP/Y/+r/2P9F/xz/2f9d//j/2f/C/9j/Df8AAAAAAAAAANj/6f/Z/13/HP/d/9j/3v/h/9n/Rf8c/9j/Cf/Z/8H/2P8K/97/wf/Z/0X//P/Y/w7/3v/B/9n/Rf/4/9j/D//e/8H/2f8Y/9n/Qf8E/9j/Tf8c/9n/Qv8E/9j/yv/e/8H/2f9G/wT/2P9N//z/3v/B/9n/R/8E/9j/Tf/4/97/wf/Z/1j/BP/Z/0H/CP/Y/03/HP/Z/0L/CP/Y/8r/3v/B/9n/Rv8I/9j/Tf/8/97/wf/Z/0f/CP/Y/03/+P/e/8H/2f9Y/wj/2f9B/wz/2P9N/xz/2f9C/wz/2P/K/97/wf/Z/0b/DP/Y/03//P/e/8H/2f9H/wz/2P9N//j/X/9e/97/wf/Z/1j/DP/d/9j/yf/C/xj/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXVec4Hermite@24
+    size: 220
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41921
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41922
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 37
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 76
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 54ae32de60a783c210cdb67a0a371053b6776fcb
+  signature: Vf+L/+z/i/9F/wj/Vv+F/8D/V/8P/4T/7v8A/wD/AP+L/33/DP+F////D/+E/+P/AP8A/wD/i/91/xD/hf/2/w//hP/Y/wD/AP8A/4v/Vf8U/4X/0v8P/4T/zf8A/wD/AP+L/03/GP+F/8n/D/+E/8L/AP8A/wD/2f9F/xz/2P9N/xz/2f/A/9j/Tf8c/9n/wP/Y/w3/AAAAAAAAAADZ/8L/2P8N/wAAAAAAAAAA2P/p/9j/Lf8AAAAAAAAAANn/Xf8M/9n/wv/c/8D/2P/q/9j/Rf8c/9n/Xf8c/9n/wv/Y/w3/AAAAAAAAAADY/+n/2f9d/wj/3f/Y/97/4f/Z/0X/DP/Y/w//2f9F/xz/2P8O/97/wf/Z/0X/CP/Y/wr/3v/B/9n/wf/Y/wn/3v/B/9n/GP/Z/0f/BP/Y/03/DP/Z/0b/BP/Y/03/HP/e/8H/2f9C/wT/2P9N/wj/3v/B/9n/Qf8E/9j/yv/e/8H/2f9Y/wT/2f9G/wj/2P9N/xz/2f9C/wj/2P9N/wj/3v/B/9n/R/8I/9j/Tf8M/97/wf/Z/0H/CP/Y/8r/3v/B/9n/WP8I/9n/Rv8M/9j/Tf8c/9n/Qv8M/9j/Tf8I/97/wf/Z/0f/DP/Y/03/DP/e/8H/2f9B/wz/2P/K/97/wf/Z/1j/DP/d/9j/6/8C/zP/wP9f/17/Xf/C/xj/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXVec4Hermite@24
+    size: 262
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42040
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42041
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 75
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 114
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

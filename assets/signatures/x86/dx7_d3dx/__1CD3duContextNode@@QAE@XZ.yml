@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 252297bcd519a2fcf7ee02ef1d1e6f8a305bae17
+  signature: Vv+L/3H/BP+F//b/dP8J/4v/zv/o/wAAAAAAAAAA6/8C/zP/9v9W/+j/AAAAAAAAAABZ/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??1CD3duContextNode@@QAE@XZ
+    size: 28
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CD3duContext@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

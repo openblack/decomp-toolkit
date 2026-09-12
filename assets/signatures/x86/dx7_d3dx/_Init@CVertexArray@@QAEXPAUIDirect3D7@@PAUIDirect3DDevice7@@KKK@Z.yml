@@ -1,0 +1,169 @@
+- symbol: 0
+  hash: b8844ad4b9757816e6aa3aac577e5c34e701f14c
+  signature: Vf+L/+z/gf/s/4j/AP8A/wD/i/9F/wj/U/9W/1f/hf/A/4v/2f90/w7/if9D/2j/i/8I/1D///9R/wT/6f/B/wD/AP8A/4v/Rf8M/4X/wP90/2L/i/8I/43/U/9o/1L/UP///1H/HP+F/8D/D/+N/6j/AP8A/wD/if9F//j/v/8AAAAAAAAAAIP/yf///zP/wP/y/67/9//R/yv/+f+N/5X/eP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/eP////////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/eP/////////H/0X//P89/wD/AP8A//P/pf9o/wAAAAAAAAAA6/9S/7//AAAAAAAAAACD/8n///8z/8D/jf+V/3j/////////8v+u//f/0f8r//n/x/9F//j/uf8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/eP////////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/eP/////////H/0X//P9F/wD/AP8A//P/pf9o/wAAAAAAAAAAUP/o/wAAAAAAAAAAi/9F/xD/g/9j/yz/AP+D/2P/GP8A/43/c/9Q/4n/Q/8M/zP/wP+L//7/q/+r/4v/Rf8U/1D/if9D/wT/6P8AAAAAAAAAAIn/Q/8Y/4v/Q/8E/8H/6P8I/1n/g//g/w//av8A/4n/Q/8s/1j/dv8K/8b/BP8w/wj/QP87/0P/LP9y//b/i/9D/wT/i//I/4D/4f8C//b/2f8b/8n/g//h//z/g//B/xD/qP8Q/3T/Bv+J/0v/IP+D/8H/DP+o/0D/dP8G/4n/S/8k/4P/wf8E/6j/gP90/wb/if9L/yj/g//B/wT/g/97/yz/AP92/yX/av+w/4v/xv9e/43/U/8w/yv/8/+A/zj/AP91/wP/xv8A/wj/if8K/4P/wv8E/w//tv84/wP/z/9A/43/PP8G/zv/e/8s/3L/5f+L/0P/DP9q/wD/if9D/2T/i/9D/wT/if9D/2D/i/9D/2j/x/9D/1z/AP8I/wD/AP9T/4v/CP+D/8P/WP9T/1D///9R/xT/hf/A/33/VP+J/0X/+P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf94/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf94/////////4P/4f8D//P/pP9Z/43/tf94/////////43/vf94/////////8f/Rf/8/3v/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABf/17/W//J/8L/FP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Init@CVertexArray@@QAEXPAUIDirect3D7@@PAUIDirect3DDevice7@@KKK@Z
+    size: 515
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DD@HGFL@CVertexArray?3?3Init?5?9?5Could?5not?5g@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Object
+    name: ??_C@_0CC@CKMO@CVertexArray?3?3Init?5?9?5pD3D?5is?5NUL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3DXGetFVFVertexSize@@YAKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CH@JLAH@CVertexArray?3?3Init?5?9?5error?5creat@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 64
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 134
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 141
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 218
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 224
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 259
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 428
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 496
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 504
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: 67cc54eda09b26167f1580e6e576a70d5ab4f93a
+  signature: Vf+L/+z/gf/s/xD/Af8A/wD/i/9F/wj/U/9W/1f/hf/A/4v/2f90/w7/if9D/2j/i/8I/1D///9R/wT/6f/Z/wD/AP8A/4v/Rf8M/4X/wP90/2//i/8I/43/U/9o/1L/UP///1H/HP+L//D/hf/2/w//jf++/wD/AP8A/43/jf94/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/4n/df/4//L/rv/3/9H/K//5/43/lf94/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/w//7//////4P/4f8D//P/pP9Z/43/tf94/////////43/vf/w//7//////8f/Rf/8/z3/AP8A/wD/8/+l/2j/AAAAAAAAAADr/13/jf+N/3j/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/3j/////////8v+u//f/0f8r//n/x/9F//j/uf8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/8P/+//////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/8P/+///////H/0X//P9F/wD/AP8A//P/pf9o/wAAAAAAAAAAUP/o/wAAAAAAAAAAi/9F/xD/g/9j/yz/AP+D/2P/GP8A/43/c/9Q/4n/Q/8M/zP/wP+L//7/q/+r/4v/Rf8U/1D/if9D/wT/6P8AAAAAAAAAAIn/Q/8Y/4v/Q/8E/8H/6P8I/1n/g//g/w//av8A/4n/Q/8s/1j/dv8K/8b/BP8w/wj/QP87/0P/LP9y//b/i/9D/wT/i//I/4D/4f8C//b/2f8b/8n/g//h//z/g//B/xD/qP8Q/3T/Bv+J/0v/IP+D/8H/DP+o/0D/dP8G/4n/S/8k/4P/wf8E/6j/gP90/wb/if9L/yj/g//B/wT/g/97/yz/AP92/yX/av+w/4v/xv9e/43/U/8w/yv/8/+A/zj/AP91/wP/xv8A/wj/if8K/4P/wv8E/w//tv84/wP/z/9A/43/PP8G/zv/e/8s/3L/5f+L/0P/DP9q/wD/if9D/2T/i/9D/wT/if9D/2D/i/9D/2j/x/9D/1z/AP8I/wD/AP9T/4v/CP+D/8P/WP9T/1D///9R/xT/i//w/4X/9v99/1//jf+N/3j/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/if91//j/8v+u//f/0f8r//n/jf+V/3j/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F//D//v//////g//h/wP/8/+k/1n/jf+1/3j/////////jf+9//D//v//////x/9F//z/e/8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAF//Xv9b/8n/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: ?Init@CVertexArray@@QAEXPAUIDirect3D7@@PAUIDirect3DDevice7@@KKK@Z
+    size: 552
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DD@HGFL@CVertexArray?3?3Init?5?9?5Could?5not?5g@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Object
+    name: ??_C@_0CC@CKMO@CVertexArray?3?3Init?5?9?5pD3D?5is?5NUL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3DXGetFVFVertexSize@@YAKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CH@JLAH@CVertexArray?3?3Init?5?9?5error?5creat@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 69
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 74
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 147
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 160
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 165
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 242
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 248
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 283
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 457
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 462
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 533
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 541
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

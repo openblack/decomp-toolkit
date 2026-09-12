@@ -1,0 +1,119 @@
+- symbol: 0
+  hash: 687d462ed9f285dd9e382bc9ca09069a25e0d46d
+  signature: Vf+L/+z/gf/s/4j/BP8A/wD/U/+L/13/DP8z/9L/M//A/1b/O//a/1f/if9V//z/uf8F/wH/AP8A/w//hP9R/wL/AP8A/4H/+////wD/AP8A/37/B/87/9n/f/8D/2r/Af9Y/4v/df8I/zv/wv90/wf/x/9F//z/Af8A/wD/AP8z/8D/O//a/3T/Dv+B//v/Af8B/wD/AP9+/xT/O//Z/3//EP/r/wv/9v9G/wX/QP90/wj/Of9W/xD/dv8D/2r/Af9Y/zv/wv90/wT/g/9N//z/Av9q/x//M//A/1n/jf+9/3j/////////8/+r/zv/2v/H/4X/eP////////98/wD/AP8A/4n/Vf8M/4n/Vf/0/4n/Vf/4/w//jv8q/wH/AP8A/4P/+/8F/37/Q/+D//v/B/90/xT/D/+O/xr/Af8A/wD/g//7/wr/fv8z/4P/+/8V/w//hf8M/wH/AP8A/2r/EP+//wAAAAAAAAAAWf+N/3X/GP8z/8D/8/+m/w//hP/0/wD/AP8A/2r/EP+//wAAAAAAAAAAWf+N/3X/GP8z/8D/8/+m/w//hP/f/wD/AP8A/2r/EP+//wAAAAAAAAAAWf+N/3X/GP8z/8D/x/+F/3z/////////B/8Q/wD/AP/z/6b/dP8Y/2r/EP+//wAAAAAAAAAAWf+N/3X/GP8z/8D/x/9F/+D/AP84/wD/AP/z/6b/df8H/8f/Rf/g/wD/cP8A/wD/i/91/wj/av9A/1j/jf99/8D/av8I/4n/Rf+A/1n/if9F/4T/8/+l/4v/df8U/43/Tf8M/2r/AP9R/4v/Bv+N/43/eP////////9R/1b///9Q/xj/hf/A/3z/d/+L/0X/DP+N/5X/eP////////9S/1D/i/8I////Uf9Y/4X/wP98/2P/9v+F/33/////////EP90/z7/9v9F/8T/IP90/zj/uf8A/wH/AP8A/zP/wP+N/73/eP/7//////9q/wD/8/+r/4v/Bv+N/03/+P9R/43/jf94//v//////1H/av8E/1b///9Q/xT/hf/A/3z/LP+L/0X/DP///3X/+P+L/wj/UP///1H/fP+F/8D/fP8c/4v/Rf8Q/43/Vf/0/1L/jf9V/xj///91/wz/i/8I/1L/UP///1H/EP+F/8D/fP8E/4P/Tf/8/yD/i/91/wj/i/9F//T/hf/A/3T/Cv+L/wj/UP///1H/CP+D/2X/9P8A/4v/Rf8M/4X/wP90/wr/i/8I/1D///9R/wj/g/9l/wz/AP+L/0X/+P+F/8D/dP8G/4v/CP9Q////Uf8I/zP/wP+F/9v/dP8d/37/JP+D//v/Av9+/xz/g//7/wP/fv8a/4P/+/8K/37/Ev+D//v/Ef9+/xD/g//7/xX/f/8L/+v/Bv/2/0b/Bf9k/3X/A/9q/wH/WP+F/8D/dP8E/4P/Tf/8/wT/M//A/4X/2/90/wz/g//7/wz/fv8Q/4P/+/8P/3//C//r/wb/9v9G/wb/DP90/wP/av8B/1j/hf/A/3T/BP+D/03//P8I/zP/wP+F/9v/dP8R/4P/+/8L/3T/Ev+D//v/Df9+/xD/g//7/w//f/8L/+v/Bv/2/0b/Bv8G/3T/A/9q/wH/WP+F/8D/dP8E/4P/Tf/8/xD/i/9F//z/X/9e/1v/yf/C/yD/AP+L/3X/CP/2/0b/Bf8k/w//hP+0//3//////zn/Vv8M/w//hv+r//3//////2r/Af9Y/+n/o//9//////8=
+  symbols:
+  - kind: Function
+    name: ?DetermineD3DXSurfaceClasses@CD3duGlobals@@QAEKPAU_DDPIXELFORMAT@@W4_D3DX_SURFACEFORMAT@@PAUIDirect3D7@@PAUIDirectDraw7@@U_GUID@@@Z
+    size: 658
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _IID_IDirect3DNullDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRefDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DHALDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DTnLHalDevice
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 179
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 200
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 221
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 248
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+- symbol: 0
+  hash: 26fa4f061fa523f6ea9936d5ef4dda51cc011b30
+  signature: Vf+L/+z/gf/s/4j/BP8A/wD/U/+L/13/FP9W/1f/i/99/wj/hf///3T/Cv+D/33/EP8A/3T/BP+F/9v/df8X/2j/AAAAAAAAAABo/yn/Af8A/wD/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+L/3X/DP+D/2X/FP8A/zP/wP+5/wX/Af8A/wD/hf/2/3T/Dv+B//7///8A/wD/AP9+/xX/O//x/3//Ef/r/wz/9v9H/wX/JP90/wn/g/9//wz/AP92/wP/av8B/1j/hf/A/3T/B//H/0X/FP8B/wD/AP8A/zP/wP+F//b/dP8O/4H//v8B/wH/AP8A/37/Ff87//H/f/8R/+v/DP/2/0f/Bf9A/3T/Cf+D/3//EP8A/3b/A/9q/wH/WP+F/8D/dP8E/4P/Tf8U/wL/av8f/zP/wP9Z/43/vf94//////////P/q/87//D/x/+F/3j/////////fP8A/wD/AP+J/0X//P+J/0X/9P+J/0X/+P8P/47/J/8B/wD/AP+D//7/Bf9+/0P/g//+/wf/dP8U/w//jv8X/wH/AP8A/4P//v8K/37/M/+D//7/Ff8P/4X/Cf8B/wD/AP9q/xD/v/8AAAAAAAAAAFn/jf91/xj/M//A//P/pv8P/4T/8f8A/wD/AP9q/xD/v/8AAAAAAAAAAFn/jf91/xj/M//A//P/pv8P/4T/3P8A/wD/AP9q/xD/v/8AAAAAAAAAAFn/jf91/xj/M//A/8f/hf98/////////wf/EP8A/wD/8/+m/3T/GP9q/xD/v/8AAAAAAAAAAFn/jf91/xj/M//A/8f/Rf/g/wD/OP8A/wD/8/+m/3X/B//H/0X/4P8A/3D/AP8A/4v/df8I/2r/QP9Y/43/ff/A/2r/CP+J/0X/gP9Z/4n/Rf+E/4v/A/9q/wD/8/+l/43/Tf/8/1H/jf+N/3j/////////Uf9T////UP8Y/4X/wP98/3f/i/9F//z/jf+V/3j/////////Uv9Q/4v/CP///1H/WP+F/8D/fP9j//b/hf99/////////xD/dP8+//b/Rf/E/yD/dP84/7n/AP8B/wD/AP8z/8D/jf+9/3j/+///////av8A//P/q/+L/wP/jf9N//j/Uf+N/43/eP/7//////9R/2r/BP9T////UP8U/4X/wP98/yz/i/9F//z///91//j/i/8I/1D///9R/3z/hf/A/3z/HP+L/0X/EP+N/1X/9P9S/43/Vf8Y////df/8/4v/CP9S/1D///9R/xD/hf/A/3z/BP+D/03/FP8g/4v/df8M/4v/Rf/0/4X/wP90/wr/i/8I/1D///9R/wj/g/9l//T/AP+L/0X//P+F/8D/dP8K/4v/CP9Q////Uf8I/4P/Zf/8/wD/i/9F//j/hf/A/3T/Bv+L/wj/UP///1H/CP8z/8D/hf/2/3T/Hf9+/yf/g//+/wL/fv8f/4P//v8D/37/Hf+D//7/Cv9+/xX/g//+/xH/fv8T/4P//v8V/3//Dv/r/wn/i/9N/wj/9v9B/wX/ZP91/wP/av8B/1j/hf/A/3T/BP+D/03/FP8E/zP/wP+F//b/dP8M/4P//v8M/37/E/+D//7/D/9//w7/6/8J/4v/Tf8I//b/Qf8G/wz/dP8D/2r/Af9Y/4X/wP90/wT/g/9N/xT/CP8z/8D/hf/2/3T/Ef+D//7/C/90/xX/g//+/w3/fv8T/4P//v8P/3//Dv/r/wn/i/9N/wj/9v9B/wb/Bv90/wP/av8B/1j/hf/A/3T/BP+D/03/FP8Q/4v/Rf8U/1//Xv9b/8n/wv8g/wD/
+  symbols:
+  - kind: Function
+    name: ?DetermineD3DXSurfaceClasses@CD3duGlobals@@QAEKPAU_DDPIXELFORMAT@@W4_D3DX_SURFACEFORMAT@@PAUIDirect3D7@@PAUIDirectDraw7@@U_GUID@@@Z
+    size: 684
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BF@MHOH@pddpf?5?$CG?$CG?5pD3D?5?$CG?$CG?5pDD?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@BMII@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DNullDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRefDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DHALDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DTnLHalDevice
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 48
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 229
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 250
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 271
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 298
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

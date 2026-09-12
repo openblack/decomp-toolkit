@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 196236a0e878143213f647946c4175658d28eba1
+  signature: Vf+L/+z/gf/s/4D/AP8A/wD/2f9F/xT/Vv9X/1H/jf9F/8D/2f8c/yT/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/1D/6P8AAAAAAAAAAIv/df8I/43/Rf/A/1D/i/9G/wz/wf/g/wb/A/9G/wj/UP+N/0X/gP9Q/+j/AAAAAAAAAACL/37/DP9q/xD/wf/n/wb/A/9+/wj/Wf+N/3X/gP8z/8D/8/+l/1//Xv/J/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: ?RotateYawPitchRoll@CD3DXMatrixStack@@UAGJMMM@Z
+    size: 92
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixRotationYawPitchRoll@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 37
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

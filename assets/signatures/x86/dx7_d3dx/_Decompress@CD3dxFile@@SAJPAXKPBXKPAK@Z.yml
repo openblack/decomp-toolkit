@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 3258d01603f3e866413be44c8980e629815c808c
+  signature: Vf+L/+z/i/9N/wj/U/9W/1f/hf/J/3T/Yf+L/1X/EP+F/9L/dP9a/4v/df8M/4v/Xf8U/wP/8f8D/9r/O//O/4v/+f+L/8L/if9d/wj/c/82/zv/Rf8I/3P/Sv8P/7b/CP+B/8H/AP8B/wD/AP9A/4P/+f8B/3b/Hv87//7/c/8e//b/wf8B/3T/Df87/0X/CP9z/y3/iv8Y/4j/H/9H/0D/6/8E/4D/J/8A/0f/0f/p/+v/3f87//7/cv/K/4v/Tf8Y/4X/yf90/wT/K//C/4n/Af8z/8D/6/8F/7j/V/8A/wf/gP9f/17/W/9d/8P/uP8F/0D/AP+A/+v/9P8=
+  symbols:
+  - kind: Function
+    name: ?Decompress@CD3dxFile@@SAJPAXKPBXKPAK@Z
+    size: 127
+    flags: 1
+    section: .text
+  relocations: []

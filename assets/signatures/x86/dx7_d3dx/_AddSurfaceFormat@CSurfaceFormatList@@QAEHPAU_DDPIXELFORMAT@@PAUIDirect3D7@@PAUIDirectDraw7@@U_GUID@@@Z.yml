@@ -1,0 +1,155 @@
+- symbol: 0
+  hash: c35b36609da31da6a28a06ce4b9db75d73155bb9
+  signature: Vf+L/+z/Uf9T/1b/V/+L//H/av8s/4n/df/8/+j/AAAAAAAAAACL/9j/M//S/zv/2v9Z/3T/FP9q/wj/M//A/1n/jf97/wj/if8T//P/q/+J/1P/BP+J/1P/KP/r/wL/M//b/zv/2v91/w3/i/8G/4v/zv+J/1b/BP///xD/M//A/+v/S/+L/3X/CP9q/wj/Wf+N/3v/CP///3X/CP/z/6X/6P8AAAAAAAAAAIP/7P8Q/43/df8U/4v//P+J/0P/BP///3X/EP+L/w3/AAAAAAAAAACl////df8M/6X/pf9Q////df8I/6X/6P8AAAAAAAAAAIv/df/8/4n/Q/8o/1P/i//O/4v/Bv///1D/BP9q/wH/WP+J/0b/BP9f/17/W//J/8L/HP8A/w==
+  symbols:
+  - kind: Function
+    name: ?AddSurfaceFormat@CSurfaceFormatList@@QAEHPAU_DDPIXELFORMAT@@PAUIDirect3D7@@PAUIDirectDraw7@@U_GUID@@@Z
+    size: 149
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DetermineD3DXSurfaceClasses@CD3duGlobals@@QAEKPAU_DDPIXELFORMAT@@W4_D3DX_SURFACEFORMAT@@PAUIDirect3D7@@PAUIDirectDraw7@@U_GUID@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 82
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 102
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 118
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: fb800894f5846b1f98726d93c1664baabcce2aa7
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1H/U/9W/1f/M////zn/ff8I/4v/8f+J/3X/8P91/xf/aP8AAAAAAAAAAGj/7v8C/wD/AP9o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/2r/LP/o/wAAAAAAAAAAWf+J/0X/7P87/8f/if99//z/dP8L/4v/yP/o/wAAAAAAAAAAi//Y/+v/Av8z/9v/g/9N//z///87/9//df8N/4v/Bv+L/87/if9+/wT///8Q/zP/wP/r/0v/i/91/wj/av8I/1n/jf97/wj///91/wj/8/+l/+j/AAAAAAAAAACD/+z/EP+N/3X/FP+L//z/if9D/wT///91/xD/i/8N/wAAAAAAAAAApf///3X/DP+l/6X/UP///3X/CP+l/+j/AAAAAAAAAACL/3X/8P+J/0P/KP9T/4v/zv+L/wb///9Q/wT/av8B/1j/if9G/wT/i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8L/HP8A/w==
+  symbols:
+  - kind: Function
+    name: ?AddSurfaceFormat@CSurfaceFormatList@@QAEHPAU_DDPIXELFORMAT@@PAUIDirect3D7@@PAUIDirectDraw7@@U_GUID@@@Z
+    size: 194
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43506
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_05PGAN@pddpf?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@BMII@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2CD3duAlloc@@SAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CSurfaceFormatNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DetermineD3DXSurfaceClasses@CD3duGlobals@@QAEKPAU_DDPIXELFORMAT@@W4_D3DX_SURFACEFORMAT@@PAUIDirect3D7@@PAUIDirectDraw7@@U_GUID@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 28
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 137
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 153
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 185
+    kind: x86_abs32
+    symbol: 11
+    addend: 0

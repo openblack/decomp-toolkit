@@ -1,0 +1,205 @@
+- symbol: 0
+  hash: ad6ccff7b906b41f0c703c9e75db71b16d3c355c
+  signature: Vf+L/+z/U/+L/13/CP9W/1f/av8v/zP/wP9Z/4v/+//z/6v/i/9F/yT/g//4////df8D/2r/Av9Y/4v/ff8M/4n/Q/8I/4v/Rf8g/zP/9v+J/0P/DP+L/0X/HP87//7/if9D/xD/D/+E/47/AP8A/wD/jf9D/yz/i//P/1D/6P8AAAAAAAAAADn/df8U/3T/Ef+L/3X/FP+N/3v/VP+l/6X/pf+l/4v/ff8M/zP/9v/r/xL/if9z/1j/if9z/1T/i/9H/xj/if9D/1z/i/9H/xT/if9D/2D/i/9H/zD/if9D/yj/i/9H/2D/if9D/yD/if9z/xT/if9z/zD/i/9H/wj/g//4/xL/dP8p/4P/+P8T/3T/JP+D//j/FP90/x//if9z/xz/i/9H/xz/if9D/yT/i/9H/wj/g//4/xH/dP8F/4P/+P8Q/3X/G//H/0P/IP8Q/wD/AP8A/+v/Ev+L/0f/XP+J/0P/HP+L/0f/GP+D/8D/A//B/+j/Av+J/0P/JP+L/0f/CP+J/0P/GP+L/3X/EP+F//b/D/+E/5X/AP8A/wD/jf9D/0z/i//O/1D/6P8AAAAAAAAAADP/yf85/03/GP90/xL/i/91/xj/jf97/2T/pf+l/6X/pf+L/33/DP+L/3X/EP/r/xL/if9L/2j/if9L/2T/i/9G/xj/if9D/2z/i/9G/xT/if9D/3D/i/9G/zD/if9D/0j/i/9G/2D/if9D/0D/x/9D/zT/Af8A/wD/AP+J/0v/UP+L/0b/CP+D//j/Ev90/yn/g//4/xP/dP8k/4P/+P8U/3T/H/+J/0v/PP+L/0b/HP+J/0P/RP+L/0b/CP+D//j/Ef90/wX/g//4/xD/df8b/8f/Q/9A/xD/AP8A/wD/6/8S/4v/Rv9c/4n/Q/88/4v/Rv8Y/4P/wP8D/8H/6P8C/4n/Q/9E/4v/Rv8I/4n/Q/84/4v/Q/9c/4v/U/9s/yv/Q/9U/yv/U/9k/zv/wv+J/0X/FP+J/1X/DP9//wL/i//C/0D/O/8F/wAAAAAAAAAAif9F/xj/fv84/6P/AAAAAAAAAADB/+D/A/9Q////Nf8AAAAAAAAAAOj/AAAAAAAAAABZ/4v/Vf8M/1n/o/8AAAAAAAAAAI3/SP8E/4P/4f/4/4n/Df8AAAAAAAAAAIv/Tf8Y/43/RP+I/wT/JP/4/6P/AAAAAAAAAACF////D/+E//v/AP8A/wD/hf/2/w//hP/z/wD/AP8A/4v/Q/9g/4v/S/9w/yv/Q/9Y/yv/S/9o/zn/Vf8U/4n/Rf8Q/4n/Tf8Y/3X/CP87/8H/df8E/zP/wP/r/wP/av8B/1j/if8D/4v/R/8I/4P/+P8Q/3T/Cf+D//j/Ef90/wT/M//J/+v/A/9q/wH/Wf+L/0b/CP+D//j/EP90/wn/g//4/xH/dP8E/zP/wP/r/wP/av8B/1j/M//S/zv/yP8P/5X/wv+L/8//if9T/wT/6P8AAAAAAAAAAIX/wP90/wb/g/97/yz/AP90/xH/i//O/+j/AAAAAAAAAACF/8D/dP8K/4P/e/9M/wD/df8E/zP/wP/r/3r/i/9D/2T/uf8A/wD/Af8A/4n/Q/90/4v/Q/9o/4n/Q/94/4v/Rf8U/zv/Rf8M/3T/D//B/+D/EP+Z//f/ff8M/4n/g/+Q/wD/AP8A/+v/Bv+J/4v/kP8A/wD/AP+L/0X/EP87/0X/GP90/w//wf/g/xD/mf/3/33/GP+J/4P/lP8A/wD/AP/r/wb/if+L/5T/AP8A/wD/i/+D/5D/AP8A/wD/i/9L/1T/0f/4/8H/4f8Q/wP/wf+L/0v/WP+J/4P/iP8A/wD/AP+L/4P/lP8A/wD/AP/R//j/wf/h/xD/A//B/4n/g/+M/wD/AP8A/2r/Af9Y/1//Xv9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?BuildBltData@@YAHAAUBLT_DATA@@PAVCSurfaceLock@@1PAUtagRECT@@2KKW4_D3DX_FILTERTYPE@@@Z
+    size: 718
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GetPalette@CSurfaceLock@@QAEHPAPAUtagPALETTEENTRY@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _BufferWidth$S42481
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _Buffer$S42482
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _SrcBuffer$S42483
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _DstBuffer$S42484
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ?IsPaletteIndexed@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 64
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 217
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 386
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 396
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 406
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 411
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 421
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 433
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 447
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 556
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 573
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+- symbol: 0
+  hash: 13e6b12605f31a25d5d3e0d100284329cae14112
+  signature: Vf+L/+z/U/+L/13/CP9W/1f/av8v/zP/wP9Z/4v/+//z/6v/i/9F/yT/g//4////df8D/2r/Av9Y/4v/ff8M/4n/Q/8I/4v/Rf8g/zP/9v+J/0P/DP+L/0X/HP87//7/if9D/xD/D/+E/47/AP8A/wD/jf9D/yz/i//P/1D/6P8AAAAAAAAAADn/df8U/3T/Ef+L/3X/FP+N/3v/VP+l/6X/pf+l/4v/ff8M/zP/9v/r/xL/if9z/1j/if9z/1T/i/9H/xj/if9D/1z/i/9H/xT/if9D/2D/i/9H/zD/if9D/yj/i/9H/2D/if9D/yD/if9z/xT/if9z/zD/i/9H/wj/g//4/xL/dP8p/4P/+P8T/3T/JP+D//j/FP90/x//if9z/xz/i/9H/xz/if9D/yT/i/9H/wj/g//4/xH/dP8F/4P/+P8Q/3X/G//H/0P/IP8Q/wD/AP8A/+v/Ev+L/0f/XP+J/0P/HP+L/0f/GP+D/8D/A//B/+j/Av+J/0P/JP+L/0f/CP+J/0P/GP+L/3X/EP+F//b/D/+E/5X/AP8A/wD/jf9D/0z/i//O/1D/6P8AAAAAAAAAADP/yf85/03/GP90/xL/i/91/xj/jf97/2T/pf+l/6X/pf+L/3X/EP+L/33/DP/r/xL/if9L/2j/if9L/2T/i/9G/xj/if9D/2z/i/9G/xT/if9D/3D/i/9G/zD/if9D/0j/i/9G/2D/if9D/0D/x/9D/zT/Af8A/wD/AP+J/0v/UP+L/0b/CP+D//j/Ev90/yn/g//4/xP/dP8k/4P/+P8U/3T/H/+J/0v/PP+L/0b/HP+J/0P/RP+L/0b/CP+D//j/Ef90/wX/g//4/xD/df8b/8f/Q/9A/xD/AP8A/wD/6/8S/4v/Rv9c/4n/Q/88/4v/Rv8Y/4P/wP8D/8H/6P8C/4n/Q/9E/4v/Rv8I/4n/Q/84/4v/Q/9c/4v/U/9s/yv/Q/9U/yv/U/9k/zv/wv+J/0X/FP+J/1X/DP9//wL/i//C/0D/O/8F/wAAAAAAAAAAif9F/xj/fv84/6P/AAAAAAAAAADB/+D/A/9Q////Nf8AAAAAAAAAAOj/AAAAAAAAAABZ/4v/Vf8M/1n/o/8AAAAAAAAAAI3/SP8E/4P/4f/4/4n/Df8AAAAAAAAAAIv/Tf8Y/43/RP+I/wT/JP/4/6P/AAAAAAAAAACF////D/+E/xD/Af8A/wD/hf/2/w//hP8I/wH/AP8A/4v/Q/9g/4v/S/9w/yv/Q/9Y/yv/S/9o/zn/Vf8U/4n/Rf8Q/4n/Tf8Y/3X/CP87/8H/df8E/zP/wP/r/wP/av8B/1j/if8D/4v/R/8I/4P/+P8Q/3T/Cf+D//j/Ef90/wT/M//J/+v/A/9q/wH/Wf+L/0b/CP+D//j/EP90/wn/g//4/xH/dP8E/zP/wP/r/wP/av8B/1j/M//S/zv/yP8P/5X/wv+L/8//if9T/wT/6P8AAAAAAAAAAIX/wP90/w3/g/97/yz/AP91/wf/aP8AAAAAAAAAAOv/Fv+L/87/6P8AAAAAAAAAAIX/wP90/xj/g/97/0z/AP91/xL/aP8AAAAAAAAAAGr/AP/o/wAAAAAAAAAAWf8z/8D/Wf/r/3r/i/9D/2T/uf8A/wD/Af8A/4n/Q/90/4v/Q/9o/4n/Q/94/4v/Rf8U/zv/Rf8M/3T/D//B/+D/EP+Z//f/ff8M/4n/g/+Q/wD/AP8A/+v/Bv+J/4v/kP8A/wD/AP+L/0X/EP87/0X/GP90/w//wf/g/xD/mf/3/33/GP+J/4P/lP8A/wD/AP/r/wb/if+L/5T/AP8A/wD/i/+D/5D/AP8A/wD/i/9L/1T/0f/4/8H/4f8Q/wP/wf+L/0v/WP+J/4P/iP8A/wD/AP+L/4P/lP8A/wD/AP/R//j/wf/h/xD/A//B/4n/g/+M/wD/AP8A/2r/Af9Y/1//Xv9b/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?BuildBltData@@YAHAAUBLT_DATA@@PAVCSurfaceLock@@1PAUtagRECT@@2KKW4_D3DX_FILTERTYPE@@@Z
+    size: 739
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GetPalette@CSurfaceLock@@QAEHPAPAUtagPALETTEENTRY@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _BufferWidth$S42492
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _Buffer$S42493
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _SrcBuffer$S42494
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _DstBuffer$S42495
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ?IsPaletteIndexed@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DC@GBH@Source?5is?5palettized?0?5but?5does?5n@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DH@KCKG@Destination?5is?5palettized?0?5but?5d@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 64
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 217
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 386
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 396
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 406
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 411
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 421
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 433
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 447
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 556
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 571
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 580
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 595
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 602
+    kind: x86_rel32
+    symbol: 10
+    addend: -4

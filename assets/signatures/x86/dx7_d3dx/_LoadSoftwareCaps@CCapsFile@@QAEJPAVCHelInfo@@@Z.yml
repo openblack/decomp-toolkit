@@ -1,0 +1,170 @@
+- symbol: 0
+  hash: 8fe9cb333b424ca4eb43959aa17615826218c796
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/DP9T/1b/i/91/wj/V/+L//n/hf/2/4n/ff/w/3X/Cv+4/7n/C/93/8j/6f/G/wH/AP8A/4v/z//o/wAAAAAAAAAAhf/A/w//hP+u/wH/AP8A/4v/z//o/wAAAAAAAAAAhf/A/3T/Ef9o/1P/V/8A/wD/UP+L/8//6P8AAAAAAAAAAIX/wP91/wj/av8B/1j/6f+T/wH/AP8A/1D/i//P/+j/AAAAAAAAAACF/8D/if9F/wj/D/+E/wv/Af8A/wD/i/9d/wj///91/wj/i/9N//D/6P8AAAAAAAAAAIv/yP+B/+n/Mv9E/wD/AP8P/4T/xf8A/wD/AP9J/3T/FP+B/+n/AP8A/1L/Rv90/wz/gf/p/wD/AP/8/wX/D/+F/8L/AP8A/wD/Pf8z/0T/AP8A/3T/MP89/zP/RP9S/0b/dP8Y/z3/M/9E/07/TP91/zH/i/+G/4T/Af8A/wD/jf+e/5D/Af8A/wD/if9F/+z/6/8g/4v/hv+A/wH/AP8A/43/nv+M/wH/AP8A/4n/Rf/s/+v/D/+L/4b/fP8B/wD/AP+N/57/iP8B/wD/AP+J/0X/7P8z////Of99/+z/dP91/zn/O/91/3H/aP8E/wH/AP8A/+j/AAAAAAAAAABZ/4n/Rf/o/zv/x/+J/33//P90/wn/i//I/+j/AAAAAAAAAADr/wL/M//A/4P/Tf/8////M//J/zv/x/+J/wP/D/+U/8H/hP/J/w//hf/Y/wD/AP8A/43/iP/0/wD/AP8A/1H/i/9N//D/UP+D/8D/CP9Q////df8I/+j/AAAAAAAAAACL//j/hf///3z/N/+L/wP/x/9A/wT/Af8A/wD/AP/r/xT/i/9N//D/av8A/1b///91/wj/6P8AAAAAAAAAAIv/+P+F////fP8Y////df8I/4v/Tf/w/+j/AAAAAAAAAACF/8D/if9F/wj/D/+F//j//v//////M////4v/Tf/w/+j/AAAAAAAAAACF/8D/dP9l/4v/vv+I/wH/AP8A/zP/2/87//v/if8e/3T/FP+L/8//6P8AAAAAAAAAAFf/6P8AAAAAAAAAAFn/if+e/4j/Af8A/wD/i/++/4z/Af8A/wD/O//7/3T/FP+L/8//6P8AAAAAAAAAAFf/6P8AAAAAAAAAAFn/if+e/4z/Af8A/wD/i/++/5D/Af8A/wD/O//7/3T/FP+L/8//6P8AAAAAAAAAAFf/6P8AAAAAAAAAAFn/if+e/5D/Af8A/wD/uP8F/0D/AP+A/+v/Av+L/8f/i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8L/BP8A/7//uP8L/3f/yP/p/3L/////////
+  symbols:
+  - kind: Function
+    name: ?LoadSoftwareCaps@CCapsFile@@QAEJPAVCHelInfo@@@Z
+    size: 519
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?IsOpen@CD3dxFile@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?FindVersion@CCapsFile@@IAEKXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetChild@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetId@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ''
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CHelNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Parse3D@CCapsFile@@IAEJKPAU_D3DDeviceDesc7@@PAPADPAVCSurfaceFormatList@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Parse2D@CCapsFile@@IAEJKPAU_DDCAPS_DX7@@PAPAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetSibling@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?WasCorrupted@CD3dxFile@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1CHelNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ''
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 118
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 246
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 264
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 312
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 343
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 360
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 381
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 406
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 412
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 436
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 442
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 466
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 472
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 500
+    kind: x86_abs32
+    symbol: 16
+    addend: 0

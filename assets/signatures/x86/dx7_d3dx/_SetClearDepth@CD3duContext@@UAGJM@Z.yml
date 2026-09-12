@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 4c8efb82247ba10ad79ba0e8e89db6da22a41504
+  signature: 2f9E/yT/CP+L/0T/JP8E/9n/mP+o/wD/AP8A/zP/wP/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?SetClearDepth@CD3duContext@@UAGJM@Z
+    size: 19
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: c54f3689f2a4b8fcf46ec3bafd79a8e832cf483f
+  signature: Vf+L/+z/2f9F/wz/i/9F/wj/2f+Y/6j/AP8A/wD/M//A/13/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?SetClearDepth@CD3duContext@@UAGJM@Z
+    size: 21
+    flags: 1
+    section: .text
+  relocations: []

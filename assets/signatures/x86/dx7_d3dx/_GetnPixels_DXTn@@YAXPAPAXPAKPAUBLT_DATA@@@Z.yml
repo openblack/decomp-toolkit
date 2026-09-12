@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2cbabedee8ca54aa11bc353446a195602c415add
+  signature: Vf+L/+z/Uf9R/1P/Vv+L/3X/EP+D/2X/EP8A/1f/i/+G/7T/AP8A/wD/i/++/6j/AP8A/wD/i/+e/6z/AP8A/wD/if9F//z/i/9F/wj/wf///xD/wf/7/xD/g/84/wD/dP9c/4v/Tf8M/4n/Rf8I/yv/yP+J/03/+P+L/03/EP9q/wH/WP/T/+D/hf9F//z/if9F/wz/df8y/43/Rv8U/1D/i//B/9H/6P8D/8P/UP+L/8H/g//g/wH/A//H/1D/6P8AAAAAAAAAAIv/AP+D/8T/DP+F/8D/df8I/4v/Rf8M/wn/Rf/8/+v/Cf+L/03/+P+L/1X/CP+J/wT/Ef+D/0X/CP8E////Rf8Q/4v/Rf8I/4P/OP8A/3X/r/+L/0X//P9f/4n/hv+0/wD/AP8A/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?GetnPixels_DXTn@@YAXPAPAXPAKPAUBLT_DATA@@@Z
+    size: 156
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GetPtrToCachedPixel@@YAPAKJJPAUSURFACE_DATA@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 97
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

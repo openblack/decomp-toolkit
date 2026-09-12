@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: d719b5663cf922d2f0bc1efdcedc680e3d52e847
+  signature: i/9E/yT/BP+L/0D/DP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetFocusWindow@CD3duContext@@UAGPAUHWND__@@XZ
+    size: 10
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 5c77eb93466e724fe5eed85c2e1df5fcc8e2a411
+  signature: Vf+L/+z/i/9F/wj/i/9A/wz/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetFocusWindow@CD3duContext@@UAGPAUHWND__@@XZ
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []

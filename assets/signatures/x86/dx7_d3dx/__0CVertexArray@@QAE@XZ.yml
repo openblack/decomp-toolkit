@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 87ea1fd8c5cc56e5c66ce2bcc2084697ed8a77d4
+  signature: g/8h/wD/jf9R/1j/V/8z/8D/i//6/6v/q/+r/6v/x/8C/xD/AP8A/wD/x/9B/wj/gP8A/wD/AP+L/8H/X//D/w==
+  symbols:
+  - kind: Function
+    name: ??0CVertexArray@@QAE@XZ
+    size: 32
+    flags: 1
+    section: .text
+  relocations: []

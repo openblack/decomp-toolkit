@@ -1,0 +1,148 @@
+- symbol: 0
+  hash: ff85cf1a9b105fb62e35ec571d52b05fb396be8f
+  signature: Vf+L/+z/g//s/xD/U/9W/1f/av8P////Ff8AAAAAAAAAAGj/AAAAAAAAAAAz/9v/av8U/1P/UP///xX/AAAAAAAAAABq/xT/uP8AAAAAAAAAAFn/iP8Y/4P/wP8E/0n/df/4/4v/Rf8I/7n/AP8B/wD/AP+D/8D/A/+J/0X/8P+I/xj/g//A/wT/Sf91//j/uP8AAAAAAAAAAL7/AAAAAAAAAACL/03/CP+K/1D//v8z////Ov8R/3X/D/+K/1j///86/1n/Af91/wf/iv8Y/zr/Wf8C/3T/Dv+D/8H/BP9H/4H///8A/wH/AP8A/3z/4f/r/wr/xv9A/wH/Af/G/0H/A/8B/4n/Pv9q/wT/W/8D//P/A//D/4H//v8AAAAAAAAAAHz/vv+L/33/CP++/wAAAAAAAAAAx/9F//j/AAAAAAAAAACA/37/A/8B/3T/bP+L/1X/CP+D/2X//P8A/8f/Rf/0/wH/AP8D/wD/gP96/wP/Af90/z3/D/+2/w7/D/+2/wL/D/+2/17/Af8r/8H/i//I/w//r//I/w//tv9C/wH/K//D/4v/2P8P/6//2P8P/7b/Qv8C/wP/y/8P/7b/Xv8C/yv/w/+L/9j/D/+v/9j/A//L/zv/Tf/0/33/Bv+L/33//P+J/03/9P9q/wT/W/8D/9P///9F//z/gf99//z/AP8B/wD/AP98/6//i/9F//j/if84/4v/Rf8I/8b/RP+4/wP/Af8B/13/+P8D//P/gf99//j/AAAAAAAAAAB8/4D/av8U/7j/AAAAAAAAAABZ/4D/IP8A/wP/w/9J/3X/+P+L/0X/8P+5/wD/Af8A/wD/iP8Y/wP/w/9J/3X/+f9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?UpdateStaticMapping@@YAXPAUtagPALETTEENTRY@@@Z
+    size: 327
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetStockObject@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _apeDefaultPalEntry$S42491
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: __imp__GetPaletteEntries@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _aiDefaultOverride$S42477
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 73
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 152
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 159
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 285
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 294
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 23fb9e67c524697870b3f9da5242dde7d63d86cb
+  signature: Vf+L/+z/g//s/xD/U/9W/1f/av8P////Ff8AAAAAAAAAAGj/AAAAAAAAAAAz/9v/av8U/1P/UP///xX/AAAAAAAAAABq/xT/uP8AAAAAAAAAAFn/iP8Y/4P/wP8E/0n/df/4/4v/Rf8I/7n/AP8B/wD/AP+D/8D/A/+J/0X/8P+I/xj/g//A/wT/Sf91//j/uP8AAAAAAAAAAL7/AAAAAAAAAACL/03/CP+K/1D//v8z////Ov8R/3X/D/+K/1j///86/1n/Af91/wf/iv8Y/zr/Wf8C/3T/Dv+D/8H/BP9H/4H///8A/wH/AP8A/3z/4f/r/wr/xv9A/wH/Af/G/0H/A/8B/4n/Pv9q/wT/W/8D//P/A//D/4H//v8AAAAAAAAAAHz/vv++/wAAAAAAAAAAx/9F//j/AAAAAAAAAACA/37/A/8B/3T/b/+L/1X/CP+D/8////+D/2X//P8A/8f/Rf/0/wH/AP8D/wD/gP96/wP/Af90/z3/D/+2/w7/D/+2/wL/D/+2/17/Af8r/8H/i//I/w//r//I/w//tv9C/wH/K//D/4v/2P8P/6//2P8P/7b/Qv8C/wP/y/8P/7b/Xv8C/yv/w/+L/9j/D/+v/9j/A//L/zv/Tf/0/33/Bv+L/33//P+J/03/9P9q/wT/W/8D/9P///9F//z/gf99//z/AP8B/wD/AP98/6//i/9F//j/if84/4v/Rf8I/8b/RP+4/wP/Af8B/13/+P8D//P/gf99//j/AAAAAAAAAAAP/4z/ef////////9q/xT/uP8AAAAAAAAAAFn/gP8g/wD/A//D/0n/df/4/4v/Rf/w/7n/AP8B/wD/AP+I/xj/A//D/0n/df/5/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?UpdateStaticMapping@@YAXPAUtagPALETTEENTRY@@@Z
+    size: 331
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetStockObject@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _apeDefaultPalEntry$S42502
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: __imp__GetPaletteEntries@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _aiDefaultOverride$S42488
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 73
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 78
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 149
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 156
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 285
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 298
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

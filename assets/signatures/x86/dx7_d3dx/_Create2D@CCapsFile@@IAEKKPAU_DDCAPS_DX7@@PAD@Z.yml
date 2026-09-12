@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 0627ed9714789244d308fd7c233d9ecdaf5d4c2c
+  signature: Vf+L/+z/Uf9T/zP/2/85/13/EP9W/1f/i//5/4n/Xf/8/3T/D////3X/EP/o/wAAAAAAAAAAO//D/4n/Rf/8/3T/P/++/3z/Af8A/wD/jf9F/xD/Vv///3X/DP9Q/2r///9T/+j/AAAAAAAAAACL/0X/EP+D/8T/FP+D/8D/BP+L/8//UP///3X/CP/o/wAAAAAAAAAAi//Y/4X/2/90/xD/av8A/1P/i//P/+j/AAAAAAAAAACL//j/hf///3X/BP8z/8D/6/8c/1b///91/wz/av8A/2r///9X/+j/AAAAAAAAAACL/0X/EP+L/03//P+D/8T/FP+J/wz/B/+L/8P/X/9e/1v/yf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: ?Create2D@CCapsFile@@IAEKKPAU_DDCAPS_DX7@@PAD@Z
+    size: 136
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CreateString@CCapsFile@@IAEKPAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Compress@CD3dxFile@@SAJPAXKPAKPBXK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreateEntry@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?EditData@CD3dxFile@@QAEPAXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 87
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2e8b5794884ce60d12e98446e694549a5bc037e6
+  signature: Vf+L/+z/Uf9R/4D/Tf/4////gP9N//n///+A/03/+v///zL/wP+I/0X//P+I/0X//f+I/0X//v///3X//P///3X/+P///3X/DP///3X/CP/o/wAAAAAAAAAAg//E/xD/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?EncodeBlockRGB@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@@Z
+    size: 50
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockRGBColorKey@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@U1@2@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 41
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

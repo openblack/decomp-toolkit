@@ -1,0 +1,80 @@
+- symbol: 0
+  hash: f8401c0a488d0ad378ecd5577d15d167cb55373e
+  signature: Vv+L//H/V/+L/37/EP+F////dP8O/4v/z//o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf+L/37/BP+F////dP8O/4v/z//o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf+L/37/CP+F////dP8O/4v/z//o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf+L/37/DP+F////dP8O/4v/z//o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf+L/3b/FP+F//b/dP8O/4v/zv/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??1CD3duGlobals@@QAE@XZ
+    size: 112
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CD3duContextList@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ''
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1CHelInfo@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??1CDDrawDeviceList@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CD3duDeviceList@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CCapsFile@@IAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 56
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 77
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 83
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 104
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

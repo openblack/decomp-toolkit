@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: da16c1869e8703e3cb3457be9835872124fbccfb
+  signature: U/9W/4v/dP8k/wz/V/8z////O//3/3X/Cv+4/7n/C/93/8j/6f+4/wD/AP8A/4v/Bv9q/wL/W/9T/1P/V/9W////kP+U/wD/AP8A/zv/x/8P/4z/of8A/wD/AP+L/wb/U/9q/wH/V/9W////kP+U/wD/AP8A/zv/x/8P/4z/jP8A/wD/AP+L/wb/U/9q/wX/V/9W////kP+U/wD/AP8A/zv/x/98/3v/i/8G/1f/av8G/1f/Vv///5D/lP8A/wD/AP87/8f/fP9q/4v/Bv9q/wT/av8E/1f/Vv///5D/lP8A/wD/AP87/8f/fP9Y/4v/Bv9q/wX/av8T/1b///9Q/1D/O//H/3z/Sv+L/wb/av8G/2r/FP9W////UP9Q/zv/x/98/zz/i/8G/2r/Af9q/xv/Vv///1D/UP87/8f/fP8u/4v/Bv9T/2r/Ef9X/1b///+Q/5T/AP8A/wD/O//H/3z/Hf+L/wb/U/9q/xD/V/9W////kP+U/wD/AP8A/zv/x/98/wz///90/yT/FP+L/wb/av8H/1b///9Q/1D/X/9e/1v/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXPrepareDeviceForSprite@8
+    size: 213
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: b7533bef9a1907622a08ba5b31ee16611d2c3943
+  signature: Vf+L/+z/U/9W/4v/df8I/1f/M////zv/9/91/wr/uP+5/wv/d//I/+n/t/8A/wD/AP+L/wb/av8C/1v/U/9T/1f/Vv///5D/lP8A/wD/AP87/8f/D/+M/6D/AP8A/wD/i/8G/1P/av8B/1f/Vv///5D/lP8A/wD/AP87/8f/D/+M/4v/AP8A/wD/i/8G/1P/av8F/1f/Vv///5D/lP8A/wD/AP87/8f/fP96/4v/Bv9X/2r/Bv9X/1b///+Q/5T/AP8A/wD/O//H/3z/af+L/wb/av8E/2r/BP9X/1b///+Q/5T/AP8A/wD/O//H/3z/V/+L/wb/av8F/2r/E/9W////UP9Q/zv/x/98/0n/i/8G/2r/Bv9q/xT/Vv///1D/UP87/8f/fP87/4v/Bv9q/wH/av8b/1b///9Q/1D/O//H/3z/Lf+L/wb/U/9q/xH/V/9W////kP+U/wD/AP8A/zv/x/98/xz/i/8G/1P/av8Q/1f/Vv///5D/lP8A/wD/AP87/8f/fP8L////df8M/4v/Bv9q/wf/Vv///1D/UP9f/17/W/9d/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXPrepareDeviceForSprite@8
+    size: 215
+    flags: 1
+    section: .text
+  relocations: []

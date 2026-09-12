@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: 277d4f3af45c24c6dc88cffe14ab32200632d464
+  signature: i/9E/yT/BP+L/0z/JP8I/1b/i/9Q/wT/i/9x/wT/O//W/3L/HP93/wz/i/9Q/wj/i/9x/wj/O//W/3L/EP92/wT/M//A/+v/Ev+L/0D/DP+L/0n/DP87/8j/dv8F/2r/Af9Y/+v/A/8b/8D/QP9e/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?LeftBelongsCloserToListHead@CVideoModeList@@UAEHPAVCVideoModeNode@@0@Z
+    size: 59
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: b5951906f419269353c948390c394dd18f3a125d
+  signature: Vf+L/+z/Vv+L/3X/DP9X/4v/ff8I/4X///90/wT/hf/2/3X/F/9o/wAAAAAAAAAAaP/L/wL/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/i/9H/wT/i/9O/wT/O//B/3L/HP93/wz/i/9H/wj/i/9O/wj/O//B/3L/EP92/wT/M//A/+v/Ev+L/3//DP+L/3b/DP87//f/dv8F/2r/Af9Y/+v/A/8b/8D/QP9f/17/Xf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?LeftBelongsCloserToListHead@CVideoModeList@@UAEHPAVCVideoModeNode@@0@Z
+    size: 94
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BA@FIFI@pLeft?5?$CG?$CG?5pRight?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@BMII@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 35
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

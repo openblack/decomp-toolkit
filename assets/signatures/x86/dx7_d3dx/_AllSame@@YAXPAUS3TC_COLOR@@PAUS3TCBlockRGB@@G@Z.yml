@@ -1,0 +1,23 @@
+- symbol: 0
+  hash: c6a3d8bb758071707e557f20754063a33762cebc
+  signature: Vf+L/+z/Vv+L/3X/DP9X/4v/ff8I/1b/V/+L/wf/if9F/wj/6P8AAAAAAAAAAGb/i/8G/4P/Zv8E/wD/Zv+B/33/EP//////Wf9Z/2b/if9G/wL/dP89/1P/av8B/1n/av8D/1j/av8Q/1r/i//Z/yP/Xf8Q/2b/hf/b/3X/Bf8J/0b/BP/r/wX/i/8f/4n/Xf8I/4P/x/8E/9H/4f/B/+D/Av9K/3X/4f+N/0X/CP9W/1D/6P8AAAAAAAAAAGb/i/8G/1n/Wf9m/4n/Rv8C/1v/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?AllSame@@YAXPAUS3TC_COLOR@@PAUS3TCBlockRGB@@G@Z
+    size: 109
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?ColorToRGB@@YAXPAUS3TC_COLOR@@PAG@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 91
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

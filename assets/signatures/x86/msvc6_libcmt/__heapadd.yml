@@ -1,23 +1,4 @@
 - symbol: 0
-  hash: ca0ffeba7f9ce57af5b3ec63b89084fdb72d89de
-  signature: 6P8AAAAAAAAAAMf/AP8o/wD/AP8A/4P/yP///8P/
-  symbols:
-  - kind: Function
-    name: __heapadd
-    size: 15
-    flags: 1
-    section: .text
-  - kind: Function
-    name: __errno
-    size: 0
-    flags: 1
-    section: null
-  relocations:
-  - offset: 1
-    kind: x86_rel32
-    symbol: 1
-    addend: -4
-- symbol: 0
   hash: 84d6a45dbf07ef1b9f74e3dd3d4fcc1e833b7821
   signature: x/8F/wAAAAAAAAAAKP8A/wD/AP+D/8j////D/w==
   symbols:
@@ -36,3 +17,22 @@
     kind: x86_abs32
     symbol: 1
     addend: 0
+- symbol: 0
+  hash: ca0ffeba7f9ce57af5b3ec63b89084fdb72d89de
+  signature: 6P8AAAAAAAAAAMf/AP8o/wD/AP8A/4P/yP///8P/
+  symbols:
+  - kind: Function
+    name: __heapadd
+    size: 15
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __errno
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

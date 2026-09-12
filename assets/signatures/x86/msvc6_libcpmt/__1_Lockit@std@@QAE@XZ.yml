@@ -1,14 +1,4 @@
 - symbol: 0
-  hash: abf4e37bb8c6754e4139a73a660eb9eb6ca09dce
-  signature: w/8=
-  symbols:
-  - kind: Function
-    name: ??1_Lockit@std@@QAE@XZ
-    size: 1
-    flags: 1
-    section: .text
-  relocations: []
-- symbol: 0
   hash: 58b5e4f96f5048a8a65b2183d6a50fab641ec892
   signature: g/89/wAAAAAAAAAAAv91/wv/aP8AAAAAAAAAAP//Ff8AAAAAAAAAAMP/
   symbols:

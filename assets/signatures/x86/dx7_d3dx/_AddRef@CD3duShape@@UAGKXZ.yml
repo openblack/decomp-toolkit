@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 4c1c53b9081fb84947cb89ae8f90d0ff090fa872
+  signature: i/9E/yT/BP///0D/BP+L/0D/BP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?AddRef@CD3duShape@@UAGKXZ
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 02193d6d02263ca8e10f9effb85ab31a778bb619
+  signature: Vf+L/+z/i/9F/wj///9A/wT/i/9A/wT/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?AddRef@CD3duShape@@UAGKXZ
+    size: 16
+    flags: 1
+    section: .text
+  relocations: []

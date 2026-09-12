@@ -1,0 +1,44 @@
+- symbol: 0
+  hash: 603532a5bf48ab33f4d6e650efea3027096c1b7f
+  signature: Vv+L//H/V/+L/77/iP8B/wD/AP+F////dP8O/4v/z//o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf+L/77/jP8B/wD/AP+F////dP8O/4v/z//o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf+L/7b/kP8B/wD/AP+F//b/dP8O/4v/zv/o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??1CHelInfo@@QAE@XZ
+    size: 79
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CHelNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ''
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 41
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 71
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

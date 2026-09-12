@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: 08d0bbe215880b5e618da4c17a5439af21c99e72
+  signature: Vf+L/+z/2f8F/wAAAAAAAAAAi/9N/wz/i/9F/wj/2f8F/wAAAAAAAAAA2f8B/9j/4f/Y/03/EP/Y/+L/2f8Y/9n/Qf8E/9j/4f/Y/03/EP/Y/+L/2f9Y/wT/2f9B/wj/2P/h/9j/Tf8Q/9j/4v/Z/1j/CP+L/0n/DP/d/9j/3f/Y/4n/SP8M/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXColorAdjustContrast@12
+    size: 72
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42252
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42060
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 9b1291baea4416050400aeae74e6b084d021bec1
+  signature: Vf+L/+z/i/9F/wj/hf/A/3T/RP+L/03/DP+F/8n/dP89/9n/Bf8AAAAAAAAAANn/Bf8AAAAAAAAAANn/Af/Y/+H/2P9N/xD/2P/i/9n/GP/Z/0H/BP/Y/+H/2P9N/xD/2P/i/9n/WP8E/9n/Qf8I/9j/4f/Y/03/EP/Y/+L/2f9Y/wj/i/9J/wz/3f/Y/93/2P+J/0j/DP/r/wL/M//A/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXColorAdjustContrast@12
+    size: 84
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42449
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42215
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

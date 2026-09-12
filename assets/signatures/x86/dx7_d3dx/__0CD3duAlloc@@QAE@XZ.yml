@@ -1,0 +1,59 @@
+- symbol: 0
+  hash: fc7b367ab73034588001f923714f396d0cfd03f3
+  signature: M//S/1b/Of8V/wAAAAAAAAAAi//x/3X/LP9X/7n//f8P/wD/AP8z/8D/v/8AAAAAAAAAAPP/q/+J/xX/AAAAAAAAAACJ/xX/AAAAAAAAAACJ/xX/AAAAAAAAAADH/wX/AAAAAAAAAAAB/wD/AP8A/1//i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 61
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_bInit@@3HA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?g_pHead@@3PAPAU_ALLOC_STUB@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?g_dwNumAllocations@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?g_dwNumFrees@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?g_dwTotalUnfreedMemory@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 42
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

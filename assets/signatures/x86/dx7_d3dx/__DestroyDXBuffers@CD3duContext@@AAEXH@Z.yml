@@ -1,0 +1,119 @@
+- symbol: 0
+  hash: 3210f3d33c37ea759d0c9b291211bc98a499f8d2
+  signature: Vf+L/+z/gf/s/4j/AP8A/wD/U/9W/1f/i//Z/zP///85/7v/oP8A/wD/AP8P/4T/hv8A/wD/AP+L/4P/lP8A/wD/AP+N/7P/lP8A/wD/AP87/8f/dP92/4v/CP9Q////Uf9g/z3/wv8B/3b/iP90/2n/i/82////s/+g/wD/AP8A/4v/Bv9X/1b///9Q/yD/O//H/33/Vv+J/0X/+P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf94/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf94/////////4P/4f8D//P/pP9Z/43/tf94/////////43/vf94/////////8f/Rf/8/4//Bf8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAAAz////i/+D/6D/AP8A/wD/O//H/3T/DP+L/wj/UP///1H/CP+J/7v/oP8A/wD/AP+L/4P/kP8A/wD/AP87/8f/dP8o/zn/e/8g/3b/I/85/3v/EP91/wz/i/8A/zv/x/90/wb/i/8I/1D///9R/wj///+z/5D/AP8A/wD/6P8AAAAAAAAAAFn/if+7/5D/AP8A/wD/Of99/wj/dP9Z/4v/g/+M/wD/AP8A/43/s/+M/wD/AP8A/zv/x/90/wj/i/8I/1D///9R/wj/if8+/4v/g/+E/wD/AP8A/43/s/+E/wD/AP8A/zv/x/90/wj/i/8I/1D///9R/wj/if8+/4v/g/+I/wD/AP8A/43/s/+I/wD/AP8A/zv/x/90/wj/i/8I/1D///9R/wj/if8+/4P/e/8Q/wH/df8L/4v/Q/9w/4v/SP8E/+j/AAAAAAAAAABf/17/W//J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_DestroyDXBuffers@CD3duContext@@AAEXH@Z
+    size: 335
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DN@JEKH@CD3duContext?3?3_DestroyDXBuffers?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?ReleasePrimary@CDDrawDeviceNode@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 80
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 148
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 156
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 223
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 324
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+- symbol: 0
+  hash: c2cc56f4c6afaac82dde0c2ff8660c3554bc446c
+  signature: Vf+L/+z/gf/s/xD/Af8A/wD/U/9W/1f/i//Z/zP///85/7v/oP8A/wD/AP8P/4T/l/8A/wD/AP+L/4P/lP8A/wD/AP+N/7P/lP8A/wD/AP87/8f/D/+E/4P/AP8A/wD/i/8I/1D///9R/2D/Pf/C/wH/dv+I/3T/dv+L/zb///+z/6D/AP8A/wD/i/8G/1f/Vv///1D/IP+L//D/O//3/33/Yf+N/43/eP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+J/3X/+P/y/67/9//R/yv/+f+N/5X/eP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/8P/+//////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/8P/+///////H/0X//P+P/wX/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAM////4v/g/+g/wD/AP8A/zv/x/90/wz/i/8I/1D///9R/wj/if+7/6D/AP8A/wD/i/+D/5D/AP8A/wD/O//H/3T/KP85/3v/IP92/yP/Of97/xD/df8M/4v/AP87/8f/dP8G/4v/CP9Q////Uf8I////s/+Q/wD/AP8A/+j/AAAAAAAAAABZ/4n/u/+Q/wD/AP8A/zn/ff8I/3T/Wf+L/4P/jP8A/wD/AP+N/7P/jP8A/wD/AP87/8f/dP8I/4v/CP9Q////Uf8I/4n/Pv+L/4P/hP8A/wD/AP+N/7P/hP8A/wD/AP87/8f/dP8I/4v/CP9Q////Uf8I/4n/Pv+L/4P/iP8A/wD/AP+N/7P/iP8A/wD/AP87/8f/dP8I/4v/CP9Q////Uf8I/4n/Pv+D/3v/EP8B/3X/C/+L/0P/cP+L/0j/BP/o/wAAAAAAAAAAX/9e/1v/yf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?_DestroyDXBuffers@CD3duContext@@AAEXH@Z
+    size: 352
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DN@JEKH@CD3duContext?3?3_DestroyDXBuffers?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?ReleasePrimary@CDDrawDeviceNode@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 89
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 94
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 165
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 173
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 240
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 341
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

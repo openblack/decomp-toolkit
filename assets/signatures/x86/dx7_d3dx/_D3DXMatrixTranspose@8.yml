@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 674ad048b9dfc549f2cd562cd1f885cc82de7780
+  signature: i/9M/yT/CP+L/0T/JP8E/zv/wf/Z/0H/BP/Z/0H/EP/Z/1j/BP/Z/1j/EP/Z/0H/CP+L/1H/IP/Z/1j/IP+J/1D/CP+L/1H/MP/Z/0H/DP+J/1D/DP/Z/1j/MP/Z/0H/GP+L/1H/JP/Z/1j/JP+J/1D/GP+L/1H/NP/Z/0H/HP+J/1D/HP/Z/1j/NP/Z/0H/LP+L/1H/OP/Z/1j/OP+J/1D/LP90/xb/i/8R/4n/EP+L/1H/FP+J/1D/FP+L/1H/KP+J/1D/KP+L/0n/PP+J/0j/PP/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixTranspose@8
+    size: 109
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: dc8582ee25cc351000368637ec41ef178ffc4d4b
+  signature: Vf+L/+z/i/9F/wj/hf/A/3T/a/+L/03/DP+F/8n/dP9k/9n/Qf8E/4v/Uf8Q/zv/wf/Z/1j/EP+J/1D/BP+L/1H/IP/Z/0H/CP+J/1D/CP/Z/1j/IP/Z/0H/DP+L/1H/MP/Z/1j/MP+J/1D/DP+L/1H/JP/Z/0H/GP+J/1D/GP/Z/1j/JP/Z/0H/HP+L/1H/NP/Z/1j/NP+J/1D/HP+L/1H/OP/Z/0H/LP+J/1D/LP/Z/1j/OP90/xr/i/8R/4n/EP+L/1H/FP+J/1D/FP+L/1H/KP+J/1D/KP+L/0n/PP+J/0j/PP/r/wL/M//A/13/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixTranspose@8
+    size: 123
+    flags: 1
+    section: .text
+  relocations: []

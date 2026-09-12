@@ -1,0 +1,334 @@
+- symbol: 0
+  hash: cdba7da1c147d2954d414c448b600c3e976b7182
+  signature: Vf+L/+z/g//s/zD/U/9W/zP/9v9X/zn/Nf8AAAAAAAAAAHX/Cv+4/8f/C/93/8j/6f/d/wH/AP8A/4v/Rf8g/zv/xv8P/4T/zf8B/wD/AP+J/zD/i/9F/yT/O//G/3T/Av+J/zD/av8B////df8o////Ff8AAAAAAAAAAIX/wP91/xP/av8u////df8o/+j/AAAAAAAAAABZ/zv/xv9Z/4n/Rf/s/3X/B//H/0X/7P8AAAAAAAAAAI3/Rf/8/4n/df/8/1D///91/wj/6P8AAAAAAAAAAFn/O//G/1n/D/+M/4X/Af8A/wD/i/9d/xD/if91/+T/O//e/4n/df/g/3X/A/+N/13/5P85/3X/FP91/wb/jf9F/+D/if9F/xT/Of91/wz/if91/9z/df8G/43/Rf/c/4n/Rf8M/4v/Rf8Y/4n/df/o/zv/xv90/wT/Of8w/3X/A/+N/0X/6P+L/z3/AAAAAAAAAABo/wAAAAAAAAAA//91/+z/if9F/xD/if91//j/if91//T////X/4X/wP91/yT/jf9F/9j/UP+N/0X/9P9Q/43/Rf/Q/1D/jf9F/+j/UP+N/0X/+P9Q////df/8////df8o/+j/AAAAAAAAAACD/8T/HP/r/y//aP8AAAAAAAAAAP//df/s////1/+F/8D/jf9F/9D/UP+N/0X/6P9Q/43/Rf/4/1D///91//z///91/yj/df8H/+j/AAAAAAAAAADr/wX/6P8AAAAAAAAAAIP/xP8U/4v/+P87//7/D/+M/7v/AP8A/wD/i/8D/zv/xv90/wX/g//4////df8F/4v/Rf/Q/4n/A/+L/03/FP+L/wH/O//G/3T/Bf+D//j///91/wX/i/9F/9T/if8B////df8k/zn/df/0/43/Rf/w/1D/Vv///3X/EP9R/1P/dP8T////df/Y////df/0////df8M////df8I/+j/AAAAAAAAAADr/wv///91/wz///91/wj/6P8AAAAAAAAAAIv/+P+L/0X/GP87/8b/dP8H/4v/Tf8Q/4v/Cf+J/wj/O//+/33/Bf+L/0X/+P/r/0L/Of91//T///91/yz/dP8W////df/0////df/4////df/w////df8I/+j/AAAAAAAAAACD/8T/FP/r/xL/Vv9W////df/4/2r//////3X/8P///3X/CP/o/wAAAAAAAAAAi//4/4v/Rf/4/1D/i/8I////Uf8I/4v/Rf/w/zv//v99/wj/i/8I/1D///9R/wj/6/8F/4v/Tf8g/4n/Af+L/0X//P87/8b/dP8G/4v/CP9Q////Uf8I/4v/x//r/wX/uP+5/wv/d//I/1//Xv9b/8n/wv8o/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXCreateTextureFromFile@40
+    size: 513
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__IsBadReadPtr@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strrchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04OEJP@?4bmp?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?GetDDFromD3DDevice@@YAJPAUIDirect3DDevice7@@PAPAUIDirectDraw7@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: __imp__lstrcmpiA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04FEKP@?4dds?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?LoadFromDDS@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@PAK5@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_04LCGE@?4tga?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?LoadFromTGA@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?LoadFromGDI@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXCreateCubeMapTexture@40
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXCreateTexture@32
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?LoadCubeMapFromCubeMap@@YAJPAUIDirect3DDevice7@@PAUIDirectDrawSurface7@@1KW4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXLoadTextureFromSurface@28
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 58
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 72
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 88
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 103
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 177
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 182
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 231
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 241
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 273
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 280
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 363
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 376
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 426
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 449
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+- symbol: 0
+  hash: 4acfbd759cb804a40e26d09bf74d03944edc6ee3
+  signature: Vf+L/+z/g//s/zD/U/9W/zP/9v9X/zn/Nf8AAAAAAAAAAHX/F/9o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf+4/8f/C/93/8j/Wf/p//v/Af8A/wD/i/9F/yD/O//G/w//hP/r/wH/AP8A/4n/MP+L/0X/JP87/8b/dP8C/4n/MP9q/wH///91/yj///8V/wAAAAAAAAAAhf/A/3X/E/9q/y7///91/yj/6P8AAAAAAAAAAFn/O//G/1n/if9F/+z/df8H/8f/Rf/s/wAAAAAAAAAAjf9F//z/if91//z/UP///3X/CP/o/wAAAAAAAAAAi//4/1n/O//+/1n/ff8S/2j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/1n/6f+K/wH/AP8A/4v/Xf8Q/4n/df/k/zv/3v+J/3X/4P91/wP/jf9d/+T/Of91/xT/df8G/43/Rf/g/4n/Rf8U/zn/df8M/4n/df/c/3X/Bv+N/0X/3P+J/0X/DP+L/0X/GP+J/3X/6P87/8b/dP8E/zn/MP91/wP/jf9F/+j/i/89/wAAAAAAAAAAaP8AAAAAAAAAAP//df/s/4n/Rf8Q/4n/df/4/4n/df/0////1/+F/8D/df8k/43/Rf/Y/1D/jf9F//T/UP+N/0X/0P9Q/43/Rf/o/1D/jf9F//j/UP///3X//P///3X/KP/o/wAAAAAAAAAAg//E/xz/6/8v/2j/AAAAAAAAAAD//3X/7P///9f/hf/A/43/Rf/Q/1D/jf9F/+j/UP+N/0X/+P9Q////df/8////df8o/3X/B//o/wAAAAAAAAAA6/8F/+j/AAAAAAAAAACD/8T/FP+L//j/O//+/33/Ev9o/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf9Z/+n/u/8A/wD/AP+L/wP/O//G/3T/Bf+D//j///91/wX/i/9F/9D/if8D/4v/Tf8U/4v/Af87/8b/dP8F/4P/+P///3X/Bf+L/0X/1P+J/wH///91/yT/Of91//T/jf9F//D/UP9W////df8Q/1H/U/90/xP///91/9j///91//T///91/wz///91/wj/6P8AAAAAAAAAAOv/C////3X/DP///3X/CP/o/wAAAAAAAAAAi//4/4v/Rf8Y/zv/xv90/wf/i/9N/xD/i/8J/4n/CP87//7/ff8F/4v/Rf/4/+v/Qv85/3X/9P///3X/LP90/xb///91//T///91//j///91//D///91/wj/6P8AAAAAAAAAAIP/xP8U/+v/Ev9W/1b///91//j/av//////df/w////df8I/+j/AAAAAAAAAACL//j/i/9F//j/UP+L/wj///9R/wj/i/9F//D/O//+/33/CP+L/wj/UP///1H/CP/r/wX/i/9N/yD/if8B/4v/Rf/8/zv/xv90/wb/i/8I/1D///9R/wj/i//H/+v/Bf+4/7n/C/93/8j/X/9e/1v/yf/C/yj/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXCreateTextureFromFile@40
+    size: 556
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CH@HDJK@D3DXInitialize?$CI?$CJ?5must?5be?5called?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__IsBadReadPtr@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _strrchr
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04OEJP@?4bmp?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?GetDDFromD3DDevice@@YAJPAUIDirect3DDevice7@@PAPAUIDirectDraw7@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0CE@BMCI@Cannot?5obtain?5Ddraw?5from?5d3d?5dev@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__lstrcmpiA@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04FEKP@?4dds?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?LoadFromDDS@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@PAK5@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_04LCGE@?4tga?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?LoadFromTGA@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?LoadFromGDI@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DL@BIOJ@Failed?5to?5load?5file?$DL?5only?5bmp?0?5d@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _D3DXCreateCubeMapTexture@40
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXCreateTexture@32
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?LoadCubeMapFromCubeMap@@YAJPAUIDirect3DDevice7@@PAUIDirectDrawSurface7@@1KW4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXLoadTextureFromSurface@28
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 20
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 26
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 71
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 85
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 101
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 116
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 129
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 135
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 206
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 211
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 260
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 270
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 302
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 309
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 323
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 329
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 406
+    kind: x86_rel32
+    symbol: 16
+    addend: -4
+  - offset: 419
+    kind: x86_rel32
+    symbol: 17
+    addend: -4
+  - offset: 469
+    kind: x86_rel32
+    symbol: 18
+    addend: -4
+  - offset: 492
+    kind: x86_rel32
+    symbol: 19
+    addend: -4

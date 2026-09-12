@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: 8163327a726b827b0cd56f3a6d0e31e250c86272
+  signature: Vv+L/3H/DP+F//b/dP8l/4v/Rv8E/zv/RP8k/wj/dP8E/4v/Nv/r/+//i/8B/1b///9Q/wj/hf/2/3T/Dv+L/87/6P8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?DestroyD3duContext@CD3duContextList@@QAEXPAVCD3duContext@@@Z
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CD3duContextNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: d71f6add3fcdcdde44db694d633e542a979c89ff
+  signature: Vf+L/+z/Vv+L/3H/DP+F//b/dP8k/4v/Rv8E/zv/Rf8I/3T/BP+L/zb/6//w/4v/Af9W////UP8I/4X/9v90/w7/i//O/+j/AAAAAAAAAABW/+j/AAAAAAAAAABZ/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?DestroyD3duContext@CD3duContextList@@QAEXPAVCD3duContext@@@Z
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CD3duContextNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3CD3duAlloc@@SAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 36
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 42
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

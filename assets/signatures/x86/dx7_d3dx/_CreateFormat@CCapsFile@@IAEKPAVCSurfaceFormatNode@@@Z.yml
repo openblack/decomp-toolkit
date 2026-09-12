@@ -1,0 +1,120 @@
+- symbol: 0
+  hash: d65053178c29bef64cbc8c67e0c8cb48257f6c4f
+  signature: Vf+L/+z/g//s/wz/U/9W/1f/i/99/wj/i//Z/4X///+J/13//P8P/4T/3v8A/wD/AP/o/wAAAAAAAAAAhf/A/4n/Rf/0/w//hP/O/wD/AP8A/77/Rv9N/1T/U/+L/8v/Vv9Q/+j/AAAAAAAAAACF/8D/if9F//j/df80/1D/Vv+L/8v/6P8AAAAAAAAAAIv/8P+F//b/if91//j/D/+E/6P/AP8A/wD///91//T/i//L/+j/AAAAAAAAAABQ/1b/i//L/+j/AAAAAAAAAABW/4v/y////3X/9P/o/wAAAAAAAAAAjf9f/wj/av8g/43/Rf8I/1P/UP9q////av8A/+j/AAAAAAAAAACD/0X/CP8I/4v/Rf8I/4P/wP8D/4P/xP8U/yT//P/o/wAAAAAAAAAAi/9H/wT/i//0/2r/IP9T/4n/Bv+L/0//KP+N/0b/BP9q/wD/av///4n/CP+D/8D/BP9Q/+j/AAAAAAAAAACD/8T/FP+L/03//P+//0b/Tf9U/wD///91/wj/Vv9X////df/4/+j/AAAAAAAAAACL/9j/hf/b/3X/Wf///3X/CP+L/03//P9X/+j/AAAAAAAAAACL/9j/hf/b/3T/D/+L/03//P9q/wD/U//o/wAAAAAAAAAAhf/A/3X/BP8z/8D/6/82/4v/Tf8I/4v/+P+L/8H///91//j/wf/p/wL/8/+l/4v/yP+D/+H/A//z/6T/i/9N//z/6P8AAAAAAAAAAIv/Tf/8/1D/U//o/wAAAAAAAAAAi/9N//z/U////3X/+P/o/wAAAAAAAAAAi//D/43/Zf/o/1//Xv9b/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?CreateFormat@CCapsFile@@IAEKPAVCSurfaceFormatNode@@@Z
+    size: 315
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CreateVersion@CCapsFile@@IAEKXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreateEntry@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetChild@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?SetSibling@CD3dxFile@@QAEXKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?SetChild@CD3dxFile@@QAEXKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Compress@CD3dxFile@@SAJPAXKPAKPBXK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __alloca_probe
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKKPBXK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?EditData@CD3dxFile@@QAEPAXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 90
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 99
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 110
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 149
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 180
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 204
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 222
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 239
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 277
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 287
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 299
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

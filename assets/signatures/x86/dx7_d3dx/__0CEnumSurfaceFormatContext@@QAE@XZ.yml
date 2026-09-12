@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: cac27ab173aff5364c9a9bb74a039f657df05a1f
+  signature: V/8z/8D/jf95/wz/if8B/4n/Qf8E/4n/Qf8I/6v/q/+r/6v/i//B/1//w/8=
+  symbols:
+  - kind: Function
+    name: ??0CEnumSurfaceFormatContext@@QAE@XZ
+    size: 22
+    flags: 1
+    section: .text
+  relocations: []

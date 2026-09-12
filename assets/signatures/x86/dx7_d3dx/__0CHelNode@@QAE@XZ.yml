@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: 01a03037858a60784bf5d09a85cb476adbf21113
+  signature: i//R/1b/V/8z//b/jf+C//T/AP8A/wD/av87/1n/jf96/wj/if9w/wT/if9w/wj/if9w/wz/x/8A/wAAAAAAAAAAM//A/4n/Mv/z/6v/if9y/wT/X/+L/8L/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??0CHelNode@@QAE@XZ
+    size: 47
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CSurfaceFormatList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 29
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 94ce0043b73612d5dfdbf925e737ced9b5295248
+  signature: Vv9X/4v/8f/o/wAAAAAAAAAAjf++//T/AP8A/wD/i//P/+j/AAAAAAAAAABq/zv/x/8H/wAAAAAAAAAAg/8m/wD/Wf8z/8D/jf9+/wj/8/+r/yH/Rv8E/4v/xv9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CHelNode@@QAE@XZ
+    size: 49
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$ListT@VCSurfaceFormatNode@@@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CSurfaceFormatList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 26
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

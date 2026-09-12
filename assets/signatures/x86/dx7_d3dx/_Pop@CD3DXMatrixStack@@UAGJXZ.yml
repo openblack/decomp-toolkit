@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 4125b187f90ac6e153bab13c32bae190e6dfb742
+  signature: i/9M/yT/BP+L/0H/DP+F/8D/dP8E/0j/if9B/wz/M//A/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Pop@CD3DXMatrixStack@@UAGJXZ
+    size: 20
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: ca12aaabb456ff32667aa4791ec5f06bf4d36a21
+  signature: Vf+L/+z/i/9N/wj/i/9B/wz/hf/A/3T/BP9I/4n/Qf8M/zP/wP9d/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Pop@CD3DXMatrixStack@@UAGJXZ
+    size: 23
+    flags: 1
+    section: .text
+  relocations: []

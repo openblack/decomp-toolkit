@@ -1,0 +1,225 @@
+- symbol: 0
+  hash: bae0ecebb7e4f5db7cade7380cce3497fbfc1fb0
+  signature: Vf+L/+z/gf/s/9D/AP8A/wD/i/9N/wj/U/9W/1f/M////4n/ff/8/+j/AAAAAAAAAACF/8D/D/+E/2L/Af8A/wD/i/91/wz/i//O/+j/AAAAAAAAAACF/8D/D/+E/1D/Af8A/wD///91/xj/jf+F/zD/////////V/9X////df8U////df8Q/1b///91/wj/UP/o/wAAAAAAAAAAg//E/yD/hf/A/3X/Cv+4/wH/QP8A/4D/6f81/wH/AP8A/zn/vf9M/////////3T/FP///7X/TP////////+N/4X/RP////////9Q/+j/AAAAAAAAAABZ/1n/Of+9/2z/////////dP8U////tf9s/////////43/hf9k/////////1D/6P8AAAAAAAAAAFn/Wf+L/0b/CP/B/+D/BP+L/5j/AAAAAAAAAAA7/9//dP9U/4v/Q/8I/0j/wf/g/wT/if9F/xj/i/8z/43/ff/s/wP/df8Y/4v/hf84/////////6X/pf+l/6X/Of9F//T/df8k/4v/Tf8I/4v/Rf/s/zv/Qf8I/3X/Gf+L/03/DP+L/0X/8P87/0H/CP91/w7/jf+F/zD/////////UP///1X/+P9Z/4n/Rf/8/4P/bf8Y/xD/g/99//z/AP90/7v/i/91/wz/M////zn/ff/8/3X/Zv+L/0X/CP+L/0D/CP87/0b/CP91/wv/av8B/1j/Of+F/zj/////////dP8C/zP/wP85/73/bP////////90/w7/jf+F/zD/////////UP/o/wAAAAAAAAAA6/80/zv/x/90/x//Of+9/zD/////////jf+F/zD/////////UP90/wf/6P8AAAAAAAAAAOv/Bf/o/wAAAAAAAAAAWf+J/0X//P85/33//P91/xD/jf+F/zD/////////UP/o/wAAAAAAAAAAWf+J/0X//P85/73/bP////////91/wj/Of+9/0z/////////dP8N/43/hf8w/////////1D/6P8AAAAAAAAAAFn/i/9F//z/9//Y/xv/wP8l////v////3//Bf8B/0D/AP+A/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?InternalCopy@@YAJPAVCSurfaceLock@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 409
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?IsValid@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?BuildBltData@@YAHAAUBLT_DATA@@PAVCSurfaceLock@@1PAUtagRECT@@2KKW4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?InitializePixelCache@@YAXPAUSURFACE_DATA@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?FnTable@@3PAUTABLEENTRY@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GeneralCopyDXTn@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?SimpleStretchCopy@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?SimpleCopy@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GeneralCopy@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?ShutdownPixelCache@@YAXPAUBLT_DATA@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 159
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 296
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 322
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 329
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 350
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 382
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+- symbol: 0
+  hash: b99185b105ad34e44b4c647858a87b383c9b9876
+  signature: Vf+L/+z/gf/s/9D/AP8A/wD/i/9N/wj/U/9W/zP/2/9X/4n/Xf/8/+j/AAAAAAAAAACF/8D/D/+E/4//Af8A/wD/i/99/wz/i//P/+j/AAAAAAAAAACF/8D/D/+E/33/Af8A/wD///91/xj/jf+F/zD/////////U/9T////df8U////df8Q/1f///91/wj/UP/o/wAAAAAAAAAAg//E/yD/hf/A/3X/Cv+4/wH/QP8A/4D/6f9i/wH/AP8A/zn/nf9M/////////3T/FP///7X/TP////////+N/4X/RP////////9Q/+j/AAAAAAAAAABZ/1n/Of+d/2z/////////dP8U////tf9s/////////43/hf9k/////////1D/6P8AAAAAAAAAAFn/Wf+L/0f/CP/B/+D/BP+L/7D/AAAAAAAAAAA7//P/if91/xT/dP9+/4v/Xv8I/0v/i//7/8H/5/8E/4n/ff8Y/+v/Bv+L/3X/FP+L/33/GP87/17/CP99/wT/hf/b/33/F/9o/wAAAAAAAAAAaP/l/wD/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/i/82/4v/hf84/////////wP/9/+N/33/7P+l/6X/pf+l/zn/Rf/0/3X/JP+L/03/CP+L/0X/7P87/0H/CP91/xn/i/9N/wz/i/9F//D/O/9B/wj/df8O/43/hf8w/////////1D///9V//j/Wf+J/0X//P+D/23/GP8Q/0v/g/99//z/AP90/5X/i/99/wz/M//b/zn/Xf/8/3X/Zv+L/0X/CP+L/0D/CP87/0f/CP91/wv/av8B/1j/Of+F/zj/////////dP8C/zP/wP85/53/bP////////90/w7/jf+F/zD/////////UP/o/wAAAAAAAAAA6/80/zv/w/90/x//Of+d/zD/////////jf+F/zD/////////UP90/wf/6P8AAAAAAAAAAOv/Bf/o/wAAAAAAAAAAWf+J/0X//P85/13//P91/xD/jf+F/zD/////////UP/o/wAAAAAAAAAAWf+J/0X//P85/53/bP////////91/wj/Of+d/0z/////////dP8N/43/hf8w/////////1D/6P8AAAAAAAAAAFn/i/9F//z/9//Y/xv/wP8l////v////3//Bf8B/0D/AP+A/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?InternalCopy@@YAJPAVCSurfaceLock@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 454
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?IsValid@CSurfaceLock@@QAEHXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?BuildBltData@@YAHAAUBLT_DATA@@PAVCSurfaceLock@@1PAUtagRECT@@2KKW4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?InitializePixelCache@@YAXPAUSURFACE_DATA@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?FnTable@@3PAUTABLEENTRY@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BM@EAMM@Index?5?$DM?5Count?5?$CG?$CG?5Index?5?$DO?$DN?50?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0N@JMCL@?4?2convhelp?4h?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GeneralCopyDXTn@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?SimpleStretchCopy@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?SimpleCopy@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GeneralCopy@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?ShutdownPixelCache@@YAXPAUBLT_DATA@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 159
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 200
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 210
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 215
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 341
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 367
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 374
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 395
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 427
+    kind: x86_rel32
+    symbol: 12
+    addend: -4

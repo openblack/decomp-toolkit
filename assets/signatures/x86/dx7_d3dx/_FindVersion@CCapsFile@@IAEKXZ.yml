@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 46ab4642d1923e8dbcd9b9e0ab8210a0dd95eefd
+  signature: Vv9q/wT/aP8AAAAAAAAAAIv/8f9o/1b/Rf9S/wD/6P8AAAAAAAAAAFD/i//O/+j/AAAAAAAAAABe/8P/
+  symbols:
+  - kind: Function
+    name: ?FindVersion@CCapsFile@@IAEKXZ
+    size: 30
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ?RootEntry@CD3dxFile@@QAEKXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKKPBXK@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 16
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 24
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

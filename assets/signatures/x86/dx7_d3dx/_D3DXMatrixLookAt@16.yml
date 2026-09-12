@@ -1,0 +1,72 @@
+- symbol: 0
+  hash: fd6331de4e5ea2a2741eab804d4d10fe5f07d897
+  signature: Vf+L/+z/g//s/yT/i/9F/xD/Vv+L/3X/DP/Z/wb/2P8g/9n/Xf/0/9n/Rv8E/9j/YP8E/9n/Xf/4/9n/Rv8I/9j/YP8I/43/Rf/0/1D/jf9F//T/UP/Z/13//P/o/wAAAAAAAAAA//91/xT/jf9F//T/UP+N/0X/6P9Q/+j/AAAAAAAAAACD/8T/DP+N/0X/6P9Q/43/Rf/o/1D/6P8AAAAAAAAAAI3/Rf/0/1D/jf9F/+j/UP+N/0X/3P9Q/+j/AAAAAAAAAADZ/0X/6P+L/0X/CP+L/03/7P+D/8T/DP/Z/xj/2f9F//D/if9I/xD/i/9N//D/if9I/yD/i/9N/9z/2P9O/wj/2f9F/+z/2P9O/wT/3v/B/9n/Bv/Y/03/6P+J/0j/BP+L/03/4P+J/0j/FP+L/03/5P/e/8H/if9I/yT/i/9N//T/2f/g/9n/WP8w/9n/Rf/k/9j/Tv8I/9n/Rf/g/9j/Tv8E/97/wf/Z/wb/2P9N/9z/if9I/wj/i/9N//j/if9I/xj/i/9N//z/3v/B/4n/SP8o/9n/4P/Z/1j/NP/Z/0X//P/Y/07/CP/Z/0X/+P/Y/07/BP/e/8H/2f8G/9j/Tf/0/17/3v/B/9n/4P/Z/1j/OP/Z/+7/2f9Y/wz/2f/u/9n/WP8c/9n/7v/Z/1j/LP/Z/+j/2f9Y/zz/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixLookAt@16
+    size: 262
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3Normalize@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXVec3Cross@@YAPAUD3DXVECTOR3@@PAU1@PBU1@1@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 47
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 115c9ccbe0c45ff54e2604317fbe1cdfc6a888b9
+  signature: Vf+L/+z/g//s/yT/Vv+L/3X/CP+F//b/V/8P/4T/Ff8B/wD/AP+L/33/DP+F////D/+E/wr/Af8A/wD/i/9F/xD/hf/A/w//hP///wD/AP8A/4P/ff8U/wD/D/+E//X/AP8A/wD/2f8H/9j/IP/Z/13/9P/Z/0f/BP/Y/2D/BP/Z/13/+P/Z/0f/CP/Y/2D/CP+N/0X/9P9Q/43/Rf/0/1D/2f9d//z/6P8AAAAAAAAAAP//df8U/43/Rf/0/1D/jf9F/+j/UP/o/wAAAAAAAAAAg//E/wz/jf9F/+j/UP+N/0X/6P9Q/+j/AAAAAAAAAACN/0X/9P9Q/43/Rf/o/1D/jf9F/9z/UP/o/wAAAAAAAAAAi/9F/+j/g//E/wz/2f9F/+z/if8G/4v/Rf/s/4n/Rv8Q/4v/Rf/w/4n/Rv8g/4v/Rf/c/9j/T/8E/9n/Rf/w/9j/T/8I/97/wf/Z/wf/2P9N/+j/if9G/wT/i/9F/+D/if9G/xT/i/9F/+T/3v/B/4n/Rv8k/4v/Rf/0/9n/4P/Z/17/MP/Z/0X/4P/Y/0//BP/Z/0X/5P/Y/0//CP/e/8H/2f8H/9j/Tf/c/4n/Rv8I/4v/Rf/4/4n/Rv8Y/4v/Rf/8/97/wf+J/0b/KP/Z/+D/2f9e/zT/2f9F//j/2P9P/wT/2f9F//z/2P9P/wj/3v/B/9n/B//Y/03/9P/e/8H/2f/g/9n/Xv84/9n/7v+L/8b/2f9e/wz/2f/u/9n/Xv8c/9n/7v/Z/17/LP/Z/+j/2f9e/zz/6/8C/zP/wP9f/17/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixLookAt@16
+    size: 304
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXVec3Normalize@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXVec3Cross@@YAPAUD3DXVECTOR3@@PAU1@PBU1@1@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 85
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 101
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

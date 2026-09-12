@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b6cc43a591ff2119e88b9fdad6adbe336b558536
+  signature: Vf+L/+z/g//s/wz/V/8z/8D/jf99//T/jf9V//T/q/+r/6v/i/9F/wz/g/9l//j/AP+D/03//P///4n/Rf/0/4v/Rf8I/1L/aP8AAAAAAAAAAFD/i/8I////Uf8Q/4v/Rf/4/4X/wP91/wf/uP/b/wv/d//I/+v/B/+L/03/EP+J/wH/M//A/1//yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?ChooseTextureFormat@@YAJPAUIDirect3DDevice7@@W4_D3DX_SURFACEFORMAT@@PAW42@@Z
+    size: 71
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_d3dxFindTextureCallback@@YGJPAU_DDPIXELFORMAT@@PAX@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 37
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

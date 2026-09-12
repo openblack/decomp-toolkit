@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: 40a352278ddc41b0ec0d7c106a677611dcf11c1c
+  signature: i//B/zP/yf/H/wD/AAAAAAAAAACJ/0j/CP+J/0j/BP+J/0j/DP/H/0D/EP8B/wD/AP8A/8P/
+  symbols:
+  - kind: Function
+    name: ??0CD3DXMatrixStack@@QAE@XZ
+    size: 27
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CD3DXMatrixStack@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 6
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 641db3690037793f6d4feac285b2892a308f8555
+  signature: Vv+L//H/V/+N/37/BP+L/8//6P8AAAAAAAAAADP/wP/H/wb/AAAAAAAAAACJ/0b/CP+J/wf/if9G/wz/x/9G/xD/Af8A/wD/AP+L/8b/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ??0CD3DXMatrixStack@@QAE@XZ
+    size: 42
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7CD3DXMatrixStack@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

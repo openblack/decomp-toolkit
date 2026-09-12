@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 11e3d6a1d7cbfaed1b6d11edddcf7f44e371292a
+  signature: i/9B/wz/hf/A/3T/Ev+L/0j/BP87/0z/JP8E/3T/BP+L/wD/6//v/2r/Af9Y/+v/Av8z/8D/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?FindRefreshRate@CRefreshRateList@@QAEHK@Z
+    size: 30
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: c970952a2ba180de8662a1cbbbb58570716159c4
+  signature: Vf+L/+z/i/9B/wz/hf/A/3T/Ef+L/0j/BP87/03/CP90/wT/i/8A/+v/8P9q/wH/WP/r/wL/M//A/13/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?FindRefreshRate@CRefreshRateList@@QAEHK@Z
+    size: 33
+    flags: 1
+    section: .text
+  relocations: []

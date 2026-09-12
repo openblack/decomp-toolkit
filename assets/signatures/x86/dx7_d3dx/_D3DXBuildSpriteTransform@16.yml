@@ -1,0 +1,226 @@
+- symbol: 0
+  hash: 3b13ea020f424bc70c523131c0081f92ec6525ac
+  signature: Vf+L/+z/gf/s/0D/Av8A/wD/U/+L/13/CP9W/1f/hf/b/w//hP8C/wL/AP8A/4v/df8M/4X/9v8P/4T/9/8B/wD/AP+L/0b/DP9R/yv/Rv8E/9n/6P+J/0X/CP+L/0b/CP/Z/xz/JP/b/0X/CP8r/wb/Uf/Z/xz/JP+J/0X/CP9R/9v/Rf8I/43/hf/A//7//////9n/HP8k/1D/6P8AAAAAAAAAAIv/ff8U/4X///90/yP/2f/u/1H/jf+F/4D//v//////2f8c/yT/2f9H/wT/Uf/Z/+D/2f8c/yT/2f8H/1H/2f/g/9n/HP8k/1D/6P8AAAAAAAAAANn/Rf8Q/9j/Hf8AAAAAAAAAAN//4P+e/3T/E//Z/0X/EP9R/43/hf9A//7//////9n/HP8k/1D/6P8AAAAAAAAAANv/Bv+F////2v9G/wj/2P8N/wAAAAAAAAAA2/9G/wT/2v9G/wz/2P8N/wAAAAAAAAAAdP8J/9n/B//Y/8L/3f/a/9j/R/8E/9n/7v9R/43/hf8A/////////9n/HP8k/1H/2f/A/9n/HP8k/1H/3f/Y/9n/wP/Z/xz/JP9Q/93/2P/o/wAAAAAAAAAA2f9F/xD/2P8d/wAAAAAAAAAA3//g/57/D/+E/7r/AP8A/wD/hf///3T/cv+N/4X/gP/+//////9Q/43/hf/A//7//////1D/jf+F/wD//v//////UP/o/wAAAAAAAAAAav8Q/43/hf9A//7//////1n/jf+1/wD//v//////UP+N/4X/wP/9//////9Q/43/vf/A//3//////43/hf9A//////////P/pf9Q/+j/AAAAAAAAAABq/xD/jf+F/wD/////////Wf+N/7X/QP////////9Q/43/Rf+A/1D/jf99/4D/jf9F/8D/8/+l/1D/6P8AAAAAAAAAAGr/EP+N/3X/wP9Z/+n/qf8A/wD/AP+N/4X/QP/+//////9Q/43/hf/A//7//////1D/jf9F/8D/UP/o/wAAAAAAAAAAav8Q/43/hf8A/////////1n/jf91/8D/UP+N/0X/gP9Q/43/ff+A/43/hf9A//////////P/pf9Q/+j/AAAAAAAAAABq/xD/jf+1/0D/////////Wf/r/2X/hf///3T/RP+N/4X/gP/+//////9Q/43/hf/A//7//////1D/jf9F/8D/UP/o/wAAAAAAAAAAav8Q/43/hf8A/////////1n/jf91/8D/UP+N/0X/gP9Q/43/ff+A/43/hf9A//////////P/pf9Q/+j/AAAAAAAAAABq/xD/jf+1/0D/////////Wf/r/x3/jf+F/wD/////////UP+N/4X/wP/+//////9Q/43/Rf/A/1D/6P8AAAAAAAAAAGr/EP+N/3X/wP9Z/4v/+//z/6X/X/9e/1v/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXBuildSpriteTransform@16
+    size: 544
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixScaling@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMatrixTranslation@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T43168
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixRotationZ@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T43169
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 79
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 121
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 130
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 154
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 167
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 179
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 224
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 233
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 272
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 315
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 349
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 383
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 417
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 455
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 489
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 523
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+- symbol: 0
+  hash: 3e0e0b1f9571a40195c74eecb5c130cfce8c6be7
+  signature: Vf+L/+z/gf/s/0D/Av8A/wD/U/+L/13/CP9W/1f/hf/b/w//hP8E/wL/AP8A/4v/df8M/4X/9v8P/4T/+f8B/wD/AP+L/0b/DP9R/yv/Rv8E/9n/6P+J/0X/CP+L/0b/CP/Z/xz/JP/b/0X/CP8r/wb/Uf/Z/xz/JP+J/0X/CP9R/9v/Rf8I/43/hf/A//7//////9n/HP8k/1D/6P8AAAAAAAAAAIv/ff8U/4X///90/yP/2f/u/1H/jf+F/4D//v//////2f8c/yT/2f9H/wT/Uf/Z/+D/2f8c/yT/2f8H/1H/2f/g/9n/HP8k/1D/6P8AAAAAAAAAANn/Rf8Q/9j/Hf8AAAAAAAAAAN//4P+e/3T/E//Z/0X/EP9R/43/hf9A//7//////9n/HP8k/1D/6P8AAAAAAAAAANv/Bv+F////2v9G/wj/2P8N/wAAAAAAAAAA2/9G/wT/2v9G/wz/2P8N/wAAAAAAAAAAdP8J/9n/B//Y/8L/3f/a/9j/R/8E/9n/7v9R/43/hf8A/////////9n/HP8k/1H/2f/A/9n/HP8k/1H/3f/Y/9n/wP/Z/xz/JP9Q/93/2P/o/wAAAAAAAAAA2f9F/xD/2P8d/wAAAAAAAAAA3//g/57/D/+E/7r/AP8A/wD/hf///3T/cv+N/4X/gP/+//////9Q/43/hf/A//7//////1D/jf+F/wD//v//////UP/o/wAAAAAAAAAAav8Q/43/hf9A//7//////1n/jf+1/wD//v//////UP+N/4X/wP/9//////9Q/43/vf/A//3//////43/hf9A//////////P/pf9Q/+j/AAAAAAAAAABq/xD/jf+F/wD/////////Wf+N/7X/QP////////9Q/43/Rf+A/1D/jf99/4D/jf9F/8D/8/+l/1D/6P8AAAAAAAAAAGr/EP+N/3X/wP9Z/+n/qf8A/wD/AP+N/4X/QP/+//////9Q/43/hf/A//7//////1D/jf9F/8D/UP/o/wAAAAAAAAAAav8Q/43/hf8A/////////1n/jf91/8D/UP+N/0X/gP9Q/43/ff+A/43/hf9A//////////P/pf9Q/+j/AAAAAAAAAABq/xD/jf+1/0D/////////Wf/r/2X/hf///3T/RP+N/4X/gP/+//////9Q/43/hf/A//7//////1D/jf9F/8D/UP/o/wAAAAAAAAAAav8Q/43/hf8A/////////1n/jf91/8D/UP+N/0X/gP9Q/43/ff+A/43/hf9A//////////P/pf9Q/+j/AAAAAAAAAABq/xD/jf+1/0D/////////Wf/r/x3/jf+F/wD/////////UP+N/4X/wP/+//////9Q/43/Rf/A/1D/6P8AAAAAAAAAAGr/EP+N/3X/wP9Z/4v/+//z/6X/6/8O/2j/AAAAAAAAAABq/wD/6P8AAAAAAAAAAFn/Wf9f/17/W//J/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXBuildSpriteTransform@16
+    size: 560
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixScaling@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMatrixTranslation@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T43197
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixRotationZ@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T43198
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EF@NBGC@D3DXBuildSpriteTransform?3?5Invali@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 79
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 121
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 130
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 154
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 167
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 179
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 224
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 233
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 272
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 315
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 349
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 383
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 417
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 455
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 489
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 523
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 540
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 547
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

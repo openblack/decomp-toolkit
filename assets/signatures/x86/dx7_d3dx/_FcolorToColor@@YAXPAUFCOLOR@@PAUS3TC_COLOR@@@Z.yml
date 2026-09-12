@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 2fcb1617f2e529184bfdc0518ff5a24d83cfb010
+  signature: U/9W/1f/i/98/yT/EP++/wAAAAAAAAAAM//b/yv//v/Z/wT/N//Y/w3/AAAAAAAAAADY/zb/6P8AAAAAAAAAAIv/TP8k/xT/g//G/wT/iP8E/wv/Q/+B//7/AAAAAAAAAAB8/93/X/9e/1v/w/8=
+  symbols:
+  - kind: Function
+    name: ?FcolorToColor@@YAXPAUFCOLOR@@PAUS3TC_COLOR@@@Z
+    size: 55
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _wtPrimary$S42487
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: $T43804
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __ftol
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 28
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 45
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: ab126abc1f55a1533b8c45ff50a0129b27cfe9e7
+  signature: Vf+L/+z/U/9W/1f/i/99/wj/vv8AAAAAAAAAADP/2/8r//7/2f8E/zf/2P8N/wAAAAAAAAAA2P82/+j/AAAAAAAAAACL/03/DP+D/8b/BP+I/wT/C/9D/4H//v8AAAAAAAAAAHz/3v9f/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: ?FcolorToColor@@YAXPAUFCOLOR@@PAUS3TC_COLOR@@@Z
+    size: 57
+    flags: 2
+    section: .text
+  - kind: Object
+    name: _wtPrimary$S42498
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: $T43837
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __ftol
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 46
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

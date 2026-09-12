@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b5e86e6621118a1ad51dc3a5ee8130bcbc58c74d
+  signature: M//A/zn/Qf8w/3T/C/85/4H/nP8E/wD/AP91/wP/av8B/1j/w/8=
+  symbols:
+  - kind: Function
+    name: ?IsValid@CSurfaceLock@@QAEHXZ
+    size: 19
+    flags: 1
+    section: .text
+  relocations: []

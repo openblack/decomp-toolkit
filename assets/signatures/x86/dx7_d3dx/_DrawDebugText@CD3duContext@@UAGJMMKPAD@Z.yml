@@ -1,0 +1,367 @@
+- symbol: 0
+  hash: 0410d7638bc1d986326cd4185c588d2f7e2ffa6d
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P8s/wH/AP8A/4P/Zf/8/wD/g/99/xj/AP9T/1b/V/+J/2X/8P91/1j/v/8AAAAAAAAAAIP/yf///zP/wP+N/5X/TP/////////y/67/9//R/yv/+f/H/0X/zP+5/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9M/////////4P/4f8D//P/pP9Z/43/tf9M/////////43/vf9M/////////8f/Rf/Q/5j/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/13/CP+D/7v/lP8A/wD/AP8A/3X/WP+//wAAAAAAAAAAg//J////M//A/43/lf9M//////////L/rv/3/9H/K//5/8f/Rf/M/8n/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/0z/////////g//h/wP/8/+k/1n/jf+1/0z/////////jf+9/0z/////////x/9F/9D/n/8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/g/+U/wD/AP8A/43/Vf/s/1L/UP+L/wj///9R/0T/hf/A/33/VP+J/0X/zP+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf9M/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9M/////////4P/4f8D//P/pP9Z/43/tf9M/////////43/vf9M/////////8f/Rf/Q/6b/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/03/FP+L/0X/FP/B/+n/CP+I/03/CP8z/8n/iv9t/xT/iv9N/wj/wf/o/xD/D/+2/8D/wf/h/wj/C//I/1H///91/+z///8V/wAAAAAAAAAAav8B////df/s////Ff8AAAAAAAAAAIv/c/88/4P/Zf/o/wD/if91/+T/3/9t/+T/2P9N/wz/6P8AAAAAAAAAAIv/e/84/4P/Zf/o/wD/if99/+T/if9F/9T/3/9t/+T/2P9N/xD/6P8AAAAAAAAAAIn/Rf/Y/4n/ff/g/4v/ff8Y/4P/yf///zP/wP9o/0D/GP8A/wD/8v+u//f/0f+N/0X/1P9J/1D/Uf///3X/GP+J/3X/3P///3X/7P///xX/AAAAAAAAAACL/5v/lP8A/wD/AP///3X/7P+L/wP/U////1D/aP+F/8D/ff9U/4n/Rf/M/7//AAAAAAAAAACD/8n///8z/8D/8v+u//f/0f8r//n/jf+V/0z/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/0z/////////g//h/wP/8/+k/1n/jf+1/0z/////////jf+9/0z/////////x/9F/9D/zf8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAADP/wP/r/xf/jf+N/8T//v//////6P8AAAAAAAAAALj/AAAAAAAAAADD/4v/hf9E/////////4v/Tf/0/1//Xv9k/4n/Df8AAAAAAAAAAFv/yf/C/xT/AP8=
+  symbols:
+  - kind: Function
+    name: ?DrawDebugText@CD3duContext@@UAGJMMKPAD@Z
+    size: 613
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43809
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DH@IFDC@CD3duContext?3?3DrawDebugText?5?9?5NU@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DJ@FACC@CD3duContext?3?3DrawDebugText?5?9?5Th@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DM@IFIF@CD3duContext?3?3DrawDebugText?5?9?5Co@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__SetTextColor@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetBkMode@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ftol
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DrawTextA@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EA@HION@CD3duContext?3?3DrawDebugText?5?9?5Co@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L43800
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 34
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 109
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 117
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 134
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 209
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 217
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 245
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 313
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 321
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 362
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 373
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 394
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 418
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 462
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 489
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 557
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 565
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 580
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 585
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 604
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+- symbol: 0
+  hash: ac3ea65690f2001b8629c49dc248430c0291e5ce
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+0/wH/AP8A/4P/Zf/8/wD/g/99/xj/AP9T/1b/V/+J/2X/8P91/2P/jf+N/0z/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/0z/////////8v+u//f/0f8r//n/x/9F/8z/uf8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/xP/+//////+D/+H/A//z/6T/Wf+N/7X/TP////////+N/73/xP/+///////H/0X/0P+Y/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9d/wj/g/+7/5T/AP8A/wD/AP91/2P/jf+N/0z/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/0z/////////8v+u//f/0f8r//n/x/9F/8z/yf8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/xP/+//////+D/+H/A//z/6T/Wf+N/7X/TP////////+N/73/xP/+///////H/0X/0P+f/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/+D/5T/AP8A/wD/jf9V/+z/Uv9Q/4v/CP///1H/RP+L//D/hf/2/33/X/+N/43/TP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+J/3X/zP/y/67/9//R/yv/+f+N/5X/TP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/xP/+//////+D/+H/A//z/6T/Wf+N/7X/TP////////+N/73/xP/+///////H/0X/0P+m/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9N/xT/i/9F/xT/wf/p/wj/iP9N/wj/M//J/4r/bf8U/4r/Tf8I/8H/6P8Q/w//tv/A/8H/4f8I/wv/yP9R////df/s////Ff8AAAAAAAAAAGr/Af///3X/7P///xX/AAAAAAAAAACL/3P/PP+D/2X/6P8A/4n/df/k/9//bf/k/9j/Tf8M/+j/AAAAAAAAAACL/3v/OP+D/2X/6P8A/4n/ff/k/4n/Rf/U/9//bf/k/9j/Tf8Q/+j/AAAAAAAAAACJ/0X/2P+J/33/4P+L/33/GP+D/8n///8z/8D/aP9A/xj/AP8A//L/rv/3/9H/jf9F/9T/Sf9Q/1H///91/xj/if91/9z///91/+z///8V/wAAAAAAAAAAi/+b/5T/AP8A/wD///91/+z/i/8D/1P///9Q/2j/i//w/4X/9v99/1//jf+N/0z/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/if91/8z/8v+u//f/0f8r//n/jf+V/0z/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/8T//v//////g//h/wP/8/+k/1n/jf+1/0z/////////jf+9/8T//v//////x/9F/9D/zf8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAADP/wP/r/xf/jf+N/zz//v//////6P8AAAAAAAAAALj/AAAAAAAAAADD/4v/hf+8//7//////4v/Tf/0/1//Xv9k/4n/Df8AAAAAAAAAAFv/yf/C/xT/AP8=
+  symbols:
+  - kind: Function
+    name: ?DrawDebugText@CD3duContext@@UAGJMMKPAD@Z
+    size: 661
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43855
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DH@IFDC@CD3duContext?3?3DrawDebugText?5?9?5NU@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DJ@FACC@CD3duContext?3?3DrawDebugText?5?9?5Th@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DM@IFIF@CD3duContext?3?3DrawDebugText?5?9?5Co@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__SetTextColor@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetBkMode@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __ftol
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DrawTextA@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EA@HION@CD3duContext?3?3DrawDebugText?5?9?5Co@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L43845
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 45
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 120
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 128
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 151
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 156
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 231
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 239
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 272
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 277
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 348
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 356
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 397
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 408
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 429
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 453
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 497
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 529
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 534
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 605
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 613
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 628
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 633
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 652
+    kind: x86_abs32
+    symbol: 16
+    addend: 0

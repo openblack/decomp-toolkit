@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: b71fc42ccb3c63ac4d013a4a28470d3399dbebac
+  signature: i/9E/yT/BP9W////SP8E/4v/cP8E/4X/9v91/w7/UP+h/wAAAAAAAAAAi/9I/xD/6P8AAAAAAAAAAIv/xv9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Release@CD3duContext@@UAGKXZ
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DestroyD3duContext@CD3duContextList@@QAEXPAVCD3duContext@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: dc7f57311d318a265e227f7bcceb923a7f37aefd
+  signature: Vf+L/+z/i/9F/wj/Vv///0j/BP+L/3D/BP+F//b/df8O/1D/of8AAAAAAAAAAIv/SP8Q/+j/AAAAAAAAAACL/8b/Xv9d/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Release@CD3duContext@@UAGKXZ
+    size: 38
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DestroyD3duContext@CD3duContextList@@QAEXPAVCD3duContext@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

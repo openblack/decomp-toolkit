@@ -1,0 +1,50 @@
+- symbol: 0
+  hash: 800d246f761a49f72b9a04d605c73385629e5f49
+  signature: Vf+L/+z/Uf9T/1b/jf9F//z/V/9Q/4v/+f///3X/CP/o/wAAAAAAAAAAi//w/4X/9v90/1f/jf9F/wj/UP///3X//P9W/2j/fP8B/wD/AP///3X/DP/o/wAAAAAAAAAAg//E/xT/hf/A/3z/Dv+L/0X/CP8p/0X//P8D//D/g/99//z/BP90/wn/i//P/+j/AAAAAAAAAADr/yT/i/9d/xD/hf/b/3T/WP+D/zv/AP91/1P/i/8G/4X/wP90/03/jf9N/wj/Uf9Q/4v/z//o/wAAAAAAAAAAi//w/4X/9v91/wf/uP8F/0D/AP+A/+v/Nv+L/0X/CP9A/1D/6P8AAAAAAAAAAIX/wP9Z/4n/A/91/wf/uP+4/wv/d//I/+v/Hv+L/03/CP+L//j/i//B/8H/6f8C//P/pf+L/8j/g//h/wP/8/+k/4v/A/+L/03/CP+A/yT/CP8A/zP/wP9f/17/W//J/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Parse2D@CCapsFile@@IAEJKPAU_DDCAPS_DX7@@PAPAD@Z
+    size: 182
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ReadData@CD3dxFile@@QAEPBXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Decompress@CD3dxFile@@SAJPAXKPBXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CloseCorrupt@CD3dxFile@@QAEJXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 104
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

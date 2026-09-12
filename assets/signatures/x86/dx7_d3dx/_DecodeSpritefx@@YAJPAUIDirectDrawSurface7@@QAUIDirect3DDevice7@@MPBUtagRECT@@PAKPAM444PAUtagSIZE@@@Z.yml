@@ -1,0 +1,114 @@
+- symbol: 0
+  hash: 07b9f438cff76b0d13001101fbaeae766c8cd486
+  signature: Vf+L/+z/gf/s/5j/AP8A/wD/2f9F/xD/2P8N/wAAAAAAAAAAU/9W/1f/6P8AAAAAAAAAAIv/Tf8Y/4v/df8c/4v/Xf8g/8H/4P8Y/w3/////////AP+D/33/CP8A/9n/7v+J/wH/i/9F/yT/2f8e/9n/7v/Z/xv/2f/o/9n/GP+L/0X/KP/Z/+j/2f8Y/3X/Mf+L/0X/DP+N/1X/CP9S/2r/AP+L/wj/UP///5H/iP8A/wD/AP+F/8D/D/+M/zz/Af8A/wD/i/9F/wj/hf/A/3X/Cv+4/wX/QP8A/4D/6f8r/wH/AP8A/4v/CP9Q////Uf8I/zP/wP+N/33/5P+r/6v/q/+r/2r/FP+N/1X/EP+r/1j/if9F/+T/if9F/xD/i/9F/wj/Uv+N/1X/5P+L/wj/Uv9o/wAAAAAAAAAAUP///5H/pP8A/wD/AP+F/8D/fP9F/4v/Tf8U/4X/yf90/y7/i/9F/+z/g/9l//z/AP+J/0X/+P+L/0X/JP/f/23/+P/b/wH/g/9l//z/AP/Y//H/2f8e/9v/Qf8I/9j/8f/Z/xj/i/9F//D/3f/Y/4n/Rf/4/9//bf/4/+v/eP+L/0X/LP+L/03/7P+J/wj/i/9N//D/6f+r/wD/AP8A/2r/H/8z/8D/Wf+N/73/aP/////////z/6v/i/9F/wj/jf+V/2j/////////x/+F/2j/////////fP8A/wD/AP9S/4v/CP9Q////Uf9Y/4X/wP8P/4z/gf8A/wD/AP+L/03/FP+F/8n/dP9k/4v/hf90/////////4P/Zf/8/wD/if9F//j/i/9F/yT/3/9t//j/2/8B/4P/Zf/8/wD/2P/x/9n/Hv/b/0H/CP/Y//H/2f8Y/4v/hf9w/////////93/2P+J/0X/+P/f/23/+P/b/0H/BP+L/0X/KP+L/3X/LP/Y//H/2f8b/9v/Qf8M/9j/8f/Z/xj/i/9B/wj/K/8B/93/2P+Z/zP/wv8r/8L/if8G/4v/Qf8M/yv/Qf8E/5n/M//C/yv/wv+J/0b/BP/r/xT/i/9F/yz/i/+N/3T/////////if8I/4v/jf9w/////////4n/SP8E/zP/wP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?DecodeSpritefx@@YAJPAUIDirectDrawSurface7@@QAUIDirect3DDevice7@@MPBUtagRECT@@PAKPAM444PAUtagSIZE@@@Z
+    size: 420
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T43189
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __ftol
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?GUID_SURFACEDATA_ORIGINALSIZE@@3U_GUID@@B
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 155
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
+  hash: 7bb6fdb76e59af126aa3acb7c976b6eef8d1a087
+  signature: Vf+L/+z/gf/s/5j/AP8A/wD/2f9F/xD/2P8N/wAAAAAAAAAAU/9W/1f/6P8AAAAAAAAAAIv/Tf8Y/4v/df8c/4v/Xf8g/8H/4P8Y/w3/////////AP+D/33/CP8A/9n/7v+J/wH/i/9F/yT/2f8e/9n/7v/Z/xv/2f/o/9n/GP+L/0X/KP/Z/+j/2f8Y/3X/SP+L/0X/DP+N/1X/CP9S/2r/AP+L/wj/UP///5H/iP8A/wD/AP+L//j/hf///33/DP9o/wAAAAAAAAAAav8A/+n/0f8A/wD/AP+L/0X/CP+F/8D/df8X/2j/AAAAAAAAAABQ/+j/AAAAAAAAAABZ/7j/Bf9A/wD/gP9Z/+n/Pf8B/wD/AP+L/wj/UP///1H/CP8z/8D/jf99/+T/q/+r/6v/q/9q/xT/jf9V/xD/q/9Y/4n/Rf/k/4n/Rf8Q/4v/Rf8I/1L/jf9V/+T/i/8I/1L/aP8AAAAAAAAAAFD///+R/6T/AP8A/wD/hf/A/3z/SP+L/03/FP+F/8n/dP8x/4v/Rf/s/4P/Zf/8/wD/if9F//j/i/9F/yT/3/9t//j/2/8B/4P/Zf/8/wD/2P/x/9n/Hv/b/0H/CP/Y//H/2f8Y/4v/Rf/w/93/2P+J/0X/+P/f/23/+P/p/4f/AP8A/wD/i/9F/yz/i/9N/+z/if8I/4v/Tf/w/+n/uv8A/wD/AP9q/x//M//A/1n/jf+9/2j/////////8/+r/4v/Rf8I/43/lf9o/////////8f/hf9o/////////3z/AP8A/wD/Uv+L/wj/UP///1H/WP+L//j/M//A/zv/+P99/xH/aP8AAAAAAAAAAFD/6P8AAAAAAAAAAFn/i//H/1n/6/9//4v/Tf8U/zv/yP90/2L/i/+V/3T/////////if9F//z/if9V//j/i/9V/yT/3/9t//j/2/8B/4n/Rf/8/9j/8f/Z/x7/2/9B/wj/2P/x/9n/Gv+L/5X/cP/////////d/9j/if9V//j/3/9t//j/2/9B/wT/i/9F/yj/i/91/yz/2P/x/9n/G//b/0H/DP/Y//H/2f8Y/4v/Qf8I/yv/Af/d/9j/mf8z/8L/K//C/4n/Bv+L/0H/DP8r/0H/BP+Z/zP/wv8r/8L/if9G/wT/6/8U/4v/Rf8s/4v/jf90/////////4n/CP+L/43/cP////////+J/0j/BP8z/8D/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?DecodeSpritefx@@YAJPAUIDirectDrawSurface7@@QAUIDirect3DDevice7@@MPBUtagRECT@@PAKPAM444PAUtagSIZE@@@Z
+    size: 461
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T43224
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: __ftol
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EE@HDMN@Failed?5to?5access?5texture?5in?5stag@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@JODE@No?5texture?5set?5in?5stage?5zero?$CB?5D3@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?GUID_SURFACEDATA_ORIGINALSIZE@@3U_GUID@@B
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CP@KEHD@D3DX?5Sprite?3?5GetSurfaceDesc?5fail@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 98
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 117
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 123
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 178
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 313
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 319
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

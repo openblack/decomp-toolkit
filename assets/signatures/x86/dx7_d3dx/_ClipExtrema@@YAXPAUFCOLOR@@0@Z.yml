@@ -1,0 +1,37 @@
+- symbol: 0
+  hash: 884e776f71015ece187f3e77e78c986ceef4e197
+  signature: Vf+L/+z/Uf9R/4v/Vf8I/1P/2f8F/wAAAAAAAAAAVv9X/4v/ff8M/8f/Rf8I/wAAAAAAAAAA2f8F/wAAAAAAAAAAi//f/4v/yv8r/9r/Kf9V/wj/if9d//z/x/9F//j/A/8A/wD/AP/Z/wH/2P/a/9//4P+e/3P/Bf9q/wH/Xv/r/wL/M//2/9n/BP8L/9j/2v/f/+D/nv9z/wX/av8B/1j/6/8C/zP/wP8z/8b/dP9G/9n/BP8L/9j/If/Y/zn/2f/g/9n/Af/Y/9v/3//g/57/c/8E/4v/wv/r/wj/2f/A/9j/4v+L/8f/3f/Z/9n/R/8I/9j/Yv8I/9j/yf/Y/0D/CP/Z/1j/CP/Z/0f/BP/Y/2L/BP/Y/8n/2P9A/wT/2f9Y/wT/2f8H/9j/Iv/Y/8n/2P8A/9n/GP/d/9j/i/9F/wj/2f8B/9j/HP8I/43/NP8I/9//4P+e/3b/Cf/H/0X/DP8B/wD/AP8A/+v/BP+D/2X/DP8A/9n/BP8L/9j/Hv/f/+D/nv92/wX/av8B/1j/6/8C/zP/wP8z/0X/DP90/03/2f8G/4v/Xf/8/9j/If/Z/wT/C//Y/yH/3v/5/9n/Af/Y/x7/3//g/57/dv8E/4v/wv/r/wj/2f/A/9j/4v+L/8f/3f/Z/9n/R/8I/9j/Yv8I/9j/yf/Y/0D/CP/Z/1j/CP/Z/0f/BP/Y/2L/BP/Y/8n/2P9A/wT/2f9Y/wT/2f8H/9j/Iv/Y/8n/2P8A/9n/GP/d/9j/6/8D/4v/Xf/8/4P/wf8E////Tf/4/w//hf8G/////////93/2P9f/17/3f/Y/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?ClipExtrema@@YAXPAUFCOLOR@@0@Z
+    size: 311
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

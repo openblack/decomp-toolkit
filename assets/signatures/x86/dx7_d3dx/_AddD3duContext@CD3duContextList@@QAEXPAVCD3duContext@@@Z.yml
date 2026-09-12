@@ -1,0 +1,200 @@
+- symbol: 0
+  hash: e1f28fd07bed5583bb082c9873c0af8311d91ef9
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/kP8A/wD/AP9T/1b/V/+J/03/8P9q/wj/6P8AAAAAAAAAAFn/if9F/+z/g/9l//z/AP+F/8D/dP8L/4v/yP/o/wAAAAAAAAAAi//Y/+v/Av8z/9v/g//J////hf/b/4n/Tf/8/3X/Vf+//wAAAAAAAAAAM//A//L/rv/3/9H/K//5/43/lf9k/////////4v/wf+L//f/i//6/8f/Rf/k/7j/C/93/8j/wf/p/wL/8/+l/4v/yP9q/yL/g//h/wP/jf+F/2T/////////8/+k/1n/jf+1/2T/////////jf+9/2T/////////x/9F/+j/J/8C/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/Rf8I/4v/Tf/w/4n/Q/8E/1P/i/8B////UP8E/4v/Tf/0/1//Xv9k/4n/Df8AAAAAAAAAAFv/yf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?AddD3duContext@CD3duContextList@@QAEXPAVCD3duContext@@@Z
+    size: 181
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43362
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duContextNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DB@JCAJ@CD3duContextList?3?3AddD3duContext@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 65
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 137
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 145
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 172
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+- symbol: 0
+  hash: c1618d24c8151b2721408511b77adab86dd5a480
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/GP8B/wD/AP+D/33/CP8A/1P/Vv9X/4n/Tf/w/3X/F/9o/wAAAAAAAAAAaP8i/wL/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/av8I/+j/AAAAAAAAAABZ/4n/Rf/s/4P/Zf/8/wD/hf/A/3T/C/+L/8j/6P8AAAAAAAAAAIv/2P/r/wL/M//b/4P/Tf/8////hf/b/3X/Y/+N/43/ZP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/ZP/////////y/67/9//R/yv/+f/H/0X/5P+4/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/c//7//////4P/4f8D//P/pP9Z/43/tf9k/////////43/vf/c//7//////8f/Rf/o/yf/Av8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/0X/CP+L/03/8P+J/0P/BP9T/4v/Af///1D/BP+L/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?AddD3duContext@CD3duContextList@@QAEXPAVCD3duContext@@@Z
+    size: 222
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43422
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0N@IGLA@pD3duContext?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@BMII@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2CD3duAlloc@@SAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duContextNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DB@JCAJ@CD3duContextList?3?3AddD3duContext@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 29
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 44
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 103
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 178
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 186
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 213
+    kind: x86_abs32
+    symbol: 12
+    addend: 0

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 85bc5dd81bf8ee76e119d52db5f42241f8a870c9
+  signature: M//A/4P/uf8E/wH/AP8A////D/+V/8D/w/8=
+  symbols:
+  - kind: Function
+    name: ?IsOpen@CD3dxFile@@QAEHXZ
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []

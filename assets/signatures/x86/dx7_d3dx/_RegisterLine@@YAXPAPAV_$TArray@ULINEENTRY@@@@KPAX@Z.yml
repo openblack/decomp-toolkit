@@ -1,0 +1,119 @@
+- symbol: 0
+  hash: 33a1878dd6893756f8f2f0574691f797c2ca9e9d
+  signature: Vf+L/+z/gf/s/5D/AP8A/wD/U/+L/13/CP9W/zP/9v85/zP/V/91/3b/av8M/+j/AAAAAAAAAAA7/8b/Wf90/wr/if9w/wT/if9w/wj/if8w/+v/Av8z/8D/O//G/4n/A/91/1j/v/8AAAAAAAAAAIP/yf///zP/wP+N/5X/cP/////////y/67/9//R/yv/+f/H/0X/8P+4/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9w/////////4P/4f8D//P/pP9Z/43/tf9w/////////43/vf9w/////////8f/Rf/0/xX/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/0X/DP+L/wv/if9F//j/i/9F/xD/if9F//z/jf9F//j/UP/o/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?RegisterLine@@YAXPAPAV?$TArray@ULINEENTRY@@@@KPAX@Z
+    size: 167
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BN@DHGG@RegisterLine?5?9?5out?5of?5memory?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Add@?$TArray@ULINEENTRY@@@@QAEHPAULINEENTRY@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 52
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 127
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 135
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+- symbol: 0
+  hash: d9b0561c1b387574e8c0d0fe604dcb748b65c231
+  signature: Vf+L/+z/gf/s/xj/Af8A/wD/U/+L/13/CP9W/zP/9v85/zP/V/8P/4X/gf8A/wD/AP9q/wz/6P8AAAAAAAAAADv/xv9Z/3T/Cv+J/3D/BP+J/3D/CP+J/zD/6/8C/zP/wP87/8b/if8D/3X/Y/+N/43/cP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/cP/////////y/67/9//R/yv/+f/H/0X/8P+4/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/o//7//////4P/4f8D//P/pP9Z/43/tf9w/////////43/vf/o//7//////8f/Rf/0/xX/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/0X/DP+L/wv/if9F//j/i/9F/xD/if9F//z/jf9F//j/UP/o/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?RegisterLine@@YAXPAPAV?$TArray@ULINEENTRY@@@@KPAX@Z
+    size: 182
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BN@DHGG@RegisterLine?5?9?5out?5of?5memory?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Add@?$TArray@ULINEENTRY@@@@QAEHPAULINEENTRY@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 28
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 62
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 67
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 142
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 150
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 173
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

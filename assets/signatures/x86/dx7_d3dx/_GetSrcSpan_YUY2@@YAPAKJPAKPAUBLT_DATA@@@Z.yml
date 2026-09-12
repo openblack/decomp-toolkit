@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 9901ebbd102a65be1be24d03d8565adebd44b39e
+  signature: Vf+L/+z/Uf9R/1P/Vv9X/4v/ff8Q/4P/Zf/8/wD/i/+H/6j/AP8A/wD/i/+3/7D/AP8A/wD/if9F/xD/i/+H/5D/AP8A/wD/if9F//j/i/9F/wj/hf/A/37/S/+L/13/DP+J/0X/CP+J/0X//P+L/03/EP/B//n/EP/2/8H/Af+N/wT/Tv90/wf/iv9Q//7/iv8I/+v/Bv+K/xD/iv9M/07/Av8P/7f/AP8P/7b/0v8k/wD/C//C/w3/AP8A//////8P/7b/yf/B/+D/CP8L/8H/if8D/4v/Rf/4/wH/Rf8Q/4P/w/8E////Tf8I/3X/vv+D/3//BP8A/3T/Df///3X/DP///3X//P/o/wAAAAAAAAAAWf9Z/4v/Rf8M/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?GetSrcSpan_YUY2@@YAPAKJPAKPAUBLT_DATA@@@Z
+    size: 148
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?YUVtoRGB@@YAPAKJPAK@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 134
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

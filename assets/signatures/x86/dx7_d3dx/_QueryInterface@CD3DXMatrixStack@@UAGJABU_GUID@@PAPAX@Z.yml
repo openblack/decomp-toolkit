@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 48a1c11096d05bbe2e2b504ef2d3c1363d7e2c48
+  signature: Vf+L/+z/i/9V/xD/Vv+F/9L/V/91/wf/uP+5/wv/d//I/+v/Nv+L/3X/DP9q/xD/Wf+//wAAAAAAAAAAM//A//P/pv90/xH/i/91/wz/av8Q/1n/v/8AAAAAAAAAADP/wP/z/6b/df8P/4v/Rf8I/4n/Av9Q/4v/CP///1H/BP8z/8D/6/8F/7j/Av9A/wD/gP9f/17/Xf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: ?QueryInterface@CD3DXMatrixStack@@UAGJABU_GUID@@PAPAX@Z
+    size: 79
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _IID_ID3DXMatrixStack
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IUnknown
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

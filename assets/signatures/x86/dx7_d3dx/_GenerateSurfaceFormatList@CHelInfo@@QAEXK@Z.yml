@@ -1,0 +1,289 @@
+- symbol: 0
+  hash: 45bbdc1cc2423186ece7cfbc01e7ccfd2b81adfd
+  signature: Vf+L/+z/gf/s/yz/Af8A/wD/g/9l//z/AP+D/2X/9P8A/1P/i//Z/1b/V/+N/03/2P/o/wAAAAAAAAAAg/99/wj//P/H/0X/+P8AAAAAAAAAAHT/OP+D/33/CP/9/3T/Hv+D/33/CP/+/w//hf8n/wL/AP8A/77/AAAAAAAAAACN/33/5P+l/6X/i/+b/5D/Af8A/wD/pf+l/+v/Jv++/wAAAAAAAAAAjf99/+T/pf+l/4v/m/+M/wH/AP8A/6X/pf/r/xL/vv8AAAAAAAAAAI3/ff/k/6X/pf+L/5v/iP8B/wD/AP+l/6X/M////43/Rf/c/1f/aP8AAAAAAAAAAFD/V//o/wAAAAAAAAAAi//w/zv/9/8P/4z/Qf8B/wD/AP+L/0X/3P9q/wj/V/9Q/4v/CP///1H/UP+L//D/O//3/w//jP8r/wH/AP8A/4v/Rf/c/43/Vf/Y/1L/aP8AAAAAAAAAAIv/CP9Q////Ef+L//D/O//3/w//jP8Q/wH/AP8A/2r/H/8z/8D/Wf+N/73/XP////////9q/0D/jf9V//z/8/+r/1j/x/+F/1z/////////fP8A/wD/AP9q/yD/if+F/2T/////////Wf+J/4X/aP////////+J/0X/qP+L/0X/3P9q/wD/Uv+N/5X/XP/////////H/4X/YP////////8H/xD/AP8A/8f/Rf/E/0D/KP8A/wD/if9N/6T/if9N/7D/x/9F/7T/AP8A////AP/H/0X/uP8A////AP8A/8f/Rf+8////AP8A/wD/x/9F/8D/AP8A/wD///+L/wj/Uv9Q////Uf8Y/4v/8P+F//b/D/+M/5H/AP8A/wD/i/9F//z/jf+V/1z/////////Uv9Q/4v/CP///1H/WP+L//D/hf/2/3z/e/+L/0X/2P+N/1X/9P9S/43/Vf/k////df/8/4v/CP9S/1D///9R/xD/i//w/4X/9v98/2H/jf+D//T/AP8A/wD/jf9V/9j/if9F/+D/i/9F/9j/Uv+//wAAAAAAAAAAi/8I/43/Vf/k/1f/Uv9Q////Uf8Y/4v/8P+F//b/fP87/4P/u//4/wD/AP8A/wD/dP8d/4v/Rf/0/43/Vf/Y/1L/V/+L/wj/UP///1H/EP+L//D/hf/2/3z/Hv+D/7v/+P8A/wD/AP8A/3X/Dv++/9j/C/93/8j/x/9F//j/AAAAAAAAAADr/wf/x/9D/wT/Af8A/wD/AP+L/0X/9P+F/8D/dP8G/4v/CP9Q////Uf8I/4v/Rf/Y/4X/wP90/wb/i/8I/1D///9R/wj/i/9F//z/hf/A/3T/Bv+L/wj/UP///1H/CP+L/0X/3P+F/8D/dP8G/4v/CP9Q////Uf8I/4X/9v99/1j/i/99//j/g//J////M//A/4n/tf9U//////////L/rv/3/9H/K//5/43/lf/U//7//////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/U//7//////4P/4f8D//P/pP9Z/43/tf/U//7//////43/vf/U//7//////8f/hf9Y/////////1b/Af8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABf/17/W//J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?GenerateSurfaceFormatList@CHelInfo@@QAEXK@Z
+    size: 617
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CEnumSurfaceFormatContext@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EO@JLNG@CHelInfo?3?3GenerateSurfaceFormatL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _IID_IDirect3DNullDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRefDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRGBDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirectDraw7
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _DirectDrawCreateEx@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3D7
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_D3DEnumCBListSurfaceFormats@CHelInfo@@SGJPAU_DDPIXELFORMAT@@PAX@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EJ@MIAI@CHelInfo?3?3GenerateSurfaceFormatL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 37
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 60
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 80
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 100
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 124
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 175
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 386
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 453
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 598
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 606
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+- symbol: 0
+  hash: 89df1a921a79aeda82271cfbe4491d5f4e05ac8a
+  signature: Vf+L/+z/gf/s/7T/Af8A/wD/g/9l//z/AP+D/2X/+P8A/1P/i//Z/1b/V/+N/03/2P/o/wAAAAAAAAAAg/99/wj//P/H/0X/9P8AAAAAAAAAAHT/UP+D/33/CP/9/3T/Nv+D/33/CP/+/3T/HP9o/wAAAAAAAAAAaP8e/wH/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/6f9N/wL/AP8A/77/AAAAAAAAAACN/33/5P+l/6X/i/+b/5D/Af8A/wD/pf+l/+v/Jv++/wAAAAAAAAAAjf99/+T/pf+l/4v/m/+M/wH/AP8A/6X/pf/r/xL/vv8AAAAAAAAAAI3/ff/k/6X/pf+L/5v/iP8B/wD/AP+l/6X/M////zv/3/91/xf/aP8AAAAAAAAAAGj/If8B/wD/AP9o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/1f/jf9F/9z/aP8AAAAAAAAAAFD/V//o/wAAAAAAAAAAi//w/zv/9/8P/4z/Qf8B/wD/AP+L/0X/3P9q/wj/V/9Q/4v/CP///1H/UP+L//D/O//3/w//jP8r/wH/AP8A/4v/Rf/c/43/Vf/Y/1L/aP8AAAAAAAAAAIv/CP9Q////Ef+L//D/O//3/w//jP8Q/wH/AP8A/2r/H/8z/8D/Wf+N/73/XP////////9q/0D/jf9V//z/8/+r/1j/x/+F/1z/////////fP8A/wD/AP9q/yD/if+F/2T/////////Wf+J/4X/aP////////+J/0X/qP+L/0X/3P9q/wD/Uv+N/5X/XP/////////H/4X/YP////////8H/xD/AP8A/8f/Rf/E/0D/KP8A/wD/if9N/6T/if9N/7D/x/9F/7T/AP8A////AP/H/0X/uP8A////AP8A/8f/Rf+8////AP8A/wD/x/9F/8D/AP8A/wD///+L/wj/Uv9Q////Uf8Y/4v/8P+F//b/D/+M/5H/AP8A/wD/i/9F//z/jf+V/1z/////////Uv9Q/4v/CP///1H/WP+L//D/hf/2/3z/e/+L/0X/2P+N/1X/+P9S/43/Vf/k////df/8/4v/CP9S/1D///9R/xD/i//w/4X/9v98/2H/jf+D//T/AP8A/wD/jf9V/9j/if9F/+D/i/9F/9j/Uv+//wAAAAAAAAAAi/8I/43/Vf/k/1f/Uv9Q////Uf8Y/4v/8P+F//b/fP87/4P/u//4/wD/AP8A/wD/dP8d/4v/Rf/4/43/Vf/Y/1L/V/+L/wj/UP///1H/EP+L//D/hf/2/3z/Hv+D/7v/+P8A/wD/AP8A/3X/Dv++/9j/C/93/8j/x/9F//T/AAAAAAAAAADr/wf/x/9D/wT/Af8A/wD/AP+L/0X/+P+F/8D/dP8G/4v/CP9Q////Uf8I/4v/Rf/Y/4X/wP90/wb/i/8I/1D///9R/wj/i/9F//z/hf/A/3T/Bv+L/wj/UP///1H/CP+L/0X/3P+F/8D/dP8G/4v/CP9Q////Uf8I/4X/9v99/2P/jf+N/9T//v//////6P8AAAAAAAAAAIv/ff/0/4P/yf///zP/wP+J/7X/VP/////////y/67/9//R/yv/+f+N/5X/1P/+//////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/TP/+//////+D/+H/A//z/6T/Wf+N/7X/1P/+//////+N/73/TP/+///////H/4X/WP////////9W/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAX/9e/1v/yf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GenerateSurfaceFormatList@CHelInfo@@QAEXK@Z
+    size: 679
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CEnumSurfaceFormatContext@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EO@JLNG@CHelInfo?3?3GenerateSurfaceFormatL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_05LLOB@FALSE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DG@PCGI@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DNullDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRefDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRGBDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_08FEND@pHelNode?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: _IID_IDirectDraw7
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _DirectDrawCreateEx@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3D7
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_D3DEnumCBListSurfaceFormats@CHelInfo@@SGJPAU_DDPIXELFORMAT@@PAX@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EJ@MIAI@CHelInfo?3?3GenerateSurfaceFormatL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 37
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 66
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 84
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 104
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 124
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 148
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 158
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 163
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 175
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 182
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 226
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 437
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 504
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 580
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 660
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 668
+    kind: x86_rel32
+    symbol: 17
+    addend: -4

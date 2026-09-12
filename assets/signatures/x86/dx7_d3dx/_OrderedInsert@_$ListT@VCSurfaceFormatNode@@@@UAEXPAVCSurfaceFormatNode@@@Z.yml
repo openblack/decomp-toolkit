@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: c2dd98ada9f8421a3b0d3a49fad231d80787ef5a
+  signature: Vf+L/+z/Uf+D/2X//P8A/1P/Vv+L//H/V/+L/37/DP///0b/CP+F////x/9G/wT/Af8A/wD/AP91/wr/i/9F/wj/if9G/wz/If84/+v/IP+L/13/CP+L/wb/V/9T/4v/zv///1D/DP+F/8D/df8X/4n/ff/8/4v/P/+F////df/q/4v/Rf/8/4n/GP8h/zv/X/9e/1v/yf/C/wT/AP85/37/DP91/wX/if9e/wz/6/8F/4v/Rf/8/4n/GP+J/zv/6//m/w==
+  symbols:
+  - kind: Function
+    name: ?OrderedInsert@?$ListT@VCSurfaceFormatNode@@@@UAEXPAVCSurfaceFormatNode@@@Z
+    size: 98
+    flags: 1
+    section: .text
+  relocations: []

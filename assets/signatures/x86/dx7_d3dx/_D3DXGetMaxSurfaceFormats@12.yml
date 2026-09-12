@@ -1,0 +1,341 @@
+- symbol: 0
+  hash: fb973ce9680678cdbe1ba1dd863e403a6bd6417f
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P8Q/wH/AP8A/4P/Zf/8/wD/g/89/wAAAAAAAAAAAP9T/1b/V/+J/2X/8P91/1j/v/8AAAAAAAAAAIP/yf///zP/wP+N/5X/aP/////////y/67/9//R/yv/+f/H/0X/6P/H/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf9o/////////4P/4f8D//P/pP9Z/43/tf9o/////////43/vf9o/////////8f/Rf/s/wD/Af8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/w3/AAAAAAAAAADo/wAAAAAAAAAAi/8N/wAAAAAAAAAAjf9F/wj/UP/o/wAAAAAAAAAA//91/wj/i/8N/wAAAAAAAAAA6P8AAAAAAAAAAP//df8Q/4v/yP///3X/DP/o/wAAAAAAAAAAi//w/4X/9v90/yz/i/9+/wj/i//O/8f/Bv8AAAAAAAAAAOj/AAAAAAAAAABW/+j/AAAAAAAAAABZ/4v/x//r/xP/jf+N/+D//v//////6P8AAAAAAAAAALj/AAAAAAAAAADD/zP/wP+L/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXGetMaxSurfaceFormats@12
+    size: 246
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L44864
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_0CH@HDJK@D3DXInitialize?$CI?$CJ?5must?5be?5called?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?InitializeIfNeeded@CD3duGlobals@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CheckAndMapD3duHandle@CD3duGlobals@@QAEXPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetD3duDeviceNode@CD3duGlobals@@QAEPAVCD3duDeviceNode@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetSurfaceFormatList@CD3duDeviceNode@@QAEPAVCSurfaceFormatList@@PAU_D3DX_VIDMODEDESC@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7?$ListT@VCSurfaceFormatNode@@@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCSurfaceFormatNode@@@@UAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L44839
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 112
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 120
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 126
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 137
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 146
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 155
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 160
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 173
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 190
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 195
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 201
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 217
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 222
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 237
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+- symbol: 0
+  hash: 114f4462f7aa612c2ff0815461b0f922939e15b6
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+Y/wH/AP8A/4P/Zf/8/wD/g/89/wAAAAAAAAAAAP9T/1b/V/+J/2X/8P91/2P/jf+N/2j/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/2j/////////8v+u//f/0f8r//n/x/9F/+j/x/8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/4P/+//////+D/+H/A//z/6T/Wf+N/7X/aP////////+N/73/4P/+///////H/0X/7P8A/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/8N/wAAAAAAAAAA6P8AAAAAAAAAAIv/Df8AAAAAAAAAAI3/Rf8I/1D/6P8AAAAAAAAAAP//df8I/4v/Df8AAAAAAAAAAOj/AAAAAAAAAAD//3X/EP+L/8j///91/wz/6P8AAAAAAAAAAIv/8P+F//b/dP8s/4v/fv8I/4v/zv/H/wb/AAAAAAAAAADo/wAAAAAAAAAAVv/o/wAAAAAAAAAAWf+L/8f/6/8T/43/jf9Y//7//////+j/AAAAAAAAAAC4/wAAAAAAAAAAw/8z/8D/i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXGetMaxSurfaceFormats@12
+    size: 257
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L44877
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CH@HDJK@D3DXInitialize?$CI?$CJ?5must?5be?5called?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?InitializeIfNeeded@CD3duGlobals@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CheckAndMapD3duHandle@CD3duGlobals@@QAEXPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetD3duDeviceNode@CD3duGlobals@@QAEPAVCD3duDeviceNode@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetSurfaceFormatList@CD3duDeviceNode@@QAEPAVCSurfaceFormatList@@PAU_D3DX_VIDMODEDESC@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7?$ListT@VCSurfaceFormatNode@@@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCSurfaceFormatNode@@@@UAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3CD3duAlloc@@SAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L44863
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 23
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 48
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 123
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 131
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 137
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 142
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 148
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 157
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 166
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 171
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 184
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 201
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 206
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 212
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 228
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 233
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 248
+    kind: x86_abs32
+    symbol: 17
+    addend: 0

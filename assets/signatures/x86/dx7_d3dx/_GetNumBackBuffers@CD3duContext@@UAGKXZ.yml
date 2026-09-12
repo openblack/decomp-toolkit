@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: e1572d6f35282825c9c4bf61f3e1434048d093df
+  signature: i/9E/yT/BP+L/0D/IP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetNumBackBuffers@CD3duContext@@UAGKXZ
+    size: 10
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 78396ef7d30a86b2e9efd440e58758e50b261ae4
+  signature: Vf+L/+z/i/9F/wj/i/9A/yD/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetNumBackBuffers@CD3duContext@@UAGKXZ
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []

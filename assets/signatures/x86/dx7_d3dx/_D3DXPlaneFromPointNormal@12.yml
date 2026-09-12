@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 3759f998baae26bcc49c43c843948be9c42e9347
+  signature: i/9M/yT/DP+L/0T/JP8E/9n/Af/Z/xj/i/9R/wT/if9Q/wT/i/9R/wj/if9Q/wj/i/9U/yT/CP/Z/0L/CP/Y/0n/CP/Z/0L/BP/Y/0n/BP/e/8H/2f8B/9j/Cv/e/8H/2f/g/9n/WP8M/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXPlaneFromPointNormal@12
+    size: 56
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: fbf2a5cdc1fec8b8ab0137ff53489c9dc25b1c9f
+  signature: Vf+L/+z/i/9F/wj/Vv+F/8D/dP85/4v/Vf8M/4X/0v90/zL/i/9N/xD/hf/J/3T/K/+L/zH/if8w/4v/cf8E/4n/cP8E/4v/cf8I/4n/cP8I/9n/Qv8E/9j/Sf8E/9n/Qv8I/9j/Sf8I/97/wf/Z/wH/2P8K/97/wf/Z/+D/2f9Y/wz/6/8C/zP/wP9e/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXPlaneFromPointNormal@12
+    size: 75
+    flags: 1
+    section: .text
+  relocations: []

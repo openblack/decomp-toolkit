@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: fb29b1c0c3c44847a9ca06e2df853057a6c79d19
+  signature: Vf+L/+z/g//s/yz/i/9F/wj/U/9W/1f/i/94/yT/i/9Q/2j/i/9w/3D/i/9Y/2T/i/9I/2z/if99//D/i/94/0T/K//y/4n/ff/0/4v/eP9A/4n/df/o/4n/ff/s/4n/Xf/8/yv/y/+L//P/D/+v//v/i/9d//T/K/9w/3T/D/+v/9r/K/9Q/3j/D/+v/7D/kP8A/wD/AP8P/6//kP+U/wD/AP8A/wP/WP9I/wP/kP+M/wD/AP8A/wP/sP+I/wD/AP8A/4n/ff/c/8H///8D/wP/3/+L/33/7P/B//r/EP8P/6//Vf/w/8H//v8Q/w//r//+/wP/UP8o/8H///8D/wP/1/+J/33/+P+J/1X/CP+L/1X/7P+D//r/CP8P/43/fv8B/wD/AP+L/8b/C//B/wv/Rf/8/w//r//C/6j/B/8P/4T/bP8B/wD/AP+N/wT/Dv8P/6//wv+N/3j/B/+D/+D/B/+J/0X/2P+L/0X//P/B////A/+N/zT/Af+L/03/3P8P/6//8v+L/9H/g//h/wf/jf9G/wf/g//m/wf/wf/4/wP/wf/6/wP/if91/+T/vv///wD/AP8A/yv/wv+L/9b/K/99//j/if9F//j/0//6/4v/Tf/k/4n/ff/s/9P//v+J/1X/3P+L/9H/9//a/xv/0v8j/9b/O//H/4n/Vf/U/33/A/9I/+v/A/+N/0f///+J/0X/4P+L/0X/2P+F/8D/x/9F//z/CP8A/wD/AP90/wP/if9F//z/i/91/+T/av8I/1j/i/9N//D/K//G//f/3v8b//b/I//w/4v/Rf/o/0j/D/+v/8j/if9F/9j/i/9F/wj/A//P/43/RP8I////if9F/wj/i/9F//T/D/+v/0X/2P8D/0X/+P+N/1z/A////4v/Rf/o/4X/wP8P/47/5/8A/wD/AP+J/0X/6P/r/wP/i/9V/9T/i/9F/wj/i/9N//z/D/+2/wD/0//g/w//tv8L////Tf8I/yP/0f+L/03/4P/B/+L/CP+F/8n/fv8s/4n/Tf/k/4v/Tf8I/8H/6P8I/w//tv85/4v/Tf/8/9P/5/+L/87/wf/q/wj/C//H////Tf8I/4v/+P/T/+f/C//X/4j/E/9L////Tf/k/3X/2v+L/33/7P/B/+j/CP85/33/+P99/xL/i/9N/wj/D/+2/zn/i/9N//z/0//n/wv/x////03/CP/r/xP/fv8U/4v/+P+L/87/0//n/8H/6v8I/wv/1/+I/xP/S//B/+j/CP+L/33/7P+L/87/0//g/4r/Tf/c/8H/6v8I//b/0f8i/wv/C//C/yL/Rf/c/wr/wf+I/wP/i//H/yv/Rf/w/wH/Rf8I/4v/Rf/4/yv/Rf/0////Tf/o/43/XP8D////D/+F/1L/////////6/8y/w//r//R/4v/Rf/o/8H/+v8D/4X/wP+J/1X/1P9+/yL/i/9N/9T/i/91/wj/i//R/4v/+//B/+n/Av/z/6X/i//K/wP/Xf/0/4P/4f8D//P/pP+L/03/8P8B/03/CP9I/3X/3v9q/wH/WP9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?SimpleCopy@@YAHAAUBLT_DATA@@@Z
+    size: 588
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 01f17e21cac020ab8cf23703e5f886b765a7509e
+  signature: Vf+L/+z/g//s/yz/i/9F/wj/U/9W/1f/i/94/yT/i/9Q/2j/i/9w/3D/i/9Y/2T/i/9I/2z/if99//T/i/94/0T/K//y/4n/ff/4/4v/eP9A/4n/df/o/4n/ff/s/4n/Xf/8/yv/y/+L//P/D/+v//v/i/9d//j/K/9w/3T/D/+v/9r/K/9Q/3j/D/+v/7D/kP8A/wD/AP8P/6//kP+U/wD/AP8A/wP/WP9I/wP/kP+M/wD/AP8A/wP/sP+I/wD/AP8A/4n/ff/c/8H///8D/wP/3/+L/33/7P/B//r/EP8P/6//Vf/0/8H//v8Q/w//r//+/wP/UP8o/8H///8D/wP/1/+J/33/8P+J/1X/CP+L/1X/7P+D//r/CP8P/43/g/8B/wD/AP+L/8b/C//B/wv/Rf/8/w//r//C/6j/B/8P/4T/cf8B/wD/AP+N/wT/Dv8P/6//wv+N/3j/B/+D/+D/B/+J/0X/2P+L/0X//P/B////A/+N/zT/Af+L/03/3P8P/6//8v+L/9H/g//h/wf/jf9G/wf/g//m/wf/wf/4/wP/wf/6/wP/if91/+T/vv///wD/AP8A/yv/wv+L/9b/K/99//D/if9F/+z/0//6/4v/Tf/k/4n/ff/w/9P//v+J/1X/3P+L/9H/9//a/xv/0v8j/9b/O//H/4n/Vf/U/33/CP+N/0j///+J/03/4P/r/wT/T/+J/33/4P+L/03/2P/H/0X//P8I/wD/AP8A/4X/yf90/wP/if9N//z/i/99/+T/av8I/1n/i/91//T/K//P//f/3/8b////I//5/4v/Tf/o/0n/D/+v//H/A/91//D/if9N/9j/i/9N/wj/jf9M/zH///+J/03/CP+L/03/+P8P/6//Tf/Y/wP/yP+L/0X/6P+F/8D/jf90/wv///8P/47/6f8A/wD/AP+J/0X/6P/r/wP/i/9V/9T/i/9F/wj/i/9N//z/i//a/w//tv8A/9P/4P8P/7b/Dv///03/CP8j/9n/i/9N/+D/wf/j/wj/hf/J/37/Kf+J/03/5P+L/03/CP/B/+j/CP8P/7b/Ef+L/03//P/T/+L/i//P/8H/6/8I/wv/wv///03/CP+L/9D/0//i/wv/2v+I/x7/Tv///03/5P91/9r/i/9N//D/wf/o/wj/Of9N/+z/ff8S/4v/Tf8I/w//tv8R/4v/Tf/8/9P/4v8L/8L///9N/wj/6/8T/37/Ef+L/9D/i//P/9P/4v/B/+v/CP8L/9r/iP8e/07/wf/o/wj/i//P/4r/Fv/T/+D/iv9N/9z/wf/r/wj/9v/R/wv/w/8i/9H/Iv9F/9z/Cv/Q/4v/Rf/w/yv/Rf/0/4j/Fv8B/0X/CP+L/0X/7P8r/0X/+P///03/6P+N/3T/Bv///w//hf9Q/////////+v/Mv8P/6//0f+L/0X/6P/B//r/A/+F/8D/if9V/9T/fv8i/4v/Tf/U/4v/df8I/4v/0f+L//v/wf/p/wL/8/+l/4v/yv8D/13/+P+D/+H/A//z/6T/i/9N//T/Af9N/wj/SP91/97/av8B/1j/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?SimpleCopy@@YAHAAUBLT_DATA@@@Z
+    size: 593
+    flags: 2
+    section: .text
+  relocations: []

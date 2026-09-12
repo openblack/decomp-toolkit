@@ -1,0 +1,144 @@
+- symbol: 0
+  hash: b185be555042c998d05884af97cbaaa08d4fe541
+  signature: Vf+L/+z/gf/s/8T/AP8A/wD/i/9B/wz/U/9W/1f/i/9A/wz/M//b/zP///87/8P/if9d/+j/if9d/+z/if9d//D/if9d//T/if9d//j/if9d//z/if9d/9z/if9d/+D/if9d/+T/if9d/9D/if9d/9T/if9d/9j/if9d/8T/if9d/8z/D/+E/xD/Af8A/wD/av8B/17/i/+I/wj/BP8A/wD/i/+Q/0D/Bf8A/wD/g//5//z/df8w/4P/ff/g/wD/dP8G/4P/ff/c/wD/df8i/4X/0v90/w3/g/99/wj//P8P/4T/PP8C/wD/AP+J/3X/3P+L/4j/BP8E/wD/AP+J/3X/4P+J/03/5P/p/5T/AP8A/wD/M//b/4P/+f/+/3X/Lf+D/33/7P8A/3T/Bv+D/33/6P8A/3X/H/+F/9L/dP8N/4P/ff8I//7/D/+E/wf/Av8A/wD/if91/+j/i/+I/wT/BP8A/wD/if91/+z/if9N//D/6/9i/zP/2/+D//n//f91/y3/g/99//j/AP90/wb/g/99//T/AP91/x//hf/S/3T/Df+D/33/CP/9/w//hP/V/wH/AP8A/4n/df/0/4v/iP8E/wT/AP8A/4n/df/4/4n/Tf/8/+v/MP8z/9v/g//5//v/df8v/4P/ff/U/wD/dP8G/4P/ff/Q/wD/df8h/4X/0v90/w3/g/99/wj/+/8P/4T/o/8B/wD/AP+J/3X/0P+L/4j/BP8E/wD/AP+J/3X/1P+J/03/2P8z/9v/6/8s/zP/2/+D//n/+v91/yX/O//7/3T/Bf85/13/xP91/xz/O//T/3T/Df+D/33/CP/6/w//hP9y/wH/AP8A/4n/df/E/4v/iP8E/wT/AP8A/4v//v+J/03/zP+L/wD/O//D/w//hf/z//7//////4v/Rf8I/4P/+P/6/3T/SP+D//j/+/90/zb/g//4//z/dP8k/4P/+P/9/3T/Ev+D//j//v91/0X/Of9d/+z/dP9A/4v/Rf8M/4v/Tf/w/+v/Mf85/13/+P90/zP/i/9F/wz/i/9N//z/6/8k/zn/Xf/g/3T/Jv+L/0X/DP+L/03/5P/r/xf/Of9d/9T/dP8Z/4v/Rf8M/4v/Tf/Y/+v/Cv87//v/dP8N/4v/Rf8M/4v/Tf/M/4n/CP/p//L/AP8A/wD/i/9d/wz/g//J////O//B/3T/WP+D/yP/AP+//wAAAAAAAAAAM//A/43/lf88//////////L/rv/3/9H/K//5/8f/Rf+8/7r/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/zz/////////g//h/wP/8/+k/1n/jf+1/zz/////////jf+9/zz/////////x/9F/8D/4f8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAADP/wP85/0X/xP90/wX/i/9F/8z/6/8m/zn/Rf/Q/3T/Bf+L/0X/2P/r/xz/Of9F/9z/dP8F/4v/Rf/k/+v/Ev85/0X/9P90/wX/i/9F//z/6/8I/zn/Rf/o/3T/B/+L/0X/8P+J/wP/6/9a/4n/A/+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf88/////////4v/wf+L//f/i//6/8f/Rf+8/7r/C/93/8j/wf/p/wL/8/+l/4v/yP9q/yL/g//h/wP/jf+F/zz/////////8/+k/1n/jf+1/zz/////////jf+9/zz/////////x/9F/8D/Bf8B/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAF//Xv9b/8n/wv8I/wD/i/9N/wz/i/+A/wT/BP8A/wD/if8B/+v/7P8=
+  symbols:
+  - kind: Function
+    name: ?FindBestMatchForHWLevel@CD3duGlobals@@QAEXKPAK@Z
+    size: 703
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0HH@IHJC@CD3duGlobals?3?3FindBestMatchForHW@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0GE@CIOC@CD3duGlobals?3?3FindBestMatchForHW@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 455
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 527
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 535
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 596
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 671
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 679
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 09ae3a01445ad4585b0977774bb15e7557b56d61
+  signature: Vf+L/+z/gf/s/0z/Af8A/wD/U/9W/4v/8f8z/9v/V/+L/33/DP85/x7/dP8E/zv/+/91/xT/aP8AAAAAAAAAAGr/Pf9o/wAAAAAAAAAA6P8AAAAAAAAAAIP/xP8M/4v/Rv8M/4n/Xf/c/4n/Xf/g/4n/Xf/k/4v/QP8M/4n/Xf/0/zv/w/+J/13/+P+J/13//P+J/13/0P+J/13/1P+J/13/2P+J/13/xP+J/13/yP+J/13/zP+J/13/6P+J/13/7P+J/13/8P8P/4T/G/8B/wD/AP9q/wH/Xv+L/4j/CP8E/wD/AP+L/5D/QP8F/wD/AP+D//n//P91/zL/g/99/9T/AP90/wb/g/99/9D/AP91/yT/M//b/zv/0/90/w3/g/99/wj//P8P/4T/Qf8C/wD/AP+J/3X/0P+L/4j/BP8E/wD/AP+J/3X/1P+J/03/2P/p/83/AP8A/wD/M//b/4P/+f/+/3X/Mv+D/33/4P8A/3T/Bv+D/33/3P8A/3X/JP8z/9v/O//T/3T/Df+D/33/CP/+/w//hP8K/wL/AP8A/4n/df/c/4v/iP8E/wT/AP8A/4n/df/g/4n/Tf/k/+n/lv8A/wD/AP8z/9v/g//5//3/df8v/4P/ff/4/wD/dP8G/4P/ff/0/wD/df8h/zP/2/87/9P/dP8N/4P/ff8I//3/D/+E/9P/Af8A/wD/if91//T/i/+I/wT/BP8A/wD/if91//j/if9N//z/6/9i/zP/2/+D//n/+/91/y//g/99/8j/AP90/wb/g/99/8T/AP91/yH/M//b/zv/0/90/w3/g/99/wj/+/8P/4T/n/8B/wD/AP+J/3X/xP+L/4j/BP8E/wD/AP+J/3X/yP+J/03/zP/r/y7/M//b/4P/+f/6/3X/J/85/13/7P90/wX/Of9d/+j/df8d/zv/0/90/w3/g/99/wj/+v8P/4T/b/8B/wD/AP+J/3X/6P+L/4j/BP8E/wD/AP+J/3X/7P+J/03/8P+L/wD/O//D/w//hf/o//7//////4v/Rf8I/4P/+P/6/3T/PP+D//j/+/90/y3/g//4//z/dP8e/4P/+P/9/3T/D/+D//j//v91/y3/Of9d/+D/dP8o/+n/wf8A/wD/AP85/13/+P90/x7/6f+t/wD/AP8A/zn/Xf/U/3T/FP/p/5n/AP8A/wD/Of9d/8j/dP8K/+n/hf8A/wD/AP85/13/7P91/3b/g//4////u/8AAAAAAAAAAHT/Zf+D/yf/AP+N/43/PP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/PP/////////y/67/9//R/yv/+f/H/0X/vP+6/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf+0//7//////4P/4f8D//P/pP9Z/43/tf88/////////43/vf+0//7//////8f/Rf/A/+H/AP8A/wD/U/9Q//P/pf/o/wAAAAAAAAAAi/99/wz/M//A/zn/Rf/o/3T/Bf+L/0X/8P/r/yb/Of9F/8T/dP8F/4v/Rf/M/+v/HP85/0X/0P90/wX/i/9F/9j/6/8S/zn/Rf/0/3T/Bf+L/0X//P/r/wj/Of9F/9z/dP8H/4v/Rf/k/4n/B//r/2H/jf+N/zz/////////if8H/+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf88//////////L/rv/3/9H/K//5/8f/Rf+8/7r/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/7T//v//////g//h/wP/8/+k/1n/jf+1/zz/////////jf+9/7T//v//////x/9F/8D/Bf8B/wD/AP9T/1D/8/+l/+j/AAAAAAAAAABf/17/W//J/8L/CP8A/4v/gP8E/wT/AP8A/+v/jP8=
+  symbols:
+  - kind: Function
+    name: ?FindBestMatchForHWLevel@CD3duGlobals@@QAEXKPAK@Z
+    size: 739
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CD@CLKK@m_bInitialized?5?$CG?$CG?5pDevIndexMatch@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@BMII@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0HH@IHJC@CD3duGlobals?3?3FindBestMatchForHW@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0GE@CIOC@CD3duGlobals?3?3FindBestMatchForHW@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 28
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 40
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 466
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 482
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 487
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 566
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 636
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 641
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 720
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

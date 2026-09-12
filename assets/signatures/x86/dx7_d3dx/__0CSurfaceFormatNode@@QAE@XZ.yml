@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: b913118b4d26677a5fc6d3803598a31caeba4d62
+  signature: Vv9X/4v/8f/o/wAAAAAAAAAAav8I/zP/0v9Z/zP/wP+N/37/CP+J/xb/8/+r/4n/Vv8E/4n/Vv8o/4v/xv9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CSurfaceFormatNode@@QAE@XZ
+    size: 34
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

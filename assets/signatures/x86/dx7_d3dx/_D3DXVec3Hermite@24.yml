@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 2d418a417bfae4f6e152cc0229f02952e149a1d6
+  signature: Vf+L/+z/Uf9R/9n/Rf8c/9j/Tf8c/4v/Tf8M/4v/Vf8Q/1b/i/91/xT/2f/A/9j/Tf8c/1f/i/99/xj/i/9F/wj/2f/A/9j/Df8AAAAAAAAAANn/wv/Y/w3/AAAAAAAAAADY/+n/2P8t/wAAAAAAAAAA2f9d//z/2f/C/9z/wP/Y/+r/2P9F/xz/2f9d/xz/2f/C/9j/Df8AAAAAAAAAANj/6f/Z/13/+P/d/9j/3v/h/9n/Rf/8/9j/Cf/Z/0X/HP/Y/wr/3v/B/9n/Rf/4/9j/Dv/e/8H/2f/B/9j/D//e/8H/2f8Y/9n/Qf8E/9j/Tf/8/9n/Qv8E/9j/Tf8c/97/wf/Z/0b/BP/Y/03/+P/e/8H/2f9H/wT/2P/K/97/wf/Z/1j/BP/Z/0H/CP/Y/03//P/Z/0L/CP/Y/03/HP/e/8H/2f9G/wj/2P9N//j/3v/B/9n/R/8I/9j/yv9f/17/3v/B/9n/WP8I/93/2P/J/8L/GP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXVec3Hermite@24
+    size: 188
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41921
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41922
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 37
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 76
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 3b90e5892feb415740050af34db04f22ee0070a1
+  signature: Vf+L/+z/i/9F/wj/Vv+F/8D/V/8P/4T/zv8A/wD/AP+L/33/DP+F////D/+E/8P/AP8A/wD/i/91/xD/hf/2/w//hP+4/wD/AP8A/4v/Vf8U/4X/0v8P/4T/rf8A/wD/AP+L/03/GP+F/8n/D/+E/6L/AP8A/wD/2f9F/xz/2P9N/xz/2f/A/9j/Tf8c/9n/wP/Y/w3/AAAAAAAAAADZ/8L/2P8N/wAAAAAAAAAA2P/p/9j/Lf8AAAAAAAAAANn/Xf8M/9n/wv/c/8D/2P/q/9j/Rf8c/9n/Xf8c/9n/wv/Y/w3/AAAAAAAAAADY/+n/2f9d/wj/3f/Y/97/4f/Z/0X/DP/Y/w//2f9F/xz/2P8O/97/wf/Z/0X/CP/Y/wr/3v/B/9n/wf/Y/wn/3v/B/9n/GP/Z/0f/BP/Y/03/DP/Z/0b/BP/Y/03/HP/e/8H/2f9C/wT/2P9N/wj/3v/B/9n/Qf8E/9j/yv/e/8H/2f9Y/wT/2f9G/wj/2P9N/xz/2f9C/wj/2P9N/wj/3v/B/9n/R/8I/9j/Tf8M/97/wf/Z/0H/CP/Y/8r/3v/B/9n/WP8I/93/2P/r/wL/M//A/1//Xv9d/8L/GP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXVec3Hermite@24
+    size: 230
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42040
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42041
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 75
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 83
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 114
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

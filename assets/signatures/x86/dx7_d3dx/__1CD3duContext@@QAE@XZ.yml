@@ -1,0 +1,155 @@
+- symbol: 0
+  hash: a130086d09ae28ef02485dba01a37014326ee5da
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+I/wD/AP8A/1P/Vv+L//H/V/8z/9v/if9l//D/g/9+/xD/Af/H/wb/AAAAAAAAAACJ/13//P91/yj/i/9G/3z/O//D/3T/Bv+L/wj/UP///1H/TP+L/0b/cP87/8P/dP8U/4v/QP8E/zv/w/90/w3/av8B/1P/av8I/1P/i//I/+j/AAAAAAAAAACL/4b/iP8A/wD/AP+N/77/iP8A/wD/AP87/8P/dP8I/4v/CP9Q////Uf8I/4n/H/+L/4b/hP8A/wD/AP+N/77/hP8A/wD/AP87/8P/dP8I/4v/CP9Q////Uf8I/4n/H/+L/0b/eP87/8P/dP8J/4v/CP9Q////Uf8I/4n/Xv94/4v/hv+A/wD/AP8A/43/vv+A/wD/AP8A/zv/w/90/wj/i/8I/1D///9R/wj/if8f/4v/Rv98/zv/w/90/wn/i/8I/1D///9R/wj/if9e/3z/av8B/4v/zv/o/wAAAAAAAAAAi//O/+j/AAAAAAAAAACL/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ??1CD3duContext@@QAE@XZ
+    size: 217
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43752
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7CD3duContext@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?SetDDCoopLevel@CDDrawDeviceNode@@QAEXPAUHWND__@@K0H@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_DestroyDXBuffers@CD3duContext@@AAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_DestroyDeviceWindow@CD3duContext@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 78
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 191
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 198
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 210
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+- symbol: 0
+  hash: e812c905294871339ce6fe35fb06d0f34f92cd39
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+I/wD/AP8A/1P/Vv+L//H/V/8z/9v/if9l//D/g/9+/xD/Af/H/wb/AAAAAAAAAACJ/13//P91/yj/i/9G/3z/O//D/3T/Bv+L/wj/UP///1H/TP+L/0b/cP87/8P/dP8U/4v/QP8E/zv/w/90/w3/av8B/1P/av8I/1P/i//I/+j/AAAAAAAAAACL/4b/iP8A/wD/AP+N/77/iP8A/wD/AP87/8P/dP8I/4v/CP9Q////Uf8I/4n/H/+L/4b/hP8A/wD/AP+N/77/hP8A/wD/AP87/8P/dP8I/4v/CP9Q////Uf8I/4n/H/+L/0b/eP87/8P/dP8J/4v/CP9Q////Uf8I/4n/Xv94/4v/hv+A/wD/AP8A/43/vv+A/wD/AP8A/zv/w/90/wj/i/8I/1D///9R/wj/if8f/4v/Rv98/zv/w/90/wn/i/8I/1D///9R/wj/if9e/3z/av8B/4v/zv/o/wAAAAAAAAAAi//O/+j/AAAAAAAAAACL/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/w/+4/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ??1CD3duContext@@QAE@XZ
+    size: 223
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43793
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7CD3duContext@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?SetDDCoopLevel@CDDrawDeviceNode@@QAEXPAUHWND__@@K0H@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_DestroyDXBuffers@CD3duContext@@AAEXH@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_DestroyDeviceWindow@CD3duContext@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L42494
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 78
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 191
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 198
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 210
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 218
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

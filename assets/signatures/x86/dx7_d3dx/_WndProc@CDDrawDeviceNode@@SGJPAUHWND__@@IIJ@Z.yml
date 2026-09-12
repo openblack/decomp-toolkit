@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 3218cb6e4ab164008ea207f830a72a27ca5ab94a
+  signature: Vf+L/+z///91/xT///91/xD///91/wz///91/wj///8V/wAAAAAAAAAAXf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?WndProc@CDDrawDeviceNode@@SGJPAUHWND__@@IIJ@Z
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__DefWindowProcA@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: ee76af8bf0b87ce3054f4f8b5c26680ffe8c7cc9
+  signature: //90/yT/EP///3T/JP8Q////dP8k/xD///90/yT/EP///xX/AAAAAAAAAADC/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?WndProc@CDDrawDeviceNode@@SGJPAUHWND__@@IIJ@Z
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__DefWindowProcA@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

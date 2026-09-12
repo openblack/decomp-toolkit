@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 174b600fee419511a091b8400e7458bcaef2f09f
+  signature: Vv+L//H/6P8AAAAAAAAAADP/wP+J/0b/BP+J/0b/CP+J/0b/DP+J/0b/EP+J/0b/FP+J/wb/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CD3duGlobals@@QAE@XZ
+    size: 31
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: a215630dbc52f1ed5875fc19d6ef64b0c40eaf78
+  signature: Vf+L/+z/g//s/0D/Vv+L/3X/CP9X/4v/Rv8M/8H/4P8G/wP/Rv8I/1D/jf9F/8D///91/wz/UP/o/wAAAAAAAAAAi/9+/wz/av8Q/8H/5/8G/wP/fv8I/1n/jf91/8D/M//A//P/pf9f/17/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?MultMatrixLocal@CD3DXMatrixStack@@UAGJPBUD3DXMATRIX@@@Z
+    size: 58
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 29
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 7aa1fa0984312e7d9a5ef7b6e6888341e87e03ce
+  signature: Vf+L/+z/g//s/0D/g/99/wz/AP91/wf/uP+5/wv/d//I/+v/MP9X/1b/i/91/wj/i/9G/wz/wf/g/wb/A/9G/wj/UP+N/0X/wP///3X/DP9Q/+j/AAAAAAAAAACL/37/DP9q/xD/wf/n/wb/A/9+/wj/Wf+N/3X/wP8z/8D/8/+l/17/X//J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?MultMatrixLocal@CD3DXMatrixStack@@UAGJPBUD3DXMATRIX@@@Z
+    size: 71
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

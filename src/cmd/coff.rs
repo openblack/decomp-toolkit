@@ -1,3 +1,4 @@
+use base64::{Engine as _, engine::general_purpose::STANDARD};
 use rayon::prelude::*;
 use std::{
     collections::{BTreeMap, HashMap, HashSet},
@@ -48,7 +49,7 @@ use crate::{
         rsp::{PeHeaderInfo, generate_args_rsp, generate_objs_rsp},
         signatures::{
             FunctionSignature, compare_signature, generate_all_signatures_x86,
-            generate_signature_x86,
+            generate_signature_x86, signature_is_usable,
         },
         split::{split_obj, update_splits},
     },
@@ -163,6 +164,7 @@ fn sigs_lib(args: SigsLibArgs) -> Result<()> {
 
     let mut by_symbol: HashMap<String, HashMap<String, FunctionSignature>> = HashMap::new();
     let mut total_members = 0u32;
+    let mut skipped_weak = 0u32;
 
     for lib_path in &args.lib_files {
         let lib_path_native = lib_path.with_encoding();
@@ -198,6 +200,21 @@ fn sigs_lib(args: SigsLibArgs) -> Result<()> {
             }
             member_count += 1;
             for (sym_name, sig) in sigs {
+                // Drop patterns the checker can never accept — a signature with
+                // too few concrete bytes (a six-byte import thunk is four
+                // relocated bytes out of six) is rejected at match time, so
+                // writing it out only costs scan time later.
+                match STANDARD.decode(&sig.signature) {
+                    Ok(blob) if !signature_is_usable(&blob) => {
+                        skipped_weak += 1;
+                        continue;
+                    }
+                    Ok(_) => {}
+                    Err(e) => {
+                        log::debug!("Skipping '{sym_name}': undecodable signature: {e}");
+                        continue;
+                    }
+                }
                 let entry = by_symbol.entry(sym_name).or_default();
                 if let Some(existing) = entry.get_mut(&sig.hash) {
                     compare_signature(existing, &sig).ok();
@@ -212,7 +229,8 @@ fn sigs_lib(args: SigsLibArgs) -> Result<()> {
     }
 
     info!(
-        "Processed {} total member(s), writing signatures for {} symbol(s)",
+        "Processed {} total member(s), writing signatures for {} symbol(s) \
+         ({skipped_weak} pattern(s) skipped as too weak to match)",
         total_members,
         by_symbol.len()
     );

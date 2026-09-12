@@ -1,0 +1,165 @@
+- symbol: 0
+  hash: 9d893f5024594426eb4bf65f0830d948d360d412
+  signature: Vf+L/+z/g//s/wz/U/9W/43/Rf8I/1f/UP+L//n///91/wj/if99//z/6P8AAAAAAAAAAIv/8P+F//b/D/+E/1//Af8A/wD/jf9F//T/UP///3X/CP9W/2j/7P8A/wD/AP///3X/DP/o/wAAAAAAAAAAg//E/xT/hf/A/3z/Ef+L/0X/9P8p/0X/CP8D//D/g/99/wj/BP+J/3X/+P9z/wf/i//P/+n/Jv8B/wD/AP+L/13/EP+F/9v/dP9S/4P/O/8A/3X/Tf+L/wb/hf/A/3T/R/+N/03/DP9R/1D/i//P/+j/AAAAAAAAAACL//D/hf/2/w//hP8D/wH/AP8A/4v/Rf8M/0D/UP/o/wAAAAAAAAAAhf/A/1n/if8D/w//hP/Z/wD/AP8A/4v/Tf8M/4v/+P+L/8H/wf/p/wL/8/+l/4v/yP+D/+H/A//z/6T/i/8D/4v/Tf8M/4D/JP8I/wD/g/9F//j/BP+D/23/CP8E/4P/ff8U/wD/D/+E/7L/AP8A/wD/g/99/wj/BP8P/4L/qP8A/wD/AP+L/0X/+P+D/0X/+P8E/4v/GP+D/23/CP8E/4X/2/90/+X/av8s/+j/AAAAAAAAAACL//D/Wf+F//b/dP8V/4P/Jv8A/2r/CP9Z/zP/wP+N/37/CP/z/6v/If9G/wT/If9G/yj/6/8C/zP/9v8z/8D/hf/2/w//lP/A/4T/wP91/2D/i/9N//z/jf9F/wz/UP9T/+j/AAAAAAAAAACF/8D/dP9k/2r/BP9Z/zn/Tf8M/3L/VP+L/xD/A//B/4n/Vv8E/yn/Tf8M/zn/Tf8M/3L/Rf+L/xD/av8A/4n/Vv8o/yn/Tf8M////df8M/wP/wf+N/37/CP9Q/2r/IP9X/+j/AAAAAAAAAACD/8T/FP+F/8D/fP8j/4P/P/8g/3X/Hv+L/03/FP+D/yb/AP9W/4v/Af///1D/BP/p/1X/////////uP+4/wv/d//I/+v/F/+D/33/CP8A/3T/D/+L/03//P/o/wAAAAAAAAAAuP8F/0D/AP+A/+v/Av8z/8D/X/9e/1v/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?Parse3D@CCapsFile@@IAEJKPAU_D3DDeviceDesc7@@PAPADPAVCSurfaceFormatList@@@Z
+    size: 403
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ReadData@CD3dxFile@@QAEPBXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Decompress@CD3dxFile@@SAJPAXKPBXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CloseCorrupt@CD3dxFile@@QAEJXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 53
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 114
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 225
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 279
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 333
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 383
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: 365870b82cc580bff15c26d540e557d34b420bb8
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACD/+z/DP9T/1b/jf9F/wj/V/9Q/4v/2f///3X/CP+J/13/8P/o/wAAAAAAAAAAi//w/4X/9v8P/4T/Xf8B/wD/AP+N/0X/6P9Q////df8I/1b/aP/s/wD/AP8A////df8M/+j/AAAAAAAAAACD/8T/FP+F/8D/fP8T/4v/Rf/o/2r/BP8p/0X/CP9f/wP/8P85/33/CP+J/3X/7P9z/wf/i//L/+n/Iv8B/wD/AP+L/13/EP+F/9v/dP9W/4P/O/8A/3X/Uf+L/wb/hf/A/3T/S/+N/03/DP9R/4v/Tf/w/1D/6P8AAAAAAAAAAIv/8P+F//b/D/+E//7/AP8A/wD/i/9F/wz/QP9Q/+j/AAAAAAAAAACF/8D/Wf+J/wP/D/+E/9T/AP8A/wD/i/9N/wz/i//4/4v/wf9q/wT/wf/p/wL/8/+l/4v/yP+D/+H/A//z/6T/i/8D/4v/Tf8M/1//gP8k/wj/AP8B/33/7P8p/33/CP+D/33/FP8A/w//hP+s/wD/AP8A/zn/ff8I/w//gv+j/wD/AP8A/4v/Rf/s/wH/ff/s/4v/GP8p/33/CP+F/9v/dP/o/2r/LP/o/wAAAAAAAAAAWf+J/0X/EP8z//b/O//G/4n/df/8/3T/Cf+L/8j/6P8AAAAAAAAAAIv/8P+D/03//P///zP/wP+F//b/D/+U/8D/hP/A/3X/Yf+L/03/8P+N/0X/DP9Q/1P/6P8AAAAAAAAAAIX/wP90/2X/Of99/wz/cv9Y/4v/CP8D/8f/if9O/wT/Kf99/wz/Of99/wz/cv9J/4v/CP9q/wD/if9O/yj/Kf99/wz///91/wz/g//A/wT/jf9+/wj/UP9q/yD/V//o/wAAAAAAAAAAg//E/xT/hf/A/3z/Jv+D/z//IP91/yH/i/9N/xT/g/8m/wD/Vv+L/wH///9Q/wT/av8E/1//6f9b/////////7j/uP8L/3f/yP/r/xf/g/99/wj/AP90/w//i/9N//D/6P8AAAAAAAAAALj/Bf9A/wD/gP/r/wL/M//A/4v/Tf/0/1//Xv9k/4n/Df8AAAAAAAAAAFv/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?Parse3D@CCapsFile@@IAEJKPAU_D3DDeviceDesc7@@PAPADPAVCSurfaceFormatList@@@Z
+    size: 418
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43866
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?ReadData@CD3dxFile@@QAEPBXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Decompress@CD3dxFile@@SAJPAXKPBXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2CD3duAlloc@@SAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CSurfaceFormatNode@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CloseCorrupt@CD3dxFile@@QAEJXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 124
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 144
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 233
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 253
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 283
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 335
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 388
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 409
+    kind: x86_abs32
+    symbol: 9
+    addend: 0

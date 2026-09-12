@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 140fcbf3724060e454a7b51628c9b028434e2d79
+  signature: i/9E/yT/BP/Z/+7/2f9Y/zj/2f/u/9n/WP80/9n/7v/Z/1j/MP/Z/+7/2f9Y/yz/2f/u/9n/WP8k/9n/7v/Z/1j/IP/Z/+7/2f9Y/xz/2f/u/9n/WP8Y/9n/7v/Z/1j/EP/Z/+7/2f9Y/wz/2f/u/9n/WP8I/9n/7v/Z/1j/BP/Z/+j/2f9Y/zz/2f/o/9n/WP8o/9n/6P/Z/1j/FP/Z/+j/2f8Y/8P/
+  symbols:
+  - kind: Function
+    name: ?D3DXMatrixIdentity@@YAPAUD3DXMATRIX@@PAU1@@Z
+    size: 84
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 1f8bf728418ad6a8ab8d3604425a4d4865afb2f4
+  signature: Vf+L/+z/i/9F/wj/2f/u/9n/WP84/9n/7v/Z/1j/NP/Z/+7/2f9Y/zD/2f/u/9n/WP8s/9n/7v/Z/1j/JP/Z/+7/2f9Y/yD/2f/u/9n/WP8c/9n/7v/Z/1j/GP/Z/+7/2f9Y/xD/2f/u/9n/WP8M/9n/7v/Z/1j/CP/Z/+7/2f9Y/wT/2f/o/9n/WP88/9n/6P/Z/1j/KP/Z/+j/2f9Y/xT/2f/o/9n/GP9d/8P/
+  symbols:
+  - kind: Function
+    name: ?D3DXMatrixIdentity@@YAPAUD3DXMATRIX@@PAU1@@Z
+    size: 87
+    flags: 1
+    section: .text
+  relocations: []

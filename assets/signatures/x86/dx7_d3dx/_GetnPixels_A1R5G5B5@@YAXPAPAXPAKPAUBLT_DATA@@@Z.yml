@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: b6df6e4051f9bbc64431505e80164c4a8999f26b
+  signature: Vf+L/+z/Uf+L/1X/CP+L/0X/EP9W/8f/Rf/8/wH/AP8A/wD/g/86/wD/i/+w/7T/AP8A/wD/dP9g/1f/i/99/wz/U/8r//r/hf91//z/df9H/4v/Av8P/7//CP+F/8n/df8F/wv/df/8/+v/Of+L/8H/i//Z/yX/AP98/wD/AP+B/+P/4P8D/wD/AP/B/+D/A/8L/8P/i//Z/8H/4P8D/4P/4/8f/4H/4f8A/wD/AP///wv/w//B/+D/A/+L/9j/wf/r/wX/gf/j/wf/B/8H/wD/C//Z/wv/2P+J/xz/F//R/2X//P+D/8L/BP+D/zr/AP91/6n/W/9f/4v/Rf8Q/4n/sP+0/wD/AP8A/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?GetnPixels_A1R5G5B5@@YAXPAPAXPAKPAUBLT_DATA@@@Z
+    size: 137
+    flags: 2
+    section: .text
+  relocations: []

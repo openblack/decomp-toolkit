@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: dcbdadfc8e4794134d7c42e4b6550836030639cb
+  signature: Vv+L//H/V/+D/77/DP8B/wD/AP8A/3T/Ff+L/3z/JP8M/1f/6P8AAAAAAAAAAIX/wP91/wv/i//O/+j/AAAAAAAAAAAz/8D/6/8J/4v/hv8M/wH/AP8A/4v/BP84/1//Xv/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetId@CD3dxFile@@QAEKK@Z
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ValidEntry@CD3dxFile@@QAEHK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CloseCorrupt@CD3dxFile@@QAEJXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: a187fda7e5e40f06900014e504742143fb7006be
+  signature: Vf+L/+z/Vv+L//H/V/+D/77/DP8B/wD/AP8A/3T/FP+L/33/CP9X/+j/AAAAAAAAAACF/8D/df8L/4v/zv/o/wAAAAAAAAAAM//A/+v/Cf+L/4b/DP8B/wD/AP+L/wT/OP9f/17/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetId@CD3dxFile@@QAEKK@Z
+    size: 55
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ValidEntry@CD3dxFile@@QAEHK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CloseCorrupt@CD3dxFile@@QAEJXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 32
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

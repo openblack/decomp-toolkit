@@ -1,0 +1,128 @@
+- symbol: 0
+  hash: 02425844f44fdd9ff93bb5b80e18c781ca424fad
+  signature: Vf+L/+z/g//s/xD/Vv+L/3X/DP9X/1b/6P8AAAAAAAAAANn/wP/Y/yX/AAAAAAAAAADZ/wX/AAAAAAAAAABZ/9j/2f/f/+D/nv93/xb/2P8d/wAAAAAAAAAA3//g/57/d/8N/4v/Rf8I/zv/xv/d/9j/dP9F/+v/I//d/9j/2P8V/wAAAAAAAAAA3//g/57/dv8e/9n/+v9R/43/Rf/w/4v/zv/Z/xz/JP9Q/+j/AAAAAAAAAACL//D/i/9F/wj/i//4/6X/pf+l/6X/6/8Y/4v/Rf8I/93/2P/Z/+7/2f8Y/9n/7v/Z/1j/BP/Z/+7/2f9Y/wj/2f/u/9n/WP8M/1//Xv/J/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXVec4Normalize@8
+    size: 134
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXVec4LengthSq@@YAMPBUD3DXVECTOR4@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41914
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41915
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41916
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ??KD3DXVECTOR4@@QBE?AU0@M@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 13
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 87
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+- symbol: 0
+  hash: e0543204c5b5f81cf0a8ec51d2069f3c8155c348
+  signature: Vf+L/+z/g//s/xD/U/+L/13/CP9W/1f/hf/b/3T/d/+L/3X/DP+F//b/dP9w/1b/6P8AAAAAAAAAANn/wP/Y/yX/AAAAAAAAAADZ/wX/AAAAAAAAAABZ/9j/2f/f/+D/nv93/xP/2P8d/wAAAAAAAAAA3//g/57/d/8K/zv/3v/d/9j/dP8//+v/IP/d/9j/2P8V/wAAAAAAAAAA3//g/57/dv8b/9n/+v9R/43/Rf/w/4v/zv/Z/xz/JP9Q/+j/AAAAAAAAAACL//D/i//7/6X/pf+l/6X/6/8V/93/2P/Z/+7/2f8b/9n/7v/Z/1v/BP/Z/+7/2f9b/wj/2f/u/9n/W/8M/4v/w//r/wL/M//A/1//Xv9b/8n/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXVec4Normalize@8
+    size: 144
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXVec4LengthSq@@YAMPBUD3DXVECTOR4@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42032
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42033
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42034
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ??KD3DXVECTOR4@@QBE?AU0@M@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 74
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 96
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

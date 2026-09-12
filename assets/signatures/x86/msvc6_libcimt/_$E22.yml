@@ -1,6 +1,6 @@
 - symbol: 0
-  hash: 5fc227a8cf8536cba0eea2cb53d9e301f0caa313
-  signature: uf8AAAAAAAAAAIv/wf+F/8D/dP8K/6H/AAAAAAAAAACL/0D/BP8D/8H/av8B/1D/uf8AAAAAAAAAAOj/AAAAAAAAAADD/w==
+  hash: c233de8bcc504848f9e003ecddfaf4cfecba85cf
+  signature: uf8AAAAAAAAAAIv/wf+F/8D/dP8K/6H/AAAAAAAAAACL/0D/BP8D/8H/av///1D/uf8AAAAAAAAAAOj/AAAAAAAAAADD/w==
   symbols:
   - kind: Function
     name: _$E22
@@ -8,12 +8,12 @@
     flags: 2
     section: .text
   - kind: Object
-    name: ?cerr@@3Vostream_withassign@@A
+    name: ?cout@@3Vostream_withassign@@A
     size: 0
     flags: 1
     section: .bss
   - kind: Object
-    name: ___InitCerr
+    name: ___InitCout
     size: 0
     flags: 2
     section: .bss
@@ -21,7 +21,7 @@
     name: ??0Iostream_init@@QAE@AAVios@@H@Z
     size: 0
     flags: 1
-    section: null
+    section: .text
   relocations:
   - offset: 1
     kind: x86_abs32
@@ -81,8 +81,8 @@
     symbol: 3
     addend: -4
 - symbol: 0
-  hash: c233de8bcc504848f9e003ecddfaf4cfecba85cf
-  signature: uf8AAAAAAAAAAIv/wf+F/8D/dP8K/6H/AAAAAAAAAACL/0D/BP8D/8H/av///1D/uf8AAAAAAAAAAOj/AAAAAAAAAADD/w==
+  hash: 5fc227a8cf8536cba0eea2cb53d9e301f0caa313
+  signature: uf8AAAAAAAAAAIv/wf+F/8D/dP8K/6H/AAAAAAAAAACL/0D/BP8D/8H/av8B/1D/uf8AAAAAAAAAAOj/AAAAAAAAAADD/w==
   symbols:
   - kind: Function
     name: _$E22
@@ -90,12 +90,12 @@
     flags: 2
     section: .text
   - kind: Object
-    name: ?cout@@3Vostream_withassign@@A
+    name: ?cerr@@3Vostream_withassign@@A
     size: 0
     flags: 1
     section: .bss
   - kind: Object
-    name: ___InitCout
+    name: ___InitCerr
     size: 0
     flags: 2
     section: .bss
@@ -103,7 +103,7 @@
     name: ??0Iostream_init@@QAE@AAVios@@H@Z
     size: 0
     flags: 1
-    section: .text
+    section: null
   relocations:
   - offset: 1
     kind: x86_abs32

@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: ec0278c32979a9901ccb942451255b3fc8cc008d
+  signature: Vf+L/+z/i/9V/xD/i/9N/wz/Vv+L/3X/FP/Z/wL/2P8h/4v/Rf8I/9j/Tf8Y/9n/Bv/Y/yH/2P9N/xz/3v/B/9j/Af/Z/xj/2f9C/wT/2P9h/wT/2P9N/xj/2f9G/wT/2P9h/wT/Xv/Y/03/HP/e/8H/2P9B/wT/2f9Y/wT/Xf/C/xj/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXVec2BaryCentric@24
+    size: 67
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 57d3bc549645471283ab2504e6d834cbda384428
+  signature: Vf+L/+z/i/9F/wj/Vv+F/8D/dP9F/4v/Tf8M/4X/yf90/z7/i/91/xD/hf/2/3T/N/+L/1X/FP+F/9L/dP8w/9n/Bv/Y/yH/2P9N/xj/2f8C/9j/If/Y/03/HP/e/8H/2P8B/9n/GP/Z/0b/BP/Y/2H/BP/Y/03/GP/Z/0L/BP/Y/2H/BP/Y/03/HP/e/8H/2P9B/wT/2f9Y/wT/6/8C/zP/wP9e/13/wv8Y/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXVec2BaryCentric@24
+    size: 87
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 6d37e1df65443f73fbc46b53d5bdaa9e62075251
+  signature: i/8B/1D/i/8I////Uf8Q/8P/
+  symbols:
+  - kind: Function
+    name: ?End@CVertexArray@@QAEXXZ
+    size: 9
+    flags: 1
+    section: .text
+  relocations: []

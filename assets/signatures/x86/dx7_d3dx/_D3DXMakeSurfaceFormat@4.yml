@@ -1,0 +1,81 @@
+- symbol: 0
+  hash: 2fdffd3018fc18bb65041e775e2bd03f653c4575
+  signature: M//S/1P/Of9U/yT/CP9W/1f/dP8f/7j/AAAAAAAAAACL/3T/JP8Q/2r/IP9Z/4v/+P8z/9v/8/+m/3T/E/+D/8D/KP9C/z3/AAAAAAAAAABy/+b/M//A/1//Xv9b/8L/BP8A/43/BP+S/4v/BP/F/wAAAAAAAAAA6//u/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 62
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_d3dxDdpfSupportedPFs@@3PAU_D3DX_FORMATDESC@@A
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 36
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 56
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: e845e5a6b7618bbfccbead6fa41f774a6d0a8608
+  signature: Vf+L/+z/M//A/1P/Of9F/wj/Vv9X/3X/CP9o/wAAAAAAAAAAUP/r/yX/uv8AAAAAAAAAAIv/df8I/2r/IP9Z/4v/+v8z/9v/8/+m/3T/Iv+D/8L/KP9A/4H/+v8AAAAAAAAAAHL/5v9o/wAAAAAAAAAAU//o/wAAAAAAAAAAWf8z/8D/Wf9f/17/W/9d/8L/BP8A/43/BP+A/4v/BP/F/wAAAAAAAAAA6//t/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 86
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0O@PPEO@pddpf?5is?5NULL?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ?g_d3dxDdpfSupportedPFs@@3PAU_D3DX_FORMATDESC@@A
+    size: 0
+    flags: 1
+    section: .data
+  - kind: Object
+    name: ??_C@_0BK@NMMC@Unrecognized?5pixel?5format?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 46
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 53
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 59
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 80
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: 7ef9498d5915000d27354bf43a6ce331d7b77c65
+  signature: Vf+L/+z/g//s/xD/2f9F/xT/Uf+N/0X/8P/Z/xz/JP/Z/0X/EP9R/9n/HP8k/9n/Rf8M/1H/2f8c/yT/UP/o/wAAAAAAAAAAjf9F//D/UP///3X/CP/o/wAAAAAAAAAAi/9F/wj/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixRotationYawPitchRoll@16
+    size: 55
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXQuaternionRotationYawPitchRoll@16
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixRotationQuaternion@8
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 32
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 44
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 62047bf184f8e1d047215cd92d72a6e5877d28cb
+  signature: Vf+L/+z/g//s/xD/g/99/wj/AP91/wT/M//A/+v/Lf/Z/0X/FP9R/43/Rf/w/9n/HP8k/9n/Rf8Q/1H/2f8c/yT/2f9F/wz/Uf/Z/xz/JP9Q/+j/AAAAAAAAAACN/0X/8P9Q////df8I/+j/AAAAAAAAAACL/0X/CP/J/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixRotationYawPitchRoll@16
+    size: 65
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXQuaternionRotationYawPitchRoll@16
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixRotationQuaternion@8
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,114 @@
+- symbol: 0
+  hash: 1788eb32ae33a8372817f41c7c1909625f01ec7e
+  signature: i//B/7r/AAAAAAAAAAAz/8n/if8I/4n/SP8s/4n/SP8w/4n/SP80/8f/QP8o/wAAAAAAAAAAif9I/0T/if9I/0j/if9I/0z/if9Q/0D/if9I/1j/if9I/1z/if9I/2D/if9Q/1T/if9I/wz/if9I/wj/if9I/wT/if9I/xD/if9I/xT/if9I/xj/if9I/xz/if9I/yD/if9I/yT/if9I/zj/if9I/zz/if9I/1D/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CVideoModeNode@@QAE@XZ
+    size: 88
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CSurfaceFormatList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_7CRefreshRateList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 3
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: a025f9e4283a3320a1b565ea3499732e7fdc8491
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1P/Vv+L//H/V/+J/3X/8P/o/wAAAAAAAAAAjf9e/yj/M////4v/y/+J/z7/6P8AAAAAAAAAAMf/A/8AAAAAAAAAAI3/Tv9A/4n/ff/8/+j/AAAAAAAAAAC7/wAAAAAAAAAAif9e/0D/jf9O/1T/xv9F//z/Af/o/wAAAAAAAAAAi/9N//T/if9e/1T/if9+/wz/if9+/wj/if9+/wT/if9+/xD/if9+/xT/if9+/xj/if9+/xz/if9+/yD/if9+/yT/if9+/zj/if9+/zz/if9+/1D/i//G/1//Xv9k/4n/Df8AAAAAAAAAAFv/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ??0CVideoModeNode@@QAE@XZ
+    size: 131
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43561
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$ListT@VCRefreshRateNode@@@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CRefreshRateList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??0?$ListT@VCSurfaceFormatNode@@@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CSurfaceFormatList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 20
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 34
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 40
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 51
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 71
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 124
+    kind: x86_abs32
+    symbol: 8
+    addend: 0

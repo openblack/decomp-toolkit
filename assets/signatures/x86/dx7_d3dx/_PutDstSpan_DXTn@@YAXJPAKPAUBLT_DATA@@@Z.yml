@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 4b37568d500114326cc4dbf5501a2a35944ed6e6
+  signature: Vf+L/+z/Uf+L/0X/EP9T/4v/iP+E/wD/AP8A/4v/mP+A/wD/AP8A/4n/Tf/8/4v/Tf8I/4X/yf9+/yn/V/9W/4v/df8M/43/eP80/4n/Tf8Q/1f/i//D////df/8/0P/UP/o/wAAAAAAAAAAi/8O/4P/xP8M/4P/xv8E////Tf8Q/4n/CP91/+T/Xv9f/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?PutDstSpan_DXTn@@YAXJPAKPAUBLT_DATA@@@Z
+    size: 74
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GetPtrToCachedPixel@@YAPAKJJPAUSURFACE_DATA@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 50
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 52a68a2062a6a49a82d2e2dd2ea992dccc928170
+  signature: Vf+L/+z/Uf+L/0X/EP+L/1X/CP+D/03//P///1b/i/+w/6j/AP8A/wD/V/+L/7j/kP8A/wD/AP+L/4D/sP8A/wD/AP8z/8n/hf/S/37/af9T/4v/Xf8M/4n/Xf8Q/4n/Vf8I/4v/1v/B//r/EP8P/7f/FP9Q/zv/Vf/8/3T/QP+L/9r/i//K/4H/4/8A//j/AP8A/4H/4f/A/wf/AP8A/8H/4/8D/wv/y/+J/1X//P/B/+H/Bf+L/9n/g//i/z//wf/r/wX/gf/j/wD/B/8H/wD/wf/i/wL/C//a/wv/y/+L/9H/wf/q/wb/g//i/wP/gf/K/wD/AP8A////C//K/4v/Vf8Q/4P/Rf8Q/wT/A//3////Tf8I/4n/Cv91/6L/W/+L/0X/DP9f/17/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?GetSrcSpan_U5V5L6@@YAPAKJPAKPAUBLT_DATA@@@Z
+    size: 152
+    flags: 2
+    section: .text
+  relocations: []

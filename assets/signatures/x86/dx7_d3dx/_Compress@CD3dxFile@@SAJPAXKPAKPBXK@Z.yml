@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 4af4f0a46248b19b770b578a39aecfce4fcf1515
+  signature: Vf+L/+z/i/9V/xT/U/9W/1f/hf/S/3X/B/+4/1f/AP8H/4D/6/9w/4v/Tf8M/4v/Rf8I/4P/+f///3X/Bf8J/03/FP/r/wX/A//I/4n/Tf8U/4v/Tf8Y/4v/2v8D/8r/O//R/4n/Tf8M/3P/P/87/0X/FP9z/03/M////zn/ff8I/3T/A/+A/yD/AP+L//D/QP87/13/DP9z/yj/iv8T/4T/0v90/xb/O/9F/xT/c/8w/4P/ff8I/wD/dP8K/4j/EP+y/wH/i//P/9L/4v8I/xb/QP9H/0P/g////wj/fP/Y/zv/Xf8M/3L/wf+L/03/EP+F/8n/dP8F/yv/Rf8I/4n/Af8z/8D/X/9e/1v/Xf/D/7j/Bf9A/wD/gP/r//T/
+  symbols:
+  - kind: Function
+    name: ?Compress@CD3dxFile@@SAJPAXKPAKPBXK@Z
+    size: 144
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,74 @@
+- symbol: 0
+  hash: e7dba13357300c1188f0c586bc41486d6accbe37
+  signature: Vv9X////dP8k/wz/i//5/+j/AAAAAAAAAACL//D/hf/2/3T/GP9W/4v/z//o/wAAAAAAAAAAOf9E/yT/EP90/wr/Vv+L/8//6P8AAAAAAAAAAOv/4v+L/8b/X/9e/8L/CP8A/w==
+  symbols:
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKK@Z
+    size: 50
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetChild@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetId@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetSibling@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: fc53095cf022f1c9f7a031d4575f3ce6cb0b8c14
+  signature: Vf+L/+z/Vv9X////df8I/4v/+f/o/wAAAAAAAAAAi//w/4X/9v90/xf/Vv+L/8//6P8AAAAAAAAAADn/Rf8M/3T/Cv9W/4v/z//o/wAAAAAAAAAA6//j/4v/xv9f/17/Xf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKK@Z
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetChild@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetId@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetSibling@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 11
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 38
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

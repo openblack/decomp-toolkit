@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 7f859f2793fdbb38e8e2485435858ec255b802cf
+  signature: Vf+L/+z/i/9F/wz/i/9V/xD/i/9N/wj/2f8A/9j/Cv/Z/wD/2P9K/wj/2f8A/9j/Sv8E/9n/AP/Y/0r/DP/Z/8v/2f9A/wT/2P9K/xD/2f9A/wT/2P9K/xj/2f9A/wT/2P9K/xT/2f9A/wT/2P9K/xz/2f/L/97/xP/e/8T/3v/E/97/xP/Z/0D/CP/Y/0r/IP/Z/0D/CP/Y/0r/KP/Z/0D/CP/Y/0r/JP/Z/0D/CP/Y/0r/LP/Z/8v/3v/E/97/xP/e/8T/3v/E/9n/QP8M/9j/Sv8w/9n/QP8M/9j/Sv84/9n/QP8M/9j/Sv80/9n/QP8M/9j/Sv88/9n/y//e/8T/3v/E/97/xP/e/8T/2f8Z/9n/Wf8E/9n/Wf8I/9n/Wf8M/4v/Rf8I/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXVec4Transform@12
+    size: 153
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 6c29f452be4d3488c90877080b47510041564377
+  signature: Vf+L/+z/M//A/zn/Rf8I/w//hP+m/wD/AP8A/zn/Rf8M/w//hP+d/wD/AP8A/zn/Rf8Q/w//hP+U/wD/AP8A/4v/Rf8M/4v/Vf8Q/4v/Tf8I/9n/AP/Y/wr/2f8A/9j/Sv8I/9n/AP/Y/0r/BP/Z/wD/2P9K/wz/2f/L/9n/QP8E/9j/Sv8Q/9n/QP8E/9j/Sv8Y/9n/QP8E/9j/Sv8U/9n/QP8E/9j/Sv8c/9n/y//e/8T/3v/E/97/xP/e/8T/2f9A/wj/2P9K/yD/2f9A/wj/2P9K/yj/2f9A/wj/2P9K/yT/2f9A/wj/2P9K/yz/2f/L/97/xP/e/8T/3v/E/97/xP/Z/0D/DP/Y/0r/MP/Z/0D/DP/Y/0r/OP/Z/0D/DP/Y/0r/NP/Z/0D/DP/Y/0r/PP/Z/8v/3v/E/97/xP/e/8T/3v/E/9n/Gf/Z/1n/BP/Z/1n/CP/Z/1n/DP+L/0X/CP/r/wL/M//A/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXVec4Transform@12
+    size: 186
+    flags: 1
+    section: .text
+  relocations: []

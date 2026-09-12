@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: de688a925186fc4ad25bcca4ed9e537637a969b8
+  signature: Vf+L/+z/Uf9T/1b/i//x/1f/g/9+/wT/AP90/2H/jf+e/5z/AP8A/wD/uf8A/wH/AP8A/zP/wP+L//v/8/+r/4v/Rv8E/43/Vf/8/1L/UP+L/wj///9R/wz/i/9F//z/qP8E/3T/B/+4/wD/Af8A/wD/6/8Y/6j/Af90/wT/av8Q/+v/B//2/8T/Av90/wX/av8E/1j/6/8G/8H/6P8H/4P/4P8C/4v/dv8E/1P/UP9q/wD/i/8O/2r/AP9W////Uf8Q/4X/wP98/wr/i/9F/wj/av8B/4n/GP9Y/+v/CP+L/0X/CP+D/yD/AP8z/8D/X/9e/1v/yf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?GetPalette@CSurfaceLock@@QAEHPAPAUtagPALETTEENTRY@@@Z
+    size: 127
+    flags: 1
+    section: .text
+  relocations: []

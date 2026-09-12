@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 659d30f9ddd162ee41378f14a7418b930fbb59cc
+  signature: Vf+L/+z/g//s/yT/U/9W/4P/Zf/8/wD/V/+L/33/CP///3X/DP+N/0f/CP9Q/+j/AAAAAAAAAAAP/7b/d/8B/1n/if91/+D/Wf8P/7b/D/87/87/if9N/9z/fv9Z/43/BP92/2r/B/9b/43/RP9B/wP/U/+Z//f/+/+J/0X/5P+N/wT/tv+N/0T/SP8D/5n/9//7/4n/Rf/o/43/Qf8B/43/BP9A/43/BP+w/5n/9//7/4n/Rf/s/43/Rv8B/43/BP9A/43/BP+I/5n/9//7/4n/Rf/w/43/BP+J/43/RP9w/wP/mf/3//v/if9F//T/jf8E/0n/Wf+N/0T/Rv8D/5n/9//5/4n/Rf/4/+v/Qv+N/0T/sf8D/2r/Bf+Z/1v/x/9F//j///8A/wD/AP/3//v/U/+J/0X/5P+N/0b/Af+N/wT/QP+N/wT/SP+Z//f/+/+J/0X/6P+N/0H/Af+N/wT/QP+N/wT/cP+Z//f/+/+J/0X/7P+N/0T/jv8D/5n/Wf/3//n/g/9l//T/AP+J/0X/8P+L/03//P8z/8D/qP8H/3X/Jv+F/8D/df8R/w//tv9X/wL/M//J/4r/T/8D/4r/b/8E/8H/4f8I/+v/D/8P/7b/V/8F/zP/yf+K/0//Bv+K/2//B//B/+H/CP8L/8r/i/91/wz/i//R/4P/4v8H/8H/6f8D/4r/VP+V/9z/iP9U/4b/A/9A/4P/+P8Q/3z/vf9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?DecodeBlockAlpha3@@YAXPAUS3TCBlockAlpha3@@QAUS3TC_COLOR@@@Z
+    size: 279
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

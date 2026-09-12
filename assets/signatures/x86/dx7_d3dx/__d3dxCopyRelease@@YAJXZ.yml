@@ -1,0 +1,315 @@
+- symbol: 0
+  hash: 30d1b32a68f45d99821778536ab9b88b32a564d6
+  signature: g/89/wAAAAAAAAAAAf8P/4X/4f8A/wD/AP9X/1b/i/81/wAAAAAAAAAAhf/2/3T/FP+L/wb/hf/A/3T/B/9Q/+j/AAAAAAAAAABZ/1b/6P8AAAAAAAAAAFn/i/81/wAAAAAAAAAAhf/2/3T/FP+L/wb/hf/A/3T/B/9Q/+j/AAAAAAAAAABZ/1b/6P8AAAAAAAAAAFn/v/8AAAAAAAAAAIv/d//4/4X/9v90/xT/i/8G/4X/wP90/wf/UP/o/wAAAAAAAAAAWf9W/+j/AAAAAAAAAABZ/4v/d//8/4X/9v90/xT/i/8G/4X/wP90/wf/UP/o/wAAAAAAAAAAWf9W/+j/AAAAAAAAAABZ/4v/N/+F//b/dP8U/4v/Bv+F/8D/dP8H/1D/6P8AAAAAAAAAAFn/Vv/o/wAAAAAAAAAAWf+L/3f/BP+F//b/dP8U/4v/Bv+F/8D/dP8H/1D/6P8AAAAAAAAAAFn/Vv/o/wAAAAAAAAAAWf+D/8f/EP+B////AAAAAAAAAAB8/4r/av9c/zP/wP9Z/7//AAAAAAAAAAD//zX/AAAAAAAAAADz/6v/6P8AAAAAAAAAAIP/Jf8AAAAAAAAAAAD/g/8l/wAAAAAAAAAAAP9Z/17/X////w3/AAAAAAAAAAAz/8D/w/8=
+  symbols:
+  - kind: Function
+    name: ?_d3dxCopyRelease@@YAJXZ
+    size: 247
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _InitCount$S42480
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ?ArrayCopySpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?ArrayFilterSpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?FnTable@@3PAUTABLEENTRY@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _Buffer$S42482
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _BufferWidth$S42481
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 17
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 40
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 47
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 63
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 70
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 76
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 95
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 102
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 122
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 129
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 148
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 155
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 175
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 182
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 192
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 204
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 210
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 217
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 223
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 230
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 240
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 95303026fa8eb8010af092d97fc286517b3d8329
+  signature: g/89/wAAAAAAAAAAAf9W/1f/ff8b/2j/AAAAAAAAAABq/zT/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+D/z3/AAAAAAAAAAAB/w//hf/n/wD/AP8A/6H/AAAAAAAAAACF/8D/dP8a/4v/8P+F//b/dP8U/4v/Bv+F/8D/dP8H/1D/6P8AAAAAAAAAAFn/Vv/o/wAAAAAAAAAAWf+h/wAAAAAAAAAAhf/A/3T/Gv+L//D/hf/2/3T/FP+L/wb/hf/A/3T/B/9Q/+j/AAAAAAAAAABZ/1b/6P8AAAAAAAAAAFn/v/8AAAAAAAAAAIv/d//4/4X/9v90/xT/i/8G/4X/wP90/wf/UP/o/wAAAAAAAAAAWf9W/+j/AAAAAAAAAABZ/4v/d//8/4X/9v90/xT/i/8G/4X/wP90/wf/UP/o/wAAAAAAAAAAWf9W/+j/AAAAAAAAAABZ/4v/N/+F//b/dP8U/4v/Bv+F/8D/dP8H/1D/6P8AAAAAAAAAAFn/Vv/o/wAAAAAAAAAAWf+L/3f/BP+F//b/dP8U/4v/Bv+F/8D/dP8H/1D/6P8AAAAAAAAAAFn/Vv/o/wAAAAAAAAAAWf+D/8f/EP+B////AAAAAAAAAAB8/4r/av9c/zP/wP9Z/7//AAAAAAAAAAD//zX/AAAAAAAAAADz/6v/6P8AAAAAAAAAAIP/Jf8AAAAAAAAAAAD/g/8l/wAAAAAAAAAAAP9Z////Df8AAAAAAAAAAF//M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?_d3dxCopyRelease@@YAJXZ
+    size: 286
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _InitCount$S42491
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_0P@MMIO@InitCount?5?$DO?$DN?51?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DF@JCNO@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?ArrayCopySpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _free
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?ArrayFilterSpan@@3PAV?$TArray@ULINEENTRY@@@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?FnTable@@3PAUTABLEENTRY@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _Buffer$S42493
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: _BufferWidth$S42492
+    size: 0
+    flags: 2
+    section: .bss
+  relocations:
+  - offset: 2
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 12
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 19
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 24
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 33
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 67
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 74
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 80
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 102
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 115
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 134
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 141
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 161
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 168
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 187
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 194
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 214
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 221
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 231
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 243
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 249
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 256
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 262
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 269
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 277
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

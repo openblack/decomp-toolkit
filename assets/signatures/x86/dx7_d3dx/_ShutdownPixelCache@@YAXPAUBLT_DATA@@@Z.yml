@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 0804d68e39ee90a7f2225c4900a4882f8d6ec98d
+  signature: i/9E/yT/BP9W/4v/cP9Q/4X/9v90/xT/V/+N/3j/NP9X/1b/6P8AAAAAAAAAAIv/Nv9Z/4X/9v9Z/3X/8f9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?ShutdownPixelCache@@YAXPAUBLT_DATA@@@Z
+    size: 34
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FlushCacheBlock@@YAXPAUPIXELCACHE_BLOCK@@PAUSURFACE_DATA@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: bb1e707f2cbf467a4062cf0597e53df7e6bbaddd
+  signature: Vf+L/+z/i/9F/wj/Vv+L/3D/UP+F//b/dP8U/1f/jf94/zT/V/9W/+j/AAAAAAAAAACL/zb/Wf+F//b/Wf91//H/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?ShutdownPixelCache@@YAXPAUBLT_DATA@@@Z
+    size: 37
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FlushCacheBlock@@YAXPAUPIXELCACHE_BLOCK@@PAUSURFACE_DATA@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

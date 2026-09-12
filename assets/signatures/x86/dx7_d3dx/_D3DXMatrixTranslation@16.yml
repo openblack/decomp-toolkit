@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: fbd200f1086853362a27a822422f4da338965d92
+  signature: i/9E/yT/BP+L/0z/JP8I/9n/7v+J/0j/MP+L/0z/JP8M/9n/WP8s/9n/7v+J/0j/NP+L/0z/JP8Q/9n/WP8k/9n/7v+J/0j/OP/Z/1j/IP/Z/+7/2f9Y/xz/2f/u/9n/WP8Y/9n/7v/Z/1j/EP/Z/+7/2f9Y/wz/2f/u/9n/WP8I/9n/7v/Z/1j/BP/Z/+j/2f9Y/zz/2f/o/9n/WP8o/9n/6P/Z/1j/FP/Z/+j/2f8Y/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixTranslation@16
+    size: 92
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 952506c953c62a5850d00f10a9f8ff627f5672f4
+  signature: Vf+L/+z/i/9F/wj/hf/A/3T/Uv/Z/+7/i/9N/wz/2f9Y/yz/2f/u/4n/SP8w/4v/Tf8Q/9n/WP8k/9n/7v+J/0j/NP+L/03/FP/Z/1j/IP/Z/+7/if9I/zj/2f9Y/xz/2f/u/9n/WP8Y/9n/7v/Z/1j/EP/Z/+7/2f9Y/wz/2f/u/9n/WP8I/9n/7v/Z/1j/BP/Z/+j/2f9Y/zz/2f/o/9n/WP8o/9n/6P/Z/1j/FP/Z/+j/2f8Y/13/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixTranslation@16
+    size: 96
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: 2112925d44972bf9c882e9ec0c82b0a65267b176
+  signature: Vv+L//H/i/9O/wT/Of9O/wj/jf9G/wT/df8h/4X/yf91/wj/x/8A/wL/AP8A/wD/6/8E/wP/yf+J/wj/i/8A/8H/4P8E/1D///82/+j/AAAAAAAAAABZ/4n/Bv9Z/4v/Rv8I/2r/EP///3T/JP8M/8H/4P8E/wP/Bv9Q/+j/AAAAAAAAAACD/8T/DP///0b/CP+L/3b/CP+N/0b///9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Add@?$TArray@UBLTENTRY@@@@QAEHPAUBLTENTRY@@@Z
+    size: 83
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 39
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 63
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 04eeb0ff7434e7a2d1e6fb76cbe44a9af0845a08
+  signature: Vf+L/+z/Vv+L//H/i/9O/wT/Of9O/wj/jf9G/wT/df8h/4X/yf91/wj/x/8A/wL/AP8A/wD/6/8E/wP/yf+J/wj/i/8A/8H/4P8E/1D///82/+j/AAAAAAAAAABZ/4n/Bv9Z/4v/Rv8I/2r/EP///3X/CP/B/+D/BP8D/wb/UP/o/wAAAAAAAAAAg//E/wz///9G/wj/i/92/wj/jf9G////Xv9d/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Add@?$TArray@UBLTENTRY@@@@QAEHPAUBLTENTRY@@@Z
+    size: 86
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _realloc
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _memmove
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 65
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 6777e7cfb5a7a26cd464ed9a1c76aa069f2f61d6
+  signature: Vv+L//H/i/9G/wj/x/8G/wAAAAAAAAAAhf/A/3T/Cv+L/wj/UP///1H/CP+D/2b/CP8A/4v/Rv8M/4X/wP90/wr/i/8I/1D///9R/wj/g/9m/wz/AP+L/3b/EP+F//b/dP8H/1b/6P8AAAAAAAAAAFn/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??1CD3duShape@@QAE@XZ
+    size: 59
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CD3duShape@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 8
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 52
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

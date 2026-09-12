@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: b119f97f36bb1f28beb4ff13f227cfb90be3c75f
+  signature: i/9E/yT/DP+L/0z/JP8E/1b/i/90/yT/DP9X/4v/eP98//P/pf9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?PutDstSpan_A8R8G8B8@@YAXJPAKPAUBLT_DATA@@@Z
+    size: 22
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 746b42c9b989e680d39dc9c8156937deef87d4a3
+  signature: Vf+L/+z/i/9F/xD/i/9N/wj/Vv+L/3X/DP9X/4v/eP98//P/pf9f/17/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?PutDstSpan_A8R8G8B8@@YAXJPAKPAUBLT_DATA@@@Z
+    size: 23
+    flags: 2
+    section: .text
+  relocations: []

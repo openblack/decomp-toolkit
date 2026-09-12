@@ -1,0 +1,317 @@
+- symbol: 0
+  hash: 089dc53690c6db7d20105dbf8b088f23030874b3
+  signature: Vf+L/+z/gf/s/4j/AP8A/wD/i/9F/wj/Vv+D//j/B/9X/w//h//B/wD/AP8A////JP+F/wAAAAAAAAAA2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp//r/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/+L/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/8r/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/7L/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/5r/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/4L/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADr/23/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADr/1j/v/8AAAAAAAAAAIP/yf///zP/wP+N/5X/eP/////////y/67/9//R/yv/+f/H/0X/+P/E/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf94/////////4P/4f8D//P/pP9Z/43/tf94/////////43/vf94/////////8f/Rf/8/8r/Af8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABf/17/yf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: ?Texture2@CVertexArray@@QAEXHMM@Z
+    size: 310
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L41751
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?Texture0_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture1_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture2_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture3_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture4_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture5_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture6_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture7_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CN@LAKF@CVertexArray?3?3Texture2?5?9?5bad?5tex@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 141
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 165
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 210
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 217
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 292
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 300
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+- symbol: 0
+  hash: a1fe4e34c32f36a19305336c9609ab913e1b8d10
+  signature: Vf+L/+z/gf/s/xD/Af8A/wD/i/9F/wj/Vv+D//j/B/9X/w//h//B/wD/AP8A////JP+F/wAAAAAAAAAA2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/wX/Af8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/+3/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/9X/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/73/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/6X/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADp/43/AP8A/wD/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADr/3j/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/+j/AAAAAAAAAADr/2P/jf+N/3j/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/3j/////////8v+u//f/0f8r//n/x/9F//j/xP8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/8P/+//////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/8P/+///////H/0X//P/K/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAX/9e/8n/wv8M/wD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: ?Texture2@CVertexArray@@QAEXHMM@Z
+    size: 353
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L41775
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?Texture0_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture1_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture2_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture3_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture4_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture5_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture6_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Texture7_2@CVertexArray@@QAEXMM@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CN@LAKF@CVertexArray?3?3Texture2?5?9?5bad?5tex@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L41521
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L41522
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L41523
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L41524
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L41525
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L41526
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L41527
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L41528
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 26
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 45
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 117
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 141
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 165
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 189
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 210
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 223
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 228
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 303
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 311
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 321
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 325
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 329
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 333
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 337
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 341
+    kind: x86_abs32
+    symbol: 19
+    addend: 0
+  - offset: 345
+    kind: x86_abs32
+    symbol: 20
+    addend: 0
+  - offset: 349
+    kind: x86_abs32
+    symbol: 21
+    addend: 0

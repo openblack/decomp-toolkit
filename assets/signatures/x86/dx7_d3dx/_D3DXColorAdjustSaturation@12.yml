@@ -1,0 +1,74 @@
+- symbol: 0
+  hash: f52baa26b5cb0f920db398e54cb6b3955eb7c887
+  signature: Vf+L/+z/i/9N/wz/i/9F/wj/2f9B/wj/2P8N/wAAAAAAAAAA2f8B/9j/Df8AAAAAAAAAAN7/6f/Z/0H/BP/Y/w3/AAAAAAAAAADe/+n/2f8B/9j/4f/Y/03/EP/Y/8H/2f8Y/9n/Qf8E/9j/4f/Y/03/EP/Y/8H/2f9Y/wT/2f9B/wj/2P/h/9j/Tf8Q/9j/wf/Z/1j/CP+L/0n/DP/d/9j/if9I/wz/Xf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXColorAdjustSaturation@12
+    size: 88
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42248
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42249
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42250
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 33
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
+  hash: ac582a4a5770641edce2451155af2b06a2c19445
+  signature: Vf+L/+z/i/9F/wj/hf/A/3T/VP+L/03/DP+F/8n/dP9N/9n/Qf8I/9j/Df8AAAAAAAAAANn/Af/Y/w3/AAAAAAAAAADe/+n/2f9B/wT/2P8N/wAAAAAAAAAA3v/p/9n/Af/Y/+H/2P9N/xD/2P/B/9n/GP/Z/0H/BP/Y/+H/2P9N/xD/2P/B/9n/WP8E/9n/Qf8I/9j/4f/Y/03/EP/Y/8H/2f9Y/wj/i/9J/wz/3f/Y/4n/SP8M/+v/Av8z/8D/Xf/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXColorAdjustSaturation@12
+    size: 100
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42444
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42445
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42446
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

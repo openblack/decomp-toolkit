@@ -1,0 +1,122 @@
+- symbol: 0
+  hash: 73350df8598f5ae15bca52b8bd767ac376b3eda3
+  signature: Vf+L/+z/gf/s/6T/Av8A/wD/2f8F/wAAAAAAAAAAU/+L/13/CP+L/0X/FP9W/9n/Q/9A/9j/Q/9g/4X/wP9X/9j/Q/8g/9j/A//Y/8n/2f9d/wj/2f9D/0T/2P9D/2T/2P9D/wT/2P9D/yT/2P/J/9n/Vf/8/93/2f90/xL/2f8A/9j/Rf8I/9n/Xf8I/9n/QP8E/9j/wf/Z/1X//P/d/9n/2f/u/1H/jf+F/1z//v//////2f8c/yT/Uf/Z/+D/2f8c/yT/2f9F/wj/Uf/Z/+D/2f8c/yT/UP/o/wAAAAAAAAAA2f9F/wz/2P8d/wAAAAAAAAAA3//g/57/dP8T/9n/Rf8M/1H/jf+F/xz//v//////2f8c/yT/UP/o/wAAAAAAAAAA2f9F/xD/2P8d/wAAAAAAAAAA3//g/57/dP8g/9n/6P9R/43/hf/c//3//////9n/HP8k/9n/Rf8Q/1H/2f8c/yT/2f9F/xD/Uf/Z/xz/JP9Q/+j/AAAAAAAAAADZ/+7/Uf+N/4X/3P/+///////Z/xz/JP/Z/0X//P9R/9n/HP8k/9n/Rf8I/1H/2f8c/yT/UP/o/wAAAAAAAAAA2f9F/wz/2P8d/wAAAAAAAAAA3//g/57/D/+E/4b/AP8A/wD/2f9F/xD/2P8d/wAAAAAAAAAA3//g/57/dP94/43/hf/c//3//////1D/jf+F/1z//v//////UP+N/4X/nP/9//////9Q/+j/AAAAAAAAAABq/xD/jf+F/xz//v//////Wf+N/7X/nP/9//////9Q/43/hf9c//3//////1D/jf+9/1z//f//////jf+F/xz/////////8/+l/1D/6P8AAAAAAAAAAGr/EP+N/4X/3P/+//////9Z/43/tf8c/////////1D/jf9F/5z/UP+N/33/nP+N/4X/XP/////////z/6X/UP/o/wAAAAAAAAAAav8Q/43/tf9c/////////1n/6f+g/wD/AP8A/9n/Rf8M/9j/Hf8AAAAAAAAAAN//4P+e/3T/Sv+N/4X/HP/+//////9Q/43/hf9c//7//////1D/jf+F/1z/////////UP/o/wAAAAAAAAAAav8Q/43/hf/c//7//////1n/jf+1/1z/////////UP+N/0X/nP9Q/43/ff+c/43/hf8c//////////P/pf9Q/+j/AAAAAAAAAABq/xD/jf+1/xz/////////Wf/r/0j/jf+F/9z//f//////UP+N/4X/XP/+//////9Q/43/hf9c/////////1D/6P8AAAAAAAAAAGr/EP+N/4X/3P/+//////9Z/43/tf9c/////////1D/jf9F/5z/UP+N/33/nP+N/4X/HP/////////z/6X/UP/o/wAAAAAAAAAAav8Q/43/tf8c/////////1n/jf+9/5z//v//////av8E//P/pf9e/4v/A/+J/0X/7P+L/0P/BP+J/0X/8P+N/4X/nP/+///////Z/+7/UP+N/0X/7P/Z/13/9P9Q/43/Rf/c/9n/6P9Q/9n/Xf/4/+j/AAAAAAAAAACL/0X/3P+J/wP/i/9F/+D/if9D/wT/g//D/yD/Tv91/8b/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?RotateScaleQuad@@YAXPAU_D3DTLVERTEX@@MMPBUD3DXVECTOR2@@@Z
+    size: 611
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixTranslation@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixRotationZ@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXMatrixScaling@16
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXVec4Transform@12
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 110
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 119
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 143
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 152
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 189
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 221
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 230
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 248
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 279
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 322
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 359
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 382
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 413
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 450
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 487
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 524
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 585
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

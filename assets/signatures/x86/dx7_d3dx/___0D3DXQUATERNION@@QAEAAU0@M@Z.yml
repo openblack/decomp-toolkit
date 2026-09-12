@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 4ea7b4b51d0ebb4bcd342010f13d57bf7219aeac
+  signature: 2f/o/4v/wf/Y/3T/JP8E/9n/AP/Y/8n/2f8Y/9n/wP/Y/0j/BP/Z/1j/BP/Z/8D/2P9I/wj/2f9Y/wj/2P9I/wz/2f9Y/wz/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??_0D3DXQUATERNION@@QAEAAU0@M@Z
+    size: 39
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 2e42f612f877dc2ab6e41d519699dc6b318aeb39
+  signature: Vf+L/+z/2f/o/4v/wf/Y/3X/CP/Z/wD/2P/J/9n/GP/Z/8D/2P9I/wT/2f9Y/wT/2f/A/9j/SP8I/9n/WP8I/9j/SP8M/9n/WP8M/13/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ??_0D3DXQUATERNION@@QAEAAU0@M@Z
+    size: 42
+    flags: 1
+    section: .text
+  relocations: []

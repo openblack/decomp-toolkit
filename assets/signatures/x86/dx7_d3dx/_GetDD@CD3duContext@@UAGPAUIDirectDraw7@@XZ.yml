@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: a3a2664be3b063601cf3fa0b5ccf125a5acccf00
+  signature: Vv+L/3T/JP8I/4v/Rv98/4X/wP90/wv/i/8I/1D///9R/wT/i/9G/3z/6/8C/zP/wP9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?GetDD@CD3duContext@@UAGPAUIDirectDraw7@@XZ
+    size: 29
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: be759fb7498f43630e35298d4d573435bdfc0830
+  signature: Vf+L/+z/Vv+L/3X/CP+L/0b/fP+F/8D/dP8L/4v/CP9Q////Uf8E/4v/Rv98/+v/Av8z/8D/Xv9d/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?GetDD@CD3duContext@@UAGPAUIDirectDraw7@@XZ
+    size: 32
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 5e144820194a06a2b207c2dce035d8eda9e6d479
+  signature: i/9M/yT/BP9T/1f/i/98/yT/FP+D/zn/AP9q/wH/i/+X/7T/AP8A/wD/W/90/yL/Vv+L/3T/JP8U/yv/8f+F/9r/df8M/4v/Af+L/wD/Df8A/wD/AP///4n/BP8O/4P/wf8E/9H/4/+D/zn/AP91/+b/Xv+J/5f/tP8A/wD/AP9f/1v/w/8=
+  symbols:
+  - kind: Function
+    name: ?GetnPixels_X8R8G8B8@@YAXPAPAXPAKPAUBLT_DATA@@@Z
+    size: 67
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 505a9205f9574c9c2a730cb2de21ea361e44545c
+  signature: Vf+L/+z/i/9N/wj/U/9X/4v/ff8Q/4P/Of8A/2r/Af+L/5f/tP8A/wD/AP9b/3T/If9W/4v/df8M/yv/8f+F/9r/df8M/4v/Af+L/wD/Df8A/wD/AP///4n/BP8O/4P/wf8E/9H/4/+D/zn/AP91/+b/Xv+J/5f/tP8A/wD/AP9f/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?GetnPixels_X8R8G8B8@@YAXPAPAXPAKPAUBLT_DATA@@@Z
+    size: 68
+    flags: 2
+    section: .text
+  relocations: []

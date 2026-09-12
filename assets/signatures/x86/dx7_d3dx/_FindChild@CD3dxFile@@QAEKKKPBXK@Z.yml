@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: cd088ba5b540dc3339f2eee703857a20173c92c7
+  signature: Vf+L/+z/Uf9T/1b/V/+J/03//P///3X/CP/o/wAAAAAAAAAAi//Y/4X/2/90/z3/i/9N//z/U//o/wAAAAAAAAAAOf9F/wz/df8g/4v/Tf/8/43/Rf8I/1D/U//o/wAAAAAAAAAAi/9N/xT/O/9N/wj/df8L/4v/df8Q/4v/+P8z/8D/8/+m/3T/C/+L/03//P9T/+j/AAAAAAAAAADr/8H/i//D/+v/Av8z/8D/X/9e/1v/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKKPBXK@Z
+    size: 94
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetChild@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetId@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?ReadData@CD3dxFile@@QAEPBXKPAK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?GetSibling@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 14
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 29
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 47
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 33d80f4c5b91fda9235a7bd46ad5f675c1eecdba
+  signature: i/9E/yT/BP+L/0z/JP8I/9n/QP8E/9n/QP8I/9n/AP/Z/8L/2P/L/9n/wv/Y/8v/3v/B/9n/wf/Y/8r/3v/B/9n/Gf/d/9j/3f/Y/93/2P/Z/wD/2P9A/xD/2P9I/wT/2f9A/xT/2P9I/wj/3v/B/9n/Wf8E/9n/AP/Y/0D/IP/Y/0j/CP/Z/0D/FP/Y/0j/BP/e/8H/2f9Z/wj/2f9A/wT/2f9A/xD/2f9A/xT/2f/C/9j/y//Z/8L/2P/L/97/wf/Z/8H/2P/K/97/wf/Z/1n/EP/d/9j/3f/Y/93/2P/Z/0D/IP/Y/0D/EP/Y/0j/FP/Z/0D/CP/Y/0j/BP/e/8H/2f9Z/xT/2f9A/wj/2f9A/xT/2f9A/yD/2f/C/9j/y//Z/8L/2P/L/97/wf/Z/8H/2P/K/97/wf/Z/1n/IP/d/9j/3f/Y/93/2P/D/w==
+  symbols:
+  - kind: Function
+    name: ?Square3x3@@YAXQAY02M0@Z
+    size: 167
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: e3e7855d897b67b7768494cd21bb942c1108b766
+  signature: Vf+L/+z/i/9F/wj/i/9N/wz/2f9A/wT/2f9A/wj/2f8A/9n/wv/Y/8v/2f/C/9j/y//e/8H/2f/B/9j/yv/e/8H/2f8Z/93/2P/d/9j/3f/Y/9n/AP/Y/0D/EP/Y/0j/BP/Z/0D/FP/Y/0j/CP/e/8H/2f9Z/wT/2f8A/9j/QP8g/9j/SP8I/9n/QP8U/9j/SP8E/97/wf/Z/1n/CP/Z/0D/BP/Z/0D/EP/Z/0D/FP/Z/8L/2P/L/9n/wv/Y/8v/3v/B/9n/wf/Y/8r/3v/B/9n/Wf8Q/93/2P/d/9j/3f/Y/9n/QP8g/9j/QP8Q/9j/SP8U/9n/QP8I/9j/SP8E/97/wf/Z/1n/FP/Z/0D/CP/Z/0D/FP/Z/0D/IP/Z/8L/2P/L/9n/wv/Y/8v/3v/B/9n/wf/Y/8r/3v/B/9n/Wf8g/93/2P/d/9j/3f/Y/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?Square3x3@@YAXQAY02M0@Z
+    size: 169
+    flags: 2
+    section: .text
+  relocations: []

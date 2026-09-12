@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 93e05dd613b9ec1e100e30cda35630bd034513ca
+  signature: i/9E/yT/CP9W/zP/9v9X/4v/SP98/4v/kP+w/wD/AP8A/4v/uP+o/wD/AP8A/zn/dP8k/wz/i/+A/5D/AP8A/wD/fv8W/1P/i//f/wP/+P/B//v/EP+K/xz/E/+I/xz/Mf9G/zv/dP8k/xD/fP/s/1v/X/9e/8P/
+  symbols:
+  - kind: Function
+    name: ?BltSpan_8BPP@@YAXJPAUBLT_DATA@@@Z
+    size: 60
+    flags: 2
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: ea18db14bcf8c6768f895d9c6024d77e9500abd8
+  signature: Vf+L/+z/i/9F/wz/Vv8z//b/V/+L/0j/fP+L/5D/sP8A/wD/AP+L/7j/qP8A/wD/AP85/3X/CP+L/4D/kP8A/wD/AP9+/xX/U/+L/9//A//4/8H/+/8Q/4r/HP8T/4j/HP8x/0b/O/91/wj/fP/t/1v/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?BltSpan_8BPP@@YAXJPAUBLT_DATA@@@Z
+    size: 61
+    flags: 2
+    section: .text
+  relocations: []

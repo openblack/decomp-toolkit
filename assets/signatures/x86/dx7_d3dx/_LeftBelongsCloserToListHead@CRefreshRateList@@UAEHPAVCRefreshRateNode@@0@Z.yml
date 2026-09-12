@@ -1,0 +1,47 @@
+- symbol: 0
+  hash: b234c8a441ae66456f21db4d303430775ab2779d
+  signature: i/9E/yT/BP+L/0z/JP8I/4v/QP8E/zv/Qf8E/xv/wP/3/9j/wv8I/wD/
+  symbols:
+  - kind: Function
+    name: ?LeftBelongsCloserToListHead@CRefreshRateList@@UAEHPAVCRefreshRateNode@@0@Z
+    size: 21
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 63c8563a76fb8cba891103e8e7e9d2bbd984c87b
+  signature: Vf+L/+z/Vv+L/3X/DP9X/4v/ff8I/4X///90/wT/hf/2/3X/F/9o/wAAAAAAAAAAaP9m/wL/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/i/9H/wT/X/87/0b/BP9e/xv/wP/3/9j/Xf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?LeftBelongsCloserToListHead@CRefreshRateList@@UAEHPAVCRefreshRateNode@@0@Z
+    size: 58
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BA@FIFI@pLeft?5?$CG?$CG?5pRight?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@BMII@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 20
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 35
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

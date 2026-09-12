@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: b28700a0ed364a7fb31f8221aa72e8122ce8bf1e
+  signature: i/9E/yT/BP+L/0j/DP/B/+H/Bv8D/0j/CP9R/+j/AAAAAAAAAABZ/zP/wP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?LoadIdentity@CD3DXMatrixStack@@UAGJXZ
+    size: 25
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXMatrixIdentity@@YAPAUD3DXMATRIX@@PAU1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 7adf8abda09489c4cd8bc3575b4c3acd138c0325
+  signature: Vf+L/+z/i/9F/wj/i/9I/wz/wf/h/wb/A/9I/wj/Uf/o/wAAAAAAAAAAWf8z/8D/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?LoadIdentity@CD3DXMatrixStack@@UAGJXZ
+    size: 28
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXMatrixIdentity@@YAPAUD3DXMATRIX@@PAU1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 296ad443db68d198d54af359604fe00e55ade19c
+  signature: i/9E/yT/BP///0D/EP+L/0D/EP/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?AddRef@CD3DXMatrixStack@@UAGKXZ
+    size: 13
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 9cf3fee4aff5f03241ca9856f65962b566f6e383
+  signature: Vf+L/+z/i/9F/wj///9A/xD/i/9A/xD/Xf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?AddRef@CD3DXMatrixStack@@UAGKXZ
+    size: 16
+    flags: 1
+    section: .text
+  relocations: []

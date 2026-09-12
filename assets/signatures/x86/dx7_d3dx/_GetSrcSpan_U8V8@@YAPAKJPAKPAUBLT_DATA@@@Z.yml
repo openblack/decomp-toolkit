@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: ce1aae9cde84f59f03e97a53df340dd4b9c17feb
+  signature: Vf+L/+z/i/9F/xD/i/9N/wj/g/9N/xD///9W/4v/kP+o/wD/AP8A/4v/sP+Q/wD/AP8A/4v/gP+w/wD/AP8A/1f/M////4X/yf9+/zD/U/+L/13/DP+J/03/CP+L/8r/wf/5/xD/D/+3/wz/SP87/03/EP90/w7/if9N/xD/gf/J/wD/AP//////wf/h/wj/i//5/4n/O/+D/8P/BP8D/9b///9N/wj/df/Y/1v/i/9F/wz/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?GetSrcSpan_U8V8@@YAPAKJPAKPAUBLT_DATA@@@Z
+    size: 94
+    flags: 2
+    section: .text
+  relocations: []

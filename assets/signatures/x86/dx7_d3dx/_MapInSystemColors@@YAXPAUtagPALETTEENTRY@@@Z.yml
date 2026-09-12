@@ -1,0 +1,45 @@
+- symbol: 0
+  hash: 42146a04c7a7f5db3ee70bc5d8491a8579b1a5b5
+  signature: Vf+L/+z/gf/s/7D/A/8A/wD/U/+L/13/CP9W/1f/U//o/wAAAAAAAAAAWf8z//b/jf+N/1D//P//////i//T/zP///+4/wAAAAAAAAAAO/8w/3T/C/+D/8D/BP9H/z3/AAAAAAAAAAB8//H/g////xT/df8H/4v/Av+J/wH/g//B/wT/Rv+D/8L/BP+B//7/AP8B/wD/AP98/9L/av8K/77/AAAAAAAAAABZ/4v/+//z/6X/jf97/yj/uf/s/wD/AP8A/43/tf9Q//z//////2r/Cv/z/6X/jf+7/9j/A/8A/wD/Wf++/wAAAAAAAAAA8/+l/1//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?MapInSystemColors@@YAXPAUtagPALETTEENTRY@@@Z
+    size: 127
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?UpdateStaticMapping@@YAXPAUtagPALETTEENTRY@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 116
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

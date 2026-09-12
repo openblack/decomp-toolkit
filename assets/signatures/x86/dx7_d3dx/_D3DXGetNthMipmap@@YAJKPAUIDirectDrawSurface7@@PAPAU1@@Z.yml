@@ -1,0 +1,109 @@
+- symbol: 0
+  hash: 17704400ffaff706f9f4c06f053eb65454b2948d
+  signature: Vf+L/+z/g//s/3T/i/9F/xD/U/9W/1f/hf/A/3X/Cv+4/7n/C/93/8j/6f+R/wD/AP8A/4v/Xf8I/4P/IP8A/4X/2/90/3r/g//7////dP91/4v/df8M/1b/6P8AAAAAAAAAAIv/+P9Z/zv/3/9y/xf/V/9T/43/Rf+M/2j/AAAAAAAAAABQ////Ff8AAAAAAAAAAIP/xP8Q/43/X////zP/wP+N/33/8P+r/6v/q/+r/4v/Bv9W/8f/Rf/w/wD/EP9A/wD///9Q/wT/M////4X/2/92/yP/i/8G/43/Tf8M/1H/jf9N//D/Uf9W////UP8w/4n/Rf8I/1b/hf/A/4v/Bv98/xL///9Q/wj/i/91/wz/R/87//v/cv/d/4v/Rf8Q/4n/MP/r/xP///9Q/wj/i/9F/wj/6/8N/4v/Tf8M/4n/CP9R/4v/Af///1D/BP8z/8D/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?D3DXGetNthMipmap@@YAJKPAUIDirectDrawSurface7@@PAPAU1@@Z
+    size: 176
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXGetNumMipmaps@@YAKPAUIDirectDrawSurface7@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EI@FNCC@D3DXGetNthMipmap?3?5?$CI?$CFd?0?5?$CFd?$CJ?5No?5su@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__wsprintfA
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 46
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 63
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 70
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+- symbol: 0
+  hash: 04ea13de21f2ff36c1b185386139eaadbb60e840
+  signature: Vf+L/+z/g//s/3T/i/9F/xD/U/9W/1f/hf/A/3X/F/9o/wAAAAAAAAAAUP/o/wAAAAAAAAAAWf+4/7n/C/93/8j/Wf/p/7r/AP8A/wD/i/9d/wj/g/8g/wD/hf/b/w//hP+f/wD/AP8A/4P/+////w//hP+W/wD/AP8A/4v/df8M/1b/6P8AAAAAAAAAAIv/+P9Z/zv/3/9y/yT/V/9T/43/Rf+M/2j/AAAAAAAAAABQ////Ff8AAAAAAAAAAIP/xP8Q/43/Rf+M/1D/av8A/+j/AAAAAAAAAABZ/43/X////1n/M//A/43/ff/w/6v/q/+r/6v/i/8G/1b/x/9F//D/AP8Q/0D/AP///1D/BP+D/2X/DP8A/4X/2/92/yX/i/8G/43/Tf8I/1H/jf9N//D/Uf9W////UP8w/4v/+P+F////fP8Y/4v/Bv9W////UP8I////Rf8M/4v/df8I/zn/Xf8M/3L/2/+L/0X/EP+J/zD/6/8j/2j/AAAAAAAAAABq/wD/6P8AAAAAAAAAAIv/Bv9Z/1n/Vv///1D/CP+L/8f/6/8N/4v/Tf8M/4n/CP9R/4v/Af///1D/BP8z/8D/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?D3DXGetNthMipmap@@YAJKPAUIDirectDrawSurface7@@PAPAU1@@Z
+    size: 230
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CJ@GEMG@Bad?5parameter?5passed?5to?5D3DXGetN@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3DXGetNumMipmaps@@YAKPAUIDirectDrawSurface7@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0EI@FNCC@D3DXGetNthMipmap?3?5?$CI?$CFd?0?5?$CFd?$CJ?5No?5su@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__wsprintfA
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DC@NAJK@D3DXGetNthMipmap?3?5Failed?5to?5find@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 17
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 67
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 84
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 105
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 189
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 196
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

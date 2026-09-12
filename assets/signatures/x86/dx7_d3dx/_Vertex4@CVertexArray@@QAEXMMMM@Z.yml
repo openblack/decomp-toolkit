@@ -1,0 +1,101 @@
+- symbol: 0
+  hash: f9418e5f4535c9e7d47d96c624c5cd3290e5e95c
+  signature: Vf+L/+z/gf/s/4j/AP8A/wD/U/+L/9n/Vv9X//b/Q/8E/wT/df9Y/7//AAAAAAAAAACD/8n///8z/8D/jf+V/3j/////////8v+u//f/0f8r//n/x/9F//j/V/8A/wf/gP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/eP////////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/eP/////////H/0X//P9y/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9D/xz/O/9D/wz/dv8N/4v/S/8I/wP/yP9R/4v/y//o/wAAAAAAAAAAi/9D/xT/i/9N/wj/X/9e/4n/CP+L/0P/FP+L/03/DP+J/0j/BP+L/0P/FP+L/03/EP+J/0j/CP+L/0P/FP+L/03/FP+J/0j/DP+L/0P/GP///0P/HP8B/0P/FP9b/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ?Vertex4@CVertexArray@@QAEXMMMM@Z
+    size: 180
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CL@CLFD@CVertexArray?3?3Vertex?5?9?5Invalid?5v@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?AllocateMemory@CVertexArray@@IAEXK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 21
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 96
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 104
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: ad3c9e89a5f04c690dcdcfa607c05c2ab4b6832f
+  signature: Vf+L/+z/gf/s/xD/Af8A/wD/U/+L/9n/Vv9X//b/Q/8E/wT/df9j/43/jf94/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf94//////////L/rv/3/9H/K//5/8f/Rf/4/1f/AP8H/4D/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F//D//v//////g//h/wP/8/+k/1n/jf+1/3j/////////jf+9//D//v//////x/9F//z/cv8B/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/Q/8c/zv/Q/8M/3b/Df+L/0v/CP8D/8j/Uf+L/8v/6P8AAAAAAAAAAIv/Q/8U/4v/Tf8I/1//Xv+J/wj/i/9D/xT/i/9N/wz/if9I/wT/i/9D/xT/i/9N/xD/if9I/wj/i/9D/xT/i/9N/xT/if9I/wz/i/9D/xj///9D/xz/Af9D/xT/W//J/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Vertex4@CVertexArray@@QAEXMMMM@Z
+    size: 191
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CL@CLFD@CVertexArray?3?3Vertex?5?9?5Invalid?5v@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?AllocateMemory@CVertexArray@@IAEXK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 27
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 115
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 136
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

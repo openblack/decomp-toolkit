@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: d98769386be23388c4ce76f8b4dca2c34a792324
+  signature: Vv+L//H/i/9G/yj/hf/A/3T/C/+L/wj/UP///1H/BP+L/0b/KP9e/8P/M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?GetPrimary@CDDrawDeviceNode@@QAEPAUIDirectDrawSurface7@@XZ
+    size: 25
+    flags: 1
+    section: .text
+  relocations: []

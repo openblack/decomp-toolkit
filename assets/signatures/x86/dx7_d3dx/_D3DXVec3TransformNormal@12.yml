@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 9cbd951de5489c428a4b35d88f7747b7187fa599
+  signature: Vf+L/+z/i/9F/wz/i/9V/xD/i/9N/wj/2f8A/9j/Cv/Z/wD/2P9K/wT/2f8A/9j/Sv8I/9n/yv/Z/0D/BP/Y/0r/EP/Z/0D/BP/Y/0r/FP/Z/0D/BP/Y/0r/GP/Z/8r/3v/D/97/w//e/8P/2f9A/wj/2P9K/yD/2f9A/wj/2P9K/yT/2f9A/wj/2P9K/yj/2f/K/97/w//e/8P/3v/D/9n/Gf/Z/1n/BP/Z/1n/CP+L/0X/CP9d/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXVec3TransformNormal@12
+    size: 95
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 60ea315a31d57da69945122a724eeb84fdec5bc9
+  signature: Vf+L/+z/M//A/zn/Rf8I/3T/ZP85/0X/DP90/1//Of9F/xD/dP9a/4v/Rf8M/4v/Vf8Q/4v/Tf8I/9n/AP/Y/wr/2f8A/9j/Sv8E/9n/AP/Y/0r/CP/Z/8r/2f9A/wT/2P9K/xD/2f9A/wT/2P9K/xT/2f9A/wT/2P9K/xj/2f/K/97/w//e/8P/3v/D/9n/QP8I/9j/Sv8g/9n/QP8I/9j/Sv8k/9n/QP8I/9j/Sv8o/9n/yv/e/8P/3v/D/97/w//Z/xn/2f9Z/wT/2f9Z/wj/i/9F/wj/6/8C/zP/wP9d/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXVec3TransformNormal@12
+    size: 116
+    flags: 1
+    section: .text
+  relocations: []

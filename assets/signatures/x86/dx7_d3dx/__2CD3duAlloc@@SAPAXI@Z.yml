@@ -1,0 +1,94 @@
+- symbol: 0
+  hash: f9f1d949279395dd73b0876de72a3b430208f713
+  signature: Vf+L/+z/U/9W/1f/av8Q/+j/AAAAAAAAAACL/13/CP9Z/1P/i//w/+j/AAAAAAAAAACF//b/Wf+L//j/dP9B/4X///90/zL/Af8d/wAAAAAAAAAA//8F/wAAAAAAAAAAof8AAAAAAAAAAFf/if9G/wj/6P8AAAAAAAAAAI3/BP+F/wAAAAAAAAAAWf+L/wj/if8+/4n/Tv8M/4n/Xv8E/4n/MP+L/wb/6/8m/4X/9v90/wf/Vv/o/wAAAAAAAAAAWf+F////dP8H/1f/6P8AAAAAAAAAAFn/aP8AAAAAAAAAAGr/AP/o/wAAAAAAAAAAWf8z/8D/Wf9f/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: ??2CD3duAlloc@@SAPAXI@Z
+    size: 129
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_dwTotalUnfreedMemory@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?g_dwNumAllocations@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ?CD3duAllocHash@@YAKPAX@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_pHead@@3PAPAU_ALLOC_STUB@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CM@BPPA@CD3duAlloc?3?3new?5?9?5Memory?5allocat@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 44
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 49
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 58
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 65
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 92
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 103
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 109
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 116
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

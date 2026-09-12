@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: d95bdaa5e877505d64f04da2405d315f13f85412
+  signature: Vf+L/+z/U/9W/4v/df8M/1f/i/99/wj/Vv+N/0f/CP9Q/+j/AAAAAAAAAABZ/1n/av8E/43/Tv8D/1r/Zv+L/wf/av8E/4n/Rf8M/17/iv9F/wz/Zv/B/23/DP8E/4r/2P8k/w//wP/j/wT/Cv/Y/4j/Gf+D/8H/BP9O/3X/5/9H/0f/Sv91/9n/X/9e/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?DecodeBlockAlpha4@@YAXPAUS3TCBlockAlpha4@@QAUS3TC_COLOR@@@Z
+    size: 74
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 18
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

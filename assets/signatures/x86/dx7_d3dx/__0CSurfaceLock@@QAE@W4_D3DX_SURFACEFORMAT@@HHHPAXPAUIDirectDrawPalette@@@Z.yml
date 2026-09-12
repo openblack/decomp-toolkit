@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 5f267365b1ae86fb770af05c5cc3aa7717353da2
+  signature: Vf+L/+z/Vv+L//H/V/+L/33/CP+D/yb/AP+D/6b/mP8A/wD/AP8A/43/Rv9U/8f/Rv8M/3z/AP8A/wD/UP9X/+j/AAAAAAAAAACF/8D/if+G/5z/BP8A/wD/fP9I/4v/Tf8Q/4v/Rf8M/4n/Tv8U/4v/Tf8U/4X/yf/H/0b/EP8I/wj/AP8A/4n/Rv8Y/3T/Bf+D//n///91/wn/i/9O/2D/wf/p/wP/D/+v/8j/i/9F/xj/if9O/xz/i/9N/xz/if9G/zD/hf/A/4n/fv8I/4n/Tv8E/3X/Cv/H/4b/nP8E/wD/AP8F/0D/AP+A/4v/xv9f/17/Xf/C/xj/AP8=
+  symbols:
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@W4_D3DX_SURFACEFORMAT@@HHHPAXPAUIDirectDrawPalette@@@Z
+    size: 127
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMakeDDPixelFormat@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 33
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: ba9a4cacd545850da418a0f3718bc55d2f12c502
+  signature: Vf+L/+z/g/99/wz/B/90/xD/g/99/wz/IP91/xr/av8A////Ff8AAAAAAAAAAOv/EP///3X/CP///xX/AAAAAAAAAABQ////Ff8AAAAAAAAAAP//df8U////df8Q////df8M////df8I////Ff8AAAAAAAAAAF3/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: ?DeviceWindowProc@@YGJPAUHWND__@@IIJ@Z
+    size: 63
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__SetCursor@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetParent@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__SetFocus@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__DefWindowProcA@16
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 30
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 37
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 55
+    kind: x86_abs32
+    symbol: 4
+    addend: 0

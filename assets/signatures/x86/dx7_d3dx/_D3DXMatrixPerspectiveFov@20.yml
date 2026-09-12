@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 396f62c4a6984b41b2f22f6a808a4f9f1de56a42
+  signature: Vf+L/+z/g//s/xD/2f9F/wz/2P8N/wAAAAAAAAAAjf9F/wz/if9F//T/jf9F//z/if9F//D/2f9d//j/i/9F//D/i/9V//T/2f9F//j/2f/7/9n/Gv/Z/xj/2f9F/wz/2P91//z/i/9F/wj/x/9A/yz/AP8A/4D/v//Z/8D/2P9N/xD/2f8Y/9n/7v/Z/1j/BP/Z/+7/2f9Y/wj/2f/u/9n/WP8M/9n/7v/Z/1j/EP/Z/1j/FP/Z/+7/2f9Y/xj/2f/u/9n/WP8c/9n/7v/Z/1j/IP/Z/+7/2f9Y/yT/2f9F/xT/2P9l/xj/2P99/xj/2f9Q/yj/2f/u/9n/WP8w/9n/7v/Z/1j/NP/Z/0X/FP/Y/8n/2f9Y/zj/3f/Y/9n/7v/Z/1j/PP/J/8L/FP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixPerspectiveFov@20
+    size: 152
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42060
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 11
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 38fd2f9d923c60d11df7da7fd2a03bf0ad1f7d39
+  signature: Vf+L/+z/g//s/wz/i/9N/wj/hf/J/3X/B/8z/8D/6f+N/wD/AP8A/9n/Rf8M/9j/Df8AAAAAAAAAAI3/Rf8I/4n/Rf/4/43/Rf8M/4n/Rf/0/9n/Xf/8/4v/Rf/0/4v/Vf/4/9n/Rf/8/9n/+//Z/xr/2f8Y/9n/Rf8I/9j/df8M/8f/Qf8s/wD/AP+A/7//i//B/9n/wP/Y/03/EP/Z/xn/2f/u/9n/Wf8E/9n/7v/Z/1n/CP/Z/+7/2f9Z/wz/2f/u/9n/Wf8Q/9n/Wf8U/9n/7v/Z/1n/GP/Z/+7/2f9Z/xz/2f/u/9n/Wf8g/9n/7v/Z/1n/JP/Z/0X/FP/Y/2X/GP/Y/33/GP/Z/1H/KP/Z/+7/2f9Z/zD/2f/u/9n/Wf80/9n/Rf8U/9j/yf/Z/1n/OP/d/9j/2f/u/9n/Wf88/8n/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixPerspectiveFov@20
+    size: 165
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42215
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 25
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

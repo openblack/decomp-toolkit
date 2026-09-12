@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: 1650eb3ae71795036f66d5ff5561e745623bdd8e
+  signature: Vf+L/+z/Uf/Z/0X/EP/Y/2X/DP+L/0X/CP/Y/z3/AAAAAAAAAADH/0D/LP8A/wD/gP+//9n/Rf8Y/9j/Zf8U/9j/Pf8AAAAAAAAAANn/Xf/8/9n/Bf8AAAAAAAAAANn/wf/Y/03/HP/Y/8n/2f8Y/9n/7v/Z/1j/BP/Z/+7/2f9Y/wj/2f/u/9n/WP8M/9n/7v/Z/1j/EP/Z/0X//P/Y/03/HP/Y/8n/2f9Y/xT/3f/Y/9n/7v/Z/1j/GP/Z/+7/2f9Y/xz/2f9F/xD/2P9F/wz/2P/J/9n/WP8g/93/2P/Z/0X/GP/Y/0X/FP/Y/03//P/Z/1j/JP/Z/0X/HP/Y/2X/IP/Y/33/IP/Z/1D/KP/Z/+7/2f9Y/zD/2f/u/9n/WP80/9n/Rf8c/9j/yf/Z/1j/OP/d/9j/2f/u/9n/WP88/8n/wv8c/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixPerspectiveOffCenter@28
+    size: 165
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41923
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 15
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 34
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: f69318babdad956cbc1a066d180996c5209918bf
+  signature: Vf+L/+z/i/9F/wj/hf/A/w//hP+a/wD/AP8A/9n/Rf8Q/9j/Zf8M/8f/QP8s/wD/AP+A/7//2P89/wAAAAAAAAAA2f9F/xj/2P9l/xT/2P89/wAAAAAAAAAA2f9d/wj/2f8F/wAAAAAAAAAA2f/B/9j/Tf8c/9j/yf/Z/xj/2f/u/9n/WP8E/9n/7v/Z/1j/CP/Z/+7/2f9Y/wz/2f/u/9n/WP8Q/9n/Rf8I/9j/Tf8c/9j/yf/Z/1j/FP/d/9j/2f/u/9n/WP8Y/9n/7v/Z/1j/HP/Z/0X/EP/Y/0X/DP/Y/8n/2f9Y/yD/3f/Y/9n/Rf8Y/9j/Rf8U/9j/Tf8I/9n/WP8k/9n/Rf8c/9j/Zf8g/9j/ff8g/9n/UP8o/9n/7v/Z/1j/MP/Z/+7/2f9Y/zT/2f9F/xz/2P/J/9n/WP84/93/2P/Z/+7/2f9Y/zz/Xf/C/xz/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixPerspectiveOffCenter@28
+    size: 172
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42042
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 29
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 41
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 50
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

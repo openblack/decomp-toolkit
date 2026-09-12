@@ -283,6 +283,19 @@ pub fn compare_signature(existing: &mut FunctionSignature, new: &FunctionSignatu
 /// If `fn_size` is `Some`, reject the match unless the signature's expected
 /// size equals `fn_size`.  This prevents a short signature (e.g. 6 bytes)
 /// from matching a longer function that happens to start with the same bytes.
+/// Minimum number of concrete (non-relocated) bytes a signature must compare
+/// before it is worth trusting — roughly two or three instructions. A six-byte
+/// import thunk, for instance, is four relocated bytes out of six and would
+/// otherwise match every other thunk in the image.
+pub const SIGNATURE_MIN_UNMASKED_BYTES: usize = 8;
+
+/// Whether a decoded `(value, mask)` signature blob compares enough concrete
+/// bytes to be usable. Generators should drop signatures this rejects: the
+/// checker will never accept them, so writing them out only costs scan time.
+pub fn signature_is_usable(sig_data: &[u8]) -> bool {
+    sig_data.chunks_exact(2).filter(|c| c[1] != 0).count() >= SIGNATURE_MIN_UNMASKED_BYTES
+}
+
 pub fn check_signature_x86(
     data: &[u8],
     sig: &FunctionSignature,
@@ -299,11 +312,7 @@ pub fn check_signature_x86(
             return Ok(false);
         }
     }
-    // Count unmasked (actually compared) bytes — reject signatures that are
-    // too weak to be reliable (e.g. short thunks where most bytes are relocations).
-    // Require at least 8 concrete bytes (~2-3 instructions worth).
-    let unmasked = sig_data.chunks_exact(2).filter(|c| c[1] != 0).count();
-    if unmasked < 8 {
+    if !signature_is_usable(&sig_data) {
         return Ok(false);
     }
     for (i, chunk) in sig_data.chunks_exact(2).enumerate() {

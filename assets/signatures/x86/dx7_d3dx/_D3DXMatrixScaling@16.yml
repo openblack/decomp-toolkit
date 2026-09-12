@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 62ca57d0da841826499e171ac1a282a4e52177fc
+  signature: i/9E/yT/BP+L/0z/JP8I/9n/7v+J/wj/i/9M/yT/DP/Z/1j/OP/Z/+7/if9I/xT/i/9M/yT/EP/Z/1j/NP/Z/+7/if9I/yj/2f9Y/zD/2f/u/9n/WP8s/9n/7v/Z/1j/JP/Z/+7/2f9Y/yD/2f/u/9n/WP8c/9n/7v/Z/1j/GP/Z/+7/2f9Y/xD/2f/u/9n/WP8M/9n/7v/Z/1j/CP/Z/+7/2f9Y/wT/2f/o/9n/WP88/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixScaling@16
+    size: 92
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: bd528cd8c828d3225c7a301a839f1b0ce953c2f7
+  signature: Vf+L/+z/i/9F/wj/hf/A/3T/Uv/Z/+7/i/9N/wz/2f9Y/zj/2f/u/4n/CP+L/03/EP/Z/1j/NP/Z/+7/if9I/xT/i/9N/xT/2f9Y/zD/2f/u/4n/SP8o/9n/WP8s/9n/7v/Z/1j/JP/Z/+7/2f9Y/yD/2f/u/9n/WP8c/9n/7v/Z/1j/GP/Z/+7/2f9Y/xD/2f/u/9n/WP8M/9n/7v/Z/1j/CP/Z/+7/2f9Y/wT/2f/o/9n/WP88/13/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixScaling@16
+    size: 96
+    flags: 1
+    section: .text
+  relocations: []

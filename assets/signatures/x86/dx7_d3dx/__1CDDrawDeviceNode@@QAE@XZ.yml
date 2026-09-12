@@ -1,0 +1,85 @@
+- symbol: 0
+  hash: e23e05b03e523878c95f95122fa8a5693341cf13
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4n/df/w////dv8I/4P/Zf/8/wD/6P8AAAAAAAAAAFn///92/0j/6P8AAAAAAAAAAFn///92/0z/6P8AAAAAAAAAAFn///92/1D/6P8AAAAAAAAAAIv/Rv8k/1n/hf/A/3T/Bv+L/wj/UP///1H/CP+L/87/6P8AAAAAAAAAAIv/Rv8g/4X/wP90/wb/i/8I/1D///9R/wj/g/9N//z///+N/07/XP/H/wH/AAAAAAAAAADo/wAAAAAAAAAAi/9N//T/Xv9k/4n/Df8AAAAAAAAAAMn/w/8=
+  symbols:
+  - kind: Function
+    name: ??1CDDrawDeviceNode@@QAE@XZ
+    size: 121
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?ReleasePrimary@CDDrawDeviceNode@@QAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7?$ListT@VCVideoModeNode@@@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?CleanupList@?$ListT@VCVideoModeNode@@@@UAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 25
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 34
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 52
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 99
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 104
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 115
+    kind: x86_abs32
+    symbol: 7
+    addend: 0

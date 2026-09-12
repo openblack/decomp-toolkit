@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 78daddfd5d331e193c51bf6704b422743886d7c9
+  signature: g/95/xD/Af91/wz/av8A////cf8M/2r/E////3H/CP/r/wf/M//A/1D/UP9q/wj/UP+L/0H/cP+L/0j/BP/o/wAAAAAAAAAAw/8=
+  symbols:
+  - kind: Function
+    name: ?_InitCooperativeLevel@CD3duContext@@AAEXXZ
+    size: 37
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?SetDDCoopLevel@CDDrawDeviceNode@@QAEXPAUHWND__@@K0H@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 32
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

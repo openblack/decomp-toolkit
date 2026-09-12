@@ -1,0 +1,190 @@
+- symbol: 0
+  hash: 2fb652168517b209b8b18810a30689152a1d9919
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/QP8J/wD/AP+D/z3/AAAAAAAAAAAA/3//B/+4/8f/C/93/8j/6/95/1b/jf+N/7T/9v////////91/xz///91/xj///91/xT///91/xD///91/wz///91/wj/6P8AAAAAAAAAAP//df8o/4P/Zf/8/wD/jf+N/1T/+/////////91/yD/6P8AAAAAAAAAAP//df8s/43/hf9U//v//////8b/Rf/8/wH///91/yj///91/yT/UP+N/4X/tP/2//////9Q/+j/AAAAAAAAAACA/2X//P8A/4P/xP8U/43/jf9U//v//////4v/8P/o/wAAAAAAAAAAg/9N//z///+N/43/tP/2///////o/wAAAAAAAAAAi//G/17/i/9N//T/ZP+J/w3/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ?_d3dxCopyFromBits@@YAJW4_D3DX_SURFACEFORMAT@@HHHPAXPAUIDirectDrawPalette@@PAUIDirectDrawSurface7@@PAUtagRECT@@4W4_D3DX_FILTERTYPE@@@Z
+    size: 165
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43428
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _InitCount$S42480
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@W4_D3DX_SURFACEFORMAT@@HHHPAXPAUIDirectDrawPalette@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@PAUIDirectDrawSurface7@@PAUtagRECT@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?InternalCopy@@YAJPAVCSurfaceLock@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ??1CSurfaceLock@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 58
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 131
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 146
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 159
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+- symbol: 0
+  hash: 772111451fb3e523776a3fc22aec80dab7e82133
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAACB/+z/QP8J/wD/AP+D/z3/AAAAAAAAAAAA/3//Ff9o/wAAAAAAAAAAav8A/+j/AAAAAAAAAABZ/7j/x/8L/3f/yP9Z/+v/ef9W/43/jf+0//b/////////df8c////df8Y////df8U////df8Q////df8M////df8I/+j/AAAAAAAAAAD//3X/KP+D/2X//P8A/43/jf9U//v/////////df8g/+j/AAAAAAAAAAD//3X/LP+N/4X/VP/7///////G/0X//P8B////df8o////df8k/1D/jf+F/7T/9v//////UP/o/wAAAAAAAAAAgP9l//z/AP+D/8T/FP+N/43/VP/7//////+L//D/6P8AAAAAAAAAAIP/Tf/8////jf+N/7T/9v//////6P8AAAAAAAAAAIv/xv9e/4v/Tf/0/2T/if8N/wAAAAAAAAAAyf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_d3dxCopyFromBits@@YAJW4_D3DX_SURFACEFORMAT@@HHHPAXPAUIDirectDrawPalette@@PAUIDirectDrawSurface7@@PAUtagRECT@@4W4_D3DX_FILTERTYPE@@@Z
+    size: 179
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43481
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _InitCount$S42491
+    size: 0
+    flags: 2
+    section: .bss
+  - kind: Object
+    name: ??_C@_0CF@FIGM@D3DXInitialize?5must?5be?5called?5fi@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@W4_D3DX_SURFACEFORMAT@@HHHPAXPAUIDirectDrawPalette@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CSurfaceLock@@QAE@PAUIDirectDrawSurface7@@PAUtagRECT@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?InternalCopy@@YAJPAVCSurfaceLock@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ??1CSurfaceLock@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 26
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 33
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 93
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 125
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 160
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 173
+    kind: x86_abs32
+    symbol: 10
+    addend: 0

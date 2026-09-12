@@ -1,0 +1,55 @@
+- symbol: 0
+  hash: f61899ca74061852f1053723adb710cb06e231f8
+  signature: Vf+L/+z/Uf9T/1b/i//x/1f/i/+G/wz/Af8A/wD/hf/A/w//hP+I/wD/AP8A/4v/SP8Y/4v/Vf8M/4n/Tf/8/43/XP8R/xD/O/+e/xD/Af8A/wD/dv96/43/u////w//AP8A/1D/Zv+B/+f/AP/w////Ff8AAAAAAAAAAP//tv8I/wH/AP8A/4P/pv8M/wH/AP8A/wD///8V/wAAAAAAAAAAM//A/4P/jv8I/wH/AP8A////UP9X/1D/av8E/1D///+2/wT/Af8A/wD///8V/wAAAAAAAAAAg//4////if+G/wj/Af8A/wD/dP8h/1f/av8A/2r/AP9o/x//AP8P/wD/UP+J/77/EP8B/wD/AP///xX/AAAAAAAAAACF/8D/if+G/wz/Af8A/wD/df8L/4v/zv/o/wAAAAAAAAAAM//A/+v/Kf+L/03//P+L/4b/DP8B/wD/AP+L/1X/CP+J/1j/GP+L/8H/A/+G/wz/Af8A/wD/g/9g/wT/AP+D/2D/CP8A/4n/EP+L/1X/DP+J/1D/DP+L/8H/X/9e/1v/yf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?CreateEntry@CD3dxFile@@QAEKKK@Z
+    size: 211
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__UnmapViewOfFile@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CreateFileMappingA@24
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__MapViewOfFile@20
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CloseCorrupt@CD3dxFile@@QAEJXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 58
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 104
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 138
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 155
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

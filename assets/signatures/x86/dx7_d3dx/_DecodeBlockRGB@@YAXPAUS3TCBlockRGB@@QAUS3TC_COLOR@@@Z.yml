@@ -1,0 +1,46 @@
+- symbol: 0
+  hash: 7a6c092b3feb33d16e180161e137f6b81306d87c
+  signature: Vf+L/+z/g//s/xT/V/+L/33/CP+F////D/+E/9X/AP8A/wD/Zv+L/wf/Vv9m/zn/R/8C/1P/jf9f/wL/jf9F/+z/G//2/1D/9//e/0b/V/9G/+j/AAAAAAAAAABZ/43/Rf/w/1n/UP9T/+j/AAAAAAAAAACA/03/9////4D/Tf/z////gP9N/+////9Z/4P//v8D/1n/df9G/4P/Zf/8/wD/i/9F//z/av8D/1v/Zv8P/7b/VP8F//D/jf9M/wX/8P9T/w//t//6/2b/D/+2/0H//P8P/7f/8P+N/0T/d/8B/5n/9//7/4j/Qf8E/43/RP9+/wH/mf9e//f//v///0X//P85/13//P+I/0H/CP98/8f/gP9N//v///+L/33/CP/r/yj/M//2/w//tv9E/zX/7P8P/7b/VP81//D/jf9M/zX/8P8D/8L/mf8r/8L/0f/4/4j/Qf8E/4D/Yf8I/wD/Rv+D//7/A/98/97/gP9l//v/AP+L/1f/BP+L/03/DP9q/xD/W/+L/8L/i//5/4P/4P8D/4P/wf8E/8H/4P8C/8H/6v8C/43/dP8F/+z/iv9E/wX/7/9m/6X/pP+I/0H///9L/3X/3/9b/17/X//J/8P/
+  symbols:
+  - kind: Function
+    name: ?DecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 234
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?RGBToColor@@YAXPAGPAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 6addd8b77c331bf69d504adfc00fa400d0a6b389
+  signature: Vf+L/+z/g//s/xT/V/+L/33/CP+F////D/+E/9X/AP8A/wD/Zv+L/wf/Vv9m/zn/R/8C/1P/jf9f/wL/jf9F/+z/G//2/1D/9//e/0b/V/9G/+j/AAAAAAAAAABZ/43/Rf/w/1n/UP9T/+j/AAAAAAAAAACA/03/9////4D/Tf/z////gP9N/+////9Z/4P//v8D/1n/df9G/4P/Zf/8/wD/i/9F//z/av8D/1v/Zv8P/7b/VP8F//D/jf9M/wX/8P9T/w//t//6/2b/D/+2/0H//P8P/7f/8P+N/0T/d/8B/5n/9//7/4j/Qf8E/43/RP9+/wH/mf9e//f//v///0X//P85/13//P+I/0H/CP98/8f/gP9N//v///+L/33/CP/r/yj/M//2/w//tv9E/zX/8P8P/7b/VP81/+z/jf9M/zX/7P8D/8L/mf8r/8L/0f/4/4j/Qf8I/4D/Yf8M/wD/Rv+D//7/A/98/97/gP9l//v/AP+L/1f/BP+L/03/DP9q/xD/W/+L/8L/i//5/4P/4P8D/4P/wf8E/8H/4P8C/8H/6v8C/43/dP8F/+z/iv9E/wX/7/9m/6X/pP+I/0H///9L/3X/3/9b/17/X//J/8P/
+  symbols:
+  - kind: Function
+    name: ?DecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 234
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?RGBToColor@@YAXPAGPAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 42
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 54
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

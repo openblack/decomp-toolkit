@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 7785a8b5f7aa002f908dc431dbad4d39934a24f3
+  signature: Vf+L/+z/g//s/wz/i/9N/wz/i/9F/xD/Vv9X/9n/Qf8E/9j/SP8I/9n/QP8E/9j/Sf8I/43/df/0/97/6f/Z/13/9P/Z/wD/2P9J/wj/2f8B/9j/SP8I/97/6f/Z/13/+P/Z/wH/2P9I/wT/2f8A/9j/Sf8E/4v/Rf8I/4v/+P/e/+n/2f9d//z/pf+l/6X/X/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?D3DXVec3Cross@@YAPAUD3DXVECTOR3@@PAU1@PBU1@1@Z
+    size: 76
+    flags: 1
+    section: .text
+  relocations: []

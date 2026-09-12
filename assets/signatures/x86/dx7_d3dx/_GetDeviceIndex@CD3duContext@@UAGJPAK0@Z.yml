@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 71b5cb572a20bfb17a5fa77e3cf0dcbbc485f34d
+  signature: i/9M/yT/CP+L/0T/JP8E/4X/yf90/wX/i/9Q/2T/if8R/4v/TP8k/wz/hf/J/3T/Bf+L/0D/YP+J/wH/M//A/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: ?GetDeviceIndex@CD3duContext@@UAGJPAK0@Z
+    size: 35
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 9c170ae10b3400bcdc2e9a35126f63a2517ef2d8
+  signature: Vf+L/+z/i/9N/wz/i/9F/wj/hf/J/3T/Bf+L/1D/ZP+J/xH/i/9N/xD/hf/J/3T/Bf+L/0D/YP+J/wH/M//A/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?GetDeviceIndex@CD3duContext@@UAGJPAK0@Z
+    size: 36
+    flags: 1
+    section: .text
+  relocations: []

@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 36da2b7326cbd853aff89f537fdadd43e494bea8
+  signature: i/9U/yT/BP9W/4v/yv9q/wL/g//h/w7/Xv8z/8D/K//O/3T/LP8r/87/dP8k/yv/zv90/yD/K//O/3T/GP8r/87/dP8Q/yv/zv90/wj/K//O/3X/F/9q/yD/6/8S/2r/HP/r/w7/av8Y/+v/Cv9q/xT/6/8G/2r/EP/r/wL/av8M/1j/9v/C/xD/dP8D/4P/wP8M//b/wv8g/3T/A/+D/8D/BP/2/8L/QP90/wP/g//A/wT/9v/C/4D/dP8D/4P/wP8E/4v/yv/B/+n/CP+D/+H/D//B/+r/EP91/wX/jf8E/8j/Xv/D/4X/yf92/xL/i//y/4P/5v8D/8H/6v8C/wP/BP+1/wAAAAAAAAAASf91/+7/Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?D3DXGetFVFVertexSize@@YAKK@Z
+    size: 140
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?bTextureSize@?M@??D3DXGetFVFVertexSize@@YAKK@Z@4PAKA
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 131
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 6a9a8237ec3e03f194a0f4764ab180948d9ca47e
+  signature: Vf+L/+z/U/+L/13/CP+L/8v/av8C/4P/4f8O/1r/M//A/yv/yv90/yz/K//K/3T/JP8r/8r/dP8g/yv/yv90/xj/K//K/3T/EP8r/8r/dP8I/yv/yv91/xf/av8g/+v/Ev9q/xz/6/8O/2r/GP/r/wr/av8U/+v/Bv9q/xD/6/8C/2r/DP9Y//b/w/8Q/3T/A/+D/8D/DP/2/8P/IP90/wP/g//A/wT/9v/D/0D/dP8D/4P/wP8E//b/w/+A/3T/A/+D/8D/BP+L/8v/wf/p/wj/g//h/w//wf/r/xD/df8F/43/BP/I/+v/Fv+F/8n/dv8S/4v/0/+D/+L/A//B/+v/Av8D/wT/lf8AAAAAAAAAAEn/df/u/1v/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?D3DXGetFVFVertexSize@@YAKK@Z
+    size: 143
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?bTextureSize@?M@??D3DXGetFVFVertexSize@@YAKK@Z@4PAKA
+    size: 0
+    flags: 1
+    section: .data
+  relocations:
+  - offset: 133
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

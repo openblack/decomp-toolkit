@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: ef6bb79b24f99df1bc530a805403ecf0c887aac2
+  signature: Vf+L/+z/i/9F/wj/Vv+F/8D/dP8U/4v/CP+N/1X/CP9S/1D///9R/xz/hf/A/3z/C/+D/33/CP8A/3X/Df+4/7n/C/93/8j/i/9N/wz/g/8h/wD/6/8a////df8M////df8I/+j/AAAAAAAAAABZ/4v/8P+L/0X/CP9Z/1D/i/8I////Uf8I/4v/xv9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?GetDDFromD3DDevice@@YAJPAUIDirect3DDevice7@@PAPAUIDirectDraw7@@@Z
+    size: 73
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GetDDFromD3D@@YAJPAUIDirect3D7@@PAPAUIDirectDraw7@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 51
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

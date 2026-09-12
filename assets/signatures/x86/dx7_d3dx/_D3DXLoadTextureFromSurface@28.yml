@@ -1,0 +1,260 @@
+- symbol: 0
+  hash: 0285a68fef8c9e7f4d5a1c33fa4c5528b9206593
+  signature: Vf+L/+z/gf/s/8z/AP8A/wD/U/9W/1f/M////zn/Pf8AAAAAAAAAAHX/Cv+4/8f/C/93/8j/6f+8/wL/AP8A/4P/ff8Q////i/9d/xj/D/+F/7L/AP8A/wD/Of99/xz/D/+F/6n/AP8A/wD/O//f/w//hf+h/wD/AP8A////df8U/+j/AAAAAAAAAACL//D/Wf+D//7/Af+J/3X//P8P/4b/iv8A/wD/AP///3X/DP/o/wAAAAAAAAAAO//G/1n/df99/zP/2/87//f/dv9o/43/Rf8c/4n/ff8c/1D/if99/xD///91/xT/U//o/wAAAAAAAAAAg//E/wz/O//H/w//jP9W/wL/AP8A/43/Rf8Q/1D///91/wz/U//o/wAAAAAAAAAAi//w/4P/xP8M/zv/9/98/zv/av///1f/V////3X/EP///3X/HP/o/wAAAAAAAAAAi//w/4v/Rf8c/4P/xP8U/4v/CP9Q////Uf8I/4v/Rf8Q/1D/i/8I////Uf8I/zv/9/8P/4z/EP8C/wD/AP9D/zv/Xf/8/3L/mP8z/8D/6f8F/wL/AP8A/4v/Rf8c/+n/9f8B/wD/AP+N/0X/GP9Q////df8M////df8Q/+j/AAAAAAAAAACD/8T/DP87/8f/D/+M/+P/Af8A/wD/av8U/zv/3/9e/w//hP+o/wD/AP8A/zP/wP+N/33/0P+r/6v/q/+r/43/Vf/8/4n/df/8/6v/i/9F/xT/Uv+N/1X/0P+J/3X/0P+L/wj/Uv9o/wAAAAAAAAAAUP///5H/pP8A/wD/AP+F/8D/fP97/2r/H/8z/8D/Wf+N/73/NP/////////z/6v/i/9F/xT/jf+V/zT/////////Uv9Q/4v/CP/H/4X/NP////////98/wD/AP8A////Uf9Y/4v/+P+F////D/+M/9b/AP8A/wD/i/+F/0D/////////M//S/w//r/8D//f/df/Y/zP/0v+J/0X/sP+L/0P/BP8P/6//hf88//////////f/df/c/zP/0v+J/0X/tP+L/0P/CP8P/6//hf9A//////////f/df/Y/zP/0v+J/0X/uP+L/0P/DP8P/6//hf88//////////f/df/c/43/Xf+w/4n/Rf+8/zP/wP+N/33/6P+r/6v/q/+r/4P/Zf/8/wD/jf9V/+T/q/+L/0X/DP9S/43/Vf/o/4n/df/o/4v/CP9S/2j/AAAAAAAAAABQ/4n/df/k////kf+k/wD/AP8A/4X/wP98/wf/x/9F//z/Af8A/wD/AP+L/3X/HP+F//b/D/+E/6j/AP8A/wD/g/99//z/AP8P/4T/nv8A/wD/AP+L/03/EP+F/8n/dP8L/4P/+f///3T/Bv/T/23/9P/T/23/8P9q/x//M//A/1n/jf+9/zT/////////8/+r/4v/Rf8Y/43/lf80/////////8f/hf80/////////3z/AP8A/wD/Uv+L/wj/UP///1H/WP+L//j/hf///33/EP+L/0X/GP9Q/4v/CP///1H/CP+L/8f/6f+U/wD/AP8A/4v/hf9A/////////zP/0v8P/6//Bv/3/3X/8P8z/9L/if9F/8D/i/9G/wT/D/+v/4X/PP/////////3/3X/9P8z/9L/if9F/8T/i/9G/wj/D/+v/4X/QP/////////3/3X/8P8z/9L/if9F/8j/i/9G/wz/D/+v/4X/PP/////////3/3X/9P+J/0X/zP+N/0X/wP+J/0X/HP+L//D///91/yD/Vv9T////df8Y////df8U/+j/AAAAAAAAAACL//D/g//E/xT/hf/2/3z/If+L/0X/EP+D//j///90/wz/g/99//z/AP90/xP/QP85/0X/+P91/w3///91/yD///91/xj/6P8AAAAAAAAAAFn/Wf+L/0X/GP+L/wj/UP///1H/CP+L/8b/X/9e/1v/yf/C/xz/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXLoadTextureFromSurface@28
+    size: 739
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3DXGetNumMipmaps@@YAKPAUIDirectDrawSurface7@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXGetNthMipmap@@YAJKPAUIDirectDrawSurface7@@PAPAU1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_d3dxCopy@@YAJPAUIDirectDrawSurface7@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?GUID_SURFACEDATA_ORIGINALSIZE@@3U_GUID@@B
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?GenerateMipMaps@@YAXPAUIDirectDrawSurface7@@W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 66
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 89
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 119
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 143
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 167
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 234
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 290
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 459
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 675
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 715
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+- symbol: 0
+  hash: 9945635b289460987c0959a82151865bd516149e
+  signature: Vf+L/+z/gf/s/8z/AP8A/wD/U/9W/1f/M////zn/Pf8AAAAAAAAAAHX/F/9o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf+4/8f/C/93/8j/Wf/p/xH/A/8A/wD/g/99/xD///+L/13/GP8P/4X/2/8A/wD/AP85/33/HP8P/4X/0v8A/wD/AP87/9//D/+F/8r/AP8A/wD///91/xT/6P8AAAAAAAAAAIP/+P8B/1n/if9F//z/D/+G/7X/AP8A/wD///91/wz/6P8AAAAAAAAAADv/Rf/8/1n/D/+F/6P/AP8A/wD/M//2/zn/ff/8/3b/Yv+N/0X/HP+J/33/HP9Q/4n/ff8Q////df8U/1b/6P8AAAAAAAAAAIv/2P+D/8T/DP87/9//fP9N/43/Rf8Q/1D///91/wz/Vv/o/wAAAAAAAAAAi//Y/4P/xP8M/zv/3/98/z7/av///1f/V////3X/EP///3X/HP/o/wAAAAAAAAAAi//Y/4v/Rf8c/4P/xP8U/4v/CP9Q////Uf8I/4v/Rf8Q/1D/i/8I////Uf8I/zv/3/98/yz/Rv87/3X//P9y/57/M//A/+n/XP8C/wD/AP9o/wAAAAAAAAAA6/8d/2j/AAAAAAAAAABX/+j/AAAAAAAAAACL/0X/HP9Z/1n/i/8I/1D///9R/wj/6/8N/2j/AAAAAAAAAABX/+j/AAAAAAAAAABZ/1n/i//D/+n/Kf8C/wD/AP+N/0X/GP9Q////df8M////df8Q/+j/AAAAAAAAAACL//D/g//E/wz/O//3/33/Ev9o/wAAAAAAAAAAV//o/wAAAAAAAAAAWf9Z/+n//f8B/wD/AP9q/xT/O//f/17/D/+E/6j/AP8A/wD/M//A/43/ff/Q/6v/q/+r/6v/jf9V//z/if91//z/q/+L/0X/FP9S/43/Vf/Q/4n/df/Q/4v/CP9S/2j/AAAAAAAAAABQ////kf+k/wD/AP8A/4X/wP98/3v/av8f/zP/wP9Z/43/vf80//////////P/q/+L/0X/FP+N/5X/NP////////9S/1D/i/8I/8f/hf80/////////3z/AP8A/wD///9R/1j/i//4/4X///8P/4z/1v8A/wD/AP+L/wP/M//S/w//r/+F/0D/////////9/91/9j/M//S/4n/Rf+w/4v/Q/8E/w//r/+F/zz/////////9/91/9z/M//S/4n/Rf+0/4v/Q/8I/w//r/+F/0D/////////9/91/9j/M//S/4n/Rf+4/4v/Q/8M/w//r/+F/zz/////////9/91/9z/jf9d/7D/if9F/7z/M//A/43/ff/o/6v/q/+r/6v/g/9l//z/AP+N/1X/5P+r/4v/Rf8M/1L/jf9V/+j/if91/+j/i/8I/1L/aP8AAAAAAAAAAFD/if91/+T///+R/6T/AP8A/wD/hf/A/3z/B//H/0X//P8B/wD/AP8A/4v/df8c/4X/9v8P/4T/tv8A/wD/AP+D/33//P8A/w//hP+s/wD/AP8A/4v/Tf8Q/4X/yf90/wv/g//5////dP8G/9P/bf/0/9P/bf/w/2r/H/8z/8D/Wf+N/73/NP/////////z/6v/i/9F/xj/jf+V/zT/////////x/+F/zT/////////fP8A/wD/AP9S/4v/CP9Q////Uf9Y/4v/+P+F////ff8e/2j/AAAAAAAAAABq/wD/6P8AAAAAAAAAAIv/Rf8Y/1n/Wf+L/wj/UP///1H/CP+L/8f/6f+i/wD/AP8A/4v/Bv8z/9L/D/+v/4X/QP/////////3/3X/8P8z/9L/if9F/8D/i/9G/wT/D/+v/4X/PP/////////3/3X/9P8z/9L/if9F/8T/i/9G/wj/D/+v/4X/QP/////////3/3X/8P8z/9L/if9F/8j/i/9G/wz/D/+v/4X/PP/////////3/3X/9P+J/0X/zP+N/0X/wP+J/0X/HP+L//D///91/yD/Vv9T////df8Y////df8U/+j/AAAAAAAAAACL//D/g//E/xT/hf/2/33/Dv9o/wAAAAAAAAAAav8A/+j/AAAAAAAAAADr/x//i/9F/xD/g//4////dP8M/4P/ff/8/wD/dP8T/0D/Of9F//j/df8N////df8g////df8Y/+j/AAAAAAAAAABZ/1n/i/9F/xj/UP+L/wj///9R/wj/i//G/1//Xv9b/8n/wv8c/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXLoadTextureFromSurface@28
+    size: 837
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CH@HDJK@D3DXInitialize?$CI?$CJ?5must?5be?5called?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3DXGetNumMipmaps@@YAKPAUIDirectDrawSurface7@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?D3DXGetNthMipmap@@YAJKPAUIDirectDrawSurface7@@PAPAU1@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_d3dxCopy@@YAJPAUIDirectDrawSurface7@@0PAUtagRECT@@1W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EK@MMO@LoadTextureFromSurface?3?5Unable?5t@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0EP@LKIC@LoadTextureFromSurface?3?5Unable?5t@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DI@MIMF@LoadTextureFromSurface?3?5Unable?5t@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DD@POIH@Invalid?5mip?9level?5passed?5to?5Load@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ?GUID_SURFACEDATA_ORIGINALSIZE@@3U_GUID@@B
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@GEML@LoadTextureFromSurface?3?5GetSurfa@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CK@KNLD@Error?5trying?5to?5load?5texture?5fro@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?GenerateMipMaps@@YAXPAUIDirectDrawSurface7@@W4_D3DX_FILTERTYPE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 23
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 79
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 100
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 136
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 182
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 227
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 234
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 240
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 258
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 264
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 288
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 302
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 308
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 360
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 529
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 639
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 646
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 759
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 773
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 780
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 813
+    kind: x86_rel32
+    symbol: 14
+    addend: -4

@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 2e558d152c2961fd6e7da4e51ba668c5bf86a712
+  signature: i/9E/yT/BP/Z/0D/BP/Z/0D/CP/Z/0D/DP/Z/wD/2f/D/9j/zP/Z/8P/2P/M/97/wf/Z/8L/2P/L/97/wf/Z/8H/2P/K/97/wf/d/9z/3f/Y/93/2P/d/9j/w/8=
+  symbols:
+  - kind: Function
+    name: ?D3DXQuaternionLengthSq@@YAMPBUD3DXQUATERNION@@@Z
+    size: 46
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 5defe279a571f318abe40194c5180a87e8d43169
+  signature: Vf+L/+z/i/9F/wj/2f9A/wT/2f9A/wj/2f9A/wz/2f8A/9n/w//Y/8z/2f/D/9j/zP/e/8H/2f/C/9j/y//e/8H/2f/B/9j/yv/e/8H/3f/c/93/2P/d/9j/3f/Y/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?D3DXQuaternionLengthSq@@YAMPBUD3DXQUATERNION@@@Z
+    size: 49
+    flags: 1
+    section: .text
+  relocations: []

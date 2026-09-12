@@ -1,0 +1,82 @@
+- symbol: 0
+  hash: 40b5dd1973a888918ace9648179398c4b08999b4
+  signature: g/98/yT/BP8A/3T/Cv///3T/JP8E/+j/AAAAAAAAAABZ/8P/
+  symbols:
+  - kind: Function
+    name: ??3CD3duAlloc@@SAXPAX@Z
+    size: 18
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: ee4702a49136dbaab9ee7e304e6e3118fd62274c
+  signature: Vf+L/+z/U/8z/9v/Of9d/wj/Vv9X/3T/Xf///3X/CP/o/wAAAAAAAAAAi/80/4X/AAAAAAAAAACN/zz/hf8AAAAAAAAAAFn/hf/2/3T/Qv+L/0X/CP87/wb/dP8H/4v/3v+L/3b/DP/r/+7/UP/o/wAAAAAAAAAAhf/b/1n/dP8G/4v/Rv8M/4n/Q/8M/zn/N/91/wX/i/9G/wz/if8H/4v/Rv8E/yn/Bf8AAAAAAAAAAP//Bf8AAAAAAAAAAIX/9v90/wf/Vv/o/wAAAAAAAAAAWf9f/17/W/9d/8P/
+  symbols:
+  - kind: Function
+    name: ??3CD3duAlloc@@SAXPAX@Z
+    size: 111
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CD3duAllocHash@@YAKPAX@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ?g_pHead@@3PAPAU_ALLOC_STUB@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_dwTotalUnfreedMemory@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ?g_dwNumFrees@@3KA
+    size: 0
+    flags: 1
+    section: .bss
+  relocations:
+  - offset: 17
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 24
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 31
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 56
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 85
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 91
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 101
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

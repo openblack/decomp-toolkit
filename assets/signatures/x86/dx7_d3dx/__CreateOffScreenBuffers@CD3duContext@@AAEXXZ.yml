@@ -1,0 +1,139 @@
+- symbol: 0
+  hash: 8fb636ffa21edba3e332478074dd9f4925816c8e
+  signature: Vf+L/+z/gf/s/xD/Af8A/wD/U/+L/9n/Vv9X/4P/u/+M/wD/AP8A/wD/dP9Y/7//AAAAAAAAAACD/8n///8z/8D/jf+V/3j/////////8v+u//f/0f8r//n/x/9F//j/0f8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/8P/+//////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/8P/+///////H/0X//P9D/wb/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAav8f/zP/wP9Z/43/ff+E//P/q/+L/0P/PP+L/0v/IP+J/0X/kP+L/0P/OP+J/0X/jP+L/0P/dP9m/w3/QP8g/8f/Rf+E/3z/AP8A/wD/hf/J/8f/Rf+I/wf/AP8A/wD/if9F/+z/dv8P/wz/GP/H/0X/iP8n/wD/AP8A/4n/Tf+Y/4n/Rf/s/4v/Q/98/43/i/+M/wD/AP8A/2r/AP9R/4v/EP+N/03/hP9R/1D///9S/xj/hf/A/33/Wv+J/4X/cP////////+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf/w//7//////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/w//7//////4P/4f8D//P/pP9Z/43/tf/w//7//////43/vf/w//7//////8f/hf90/////////1n/Bv8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACD/3v/IP8A/3X/CP+L/4P/jP8A/wD/AP/r/xf/av8A/4v/y////7P/jP8A/wD/AP/o/wAAAAAAAAAAi/+D/5D/AP8A/wD/i/8A/1//if+D/5T/AP8A/wD/Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?_CreateOffScreenBuffers@CD3duContext@@AAEXXZ
+    size: 343
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DI@LELM@_CreateOffScreenBuffers?5?9?5Front?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EH@MDLG@CD3duContext?3?3_CreateOffScreenBu@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_EnumBackBuffers@CD3duContext@@AAEXPAUIDirectDrawSurface7@@K@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 24
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 99
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 107
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 212
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 283
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 291
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 320
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+- symbol: 0
+  hash: a93ba7e84ef018e9e473ed67005df81b20e88928
+  signature: Vf+L/+z/gf/s/4z/Af8A/wD/U/+L/9n/Vv9X/4P/u/+M/wD/AP8A/wD/dP9m/43/jf/8//7//////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf/8//7///////L/rv/3/9H/K//5/8f/hf98/////////9H/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3T//v//////g//h/wP/8/+k/1n/jf+1//z//v//////jf+9/3T//v//////x/9F/4D/Q/8G/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAGr/H/8z/8D/Wf+N/33/hP/z/6v/i/9D/zz/i/9L/yD/if9F/5D/i/9D/zj/if9F/4z/i/9D/3T/Zv8N/0D/IP/H/0X/hP98/wD/AP8A/4X/yf/H/0X/iP8H/wD/AP8A/4n/Rf/s/3b/D/8M/xj/x/9F/4j/J/8A/wD/AP+J/03/mP+J/0X/7P+L/0P/fP+N/4v/jP8A/wD/AP9q/wD/Uf+L/xD/jf9N/4T/Uf9Q////Uv8Y/4v/8P+F//b/ff9i/43/jf/8//7//////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/4n/tf98//////////L/rv/3/9H/K//5/43/lf/8//7//////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf90//7//////4P/4f8D//P/pP9Z/43/tf/8//7//////43/vf90//7//////8f/Rf+A/1n/Bv8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACD/3v/IP8A/3X/CP+L/4P/jP8A/wD/AP/r/xf/av8A/4v/y////7P/jP8A/wD/AP/o/wAAAAAAAAAAi/+D/5D/AP8A/wD/i/8A/1//if+D/5T/AP8A/wD/Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?_CreateOffScreenBuffers@CD3duContext@@AAEXXZ
+    size: 367
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DI@LELM@_CreateOffScreenBuffers?5?9?5Front?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EH@MDLG@CD3duContext?3?3_CreateOffScreenBu@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?_EnumBackBuffers@CD3duContext@@AAEXPAUIDirectDrawSurface7@@K@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 30
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 35
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 113
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 121
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 228
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 233
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 307
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 315
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 344
+    kind: x86_rel32
+    symbol: 6
+    addend: -4

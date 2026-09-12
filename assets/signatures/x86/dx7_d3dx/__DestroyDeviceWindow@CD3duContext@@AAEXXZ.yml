@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: 2524a315a3f89034367f57f16b25958bea2a67a9
+  signature: i/9B/wj/hf/A/3T/Df+D/3n/FP8A/3T/B/9Q////Ff8AAAAAAAAAAMP/
+  symbols:
+  - kind: Function
+    name: ?_DestroyDeviceWindow@CD3duContext@@AAEXXZ
+    size: 21
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__DestroyWindow@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_abs32
+    symbol: 1
+    addend: 0

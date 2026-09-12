@@ -1,0 +1,73 @@
+- symbol: 0
+  hash: b83370e573fc9282a7908e520c12b4bfcde07f96
+  signature: Vv+L//H/V/+L/0b/EP+D/+j/AP90/xb/SP90/wr/SP91/xf/6P8AAAAAAAAAAOv/EP+L/87/6P8AAAAAAAAAAOv/B/+L/87/6P8AAAAAAAAAAIP/fv8Y/xD/c/8H/4v/zv/o/wAAAAAAAAAAg/++/7D/AP8A/wD/AP+N/77/sP8A/wD/AP91/wj/i/9O/3D/6P8AAAAAAAAAAIv/Rv8s/4X/wP93/wb/g/9+/zD/AP92/xf/g/8//wD/df8L////dv8w/4v/zv9Q/+j/AAAAAAAAAACL/87/6P8AAAAAAAAAAF//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ?_CreateDXBuffers@CD3duContext@@AAEXXZ
+    size: 116
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_CreateOffScreenBuffers@CD3duContext@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_CreateFullscreenBuffers@CD3duContext@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_CreateWindowedBuffers@CD3duContext@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_CreatePalette@CD3duContext@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?RefreshCaps@CD3duDeviceNode@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?_ChooseZBuffer@CD3duContext@@AAEXKK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?_CreateZBuffer@CD3duContext@@AAEXXZ
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 19
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 28
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 37
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 73
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 102
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 109
+    kind: x86_rel32
+    symbol: 7
+    addend: -4

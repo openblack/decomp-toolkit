@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: c603a3a45a07992bc5ca70d084b5e7a23a994918
+  signature: Vf+L/+z/g//s/0D/i/9F/wj/U/9W/4v/df8Q/zv/8P9X/3X/cf85/0X/DP90/17/i/9d/wj/i/9N/wz/i/9V/xD/v//8/////////77/8P/////////Z/0T/uv8Q/9n/RP+6/yD/2f9E/7r/MP/Z/0T/uv9A/9n/w//Y/0z/sf9A/9n/w//Y/0z/sf9E/9n/w//Y/0z/sf9I/9n/w//Y/0z/sf9M/9n/y//e/8H/2f/K/97/wf/e/8H/2f9c/7P/QP+D/8b/BP91/9X/3f/D/93/wv/d/8H/3f/A/43/W/8E/0f/df+y/+v/Zv9q/xD/jf99/8D/Wf/z/6X/jf9N/8D/if9N/xD/i/9d/wj/i/9N/wz/i/9V/xD/v//8/////////77//P/////////Z/wH/2f9B/wT/2f9B/wj/2f9B/wz/2f/D/9j/TP+y/xD/2f/D/9j/TP+y/yD/2f/D/9j/TP+y/zD/2f/D/9j/TP+y/0D/2f/L/97/wf/Z/8r/3v/B/97/wf/Z/1z/s/8Q/0b/df/X/93/w//d/8L/3f/B/93/wP+N/0n/EP+N/1v/EP9H/3X/tv9f/17/W//J/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 227
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: c96f74ee9e2b6afde1d4958733a7809bee9a0395
+  signature: Vf+L/+z/g//s/0D/i/9F/wj/U/9W/1f/hf/A/w//hP/k/wD/AP8A/4P/ff8M/wD/D/+E/9r/AP8A/wD/i/91/xD/hf/2/w//hP/P/wD/AP8A/zv/8P91/3H/Of9F/wz/dP9e/4v/Xf8I/4v/Tf8M/4v/Vf8Q/7///P////////++//D/////////2f9E/7r/EP/Z/0T/uv8g/9n/RP+6/zD/2f9E/7r/QP/Z/8P/2P9M/7H/QP/Z/8P/2P9M/7H/RP/Z/8P/2P9M/7H/SP/Z/8P/2P9M/7H/TP/Z/8v/3v/B/9n/yv/e/8H/3v/B/9n/XP+z/0D/g//G/wT/df/V/93/w//d/8L/3f/B/93/wP+N/1v/BP9H/3X/sv/r/2r/av8Q/43/ff/A/1n/8/+l/43/Tf/A/4n/Tf8Q/4v/Xf8I/4v/Tf8M/4v/Vf8Q/7///P////////++//z/////////2f8B/9n/Qf8E/9n/Qf8I/9n/Qf8M/9n/w//Y/0z/sv8Q/9n/w//Y/0z/sv8g/9n/w//Y/0z/sv8w/9n/w//Y/0z/sv9A/9n/y//e/8H/2f/K/97/wf/e/8H/2f9c/7P/EP9G/3X/1//d/8P/3f/C/93/wf/d/8D/jf9J/xD/jf9b/xD/R/91/7b/6/8C/zP/wP9f/17/W//J/8L/DP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 257
+    flags: 1
+    section: .text
+  relocations: []

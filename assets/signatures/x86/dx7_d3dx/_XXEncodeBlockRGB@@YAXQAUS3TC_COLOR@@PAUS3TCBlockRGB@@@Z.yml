@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: f72c1556f41356a95fece9b876b44bfe92b32532
+  signature: U/+L/1z/JP8I/1f/M////zP/yf+L/8P/Of84/33/Cf9B/4P/wP8E/4P/+f8Q/3z/8/+D//n/EP91/w7///90/yT/EP9T/+j/AAAAAAAAAABZ/1n/6/9F/zP/0v+L/8v/i/8B/4X/wP99/wn/Jf////////8A/zv/x/90/wn/Qv+D/8H/BP+D//r/EP98/+j/g//6/xD/dP8D/0f/6//c/2r/EP+L/8P/Wf+D/zj/AP98/wL/if84/4P/wP8E/0n/df/z/1f/V////3T/JP8Y/1P/6P8AAAAAAAAAAIP/xP8Q/1//W//D/w==
+  symbols:
+  - kind: Function
+    name: ?XXEncodeBlockRGB@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@@Z
+    size: 116
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockRGB@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockRGBColorKey@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@U1@2@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 36
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 2b828c7110e6a92f3b60ea5fd1fbe9be46018163
+  signature: Vf+L/+z/U/+L/13/CP9X/zP///8z/8n/i//D/zn/OP99/wn/Qf+D/8D/BP+D//n/EP98//P/g//5/xD/df8N////df8M/1P/6P8AAAAAAAAAAFn/Wf/r/0T/M//S/4v/y/+L/wH/hf/A/33/Cf8l/////////wD/O//H/3T/Cf9C/4P/wf8E/4P/+v8Q/3z/6P+D//r/EP90/wP/R//r/9z/av8Q/4v/w/9Z/4P/OP8A/3z/Av+J/zj/g//A/wT/Sf91//P/V/9X////df8M/1P/6P8AAAAAAAAAAIP/xP8Q/1//W/9d/8P/
+  symbols:
+  - kind: Function
+    name: ?XXEncodeBlockRGB@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@@Z
+    size: 117
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockRGB@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockRGBColorKey@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@U1@2@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 37
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 106
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

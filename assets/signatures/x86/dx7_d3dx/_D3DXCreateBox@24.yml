@@ -1,0 +1,131 @@
+- symbol: 0
+  hash: 05cb88516cf8cacec0a51926bcf23a8bae4b1687
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+4/wD/AP8A/1P/Vv9X/zP/2/+D/33/GP///4n/Zf/w/4n/Xf/8/3X/B//H/0X/GP8B/wD/AP8A/9n/Bf8AAAAAAAAAANn/Rf8M/9j/2f/f/+D/nv91/wX/2f/o/9n/Xf8M/9n/Rf8Q/9j/2f/f/+D/nv91/wX/2f/o/9n/Xf8Q/9n/Rf8U/9j/2f/f/+D/nv/d/9j/df8F/9n/6P/Z/13/FP85/13/CP90/xH/i/91/xj/g//+/wj/D/+H/wb/Af8A/wD/Of9d/xz/df8K/7j/uf8L/3f/yP/p//z/AP8A/wD/av8Y/+j/AAAAAAAAAABZ/4v/yP+J/03/7P87/8v/xv9F//z/Af90/wr/6P8AAAAAAAAAAIn/Rf/s/+v/A/+J/13/7P85/13/7P+I/13//P90/03/av8I/zP/wP9Z/43/ff/I/4n/Xf/A/8f/Rf/E/wL/AP8A/wD/8/+r/43/fv8C/zv/xv9z/wv/x/9E/4X/yP8F/wD/AP8A/0D/6//x/2r/bP/o/wAAAAAAAAAAWf+L/8j/if9N/+j/O//L/8b/Rf/8/wL/dP8J/+j/AAAAAAAAAACL//D/6/8C/zP/9v87//P/iP9d//z/df8H/7j/uP8L/3f/yP/r/37/U/+N/0X/wP9X/4v/ff8I/1D/av8k/1f/U/+L/87/6P8AAAAAAAAAAP//df8Y/9n/Rf8U/1H/2f8c/yT/2f9F/xD/Uf/Z/xz/JP/Z/0X/DP9R/9n/HP8k/1b/6P8AAAAAAAAAAIv/Xf/s/4v/Bv+D/8T/FP+J/0P/CP+L/wj/UP///1H/BP+L/87/6P8AAAAAAAAAAFb/6P8AAAAAAAAAAFn/if97/wz/i/8H/1f///9Q/wT/i/9F/xz/if8Y/zP/wP/r/xv/jf+N/zj/////////6P8AAAAAAAAAALj/AAAAAAAAAADD/4v/Rf+4/+v/Bf+4/8T/C/93/8j/i/9N//T/X/9e/2T/if8N/wAAAAAAAAAAW//J/8L/GP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXCreateBox@24
+    size: 395
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duShape@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CVertexArray@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Init@CVertexArray@@QAEXPAUIDirect3D7@@PAUIDirect3DDevice7@@KPAW4_D3DXVERTEXCOMPONENT@@KK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?MakeBox@@YAXPAVCVertexArray@@MMMK@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CVertexArray@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: ''
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 43
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 129
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 148
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 209
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 228
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 268
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 298
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 322
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 328
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 358
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 363
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 386
+    kind: x86_abs32
+    symbol: 13
+    addend: 0

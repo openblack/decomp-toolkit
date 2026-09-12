@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 5b09d73e12a06cd335b7de94869a60db23b9953f
+  signature: i/+J/wz/Af8A/wD/Vv+F/8n/dP8T/4v/VP8k/wj/g//6/wj/cv8K/4v/Qf8Y/43/cP/w/zv/1v92/wT/M//A/+v/DP8r/0T/Cv8M/4P/6P8Q/zv/wv8b/8D/QP9e/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?ValidEntry@CD3dxFile@@QAEHK@Z
+    size: 50
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 957b4abc417c5764a275aa14008b59c565f38384
+  signature: Vf+L/+z/i/+J/wz/Af8A/wD/Vv+F/8n/dP8S/4v/Vf8I/4P/+v8I/3L/Cv+L/0H/GP+N/3D/8P87/9b/dv8E/zP/wP/r/wz/K/9E/wr/DP+D/+j/EP87/8L/G//A/0D/Xv9d/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?ValidEntry@CD3dxFile@@QAEHK@Z
+    size: 53
+    flags: 1
+    section: .text
+  relocations: []

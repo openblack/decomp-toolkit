@@ -1,0 +1,29 @@
+- symbol: 0
+  hash: ba547aab1c1a26c3544363640351f50f1060b711
+  signature: i//B/zP/yf+J/4j/fP8B/wD/AP+J/4j/gP8B/wD/AP+J/4j/hP8B/wD/AP+J/4j/iP8B/wD/AP+J/4j/jP8B/wD/AP+J/4j/kP8B/wD/AP+J/wj/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CHelInfo@@QAE@XZ
+    size: 43
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 6468faed0e068b35de601ac8d66721cf226f5134
+  signature: Vv+L//H/6P8AAAAAAAAAADP/wP+J/4b/fP8B/wD/AP+J/4b/gP8B/wD/AP+J/4b/hP8B/wD/AP+J/4b/iP8B/wD/AP+J/4b/jP8B/wD/AP+J/4b/kP8B/wD/AP+J/wb/i//G/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CHelInfo@@QAE@XZ
+    size: 52
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 4
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

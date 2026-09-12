@@ -1,0 +1,83 @@
+- symbol: 0
+  hash: 58cac4c704f9fbb9ddc9de62c41ca9242fb8969e
+  signature: Vf+L/+z/gf/s/6D/AP8A/wD/V/+L/9H/av8G/zP/wP9Z/43/ff/o//P/q//Z/+7/2f9d//j/2f/o/yH/Rf/o/yH/Rf/s/4v/Qv88/43/Tf/o/9n/Xf/8/4n/Rf/w/4v/Qv84/4v/Uv94/4n/Rf/0/1H/Uv+L/wL///9Q/zT/hf/A/33/Vv+J/0X/4P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/1b/jf+V/2D/////////i//B/4v/9/+L//r/wf/p/wL/8/+l/4v/yP9q/yL/g//h/wP/jf+F/2D/////////8/+k/1n/jf+1/2D/////////jf+9/2D/////////x/9F/+T/df8E/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAF7/X//J/8P/
+  symbols:
+  - kind: Function
+    name: ?_InitViewport@CD3duContext@@AAEXXZ
+    size: 156
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DE@DNFJ@CD3duContext?3?3SetViewport?5?9?5Fail@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 71
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 140
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 148
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: ab493fe396a446aff505f203e19f270d5c0363da
+  signature: Vf+L/+z/gf/s/yj/Af8A/wD/Vv9X/4v/0f9q/wb/Wf8z/8D/jf99/+j/8/+r/9n/7v/Z/13/+P/Z/+j/If9F/+j/If9F/+z/i/9C/zz/jf9N/+j/2f9d//z/if9F//D/i/9C/zj/i/9S/3j/if9F//T/Uf9S/4v/Av///1D/NP+L//D/hf/2/33/X/+N/43/YP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+J/3X/4P/y/67/9//R/yv/+f+N/5X/YP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/2P/+//////+D/+H/A//z/6T/Wf+N/7X/YP////////+N/73/2P/+///////H/0X/5P91/wT/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAX/9e/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?_InitViewport@CD3duContext@@AAEXXZ
+    size: 169
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DE@DNFJ@CD3duContext?3?3SetViewport?5?9?5Fail@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 77
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 82
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 153
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 161
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

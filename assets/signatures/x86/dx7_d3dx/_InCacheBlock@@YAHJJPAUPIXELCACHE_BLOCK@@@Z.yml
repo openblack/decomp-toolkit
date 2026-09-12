@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: c8f5237dcedb0aae4478f8771165cdaffc261452
+  signature: i/9M/yT/BP+L/0T/JP8M/4P/4f/8/zv/SP8I/3X/EP+L/0z/JP8I/4P/4f/8/zv/SP8M/3X/BP9q/wH/WP/D/zP/wP/D/w==
+  symbols:
+  - kind: Function
+    name: ?InCacheBlock@@YAHJJPAUPIXELCACHE_BLOCK@@@Z
+    size: 35
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 198d391e345dee93584b172699f8f418707714a8
+  signature: Vf+L/+z/i/9N/wj/i/9F/xD/g//h//z/O/9I/wj/df8Q/4v/Tf8M/4P/4f/8/zv/SP8M/3X/Bf9q/wH/WP9d/8P/M//A/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?InCacheBlock@@YAHJJPAUPIXELCACHE_BLOCK@@@Z
+    size: 37
+    flags: 1
+    section: .text
+  relocations: []

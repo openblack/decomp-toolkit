@@ -1,0 +1,156 @@
+- symbol: 0
+  hash: b83465693a294b38c4f45fc79bc8a4c26b9309ee
+  signature: Vf+L/+z/g//s/xD/U/+L/13/CP9W/1f/i//L/+j/AAAAAAAAAACD/2X/+P8A/4P/Zf/0/wD/vv8AAAAAAAAAAIv/ff/0/8f/Rf/w/wP/AP8A/wD/2f9G/wT/Uf/Z/xz/JP/Z/wb/Uf/Z/xz/JP/Z/0b//P9R/4v/y//Z/xz/JP/o/wAAAAAAAAAAg/9l//z/AP+D/33/GP8A/3b/M/8P/7f/h/8AAAAAAAAAAMH/4P8D/1H/2f+A/wAAAAAAAAAA2f8c/yT/2f+A/wAAAAAAAAAAUf+L/8v/2f8c/yT///91//z/6P8AAAAAAAAAAP//Rf/8/4v/Rf/8/zv/Rf8Y/3L/zf8P/7f/h/8AAAAAAAAAAFH/jf8E/0D/wf/g/wL/2f+A/wAAAAAAAAAA2P9N/xT/2f8c/yT/2f+A/wAAAAAAAAAA2P9N/xD/Uf/Z/xz/JP/Z/4D/AAAAAAAAAADY/03/DP9R/4v/y//Z/xz/JP/o/wAAAAAAAAAAR/9H////Tf/w/w//hf9i/////////2r/A/9f/9n/Rv8E/1H/2f8c/yT/2f8G/1H/2f8c/yT/2f9G//z/Uf+L/8v/2f8c/yT/6P8AAAAAAAAAAIP/Zf/8/wD/g/99/xj/AP92/0b/jf9H////av8E/5n/Wf/3//n/A/9V//j/jf8c/1X/AAAAAAAAAAAP/7f/A//B/+D/A/9R/9n/gP8AAAAAAAAAANn/HP8k/9n/gP8AAAAAAAAAAFH/i/9N/wj/2f8c/yT///91//z/6P8AAAAAAAAAAP//Rf/8/4v/Rf/8/zv/Rf8Y/3L/0P+L/13/CP+N/0f///9q/wT/mf9Z//f/+f9R/wP/Vf/4/w//t/8E/1X/AAAAAAAAAACN/wT/QP/B/+D/Av/Z/4D/AAAAAAAAAADY/03/FP/Z/xz/JP/Z/4D/AAAAAAAAAADY/03/EP9R/9n/HP8k/9n/gP8AAAAAAAAAANj/Tf8M/1H/i//L/9n/HP8k/+j/AAAAAAAAAABH/4P///8G/w//jP9D/////////4P/Rf/0/wj/g/9F//j/BP+D/8b/DP+B//7/AAAAAAAAAAAP/4z/gf/+//////+L/8v/6P8AAAAAAAAAAF//Xv9b/8n/w/8=
+  symbols:
+  - kind: Function
+    name: ?MakeBox@@YAXPAVCVertexArray@@MMMK@Z
+    size: 427
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Begin@CVertexArray@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: ?Normal@CVertexArray@@QAEXMMM@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: ?Texture2@CVertexArray@@QAEXHMM@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Object
+    name: ''
+    size: 0
+    flags: 2
+    section: .data
+  - kind: Function
+    name: ?Vertex@CVertexArray@@QAEXMMM@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?End@CVertexArray@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 15
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 28
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 65
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 82
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 92
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 101
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 115
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 133
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 146
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 158
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 171
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 185
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 226
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 255
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 268
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 277
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 292
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 327
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 339
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 351
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 364
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 378
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 405
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 418
+    kind: x86_rel32
+    symbol: 10
+    addend: -4

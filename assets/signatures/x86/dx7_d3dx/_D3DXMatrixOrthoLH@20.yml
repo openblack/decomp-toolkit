@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: c1dd337d3f1d78542d44c77beb651820b4e82f3a
+  signature: Vf+L/+z/2f8F/wAAAAAAAAAA2P91/wz/i/9F/wj/2f8Y/9n/7v/Z/1j/BP/Z/+7/2f9Y/wj/2f/u/9n/WP8M/9n/7v/Z/1j/EP/Z/wX/AAAAAAAAAADY/3X/EP/Z/1j/FP/Z/+7/2f9Y/xj/2f/u/9n/WP8c/9n/7v/Z/1j/IP/Z/+7/2f9Y/yT/2f9F/xj/2P9l/xT/2P89/wAAAAAAAAAA2f9Q/yj/2f/u/9n/WP8s/9n/7v/Z/1j/MP/Z/+7/2f9Y/zT/2f9F/xT/2P/J/9n/4P/Z/1j/OP/d/9j/2f/o/9n/WP88/13/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixOrthoLH@20
+    size: 120
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41923
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41913
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 5
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 39
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 77
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 299efdfdbe606914a7ff780d9868cb98aeb8af98
+  signature: Vf+L/+z/i/9F/wj/hf/A/3T/bv/Z/wX/AAAAAAAAAADY/3X/DP/Z/xj/2f/u/9n/WP8E/9n/7v/Z/1j/CP/Z/+7/2f9Y/wz/2f/u/9n/WP8Q/9n/Bf8AAAAAAAAAANj/df8Q/9n/WP8U/9n/7v/Z/1j/GP/Z/+7/2f9Y/xz/2f/u/9n/WP8g/9n/7v/Z/1j/JP/Z/0X/GP/Y/2X/FP/Y/z3/AAAAAAAAAADZ/1D/KP/Z/+7/2f9Y/yz/2f/u/9n/WP8w/9n/7v/Z/1j/NP/Z/0X/FP/Y/8n/2f/g/9n/WP84/93/2P/Z/+j/2f9Y/zz/Xf/C/xT/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixOrthoLH@20
+    size: 124
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42042
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42031
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 43
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 81
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

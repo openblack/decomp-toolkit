@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: 5e52d18af0eb118020de605689a64ca7682d6358
+  signature: Vv+L//H/V/+N/37/BP+L/8//6P8AAAAAAAAAADP/wP/H/wb/AAAAAAAAAACJ/wf/if9G/wj/if9G/wz/i//G/1//Xv/D/w==
+  symbols:
+  - kind: Function
+    name: ??0?$ListT@VCD3duDeviceNode@@@@QAE@XZ
+    size: 35
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7?$ListT@VCD3duDeviceNode@@@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 18
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

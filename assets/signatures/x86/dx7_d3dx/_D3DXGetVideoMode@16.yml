@@ -1,0 +1,391 @@
+- symbol: 0
+  hash: cda2af099c6eaf4956d9dd4e61dbc6ef2236a1c7
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P8Q/wH/AP8A/4P/Zf/8/wD/U/+L/13/FP9W/4v/df8M/1f/g//m/wH/if9l//D/hf/b/4n/df8M/3X/W/+//wAAAAAAAAAAg//J////M//A/43/lf9o//////////L/rv/3/9H/K//5/8f/Rf/o/7n/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/2j/////////g//h/wP/8/+k/1n/jf+1/2j/////////jf+9/2j/////////x/9F/+z/mv8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/df8M/4P/Pf8AAAAAAAAAAAD/df9b/7//AAAAAAAAAACD/8n///8z/8D/jf+V/2j/////////8v+u//f/0f8r//n/x/9F/+j/x/8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/aP////////+D/+H/A//z/6T/Wf+N/7X/aP////////+N/73/aP/////////H/0X/7P+g/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/91/wz/i/8N/wAAAAAAAAAA6P8AAAAAAAAAAIv/Df8AAAAAAAAAAI3/Rf8I/1D/6P8AAAAAAAAAAP//df8I/4v/Df8AAAAAAAAAAOj/AAAAAAAAAACL/8j/6P8AAAAAAAAAAIX/9v+J/0X/DP8P/4X/lP8A/wD/AP+L/0j/CP+F/8n/D/+E/zT/Af8A/wD/Of9N/xD/cv9b/7//AAAAAAAAAACD/8n///8z/8D/jf+V/2j/////////8v+u//f/0f8r//n/x/9F/+j/xP8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/aP////////+D/+H/A//z/6T/Wf+N/7X/aP////////+N/73/aP/////////H/0X/7P+4/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9F/wz/i/9A/wz/M//J/zv/Tf8Q/3P/Bf+L/wD/Qf/r//b/i/9I/wT/if8L/4v/SP8I/4n/S/8E/4v/QP8M/4P/Y/8M/wD/if9D/wj/6f+r/wD/AP8A/4v/SP8Q/4X/yf8P/4T/oP8A/wD/AP+L/1X/EP87/9H/cv9e/7//AAAAAAAAAACD/8n///8z/8D/jf+V/2j/////////8v+u//f/0f8r//n/x/9F/+j/xP8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/aP////////+D/+H/A//z/6T/Wf+N/7X/aP////////+N/73/aP/////////H/0X/7P/Q/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9V/xD/i/9F/wz/i/9A/wz/i/9I/zD/O//K/3f/B/+L/wD/A/9I/zD/6//1/4v/cP8E/yv/SP8w/4n/M/+L/3D/CP+J/3P/BP+L/3D/DP+J/3P/CP+L/0D/NP8r/9H/M//J/zv/yv9z/wX/i/8A/0H/6//3/4v/QP8E/4n/Q/8M/zP/wP/r/xf/jf+N/+D//v//////6P8AAAAAAAAAALj/AAAAAAAAAADD/4v/hf9g/////////4v/Tf/0/1//Xv9k/4n/Df8AAAAAAAAAAFv/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXGetVideoMode@16
+    size: 655
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L44823
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CI@EKIP@D3DXGetVideoMode?5?9?5NULL?5pointer?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_0CH@HDJK@D3DXInitialize?$CI?$CJ?5must?5be?5called?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?InitializeIfNeeded@CD3duGlobals@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CheckAndMapD3duHandle@CD3duGlobals@@QAEXPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetD3duDeviceNode@CD3duGlobals@@QAEPAVCD3duDeviceNode@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetVideoModeList@CD3duDeviceNode@@QAEPAVCVideoModeList@@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CA@GCKO@D3duListVideoModes?5?9?5bad?5index?4?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L44811
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 44
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 119
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 127
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 136
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 144
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 219
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 227
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 236
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 241
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 247
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 256
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 265
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 270
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 277
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 309
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 384
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 392
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 459
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 534
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 542
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 622
+    kind: x86_rel32
+    symbol: 13
+    addend: -4
+  - offset: 627
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 646
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+- symbol: 0
+  hash: 6aec44560390899f282fc18c5d73262d4525e356
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/4H/7P+Y/wH/AP8A/4P/Zf/8/wD/U/+L/13/FP9W/4v/df8M/1f/g//m/wH/if9l//D/hf/b/4n/df8M/3X/Zv+N/43/aP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/aP/////////y/67/9//R/yv/+f/H/0X/6P+5/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/g//7//////4P/4f8D//P/pP9Z/43/tf9o/////////43/vf/g//7//////8f/Rf/s/5r/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/3X/DP+D/z3/AAAAAAAAAAAA/3X/Zv+N/43/aP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/aP/////////y/67/9//R/yv/+f/H/0X/6P/H/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/g//7//////4P/4f8D//P/pP9Z/43/tf9o/////////43/vf/g//7//////8f/Rf/s/6D/AP8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/3X/DP+L/w3/AAAAAAAAAADo/wAAAAAAAAAAi/8N/wAAAAAAAAAAjf9F/wj/UP/o/wAAAAAAAAAA//91/wj/i/8N/wAAAAAAAAAA6P8AAAAAAAAAAIv/yP/o/wAAAAAAAAAAhf/2/4n/Rf8M/w//hf+f/wD/AP8A/4v/SP8I/4X/yf8P/4T/Sv8B/wD/AP85/03/EP9y/2b/jf+N/2j/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/jf+V/2j/////////8v+u//f/0f8r//n/x/9F/+j/xP8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/4P/+//////+D/+H/A//z/6T/Wf+N/7X/aP////////+N/73/4P/+///////H/0X/7P+4/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9F/wz/i/9A/wz/M//J/zv/Tf8Q/3P/Bf+L/wD/Qf/r//b/i/9I/wT/if8L/4v/SP8I/4n/S/8E/4v/QP8M/4P/Y/8M/wD/if9D/wj/6f+2/wD/AP8A/4v/SP8Q/4X/yf8P/4T/q/8A/wD/AP+L/1X/EP87/9H/cv9p/43/jf9o/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/43/lf9o//////////L/rv/3/9H/K//5/8f/Rf/o/8T/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/+D//v//////g//h/wP/8/+k/1n/jf+1/2j/////////jf+9/+D//v//////x/9F/+z/0P8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/Vf8Q/4v/Rf8M/4v/QP8M/4v/SP8w/zv/yv93/wf/i/8A/wP/SP8w/+v/9f+L/3D/BP8r/0j/MP+J/zP/i/9w/wj/if9z/wT/i/9w/wz/if9z/wj/i/9A/zT/K//R/zP/yf87/8r/c/8F/4v/AP9B/+v/9/+L/0D/BP+J/0P/DP8z/8D/6/8X/43/jf9Y//7//////+j/AAAAAAAAAAC4/wAAAAAAAAAAw/+L/4X/2P/+//////+L/03/9P9f/17/ZP+J/w3/AAAAAAAAAABb/8n/wv8Q/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXGetVideoMode@16
+    size: 699
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L44846
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CI@EKIP@D3DXGetVideoMode?5?9?5NULL?5pointer?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: .bss
+  - kind: Object
+    name: ??_C@_0CH@HDJK@D3DXInitialize?$CI?$CJ?5must?5be?5called?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?InitializeIfNeeded@CD3duGlobals@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CheckAndMapD3duHandle@CD3duGlobals@@QAEXPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetD3duDeviceNode@CD3duGlobals@@QAEPAVCD3duDeviceNode@@K@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetVideoModeList@CD3duDeviceNode@@QAEPAVCVideoModeList@@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CA@GCKO@D3duListVideoModes?5?9?5bad?5index?4?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?DebugString@CD3DXException@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Unknown
+    name: $L44834
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 55
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 130
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 138
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 147
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 161
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 166
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 241
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 249
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 258
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 263
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 269
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 278
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 287
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 292
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 299
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 337
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 342
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 417
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 425
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 498
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 503
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 578
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 586
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 666
+    kind: x86_rel32
+    symbol: 14
+    addend: -4
+  - offset: 671
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 690
+    kind: x86_abs32
+    symbol: 16
+    addend: 0

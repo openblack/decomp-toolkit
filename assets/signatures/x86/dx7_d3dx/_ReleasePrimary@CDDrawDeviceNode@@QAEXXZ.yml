@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 739a8f58a0025678125374a349f153f2c4084e31
+  signature: Vv+L//H/i/9G/yj/hf/A/3T/Fv+L/wj/UP///1H/CP+D/2b/KP8A/4P/Zv8w/wD/g/9m/zT/AP+D/2b/LP8A/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?ReleasePrimary@CDDrawDeviceNode@@QAEXXZ
+    size: 34
+    flags: 1
+    section: .text
+  relocations: []

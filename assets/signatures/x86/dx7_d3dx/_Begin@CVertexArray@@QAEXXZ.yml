@@ -1,0 +1,83 @@
+- symbol: 0
+  hash: 3c7b2fafadc4fb1decba79bf82d9936584e99c42
+  signature: Vf+L/+z/gf/s/4j/AP8A/wD/U/+L/9n/i/8D/4P/Y/8c/wD/hf/A/3T/cP+L/xD/jf9L/xD/av8A/1H/av8B/1D///9S/wz/hf/A/33/WP9X/4n/Rf/4/7//AAAAAAAAAACD/8n///8z/8D/Vv/y/67/9//R/yv/+f+N/5X/eP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/eP////////+D/+H/A//z/6T/Wf+N/7X/eP////////+N/73/eP/////////H/0X//P9K/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAXv9f/4v/Q/8Q/4n/Q/8U/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?Begin@CVertexArray@@QAEXXZ
+    size: 137
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CE@CHLK@CVertexArray?3?3Begin?5?9?5error?5in?5L@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 45
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 114
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 122
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: fc0819701da9a77945580c47dd1efb97a8a08f09
+  signature: Vf+L/+z/gf/s/xD/Af8A/wD/U/+L/9n/i/8D/4P/Y/8c/wD/hf/A/3T/ff+L/xD/Vv+N/0v/EP9q/wD/Uf9q/wH/UP///1L/DP+L//D/hf/2/33/Yf9X/43/jf94/////////+j/AAAAAAAAAAC//wAAAAAAAAAAg//J////M//A/4n/df/4//L/rv/3/9H/K//5/43/lf94/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/w//7//////4P/4f8D//P/pP9Z/43/tf94/////////43/vf/w//7//////8f/Rf/8/0r/Af8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABf/4v/Q/8Q/17/if9D/xT/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?Begin@CVertexArray@@QAEXXZ
+    size: 150
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CE@CHLK@CVertexArray?3?3Begin?5?9?5error?5in?5L@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 51
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 56
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 127
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 135
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

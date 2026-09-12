@@ -1,0 +1,121 @@
+- symbol: 0
+  hash: 1b7eb67427b511a5125a83f375e672b56aa3b0e9
+  signature: Vf+L/+z/gf/s/4z/AP8A/wD/i/9F/wj/U/+L/9n/Vv9X/43/Vf/8/4n/Q/9k/4v/Q/9o/2r/AP9S/4v/CP+N/1P/WP9S/1D///9R/xT/hf/A/33/VP+J/0X/9P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf90/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf90/////////4P/4f8D//P/pP9Z/43/tf90/////////43/vf90/////////8f/Rf/4/yn/Af8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAACL/wP/jf9L/xT/av8A/1H/i/8Q/2r/Af9Q////Uv8M/4X/wP99/1T/if9F//T/v/8AAAAAAAAAAIP/yf///zP/wP/y/67/9//R/yv/+f+N/5X/dP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/dP////////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/dP/////////H/0X/+P8x/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAi/9N/wj/i/9z/xD/D/+v/0v/GP+L/3v/FP+L/8H/wf/p/wL/8/+l/4v/yP8z/8D/g//h/wP/8/+k/4v/S/8M/4v/ff8I/4v/U/8Y/yv/z/8P/6//yv8P/6//+v8D/3v/FP+N/3P/FP+L/9H/wf/p/wL/8/+r/4v/yv+D/+H/A//z/6r/i/8D/1D/i/8I////Uf8Q/4v/A/9Q/4v/CP///1H/CP+L/03/CP+L/0X//P+J/0v/DP+L/0v/HP8P/6//S/8Y/4n/A/+L/wb/A//I/1//if8O/4n/Q/8Q/17/W//J/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?AllocateMemory@CVertexArray@@IAEXK@Z
+    size: 347
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CJ@KNKH@CVertexArray?3?3Vertex?5?9?5error?5cre@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CN@ENPG@CVertexArray?3?3AllocateMemory?5?9?5e@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 47
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 115
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 123
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 151
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 219
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 227
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 24fe1822c2e2d67fa0fca1e22660a8476fece0b1
+  signature: Vf+L/+z/gf/s/xT/Af8A/wD/i/9F/wj/U/+L/9n/Vv9X/43/Vf/8/4n/Q/9k/4v/Q/9o/2r/AP9S/4v/CP+N/1P/WP9S/1D///9R/xT/i//w/4X/9v99/1//jf+N/3T/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/if91//T/8v+u//f/0f8r//n/jf+V/3T/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/+z//v//////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/+z//v//////x/9F//j/Kf8B/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/A/+N/0v/FP9q/wD/Uf+L/xD/av8B/1D///9S/wz/i//w/4X/9v99/1//jf+N/3T/////////6P8AAAAAAAAAAL//AAAAAAAAAACD/8n///8z/8D/if91//T/8v+u//f/0f8r//n/jf+V/3T/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/+z//v//////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/+z//v//////x/9F//j/Mf8B/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAIv/Tf8I/4v/c/8Q/w//r/9L/xj/i/97/xT/i//B/8H/6f8C//P/pf+L/8j/M//A/4P/4f8D//P/pP+L/0v/DP+L/33/CP+L/1P/GP8r/8//D/+v/8r/D/+v//r/A/97/xT/jf9z/xT/i//R/8H/6f8C//P/q/+L/8r/g//h/wP/8/+q/4v/A/9Q/4v/CP///1H/EP+L/wP/UP+L/wj///9R/wj/i/9N/wj/i/9F//z/if9L/wz/i/9L/xz/D/+v/0v/GP+J/wP/i/8G/wP/yP9f/4n/Dv+J/0P/EP9e/1v/yf/C/wT/AP8=
+  symbols:
+  - kind: Function
+    name: ?AllocateMemory@CVertexArray@@IAEXK@Z
+    size: 373
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CJ@KNKH@CVertexArray?3?3Vertex?5?9?5error?5cre@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CN@ENPG@CVertexArray?3?3AllocateMemory?5?9?5e@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 52
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 57
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 128
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 136
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 169
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 174
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 245
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 253
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: cc2233d3154b4e82093ceaaa5db8d58c5963c654
+  signature: Vf+L/+z/g//s/xD/i/9F/xD/U/+L/1j/fP8z/8D/if9d//D/if9F//T/9v/T/4D/4/8B/4j/Rf///8D/4/8C/zn/Rf8I/4n/Rf/4/37/XP+L/0X/DP9X/1b/if9F/wz/i/9F/wz/i/8A/zv/Rf/0/3T/FP+L/03/EP+J/0X/9P///3H/TP9Q/+j/AAAAAAAAAABZ/4j/Rf///1n/i/9F//j/i/9N//D/0f/4/w//tv/7/43/NP8I/4r/Rf///4v/z/+6//D/AP8A/wD/0//6/9L/4P+D/0X/DP8E/4D/8/8E/yL/Fv8K/8L///9F//j/iP8G/4v/Rf/4/zv/Rf8I/3z/rv9e/1//W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?PutDstSpan_PALETTE4@@YAXJPAKPAUBLT_DATA@@@Z
+    size: 135
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?FindClosest_PALETTE4@@YAEKPAUtagPALETTEENTRY@@@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 69
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

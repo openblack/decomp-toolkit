@@ -1,0 +1,361 @@
+- symbol: 0
+  hash: a7a653e7cee1a6fd6c166cc7a6eda791e27c0c1f
+  signature: Vf+L/+z/gf/s/+T/AP8A/wD/U/9W/1f/av8B/4v/2f9Y/zn/Q/8Q/w//hf/A/wH/AP8A/zP///85/3v/CP8P/4X/tf8B/wD/AP9X/4n/Q/8U////Ff8AAAAAAAAAAI3/Tf/M/77/AAAAAAAAAABR/1b/UP+J/0X//P///xX/AAAAAAAAAACF/8D/D/+F/5//AP8A/wD/i/9F//z/av8E/8f/Rf/M/wj/AP8A/wD/x/9F/9D/AAAAAAAAAACJ/33/1P+J/33/2P+J/0X/3P+J/33/4P+J/33/5P///xX/AAAAAAAAAACJ/0X/6P+N/0X/zP9Q/4n/ff/s/4n/df/w////Ff8AAAAAAAAAAGb/hf/A/3X/X/+//wAAAAAAAAAAg//J////M//A/43/lf8c//////////L/rv/3/9H/K//5/8f/Rf+c/8T/C/93/8j/i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/xz/////////g//h/wP/8/+k/1n/jf+1/xz/////////jf+9/xz/////////x/9F/6D/xf8D/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAL7/AAAAAAAAAAAz////av9Q/4n/ff/4/4n/ff/0////Ff8AAAAAAAAAAIP/+P8B/37/Wv9o/wAAAAAAAAAA//8V/wAAAAAAAAAAO//H/3X/D/9o/wAAAAAAAAAA//8V/wAAAAAAAAAAO//H/3T/PP9o/wAAAAAAAAAAUP///xX/AAAAAAAAAACL/9D/O//X/3T/Kv9q/wr/M//A/1n/jf99/6T/8/+r/43/Rf+k/8f/Rf+k/yj/AP8A/wD/UP+L/0P/cP///7D/PP8F/wD/AP///9L/i/9F/6j/i/9N/6z/M////+v/Bv+L/03/9P+L/0X/+P9X////df/8/1f///9z/wz///9z/zj///9z/zz/Uf9Q/2j/AP8A/wD/kP9W/1b/V////xX/AAAAAAAAAAA7/8f/if9D/wj/df9Y/7//AAAAAAAAAACD/8n///8z/8D/jf+V/xz/////////8v+u//f/0f8r//n/x/9F/5z/xP8L/3f/yP+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/HP////////+D/+H/A//z/6T/Wf+N/7X/HP////////+N/73/HP/////////H/0X/oP/8/wP/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAX/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?_CreateDeviceWindow@CD3duContext@@AAEXXZ
+    size: 479
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetModuleHandleA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04PMEO@D3DX?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetClassInfoA@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DeviceWindowProc@@YGJPAUHWND__@@IIJ@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetStockObject@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__RegisterClassA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DG@CGBL@CD3duContext?3?3_D3duInitialize?5?9?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetSystemMetrics@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0L@HKL@user32?4dll?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__LoadLibraryA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BA@LJCP@GetMonitorInfoA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetProcAddress@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CreateWindowExA@48
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EE@EPIO@CD3duContext?3?3_D3duInitialize?5?9?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 43
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 63
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 90
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 111
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 130
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 140
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 215
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 223
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 228
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 244
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 254
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 260
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 269
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 275
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 284
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 291
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 375
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 387
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 462
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 470
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+- symbol: 0
+  hash: b228fb31613d7033396344a62167eb08493cdad2
+  signature: Vf+L/+z/gf/s/2z/Af8A/wD/U/9W/1f/av8B/4v/2f9Y/zn/Q/8Q/w//hf/W/wH/AP8A/zP///85/3v/CP8P/4X/y/8B/wD/AP9X/4n/Q/8U////Ff8AAAAAAAAAAI3/Tf/M/77/AAAAAAAAAABR/1b/UP+J/0X//P///xX/AAAAAAAAAACF/8D/D/+F/6r/AP8A/wD/i/9F//z/av8E/8f/Rf/M/wj/AP8A/wD/x/9F/9D/AAAAAAAAAACJ/33/1P+J/33/2P+J/0X/3P+J/33/4P+J/33/5P///xX/AAAAAAAAAACJ/0X/6P+N/0X/zP9Q/4n/ff/s/4n/df/w////Ff8AAAAAAAAAAGb/hf/A/3X/av+N/43/HP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/HP/////////y/67/9//R/yv/+f/H/0X/nP/E/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf+U//7//////4P/4f8D//P/pP9Z/43/tf8c/////////43/vf+U//7//////8f/Rf+g/8X/A/8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAAC+/wAAAAAAAAAAM////2r/UP+J/33/+P+J/33/9P///xX/AAAAAAAAAACD//j/Af9+/1r/aP8AAAAAAAAAAP//Ff8AAAAAAAAAADv/x/91/w//aP8AAAAAAAAAAP//Ff8AAAAAAAAAADv/x/90/zz/aP8AAAAAAAAAAFD///8V/wAAAAAAAAAAi//Q/zv/1/90/yr/av8K/zP/wP9Z/43/ff+k//P/q/+N/0X/pP/H/0X/pP8o/wD/AP8A/1D/i/9D/3D///+w/zz/Bf8A/wD////S/4v/Rf+o/4v/Tf+s/zP////r/wb/i/9F//j/i/9N//T/V////3X//P9X////c/8M////c/84////c/88/1H/UP9o/wD/AP8A/5D/Vv9W/1f///8V/wAAAAAAAAAAO//H/4n/Q/8I/3X/Y/+N/43/HP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+N/5X/HP/////////y/67/9//R/yv/+f/H/0X/nP/E/wv/d//I/4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf+U//7//////4P/4f8D//P/pP9Z/43/tf8c/////////43/vf+U//7//////8f/Rf+g//z/A/8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABf/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?_CreateDeviceWindow@CD3duContext@@AAEXXZ
+    size: 501
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetModuleHandleA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_04PMEO@D3DX?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetClassInfoA@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?DeviceWindowProc@@YGJPAUHWND__@@IIJ@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__GetStockObject@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__RegisterClassA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DG@CGBL@CD3duContext?3?3_D3duInitialize?5?9?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetSystemMetrics@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0L@HKL@user32?4dll?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__LoadLibraryA@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BA@LJCP@GetMonitorInfoA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __imp__GetProcAddress@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__CreateWindowExA@48
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0EE@EPIO@CD3duContext?3?3_D3duInitialize?5?9?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 43
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 51
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 63
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 90
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 111
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 130
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 146
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 151
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 226
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 234
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 239
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 255
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 265
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 271
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 280
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 286
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 295
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 302
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 386
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 404
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 409
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 484
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 492
+    kind: x86_rel32
+    symbol: 10
+    addend: -4

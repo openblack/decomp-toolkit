@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 19fe30bcca54718ee3c22a305c6cdda65381cf1b
+  signature: Vf+L/+z/i/9F/wj/M//S/7n//f8P/wD/AP/3//H/i//C/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?CD3duAllocHash@@YAKPAX@Z
+    size: 19
+    flags: 1
+    section: .text
+  relocations: []

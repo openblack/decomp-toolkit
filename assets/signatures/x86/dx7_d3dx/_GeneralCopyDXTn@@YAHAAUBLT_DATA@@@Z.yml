@@ -1,0 +1,78 @@
+- symbol: 0
+  hash: 920d4f7b7939b68428849e6375a0c220e4f820a7
+  signature: Vv+L/3T/JP8I/1f/g/9+/1D/AP+L/37/bP90/zf/i/9G/2T/JP/8/4P/wP8E/zv/x/+J/0b/bP99/xb/Vv/o/wAAAAAAAAAAi/9G/2z/g/9G/2z/BP85/37/bP9Z/4n/Rv9k/3z/6v9W/4n/fv9s/+j/AAAAAAAAAABZ/2r/Af9Y/+n/mf8A/wD/AP+L/4b/kP8A/wD/AP9T/5n/i//Y/zP/2v8r/9r/gf/7/wD/AP8B/wD/df88/4v/Rv90/4v/Tv9k/yv/hv+I/wD/AP8A/yv/yP+D/+H//P+N/0T/Af8E/zv/x/+J/0b/bP99/xb/Vv/o/wAAAAAAAAAAi/9G/2z/g/9G/2z/BP85/37/bP9Z/4n/Rv9k/3z/6v9W/4n/fv9s/+j/AAAAAAAAAABZ/4H/+/8A/wD/Av8A/37/Bf9q/wH/W//r/wv/uP8A/wD/BP8A/zP/0v/3//P/i//Y/4v/Rv9k/wP/w/87/8f/if9G/2z/ff8V/1b/6P8AAAAAAAAAAIv/Rv9s/wH/Xv9s/zn/fv9s/1n/if9G/2T/fP/r/1b/if9+/2z/6P8AAAAAAAAAAFn/av8B/1j/W/9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?GeneralCopyDXTn@@YAHAAUBLT_DATA@@@Z
+    size: 226
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GeneralCopy@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 32
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 57
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 122
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 147
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 190
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 214
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: cb217910ebbdfe907bb437c01b0270584bfdbaf2
+  signature: Vf+L/+z/Vv+L/3X/CP9X/4P/fv9Q/wD/i/9+/2z/dP83/4v/Rv9k/yT//P+D/8D/BP87/8f/if9G/2z/ff8W/1b/6P8AAAAAAAAAAIv/Rv9s/4P/Rv9s/wT/Of9+/2z/Wf+J/0b/ZP98/+r/Vv+J/37/bP/o/wAAAAAAAAAAWf9q/wH/WP/p/5n/AP8A/wD/i/+G/5D/AP8A/wD/U/+Z/4v/2P8z/9r/K//a/4H/+/8A/wD/Af8A/3X/PP+L/0b/dP+L/07/ZP8r/4b/iP8A/wD/AP8r/8j/g//h//z/jf9E/wH/BP87/8f/if9G/2z/ff8W/1b/6P8AAAAAAAAAAIv/Rv9s/4P/Rv9s/wT/Of9+/2z/Wf+J/0b/ZP98/+r/Vv+J/37/bP/o/wAAAAAAAAAAWf+B//v/AP8A/wL/AP9+/wX/av8B/1v/6/8L/7j/AP8A/wT/AP8z/9L/9//z/4v/2P+L/0b/ZP8D/8P/O//H/4n/Rv9s/33/Ff9W/+j/AAAAAAAAAACL/0b/bP8B/17/bP85/37/bP9Z/4n/Rv9k/3z/6/9W/4n/fv9s/+j/AAAAAAAAAABZ/2r/Af9Y/1v/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?GeneralCopyDXTn@@YAHAAUBLT_DATA@@@Z
+    size: 229
+    flags: 2
+    section: .text
+  - kind: Function
+    name: ?GeneralCopy@@YAHAAUBLT_DATA@@@Z
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 34
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 124
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 149
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 192
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 216
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

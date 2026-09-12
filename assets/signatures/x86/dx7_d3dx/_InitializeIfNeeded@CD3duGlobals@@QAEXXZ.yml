@@ -1,0 +1,241 @@
+- symbol: 0
+  hash: bdb62c438bc73ddd3dc5b7aef0d739932354fc0d
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1P/Vv9q/wH/i//x/1v/Of8e/w//hP/d/wD/AP8A/1f/aP8Y/wH/AP8A/+j/AAAAAAAAAACL//j/Wf+J/33/8P8z/8D/O//4/4n/Rf/8/3T/Cf+L/8//6P8AAAAAAAAAAIv/x/+D/8////9o/5T/Af8A/wD/if99//z/if9G/xT/6P8AAAAAAAAAAFn/i//I/4n/Tf/w/4X/yf+J/13//P90/wf/6P8AAAAAAAAAAOv/Av8z/8D/av8Q/4n/ff/8/4n/Rv8E/+j/AAAAAAAAAABZ/4v/yP+J/03/8P+F/8n/x/9F//z/Av8A/wD/AP90/wf/6P8AAAAAAAAAAOv/Av8z/8D/i/9O/wT/if99//z/if9G/wj/6P8AAAAAAAAAAGr/EP/o/wAAAAAAAAAAWf+L/8j/if9N//D/hf/J/8f/Rf/8/wP/AP8A/wD/dP8N////dv8E////dv8I/+j/AAAAAAAAAADr/wL/M//A/2r/EP+J/33//P+J/0b/DP/o/wAAAAAAAAAAi//4/1n/if99//D/hf///8f/Rf/8/wT/AP8A/wD/dP8P/4v/z//o/wAAAAAAAAAAx/8H/wAAAAAAAAAA6/8C/zP///+J/37/EP+J/x7/X/+L/03/9P9e/2T/if8N/wAAAAAAAAAAW//J/8P/
+  symbols:
+  - kind: Function
+    name: ?InitializeIfNeeded@CD3duGlobals@@QAEXXZ
+    size: 261
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43304
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2CD3duAlloc@@SAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3dxFile@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CHelInfo@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CDDrawDeviceList@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Initialize@CHelInfo@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duDeviceList@@QAE@PAVCDDrawDeviceList@@PAVCHelInfo@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$ListT@VCD3duContextNode@@@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CD3duContextList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 55
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 94
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 111
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 133
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 151
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 158
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 186
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 203
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 227
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 233
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 254
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+- symbol: 0
+  hash: 3e5677e315c90e6a8c16b845a26362960f348af2
+  signature: uP8AAAAAAAAAAOj/AAAAAAAAAABR/1b/i//x/4P/Pv8B/w//hP/h/wD/AP8A/1f/aP8Y/wH/AP8A/+j/AAAAAAAAAACL//j/Wf+J/33/8P+D/2X//P8A/4X///90/wv/i//P/+j/AAAAAAAAAACL/8f/6/8C/zP/wP+D/8////9o/5T/Af8A/wD/if99//z/if9G/xT/6P8AAAAAAAAAAFn/i//I/4n/Tf/w/4X/yf/H/0X//P8B/wD/AP8A/3T/B//o/wAAAAAAAAAA6/8C/zP/wP9q/xD/if99//z/if9G/wT/6P8AAAAAAAAAAFn/i//I/4n/Tf/w/4X/yf/H/0X//P8C/wD/AP8A/3T/B//o/wAAAAAAAAAA6/8C/zP/wP+L/07/BP+J/33//P+J/0b/CP/o/wAAAAAAAAAAav8Q/+j/AAAAAAAAAABZ/4v/yP+J/03/8P+F/8n/x/9F//z/A/8A/wD/AP90/w3///92/wT///92/wj/6P8AAAAAAAAAAOv/Av8z/8D/av8Q/4n/ff/8/4n/Rv8M/+j/AAAAAAAAAACF/8D/Wf90/xT/g/9g/wT/AP+D/2D/CP8A/4P/YP8M/wD/x/8A/wAAAAAAAAAA6/8C/zP/wP+J/0b/EP/H/wb/Af8A/wD/AP9f/4v/Tf/0/17/ZP+J/w3/AAAAAAAAAADJ/8P/
+  symbols:
+  - kind: Function
+    name: ?InitializeIfNeeded@CD3duGlobals@@QAEXXZ
+    size: 261
+    flags: 1
+    section: .text
+  - kind: Unknown
+    name: $L43245
+    size: 0
+    flags: 2
+    section: .text$x
+  - kind: Function
+    name: __EH_prolog
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3dxFile@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CHelInfo@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CDDrawDeviceList@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?Initialize@CHelInfo@@QAEXXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0CD3duDeviceList@@QAE@PAVCDDrawDeviceList@@PAVCHelInfo@@@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_7CD3duContextList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __except_list
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 1
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 6
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 51
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 98
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 115
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 155
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 162
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 190
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 207
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 230
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 255
+    kind: x86_abs32
+    symbol: 10
+    addend: 0

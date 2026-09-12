@@ -1,0 +1,38 @@
+- symbol: 0
+  hash: 54b8476841d18fd7a531636a163cb3d010024c79
+  signature: Vf+L/+z///91/wz///91/wj/6P8AAAAAAAAAAIv/Rf8M/1n/Wf9q/xD/Wf/2/0D/A////3X/A/+D/yD/AP+D/8D/BP9J/3X/8f9d/8P/
+  symbols:
+  - kind: Function
+    name: ?XXDecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 39
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 19d8ffab0345bf16f22bf4e2ee15000d82a34d02
+  signature: //90/yT/CP///3T/JP8I/+j/AAAAAAAAAACL/0T/JP8Q/1n/Wf9q/xD/Wf/2/0D/A////3X/A/+D/yD/AP+D/8D/BP9J/3X/8f/D/w==
+  symbols:
+  - kind: Function
+    name: ?XXDecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 38
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeBlockRGB@@YAXPAUS3TCBlockRGB@@QAUS3TC_COLOR@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 9
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

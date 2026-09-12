@@ -1,0 +1,213 @@
+- symbol: 0
+  hash: d67ca996d92e527de291038ad23bd273393db295
+  signature: i/9E/yT/DP9T/4v/XP8k/xT/Vv9X/wX/xP8A/wD/AP9q/xD/v/8AAAAAAAAAAFn/i//w/zP/0v/z/6b/df8i////dP8k/xD/i/8N/wAAAAAAAAAA6P8AAAAAAAAAAIX/wP+J/0P/UP90/zL/x/9D/1T/Af8A/wD/AP/p/6H/AP8A/wD/av8Q/7//AAAAAAAAAABZ/4v/8P8z/9L/8/+m/3X/J////3T/JP8Q/4v/Df8AAAAAAAAAAOj/AAAAAAAAAACF/8D/if9D/0z/df8I/4P/Y/9w/wD/M//A/+v/ef/H/0P/WP8B/wD/AP8A/+v/av9q/xD/v/8AAAAAAAAAAFn/i//w/zP/0v/z/6b/df8U/6H/AAAAAAAAAACL/0D/BP/H/4D/fP8B/wD/AP8B/wD/AP8A/+v/Rv9q/xD/v/8AAAAAAAAAAFn/i//w/zP/0v/z/6b/df8U/6H/AAAAAAAAAACL/0D/BP/H/4D/gP8B/wD/AP8B/wD/AP8A/+v/Iv9q/xD/i//w/1n/v/8AAAAAAAAAADP/wP/z/6b/df8S/6H/AAAAAAAAAACL/0D/BP/H/4D/hP8B/wD/AP8B/wD/AP8A/2r/Af9Y/4n/Q/9w/1//Xv9b/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_D3DEnumCBFindHWDevices@CDDrawDeviceList@@SGJPAD0PAU_D3DDeviceDesc7@@PAX@Z
+    size: 239
+    flags: 1
+    section: .text
+  - kind: Object
+    name: _IID_IDirect3DHALDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3duStrDup@CD3duGlobals@@QAEPADPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DTnLHalDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRGBDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRefDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DNullDevice
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 43
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 69
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 88
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 93
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 124
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 138
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 160
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 174
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 199
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 210
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+- symbol: 0
+  hash: 38153e539ef0d19a1c49c8a796cd636cea571867
+  signature: Vf+L/+z/U/+L/13/FP9W/1f/hf/b/3X/F/9o/wAAAAAAAAAAaP9I/wP/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz/i/9F/xD/av8Q/wX/xP8A/wD/AP9Z/7//AAAAAAAAAACL//D/M//S//P/pv91/yH///91/wj/i/8N/wAAAAAAAAAA6P8AAAAAAAAAAIX/wP+J/0P/UP90/zH/x/9D/1T/Af8A/wD/AP/p/6D/AP8A/wD/av8Q/7//AAAAAAAAAABZ/4v/8P8z/9L/8/+m/3X/Jv///3X/CP+L/w3/AAAAAAAAAADo/wAAAAAAAAAAhf/A/4n/Q/9M/3X/CP+D/2P/cP8A/zP/wP/r/3n/x/9D/1j/Af8A/wD/AP/r/2r/av8Q/7//AAAAAAAAAABZ/4v/8P8z/9L/8/+m/3X/FP+h/wAAAAAAAAAAi/9A/wT/x/+A/3z/Af8A/wD/Af8A/wD/AP/r/0b/av8Q/7//AAAAAAAAAABZ/4v/8P8z/9L/8/+m/3X/FP+h/wAAAAAAAAAAi/9A/wT/x/+A/4D/Af8A/wD/Af8A/wD/AP/r/yL/av8Q/4v/8P9Z/7//AAAAAAAAAAAz/8D/8/+m/3X/Ev+h/wAAAAAAAAAAi/9A/wT/x/+A/4T/Af8A/wD/Af8A/wD/AP9q/wH/WP+J/0P/cP9f/17/W/9d/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: ?_D3DEnumCBFindHWDevices@CDDrawDeviceList@@SGJPAD0PAU_D3DDeviceDesc7@@PAX@Z
+    size: 266
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_09HINL@lpContext?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@OFOJ@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DHALDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ?g_pGlobals@@3PAVCD3duGlobals@@A
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?D3duStrDup@CD3duGlobals@@QAEPADPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DTnLHalDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRGBDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DRefDevice
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _IID_IDirect3DNullDevice
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 14
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 24
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 29
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 48
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 70
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 96
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 114
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 119
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 150
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 164
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 186
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 200
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 225
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 236
+    kind: x86_abs32
+    symbol: 5
+    addend: 0

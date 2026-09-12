@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: f36e7031363f1285bd7a1da586d50e715963488e
+  signature: Vf+L/+z/i/9F/xD/Vv8z//b/M//J/zn/df8I/4v/UP98/4n/df8Q/37/Xf9X/4v/ff8M/1P/i/8H/zv/Rf8Q/3T/Q/+L/8j/if9F/xD/wf/p/wP/gf/h/wD/H/8f/wD/u/8g/xD/EP8A/yv/wf+L/8j/wf/p/wL/g//h/z//K//Z/wP/w/+L/8j/i//Y/8H/6f8F/4H/4f8A/wD/B/8A/4H/4/8A/+D/AP8A/wv/y/8l/8D/AP8A/wD/wf/p/wX/C//I/8H/6f8G/4j/DP8y/0b/g//H/wT/O/91/wj/fP+q/1v/X/9e/13/w/8=
+  symbols:
+  - kind: Function
+    name: ?PutDstSpan_R3G3B2@@YAXJPAKPAUBLT_DATA@@@Z
+    size: 118
+    flags: 2
+    section: .text
+  relocations: []

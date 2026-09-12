@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 75b483855e1a6da831258082422d05324c047fff
+  signature: Vf+L/+z/av8B/1j/Xf/C/wj/AP8=
+  symbols:
+  - kind: Function
+    name: ?LeftBelongsCloserToListHead@?$ListT@VCSurfaceFormatNode@@@@UAEHPAVCSurfaceFormatNode@@0@Z
+    size: 10
+    flags: 1
+    section: .text
+  relocations: []

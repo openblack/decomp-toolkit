@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 0d738a83fc704246d50e4498e87a38a51eb6906c
+  signature: Vf+L/+z/gf/s/4z/AP8A/wD/Vv+L/3X/CP9X/2r/H/9Z/zP/wP+N/73/dP/////////z/6v/i/8G/43/jf90/////////1H/Vv/H/4X/dP////////98/wD/AP8A////UP9Y/4X/wP98/zv/i/9F/+D/i/9N/wz/Jf8A//z/AP8A/zv/wf91/w3/i/9F/xD/Vv+J/zD/i/8G////UP8E/+v/Hf8z/8D/jf99//D/q/+r////df8Q/6v/q/+L/wb/if9N//T/jf9N//D/Uf9W////UP8w/4X/wP98/wL/M//A/1//Xv/J/8P/
+  symbols:
+  - kind: Function
+    name: ?GetTopCubeFace@@YAJPAUIDirectDrawSurface7@@KPAPAU1@@Z
+    size: 117
+    flags: 1
+    section: .text
+  relocations: []

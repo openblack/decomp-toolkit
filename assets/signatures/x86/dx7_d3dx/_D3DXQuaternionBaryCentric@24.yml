@@ -1,0 +1,90 @@
+- symbol: 0
+  hash: e059b37f25e7b2267fd4e2960556a9ac52f173cf
+  signature: Vf+L/+z/g//s/yD/2f9F/xz/2P9F/xj/Vv9X/9n/Vf8Y/9n/Bf8AAAAAAAAAANj/2f/f/+D/nv93/x7/2P8V/wAAAAAAAAAA3//g/57/d/8T/4v/df8M/zn/df8I/93/2P90/1D/i/99/wj/pf+l/6X/pf/r/0f/2f/A/1H/jf9F/+D/2f8c/yT///91/xD/3f/Y////df8M/1D/6P8AAAAAAAAAANn/Rf8Y/1H/jf9F//D/2f8c/yT///91/xT///91/wz/UP/o/wAAAAAAAAAA2f9F/xz/2P91/xj/Uf+N/0X/8P/Z/xz/JP9Q/43/Rf/g/1D///91/wj/6P8AAAAAAAAAAIv/Rf8I/1//Xv/J/8L/GP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionBaryCentric@24
+    size: 140
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T41914
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T41915
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXQuaternionSlerp@16
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 19
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 32
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 79
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 101
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: c087b0e9dcd03a94a2d8e510d759a92fb232108f
+  signature: Vf+L/+z/g//s/yD/U/+L/13/CP9W/1f/hf/b/w//hP+L/wD/AP8A/4v/df8M/4X/9v8P/4T/gP8A/wD/AP+D/33/EP8A/3T/ev+D/33/FP8A/3T/dP/Z/0X/HP/Y/0X/GP/Z/1X/CP/Z/wX/AAAAAAAAAADY/9n/3//g/57/d/8Z/9j/Ff8AAAAAAAAAAN//4P+e/3f/Dv87/97/3f/Y/3T/Sf+L//v/pf+l/6X/pf/r/0H/2f/A/1H/jf9F/+D/2f8c/yT///91/xD/3f/Y/1b/UP/o/wAAAAAAAAAA2f9F/wj/Uf+N/0X/8P/Z/xz/JP///3X/FP9W/1D/6P8AAAAAAAAAANn/Rf8c/9j/df8I/1H/jf9F//D/2f8c/yT/UP+N/0X/4P9Q/1P/6P8AAAAAAAAAAIv/w//r/wL/M//A/1//Xv9b/8n/wv8Y/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXQuaternionBaryCentric@24
+    size: 168
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T42032
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T42033
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXQuaternionSlerp@16
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 54
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 67
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 107
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 127
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 151
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

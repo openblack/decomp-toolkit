@@ -1,0 +1,19 @@
+- symbol: 0
+  hash: e0c30fa15bc327883c5863a5ffb195d8db75268e
+  signature: Vf+L/+z/i/9B/wz/hf/A/3T/NP+L/0j/BP87/03/CP91/xD/i/9I/wj/O/9N/wz/df8I/4v/SP8M/zv/Tf8Q/3T/BP+L/wD/6//g/4P/ff8U/wD/dv8N////df8U/43/SP8o/+j/AAAAAAAAAADr/wf/av8B/1j/6/8C/zP/wP9d/8L/EP8A/w==
+  symbols:
+  - kind: Function
+    name: ?DoesVideoModeExist@CVideoModeList@@QAEHKKKK@Z
+    size: 68
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FindRefreshRate@CRefreshRateList@@QAEHK@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 51
+    kind: x86_rel32
+    symbol: 1
+    addend: -4

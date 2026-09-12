@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: ca54d964ea60be9472ad272b9596c42a612dc774
+  signature: Vv+L/3T/JP8I/1f///9O/xD/i/9+/xD/hf///3X/Fv+F//b/dP8J/4v/zv/o/wAAAAAAAAAA6/8C/zP/9v9W/+j/AAAAAAAAAABZ/4v/x/9f/17/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?Release@CD3DXMatrixStack@@UAGKXZ
+    size: 45
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CD3DXMatrixStack@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 23
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 33
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: fd657c3a2798ace25a33723f8979af6ba14764c7
+  signature: Vf+L/+z/Vv+L/3X/CP9X////Tv8Q/4v/fv8Q/4X///91/xb/hf/2/3T/Cf+L/87/6P8AAAAAAAAAAOv/Av8z//b/Vv/o/wAAAAAAAAAAWf+L/8f/X/9e/13/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?Release@CD3DXMatrixStack@@UAGKXZ
+    size: 48
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??1CD3DXMatrixStack@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 25
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 35
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

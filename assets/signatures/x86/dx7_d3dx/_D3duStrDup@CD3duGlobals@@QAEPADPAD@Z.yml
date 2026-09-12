@@ -1,0 +1,65 @@
+- symbol: 0
+  hash: 7513417b20195058471c34becf49ee9f5ae2d70f
+  signature: V/+L/3z/JP8I/4P/yf///zP/wP/y/67/9//R/1H/6P8AAAAAAAAAAIv/0P9Z/4X/0v90/yX/i/98/yT/CP+D/8n///8z/8D/Vv/y/67/9//R/yv/+f+L/8H/i//3/4v/+v/B/+n/Av/z/6X/i//I/4v/wv+D/+H/A//z/6T/Xv9f/8L/BP8A/w==
+  symbols:
+  - kind: Function
+    name: ?D3duStrDup@CD3duGlobals@@QAEPADPAD@Z
+    size: 68
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 16
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+- symbol: 0
+  hash: 7744c0454698372c47bf0d5087d0a474acbab074
+  signature: Vf+L/+z/g/99/wj/AP9W/1f/df8X/2j/AAAAAAAAAABo/wT/Av8A/wD/aP8AAAAAAAAAAOj/AAAAAAAAAACD/8T/DP+L/33/CP+D/8n///8z/8D/8v+u//f/0f9R/+j/AAAAAAAAAACL/9D/Wf+F/9L/dP8i/4v/ff8I/4P/yf///zP/wP/y/67/9//R/yv/+f+L/8H/i//3/4v/+v/B/+n/Av/z/6X/i//I/4v/wv+D/+H/A//z/6T/X/9e/13/wv8E/wD/
+  symbols:
+  - kind: Function
+    name: ?D3duStrDup@CD3duGlobals@@QAEPADPAD@Z
+    size: 99
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_08BLDP@szString?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DK@BMII@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 12
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 27
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 48
+    kind: x86_rel32
+    symbol: 4
+    addend: -4

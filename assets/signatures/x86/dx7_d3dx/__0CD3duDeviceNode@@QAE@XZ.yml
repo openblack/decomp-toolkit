@@ -1,0 +1,56 @@
+- symbol: 0
+  hash: a0442b20bbcbea46e572cf109d772514fe48335e
+  signature: i//R/1f/M//J/2r/X/+N/4L/9P8D/wD/AP+J/wr/jf96/xD/if9I/wT/if9I/wj/if9I/wz/x/8A/wAAAAAAAAAAif9K/wT/if9K/wj/if9K/wz/Wf8z/8D/av9f//P/q/9Z/43/uv+M/wH/AP8A//P/q/9q/zv/jf+6/wj/A/8A/wD/Wf/z/6v/av9Q/43/uv8E/wT/AP8A/1n/8/+r/4v/wv9f/8P/
+  symbols:
+  - kind: Function
+    name: ??0CD3duDeviceNode@@QAE@XZ
+    size: 84
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CSurfaceFormatList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 29
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+- symbol: 0
+  hash: 611dea0c78ae976a4d9942f0d3acf0547c774e9a
+  signature: Vv9X/4v/8f/o/wAAAAAAAAAAg/8m/wD/jf++//T/A/8A/wD/i//P/+j/AAAAAAAAAABq/1//x/8H/wAAAAAAAAAAg/9m/wT/AP+D/2b/CP8A/4P/Zv8M/wD/Wf8z/8D/jf9+/xD/8/+r/2r/X/+N/77/jP8B/wD/AP9Z//P/q/9q/zv/jf++/wj/A/8A/wD/Wf/z/6v/av9Q/43/vv8E/wT/AP8A/1n/8/+r/4v/xv9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ??0CD3duDeviceNode@@QAE@XZ
+    size: 91
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??0?$ListT@VCSurfaceFormatNode@@@@QAE@XZ
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_7CSurfaceFormatList@@6B@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 5
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 29
+    kind: x86_abs32
+    symbol: 3
+    addend: 0

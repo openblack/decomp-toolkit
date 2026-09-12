@@ -1,0 +1,41 @@
+- symbol: 0
+  hash: 10e46ea7776cc9f07223adf9475ebb9035afefa1
+  signature: Vf+L/+z/Uf+L/0X/CP9T/4v/Xf8M/4P/4P8D/4P/4/8D/1f/wf/j/wL/C//Y/4v/Rf8Q/4v/eP8c/1f///91/wz///91/wj/6P8AAAAAAAAAAIP/xP8M/4X/wP90/wb/jf9E/5//EP/r/33/Vv+L/zf/if99//z/hf/2/3T/Hv9W////df8M////df8I/+j/AAAAAAAAAACD/8T/DP+F/8D/df8H/4n/df/8/4v/Nv/r/+L/hf/2/3X/Pf+D/2X//P8A/4v/B/+L//f/hf/A/3T/Cf+J/3X//P+L//D/i/8G/+v/8/+L/0X/EP+D/zj/AP90/wn/UP9W/+j/AAAAAAAAAABZ/1n/i/9F/wj///91/xD/if9G/wj/i/9F/wz/Vv+J/0b/DP/o/wAAAAAAAAAAWf9Z/zv//v90/w//i/9N//z/i/8G/4n/Af+L/0X/EP+J/z7/if9w/xz/jf9E/57/EP9e/1//W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?GetPtrToCachedPixel@@YAPAKJJPAUSURFACE_DATA@@@Z
+    size: 183
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?InCacheBlock@@YAHJJPAUPIXELCACHE_BLOCK@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?FlushCacheBlock@@YAXPAUPIXELCACHE_BLOCK@@PAUSURFACE_DATA@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?LoadCacheBlock@@YAXPAUPIXELCACHE_BLOCK@@PAUSURFACE_DATA@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 37
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 72
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 126
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 149
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

@@ -1,0 +1,539 @@
+- symbol: 0
+  hash: 6847c498cb7943f060f52ca55695298623badf6e
+  signature: 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
+  symbols:
+  - kind: Function
+    name: ?LoadFromDDS@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@PAK5@Z
+    size: 842
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_02JKAF@rb?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _fopen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _ftell
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fread
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fclose
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CopyInSingleMipChain@@YAJPAUIDirectDrawSurface7@@PAPAEPAE@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 18
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 59
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 76
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 90
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 117
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 130
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 163
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 177
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 243
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 260
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 291
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 317
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 330
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 350
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 362
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 375
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 456
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 505
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 658
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 698
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 719
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 775
+    kind: x86_rel32
+    symbol: 10
+    addend: -4
+  - offset: 796
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 830
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+- symbol: 0
+  hash: b4bf1adb1119ffa4ee01978c17e8be1515aa918e
+  signature: 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AP+J/13/4P+J/13/5P+L/wj/Uv9Q////Uf8w/4v/+P87//v/D/+M/67/AP8A/wD/Of9d/wz/D/+E/6X/AP8A/wD/i/9d/+j/jf9F//j/U/9Q////df8M/+j/AAAAAAAAAACL//j/i/9F/wz/g//E/wz/i/8I/1D///9R/wj/hf///w//jP+M/wD/AP8A/zn/Xf/4/3b/F/9o/wAAAAAAAAAAaP9g/wb/AP8A/2j/AAAAAAAAAADo/wAAAAAAAAAAg//E/wz///9F//z/g//G/wT/g/99//z/Bv8P/4z/bP////////+L/33/8P9X/+j/AAAAAAAAAACL/0X/CP9Z/4v/Tf8Q/4n/Af+N/4X/fP////////9Q/+j/AAAAAAAAAACL/03/FP+J/wH/i/9F/6D/i/9N/xz/Jf8A//z/AP8A/4n/Af+L/0X/IP+L/43/XP////////+J/wj/i/9F/xj/i/+N/0D/////////if8I/4v/jf88/////////4n/SP8E/zP/wP/r/13/aP8AAAAAAAAAAFP/6P8AAAAAAAAAAFn/Wf///3X/8P/o/wAAAAAAAAAAi/9F/wj/Wf9Q/4v/CP///1H/CP+L/8f/6/86/2j/AAAAAAAAAABT/+j/AAAAAAAAAACL/zX/AAAAAAAAAABZ/1n////W/4X/wP9//wb////W/4v/8P/r/xD////W/4v/8P+B/+b//////wD/AP+B/87/AP8A/wf/gP///3X//P/o/wAAAAAAAAAAWf+L/8b/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?LoadFromDDS@@YAJQADPAUIDirectDraw7@@PAPAUIDirectDrawSurface7@@PAW4_D3DX_SURFACEFORMAT@@PAUtagSIZE@@PAK5@Z
+    size: 1196
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_02JKAF@rb?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _fopen
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BL@KPKN@Couldn?8t?5find?5texture?5file?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _fseek
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BN@GMK@Couldn?8t?5access?5texture?5file?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__GetLastError@0
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _ftell
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: _fread
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CC@CJGH@Invalid?5file?5format?5for?5DDS?5file@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _fclose
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ??2@YAPAXI@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CO@PNOC@Out?5Of?5Memory?5trying?5to?5load?5fil@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DF@COBJ@Failed?5to?5create?5DDraw?5surface?5t@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?CopyInSingleMipChain@@YAJPAUIDirectDrawSurface7@@PAPAEPAE@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??3@YAXPAX@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BI@LCID@pSrcData?5?$DM?$DN?5pSrcDataMax?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DF@LMFO@d?3?2directx?4chk?2koolaid?2direct3d?2@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXAssert@@YAXPBDH0@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DA@MGLE@Failed?5to?5access?5surface?5when?5cr@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@EPHL@dwFirstFace?5?$CB?$DN?50?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BAL@BFGK@dwFirstFace?5?$DN?$DN?5DDSCAPS2_CUBEMAP_@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: _D3DXMakeSurfaceFormat@4
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DE@DKCI@Failed?5to?5access?5necessary?5face?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 23
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 38
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 54
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 68
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 80
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 86
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 92
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 115
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 128
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 134
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 140
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 162
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 183
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 196
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 202
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 208
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 258
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 264
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 309
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 325
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 331
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 341
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 374
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+  - offset: 400
+    kind: x86_rel32
+    symbol: 12
+    addend: -4
+  - offset: 415
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 421
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 431
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 454
+    kind: x86_rel32
+    symbol: 9
+    addend: -4
+  - offset: 468
+    kind: x86_rel32
+    symbol: 11
+    addend: -4
+  - offset: 480
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 486
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 492
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 557
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 563
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 588
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 604
+    kind: x86_rel32
+    symbol: 16
+    addend: -4
+  - offset: 632
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 642
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 647
+    kind: x86_rel32
+    symbol: 19
+    addend: -4
+  - offset: 684
+    kind: x86_abs32
+    symbol: 20
+    addend: 0
+  - offset: 690
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 698
+    kind: x86_rel32
+    symbol: 16
+    addend: -4
+  - offset: 731
+    kind: x86_abs32
+    symbol: 21
+    addend: 0
+  - offset: 741
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 746
+    kind: x86_rel32
+    symbol: 19
+    addend: -4
+  - offset: 805
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 815
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 820
+    kind: x86_rel32
+    symbol: 19
+    addend: -4
+  - offset: 945
+    kind: x86_rel32
+    symbol: 15
+    addend: -4
+  - offset: 977
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 987
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 992
+    kind: x86_rel32
+    symbol: 19
+    addend: -4
+  - offset: 1020
+    kind: x86_rel32
+    symbol: 16
+    addend: -4
+  - offset: 1041
+    kind: x86_rel32
+    symbol: 23
+    addend: -4
+  - offset: 1099
+    kind: x86_abs32
+    symbol: 24
+    addend: 0
+  - offset: 1105
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 1115
+    kind: x86_rel32
+    symbol: 16
+    addend: -4
+  - offset: 1134
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 1140
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 1146
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 1184
+    kind: x86_rel32
+    symbol: 11
+    addend: -4

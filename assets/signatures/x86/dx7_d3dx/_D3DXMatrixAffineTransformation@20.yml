@@ -1,0 +1,64 @@
+- symbol: 0
+  hash: c8369b59c0e62c937ab60e31b7b8c59823e55be0
+  signature: Vf+L/+z/g//s/0D/Vv+L/3X/CP/Z/+7/g/99/xT/AP9X/9n/Xv84/9n/7v/Z/17/NP/Z/+7/2f9e/zD/2f/u/9n/Xv8s/9n/7v/Z/17/JP/Z/+7/2f9e/yD/2f/u/9n/Xv8c/9n/7v/Z/17/GP/Z/+7/2f9e/xD/2f/u/9n/Xv8M/9n/7v/Z/17/CP/Z/+7/2f9e/wT/2f9F/wz/2f8W/9n/Vv8U/9n/Xv8o/9n/6P/Z/17/PP90/1////91/xT/jf9F/8D/UP/o/wAAAAAAAAAAi/99/xD/hf///3T/Qf/Z/0b/MP/Y/yf/jf9F/8D/UP9W/1b/2f9e/zD/2f9G/zT/2P9n/wT/2f9e/zT/2f9G/zj/2P9n/wj/2f9e/zj/6P8AAAAAAAAAANn/B//Y/0b/MP/Z/17/MP/Z/0b/NP/Y/0f/BP/Z/17/NP/Z/0b/OP/Y/0f/CP/Z/17/OP/r/wv/jf9F/8D/UP9W/1b/6P8AAAAAAAAAAIv/Rf8Y/4X/wP90/xr/2f8A/9j/Rv8w/9n/Xv8w/9n/QP8E/9j/Rv80/9n/Xv80/9n/QP8I/9j/Rv84/9n/Xv84/4v/xv9f/17/yf/C/xT/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixAffineTransformation@20
+    size: 229
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixRotationQuaternion@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 101
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 145
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 184
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+- symbol: 0
+  hash: 446f755b54dac9f5a976bfc54f8287df0706540e
+  signature: Vf+L/+z/g//s/0D/Vv+L/3X/CP+F//b/df8H/zP/wP/p/9b/AP8A/wD/2f/u/4P/ff8U/wD/V//Z/17/OP/Z/+7/2f9e/zT/2f/u/9n/Xv8w/9n/7v/Z/17/LP/Z/+7/2f9e/yT/2f/u/9n/Xv8g/9n/7v/Z/17/HP/Z/+7/2f9e/xj/2f/u/9n/Xv8Q/9n/7v/Z/17/DP/Z/+7/2f9e/wj/2f/u/9n/Xv8E/9n/Rf8M/9n/Fv/Z/1b/FP/Z/17/KP/Z/+j/2f9e/zz/dP9f////df8U/43/Rf/A/1D/6P8AAAAAAAAAAIv/ff8Q/4X///90/0H/2f9G/zD/2P8n/43/Rf/A/1D/Vv9W/9n/Xv8w/9n/Rv80/9j/Z/8E/9n/Xv80/9n/Rv84/9j/Z/8I/9n/Xv84/+j/AAAAAAAAAADZ/wf/2P9G/zD/2f9e/zD/2f9G/zT/2P9H/wT/2f9e/zT/2f9G/zj/2P9H/wj/2f9e/zj/6/8L/43/Rf/A/1D/Vv9W/+j/AAAAAAAAAACL/0X/GP+F/8D/dP8a/9n/AP/Y/0b/MP/Z/17/MP/Z/0D/BP/Y/0b/NP/Z/17/NP/Z/0D/CP/Y/0b/OP/Z/17/OP+L/8b/X/9e/8n/wv8U/wD/
+  symbols:
+  - kind: Function
+    name: _D3DXMatrixAffineTransformation@20
+    size: 240
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixRotationQuaternion@8
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: _D3DXMatrixMultiply@12
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 112
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 156
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 195
+    kind: x86_rel32
+    symbol: 2
+    addend: -4

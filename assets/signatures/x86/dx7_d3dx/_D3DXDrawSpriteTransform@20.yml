@@ -1,0 +1,155 @@
+- symbol: 0
+  hash: 5a93b0889c68b08c75dc9d848cbcedba57ec43b0
+  signature: Vf+L/+z/gf/s/7j/AP8A/wD/U/9W/1f/i/99/wz/M//b/zv/+/8P/4T/qP8B/wD/AP85/13/EP8P/4T/n/8B/wD/AP85/13/CP90/xX///91/wj/i/8H/1P/V////5D/jP8A/wD/AP87/8P/D/+M/4r/Af8A/wD/jf+F/0j/////////UP+N/0X/+P9Q/43/Rf8M/1D/jf9F//T/UP+N/0X//P9Q/43/Rf/w/9n/Rf8U/1D///91/xj/Uf/Z/xz/JP9X////df8I/+j/AAAAAAAAAACD/8T/KP87/8P/D/+M/1H/Af8A/wD/2f8F/wAAAAAAAAAAi/9N//z/i/9F//D/2f+V/1D/////////2f+V/1T/////////2f/u/4n/jf9o/////////4v/Tf8M/9n/nf9Y/////////9n/6P+J/4X/YP////////+J/0X/gP/Z/53/XP/////////Z/0X/9P+J/0X/oP+J/0X/wP/Z/5X/bP/////////Z/wX/AAAAAAAAAACL/0X//P+J/03/iP/Z/5X/cP/////////Z/8L/if9N/6j/i/9N//j/2f+d/3T/////////2f/u/4n/Rf/I/4v/wf/Z/53/eP/////////Z/+j/if+d/2T/////////if9d/4T/2f+d/3z/////////2f/B/4n/Xf+k/4n/Tf+s/9n/Xf+M/8f/Rf+0/wD/AP8A/z//if9d/8T/2f9V/5D/2f9V/5T/3f/Y/93/2P/Z/+7/if9F/8z/jf+1/1T/////////2f9d/5j/2f/o/8f/Rf8I/wT/AP8A/wD/2f9d/5z/2f9d/7D/2f/u/9n/Xf+4/9n/6P/Z/13/vP+L/0b//P///3X/EP+J/0X/0P+L/wb/2f/u/4n/Rf/U/43/Rf/Q/9n/Xf/Y/1D/jf9F/+D/2f/o/1D/2f9d/9z/6P8AAAAAAAAAAIv/Rf/g/9n/Rf/s/9j/Hf8AAAAAAAAAAIn/Rv/8/4v/Rf/k/4n/Bv+L/0X/6P+J/0b/BP/f/+D/nv90/xX/2f9F/+z/2P8d/wAAAAAAAAAA3//g/57/dP8H/9n/6P/Y/3X/7P/r/wL/2f/o/9n/Xv8I/4P/xv8g////Tf8I/3X/mv+L/wf/U/+N/43/UP////////9q/wT/Uf9o/8T/Af8A/wD/av8G/1f///9Q/2T/6/8F/7j/uf8L/3f/yP9f/17/W//J/8L/FP8A/w==
+  symbols:
+  - kind: Function
+    name: _D3DXDrawSpriteTransform@20
+    size: 461
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?DecodeSpritefx@@YAJPAUIDirectDrawSurface7@@QAUIDirect3DDevice7@@MPBUtagRECT@@PAKPAM444PAUtagSIZE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T43173
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T43169
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXVec4Transform@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T43174
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T43168
+    size: 0
+    flags: 2
+    section: .rdata
+  relocations:
+  - offset: 102
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 119
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 192
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 355
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 367
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 395
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+- symbol: 0
+  hash: f1b0003ae76693c9d7a1d8b12f7607baa5769f45
+  signature: Vf+L/+z/gf/s/7j/AP8A/wD/U/+L/13/DP9W/1f/M////zv/3/8P/4T/xf8B/wD/AP85/33/EP8P/4T/vP8B/wD/AP85/33/CP90/x3///91/wj/i/8D/1f/U////5D/jP8A/wD/AP+L//D/O//3/33/Cv9o/wAAAAAAAAAA6f+O/wH/AP8A/43/hf9I/////////1D/jf9F//j/UP+N/0X/DP9Q/43/Rf/0/1D/jf9F//z/UP+N/0X/8P/Z/0X/FP9Q////df8Y/1H/2f8c/yT/U////3X/CP/o/wAAAAAAAAAAg//E/yj/O//H/w//jP9m/wH/AP8A/9n/Bf8AAAAAAAAAAIv/Tf/8/4v/Rf/w/9n/lf9Q/////////9n/lf9U/////////9n/7v+J/43/aP////////+L/03/DP/Z/53/WP/////////Z/+j/if+F/2D/////////if9F/4D/2f+d/1z/////////2f9F//T/if9F/6D/if9F/8D/2f+V/2z/////////2f8F/wAAAAAAAAAAi/9F//z/if9N/4j/2f+V/3D/////////2f/C/4n/Tf+o/4v/Tf/4/9n/nf90/////////9n/7v+J/0X/yP+L/8H/2f+d/3j/////////2f/o/4n/vf9k/////////4n/ff+E/9n/nf98/////////9n/wf+J/33/pP+J/03/rP/Z/13/jP/H/0X/tP8A/wD/AP8//4n/ff/E/9n/Vf+Q/9n/Vf+U/93/2P/d/9j/2f/u/4n/Rf/M/43/tf9U/////////9n/Xf+Y/9n/6P/H/0X/CP8E/wD/AP8A/9n/Xf+c/9n/Xf+w/9n/7v/Z/13/uP/Z/+j/2f9d/7z/i/9G//z///91/xD/if9F/9D/i/8G/9n/7v+J/0X/1P+N/0X/0P/Z/13/2P9Q/43/Rf/g/9n/6P9Q/9n/Xf/c/+j/AAAAAAAAAACL/0X/4P/Z/0X/7P/Y/x3/AAAAAAAAAACJ/0b//P+L/0X/5P+J/wb/i/9F/+j/if9G/wT/3//g/57/dP8V/9n/Rf/s/9j/Hf8AAAAAAAAAAN//4P+e/3T/B//Z/+j/2P91/+z/6/8C/9n/6P/Z/17/CP+D/8b/IP///03/CP91/5r/i/8D/1f/jf+N/1D/////////av8E/1H/aP/E/wH/AP8A/2r/Bv9T////UP9k/4v/8P87//f/ff8N/2j/AAAAAAAAAABX/+j/AAAAAAAAAABZ/1n/i//G/+v/Bf+4/7n/C/93/8j/X/9e/1v/yf/C/xT/AP8=
+  symbols:
+  - kind: Function
+    name: _D3DXDrawSpriteTransform@20
+    size: 490
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0CP@NLME@D3DXDrawSpriteTransform?3?5Failed?5@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?DecodeSpritefx@@YAJPAUIDirectDrawSurface7@@QAUIDirect3DDevice7@@MPBUtagRECT@@PAKPAM444PAUtagSIZE@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Object
+    name: $T43203
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T43198
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: _D3DXVec4Transform@12
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: $T43204
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: $T43197
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0DO@HKKI@D3DXDrawSpriteTransform?3?5DrawPri@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: ?D3DXDprintf@@YAXIPAD@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 59
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 110
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 127
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 200
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 363
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 375
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 403
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 462
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 468
+    kind: x86_rel32
+    symbol: 9
+    addend: -4

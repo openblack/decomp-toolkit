@@ -1,0 +1,28 @@
+- symbol: 0
+  hash: d1e8c1de3783a79c828e725ef3d6460f429c4927
+  signature: Vv+L//H/g/++/wT/Af8A/wD///90/0v/g/++/wj/Af8A/wD///9T/4v/Hf8AAAAAAAAAAHT/K/+L/4b/DP8B/wD/AP9X/43/vv8M/wH/AP8A/4X/wP90/wr/UP///xX/AAAAAAAAAACD/yf/AP///7b/CP8B/wD/AP///9P/g/+O/wj/Af8A/wD///9f////tv8E/wH/AP8A////0/+D/47/BP8B/wD/AP///1v/M//A/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?Close@CD3dxFile@@QAEJXZ
+    size: 91
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __imp__CloseHandle@4
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: __imp__UnmapViewOfFile@4
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 22
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 48
+    kind: x86_abs32
+    symbol: 2
+    addend: 0

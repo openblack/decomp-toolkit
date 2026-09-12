@@ -1,0 +1,5875 @@
+- symbol: 0
+  hash: c2fb37a32cbe27c7a0f154b1b333e6e404be7f86
+  signature: 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
+  symbols:
+  - kind: Function
+    name: _D3DXGetErrorString@12
+    size: 3356
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BC@JHBM@DDERR_UNSUPPORTED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0O@JJAG@DDERR_GENERIC?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LHGP@DDERR_NOTINITIALIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@PPLJ@DDERR_OUTOFMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@OBBL@DDERR_INVALIDPARAMS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@CBME@DDERR_ALREADYINITIALIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@DPHE@DDERR_CANNOTATTACHSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@JIOM@DDERR_CANNOTDETACHSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@PBAE@DDERR_CURRENTLYNOTAVAIL?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@EAOD@DDERR_EXCEPTION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@EIBC@DDERR_HEIGHTALIGN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@BLOA@DDERR_INCOMPATIBLEPRIMARY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@JNLE@DDERR_INVALIDCAPS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@MOJK@DDERR_INVALIDCLIPLIST?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@HCAL@DDERR_INVALIDMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@LOLC@DDERR_INVALIDOBJECT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@EJCO@DDERR_INVALIDPIXELFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@KBCO@DDERR_INVALIDRECT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@IFLE@DDERR_LOCKEDSURFACES?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0L@NEBN@DDERR_NO3D?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@HIFO@DDERR_NOSURFACELEFT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@ONKP@DDERR_NOSTEREOHARDWARE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@EHJG@DDERR_NOALPHAHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@EJBM@DDERR_NOCLIPLIST?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@NHFC@DDERR_NOCOLORKEY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@INCD@DDERR_NOCOOPERATIVELEVELSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@IEFK@DDERR_NOCOLORCONVHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@PBLA@DDERR_NOCOLORKEYHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@PEEB@DDERR_NODIRECTDRAWSUPPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@GHJG@DDERR_NOEXCLUSIVEMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0P@MLDL@DDERR_NOFLIPHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0M@DMHE@DDERR_NOGDI?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@BGEM@DDERR_NOMIRRORHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0P@BPIP@DDERR_NOTFOUND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@JFFJ@DDERR_NOOVERLAYHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@IGMH@DDERR_OVERLAPPINGRECTS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@HLBF@DDERR_NORASTEROPHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@BAKO@DDERR_NOROTATIONHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@JCJA@DDERR_NOSTRETCHHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@FJEG@DDERR_NOT4BITCOLOR?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@NPCF@DDERR_NOT4BITCOLORINDEX?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@ECCH@DDERR_NOT8BITCOLOR?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@KLCE@DDERR_NOTEXTUREHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@KCIJ@DDERR_NOVSYNCHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@IPJO@DDERR_NOZBUFFERHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@HDLA@DDERR_NOZOVERLAYHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@OHCK@DDERR_OUTOFCAPS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@GLCM@DDERR_OUTOFVIDEOMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@LHPH@DDERR_PALETTEBUSY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CD@IKFB@DDERR_OVERLAYCOLORKEYONLYONEACTI@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@FCIN@DDERR_OVERLAYCANTCLIP?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@EBGI@DDERR_COLORKEYNOTSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@HBEC@DDERR_SURFACEALREADYATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@PJKH@DDERR_SURFACEALREADYDEPENDENT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@OHLB@DDERR_SURFACEBUSY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@KGKE@DDERR_CANTLOCKSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@KAAK@DDERR_SURFACEISOBSCURED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@FDEM@DDERR_SURFACELOST?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@OMKO@DDERR_SURFACENOTATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@BPON@DDERR_TOOBIGHEIGHT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@GBAJ@DDERR_TOOBIGSIZE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@GCH@DDERR_TOOBIGWIDTH?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@BECN@DDERR_UNSUPPORTEDFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@LKKP@DDERR_UNSUPPORTEDMASK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@NIAA@DDERR_INVALIDSTREAM?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@MNN@DDERR_VERTICALBLANKINPROGRESS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@DAHA@DDERR_DDSCAPSCOMPLEXREQUIRED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@BBPF@DDERR_WASSTILLDRAWING?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0N@BDF@DDERR_XALIGN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L45082
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L45083
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0BM@OPAM@DDERR_INVALIDDIRECTDRAWGUID?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@HCLN@DDERR_DIRECTDRAWALREADYCREATED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LDPJ@DDERR_NODIRECTDRAWHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CC@GOKD@DDERR_PRIMARYSURFACEALREADYEXIST@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@KIDO@DDERR_NOEMULATION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@MBHN@DDERR_REGIONTOOSMALL?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@MFMC@DDERR_CLIPPERISUSINGHWND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@NMMO@DDERR_NOCLIPPERATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0N@INIK@DDERR_NOHWND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@DLEF@DDERR_HWNDSUBCLASSED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@MOCP@DDERR_HWNDALREADYSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@DACF@DDERR_NOPALETTEATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@GBNJ@DDERR_NOPALETTEHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@MIGH@DDERR_BLTFASTCANTCLIP?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0O@DCPD@DDERR_NOBLTHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@LKO@DDERR_NODDROPSHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@MEJA@DDERR_OVERLAYNOTVISIBLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@DDHB@DDERR_NOOVERLAYDEST?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@MKKH@DDERR_INVALIDPOSITION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@OGJB@DDERR_NOTAOVERLAYSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@IOJH@DDERR_EXCLUSIVEMODEALREADYSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@CJKH@DDERR_NOTFLIPPABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@PLOG@DDERR_CANTDUPLICATE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@IHOJ@DDERR_NOTLOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@PHJH@DDERR_CANTCREATEDC?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0L@PFPD@DDERR_NODC?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@BNFD@DDERR_WRONGMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@CFBP@DDERR_IMPLICITLYCREATED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@GJCG@DDERR_NOTPALETTIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@GGFL@DDERR_UNSUPPORTEDMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@PNI@DDERR_NOMIPMAPHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@CODF@DDERR_INVALIDSURFACETYPE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@MOND@DDERR_NOOPTIMIZEHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@ODJJ@DDERR_NOTLOADED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@MMEJ@DDERR_NOFOCUSWINDOW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@OJBB@DDERR_NOTONMIPMAPSUBLEVEL?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@MJAO@DDERR_DCALREADYCREATED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@KGEN@DDERR_NONONLOCALVIDMEM?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@OCPI@DDERR_CANTPAGELOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LLCF@DDERR_CANTPAGEUNLOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@PHHK@DDERR_NOTPAGELOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0P@IEGG@DDERR_MOREDATA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L45084
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0O@DGGN@DDERR_EXPIRED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@BHHG@DDERR_TESTFINISHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0O@OHEB@DDERR_NEWMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@CDIP@DDERR_D3DNOTINITIALIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@CHHM@DDERR_VIDEONOTACTIVE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@JDBB@DDERR_NOMONITORINFORMATION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@HPMG@DDERR_NODRIVERSUPPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@GPLA@DDERR_DEVICEDOESNTOWNSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@HJOE@D3DERR_BADMAJORVERSION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@BCJD@D3DERR_BADMINORVERSION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@FDOA@D3DERR_INVALID_DEVICE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@PIMI@D3DERR_INITFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@KGJB@D3DERR_DEVICEAGGREGATED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@JGBF@D3DERR_EXECUTE_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@KOHI@D3DERR_EXECUTE_DESTROY_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@HMCP@D3DERR_EXECUTE_LOCK_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@BLHG@D3DERR_EXECUTE_UNLOCK_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@FEHK@D3DERR_EXECUTE_LOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@CHFH@D3DERR_EXECUTE_NOT_LOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@MNJL@D3DERR_EXECUTE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@PHIG@D3DERR_EXECUTE_CLIPPED_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@BIHB@D3DERR_TEXTURE_NO_SUPPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@ILMN@D3DERR_TEXTURE_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@MFGF@D3DERR_TEXTURE_DESTROY_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@COJG@D3DERR_TEXTURE_LOCK_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@GKO@D3DERR_TEXTURE_UNLOCK_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@BDLL@D3DERR_TEXTURE_LOAD_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@FKPD@D3DERR_TEXTURE_SWAP_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@KDAJ@D3DERR_TEXTURE_LOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@JOKK@D3DERR_TEXTURE_NOT_LOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@NIBM@D3DERR_TEXTURE_GETSURF_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@PPFH@D3DERR_MATRIX_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@PCBB@D3DERR_MATRIX_DESTROY_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@OADM@D3DERR_MATRIX_SETDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@GEGP@D3DERR_MATRIX_GETDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@DGJL@D3DERR_SETVIEWPORTDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@GGKC@D3DERR_INVALIDCURRENTVIEWPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@OHKB@D3DERR_INVALIDPRIMITIVETYPE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@LDNJ@D3DERR_INVALIDVERTEXTYPE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@CMBP@D3DERR_TEXTURE_BADSIZE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@HCGG@D3DERR_INVALIDRAMPTEXTURE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@IAKI@D3DERR_MATERIAL_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@EGGO@D3DERR_MATERIAL_DESTROY_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@FEED@D3DERR_MATERIAL_SETDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@NABA@D3DERR_MATERIAL_GETDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@BGDC@D3DERR_INVALIDPALETTE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@DAID@D3DERR_ZBUFF_NEEDS_SYSTEMMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@JPAF@D3DERR_ZBUFF_NEEDS_VIDEOMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@LBFJ@D3DERR_SURFACENOTINVIDMEM?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@INDJ@D3DERR_LIGHT_SET_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@BGLM@D3DERR_LIGHTHASVIEWPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@KEPF@D3DERR_LIGHTNOTINTHISVIEWPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@NLAI@D3DERR_SCENE_IN_SCENE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@MACG@D3DERR_SCENE_NOT_IN_SCENE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@MFPI@D3DERR_SCENE_BEGIN_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@PEFM@D3DERR_SCENE_END_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0P@LENL@D3DERR_INBEGIN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@ENKC@D3DERR_NOTINBEGIN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@IONM@D3DERR_NOVIEWPORTS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@DDON@D3DERR_VIEWPORTDATANOTSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@KADB@D3DERR_VIEWPORTHASNODEVICE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@PFFN@D3DERR_NOCURRENTVIEWPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@GNNI@D3DERR_INVALIDVERTEXFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@IEGN@D3DERR_COLORKEYATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@CCAG@D3DERR_VERTEXBUFFEROPTIMIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@DDH@D3DERR_VERTEXBUFFERUNLOCKFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@NADG@D3DERR_VERTEXBUFFERLOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@HPGF@D3DERR_VBUF_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@GEJH@D3DERR_ZBUFFER_NOTPRESENT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L45085
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L45086
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0CA@GOGE@D3DERR_STENCILBUFFER_NOTPRESENT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@OMFN@D3DERR_WRONGTEXTUREFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CB@NDEN@D3DERR_UNSUPPORTEDCOLOROPERATION@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@JKDO@D3DERR_UNSUPPORTEDCOLORARG?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CB@JPMC@D3DERR_UNSUPPORTEDALPHAOPERATION@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@ICHD@D3DERR_UNSUPPORTEDALPHAARG?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@FNBO@D3DERR_TOOMANYOPERATIONS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@NDJG@D3DERR_CONFLICTINGTEXTUREFILTER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@KGOP@D3DERR_UNSUPPORTEDFACTORVALUE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@IHFK@D3DERR_CONFLICTINGRENDERSTATE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@PMK@D3DERR_UNSUPPORTEDTEXTUREFILTER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@BEF@D3DERR_TOOMANYPRIMITIVES?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@IAKG@D3DERR_INVALIDMATRIX?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@FNMC@D3DERR_TOOMANYVERTICES?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CB@KJAO@D3DERR_CONFLICTINGTEXTUREPALETTE@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@LEEH@D3DERR_INVALIDSTATEBLOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@OMDO@D3DERR_INBEGINSTATEBLOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@KLFM@D3DERR_NOTINBEGINSTATEBLOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@KMAK@D3DXERR_NOMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L45087
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0BE@OAHE@D3DXERR_NULLPOINTER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@GKJ@D3DXERR_INVALIDD3DXDEVICEINDEX?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@LIOC@D3DXERR_NODIRECTDRAWAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@IGDM@D3DXERR_NODIRECT3DAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CC@CIIB@D3DXERR_NODIRECT3DDEVICEAVAILABL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@DJLM@D3DXERR_NOPRIMARYAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@HCLK@D3DXERR_NOZBUFFERAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@NMEE@D3DXERR_NOBACKBUFFERAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@ONEO@D3DXERR_COULDNTUPDATECAPS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@PDDK@D3DXERR_NOZBUFFER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@EFMO@D3DXERR_INVALIDMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@INFM@D3DXERR_INVALIDPARAMETER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@FELM@D3DXERR_INITFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@OFNO@D3DXERR_STARTUPFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@DHDK@D3DXERR_D3DXNOTSTARTEDYET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@CMBN@D3DXERR_NOTINITIALIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@CLMM@D3DXERR_FAILEDDRAWTEXT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@MIOC@D3DXERR_BADD3DXCONTEXT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@HKEJ@D3DXERR_CAPSNOTSUPPORTED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@LHOE@D3DXERR_UNSUPPORTEDFILEFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@INDL@D3DXERR_IFLERROR?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@LFLM@D3DXERR_FAILEDGETCAPS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@OGDM@D3DXERR_CANNOTRESIZEFULLSCREEN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@NNGH@D3DXERR_CANNOTRESIZENONWINDOWED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CB@HDBI@D3DXERR_FRONTBUFFERALREADYEXISTS@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@OJEM@D3DXERR_FULLSCREENPRIMARYEXISTS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@GLBK@D3DXERR_GETDCFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LGND@D3DXERR_BITBLTFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@JGKN@D3DXERR_NOTEXTURE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@MJHG@D3DXERR_MIPLEVELABSENT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@KMHA@D3DXERR_SURFACENOTPALETTED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@HHEK@D3DXERR_ENUMFORMATSFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@NFDH@D3DXERR_COLORDEPTHTOOLOW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@BBCL@D3DXERR_INVALIDFILEFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LLLL@D3DXERR_NOMATCHFOUND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_02DILL@?$CFs?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __snprintf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BM@PEKH@Unrecognized?5error?3?50x?$CF0?48x?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 55
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 139
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 149
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 181
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 191
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 223
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 233
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 265
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 275
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 307
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 317
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 349
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 359
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 391
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 401
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 433
+    kind: x86_abs32
+    symbol: 19
+    addend: 0
+  - offset: 443
+    kind: x86_abs32
+    symbol: 20
+    addend: 0
+  - offset: 489
+    kind: x86_abs32
+    symbol: 21
+    addend: 0
+  - offset: 499
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 509
+    kind: x86_abs32
+    symbol: 23
+    addend: 0
+  - offset: 519
+    kind: x86_abs32
+    symbol: 24
+    addend: 0
+  - offset: 565
+    kind: x86_abs32
+    symbol: 25
+    addend: 0
+  - offset: 575
+    kind: x86_abs32
+    symbol: 26
+    addend: 0
+  - offset: 585
+    kind: x86_abs32
+    symbol: 27
+    addend: 0
+  - offset: 595
+    kind: x86_abs32
+    symbol: 28
+    addend: 0
+  - offset: 627
+    kind: x86_abs32
+    symbol: 29
+    addend: 0
+  - offset: 637
+    kind: x86_abs32
+    symbol: 30
+    addend: 0
+  - offset: 669
+    kind: x86_abs32
+    symbol: 31
+    addend: 0
+  - offset: 679
+    kind: x86_abs32
+    symbol: 32
+    addend: 0
+  - offset: 711
+    kind: x86_abs32
+    symbol: 33
+    addend: 0
+  - offset: 721
+    kind: x86_abs32
+    symbol: 34
+    addend: 0
+  - offset: 753
+    kind: x86_abs32
+    symbol: 35
+    addend: 0
+  - offset: 763
+    kind: x86_abs32
+    symbol: 36
+    addend: 0
+  - offset: 795
+    kind: x86_abs32
+    symbol: 37
+    addend: 0
+  - offset: 805
+    kind: x86_abs32
+    symbol: 38
+    addend: 0
+  - offset: 837
+    kind: x86_abs32
+    symbol: 39
+    addend: 0
+  - offset: 847
+    kind: x86_abs32
+    symbol: 40
+    addend: 0
+  - offset: 879
+    kind: x86_abs32
+    symbol: 41
+    addend: 0
+  - offset: 889
+    kind: x86_abs32
+    symbol: 42
+    addend: 0
+  - offset: 921
+    kind: x86_abs32
+    symbol: 43
+    addend: 0
+  - offset: 931
+    kind: x86_abs32
+    symbol: 44
+    addend: 0
+  - offset: 963
+    kind: x86_abs32
+    symbol: 45
+    addend: 0
+  - offset: 973
+    kind: x86_abs32
+    symbol: 46
+    addend: 0
+  - offset: 1005
+    kind: x86_abs32
+    symbol: 47
+    addend: 0
+  - offset: 1015
+    kind: x86_abs32
+    symbol: 48
+    addend: 0
+  - offset: 1061
+    kind: x86_abs32
+    symbol: 49
+    addend: 0
+  - offset: 1071
+    kind: x86_abs32
+    symbol: 50
+    addend: 0
+  - offset: 1081
+    kind: x86_abs32
+    symbol: 51
+    addend: 0
+  - offset: 1091
+    kind: x86_abs32
+    symbol: 52
+    addend: 0
+  - offset: 1123
+    kind: x86_abs32
+    symbol: 53
+    addend: 0
+  - offset: 1133
+    kind: x86_abs32
+    symbol: 54
+    addend: 0
+  - offset: 1165
+    kind: x86_abs32
+    symbol: 55
+    addend: 0
+  - offset: 1175
+    kind: x86_abs32
+    symbol: 56
+    addend: 0
+  - offset: 1207
+    kind: x86_abs32
+    symbol: 57
+    addend: 0
+  - offset: 1217
+    kind: x86_abs32
+    symbol: 58
+    addend: 0
+  - offset: 1249
+    kind: x86_abs32
+    symbol: 59
+    addend: 0
+  - offset: 1259
+    kind: x86_abs32
+    symbol: 60
+    addend: 0
+  - offset: 1291
+    kind: x86_abs32
+    symbol: 61
+    addend: 0
+  - offset: 1301
+    kind: x86_abs32
+    symbol: 62
+    addend: 0
+  - offset: 1333
+    kind: x86_abs32
+    symbol: 63
+    addend: 0
+  - offset: 1343
+    kind: x86_abs32
+    symbol: 64
+    addend: 0
+  - offset: 1375
+    kind: x86_abs32
+    symbol: 65
+    addend: 0
+  - offset: 1385
+    kind: x86_abs32
+    symbol: 66
+    addend: 0
+  - offset: 1424
+    kind: x86_abs32
+    symbol: 67
+    addend: 0
+  - offset: 1434
+    kind: x86_abs32
+    symbol: 68
+    addend: 0
+  - offset: 1444
+    kind: x86_abs32
+    symbol: 69
+    addend: 0
+  - offset: 1489
+    kind: x86_abs32
+    symbol: 70
+    addend: 0
+  - offset: 1496
+    kind: x86_abs32
+    symbol: 71
+    addend: 0
+  - offset: 1501
+    kind: x86_abs32
+    symbol: 72
+    addend: 0
+  - offset: 1511
+    kind: x86_abs32
+    symbol: 73
+    addend: 0
+  - offset: 1521
+    kind: x86_abs32
+    symbol: 74
+    addend: 0
+  - offset: 1531
+    kind: x86_abs32
+    symbol: 75
+    addend: 0
+  - offset: 1541
+    kind: x86_abs32
+    symbol: 76
+    addend: 0
+  - offset: 1551
+    kind: x86_abs32
+    symbol: 77
+    addend: 0
+  - offset: 1561
+    kind: x86_abs32
+    symbol: 78
+    addend: 0
+  - offset: 1571
+    kind: x86_abs32
+    symbol: 79
+    addend: 0
+  - offset: 1581
+    kind: x86_abs32
+    symbol: 80
+    addend: 0
+  - offset: 1591
+    kind: x86_abs32
+    symbol: 81
+    addend: 0
+  - offset: 1601
+    kind: x86_abs32
+    symbol: 82
+    addend: 0
+  - offset: 1611
+    kind: x86_abs32
+    symbol: 83
+    addend: 0
+  - offset: 1621
+    kind: x86_abs32
+    symbol: 84
+    addend: 0
+  - offset: 1631
+    kind: x86_abs32
+    symbol: 85
+    addend: 0
+  - offset: 1641
+    kind: x86_abs32
+    symbol: 86
+    addend: 0
+  - offset: 1651
+    kind: x86_abs32
+    symbol: 87
+    addend: 0
+  - offset: 1661
+    kind: x86_abs32
+    symbol: 88
+    addend: 0
+  - offset: 1671
+    kind: x86_abs32
+    symbol: 89
+    addend: 0
+  - offset: 1681
+    kind: x86_abs32
+    symbol: 90
+    addend: 0
+  - offset: 1691
+    kind: x86_abs32
+    symbol: 91
+    addend: 0
+  - offset: 1701
+    kind: x86_abs32
+    symbol: 92
+    addend: 0
+  - offset: 1711
+    kind: x86_abs32
+    symbol: 93
+    addend: 0
+  - offset: 1721
+    kind: x86_abs32
+    symbol: 94
+    addend: 0
+  - offset: 1731
+    kind: x86_abs32
+    symbol: 95
+    addend: 0
+  - offset: 1741
+    kind: x86_abs32
+    symbol: 96
+    addend: 0
+  - offset: 1751
+    kind: x86_abs32
+    symbol: 97
+    addend: 0
+  - offset: 1761
+    kind: x86_abs32
+    symbol: 98
+    addend: 0
+  - offset: 1771
+    kind: x86_abs32
+    symbol: 99
+    addend: 0
+  - offset: 1781
+    kind: x86_abs32
+    symbol: 100
+    addend: 0
+  - offset: 1791
+    kind: x86_abs32
+    symbol: 101
+    addend: 0
+  - offset: 1801
+    kind: x86_abs32
+    symbol: 102
+    addend: 0
+  - offset: 1811
+    kind: x86_abs32
+    symbol: 103
+    addend: 0
+  - offset: 1821
+    kind: x86_abs32
+    symbol: 104
+    addend: 0
+  - offset: 1831
+    kind: x86_abs32
+    symbol: 105
+    addend: 0
+  - offset: 1841
+    kind: x86_abs32
+    symbol: 106
+    addend: 0
+  - offset: 1851
+    kind: x86_abs32
+    symbol: 107
+    addend: 0
+  - offset: 1861
+    kind: x86_abs32
+    symbol: 108
+    addend: 0
+  - offset: 1871
+    kind: x86_abs32
+    symbol: 109
+    addend: 0
+  - offset: 1903
+    kind: x86_abs32
+    symbol: 110
+    addend: 0
+  - offset: 1913
+    kind: x86_abs32
+    symbol: 111
+    addend: 0
+  - offset: 1945
+    kind: x86_abs32
+    symbol: 112
+    addend: 0
+  - offset: 1955
+    kind: x86_abs32
+    symbol: 113
+    addend: 0
+  - offset: 2000
+    kind: x86_abs32
+    symbol: 114
+    addend: 0
+  - offset: 2005
+    kind: x86_abs32
+    symbol: 115
+    addend: 0
+  - offset: 2015
+    kind: x86_abs32
+    symbol: 116
+    addend: 0
+  - offset: 2025
+    kind: x86_abs32
+    symbol: 117
+    addend: 0
+  - offset: 2035
+    kind: x86_abs32
+    symbol: 118
+    addend: 0
+  - offset: 2045
+    kind: x86_abs32
+    symbol: 119
+    addend: 0
+  - offset: 2055
+    kind: x86_abs32
+    symbol: 120
+    addend: 0
+  - offset: 2065
+    kind: x86_abs32
+    symbol: 121
+    addend: 0
+  - offset: 2075
+    kind: x86_abs32
+    symbol: 122
+    addend: 0
+  - offset: 2085
+    kind: x86_abs32
+    symbol: 123
+    addend: 0
+  - offset: 2095
+    kind: x86_abs32
+    symbol: 124
+    addend: 0
+  - offset: 2105
+    kind: x86_abs32
+    symbol: 125
+    addend: 0
+  - offset: 2115
+    kind: x86_abs32
+    symbol: 126
+    addend: 0
+  - offset: 2125
+    kind: x86_abs32
+    symbol: 127
+    addend: 0
+  - offset: 2135
+    kind: x86_abs32
+    symbol: 128
+    addend: 0
+  - offset: 2145
+    kind: x86_abs32
+    symbol: 129
+    addend: 0
+  - offset: 2155
+    kind: x86_abs32
+    symbol: 130
+    addend: 0
+  - offset: 2165
+    kind: x86_abs32
+    symbol: 131
+    addend: 0
+  - offset: 2175
+    kind: x86_abs32
+    symbol: 132
+    addend: 0
+  - offset: 2185
+    kind: x86_abs32
+    symbol: 133
+    addend: 0
+  - offset: 2195
+    kind: x86_abs32
+    symbol: 134
+    addend: 0
+  - offset: 2205
+    kind: x86_abs32
+    symbol: 135
+    addend: 0
+  - offset: 2215
+    kind: x86_abs32
+    symbol: 136
+    addend: 0
+  - offset: 2225
+    kind: x86_abs32
+    symbol: 137
+    addend: 0
+  - offset: 2235
+    kind: x86_abs32
+    symbol: 138
+    addend: 0
+  - offset: 2245
+    kind: x86_abs32
+    symbol: 139
+    addend: 0
+  - offset: 2255
+    kind: x86_abs32
+    symbol: 140
+    addend: 0
+  - offset: 2265
+    kind: x86_abs32
+    symbol: 141
+    addend: 0
+  - offset: 2275
+    kind: x86_abs32
+    symbol: 142
+    addend: 0
+  - offset: 2285
+    kind: x86_abs32
+    symbol: 143
+    addend: 0
+  - offset: 2295
+    kind: x86_abs32
+    symbol: 144
+    addend: 0
+  - offset: 2305
+    kind: x86_abs32
+    symbol: 145
+    addend: 0
+  - offset: 2315
+    kind: x86_abs32
+    symbol: 146
+    addend: 0
+  - offset: 2325
+    kind: x86_abs32
+    symbol: 147
+    addend: 0
+  - offset: 2335
+    kind: x86_abs32
+    symbol: 148
+    addend: 0
+  - offset: 2345
+    kind: x86_abs32
+    symbol: 149
+    addend: 0
+  - offset: 2355
+    kind: x86_abs32
+    symbol: 150
+    addend: 0
+  - offset: 2365
+    kind: x86_abs32
+    symbol: 151
+    addend: 0
+  - offset: 2375
+    kind: x86_abs32
+    symbol: 152
+    addend: 0
+  - offset: 2385
+    kind: x86_abs32
+    symbol: 153
+    addend: 0
+  - offset: 2395
+    kind: x86_abs32
+    symbol: 154
+    addend: 0
+  - offset: 2405
+    kind: x86_abs32
+    symbol: 155
+    addend: 0
+  - offset: 2415
+    kind: x86_abs32
+    symbol: 156
+    addend: 0
+  - offset: 2425
+    kind: x86_abs32
+    symbol: 157
+    addend: 0
+  - offset: 2435
+    kind: x86_abs32
+    symbol: 158
+    addend: 0
+  - offset: 2445
+    kind: x86_abs32
+    symbol: 159
+    addend: 0
+  - offset: 2455
+    kind: x86_abs32
+    symbol: 160
+    addend: 0
+  - offset: 2465
+    kind: x86_abs32
+    symbol: 161
+    addend: 0
+  - offset: 2475
+    kind: x86_abs32
+    symbol: 162
+    addend: 0
+  - offset: 2485
+    kind: x86_abs32
+    symbol: 163
+    addend: 0
+  - offset: 2495
+    kind: x86_abs32
+    symbol: 164
+    addend: 0
+  - offset: 2505
+    kind: x86_abs32
+    symbol: 165
+    addend: 0
+  - offset: 2515
+    kind: x86_abs32
+    symbol: 166
+    addend: 0
+  - offset: 2525
+    kind: x86_abs32
+    symbol: 167
+    addend: 0
+  - offset: 2535
+    kind: x86_abs32
+    symbol: 168
+    addend: 0
+  - offset: 2545
+    kind: x86_abs32
+    symbol: 169
+    addend: 0
+  - offset: 2555
+    kind: x86_abs32
+    symbol: 170
+    addend: 0
+  - offset: 2565
+    kind: x86_abs32
+    symbol: 171
+    addend: 0
+  - offset: 2575
+    kind: x86_abs32
+    symbol: 172
+    addend: 0
+  - offset: 2585
+    kind: x86_abs32
+    symbol: 173
+    addend: 0
+  - offset: 2595
+    kind: x86_abs32
+    symbol: 174
+    addend: 0
+  - offset: 2605
+    kind: x86_abs32
+    symbol: 175
+    addend: 0
+  - offset: 2615
+    kind: x86_abs32
+    symbol: 176
+    addend: 0
+  - offset: 2625
+    kind: x86_abs32
+    symbol: 177
+    addend: 0
+  - offset: 2657
+    kind: x86_abs32
+    symbol: 178
+    addend: 0
+  - offset: 2667
+    kind: x86_abs32
+    symbol: 179
+    addend: 0
+  - offset: 2713
+    kind: x86_abs32
+    symbol: 180
+    addend: 0
+  - offset: 2723
+    kind: x86_abs32
+    symbol: 181
+    addend: 0
+  - offset: 2733
+    kind: x86_abs32
+    symbol: 182
+    addend: 0
+  - offset: 2743
+    kind: x86_abs32
+    symbol: 183
+    addend: 0
+  - offset: 2788
+    kind: x86_abs32
+    symbol: 184
+    addend: 0
+  - offset: 2795
+    kind: x86_abs32
+    symbol: 185
+    addend: 0
+  - offset: 2800
+    kind: x86_abs32
+    symbol: 186
+    addend: 0
+  - offset: 2810
+    kind: x86_abs32
+    symbol: 187
+    addend: 0
+  - offset: 2820
+    kind: x86_abs32
+    symbol: 188
+    addend: 0
+  - offset: 2830
+    kind: x86_abs32
+    symbol: 189
+    addend: 0
+  - offset: 2840
+    kind: x86_abs32
+    symbol: 190
+    addend: 0
+  - offset: 2850
+    kind: x86_abs32
+    symbol: 191
+    addend: 0
+  - offset: 2860
+    kind: x86_abs32
+    symbol: 192
+    addend: 0
+  - offset: 2870
+    kind: x86_abs32
+    symbol: 193
+    addend: 0
+  - offset: 2880
+    kind: x86_abs32
+    symbol: 194
+    addend: 0
+  - offset: 2890
+    kind: x86_abs32
+    symbol: 195
+    addend: 0
+  - offset: 2900
+    kind: x86_abs32
+    symbol: 196
+    addend: 0
+  - offset: 2910
+    kind: x86_abs32
+    symbol: 197
+    addend: 0
+  - offset: 2920
+    kind: x86_abs32
+    symbol: 198
+    addend: 0
+  - offset: 2930
+    kind: x86_abs32
+    symbol: 199
+    addend: 0
+  - offset: 2940
+    kind: x86_abs32
+    symbol: 200
+    addend: 0
+  - offset: 2950
+    kind: x86_abs32
+    symbol: 201
+    addend: 0
+  - offset: 2960
+    kind: x86_abs32
+    symbol: 202
+    addend: 0
+  - offset: 2970
+    kind: x86_abs32
+    symbol: 203
+    addend: 0
+  - offset: 2980
+    kind: x86_abs32
+    symbol: 204
+    addend: 0
+  - offset: 3006
+    kind: x86_abs32
+    symbol: 205
+    addend: 0
+  - offset: 3011
+    kind: x86_abs32
+    symbol: 206
+    addend: 0
+  - offset: 3021
+    kind: x86_abs32
+    symbol: 207
+    addend: 0
+  - offset: 3031
+    kind: x86_abs32
+    symbol: 208
+    addend: 0
+  - offset: 3041
+    kind: x86_abs32
+    symbol: 209
+    addend: 0
+  - offset: 3051
+    kind: x86_abs32
+    symbol: 210
+    addend: 0
+  - offset: 3061
+    kind: x86_abs32
+    symbol: 211
+    addend: 0
+  - offset: 3071
+    kind: x86_abs32
+    symbol: 212
+    addend: 0
+  - offset: 3081
+    kind: x86_abs32
+    symbol: 213
+    addend: 0
+  - offset: 3091
+    kind: x86_abs32
+    symbol: 214
+    addend: 0
+  - offset: 3101
+    kind: x86_abs32
+    symbol: 215
+    addend: 0
+  - offset: 3111
+    kind: x86_abs32
+    symbol: 216
+    addend: 0
+  - offset: 3121
+    kind: x86_abs32
+    symbol: 217
+    addend: 0
+  - offset: 3131
+    kind: x86_abs32
+    symbol: 218
+    addend: 0
+  - offset: 3141
+    kind: x86_abs32
+    symbol: 219
+    addend: 0
+  - offset: 3151
+    kind: x86_abs32
+    symbol: 220
+    addend: 0
+  - offset: 3161
+    kind: x86_abs32
+    symbol: 221
+    addend: 0
+  - offset: 3171
+    kind: x86_abs32
+    symbol: 222
+    addend: 0
+  - offset: 3178
+    kind: x86_abs32
+    symbol: 223
+    addend: 0
+  - offset: 3185
+    kind: x86_abs32
+    symbol: 224
+    addend: 0
+  - offset: 3192
+    kind: x86_abs32
+    symbol: 225
+    addend: 0
+  - offset: 3199
+    kind: x86_abs32
+    symbol: 226
+    addend: 0
+  - offset: 3206
+    kind: x86_abs32
+    symbol: 227
+    addend: 0
+  - offset: 3213
+    kind: x86_abs32
+    symbol: 228
+    addend: 0
+  - offset: 3220
+    kind: x86_abs32
+    symbol: 229
+    addend: 0
+  - offset: 3227
+    kind: x86_abs32
+    symbol: 230
+    addend: 0
+  - offset: 3234
+    kind: x86_abs32
+    symbol: 231
+    addend: 0
+  - offset: 3241
+    kind: x86_abs32
+    symbol: 232
+    addend: 0
+  - offset: 3248
+    kind: x86_abs32
+    symbol: 233
+    addend: 0
+  - offset: 3255
+    kind: x86_abs32
+    symbol: 234
+    addend: 0
+  - offset: 3262
+    kind: x86_abs32
+    symbol: 235
+    addend: 0
+  - offset: 3269
+    kind: x86_abs32
+    symbol: 236
+    addend: 0
+  - offset: 3276
+    kind: x86_abs32
+    symbol: 237
+    addend: 0
+  - offset: 3283
+    kind: x86_abs32
+    symbol: 238
+    addend: 0
+  - offset: 3290
+    kind: x86_abs32
+    symbol: 239
+    addend: 0
+  - offset: 3297
+    kind: x86_abs32
+    symbol: 240
+    addend: 0
+  - offset: 3307
+    kind: x86_abs32
+    symbol: 241
+    addend: 0
+  - offset: 3314
+    kind: x86_rel32
+    symbol: 242
+    addend: -4
+  - offset: 3324
+    kind: x86_abs32
+    symbol: 243
+    addend: 0
+  - offset: 3331
+    kind: x86_rel32
+    symbol: 242
+    addend: -4
+- symbol: 0
+  hash: 581f58fb45df96de9a7cc389915c2f3853736233
+  signature: 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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wH/Av8D/wT/Bf8G/wf/CP8S/wn/Cv8L/wz/Df8O/xL/Ev8S/xL/Ev8S/xL/Ev8S/xL/Ev8S/xL/D/8Q/xH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+  symbols:
+  - kind: Function
+    name: _D3DXGetErrorString@12
+    size: 4157
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0BC@JHBM@DDERR_UNSUPPORTED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0O@JJAG@DDERR_GENERIC?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LHGP@DDERR_NOTINITIALIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@PPLJ@DDERR_OUTOFMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@OBBL@DDERR_INVALIDPARAMS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@CBME@DDERR_ALREADYINITIALIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@DPHE@DDERR_CANNOTATTACHSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@JIOM@DDERR_CANNOTDETACHSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@PBAE@DDERR_CURRENTLYNOTAVAIL?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@EAOD@DDERR_EXCEPTION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@EIBC@DDERR_HEIGHTALIGN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@BLOA@DDERR_INCOMPATIBLEPRIMARY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@JNLE@DDERR_INVALIDCAPS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@MOJK@DDERR_INVALIDCLIPLIST?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@HCAL@DDERR_INVALIDMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@LOLC@DDERR_INVALIDOBJECT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@EJCO@DDERR_INVALIDPIXELFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@KBCO@DDERR_INVALIDRECT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@IFLE@DDERR_LOCKEDSURFACES?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0L@NEBN@DDERR_NO3D?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@HIFO@DDERR_NOSURFACELEFT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@ONKP@DDERR_NOSTEREOHARDWARE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@EHJG@DDERR_NOALPHAHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@EJBM@DDERR_NOCLIPLIST?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@NHFC@DDERR_NOCOLORKEY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@INCD@DDERR_NOCOOPERATIVELEVELSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@IEFK@DDERR_NOCOLORCONVHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@PBLA@DDERR_NOCOLORKEYHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@PEEB@DDERR_NODIRECTDRAWSUPPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@GHJG@DDERR_NOEXCLUSIVEMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0P@MLDL@DDERR_NOFLIPHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0M@DMHE@DDERR_NOGDI?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@BGEM@DDERR_NOMIRRORHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0P@BPIP@DDERR_NOTFOUND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@JFFJ@DDERR_NOOVERLAYHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@IGMH@DDERR_OVERLAPPINGRECTS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@HLBF@DDERR_NORASTEROPHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@BAKO@DDERR_NOROTATIONHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@JCJA@DDERR_NOSTRETCHHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@FJEG@DDERR_NOT4BITCOLOR?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@NPCF@DDERR_NOT4BITCOLORINDEX?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@ECCH@DDERR_NOT8BITCOLOR?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@KLCE@DDERR_NOTEXTUREHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@KCIJ@DDERR_NOVSYNCHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@IPJO@DDERR_NOZBUFFERHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@HDLA@DDERR_NOZOVERLAYHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@OHCK@DDERR_OUTOFCAPS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@GLCM@DDERR_OUTOFVIDEOMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@LHPH@DDERR_PALETTEBUSY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CD@IKFB@DDERR_OVERLAYCOLORKEYONLYONEACTI@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@FCIN@DDERR_OVERLAYCANTCLIP?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@EBGI@DDERR_COLORKEYNOTSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@HBEC@DDERR_SURFACEALREADYATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@PJKH@DDERR_SURFACEALREADYDEPENDENT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@OHLB@DDERR_SURFACEBUSY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@KGKE@DDERR_CANTLOCKSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@KAAK@DDERR_SURFACEISOBSCURED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@FDEM@DDERR_SURFACELOST?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@OMKO@DDERR_SURFACENOTATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@BPON@DDERR_TOOBIGHEIGHT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@GBAJ@DDERR_TOOBIGSIZE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@GCH@DDERR_TOOBIGWIDTH?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@BECN@DDERR_UNSUPPORTEDFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@LKKP@DDERR_UNSUPPORTEDMASK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@NIAA@DDERR_INVALIDSTREAM?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@MNN@DDERR_VERTICALBLANKINPROGRESS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@DAHA@DDERR_DDSCAPSCOMPLEXREQUIRED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@BBPF@DDERR_WASSTILLDRAWING?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0N@BDF@DDERR_XALIGN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L45076
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L45077
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0BM@OPAM@DDERR_INVALIDDIRECTDRAWGUID?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@HCLN@DDERR_DIRECTDRAWALREADYCREATED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LDPJ@DDERR_NODIRECTDRAWHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CC@GOKD@DDERR_PRIMARYSURFACEALREADYEXIST@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@KIDO@DDERR_NOEMULATION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@MBHN@DDERR_REGIONTOOSMALL?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@MFMC@DDERR_CLIPPERISUSINGHWND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@NMMO@DDERR_NOCLIPPERATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0N@INIK@DDERR_NOHWND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@DLEF@DDERR_HWNDSUBCLASSED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@MOCP@DDERR_HWNDALREADYSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@DACF@DDERR_NOPALETTEATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@GBNJ@DDERR_NOPALETTEHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@MIGH@DDERR_BLTFASTCANTCLIP?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0O@DCPD@DDERR_NOBLTHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@LKO@DDERR_NODDROPSHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@MEJA@DDERR_OVERLAYNOTVISIBLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@DDHB@DDERR_NOOVERLAYDEST?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@MKKH@DDERR_INVALIDPOSITION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@OGJB@DDERR_NOTAOVERLAYSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@IOJH@DDERR_EXCLUSIVEMODEALREADYSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@CJKH@DDERR_NOTFLIPPABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@PLOG@DDERR_CANTDUPLICATE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@IHOJ@DDERR_NOTLOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@PHJH@DDERR_CANTCREATEDC?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0L@PFPD@DDERR_NODC?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@BNFD@DDERR_WRONGMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@CFBP@DDERR_IMPLICITLYCREATED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@GJCG@DDERR_NOTPALETTIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@GGFL@DDERR_UNSUPPORTEDMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@PNI@DDERR_NOMIPMAPHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@CODF@DDERR_INVALIDSURFACETYPE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@MOND@DDERR_NOOPTIMIZEHW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BA@ODJJ@DDERR_NOTLOADED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@MMEJ@DDERR_NOFOCUSWINDOW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@OJBB@DDERR_NOTONMIPMAPSUBLEVEL?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@MJAO@DDERR_DCALREADYCREATED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@KGEN@DDERR_NONONLOCALVIDMEM?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@OCPI@DDERR_CANTPAGELOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LLCF@DDERR_CANTPAGEUNLOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@PHHK@DDERR_NOTPAGELOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0P@IEGG@DDERR_MOREDATA?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L45078
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0O@DGGN@DDERR_EXPIRED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@BHHG@DDERR_TESTFINISHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0O@OHEB@DDERR_NEWMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@CDIP@DDERR_D3DNOTINITIALIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@CHHM@DDERR_VIDEONOTACTIVE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@JDBB@DDERR_NOMONITORINFORMATION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@HPMG@DDERR_NODRIVERSUPPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@GPLA@DDERR_DEVICEDOESNTOWNSURFACE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@HJOE@D3DERR_BADMAJORVERSION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@BCJD@D3DERR_BADMINORVERSION?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@FDOA@D3DERR_INVALID_DEVICE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@PIMI@D3DERR_INITFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@KGJB@D3DERR_DEVICEAGGREGATED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@JGBF@D3DERR_EXECUTE_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@KOHI@D3DERR_EXECUTE_DESTROY_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@HMCP@D3DERR_EXECUTE_LOCK_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@BLHG@D3DERR_EXECUTE_UNLOCK_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@FEHK@D3DERR_EXECUTE_LOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@CHFH@D3DERR_EXECUTE_NOT_LOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@MNJL@D3DERR_EXECUTE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@PHIG@D3DERR_EXECUTE_CLIPPED_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@BIHB@D3DERR_TEXTURE_NO_SUPPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@ILMN@D3DERR_TEXTURE_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@MFGF@D3DERR_TEXTURE_DESTROY_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@COJG@D3DERR_TEXTURE_LOCK_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@GKO@D3DERR_TEXTURE_UNLOCK_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@BDLL@D3DERR_TEXTURE_LOAD_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@FKPD@D3DERR_TEXTURE_SWAP_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@KDAJ@D3DERR_TEXTURE_LOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@JOKK@D3DERR_TEXTURE_NOT_LOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@NIBM@D3DERR_TEXTURE_GETSURF_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@PPFH@D3DERR_MATRIX_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@PCBB@D3DERR_MATRIX_DESTROY_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@OADM@D3DERR_MATRIX_SETDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@GEGP@D3DERR_MATRIX_GETDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@DGJL@D3DERR_SETVIEWPORTDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@GGKC@D3DERR_INVALIDCURRENTVIEWPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@OHKB@D3DERR_INVALIDPRIMITIVETYPE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@LDNJ@D3DERR_INVALIDVERTEXTYPE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@CMBP@D3DERR_TEXTURE_BADSIZE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@HCGG@D3DERR_INVALIDRAMPTEXTURE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@IAKI@D3DERR_MATERIAL_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@EGGO@D3DERR_MATERIAL_DESTROY_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@FEED@D3DERR_MATERIAL_SETDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@NABA@D3DERR_MATERIAL_GETDATA_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@BGDC@D3DERR_INVALIDPALETTE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@DAID@D3DERR_ZBUFF_NEEDS_SYSTEMMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@JPAF@D3DERR_ZBUFF_NEEDS_VIDEOMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@LBFJ@D3DERR_SURFACENOTINVIDMEM?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@INDJ@D3DERR_LIGHT_SET_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@BGLM@D3DERR_LIGHTHASVIEWPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@KEPF@D3DERR_LIGHTNOTINTHISVIEWPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@NLAI@D3DERR_SCENE_IN_SCENE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@MACG@D3DERR_SCENE_NOT_IN_SCENE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@MFPI@D3DERR_SCENE_BEGIN_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@PEFM@D3DERR_SCENE_END_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0P@LENL@D3DERR_INBEGIN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@ENKC@D3DERR_NOTINBEGIN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@IONM@D3DERR_NOVIEWPORTS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@DDON@D3DERR_VIEWPORTDATANOTSET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@KADB@D3DERR_VIEWPORTHASNODEVICE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@PFFN@D3DERR_NOCURRENTVIEWPORT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@GNNI@D3DERR_INVALIDVERTEXFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BI@IEGN@D3DERR_COLORKEYATTACHED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BN@CCAG@D3DERR_VERTEXBUFFEROPTIMIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@DDH@D3DERR_VERTEXBUFFERUNLOCKFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@NADG@D3DERR_VERTEXBUFFERLOCKED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@HPGF@D3DERR_VBUF_CREATE_FAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@GEJH@D3DERR_ZBUFFER_NOTPRESENT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L45079
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L45080
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0CA@GOGE@D3DERR_STENCILBUFFER_NOTPRESENT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@OMFN@D3DERR_WRONGTEXTUREFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CB@NDEN@D3DERR_UNSUPPORTEDCOLOROPERATION@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@JKDO@D3DERR_UNSUPPORTEDCOLORARG?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CB@JPMC@D3DERR_UNSUPPORTEDALPHAOPERATION@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@ICHD@D3DERR_UNSUPPORTEDALPHAARG?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@FNBO@D3DERR_TOOMANYOPERATIONS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@NDJG@D3DERR_CONFLICTINGTEXTUREFILTER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@KGOP@D3DERR_UNSUPPORTEDFACTORVALUE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@IHFK@D3DERR_CONFLICTINGRENDERSTATE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@PMK@D3DERR_UNSUPPORTEDTEXTUREFILTER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@BEF@D3DERR_TOOMANYPRIMITIVES?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@IAKG@D3DERR_INVALIDMATRIX?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@FNMC@D3DERR_TOOMANYVERTICES?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CB@KJAO@D3DERR_CONFLICTINGTEXTUREPALETTE@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@LEEH@D3DERR_INVALIDSTATEBLOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@OMDO@D3DERR_INBEGINSTATEBLOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@KLFM@D3DERR_NOTINBEGINSTATEBLOCK?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@KMAK@D3DXERR_NOMEMORY?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L45081
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Object
+    name: ??_C@_0BE@OAHE@D3DXERR_NULLPOINTER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@GKJ@D3DXERR_INVALIDD3DXDEVICEINDEX?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@LIOC@D3DXERR_NODIRECTDRAWAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BM@IGDM@D3DXERR_NODIRECT3DAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CC@CIIB@D3DXERR_NODIRECT3DDEVICEAVAILABL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@DJLM@D3DXERR_NOPRIMARYAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@HCLK@D3DXERR_NOZBUFFERAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@NMEE@D3DXERR_NOBACKBUFFERAVAILABLE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@ONEO@D3DXERR_COULDNTUPDATECAPS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@PDDK@D3DXERR_NOZBUFFER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@EFMO@D3DXERR_INVALIDMODE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@INFM@D3DXERR_INVALIDPARAMETER?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BD@FELM@D3DXERR_INITFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@OFNO@D3DXERR_STARTUPFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@DHDK@D3DXERR_D3DXNOTSTARTEDYET?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@CMBN@D3DXERR_NOTINITIALIZED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@CLMM@D3DXERR_FAILEDDRAWTEXT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@MIOC@D3DXERR_BADD3DXCONTEXT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@HKEJ@D3DXERR_CAPSNOTSUPPORTED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BO@LHOE@D3DXERR_UNSUPPORTEDFILEFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BB@INDL@D3DXERR_IFLERROR?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BG@LFLM@D3DXERR_FAILEDGETCAPS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BP@OGDM@D3DXERR_CANNOTRESIZEFULLSCREEN?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@NNGH@D3DXERR_CANNOTRESIZENONWINDOWED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CB@HDBI@D3DXERR_FRONTBUFFERALREADYEXISTS@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CA@OJEM@D3DXERR_FULLSCREENPRIMARYEXISTS?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BE@GLBK@D3DXERR_GETDCFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LGND@D3DXERR_BITBLTFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BC@JGKN@D3DXERR_NOTEXTURE?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BH@MJHG@D3DXERR_MIPLEVELABSENT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BL@KMHA@D3DXERR_SURFACENOTPALETTED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@HHEK@D3DXERR_ENUMFORMATSFAILED?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BJ@NFDH@D3DXERR_COLORDEPTHTOOLOW?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BK@BBCL@D3DXERR_INVALIDFILEFORMAT?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0BF@LLLL@D3DXERR_NOMATCHFOUND?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_02DILL@?$CFs?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __snprintf
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0BM@PEKH@Unrecognized?5error?3?50x?$CF0?48x?$AA@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Unknown
+    name: $L43202
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43208
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43214
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43220
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43226
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43232
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43238
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43244
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43250
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43256
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43262
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43268
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43274
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43280
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43286
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43292
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43298
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43304
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43310
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43316
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43322
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43328
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43334
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43340
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43346
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43352
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43358
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43364
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43370
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43376
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43382
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43388
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43394
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43400
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43406
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43412
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43418
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L42799
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43454
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43460
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43466
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43472
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43478
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43484
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43490
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43496
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43505
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43511
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43517
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43523
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43529
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43535
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43541
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43547
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43553
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43559
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43565
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43571
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43577
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43583
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43589
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43595
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43601
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43607
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43613
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43619
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43625
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43631
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43637
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43643
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43649
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43655
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43661
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43667
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43673
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43679
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43685
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43691
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43697
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43703
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43709
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43715
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43721
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43727
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43733
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43739
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43745
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43751
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43757
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43763
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43769
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43775
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43781
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43787
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43793
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43799
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43805
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43811
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43817
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43823
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43871
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43877
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43883
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43889
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43895
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43901
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43907
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43913
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43919
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43925
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43931
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43937
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43943
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43949
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43955
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43961
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43967
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43973
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43980
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43983
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43986
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43989
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43992
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43995
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L43998
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44001
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44004
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44007
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44010
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44013
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44016
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44019
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44022
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44025
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44028
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44031
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44034
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44037
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44040
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44043
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44046
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44049
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44052
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44055
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44058
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44061
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44064
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44067
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44070
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44073
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44076
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44079
+    size: 0
+    flags: 2
+    section: .text
+  - kind: Unknown
+    name: $L44082
+    size: 0
+    flags: 2
+    section: .text
+  relocations:
+  - offset: 55
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 65
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 97
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 107
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 139
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 149
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 181
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 191
+    kind: x86_abs32
+    symbol: 8
+    addend: 0
+  - offset: 223
+    kind: x86_abs32
+    symbol: 9
+    addend: 0
+  - offset: 233
+    kind: x86_abs32
+    symbol: 10
+    addend: 0
+  - offset: 265
+    kind: x86_abs32
+    symbol: 11
+    addend: 0
+  - offset: 275
+    kind: x86_abs32
+    symbol: 12
+    addend: 0
+  - offset: 307
+    kind: x86_abs32
+    symbol: 13
+    addend: 0
+  - offset: 317
+    kind: x86_abs32
+    symbol: 14
+    addend: 0
+  - offset: 349
+    kind: x86_abs32
+    symbol: 15
+    addend: 0
+  - offset: 359
+    kind: x86_abs32
+    symbol: 16
+    addend: 0
+  - offset: 391
+    kind: x86_abs32
+    symbol: 17
+    addend: 0
+  - offset: 401
+    kind: x86_abs32
+    symbol: 18
+    addend: 0
+  - offset: 433
+    kind: x86_abs32
+    symbol: 19
+    addend: 0
+  - offset: 443
+    kind: x86_abs32
+    symbol: 20
+    addend: 0
+  - offset: 489
+    kind: x86_abs32
+    symbol: 21
+    addend: 0
+  - offset: 499
+    kind: x86_abs32
+    symbol: 22
+    addend: 0
+  - offset: 509
+    kind: x86_abs32
+    symbol: 23
+    addend: 0
+  - offset: 519
+    kind: x86_abs32
+    symbol: 24
+    addend: 0
+  - offset: 565
+    kind: x86_abs32
+    symbol: 25
+    addend: 0
+  - offset: 575
+    kind: x86_abs32
+    symbol: 26
+    addend: 0
+  - offset: 585
+    kind: x86_abs32
+    symbol: 27
+    addend: 0
+  - offset: 595
+    kind: x86_abs32
+    symbol: 28
+    addend: 0
+  - offset: 627
+    kind: x86_abs32
+    symbol: 29
+    addend: 0
+  - offset: 637
+    kind: x86_abs32
+    symbol: 30
+    addend: 0
+  - offset: 669
+    kind: x86_abs32
+    symbol: 31
+    addend: 0
+  - offset: 679
+    kind: x86_abs32
+    symbol: 32
+    addend: 0
+  - offset: 711
+    kind: x86_abs32
+    symbol: 33
+    addend: 0
+  - offset: 721
+    kind: x86_abs32
+    symbol: 34
+    addend: 0
+  - offset: 753
+    kind: x86_abs32
+    symbol: 35
+    addend: 0
+  - offset: 763
+    kind: x86_abs32
+    symbol: 36
+    addend: 0
+  - offset: 795
+    kind: x86_abs32
+    symbol: 37
+    addend: 0
+  - offset: 805
+    kind: x86_abs32
+    symbol: 38
+    addend: 0
+  - offset: 837
+    kind: x86_abs32
+    symbol: 39
+    addend: 0
+  - offset: 847
+    kind: x86_abs32
+    symbol: 40
+    addend: 0
+  - offset: 879
+    kind: x86_abs32
+    symbol: 41
+    addend: 0
+  - offset: 889
+    kind: x86_abs32
+    symbol: 42
+    addend: 0
+  - offset: 921
+    kind: x86_abs32
+    symbol: 43
+    addend: 0
+  - offset: 931
+    kind: x86_abs32
+    symbol: 44
+    addend: 0
+  - offset: 963
+    kind: x86_abs32
+    symbol: 45
+    addend: 0
+  - offset: 973
+    kind: x86_abs32
+    symbol: 46
+    addend: 0
+  - offset: 1005
+    kind: x86_abs32
+    symbol: 47
+    addend: 0
+  - offset: 1015
+    kind: x86_abs32
+    symbol: 48
+    addend: 0
+  - offset: 1061
+    kind: x86_abs32
+    symbol: 49
+    addend: 0
+  - offset: 1071
+    kind: x86_abs32
+    symbol: 50
+    addend: 0
+  - offset: 1081
+    kind: x86_abs32
+    symbol: 51
+    addend: 0
+  - offset: 1091
+    kind: x86_abs32
+    symbol: 52
+    addend: 0
+  - offset: 1123
+    kind: x86_abs32
+    symbol: 53
+    addend: 0
+  - offset: 1133
+    kind: x86_abs32
+    symbol: 54
+    addend: 0
+  - offset: 1165
+    kind: x86_abs32
+    symbol: 55
+    addend: 0
+  - offset: 1175
+    kind: x86_abs32
+    symbol: 56
+    addend: 0
+  - offset: 1207
+    kind: x86_abs32
+    symbol: 57
+    addend: 0
+  - offset: 1217
+    kind: x86_abs32
+    symbol: 58
+    addend: 0
+  - offset: 1249
+    kind: x86_abs32
+    symbol: 59
+    addend: 0
+  - offset: 1259
+    kind: x86_abs32
+    symbol: 60
+    addend: 0
+  - offset: 1291
+    kind: x86_abs32
+    symbol: 61
+    addend: 0
+  - offset: 1301
+    kind: x86_abs32
+    symbol: 62
+    addend: 0
+  - offset: 1333
+    kind: x86_abs32
+    symbol: 63
+    addend: 0
+  - offset: 1343
+    kind: x86_abs32
+    symbol: 64
+    addend: 0
+  - offset: 1375
+    kind: x86_abs32
+    symbol: 65
+    addend: 0
+  - offset: 1385
+    kind: x86_abs32
+    symbol: 66
+    addend: 0
+  - offset: 1424
+    kind: x86_abs32
+    symbol: 67
+    addend: 0
+  - offset: 1434
+    kind: x86_abs32
+    symbol: 68
+    addend: 0
+  - offset: 1444
+    kind: x86_abs32
+    symbol: 69
+    addend: 0
+  - offset: 1489
+    kind: x86_abs32
+    symbol: 70
+    addend: 0
+  - offset: 1496
+    kind: x86_abs32
+    symbol: 71
+    addend: 0
+  - offset: 1501
+    kind: x86_abs32
+    symbol: 72
+    addend: 0
+  - offset: 1511
+    kind: x86_abs32
+    symbol: 73
+    addend: 0
+  - offset: 1521
+    kind: x86_abs32
+    symbol: 74
+    addend: 0
+  - offset: 1531
+    kind: x86_abs32
+    symbol: 75
+    addend: 0
+  - offset: 1541
+    kind: x86_abs32
+    symbol: 76
+    addend: 0
+  - offset: 1551
+    kind: x86_abs32
+    symbol: 77
+    addend: 0
+  - offset: 1561
+    kind: x86_abs32
+    symbol: 78
+    addend: 0
+  - offset: 1571
+    kind: x86_abs32
+    symbol: 79
+    addend: 0
+  - offset: 1581
+    kind: x86_abs32
+    symbol: 80
+    addend: 0
+  - offset: 1591
+    kind: x86_abs32
+    symbol: 81
+    addend: 0
+  - offset: 1601
+    kind: x86_abs32
+    symbol: 82
+    addend: 0
+  - offset: 1611
+    kind: x86_abs32
+    symbol: 83
+    addend: 0
+  - offset: 1621
+    kind: x86_abs32
+    symbol: 84
+    addend: 0
+  - offset: 1631
+    kind: x86_abs32
+    symbol: 85
+    addend: 0
+  - offset: 1641
+    kind: x86_abs32
+    symbol: 86
+    addend: 0
+  - offset: 1651
+    kind: x86_abs32
+    symbol: 87
+    addend: 0
+  - offset: 1661
+    kind: x86_abs32
+    symbol: 88
+    addend: 0
+  - offset: 1671
+    kind: x86_abs32
+    symbol: 89
+    addend: 0
+  - offset: 1681
+    kind: x86_abs32
+    symbol: 90
+    addend: 0
+  - offset: 1691
+    kind: x86_abs32
+    symbol: 91
+    addend: 0
+  - offset: 1701
+    kind: x86_abs32
+    symbol: 92
+    addend: 0
+  - offset: 1711
+    kind: x86_abs32
+    symbol: 93
+    addend: 0
+  - offset: 1721
+    kind: x86_abs32
+    symbol: 94
+    addend: 0
+  - offset: 1731
+    kind: x86_abs32
+    symbol: 95
+    addend: 0
+  - offset: 1741
+    kind: x86_abs32
+    symbol: 96
+    addend: 0
+  - offset: 1751
+    kind: x86_abs32
+    symbol: 97
+    addend: 0
+  - offset: 1761
+    kind: x86_abs32
+    symbol: 98
+    addend: 0
+  - offset: 1771
+    kind: x86_abs32
+    symbol: 99
+    addend: 0
+  - offset: 1781
+    kind: x86_abs32
+    symbol: 100
+    addend: 0
+  - offset: 1791
+    kind: x86_abs32
+    symbol: 101
+    addend: 0
+  - offset: 1801
+    kind: x86_abs32
+    symbol: 102
+    addend: 0
+  - offset: 1811
+    kind: x86_abs32
+    symbol: 103
+    addend: 0
+  - offset: 1821
+    kind: x86_abs32
+    symbol: 104
+    addend: 0
+  - offset: 1831
+    kind: x86_abs32
+    symbol: 105
+    addend: 0
+  - offset: 1841
+    kind: x86_abs32
+    symbol: 106
+    addend: 0
+  - offset: 1851
+    kind: x86_abs32
+    symbol: 107
+    addend: 0
+  - offset: 1861
+    kind: x86_abs32
+    symbol: 108
+    addend: 0
+  - offset: 1871
+    kind: x86_abs32
+    symbol: 109
+    addend: 0
+  - offset: 1903
+    kind: x86_abs32
+    symbol: 110
+    addend: 0
+  - offset: 1913
+    kind: x86_abs32
+    symbol: 111
+    addend: 0
+  - offset: 1945
+    kind: x86_abs32
+    symbol: 112
+    addend: 0
+  - offset: 1955
+    kind: x86_abs32
+    symbol: 113
+    addend: 0
+  - offset: 2000
+    kind: x86_abs32
+    symbol: 114
+    addend: 0
+  - offset: 2005
+    kind: x86_abs32
+    symbol: 115
+    addend: 0
+  - offset: 2015
+    kind: x86_abs32
+    symbol: 116
+    addend: 0
+  - offset: 2025
+    kind: x86_abs32
+    symbol: 117
+    addend: 0
+  - offset: 2035
+    kind: x86_abs32
+    symbol: 118
+    addend: 0
+  - offset: 2045
+    kind: x86_abs32
+    symbol: 119
+    addend: 0
+  - offset: 2055
+    kind: x86_abs32
+    symbol: 120
+    addend: 0
+  - offset: 2065
+    kind: x86_abs32
+    symbol: 121
+    addend: 0
+  - offset: 2075
+    kind: x86_abs32
+    symbol: 122
+    addend: 0
+  - offset: 2085
+    kind: x86_abs32
+    symbol: 123
+    addend: 0
+  - offset: 2095
+    kind: x86_abs32
+    symbol: 124
+    addend: 0
+  - offset: 2105
+    kind: x86_abs32
+    symbol: 125
+    addend: 0
+  - offset: 2115
+    kind: x86_abs32
+    symbol: 126
+    addend: 0
+  - offset: 2125
+    kind: x86_abs32
+    symbol: 127
+    addend: 0
+  - offset: 2135
+    kind: x86_abs32
+    symbol: 128
+    addend: 0
+  - offset: 2145
+    kind: x86_abs32
+    symbol: 129
+    addend: 0
+  - offset: 2155
+    kind: x86_abs32
+    symbol: 130
+    addend: 0
+  - offset: 2165
+    kind: x86_abs32
+    symbol: 131
+    addend: 0
+  - offset: 2175
+    kind: x86_abs32
+    symbol: 132
+    addend: 0
+  - offset: 2185
+    kind: x86_abs32
+    symbol: 133
+    addend: 0
+  - offset: 2195
+    kind: x86_abs32
+    symbol: 134
+    addend: 0
+  - offset: 2205
+    kind: x86_abs32
+    symbol: 135
+    addend: 0
+  - offset: 2215
+    kind: x86_abs32
+    symbol: 136
+    addend: 0
+  - offset: 2225
+    kind: x86_abs32
+    symbol: 137
+    addend: 0
+  - offset: 2235
+    kind: x86_abs32
+    symbol: 138
+    addend: 0
+  - offset: 2245
+    kind: x86_abs32
+    symbol: 139
+    addend: 0
+  - offset: 2255
+    kind: x86_abs32
+    symbol: 140
+    addend: 0
+  - offset: 2265
+    kind: x86_abs32
+    symbol: 141
+    addend: 0
+  - offset: 2275
+    kind: x86_abs32
+    symbol: 142
+    addend: 0
+  - offset: 2285
+    kind: x86_abs32
+    symbol: 143
+    addend: 0
+  - offset: 2295
+    kind: x86_abs32
+    symbol: 144
+    addend: 0
+  - offset: 2305
+    kind: x86_abs32
+    symbol: 145
+    addend: 0
+  - offset: 2315
+    kind: x86_abs32
+    symbol: 146
+    addend: 0
+  - offset: 2325
+    kind: x86_abs32
+    symbol: 147
+    addend: 0
+  - offset: 2335
+    kind: x86_abs32
+    symbol: 148
+    addend: 0
+  - offset: 2345
+    kind: x86_abs32
+    symbol: 149
+    addend: 0
+  - offset: 2355
+    kind: x86_abs32
+    symbol: 150
+    addend: 0
+  - offset: 2365
+    kind: x86_abs32
+    symbol: 151
+    addend: 0
+  - offset: 2375
+    kind: x86_abs32
+    symbol: 152
+    addend: 0
+  - offset: 2385
+    kind: x86_abs32
+    symbol: 153
+    addend: 0
+  - offset: 2395
+    kind: x86_abs32
+    symbol: 154
+    addend: 0
+  - offset: 2405
+    kind: x86_abs32
+    symbol: 155
+    addend: 0
+  - offset: 2415
+    kind: x86_abs32
+    symbol: 156
+    addend: 0
+  - offset: 2425
+    kind: x86_abs32
+    symbol: 157
+    addend: 0
+  - offset: 2435
+    kind: x86_abs32
+    symbol: 158
+    addend: 0
+  - offset: 2445
+    kind: x86_abs32
+    symbol: 159
+    addend: 0
+  - offset: 2455
+    kind: x86_abs32
+    symbol: 160
+    addend: 0
+  - offset: 2465
+    kind: x86_abs32
+    symbol: 161
+    addend: 0
+  - offset: 2475
+    kind: x86_abs32
+    symbol: 162
+    addend: 0
+  - offset: 2485
+    kind: x86_abs32
+    symbol: 163
+    addend: 0
+  - offset: 2495
+    kind: x86_abs32
+    symbol: 164
+    addend: 0
+  - offset: 2505
+    kind: x86_abs32
+    symbol: 165
+    addend: 0
+  - offset: 2515
+    kind: x86_abs32
+    symbol: 166
+    addend: 0
+  - offset: 2525
+    kind: x86_abs32
+    symbol: 167
+    addend: 0
+  - offset: 2535
+    kind: x86_abs32
+    symbol: 168
+    addend: 0
+  - offset: 2545
+    kind: x86_abs32
+    symbol: 169
+    addend: 0
+  - offset: 2555
+    kind: x86_abs32
+    symbol: 170
+    addend: 0
+  - offset: 2565
+    kind: x86_abs32
+    symbol: 171
+    addend: 0
+  - offset: 2575
+    kind: x86_abs32
+    symbol: 172
+    addend: 0
+  - offset: 2585
+    kind: x86_abs32
+    symbol: 173
+    addend: 0
+  - offset: 2595
+    kind: x86_abs32
+    symbol: 174
+    addend: 0
+  - offset: 2605
+    kind: x86_abs32
+    symbol: 175
+    addend: 0
+  - offset: 2615
+    kind: x86_abs32
+    symbol: 176
+    addend: 0
+  - offset: 2625
+    kind: x86_abs32
+    symbol: 177
+    addend: 0
+  - offset: 2657
+    kind: x86_abs32
+    symbol: 178
+    addend: 0
+  - offset: 2667
+    kind: x86_abs32
+    symbol: 179
+    addend: 0
+  - offset: 2713
+    kind: x86_abs32
+    symbol: 180
+    addend: 0
+  - offset: 2723
+    kind: x86_abs32
+    symbol: 181
+    addend: 0
+  - offset: 2733
+    kind: x86_abs32
+    symbol: 182
+    addend: 0
+  - offset: 2743
+    kind: x86_abs32
+    symbol: 183
+    addend: 0
+  - offset: 2788
+    kind: x86_abs32
+    symbol: 184
+    addend: 0
+  - offset: 2795
+    kind: x86_abs32
+    symbol: 185
+    addend: 0
+  - offset: 2800
+    kind: x86_abs32
+    symbol: 186
+    addend: 0
+  - offset: 2810
+    kind: x86_abs32
+    symbol: 187
+    addend: 0
+  - offset: 2820
+    kind: x86_abs32
+    symbol: 188
+    addend: 0
+  - offset: 2830
+    kind: x86_abs32
+    symbol: 189
+    addend: 0
+  - offset: 2840
+    kind: x86_abs32
+    symbol: 190
+    addend: 0
+  - offset: 2850
+    kind: x86_abs32
+    symbol: 191
+    addend: 0
+  - offset: 2860
+    kind: x86_abs32
+    symbol: 192
+    addend: 0
+  - offset: 2870
+    kind: x86_abs32
+    symbol: 193
+    addend: 0
+  - offset: 2880
+    kind: x86_abs32
+    symbol: 194
+    addend: 0
+  - offset: 2890
+    kind: x86_abs32
+    symbol: 195
+    addend: 0
+  - offset: 2900
+    kind: x86_abs32
+    symbol: 196
+    addend: 0
+  - offset: 2910
+    kind: x86_abs32
+    symbol: 197
+    addend: 0
+  - offset: 2920
+    kind: x86_abs32
+    symbol: 198
+    addend: 0
+  - offset: 2930
+    kind: x86_abs32
+    symbol: 199
+    addend: 0
+  - offset: 2940
+    kind: x86_abs32
+    symbol: 200
+    addend: 0
+  - offset: 2950
+    kind: x86_abs32
+    symbol: 201
+    addend: 0
+  - offset: 2960
+    kind: x86_abs32
+    symbol: 202
+    addend: 0
+  - offset: 2970
+    kind: x86_abs32
+    symbol: 203
+    addend: 0
+  - offset: 2980
+    kind: x86_abs32
+    symbol: 204
+    addend: 0
+  - offset: 3006
+    kind: x86_abs32
+    symbol: 205
+    addend: 0
+  - offset: 3011
+    kind: x86_abs32
+    symbol: 206
+    addend: 0
+  - offset: 3021
+    kind: x86_abs32
+    symbol: 207
+    addend: 0
+  - offset: 3031
+    kind: x86_abs32
+    symbol: 208
+    addend: 0
+  - offset: 3041
+    kind: x86_abs32
+    symbol: 209
+    addend: 0
+  - offset: 3051
+    kind: x86_abs32
+    symbol: 210
+    addend: 0
+  - offset: 3061
+    kind: x86_abs32
+    symbol: 211
+    addend: 0
+  - offset: 3071
+    kind: x86_abs32
+    symbol: 212
+    addend: 0
+  - offset: 3081
+    kind: x86_abs32
+    symbol: 213
+    addend: 0
+  - offset: 3091
+    kind: x86_abs32
+    symbol: 214
+    addend: 0
+  - offset: 3101
+    kind: x86_abs32
+    symbol: 215
+    addend: 0
+  - offset: 3111
+    kind: x86_abs32
+    symbol: 216
+    addend: 0
+  - offset: 3121
+    kind: x86_abs32
+    symbol: 217
+    addend: 0
+  - offset: 3131
+    kind: x86_abs32
+    symbol: 218
+    addend: 0
+  - offset: 3141
+    kind: x86_abs32
+    symbol: 219
+    addend: 0
+  - offset: 3151
+    kind: x86_abs32
+    symbol: 220
+    addend: 0
+  - offset: 3161
+    kind: x86_abs32
+    symbol: 221
+    addend: 0
+  - offset: 3171
+    kind: x86_abs32
+    symbol: 222
+    addend: 0
+  - offset: 3178
+    kind: x86_abs32
+    symbol: 223
+    addend: 0
+  - offset: 3185
+    kind: x86_abs32
+    symbol: 224
+    addend: 0
+  - offset: 3192
+    kind: x86_abs32
+    symbol: 225
+    addend: 0
+  - offset: 3199
+    kind: x86_abs32
+    symbol: 226
+    addend: 0
+  - offset: 3206
+    kind: x86_abs32
+    symbol: 227
+    addend: 0
+  - offset: 3213
+    kind: x86_abs32
+    symbol: 228
+    addend: 0
+  - offset: 3220
+    kind: x86_abs32
+    symbol: 229
+    addend: 0
+  - offset: 3227
+    kind: x86_abs32
+    symbol: 230
+    addend: 0
+  - offset: 3234
+    kind: x86_abs32
+    symbol: 231
+    addend: 0
+  - offset: 3241
+    kind: x86_abs32
+    symbol: 232
+    addend: 0
+  - offset: 3248
+    kind: x86_abs32
+    symbol: 233
+    addend: 0
+  - offset: 3255
+    kind: x86_abs32
+    symbol: 234
+    addend: 0
+  - offset: 3262
+    kind: x86_abs32
+    symbol: 235
+    addend: 0
+  - offset: 3269
+    kind: x86_abs32
+    symbol: 236
+    addend: 0
+  - offset: 3276
+    kind: x86_abs32
+    symbol: 237
+    addend: 0
+  - offset: 3283
+    kind: x86_abs32
+    symbol: 238
+    addend: 0
+  - offset: 3290
+    kind: x86_abs32
+    symbol: 239
+    addend: 0
+  - offset: 3297
+    kind: x86_abs32
+    symbol: 240
+    addend: 0
+  - offset: 3307
+    kind: x86_abs32
+    symbol: 241
+    addend: 0
+  - offset: 3314
+    kind: x86_rel32
+    symbol: 242
+    addend: -4
+  - offset: 3324
+    kind: x86_abs32
+    symbol: 243
+    addend: 0
+  - offset: 3331
+    kind: x86_rel32
+    symbol: 242
+    addend: -4
+  - offset: 3357
+    kind: x86_abs32
+    symbol: 244
+    addend: 0
+  - offset: 3361
+    kind: x86_abs32
+    symbol: 245
+    addend: 0
+  - offset: 3365
+    kind: x86_abs32
+    symbol: 246
+    addend: 0
+  - offset: 3369
+    kind: x86_abs32
+    symbol: 247
+    addend: 0
+  - offset: 3373
+    kind: x86_abs32
+    symbol: 248
+    addend: 0
+  - offset: 3377
+    kind: x86_abs32
+    symbol: 249
+    addend: 0
+  - offset: 3381
+    kind: x86_abs32
+    symbol: 250
+    addend: 0
+  - offset: 3385
+    kind: x86_abs32
+    symbol: 251
+    addend: 0
+  - offset: 3389
+    kind: x86_abs32
+    symbol: 252
+    addend: 0
+  - offset: 3393
+    kind: x86_abs32
+    symbol: 253
+    addend: 0
+  - offset: 3397
+    kind: x86_abs32
+    symbol: 254
+    addend: 0
+  - offset: 3401
+    kind: x86_abs32
+    symbol: 255
+    addend: 0
+  - offset: 3405
+    kind: x86_abs32
+    symbol: 256
+    addend: 0
+  - offset: 3409
+    kind: x86_abs32
+    symbol: 257
+    addend: 0
+  - offset: 3413
+    kind: x86_abs32
+    symbol: 258
+    addend: 0
+  - offset: 3417
+    kind: x86_abs32
+    symbol: 259
+    addend: 0
+  - offset: 3421
+    kind: x86_abs32
+    symbol: 260
+    addend: 0
+  - offset: 3425
+    kind: x86_abs32
+    symbol: 261
+    addend: 0
+  - offset: 3429
+    kind: x86_abs32
+    symbol: 262
+    addend: 0
+  - offset: 3433
+    kind: x86_abs32
+    symbol: 263
+    addend: 0
+  - offset: 3437
+    kind: x86_abs32
+    symbol: 264
+    addend: 0
+  - offset: 3441
+    kind: x86_abs32
+    symbol: 265
+    addend: 0
+  - offset: 3445
+    kind: x86_abs32
+    symbol: 266
+    addend: 0
+  - offset: 3449
+    kind: x86_abs32
+    symbol: 267
+    addend: 0
+  - offset: 3453
+    kind: x86_abs32
+    symbol: 268
+    addend: 0
+  - offset: 3457
+    kind: x86_abs32
+    symbol: 269
+    addend: 0
+  - offset: 3461
+    kind: x86_abs32
+    symbol: 270
+    addend: 0
+  - offset: 3465
+    kind: x86_abs32
+    symbol: 271
+    addend: 0
+  - offset: 3469
+    kind: x86_abs32
+    symbol: 272
+    addend: 0
+  - offset: 3473
+    kind: x86_abs32
+    symbol: 273
+    addend: 0
+  - offset: 3477
+    kind: x86_abs32
+    symbol: 274
+    addend: 0
+  - offset: 3481
+    kind: x86_abs32
+    symbol: 275
+    addend: 0
+  - offset: 3485
+    kind: x86_abs32
+    symbol: 276
+    addend: 0
+  - offset: 3489
+    kind: x86_abs32
+    symbol: 277
+    addend: 0
+  - offset: 3493
+    kind: x86_abs32
+    symbol: 278
+    addend: 0
+  - offset: 3497
+    kind: x86_abs32
+    symbol: 279
+    addend: 0
+  - offset: 3501
+    kind: x86_abs32
+    symbol: 280
+    addend: 0
+  - offset: 3505
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3569
+    kind: x86_abs32
+    symbol: 282
+    addend: 0
+  - offset: 3573
+    kind: x86_abs32
+    symbol: 283
+    addend: 0
+  - offset: 3577
+    kind: x86_abs32
+    symbol: 284
+    addend: 0
+  - offset: 3581
+    kind: x86_abs32
+    symbol: 285
+    addend: 0
+  - offset: 3585
+    kind: x86_abs32
+    symbol: 286
+    addend: 0
+  - offset: 3589
+    kind: x86_abs32
+    symbol: 287
+    addend: 0
+  - offset: 3593
+    kind: x86_abs32
+    symbol: 288
+    addend: 0
+  - offset: 3597
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3601
+    kind: x86_abs32
+    symbol: 289
+    addend: 0
+  - offset: 3605
+    kind: x86_abs32
+    symbol: 290
+    addend: 0
+  - offset: 3609
+    kind: x86_abs32
+    symbol: 291
+    addend: 0
+  - offset: 3613
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3617
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3621
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3625
+    kind: x86_abs32
+    symbol: 292
+    addend: 0
+  - offset: 3629
+    kind: x86_abs32
+    symbol: 293
+    addend: 0
+  - offset: 3633
+    kind: x86_abs32
+    symbol: 294
+    addend: 0
+  - offset: 3637
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3641
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3645
+    kind: x86_abs32
+    symbol: 295
+    addend: 0
+  - offset: 3649
+    kind: x86_abs32
+    symbol: 296
+    addend: 0
+  - offset: 3653
+    kind: x86_abs32
+    symbol: 297
+    addend: 0
+  - offset: 3657
+    kind: x86_abs32
+    symbol: 298
+    addend: 0
+  - offset: 3661
+    kind: x86_abs32
+    symbol: 299
+    addend: 0
+  - offset: 3665
+    kind: x86_abs32
+    symbol: 300
+    addend: 0
+  - offset: 3669
+    kind: x86_abs32
+    symbol: 301
+    addend: 0
+  - offset: 3673
+    kind: x86_abs32
+    symbol: 302
+    addend: 0
+  - offset: 3677
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3681
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3685
+    kind: x86_abs32
+    symbol: 303
+    addend: 0
+  - offset: 3689
+    kind: x86_abs32
+    symbol: 304
+    addend: 0
+  - offset: 3693
+    kind: x86_abs32
+    symbol: 305
+    addend: 0
+  - offset: 3697
+    kind: x86_abs32
+    symbol: 306
+    addend: 0
+  - offset: 3701
+    kind: x86_abs32
+    symbol: 307
+    addend: 0
+  - offset: 3705
+    kind: x86_abs32
+    symbol: 308
+    addend: 0
+  - offset: 3709
+    kind: x86_abs32
+    symbol: 309
+    addend: 0
+  - offset: 3713
+    kind: x86_abs32
+    symbol: 310
+    addend: 0
+  - offset: 3717
+    kind: x86_abs32
+    symbol: 311
+    addend: 0
+  - offset: 3721
+    kind: x86_abs32
+    symbol: 312
+    addend: 0
+  - offset: 3725
+    kind: x86_abs32
+    symbol: 313
+    addend: 0
+  - offset: 3729
+    kind: x86_abs32
+    symbol: 314
+    addend: 0
+  - offset: 3733
+    kind: x86_abs32
+    symbol: 315
+    addend: 0
+  - offset: 3737
+    kind: x86_abs32
+    symbol: 316
+    addend: 0
+  - offset: 3741
+    kind: x86_abs32
+    symbol: 317
+    addend: 0
+  - offset: 3745
+    kind: x86_abs32
+    symbol: 318
+    addend: 0
+  - offset: 3749
+    kind: x86_abs32
+    symbol: 319
+    addend: 0
+  - offset: 3753
+    kind: x86_abs32
+    symbol: 320
+    addend: 0
+  - offset: 3757
+    kind: x86_abs32
+    symbol: 321
+    addend: 0
+  - offset: 3761
+    kind: x86_abs32
+    symbol: 322
+    addend: 0
+  - offset: 3765
+    kind: x86_abs32
+    symbol: 323
+    addend: 0
+  - offset: 3769
+    kind: x86_abs32
+    symbol: 324
+    addend: 0
+  - offset: 3773
+    kind: x86_abs32
+    symbol: 325
+    addend: 0
+  - offset: 3777
+    kind: x86_abs32
+    symbol: 326
+    addend: 0
+  - offset: 3781
+    kind: x86_abs32
+    symbol: 327
+    addend: 0
+  - offset: 3785
+    kind: x86_abs32
+    symbol: 328
+    addend: 0
+  - offset: 3789
+    kind: x86_abs32
+    symbol: 329
+    addend: 0
+  - offset: 3793
+    kind: x86_abs32
+    symbol: 330
+    addend: 0
+  - offset: 3797
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3801
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3805
+    kind: x86_abs32
+    symbol: 331
+    addend: 0
+  - offset: 3809
+    kind: x86_abs32
+    symbol: 332
+    addend: 0
+  - offset: 3813
+    kind: x86_abs32
+    symbol: 333
+    addend: 0
+  - offset: 3817
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3821
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3825
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3829
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3833
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3837
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3841
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3845
+    kind: x86_abs32
+    symbol: 334
+    addend: 0
+  - offset: 3849
+    kind: x86_abs32
+    symbol: 335
+    addend: 0
+  - offset: 3853
+    kind: x86_abs32
+    symbol: 336
+    addend: 0
+  - offset: 3857
+    kind: x86_abs32
+    symbol: 337
+    addend: 0
+  - offset: 3861
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3865
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3869
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3873
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3877
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3881
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 3885
+    kind: x86_abs32
+    symbol: 338
+    addend: 0
+  - offset: 3889
+    kind: x86_abs32
+    symbol: 339
+    addend: 0
+  - offset: 3893
+    kind: x86_abs32
+    symbol: 340
+    addend: 0
+  - offset: 3897
+    kind: x86_abs32
+    symbol: 341
+    addend: 0
+  - offset: 3901
+    kind: x86_abs32
+    symbol: 342
+    addend: 0
+  - offset: 3905
+    kind: x86_abs32
+    symbol: 343
+    addend: 0
+  - offset: 3909
+    kind: x86_abs32
+    symbol: 344
+    addend: 0
+  - offset: 3913
+    kind: x86_abs32
+    symbol: 345
+    addend: 0
+  - offset: 3917
+    kind: x86_abs32
+    symbol: 346
+    addend: 0
+  - offset: 3921
+    kind: x86_abs32
+    symbol: 347
+    addend: 0
+  - offset: 3925
+    kind: x86_abs32
+    symbol: 348
+    addend: 0
+  - offset: 3929
+    kind: x86_abs32
+    symbol: 349
+    addend: 0
+  - offset: 3933
+    kind: x86_abs32
+    symbol: 350
+    addend: 0
+  - offset: 3937
+    kind: x86_abs32
+    symbol: 351
+    addend: 0
+  - offset: 3941
+    kind: x86_abs32
+    symbol: 352
+    addend: 0
+  - offset: 3945
+    kind: x86_abs32
+    symbol: 353
+    addend: 0
+  - offset: 3949
+    kind: x86_abs32
+    symbol: 354
+    addend: 0
+  - offset: 3953
+    kind: x86_abs32
+    symbol: 355
+    addend: 0
+  - offset: 3957
+    kind: x86_abs32
+    symbol: 356
+    addend: 0
+  - offset: 3961
+    kind: x86_abs32
+    symbol: 357
+    addend: 0
+  - offset: 3965
+    kind: x86_abs32
+    symbol: 358
+    addend: 0
+  - offset: 3969
+    kind: x86_abs32
+    symbol: 359
+    addend: 0
+  - offset: 3973
+    kind: x86_abs32
+    symbol: 360
+    addend: 0
+  - offset: 3977
+    kind: x86_abs32
+    symbol: 361
+    addend: 0
+  - offset: 3981
+    kind: x86_abs32
+    symbol: 281
+    addend: 0
+  - offset: 4017
+    kind: x86_abs32
+    symbol: 362
+    addend: 0
+  - offset: 4021
+    kind: x86_abs32
+    symbol: 363
+    addend: 0
+  - offset: 4025
+    kind: x86_abs32
+    symbol: 364
+    addend: 0
+  - offset: 4029
+    kind: x86_abs32
+    symbol: 365
+    addend: 0
+  - offset: 4033
+    kind: x86_abs32
+    symbol: 366
+    addend: 0
+  - offset: 4037
+    kind: x86_abs32
+    symbol: 367
+    addend: 0
+  - offset: 4041
+    kind: x86_abs32
+    symbol: 368
+    addend: 0
+  - offset: 4045
+    kind: x86_abs32
+    symbol: 369
+    addend: 0
+  - offset: 4049
+    kind: x86_abs32
+    symbol: 370
+    addend: 0
+  - offset: 4053
+    kind: x86_abs32
+    symbol: 371
+    addend: 0
+  - offset: 4057
+    kind: x86_abs32
+    symbol: 372
+    addend: 0
+  - offset: 4061
+    kind: x86_abs32
+    symbol: 373
+    addend: 0
+  - offset: 4065
+    kind: x86_abs32
+    symbol: 374
+    addend: 0
+  - offset: 4069
+    kind: x86_abs32
+    symbol: 375
+    addend: 0
+  - offset: 4073
+    kind: x86_abs32
+    symbol: 376
+    addend: 0
+  - offset: 4077
+    kind: x86_abs32
+    symbol: 377
+    addend: 0
+  - offset: 4081
+    kind: x86_abs32
+    symbol: 378
+    addend: 0
+  - offset: 4085
+    kind: x86_abs32
+    symbol: 379
+    addend: 0
+  - offset: 4089
+    kind: x86_abs32
+    symbol: 380
+    addend: 0
+  - offset: 4093
+    kind: x86_abs32
+    symbol: 381
+    addend: 0
+  - offset: 4097
+    kind: x86_abs32
+    symbol: 382
+    addend: 0
+  - offset: 4101
+    kind: x86_abs32
+    symbol: 383
+    addend: 0
+  - offset: 4105
+    kind: x86_abs32
+    symbol: 384
+    addend: 0
+  - offset: 4109
+    kind: x86_abs32
+    symbol: 385
+    addend: 0
+  - offset: 4113
+    kind: x86_abs32
+    symbol: 386
+    addend: 0
+  - offset: 4117
+    kind: x86_abs32
+    symbol: 387
+    addend: 0
+  - offset: 4121
+    kind: x86_abs32
+    symbol: 388
+    addend: 0
+  - offset: 4125
+    kind: x86_abs32
+    symbol: 389
+    addend: 0
+  - offset: 4129
+    kind: x86_abs32
+    symbol: 390
+    addend: 0
+  - offset: 4133
+    kind: x86_abs32
+    symbol: 391
+    addend: 0
+  - offset: 4137
+    kind: x86_abs32
+    symbol: 392
+    addend: 0
+  - offset: 4141
+    kind: x86_abs32
+    symbol: 393
+    addend: 0
+  - offset: 4145
+    kind: x86_abs32
+    symbol: 394
+    addend: 0
+  - offset: 4149
+    kind: x86_abs32
+    symbol: 395
+    addend: 0
+  - offset: 4153
+    kind: x86_abs32
+    symbol: 396
+    addend: 0

@@ -1,0 +1,74 @@
+- symbol: 0
+  hash: c628784d1a9bd332b9dd5df9790254b7fa45e17d
+  signature: Vf+L/+z/i/9V/wj/Vv+L/0r/CP+L/0L/DP+D//n///8P/4T/l/8A/wD/AP+D//j///8P/4T/jv8A/wD/AP+L/3L/BP+B//7/RP9Y/1T/Mf90/2L/gf/+/0T/WP9U/zL/dP85/4H//v9E/1j/VP8z/3T/Mf+B//7/RP9Y/1T/NP90/wj/gf/+/0T/WP9U/zX/df9j/4v/df8M/4P/wv8Q/8H/+P8C/w//r/9G/xD/wf/5/wL/A//B/8H/4P8E/wP/Rv8U/1D/Uv/o/wAAAAAAAAAA6/9A/4v/df8M/4P/wv8Q/8H/+P8C/w//r/9G/xD/wf/5/wL/A//B/8H/4P8E/wP/Rv8U/1D/Uv/o/wAAAAAAAAAA6/8f/4v/df8M/4P/wv8Q/8H/+P8C/w//r/9G/xD/wf/5/wL/A//B/4v/Tv8U/43/BP/B/1D/Uv/o/wAAAAAAAAAAWf9Z/17/Xf/D/w==
+  symbols:
+  - kind: Function
+    name: ?FlushCacheBlock@@YAXPAUPIXELCACHE_BLOCK@@PAUSURFACE_DATA@@@Z
+    size: 176
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockAlpha3@@YAXQAUS3TC_COLOR@@PAUS3TCBlockAlpha3@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockAlpha4@@YAXQAUS3TC_COLOR@@PAUS3TCBlockAlpha4@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?XXEncodeBlockRGB@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 101
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 134
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 167
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+- symbol: 0
+  hash: 7dce665fb6e688a1ddc62c749b914755f556d5a1
+  signature: i/9U/yT/BP9W/1f/i/9C/wj/i/9K/wz/g//4////D/+E/6D/AP8A/wD/g//5////D/+E/5f/AP8A/wD/i/9y/wT/gf/+/0T/WP9U/zH/dP9o/4H//v9E/1j/VP8y/3T/PP+B//7/RP9Y/1T/M/90/zT/gf/+/0T/WP9U/zT/dP8I/4H//v9E/1j/VP81/3X/bP+L/3T/JP8Q/4P/wv8Q/8H/+f8C/4v/fv8Q/w//r//5/8H/+P8C/wP/+P/B/+f/BP8D/37/FP9X/1L/6P8AAAAAAAAAAOv/Rv+L/3T/JP8Q/4P/wv8Q/8H/+f8C/4v/fv8Q/w//r//5/8H/+P8C/wP/+P/B/+f/BP8D/37/FP9X/1L/6P8AAAAAAAAAAOv/Iv+L/3T/JP8Q/4P/wv8Q/8H/+f8C/4v/fv8Q/w//r//5/8H/+P8C/wP/+P+L/0b/FP+N/wT/+P9Q/1L/6P8AAAAAAAAAAFn/Wf9f/17/w/8=
+  symbols:
+  - kind: Function
+    name: ?FlushCacheBlock@@YAXPAUPIXELCACHE_BLOCK@@PAUSURFACE_DATA@@@Z
+    size: 184
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockAlpha3@@YAXQAUS3TC_COLOR@@PAUS3TCBlockAlpha3@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?EncodeBlockAlpha4@@YAXQAUS3TC_COLOR@@PAUS3TCBlockAlpha4@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?XXEncodeBlockRGB@@YAXQAUS3TC_COLOR@@PAUS3TCBlockRGB@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  relocations:
+  - offset: 103
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 139
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 175
+    kind: x86_rel32
+    symbol: 3
+    addend: -4

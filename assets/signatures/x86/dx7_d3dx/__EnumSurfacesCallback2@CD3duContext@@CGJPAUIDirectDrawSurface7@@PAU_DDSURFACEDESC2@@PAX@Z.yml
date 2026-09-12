@@ -1,0 +1,20 @@
+- symbol: 0
+  hash: 27f264cd2a9f86d920b821fa5cfee4bc1d26f397
+  signature: i/9E/yT/DP+L/1T/JP8E/2r/Af+L/wj/i/9A/wT/if8U/4j/WP/C/wz/AP8=
+  symbols:
+  - kind: Function
+    name: ?_EnumSurfacesCallback2@CD3duContext@@CGJPAUIDirectDrawSurface7@@PAU_DDSURFACEDESC2@@PAX@Z
+    size: 22
+    flags: 1
+    section: .text
+  relocations: []
+- symbol: 0
+  hash: 282f250388c372cb1dca24c567a1ae043fd1846b
+  signature: Vf+L/+z/i/9F/xD/i/9V/wj/av8B/4v/CP+L/0D/BP+J/xT/iP9Y/13/wv8M/wD/
+  symbols:
+  - kind: Function
+    name: ?_EnumSurfacesCallback2@CD3duContext@@CGJPAUIDirectDrawSurface7@@PAU_DDSURFACEDESC2@@PAX@Z
+    size: 24
+    flags: 1
+    section: .text
+  relocations: []

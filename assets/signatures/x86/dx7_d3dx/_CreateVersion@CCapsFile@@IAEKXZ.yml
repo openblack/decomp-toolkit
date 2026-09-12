@@ -1,0 +1,164 @@
+- symbol: 0
+  hash: c7f571cc0e821d9112c7e564a92837df0c140c1c
+  signature: U/9V/1b/V/+L//H/6P8AAAAAAAAAAGr/BP+7/1b/Rf9S/wD/i//o/2j/AAAAAAAAAABT/1X/i//O/+j/AAAAAAAAAACL//j/hf///3X/Ov9q/wT/U/+L/87/6P8AAAAAAAAAAIv/+P+F////dP8s/1X/i//O/+j/AAAAAAAAAABQ/1f/i//O/+j/AAAAAAAAAABX/1X/i//O/+j/AAAAAAAAAABq/wD/V/+L/87/6P8AAAAAAAAAAMf/AP8A/wD/AP8H/4v/x/9f/17/Xf9b/8P/
+  symbols:
+  - kind: Function
+    name: ?CreateVersion@CCapsFile@@IAEKXZ
+    size: 105
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?RootEntry@CD3dxFile@@QAEKXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?dwVersion@?1??CreateVersion@CCapsFile@@IAEKXZ@4HB$S43047
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKKPBXK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreateEntry@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetChild@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?SetSibling@CD3dxFile@@QAEXKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?SetChild@CD3dxFile@@QAEXKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?EditData@CD3dxFile@@QAEPAXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 7
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 21
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 30
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 46
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 60
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 69
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 78
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 88
+    kind: x86_rel32
+    symbol: 8
+    addend: -4
+- symbol: 0
+  hash: 4746b12fc20d05ff1baad9cb43cbd6995865bce6
+  signature: Vf+L/+z/Uf9T/1b/V/+L//n/6P8AAAAAAAAAAGr/BP++/1b/Rf9S/wD/aP8AAAAAAAAAAFb/UP+L/8//if9F//z/6P8AAAAAAAAAAIv/2P+F/9v/df8+/2r/BP9W/4v/z//o/wAAAAAAAAAAi//Y/4X/2/90/zD///91//z/i//P/+j/AAAAAAAAAABQ/1P/i//P/+j/AAAAAAAAAABT/4v/z////3X//P/o/wAAAAAAAAAAav8A/1P/i//P/+j/AAAAAAAAAADH/wD/AP8A/wD/B/+L/8P/X/9e/1v/yf/D/w==
+  symbols:
+  - kind: Function
+    name: ?CreateVersion@CCapsFile@@IAEKXZ
+    size: 113
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?RootEntry@CD3dxFile@@QAEKXZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: _?dwVersion@?1??CreateVersion@CCapsFile@@IAEKXZ@4HB$S43058
+    size: 0
+    flags: 2
+    section: .rdata
+  - kind: Function
+    name: ?FindChild@CD3dxFile@@QAEKKKPBXK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreateEntry@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?GetChild@CD3dxFile@@QAEKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?SetSibling@CD3dxFile@@QAEXKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?SetChild@CD3dxFile@@QAEXKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?EditData@CD3dxFile@@QAEPAXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 10
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 22
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 34
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 50
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 66
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 75
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 86
+    kind: x86_rel32
+    symbol: 7
+    addend: -4
+  - offset: 96
+    kind: x86_rel32
+    symbol: 8
+    addend: -4

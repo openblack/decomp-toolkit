@@ -1,23 +1,4 @@
 - symbol: 0
-  hash: 28038134e4d91f5e7f06efe727f1c7233e5c13e9
-  signature: i/9E/yT/BP+j/wAAAAAAAAAAw/8=
-  symbols:
-  - kind: Function
-    name: _srand
-    size: 10
-    flags: 1
-    section: .text
-  - kind: Object
-    name: _holdrand
-    size: 0
-    flags: 2
-    section: .data
-  relocations:
-  - offset: 5
-    kind: x86_abs32
-    symbol: 1
-    addend: 0
-- symbol: 0
   hash: a995f4c3a24dc14d4f0e9b790311b677eba52af6
   signature: 6P8AAAAAAAAAAIv/TP8k/wT/if9I/xT/w/8=
   symbols:

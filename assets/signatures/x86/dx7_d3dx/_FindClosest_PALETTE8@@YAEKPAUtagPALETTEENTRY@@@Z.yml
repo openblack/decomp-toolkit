@@ -1,0 +1,10 @@
+- symbol: 0
+  hash: 77e2276c30466c43aa219422f1fa5dba64616719
+  signature: Vf+L/+z/g//s/wz/i/9F/wj/g/9l//T/AP+D/2X//P8A/1P/Vv9X/8H/6P8Q/w//tv/4/4v/Rf8I/8f/Rf/4//z/A/8A/wD/wf/o/wj/D/+2/9j/D/+2/0X/CP+J/0X/CP+L/0X/DP+N/0j/Av8P/7b/Af8r/0X/CP+Z/4v/8P8P/7b/Qf/+/zP/8v8r/8f/K//y/5n/M//C/yv/wv8D//D/D/+2/0H///8r/8P/mf8z/8L/K//C/wP/8P87/3X/+P99/w3/i/9F//z/hf/2/4n/Rf/0/3T/Ev+J/3X/+P+D/8H/BP///0X//P+B/33//P///wD/AP8A/3z/uP+K/0X/9P9f/17/W//J/8P/
+  symbols:
+  - kind: Function
+    name: ?FindClosest_PALETTE8@@YAEKPAUtagPALETTEENTRY@@@Z
+    size: 135
+    flags: 1
+    section: .text
+  relocations: []

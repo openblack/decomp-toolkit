@@ -1,0 +1,189 @@
+- symbol: 0
+  hash: f583a2d609796692d290e644f8e27abb76db82e4
+  signature: Vf+L/+z/gf/s/xT/Af8A/wD/i/9F/wj/g/9l//z/AP9T/1b/hf/A/1f/i//Z/3T/Dv+J/0P/aP+L/wj/UP///1H/BP/p/8j/AP8A/wD/i/9F/wz/hf/A/3T/Zf+L/wj/jf9T/2j/Uv9Q////Uf8c/4X/wP+J/0X//P8P/43/rP8A/wD/AP+J/0X/9P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf90/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf90/////////4P/4f8D//P/pP9Z/43/tf90/////////43/vf90/////////8f/Rf/4/5//AP8A/wD/8/+l/2j/AAAAAAAAAADr/1b/uP+5/wv/d//I/7//AAAAAAAAAACJ/0X//P+J/0X/9P+D/8n///8z/8D/8v+u//f/0f8r//n/jf+V/3T/////////i//B/4v/9/+L//r/av8i/8H/6f8C//P/pf+L/8j/jf+F/3T/////////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/3T/////////x/9F//j/p/8A/wD/AP/z/6X/aP8AAAAAAAAAAFD/6P8AAAAAAAAAAIv/Rf8Q/zP/yf+J/0P/DP+N/3v/UP8z/8D/if9L/yz/if9L/xj/q/+r/4v/Rf8Y/4n/S/8E/zv/wf8P/4b/x/8A/wD/AP+J/0X/CP+L/0X/FP9q/wT/Wf+L/wD/Af9N/xT/g//o/wD/D/+E/5//AP8A/wD/SP8P/4T/j/8A/wD/AP9I/w//hP+C/wD/AP8A/0j/dP92/0j/dP9t/0j/dP9Z/4v/Rf/8/7//AAAAAAAAAACJ/0X/9P+D/8n///8z/8D/jf+V/3T/////////8v+u//f/0f8r//n/av8i/4v/wf+L//f/i//6/8H/6f8C//P/pf+L/8j/jf+F/+z//v//////g//h/wP/8/+k/1n/jf+1/3T/////////jf+9/+z//v//////x/9F//j/4f8A/wD/AP9o/wAAAAAAAAAAUP/z/6X/6P8AAAAAAAAAAOv/N/+L/0P/LP/G/0T/A/9Q/wj///9D/yz/g/9D/xj/CP/r/yb/gP9L/wT/gP/r/wT/g/9L/wT/QP8B/0v/GP/r/xf/g/9L/wT/EP/r/w3/Cf9L/wT/g/9D/xj/EP/r/wj/g/9L/wT/Av+D/0P/GP8M////Tf8I/w//hf88/////////4v/c/8s/4v/xv/B/+D/CP8J/0P/BP+L/0P/BP+L/8j/gP/h/wL/9v/Z/xv/yf+D/+H//P+D/8H/EP+o/xD/dP8G/4n/S/8g/4P/wf8M/6j/QP90/wb/if9L/yT/g//B/wT/qP+A/3T/Bv+J/0v/KP+D/8H/BP+F//b/dv8m/2r/sP+N/0P/UP9e/43/U/8w/yv/8/+A/zj/AP91/wP/xv8A/wj/if8K/4P/wv8E/w//tv84/wP/z/9A/43/PP8G/zv/e/8s/3L/5f+L/0P/DP9q/wD/if9D/2T/i/9D/wT/if9D/2D/i/9D/2j/x/9D/1z/AP8I/wD/AP9T/4v/CP+D/8P/WP9T/1D///9R/xT/hf/A/33/VP+J/0X/9P+//wAAAAAAAAAAg//J////M//A//L/rv/3/9H/K//5/43/lf90/////////4v/wf+L//f/i//6/2r/Iv/B/+n/Av/z/6X/i//I/43/hf/s//7//////4P/4f8D//P/pP9Z/43/tf90/////////43/vf/s//7//////8f/Rf/4/w7/Af8A/wD/aP8AAAAAAAAAAFD/8/+l/+j/AAAAAAAAAABf/17/W//J/8L/GP8A/w==
+  symbols:
+  - kind: Function
+    name: ?Init@CVertexArray@@QAEXPAUIDirect3D7@@PAUIDirect3DDevice7@@KPAW4_D3DXVERTEXCOMPONENT@@KK@Z
+    size: 704
+    flags: 1
+    section: .text
+  - kind: Object
+    name: ??_C@_0DD@HGFL@CVertexArray?3?3Init?5?9?5Could?5not?5g@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Object
+    name: ??_C@_0CC@CKMO@CVertexArray?3?3Init?5?9?5pD3D?5is?5NUL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CL@LMEC@CVertexArray?3?3Init?5?9?5invalid?5vtx@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CH@JLAH@CVertexArray?3?3Init?5?9?5error?5creat@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 71
+    kind: x86_abs32
+    symbol: 1
+    addend: 0
+  - offset: 141
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 153
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 229
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 235
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 324
+    kind: x86_abs32
+    symbol: 5
+    addend: 0
+  - offset: 395
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 403
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 617
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 685
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 693
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+- symbol: 0
+  hash: 40722a13ad9e1572eee57ee06e748a4d7ba0ce11
+  signature: Vf+L/+z/gf/s/xT/Af8A/wD/i/9F/wj/g/9l//z/AP9T/1b/hf/A/1f/i//Z/3T/Dv+J/0P/aP+L/wj/UP///1H/BP/p/+H/AP8A/wD/i/9F/wz/hf/A/3T/c/+L/wj/jf9T/2j/Uv9Q////Uf8c/4X/wP+J/0X//P8P/43/xf8A/wD/AP+N/43/dP/////////o/wAAAAAAAAAAi/9F//z/v/8AAAAAAAAAAIn/Rf/0/4P/yf///zP/wP+N/5X/dP/////////y/67/9//R/yv/+f9q/yL/i//B/4v/9/+L//r/wf/p/wL/8/+l/4v/yP+N/4X/7P/+//////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/7P/+///////H/0X/+P+f/wD/AP8A//P/pf9o/wAAAAAAAAAA6/9h/77/uf8L/3f/yP+N/43/dP////////+J/3X//P/o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+J/3X/9P/y/67/9//R/yv/+f+N/5X/dP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/7P/+//////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/7P/+///////H/0X/+P+n/wD/AP8A//P/pf9o/wAAAAAAAAAAUP/o/wAAAAAAAAAAi/9F/xD/M//J/4n/Q/8M/43/e/9Q/zP/wP+J/0v/LP+J/0v/GP+r/6v/i/9F/xj/if9L/wT/O//B/w//hv/W/wD/AP8A/4n/Rf8I/4v/Rf8U/2r/BP9Z/4v/AP8B/03/FP+D/+j/AP8P/4T/rv8A/wD/AP9I/w//hP+e/wD/AP8A/0j/D/+E/5H/AP8A/wD/SP8P/4T/gf8A/wD/AP9I/3T/eP9I/3T/ZP+N/43/dP/////////o/wAAAAAAAAAAi/9F//z/v/8AAAAAAAAAAIn/Rf/0/4P/yf///zP/wP+N/5X/dP/////////y/67/9//R/yv/+f9q/yL/i//B/4v/9/+L//r/wf/p/wL/8/+l/4v/yP+N/4X/7P/+//////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/7P/+///////H/0X/+P/h/wD/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAA6/83/4v/Q/8s/8b/RP8D/1D/CP///0P/LP+D/0P/GP8I/+v/Jv+A/0v/BP+A/+v/BP+D/0v/BP9A/wH/S/8Y/+v/F/+D/0v/BP8Q/+v/Df8J/0v/BP+D/0P/GP8Q/+v/CP+D/0v/BP8C/4P/Q/8Y/wz///9N/wj/D/+F/y3/////////i/9z/yz/i//G/8H/4P8I/wn/Q/8E/4v/Q/8E/4v/yP+A/+H/Av/2/9n/G//J/4P/4f/8/4P/wf8Q/6j/EP90/wb/if9L/yD/g//B/wz/qP9A/3T/Bv+J/0v/JP+D/8H/BP+o/4D/dP8G/4n/S/8o/4P/wf8E/4X/9v92/yb/av+w/43/Q/9Q/17/jf9T/zD/K//z/4D/OP8A/3X/A//G/wD/CP+J/wr/g//C/wT/D/+2/zj/A//P/0D/jf88/wb/O/97/yz/cv/l/4v/Q/8M/2r/AP+J/0P/ZP+L/0P/BP+J/0P/YP+L/0P/aP/H/0P/XP8A/wj/AP8A/1P/i/8I/4P/w/9Y/1P/UP///1H/FP+L//D/hf/2/33/X/+N/43/dP/////////o/wAAAAAAAAAAv/8AAAAAAAAAAIP/yf///zP/wP+J/3X/9P/y/67/9//R/yv/+f+N/5X/dP////////+L/8H/i//3/4v/+v9q/yL/wf/p/wL/8/+l/4v/yP+N/4X/7P/+//////+D/+H/A//z/6T/Wf+N/7X/dP////////+N/73/7P/+///////H/0X/+P8O/wH/AP8A/2j/AAAAAAAAAABQ//P/pf/o/wAAAAAAAAAAX/9e/1v/yf/C/xj/AP8=
+  symbols:
+  - kind: Function
+    name: ?Init@CVertexArray@@QAEXPAUIDirect3D7@@PAUIDirect3DDevice7@@KPAW4_D3DXVERTEXCOMPONENT@@KK@Z
+    size: 757
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ??0CD3duAlloc@@QAE@XZ
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0DD@HGFL@CVertexArray?3?3Init?5?9?5Could?5not?5g@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: __TI2?AVCD3DXException@@
+    size: 0
+    flags: 1
+    section: .xdata$x
+  - kind: Object
+    name: ??_C@_0CC@CKMO@CVertexArray?3?3Init?5?9?5pD3D?5is?5NUL@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Function
+    name: __CxxThrowException@8
+    size: 0
+    flags: 1
+    section: null
+  - kind: Object
+    name: ??_C@_0CL@LMEC@CVertexArray?3?3Init?5?9?5invalid?5vtx@
+    size: 0
+    flags: 1
+    section: .rdata
+  - kind: Object
+    name: ??_C@_0CH@JLAH@CVertexArray?3?3Init?5?9?5error?5creat@
+    size: 0
+    flags: 1
+    section: .rdata
+  relocations:
+  - offset: 74
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 82
+    kind: x86_abs32
+    symbol: 2
+    addend: 0
+  - offset: 155
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 176
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 181
+    kind: x86_abs32
+    symbol: 4
+    addend: 0
+  - offset: 254
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 260
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 356
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 364
+    kind: x86_abs32
+    symbol: 6
+    addend: 0
+  - offset: 435
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 443
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 662
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 667
+    kind: x86_abs32
+    symbol: 7
+    addend: 0
+  - offset: 738
+    kind: x86_abs32
+    symbol: 3
+    addend: 0
+  - offset: 746
+    kind: x86_rel32
+    symbol: 5
+    addend: -4

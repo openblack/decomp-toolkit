@@ -1,0 +1,68 @@
+- symbol: 0
+  hash: dfa44f0ae712a038e12aee2df66539bf5f3c18c9
+  signature: Vf+L/+z/Uf9T/1b/V/+L/33/FP+J/03//P8z/8n/hf///3T/DP+L/0f/DP+F/8D/dP8F/4v/AP9B/+v/9/+N/zT/jf8E/wD/AP8A/4v/xv+D/8D/A/8k//z/6P8AAAAAAAAAAIP/ff8Q/wD/i//c/4n/Xf8U/3T/E////3X/EP+L/03//P/o/wAAAAAAAAAAhf/A/4n/A/91/wX/6/9p/4P/I/8A/4X///90/yD/i/9//wz/g//D/wT/hf///3T/Fv+L/03//P9X/+j/AAAAAAAAAACJ/wP/g//D/wT/hf/A/3T/Rv+L/z//6//m/7//7P8A/wD/AP+N/0X/EP9X////df8M/1D/av///2r/AP/o/wAAAAAAAAAAi/9F/xD/i/9N//z/g//E/xT/A//G/1D///91/wj/6P8AAAAAAAAAAIX/wP+J/0X/CP90/xH/i/9N//z/av8A/1D/6P8AAAAAAAAAAIv/2P+F/9v/df8E/zP/wP/r/y3/V////3X/DP9q/wD/av///1P/6P8AAAAAAAAAAIv/Rf8Q/4v/zv+L/3X/FP+D/8T/FP+N/zz/A/+L/8H/wf/p/wL/8/+l/4v/yP+L/0X/CP+D/+H/A//z/6T/jf9l//D/X/9e/1v/yf/C/xD/AP8=
+  symbols:
+  - kind: Function
+    name: ?Create3D@CCapsFile@@IAEKKPAU_D3DDeviceDesc7@@PADPAVCSurfaceFormatList@@@Z
+    size: 244
+    flags: 1
+    section: .text
+  - kind: Function
+    name: __alloca_probe
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreateString@CCapsFile@@IAEKPAD@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?CreateFormat@CCapsFile@@IAEKPAVCSurfaceFormatNode@@@Z
+    size: 0
+    flags: 1
+    section: .text
+  - kind: Function
+    name: ?Compress@CD3dxFile@@SAJPAXKPAKPBXK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?CreateEntry@CD3dxFile@@QAEKKK@Z
+    size: 0
+    flags: 1
+    section: null
+  - kind: Function
+    name: ?EditData@CD3dxFile@@QAEPAXKPAK@Z
+    size: 0
+    flags: 1
+    section: null
+  relocations:
+  - offset: 46
+    kind: x86_rel32
+    symbol: 1
+    addend: -4
+  - offset: 68
+    kind: x86_rel32
+    symbol: 2
+    addend: -4
+  - offset: 102
+    kind: x86_rel32
+    symbol: 3
+    addend: -4
+  - offset: 137
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
+  - offset: 157
+    kind: x86_rel32
+    symbol: 5
+    addend: -4
+  - offset: 175
+    kind: x86_rel32
+    symbol: 6
+    addend: -4
+  - offset: 199
+    kind: x86_rel32
+    symbol: 4
+    addend: -4
