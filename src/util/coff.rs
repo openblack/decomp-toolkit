@@ -1,6 +1,6 @@
 use std::num::NonZeroU64;
 
-use anyhow::{Context, Result, bail};
+use anyhow::{Context, Result, bail, ensure};
 use cwdemangle::demangle;
 use flagset::Flags;
 use object::{
@@ -324,6 +324,59 @@ fn chunk_for(chunks: &[SectionChunk], offset: u64) -> Option<&SectionChunk> {
     if idx == 0 { None } else { Some(&chunks[idx - 1]) }
 }
 
+/// Give every still-leaderless COMDAT chunk that precedes `(section, offset)` a
+/// synthetic local leader symbol, so the chunk keeps its place: lld orders
+/// COMDAT chunks by the position of their leader in the symbol table, so the
+/// leader has to be written before the symbols of the chunks that follow it.
+/// Covers chunks of every section before `section_idx`, and chunks of
+/// `section_idx` that start before `offset`. Called with
+/// `section_idx == sections.len()` to flush everything at the end.
+#[allow(clippy::too_many_arguments)]
+fn flush_synthetic_leaders(
+    out: &mut WriteObject,
+    obj: &ObjInfo,
+    section_chunks: &[Vec<SectionChunk>],
+    section_all_comdat: &[bool],
+    comdat_sections: &mut std::collections::HashSet<SectionId>,
+    comdat_groups: &mut Vec<(SymbolId, SectionId, ComdatKind)>,
+    cursor: &mut [usize],
+    section_idx: usize,
+    offset: u64,
+) {
+    for (idx, chunks) in section_chunks.iter().enumerate().take(section_idx + 1) {
+        if !section_all_comdat[idx] {
+            continue;
+        }
+        let Some(section) = obj.sections.get(idx as ObjSectionIndex) else { continue };
+        // `cursor[idx]` is the first chunk not yet settled: everything before it
+        // either has a leader or got a synthetic one, and chunks are settled in
+        // address order, so the scan never has to revisit them.
+        while let Some(chunk) = chunks.get(cursor[idx]) {
+            if idx == section_idx && chunk.start >= offset {
+                break;
+            }
+            cursor[idx] += 1;
+            if comdat_sections.contains(&chunk.id) {
+                continue;
+            }
+            out.section_symbol(chunk.id);
+            let sid = out.add_symbol(Symbol {
+                name: format!("comdat_{}_{:08X}", section.name, section.address + chunk.start)
+                    .into_bytes(),
+                value: 0,
+                size: 0,
+                kind: SymbolKind::Data,
+                scope: SymbolScope::Compilation,
+                weak: false,
+                section: WriteSymbolSection::Section(chunk.id),
+                flags: SymbolFlags::None,
+            });
+            comdat_sections.insert(chunk.id);
+            comdat_groups.push((sid, chunk.id, ComdatKind::NoDuplicates));
+        }
+    }
+}
+
 pub fn write_coff(
     obj: &ObjInfo,
     export_all: bool,
@@ -349,6 +402,9 @@ pub fn write_coff(
     // use alignment 1 so the linker inserts nothing between them.
     let mut section_chunks: Vec<Vec<SectionChunk>> = Vec::new();
     section_chunks.resize_with(obj.sections.len() as usize, Vec::new);
+    // Data sections that hold a `comdat` symbol: every chunk of such a section
+    // is emitted as a COMDAT (see below), indexed by ObjSectionIndex.
+    let mut section_all_comdat = vec![false; obj.sections.len() as usize];
     for (idx, section) in obj.sections.iter() {
         let kind = match section.kind {
             ObjSectionKind::Code => SectionKind::Text,
@@ -372,19 +428,50 @@ pub fn write_coff(
         // function's own section out to its alignment, so cutting there would
         // hand the padding a section of its own and leave the function's
         // COMDAT 15 bytes shorter than the compiler's copy of it.
-        let mut starts = vec![0u64];
+        let mut cuts: Vec<u64> = Vec::new();
         if function_sections && section.kind == ObjSectionKind::Code {
-            let mut cuts: Vec<u64> = obj
+            cuts.extend(
+                obj.symbols
+                    .for_section(idx)
+                    .filter(|(_, s)| {
+                        s.kind == ObjSymbolKind::Function && !s.name.starts_with("gap_")
+                    })
+                    .map(|(_, s)| s.address.saturating_sub(section.address)),
+            );
+        }
+        // A `comdat` data symbol can only fold with another object's copy if it
+        // leads a section of its own, so cut the section at its start and end.
+        // A data section that gets one COMDAT chunk gets all of its chunks as
+        // COMDATs (NODUPLICATES, led by whatever symbol starts the chunk): lld
+        // lays plain chunks out in section order but COMDAT chunks in
+        // symbol-table order, so a lone COMDAT chunk would otherwise drift to
+        // the end of the object's contribution and change the layout.
+        if section.kind != ObjSectionKind::Code {
+            for (_, s) in obj
                 .symbols
                 .for_section(idx)
-                .filter(|(_, s)| s.kind == ObjSymbolKind::Function && !s.name.starts_with("gap_"))
-                .map(|(_, s)| s.address.saturating_sub(section.address))
-                .filter(|&a| a > 0 && a < section.size)
-                .collect();
-            cuts.sort_unstable();
-            cuts.dedup();
-            starts.extend(cuts);
+                .filter(|(_, s)| s.flags.is_comdat() && !s.flags.is_stripped())
+            {
+                let start = s.address.saturating_sub(section.address);
+                if start >= section.size {
+                    continue;
+                }
+                ensure!(
+                    s.size_known && s.size > 0,
+                    "Comdat symbol {} at {:#010X} has unknown size",
+                    s.name,
+                    s.address
+                );
+                section_all_comdat[idx as usize] = true;
+                cuts.push(start);
+                cuts.push(start + s.size);
+            }
         }
+        let mut starts = vec![0u64];
+        cuts.retain(|&a| a > 0 && a < section.size);
+        cuts.sort_unstable();
+        cuts.dedup();
+        starts.extend(cuts);
         for (i, &start) in starts.iter().enumerate() {
             let end = starts.get(i + 1).copied().unwrap_or(section.size);
             let sid = out.add_section(vec![], section.name.as_bytes().to_vec(), kind);
@@ -412,6 +499,8 @@ pub fn write_coff(
     // COMDAT, emitted as COMDAT groups after all symbols are added.
     let mut comdat_groups: Vec<(SymbolId, SectionId, ComdatKind)> = Vec::new();
     let mut comdat_sections: std::collections::HashSet<SectionId> = Default::default();
+    // Per-section scan position for `flush_synthetic_leaders`.
+    let mut leader_cursor = vec![0usize; section_chunks.len()];
     // Dedup defined symbols that share an exact name within this object (e.g. a
     // `label` and a `function` emitted at the same vtable-slot address). Two
     // external definitions of one name in one object collide at link time;
@@ -448,6 +537,22 @@ pub fn write_coff(
                 None => (WriteSymbolSection::Undefined, sym.address),
             }
         };
+        // Leaderless COMDAT chunks before this symbol get their synthetic
+        // leaders now, so they stay ahead of this symbol's chunk.
+        if let (Some(sec_idx), WriteSymbolSection::Section(_)) = (sym.section, sym_section) {
+            let sec_addr = obj.sections.get(sec_idx).map_or(0, |s| s.address);
+            flush_synthetic_leaders(
+                &mut out,
+                obj,
+                &section_chunks,
+                &section_all_comdat,
+                &mut comdat_sections,
+                &mut comdat_groups,
+                &mut leader_cursor,
+                sec_idx as usize,
+                sym.address.saturating_sub(sec_addr),
+            );
+        }
         // scope:local in symbols.txt is honored even with export_all: the
         // globalize pass in split_obj has already cleared the Local flag on
         // any local symbol referenced cross-unit, so remaining locals are
@@ -499,6 +604,21 @@ pub fn write_coff(
             && sym.section.and_then(|i| obj.sections.get(i)).map(|s| s.kind)
                 == Some(ObjSectionKind::Code)
         {
+            Some(ComdatKind::NoDuplicates)
+        } else if sym_value == 0
+            && matches!(sym_section, WriteSymbolSection::Section(_))
+            && sym.kind != ObjSymbolKind::Section
+            && sym.section.is_some_and(|i| section_all_comdat[i as usize])
+            // A `comdat` symbol at the same address must be the leader, so a
+            // label or other alias sharing its address does not claim the chunk.
+            && !sym.section.is_some_and(|i| {
+                obj.symbols
+                    .at_section_address(i, sym.address as u32)
+                    .any(|(_, s)| s.flags.is_comdat())
+            })
+        {
+            // Plain chunk of a data section that also holds a `comdat` symbol:
+            // a COMDAT like the rest of the section, but one nothing folds into.
             Some(ComdatKind::NoDuplicates)
         } else {
             None
@@ -555,6 +675,20 @@ pub fn write_coff(
         }
         symbol_ids.push(sid);
     }
+
+    // Any COMDAT chunk still without a leader (nothing starts it, or its only
+    // symbol was a deduplicated name) gets a synthetic one.
+    flush_synthetic_leaders(
+        &mut out,
+        obj,
+        &section_chunks,
+        &section_all_comdat,
+        &mut comdat_sections,
+        &mut comdat_groups,
+        &mut leader_cursor,
+        section_chunks.len(),
+        0,
+    );
 
     // Emit the COMDAT groups now that every leader has a SymbolId.
     for (symbol, section_id, kind) in comdat_groups {
@@ -943,7 +1077,7 @@ pub fn create_function_splits(obj: &mut ObjInfo) -> Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use object::ObjectSymbol;
+    use object::{ObjectComdat, ObjectSymbol};
 
     use super::*;
     use crate::obj::{ObjRelocations, ObjSplits};
@@ -1234,6 +1368,64 @@ mod tests {
         let fn3 = find("fn3");
         assert_eq!(fn3.section_index(), Some(sections[2].index()));
         assert_eq!(fn3.address(), 0);
+    }
+
+    #[test]
+    fn test_comdat_data_symbols_get_own_sections() {
+        // .rdata: a@0 (4 bytes), k1@4 (4, comdat), 4 unnamed bytes @8, k2@12 (8,
+        // comdat), b@20 (4). Each comdat constant must lead a section of its
+        // own so a duplicate in another object folds into it, and every other
+        // chunk of the section becomes a NODUPLICATES COMDAT (led by its first
+        // symbol, or a synthetic local one) so lld keeps the chunks in order.
+        let rdata =
+            section(".rdata", ObjSectionKind::ReadOnlyData, 0, (1..=24u8).collect(), vec![]);
+        let comdat = ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Comdat);
+        let global = ObjSymbolFlagSet(ObjSymbolFlags::Global.into());
+        let symbols = vec![
+            symbol("a", 0, Some(0), 4, ObjSymbolKind::Object, global),
+            symbol("k1", 4, Some(0), 4, ObjSymbolKind::Object, comdat),
+            symbol("k2", 12, Some(0), 8, ObjSymbolKind::Object, comdat),
+            symbol("b", 20, Some(0), 4, ObjSymbolKind::Object, global),
+        ];
+        let obj = ObjInfo::new(
+            ObjKind::Relocatable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            symbols,
+            vec![rdata],
+        );
+        let out = write_coff(&obj, true, true, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+
+        let sections: Vec<_> = file.sections().collect();
+        assert!(sections.iter().all(|s| s.name() == Ok(".rdata")));
+        assert_eq!(sections.iter().map(|s| s.size()).collect::<Vec<_>>(), vec![4, 4, 4, 8, 4]);
+        assert_eq!(sections[1].data().unwrap(), &[5, 6, 7, 8], "k1 bytes");
+        assert_eq!(sections[3].data().unwrap(), &[13, 14, 15, 16, 17, 18, 19, 20], "k2 bytes");
+
+        // One COMDAT per chunk, led by the symbol that starts the chunk.
+        let mut by_section: Vec<Option<(String, ComdatKind, bool, object::SymbolIndex)>> =
+            vec![None; sections.len()];
+        for c in file.comdats() {
+            let secs: Vec<_> = c.sections().collect();
+            assert_eq!(secs.len(), 1);
+            let leader = file.symbol_by_index(c.symbol()).unwrap();
+            let pos = sections.iter().position(|s| s.index() == secs[0]).unwrap();
+            by_section[pos] =
+                Some((leader.name().unwrap().to_string(), c.kind(), leader.is_local(), c.symbol()));
+        }
+        let leaders: Vec<_> = by_section.into_iter().map(|c| c.expect("chunk is a COMDAT")).collect();
+        assert_eq!((leaders[0].0.as_str(), leaders[0].1), ("a", ComdatKind::NoDuplicates));
+        assert_eq!((leaders[1].0.as_str(), leaders[1].1), ("k1", ComdatKind::Any));
+        assert!(leaders[2].0.starts_with("comdat_"), "unnamed chunk gets a synthetic leader");
+        assert!(leaders[2].2, "synthetic leader is local");
+        assert_eq!(leaders[2].1, ComdatKind::NoDuplicates);
+        assert_eq!((leaders[3].0.as_str(), leaders[3].1), ("k2", ComdatKind::Any));
+        assert_eq!((leaders[4].0.as_str(), leaders[4].1), ("b", ComdatKind::NoDuplicates));
+        // Leaders sit in the symbol table in chunk order, which is the order
+        // lld lays the COMDAT chunks out in.
+        let order: Vec<_> = leaders.iter().map(|l| l.3.0).collect();
+        assert!(order.windows(2).all(|w| w[0] < w[1]), "leader order {:?}", order);
     }
 
     #[test]
