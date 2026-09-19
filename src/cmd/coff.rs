@@ -72,6 +72,26 @@ enum SubCommand {
     Apply(ApplyArgs),
     Sigs(SignaturesArgs),
     SigsLib(SigsLibArgs),
+    Fold(FoldArgs),
+}
+
+#[derive(FromArgs, PartialEq, Eq, Debug)]
+/// Fold a compiled object's COMDAT definitions onto the copies the shipped
+/// image already holds elsewhere, the way the original link resolved them.
+#[argp(subcommand, name = "fold")]
+pub struct FoldArgs {
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// compiled COFF object (rewritten in place unless -o is given)
+    object: Utf8NativePathBuf,
+    #[argp(positional, from_str_fn(crate::util::path::native_path))]
+    /// project configuration file
+    config: Utf8NativePathBuf,
+    #[argp(option, long = "unit")]
+    /// splits.txt unit the object was compiled from, e.g. Black/GameThing.cpp
+    unit: String,
+    #[argp(option, short = 'o', from_str_fn(crate::util::path::native_path))]
+    /// output object path
+    output: Option<Utf8NativePathBuf>,
 }
 
 #[derive(FromArgs, PartialEq, Eq, Debug)]
@@ -153,7 +173,226 @@ pub fn run(args: Args) -> Result<()> {
         SubCommand::Apply(c_args) => apply(c_args),
         SubCommand::Sigs(c_args) => signatures(c_args),
         SubCommand::SigsLib(c_args) => sigs_lib(c_args),
+        SubCommand::Fold(c_args) => fold(c_args),
     }
+}
+
+/// One `name = .section:0xADDR; // ...` line of a symbols file, as far as folding needs it.
+struct FoldSymbol {
+    address: u32,
+    alias: bool,
+}
+
+/// `coff fold`: the original link resolved every selectany COMDAT (inline
+/// functions, `__real@` constants, RTTI descriptors, string literals) to one
+/// copy somewhere in the image, and with identical-code folding also merged
+/// distinct functions with the same bytes. The split objects carry those copies
+/// at their shipped addresses, under every name the symbols file lists there
+/// (`alias` marks the extra names). A recompiled unit defines its own copy of
+/// each such symbol, and lld would place that copy at the unit's position, so
+/// this pass turns every COMDAT definition whose name the symbols file puts
+/// outside the unit into an undefined reference (dropping its section), and
+/// every one whose name is an `alias` inside the unit into a second symbol on
+/// the function it was folded onto.
+fn fold(args: FoldArgs) -> Result<()> {
+    const IMAGE_SCN_LNK_COMDAT: u32 = 0x0000_1000;
+    const IMAGE_SCN_LNK_REMOVE: u32 = 0x0000_0800;
+    const IMAGE_SYM_CLASS_EXTERNAL: u8 = 2;
+
+    let mut config_file = open_file(&args.config, true)?;
+    let config: ProjectConfig = serde_yaml::from_reader(config_file.as_mut())?;
+    let Some(symbols_path) = &config.base.symbols else {
+        bail!("No symbols file specified in config");
+    };
+    let Some(splits_path) = &config.base.splits else {
+        bail!("No splits file specified in config");
+    };
+
+    // Symbols file: name -> entries (a name can appear at several addresses,
+    // e.g. per-TU statics), and (address) -> the non-alias name there.
+    let mut by_name: HashMap<String, Vec<FoldSymbol>> = HashMap::new();
+    let mut primary_at: HashMap<u32, String> = HashMap::new();
+    for line in fs::read_to_string(symbols_path.with_encoding())?.lines() {
+        let Some((name, rest)) = line.split_once(" = .") else { continue };
+        let Some((sec_addr, attrs)) = rest.split_once(';') else { continue };
+        let Some((_, addr)) = sec_addr.split_once(":0x") else { continue };
+        let Ok(address) = u32::from_str_radix(addr.trim(), 16) else { continue };
+        let alias = attrs.split_whitespace().any(|a| a == "alias");
+        if !alias {
+            primary_at.entry(address).or_insert_with(|| name.to_string());
+        }
+        by_name.entry(name.to_string()).or_default().push(FoldSymbol { address, alias });
+    }
+
+    // Splits file: the unit's address ranges, any section.
+    let mut ranges: Vec<(u32, u32)> = Vec::new();
+    let mut in_unit = false;
+    for line in fs::read_to_string(splits_path.with_encoding())?.lines() {
+        if !line.starts_with(['\t', ' ']) {
+            in_unit = line.trim_end() == format!("{}:", args.unit);
+            continue;
+        }
+        if !in_unit {
+            continue;
+        }
+        let mut start = None;
+        let mut end = None;
+        for tok in line.split_whitespace() {
+            if let Some(v) = tok.strip_prefix("start:0x") {
+                start = u32::from_str_radix(v, 16).ok();
+            } else if let Some(v) = tok.strip_prefix("end:0x") {
+                end = u32::from_str_radix(v, 16).ok();
+            }
+        }
+        if let (Some(s), Some(e)) = (start, end) {
+            ranges.push((s, e));
+        }
+    }
+    if ranges.is_empty() {
+        bail!("Unit '{}' not found in {}", args.unit, splits_path);
+    }
+    let inside = |a: u32| ranges.iter().any(|&(s, e)| s <= a && a < e);
+
+    // The object: header, section headers, symbol table, string table.
+    let mut data =
+        fs::read(&args.object).with_context(|| format!("Failed to read {}", args.object))?;
+    let nsec = u16::from_le_bytes([data[2], data[3]]) as usize;
+    let symoff = u32::from_le_bytes(data[8..12].try_into().unwrap()) as usize;
+    let nsym = u32::from_le_bytes(data[12..16].try_into().unwrap()) as usize;
+    let stroff = symoff + nsym * 18;
+    let sym_name = |data: &[u8], o: usize| -> String {
+        if data[o..o + 4] == [0, 0, 0, 0] {
+            let so = u32::from_le_bytes(data[o + 4..o + 8].try_into().unwrap()) as usize;
+            let s = &data[stroff + so..];
+            let end = s.iter().position(|&b| b == 0).unwrap_or(s.len());
+            String::from_utf8_lossy(&s[..end]).into_owned()
+        } else {
+            let s = &data[o..o + 8];
+            let end = s.iter().position(|&b| b == 0).unwrap_or(8);
+            String::from_utf8_lossy(&s[..end]).into_owned()
+        }
+    };
+    let section_chars = |data: &[u8], sec: usize| -> u32 {
+        let h = 20 + (sec - 1) * 40;
+        u32::from_le_bytes(data[h + 36..h + 40].try_into().unwrap())
+    };
+    // (record offset, name, value, section, class) for every symbol record, and
+    // the parent of every associative COMDAT section (its section symbol's aux
+    // record carries selection 5 and the parent's number).
+    const IMAGE_COMDAT_SELECT_ASSOCIATIVE: u8 = 5;
+    let mut records: Vec<(usize, String, u32, i16, u8)> = Vec::new();
+    let mut assoc_parent: HashMap<usize, usize> = HashMap::new();
+    let mut i = 0;
+    while i < nsym {
+        let o = symoff + i * 18;
+        let name = sym_name(&data, o);
+        let value = u32::from_le_bytes(data[o + 8..o + 12].try_into().unwrap());
+        let section = i16::from_le_bytes([data[o + 12], data[o + 13]]);
+        let class = data[o + 16];
+        let naux = data[o + 17] as usize;
+        if class == 3 && section > 0 && naux >= 1 && value == 0 {
+            let aux = o + 18;
+            if data[aux + 14] == IMAGE_COMDAT_SELECT_ASSOCIATIVE {
+                let parent = u16::from_le_bytes([data[aux + 12], data[aux + 13]]) as usize;
+                assoc_parent.insert(section as usize, parent);
+            }
+        }
+        records.push((o, name, value, section, class));
+        i += 1 + naux;
+    }
+    let mut removed: HashSet<usize> = HashSet::new();
+    let defined: HashMap<String, (u32, i16)> = records
+        .iter()
+        .filter(|r| r.3 > 0 && r.4 == IMAGE_SYM_CLASS_EXTERNAL)
+        .map(|r| (r.1.clone(), (r.2, r.3)))
+        .collect();
+
+    let mut folded_out = 0usize;
+    let mut aliased = 0usize;
+    for (o, name, value, section, class) in &records {
+        if *section <= 0 || *class != IMAGE_SYM_CLASS_EXTERNAL || *value != 0 || name.is_empty() {
+            continue;
+        }
+        let Some(entries) = by_name.get(name) else { continue };
+        // Our own definition: some non-alias entry of this name lies in the unit.
+        if entries.iter().any(|e| !e.alias && inside(e.address)) {
+            continue;
+        }
+        let sec = *section as usize;
+        if sec > nsec {
+            bail!("{}: {} refers to section {} of {}", args.object, name, sec, nsec);
+        }
+        if section_chars(&data, sec) & IMAGE_SCN_LNK_COMDAT == 0 {
+            log::warn!(
+                "{}: {} is defined outside unit {} in the symbols file but is not a COMDAT here; left alone",
+                args.object,
+                name,
+                args.unit
+            );
+            continue;
+        }
+        if let Some(entry) = entries.iter().find(|e| e.alias && inside(e.address)) {
+            // Folded onto another function of this very unit: point the name at it.
+            let Some(primary) = primary_at.get(&entry.address) else {
+                bail!(
+                    "{}: alias {} at {:#010X} has no primary symbol",
+                    symbols_path,
+                    name,
+                    entry.address
+                );
+            };
+            let Some(&(pvalue, psection)) = defined.get(primary) else {
+                bail!(
+                    "{}: {} is an alias of {}, which {} does not define",
+                    args.object,
+                    name,
+                    primary,
+                    args.object
+                );
+            };
+            data[o + 8..o + 12].copy_from_slice(&pvalue.to_le_bytes());
+            data[o + 12..o + 14].copy_from_slice(&psection.to_le_bytes());
+            debug!("alias {} -> {} (+{:#X})", name, primary, pvalue);
+            aliased += 1;
+        } else {
+            // Folded onto a copy in another unit: leave only a reference.
+            data[o + 8..o + 12].copy_from_slice(&0u32.to_le_bytes());
+            data[o + 12..o + 14].copy_from_slice(&0i16.to_le_bytes());
+            debug!("fold {} out of {}", name, args.object);
+            folded_out += 1;
+        }
+        removed.insert(sec);
+    }
+    // Drop the folded sections along with their associative children (.debug$S,
+    // .debug$F): lld rejects an associative COMDAT whose parent is gone.
+    loop {
+        let more: Vec<usize> = assoc_parent
+            .iter()
+            .filter(|(child, parent)| removed.contains(parent) && !removed.contains(child))
+            .map(|(child, _)| *child)
+            .collect();
+        if more.is_empty() {
+            break;
+        }
+        removed.extend(more);
+    }
+    // A removed section must not stay a COMDAT: lld parks COMDAT sections until
+    // their leader prevails, and a leader that is now undefined never does, so
+    // associative children would report an invalid parent. As a plain removed
+    // section it is skipped outright, children included.
+    for &sec in &removed {
+        let h = 20 + (sec - 1) * 40;
+        let chars = (section_chars(&data, sec) | IMAGE_SCN_LNK_REMOVE) & !IMAGE_SCN_LNK_COMDAT;
+        data[h + 36..h + 40].copy_from_slice(&chars.to_le_bytes());
+    }
+
+    let out = args.output.as_ref().unwrap_or(&args.object);
+    fs::write(out, &data).with_context(|| format!("Failed to write {}", out))?;
+    info!(
+        "{}: folded {} COMDAT definitions onto the image, {} onto unit-local functions",
+        out, folded_out, aliased
+    );
+    Ok(())
 }
 
 fn sigs_lib(args: SigsLibArgs) -> Result<()> {
@@ -1256,19 +1495,25 @@ fn split_write_coff(
         // Link the shared comment object first: its comments sit at the lowest
         // header addresses (before any code), so a comment-aware linker embeds
         // them ahead of any per-unit `.drectve`, preserving header address order.
-        out_config.units.insert(0, OutputUnit {
-            object: out_path.with_unix_encoding(),
-            name: unit_name.clone(),
-            autogenerated: true,
-            code_size: 0,
-            data_size: 0,
-        });
-        module.obj.link_order.insert(0, crate::obj::ObjUnit {
-            name: unit_name,
-            autogenerated: true,
-            comment_version: None,
-            order: None,
-        });
+        out_config.units.insert(
+            0,
+            OutputUnit {
+                object: out_path.with_unix_encoding(),
+                name: unit_name.clone(),
+                autogenerated: true,
+                code_size: 0,
+                data_size: 0,
+            },
+        );
+        module.obj.link_order.insert(
+            0,
+            crate::obj::ObjUnit {
+                name: unit_name,
+                autogenerated: true,
+                comment_version: None,
+                order: None,
+            },
+        );
         pending_writes.push((out_path, comment_obj));
     }
 

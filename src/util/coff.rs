@@ -441,11 +441,14 @@ pub fn write_coff(
         }
         // A `comdat` data symbol can only fold with another object's copy if it
         // leads a section of its own, so cut the section at its start and end.
-        // A data section that gets one COMDAT chunk gets all of its chunks as
-        // COMDATs (NODUPLICATES, led by whatever symbol starts the chunk): lld
-        // lays plain chunks out in section order but COMDAT chunks in
-        // symbol-table order, so a lone COMDAT chunk would otherwise drift to
-        // the end of the object's contribution and change the layout.
+        // When functions are COMDATs too (`function_comdat`), a data section
+        // that gets one COMDAT chunk gets all of its chunks as COMDATs
+        // (NODUPLICATES, led by whatever symbol starts the chunk): lld lays plain
+        // chunks out in section order but COMDAT chunks in symbol-table order, so
+        // a lone COMDAT chunk would otherwise drift to the end of the object's
+        // contribution. Without `function_comdat` (a link that dead-strips with
+        // /OPT:REF, where an unreferenced COMDAT chunk would vanish) the other
+        // chunks stay plain and the linker must keep input section order.
         if section.kind != ObjSectionKind::Code {
             for (_, s) in obj
                 .symbols
@@ -462,7 +465,7 @@ pub fn write_coff(
                     s.name,
                     s.address
                 );
-                section_all_comdat[idx as usize] = true;
+                section_all_comdat[idx as usize] = function_comdat;
                 cuts.push(start);
                 cuts.push(start + s.size);
             }
@@ -1414,7 +1417,8 @@ mod tests {
             by_section[pos] =
                 Some((leader.name().unwrap().to_string(), c.kind(), leader.is_local(), c.symbol()));
         }
-        let leaders: Vec<_> = by_section.into_iter().map(|c| c.expect("chunk is a COMDAT")).collect();
+        let leaders: Vec<_> =
+            by_section.into_iter().map(|c| c.expect("chunk is a COMDAT")).collect();
         assert_eq!((leaders[0].0.as_str(), leaders[0].1), ("a", ComdatKind::NoDuplicates));
         assert_eq!((leaders[1].0.as_str(), leaders[1].1), ("k1", ComdatKind::Any));
         assert!(leaders[2].0.starts_with("comdat_"), "unnamed chunk gets a synthetic leader");
@@ -1426,6 +1430,23 @@ mod tests {
         // lld lays the COMDAT chunks out in.
         let order: Vec<_> = leaders.iter().map(|l| l.3.0).collect();
         assert!(order.windows(2).all(|w| w[0] < w[1]), "leader order {:?}", order);
+
+        // Without function COMDATs (a /OPT:REF link) only the comdat symbols'
+        // own chunks are COMDATs; the rest stay plain so nothing dead-strips them.
+        let out = write_coff(&obj, true, true, false).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let sections: Vec<_> = file.sections().collect();
+        assert_eq!(sections.iter().map(|s| s.size()).collect::<Vec<_>>(), vec![4, 4, 4, 8, 4]);
+        let mut comdat_sections: Vec<usize> = file
+            .comdats()
+            .map(|c| {
+                let secs: Vec<_> = c.sections().collect();
+                assert_eq!(c.kind(), ComdatKind::Any);
+                sections.iter().position(|s| s.index() == secs[0]).unwrap()
+            })
+            .collect();
+        comdat_sections.sort();
+        assert_eq!(comdat_sections, vec![1, 3], "only k1 and k2 are COMDATs");
     }
 
     #[test]

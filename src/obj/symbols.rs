@@ -58,6 +58,10 @@ flags! {
         /// Keep the symbol's section out of a COMDAT, overriding the COMDAT
         /// that function sections are otherwise given.
         NoComdat,
+        /// A second name for the symbol at the same address: the linker folded
+        /// this function or constant onto an identical one, so a compiled
+        /// object's own copy under this name must resolve to that address.
+        Alias,
     }
 }
 
@@ -141,6 +145,11 @@ impl ObjSymbolFlagSet {
     #[inline]
     pub fn is_no_comdat(&self) -> bool {
         self.0.contains(ObjSymbolFlags::NoComdat)
+    }
+
+    #[inline]
+    pub fn is_alias(&self) -> bool {
+        self.0.contains(ObjSymbolFlags::Alias)
     }
 
     #[inline]
@@ -305,6 +314,11 @@ impl ObjSymbols {
         // `type:function`) can't oscillate, and so reloc resolution reliably
         // reuses the slot instead of minting a redundant `lbl_*_rdata_*` label.
         normalize_imp_kind(&mut in_symbol);
+        if in_symbol.flags.is_alias() {
+            // An alias is a second name at an address that already has its own
+            // symbol; it must never merge with (or replace) that symbol.
+            return self.add_direct(in_symbol);
+        }
         let opt = if in_symbol.flags.is_stripped() {
             // Stripped symbols don't overwrite existing symbols
             None
