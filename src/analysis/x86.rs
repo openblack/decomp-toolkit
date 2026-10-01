@@ -3,8 +3,8 @@ use std::collections::{BTreeMap, BTreeSet, VecDeque};
 use anyhow::Result;
 use flagset::Flags as _;
 use iced_x86::{
-    Code, ConstantOffsets, Decoder, DecoderOptions, FlowControl, Instruction, Mnemonic, OpKind,
-    Register,
+    Code, ConstantOffsets, Decoder, DecoderOptions, FlowControl, Instruction,
+    InstructionInfoFactory, MemorySize, Mnemonic, OpAccess, OpKind, Register,
 };
 
 use crate::{
@@ -205,9 +205,23 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
             // VAs of jump tables referenced by indirect JMPs in this function.
             // Used after the loop to extend the function's size over embedded tables.
             let mut potential_tables: Vec<u32> = Vec::new();
+            let mut switches = SwitchTracker::default();
             flow.push_back(fn_va);
 
-            while let Some(pc) = flow.pop_front() {
+            // Once the flow runs dry, recover the jump tables whose bounds are now
+            // known; their case blocks continue the trace.
+            while let Some(pc) = flow.pop_front().or_else(|| {
+                switches.recover(
+                    fn_base,
+                    fn_data,
+                    fn_sec_idx,
+                    fn_va,
+                    &mut abs32_candidates,
+                    &mut decoded_spans,
+                    &mut flow,
+                );
+                flow.pop_front()
+            }) {
                 if !visited.insert(pc) {
                     continue;
                 }
@@ -241,6 +255,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                 scan_abs32(&mut abs32_candidates, sec_idx, pc, &instr, &co, img_lo..img_hi);
 
                 let next_pc = pc + instr.len() as u32;
+                switches.observe(pc, next_pc, &instr, fn_base, fn_data);
 
                 match instr.flow_control() {
                     FlowControl::Next => {
@@ -415,19 +430,26 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                                 }
                             }
                         }
+                    }
+
+                    FlowControl::IndirectBranch => {
                         // Indirect JMP (switch dispatch): record any memory displacement
                         // that points into the same code section as a potential jump table.
                         // Both first-order (JMP [eax*4+table]) and second-order
                         // (MOVZX eax,[idx_table+eax]; JMP [eax*4+target_table]) emit a
                         // displacement here, so one pass covers both.
-                        if instr.flow_control() == FlowControl::IndirectBranch
-                            && instr.op0_kind() == OpKind::Memory
-                            && instr.memory_displacement64() != 0
-                        {
-                            let disp = instr.memory_displacement64() as u32;
-                            if find_code(disp).is_some() {
-                                potential_tables.push(disp);
-                            }
+                        let table = (instr.op0_kind() == OpKind::Memory)
+                            .then(|| instr.memory_displacement32())
+                            .filter(|&disp| disp != 0 && find_code(disp).is_some());
+                        if let Some(table) = table {
+                            potential_tables.push(table);
+                        }
+                        // There is no fall-through, but cl.exe usually lays the first
+                        // case block out right after the dispatch, and tracing it is
+                        // how the cases of a switch without a recoverable table get
+                        // analyzed. Skip it only when the bytes are the table itself.
+                        if table != Some(next_pc) {
+                            flow.push_back(next_pc);
                         }
                     }
 
@@ -435,9 +457,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                         // End of this path.
                     }
 
-                    FlowControl::IndirectCall
-                    | FlowControl::IndirectBranch
-                    | FlowControl::XbeginXabortXend => {
+                    FlowControl::IndirectCall | FlowControl::XbeginXabortXend => {
                         flow.push_back(next_pc);
                     }
                 }
@@ -627,8 +647,12 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                 .next_back()
             {
                 if start < va && va < end {
+                    // Its size described a function that never existed; kept, it can
+                    // run past the end of the split that now covers it.
                     let mut downgraded = sym.clone();
                     downgraded.kind = ObjSymbolKind::Unknown;
+                    downgraded.size = 0;
+                    downgraded.size_known = false;
                     return Some((idx, downgraded));
                 }
             }
@@ -785,6 +809,180 @@ pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) 
     Ok(())
 }
 
+/// Upper bound on a recovered switch: a larger `cmp` bound is almost certainly not a
+/// jump-table guard.
+const MAX_SWITCH_CASES: u32 = 1024;
+
+/// How many unrelated instructions cl.exe may schedule between the steps of a switch
+/// dispatch (`cmp eax, 22; push esi; ja ...`, `ja ...; xor ecx, ecx; mov cl, ...`).
+/// A fact only crosses straight-line code that leaves its register (and, for a
+/// `cmp`, the flags) untouched, so this just bounds the search.
+const MAX_SWITCH_GAP: u8 = 8;
+
+/// Per-function switch recovery. cl.exe guards a dispatch `jmp [idx*4 + table]` with
+/// `cmp idx, max; ja default`, sometimes through an index table:
+/// `cmp reg, max; ja default; movzx idx, byte [reg + index_table]`, or a byte `mov`
+/// into the low byte of an idx zeroed beforehand. The table length comes from that
+/// bound, never from guessing where the table ends.
+#[derive(Default)]
+struct SwitchTracker {
+    /// pc after `cmp reg, imm` -> (reg, imm, instructions since).
+    cmp_after: BTreeMap<u32, (Register, u32, u8)>,
+    /// pc after the `ja` following such a `cmp` -> (reg, max, ...): reg <= max there.
+    bound_at: BTreeMap<u32, (Register, u32, u8)>,
+    /// pc after a bounded index-table load -> (idx, entries in the jump table, ...).
+    index_table_at: BTreeMap<u32, (Register, u32, u8)>,
+    /// Dispatch pc -> (index register, table VA).
+    dispatches: BTreeMap<u32, (Register, u32)>,
+    /// Dispatches whose table has been recovered.
+    recovered: BTreeSet<u32>,
+}
+
+impl SwitchTracker {
+    fn observe(&mut self, pc: u32, next_pc: u32, instr: &Instruction, base: u64, data: &[u8]) {
+        // Carry each fact over a straight-line instruction that leaves it intact.
+        if instr.flow_control() == FlowControl::Next {
+            let carry = |facts: &mut BTreeMap<u32, (Register, u32, u8)>, keeps_flags: bool| {
+                if let Some(&(reg, n, gap)) = facts.get(&pc) {
+                    let intact = !writes_register(instr, reg)
+                        && (!keeps_flags || instr.rflags_modified() == 0);
+                    if gap < MAX_SWITCH_GAP && intact {
+                        facts.insert(next_pc, (reg, n, gap + 1));
+                    }
+                }
+            };
+            carry(&mut self.cmp_after, true);
+            carry(&mut self.bound_at, false);
+            carry(&mut self.index_table_at, false);
+        }
+        match instr.mnemonic() {
+            Mnemonic::Cmp
+                if instr.op0_kind() == OpKind::Register
+                    && matches!(instr.op1_kind(), OpKind::Immediate8to32 | OpKind::Immediate32) =>
+            {
+                self.cmp_after
+                    .insert(next_pc, (instr.op0_register(), instr.immediate(1) as u32, 0));
+            }
+            Mnemonic::Ja => {
+                if let Some(&(reg, max, _)) = self.cmp_after.get(&pc) {
+                    self.bound_at.insert(next_pc, (reg, max, 0));
+                }
+            }
+            // `movzx idx, byte [...]`, or `mov idx8, byte [...]` after zeroing idx.
+            Mnemonic::Movzx | Mnemonic::Mov
+                if instr.op0_kind() == OpKind::Register
+                    && instr.op1_kind() == OpKind::Memory
+                    && instr.memory_size() == MemorySize::UInt8 =>
+            {
+                let Some(&(reg, max, _)) = self.bound_at.get(&pc) else { return };
+                let indexed_by_reg = (instr.memory_base() == reg
+                    && instr.memory_index() == Register::None)
+                    || (instr.memory_base() == Register::None
+                        && instr.memory_index() == reg
+                        && instr.memory_index_scale() == 1);
+                if !indexed_by_reg || max >= MAX_SWITCH_CASES {
+                    return;
+                }
+                // One jump-table entry per index value the index table can yield.
+                let index_table = (instr.memory_displacement32() as u64).checked_sub(base);
+                let entries = index_table
+                    .and_then(|off| data.get(off as usize..off as usize + max as usize + 1))
+                    .and_then(|bytes| bytes.iter().max())
+                    .map(|&m| m as u32 + 1);
+                if let Some(entries) = entries {
+                    let idx = instr.op0_register().full_register32();
+                    self.index_table_at.insert(next_pc, (idx, entries, 0));
+                }
+            }
+            Mnemonic::Jmp
+                if instr.op0_kind() == OpKind::Memory
+                    && instr.memory_base() == Register::None
+                    && instr.memory_index() != Register::None
+                    && instr.memory_index_scale() == 4 =>
+            {
+                self.dispatches.insert(pc, (instr.memory_index(), instr.memory_displacement32()));
+            }
+            _ => {}
+        }
+    }
+
+    /// Recover the table of every bounded dispatch not yet recovered: relocate each
+    /// entry and queue the case blocks, which are reachable only through the table.
+    /// Case blocks can hold further dispatches, so this runs each time the flow
+    /// runs dry. The table is recorded as a decoded span, so nothing later takes its
+    /// words for an instruction or a function entry (a data word that happens to
+    /// equal an address inside it, the linear sweep, a stale symbol).
+    #[allow(clippy::too_many_arguments)]
+    fn recover(
+        &mut self,
+        base: u64,
+        data: &[u8],
+        sec_idx: SectionIndex,
+        fn_va: u32,
+        abs32_candidates: &mut Vec<(SectionIndex, u32, u32)>,
+        decoded_spans: &mut BTreeMap<(SectionIndex, u32), u32>,
+        flow: &mut VecDeque<u32>,
+    ) {
+        for (&pc, &(index, table_va)) in &self.dispatches {
+            if self.recovered.contains(&pc) {
+                continue;
+            }
+            let entries = match (self.bound_at.get(&pc), self.index_table_at.get(&pc)) {
+                (Some(&(reg, max, _)), _) if reg == index => max.checked_add(1),
+                (_, Some(&(reg, n, _))) if reg == index => Some(n),
+                _ => None,
+            };
+            let Some(targets) =
+                entries.and_then(|n| jump_table_targets(base, data, fn_va, table_va, n))
+            else {
+                continue;
+            };
+            self.recovered.insert(pc);
+            decoded_spans.insert((sec_idx, table_va), table_va + 4 * targets.len() as u32);
+            for (i, target) in targets.into_iter().enumerate() {
+                abs32_candidates.push((sec_idx, table_va + 4 * i as u32, target));
+                flow.push_back(target);
+            }
+        }
+    }
+}
+
+/// Whether `instr` may write any part of `reg`.
+fn writes_register(instr: &Instruction, reg: Register) -> bool {
+    let full = reg.full_register();
+    InstructionInfoFactory::new().info(instr).used_registers().iter().any(|used| {
+        used.register().full_register() == full
+            && matches!(
+                used.access(),
+                OpAccess::Write
+                    | OpAccess::CondWrite
+                    | OpAccess::ReadWrite
+                    | OpAccess::ReadCondWrite
+            )
+    })
+}
+
+/// Read the `count` entries of the jump table at `table_va` in the function at
+/// `fn_va`. cl.exe places a switch's tables after the function's code, so every
+/// entry must point into the function before the table; anything else means the
+/// bound or the table was misidentified, and the whole table is rejected.
+fn jump_table_targets(
+    base: u64,
+    data: &[u8],
+    fn_va: u32,
+    table_va: u32,
+    count: u32,
+) -> Option<Vec<u32>> {
+    if count == 0 || count > MAX_SWITCH_CASES || table_va <= fn_va {
+        return None;
+    }
+    let off = (table_va as u64).checked_sub(base)? as usize;
+    let bytes = data.get(off..off + 4 * count as usize)?;
+    let targets: Vec<u32> =
+        bytes.chunks_exact(4).map(|e| u32::from_le_bytes(e.try_into().unwrap())).collect();
+    targets.iter().all(|&t| fn_va <= t && t < table_va).then_some(targets)
+}
+
 /// Returns `true` if `va` in `sec_idx` falls within any span in `decoded_spans`.
 /// Spans are stored as (section, start) → exclusive_end.  Searching is scoped to
 /// `sec_idx` so that spans from one section never shadow another section's addresses.
@@ -855,13 +1053,16 @@ fn scan_abs32(
             candidates.push((src_sec, pc + co.immediate_offset() as u32, target));
         }
     }
-    // Absolute 32-bit memory displacement: no base/index register means the
-    // displacement *is* the address (not reg-relative addressing).
-    if co.has_displacement()
-        && co.displacement_size() == 4
-        && instr.memory_base() == Register::None
-        && instr.memory_index() == Register::None
-    {
+    // 32-bit memory displacement. With no base/index register the displacement
+    // *is* the address. With one, an in-image displacement is the base of an
+    // array or table indexed by the register (`mov eax, [edx*4 + table]`): no
+    // struct is megabytes long. LEA is the exception, being plain arithmetic as
+    // often as address computation, so it only counts when scaling an index
+    // (`lea edi, [ecx*8 + array]`), never for `lea eax, [ecx + 0x500000]`.
+    let absolute = instr.memory_base() == Register::None && instr.memory_index() == Register::None;
+    let indexed = instr.mnemonic() != Mnemonic::Lea
+        || (instr.memory_index() != Register::None && instr.memory_index_scale() > 1);
+    if co.has_displacement() && co.displacement_size() == 4 && (absolute || indexed) {
         let target = instr.memory_displacement32();
         if in_image(target) {
             candidates.push((src_sec, pc + co.displacement_offset() as u32, target));
