@@ -306,11 +306,25 @@ fn fold(args: FoldArgs) -> Result<()> {
         .filter(|r| r.3 > 0 && r.4 == IMAGE_SYM_CLASS_EXTERNAL)
         .map(|r| (r.1.clone(), (r.2, r.3)))
         .collect();
+    // The COMDAT symbol of each section: the first external symbol defined in
+    // it. It need not sit at offset 0: with /GR, a vtable's section starts with
+    // the pointer to its RTTI complete object locator and `??_7X@@6B@` follows
+    // at +4.
+    let mut leader: HashMap<i16, usize> = HashMap::new();
+    for (o, _, _, section, class) in &records {
+        if *section > 0 && *class == IMAGE_SYM_CLASS_EXTERNAL {
+            leader.entry(*section).or_insert(*o);
+        }
+    }
 
     let mut folded_out = 0usize;
     let mut aliased = 0usize;
-    for (o, name, value, section, class) in &records {
-        if *section <= 0 || *class != IMAGE_SYM_CLASS_EXTERNAL || *value != 0 || name.is_empty() {
+    for (o, name, _, section, class) in &records {
+        if *section <= 0
+            || *class != IMAGE_SYM_CLASS_EXTERNAL
+            || leader.get(section) != Some(o)
+            || name.is_empty()
+        {
             continue;
         }
         let Some(entries) = by_name.get(name) else { continue };
