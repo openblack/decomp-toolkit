@@ -400,11 +400,79 @@ fn fold(args: FoldArgs) -> Result<()> {
         data[h + 36..h + 40].copy_from_slice(&chars.to_le_bytes());
     }
 
+    // An alias folded onto a function of this unit can still be missing from the
+    // object: its body is inline here and nothing in the unit referenced it, but
+    // another unit (a vtable, say) does. Define the name on the primary so that
+    // reference resolves to the folded copy. An undefined record of that name is
+    // turned into the definition; otherwise a new record is appended.
+    let mut synthesized = 0usize;
+    let mut new_records: Vec<u8> = Vec::new();
+    let mut new_strings: Vec<u8> = Vec::new();
+    let old_strsize = u32::from_le_bytes(data[stroff..stroff + 4].try_into().unwrap()) as usize;
+    let mut names: Vec<&String> = by_name.keys().collect();
+    names.sort();
+    for name in names {
+        if defined.contains_key(name.as_str()) {
+            continue;
+        }
+        let Some(entry) = by_name[name].iter().find(|e| e.alias && inside(e.address)) else {
+            continue;
+        };
+        let Some(primary) = primary_at.get(&entry.address) else { continue };
+        let Some(&(pvalue, psection)) = defined.get(primary) else { continue };
+        let ptype = records
+            .iter()
+            .find(|r| &r.1 == primary && r.3 > 0 && r.4 == IMAGE_SYM_CLASS_EXTERNAL)
+            .map(|r| u16::from_le_bytes([data[r.0 + 14], data[r.0 + 15]]))
+            .unwrap_or(0x20);
+        if let Some(r) = records
+            .iter()
+            .find(|r| &r.1 == name && r.3 == 0 && r.4 == IMAGE_SYM_CLASS_EXTERNAL && r.2 == 0)
+        {
+            let o = r.0;
+            data[o + 8..o + 12].copy_from_slice(&pvalue.to_le_bytes());
+            data[o + 12..o + 14].copy_from_slice(&psection.to_le_bytes());
+            data[o + 14..o + 16].copy_from_slice(&ptype.to_le_bytes());
+        } else {
+            let mut rec = [0u8; 18];
+            if name.len() <= 8 {
+                rec[..name.len()].copy_from_slice(name.as_bytes());
+            } else {
+                let so = (old_strsize + new_strings.len()) as u32;
+                rec[4..8].copy_from_slice(&so.to_le_bytes());
+                new_strings.extend_from_slice(name.as_bytes());
+                new_strings.push(0);
+            }
+            rec[8..12].copy_from_slice(&pvalue.to_le_bytes());
+            rec[12..14].copy_from_slice(&psection.to_le_bytes());
+            rec[14..16].copy_from_slice(&ptype.to_le_bytes());
+            rec[16] = IMAGE_SYM_CLASS_EXTERNAL;
+            new_records.extend_from_slice(&rec);
+        }
+        debug!("define alias {} -> {} (+{:#X})", name, primary, pvalue);
+        synthesized += 1;
+    }
+    if !new_records.is_empty() {
+        let strtab_end = stroff + old_strsize;
+        let mut strtab = data[stroff..strtab_end].to_vec();
+        strtab.extend_from_slice(&new_strings);
+        let new_strsize = strtab.len() as u32;
+        strtab[0..4].copy_from_slice(&new_strsize.to_le_bytes());
+        let tail = data[strtab_end..].to_vec();
+        data.truncate(stroff);
+        data.extend_from_slice(&new_records);
+        data.extend_from_slice(&strtab);
+        data.extend_from_slice(&tail);
+        let new_nsym = (nsym + new_records.len() / 18) as u32;
+        data[12..16].copy_from_slice(&new_nsym.to_le_bytes());
+    }
+
     let out = args.output.as_ref().unwrap_or(&args.object);
     fs::write(out, &data).with_context(|| format!("Failed to write {}", out))?;
     info!(
-        "{}: folded {} COMDAT definitions onto the image, {} onto unit-local functions",
-        out, folded_out, aliased
+        "{}: folded {} COMDAT definitions onto the image, {} onto unit-local functions, \
+         defined {} missing aliases",
+        out, folded_out, aliased, synthesized
     );
     Ok(())
 }
