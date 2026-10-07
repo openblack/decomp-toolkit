@@ -42,6 +42,28 @@ Symbol names, scopes, and splits are baked into the emitted objects at
 `dtk coff split` time. After editing `symbols.txt` or `splits.txt`, re-run
 `dtk coff split` to regenerate the objects.
 
+## Recovering relocations in fixed-address images
+
+When a PE has no base relocation table, dtk recovers absolute data references
+by scanning aligned words for addresses of existing symbols. This heuristic
+excludes symbols marked as strings (including UTF-16 and Shift-JIS strings
+and string tables), and the character payload of recognized MSVC RTTI
+TypeDescriptors. The descriptor's type_info vtable pointer is still recovered.
+Words overlapping a string's bytes or terminator are excluded as well.
+
+Known pointer storage takes precedence over old string classifications:
+`.CRT$*` initializer tables, MSVC vtables, and mangled function-pointer globals
+remain pointer-bearing data. String detection also leaves relocated data alone,
+preventing address words that happen to look like ASCII from being reclassified.
+When a verbatim COFF library object is available, its absolute data relocations
+also identify pointer fields and correct stale string hints in the PE symbols.
+
+These exclusions apply only to inferred references. Existing relocations,
+`add_relocations` overrides, and genuine PE base relocations are preserved.
+Use `block_relocations` for ambiguous integers or untyped embedded character
+arrays. A linked address cannot uniquely identify aliases merged by the
+original linker; `add_relocations` can select the intended symbol in those cases.
+
 ## Folding recompiled COMDATs
 
 `dtk coff fold input.obj config.yml --unit unit.cpp -o output.obj` resolves

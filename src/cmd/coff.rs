@@ -31,8 +31,8 @@ use crate::{
         shasum::file_sha1_string,
     },
     obj::{
-        ObjInfo, ObjKind, ObjRelocKind, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
-        ObjSymbolScope, SectionIndex, SymbolIndex, best_match_for_reloc,
+        ObjDataKind, ObjInfo, ObjKind, ObjRelocKind, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags,
+        ObjSymbolKind, ObjSymbolScope, SectionIndex, SymbolIndex, best_match_for_reloc,
     },
     util::{
         coff::{
@@ -1116,7 +1116,7 @@ fn comment_regions_from_splits(
         .collect())
 }
 
-/// Import authoritative symbol sizes from one prebuilt verbatim library object.
+/// Import BSS sizes and pointer-storage evidence from a verbatim library object.
 ///
 /// The object's symbol layout (sizes inferred as the gap to the next symbol in
 /// each section) is mapped onto the main image at the unit's split ranges: the
@@ -1149,6 +1149,7 @@ fn import_lib_object_sizes(
 
     let mut size_updates: Vec<(SymbolIndex, u64)> = vec![];
     let mut strips: Vec<SymbolIndex> = vec![];
+    let mut pointer_symbols = std::collections::BTreeSet::<SymbolIndex>::new();
 
     // Group this unit's splits by their emitted section name, carrying the main
     // image section index. The PE image has no `.bss`/`.CRT$*` sections of its
@@ -1170,6 +1171,70 @@ fn import_lib_object_sizes(
     }
 
     for (lib_sec_idx, lib_sec) in lib_obj.sections.iter() {
+        let Some(layout) = unit_layout.get(&lib_sec.name) else { continue };
+        let map_off = |off: u32| -> Option<(u32, u32, SectionIndex)> {
+            let mut cursor = 0u32;
+            for &(start, end, section_index) in layout {
+                let span = end - start;
+                if off < cursor + span {
+                    return Some((start + (off - cursor), end, section_index));
+                }
+                cursor += span;
+            }
+            None
+        };
+        if matches!(
+            lib_sec.kind,
+            crate::obj::ObjSectionKind::Data | crate::obj::ObjSectionKind::ReadOnlyData
+        ) {
+            // Initialized sections may contain folded COMDAT contributions.
+            // Only use offsets when one original section maps to the complete
+            // emitted range; otherwise pointer locations are ambiguous.
+            if lib_obj.sections.iter().filter(|(_, section)| section.name == lib_sec.name).count()
+                != 1
+                || layout.iter().map(|&(start, end, _)| (end - start) as u64).sum::<u64>()
+                    != lib_sec.size
+            {
+                continue;
+            }
+            let string_hints = layout
+                .iter()
+                .flat_map(|&(start, end, section_index)| {
+                    obj.symbols.for_section_range(section_index, start..end)
+                })
+                .filter(|(_, symbol)| {
+                    matches!(
+                        symbol.data_kind,
+                        ObjDataKind::String
+                            | ObjDataKind::String16
+                            | ObjDataKind::ShiftJIS
+                            | ObjDataKind::StringTable
+                            | ObjDataKind::String16Table
+                            | ObjDataKind::ShiftJISTable
+                    )
+                })
+                .collect_vec();
+            // An original COFF relocation proves this field is pointer storage.
+            // Discard string hints inferred from the address's ASCII-looking bytes
+            // before the PE scanner uses those hints to suppress references.
+            for (off, reloc) in lib_sec.relocations.iter() {
+                if reloc.kind != ObjRelocKind::X86Abs32 {
+                    continue;
+                }
+                let Some((abs, end, section_index)) = map_off(off) else { continue };
+                if end - abs < 4 {
+                    continue;
+                }
+                for &(idx, symbol) in &string_hints {
+                    if symbol.section == Some(section_index)
+                        && symbol.address <= abs as u64
+                        && symbol.address + symbol.size > abs as u64
+                    {
+                        pointer_symbols.insert(idx);
+                    }
+                }
+            }
+        }
         // Only uninitialized data. Code sizes come from analysis (widening a
         // function across its fixed split boundary breaks split validation), and
         // initialized .data/.rdata are sized by dtk's own object/RTTI analysis —
@@ -1195,25 +1260,10 @@ fn import_lib_object_sizes(
 
         // The unit's split ranges with this emitted section name concatenate (in
         // address order) to cover the object section's [0, sec_size) verbatim.
-        let Some(layout) = unit_layout.get(&lib_sec.name) else {
-            continue;
-        };
-        let map_off = |off: u32| -> Option<(u32, u32)> {
-            let mut cursor = 0u32;
-            for &(start, end, _) in layout {
-                let span = end - start;
-                if off < cursor + span {
-                    return Some((start + (off - cursor), end));
-                }
-                cursor += span;
-            }
-            None
-        };
-
         for i in 0..offsets.len() {
             let off = offsets[i];
             let next = offsets.get(i + 1).copied().unwrap_or(sec_size);
-            let Some((abs, split_end)) = map_off(off) else { continue };
+            let Some((abs, split_end, _)) = map_off(off) else { continue };
             // Clamp to the containing split: a symbol never extends past its
             // split boundary (the gap to the next object symbol may straddle a
             // boundary into another unit's data).
@@ -1243,6 +1293,11 @@ fn import_lib_object_sizes(
         }
     }
 
+    for idx in pointer_symbols {
+        let mut sym = obj.symbols[idx].clone();
+        sym.data_kind = ObjDataKind::Unknown;
+        obj.symbols.replace(idx, sym)?;
+    }
     for (idx, size) in size_updates {
         let mut sym = obj.symbols[idx].clone();
         sym.size = size;
@@ -1981,4 +2036,102 @@ fn split(args: SplitArgs) -> Result<()> {
     let duration = command_start.elapsed();
     info!("Total time: {}.{:03}s", duration.as_secs(), duration.subsec_millis());
     Ok(())
+}
+
+#[cfg(test)]
+mod lib_pointer_tests {
+    use super::*;
+    use crate::obj::{
+        ObjArchitecture, ObjReloc, ObjRelocations, ObjSection, ObjSectionKind, ObjSplit, ObjSplits,
+    };
+
+    #[test]
+    fn original_library_relocations_correct_string_hints_only_with_a_complete_layout() {
+        let pointer = ObjSymbol {
+            name: "pointer".into(),
+            section: Some(0),
+            size: 4,
+            size_known: true,
+            kind: ObjSymbolKind::Object,
+            flags: ObjSymbolFlagSet(ObjSymbolFlags::Global.into()),
+            ..Default::default()
+        };
+        let callback = ObjSymbol {
+            name: "callback".into(),
+            kind: ObjSymbolKind::Function,
+            flags: ObjSymbolFlagSet(ObjSymbolFlags::Global.into()),
+            ..Default::default()
+        };
+        let data = ObjSection {
+            name: ".data".into(),
+            kind: ObjSectionKind::Data,
+            address: 0,
+            size: 4,
+            data: vec![0; 4],
+            align: 4,
+            elf_index: 0,
+            virtual_address: None,
+            file_offset: 0,
+            section_known: true,
+            splits: ObjSplits::default(),
+            sub_regions: vec![],
+            relocations: ObjRelocations::new(vec![(
+                0,
+                ObjReloc {
+                    kind: ObjRelocKind::X86Abs32,
+                    target_symbol: 1,
+                    addend: 0,
+                    module: None,
+                },
+            )])
+            .unwrap(),
+        };
+        let lib = ObjInfo::new(
+            ObjKind::Relocatable,
+            ObjArchitecture::X86,
+            "fixture".into(),
+            vec![pointer, callback],
+            vec![data],
+        );
+        let path = std::env::temp_dir().join(format!("dtk-lib-pointer-{}.obj", std::process::id()));
+        fs::write(&path, crate::util::coff::write_coff(&lib, true, false, false).unwrap()).unwrap();
+        let config = LibObjectConfig {
+            unit: "lib/fixture.obj".into(),
+            object: path.to_str().unwrap().replace('\\', "/").into(),
+        };
+
+        for complete in [true, false] {
+            let mut pointer = lib.symbols[0].clone();
+            pointer.address = 0x00600000;
+            pointer.data_kind = ObjDataKind::String;
+            let mut section = lib.sections[0].clone();
+            section.address = 0x00600000;
+            section.relocations = ObjRelocations::default();
+            section.splits.push(
+                0x00600000,
+                ObjSplit {
+                    unit: config.unit.clone(),
+                    end: 0x00600000 + if complete { 4 } else { 8 },
+                    align: Some(4),
+                    common: false,
+                    autogenerated: false,
+                    skip: false,
+                    rename: None,
+                },
+            );
+            let mut image = ObjInfo::new(
+                ObjKind::Executable,
+                ObjArchitecture::X86,
+                "image".into(),
+                vec![pointer],
+                vec![section],
+            );
+            import_lib_object_sizes(&mut image, &config, &mut vec![]).unwrap();
+            assert_eq!(
+                image.symbols[0].data_kind,
+                if complete { ObjDataKind::Unknown } else { ObjDataKind::String }
+            );
+        }
+        fs::remove_file(path).unwrap();
+    }
 }

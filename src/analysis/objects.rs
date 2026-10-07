@@ -1,9 +1,29 @@
 use anyhow::Result;
 
 use crate::{
-    obj::{ObjDataKind, ObjInfo, ObjSectionKind, ObjSymbolKind, SymbolIndex},
+    obj::{
+        ObjArchitecture, ObjDataKind, ObjInfo, ObjSection, ObjSectionKind, ObjSymbol,
+        ObjSymbolKind, SymbolIndex,
+    },
     util::{config::is_auto_symbol, split::is_linker_generated_label},
 };
+
+/// Pointer storage known from MSVC section conventions or symbol types. String
+/// detection can mistake a pointer's bytes for ASCII, so these take precedence
+/// over string hints left by earlier runs.
+pub(crate) fn is_msvc_pointer_data(section: &ObjSection, symbol: &ObjSymbol) -> bool {
+    section.name.starts_with(".CRT$")
+        || section.sub_regions.iter().any(|region| {
+            region.name.starts_with(".CRT$")
+                && region.start as u64 <= symbol.address
+                && symbol.address < region.end as u64
+        })
+        || section.splits.for_address(symbol.address as u32).is_some_and(|(_, split)| {
+            split.rename.as_deref().is_some_and(|name| name.starts_with(".CRT$"))
+        })
+        || symbol.name.starts_with("??_7")
+        || ["@@0P6", "@@1P6", "@@2P6", "@@3P6"].iter().any(|marker| symbol.name.contains(marker))
+}
 
 pub fn detect_objects(obj: &mut ObjInfo) -> Result<()> {
     for (section_index, section) in
@@ -134,11 +154,33 @@ pub fn detect_strings(obj: &mut ObjInfo) -> Result<()> {
             }
             StringResult::None
         }
-        for (symbol_idx, symbol) in obj
-            .symbols
-            .for_section(section_index)
-            .filter(|(_, sym)| sym.data_kind == ObjDataKind::Unknown)
-        {
+        for (symbol_idx, symbol) in obj.symbols.for_section(section_index) {
+            if obj.architecture == ObjArchitecture::X86 && is_msvc_pointer_data(section, symbol) {
+                if matches!(
+                    symbol.data_kind,
+                    ObjDataKind::String
+                        | ObjDataKind::String16
+                        | ObjDataKind::ShiftJIS
+                        | ObjDataKind::StringTable
+                        | ObjDataKind::String16Table
+                        | ObjDataKind::ShiftJISTable
+                ) {
+                    symbols_set.push((symbol_idx, ObjDataKind::Unknown, symbol.size as usize));
+                }
+                continue;
+            }
+            if symbol.data_kind != ObjDataKind::Unknown {
+                continue;
+            }
+            if obj.architecture == ObjArchitecture::X86
+                && section
+                    .relocations
+                    .range(symbol.address as u32..(symbol.address + symbol.size) as u32)
+                    .next()
+                    .is_some()
+            {
+                continue;
+            }
             if symbol.name.starts_with("@stringBase") {
                 symbols_set.push((symbol_idx, ObjDataKind::StringTable, symbol.size as usize));
                 continue;

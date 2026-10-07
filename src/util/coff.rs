@@ -14,11 +14,11 @@ use object::{
 };
 
 use crate::{
-    analysis::cfa::SectionAddress,
+    analysis::{cfa::SectionAddress, objects::is_msvc_pointer_data, rtti::type_descriptor_name},
     obj::{
-        ObjArchitecture, ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjSection, ObjSectionKind,
-        ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind, PeMetadata,
-        SectionIndex as ObjSectionIndex,
+        ObjArchitecture, ObjDataKind, ObjInfo, ObjKind, ObjReloc, ObjRelocKind, ObjSection,
+        ObjSectionKind, ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
+        PeMetadata, SectionIndex as ObjSectionIndex,
     },
 };
 
@@ -786,6 +786,55 @@ pub fn write_coff_comments(directives: &[&[u8]]) -> Result<Option<Vec<u8>>> {
 
 const IMAGE_REL_BASED_HIGHLOW: u16 = 3;
 
+/// Byte ranges known to contain characters rather than pointers. This is used
+/// only for heuristic recovery: explicit relocations and the PE base relocation
+/// table remain authoritative, even when a symbol has been classified as text.
+fn non_pointer_data_ranges(
+    obj: &ObjInfo,
+    section_index: ObjSectionIndex,
+    section: &ObjSection,
+) -> Vec<(usize, usize)> {
+    let mut ranges = Vec::new();
+    for (_, symbol) in obj.symbols.for_section(section_index) {
+        if is_msvc_pointer_data(section, symbol)
+            || !matches!(
+                symbol.data_kind,
+                ObjDataKind::String
+                    | ObjDataKind::String16
+                    | ObjDataKind::ShiftJIS
+                    | ObjDataKind::StringTable
+                    | ObjDataKind::String16Table
+                    | ObjDataKind::ShiftJISTable
+            )
+        {
+            continue;
+        }
+        let Some(start) = symbol.address.checked_sub(section.address) else { continue };
+        let start = start as usize;
+        let end = start.saturating_add(symbol.size as usize).min(section.data.len());
+        if start < end {
+            ranges.push((start, end));
+        }
+    }
+
+    // A TypeDescriptor begins with two pointer-sized fields, followed by a
+    // mangled C string. Recognize it even before RTTI symbol discovery runs,
+    // and even when the descriptor already has a user-defined symbol.
+    let mut off = (section.address.wrapping_neg() & 3) as usize;
+    while off + 12 <= section.data.len() {
+        if let Some((vtable, name)) = type_descriptor_name(&section.data, off) {
+            if obj.sections.at_address(vtable).is_ok_and(|(_, target)| {
+                !matches!(target.kind, ObjSectionKind::Code | ObjSectionKind::Bss)
+            }) {
+                ranges.push((off + 8, off + 8 + name.len() + 1));
+            }
+        }
+        off += 4;
+    }
+    ranges.sort_unstable();
+    ranges
+}
+
 /// Parse the PE `.reloc` section and add [`ObjRelocKind::X86Abs32`] relocations.
 pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> {
     let reloc_data = {
@@ -879,8 +928,9 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
 /// been stripped) by scanning data sections for 4-byte-aligned pointer words.
 ///
 /// This is the COFF analogue of the DOL/PPC `Tracker::process_data` pass: every
-/// data word that points into a section is treated as a pointer and recovered as
-/// an abs32 relocation, scope-agnostically. The linked bytes are unchanged (an
+/// data word outside known string/RTTI-name ranges that points into a section
+/// is treated as a pointer and recovered as an abs32 relocation, scope-agnostically.
+/// The linked bytes are unchanged (an
 /// abs32 reloc resolves to the same absolute value the raw word already holds),
 /// but the recovered references let `/OPT:REF` keep the same sections the
 /// original link kept. Linkage validity — cross-unit references to file-local
@@ -901,9 +951,22 @@ fn reconstruct_abs32_relocations_by_scan(obj: &mut ObjInfo) -> Result<()> {
         if sec.name == ".rsrc" || sec.name.starts_with(".rsrc$") {
             continue;
         }
+        let non_pointer_ranges = non_pointer_data_ranges(obj, src_idx, sec);
+        let mut range_index = 0usize;
         let base = sec.address as u32;
         let mut off = (base.wrapping_neg() & 3) as usize; // align first word to 4
         while off + 4 <= sec.data.len() {
+            while range_index < non_pointer_ranges.len() && non_pointer_ranges[range_index].1 <= off
+            {
+                range_index += 1;
+            }
+            if range_index < non_pointer_ranges.len() && non_pointer_ranges[range_index].0 < off + 4
+            {
+                // Any character byte overlapping the word rules it out, including
+                // strings that start at an unaligned address and their terminators.
+                off += 4;
+                continue;
+            }
             let target_va = u32::from_le_bytes(sec.data[off..off + 4].try_into().unwrap());
             if target_va != 0 {
                 if let Ok((tsec_idx, tsec)) = obj.sections.at_address(target_va) {
@@ -1197,6 +1260,238 @@ mod tests {
             symbols,
             vec![text_sec, data_sec],
         )
+    }
+
+    fn pointer_scan_obj(data: Vec<u8>, mut symbols: Vec<ObjSymbol>) -> ObjInfo {
+        let mut code = section(".text", ObjSectionKind::Code, 0, vec![0xCC; 0x5000], vec![]);
+        code.address = 0x00400000;
+        let mut vtable = section(".rdata", ObjSectionKind::ReadOnlyData, 1, vec![0; 4], vec![]);
+        vtable.address = 0x00500000;
+        let mut data = section(".data", ObjSectionKind::Data, 2, data, vec![]);
+        data.address = 0x00600000;
+        symbols.extend([
+            symbol(
+                "ascii_target",
+                0x00404064,
+                Some(0),
+                4,
+                ObjSymbolKind::Function,
+                Default::default(),
+            ),
+            symbol(
+                "wide_target",
+                0x0040006C,
+                Some(0),
+                4,
+                ObjSymbolKind::Function,
+                Default::default(),
+            ),
+            symbol(
+                "type_info_vtable",
+                0x00500000,
+                Some(1),
+                4,
+                ObjSymbolKind::Object,
+                Default::default(),
+            ),
+        ]);
+        ObjInfo::new(
+            ObjKind::Executable,
+            ObjArchitecture::X86,
+            "scan".into(),
+            symbols,
+            vec![code, vtable, data],
+        )
+    }
+
+    #[test]
+    fn test_abs32_scan_excludes_rtti_names() {
+        let mut data = 0x00500000u32.to_le_bytes().to_vec();
+        data.extend_from_slice(&[0; 4]);
+        data.extend_from_slice(b".?AVFixed@@\0");
+        data.resize(20, 0);
+        data.extend_from_slice(&0x00404064u32.to_le_bytes());
+        // A code pointer cannot be a TypeDescriptor's type_info vtable.
+        data.extend_from_slice(&0x00404064u32.to_le_bytes());
+        data.extend_from_slice(&[0; 4]);
+        data.extend_from_slice(b".?AVFixed@@\0");
+        // A truncated name must not hide any trailing candidate.
+        data.resize(44, 0);
+        data.extend_from_slice(&0x00500000u32.to_le_bytes());
+        data.extend_from_slice(&[0; 4]);
+        data.extend_from_slice(b".?AVFixed@@");
+        let mut obj = pointer_scan_obj(data, vec![]);
+        apply_base_relocations(&mut obj, 0x00400000).unwrap();
+        let relocs = &obj.sections[2].relocations;
+        assert!(relocs.at(0x00600000).is_some(), "keep the descriptor's actual pointer");
+        assert!(relocs.at(0x00600010).is_none(), "d@@\\0 is part of the RTTI name");
+        assert!(relocs.at(0x00600014).is_some(), "keep a pointer immediately after the name");
+        assert!(relocs.at(0x00600028).is_some(), "do not treat a code pointer as an RTTI header");
+        assert!(relocs.at(0x0060002C).is_some(), "a truncated descriptor still has a pointer");
+    }
+
+    #[test]
+    fn test_abs32_scan_excludes_known_strings() {
+        let kinds = [
+            crate::obj::ObjDataKind::String,
+            crate::obj::ObjDataKind::String16,
+            crate::obj::ObjDataKind::ShiftJIS,
+            crate::obj::ObjDataKind::StringTable,
+            crate::obj::ObjDataKind::String16Table,
+            crate::obj::ObjDataKind::ShiftJISTable,
+        ];
+        for kind in kinds {
+            let mut string =
+                symbol("text", 0x00600000, Some(2), 4, ObjSymbolKind::Object, Default::default());
+            string.data_kind = kind;
+            let mut data = if matches!(
+                kind,
+                crate::obj::ObjDataKind::String16 | crate::obj::ObjDataKind::String16Table
+            ) {
+                b"l\0@\0".to_vec()
+            } else {
+                b"d@@\0".to_vec()
+            };
+            data.extend_from_slice(&0x00404064u32.to_le_bytes());
+            let mut obj = pointer_scan_obj(data, vec![string]);
+            apply_base_relocations(&mut obj, 0x00400000).unwrap();
+            assert!(obj.sections[2].relocations.at(0x00600000).is_none(), "{kind:?}");
+            assert!(obj.sections[2].relocations.at(0x00600004).is_some(), "{kind:?}");
+        }
+    }
+
+    #[test]
+    fn test_abs32_scan_excludes_words_overlapping_strings() {
+        let mut outer =
+            symbol("outer", 0x00600001, Some(2), 7, ObjSymbolKind::Object, Default::default());
+        outer.data_kind = crate::obj::ObjDataKind::String;
+        let mut inner =
+            symbol("inner", 0x00600002, Some(2), 1, ObjSymbolKind::Object, Default::default());
+        inner.data_kind = crate::obj::ObjDataKind::String;
+        let mut data = b"d@@\0d@@\0".to_vec();
+        data.extend_from_slice(&0x00404064u32.to_le_bytes());
+        let mut obj = pointer_scan_obj(data, vec![outer, inner]);
+        apply_base_relocations(&mut obj, 0x00400000).unwrap();
+        assert!(obj.sections[2].relocations.at(0x00600000).is_none());
+        assert!(obj.sections[2].relocations.at(0x00600004).is_none());
+        assert!(obj.sections[2].relocations.at(0x00600008).is_some());
+    }
+
+    #[test]
+    fn test_abs32_string_exclusions_preserve_explicit_and_base_relocations() {
+        let mut string =
+            symbol("text", 0x00600000, Some(2), 4, ObjSymbolKind::Object, Default::default());
+        string.data_kind = crate::obj::ObjDataKind::String;
+        let mut obj = pointer_scan_obj(b"d@@\0".to_vec(), vec![string]);
+        let target_symbol = obj.symbols.by_name("ascii_target").unwrap().unwrap().0;
+        obj.sections[2]
+            .relocations
+            .insert(
+                0x00600000,
+                ObjReloc { kind: ObjRelocKind::X86Abs32, target_symbol, addend: 0, module: None },
+            )
+            .unwrap();
+        apply_base_relocations(&mut obj, 0x00400000).unwrap();
+        assert_eq!(
+            obj.sections[2].relocations.at(0x00600000).unwrap().target_symbol,
+            target_symbol
+        );
+
+        obj.sections[2].relocations.remove(0x00600000);
+        obj.pe_reloc_data.extend_from_slice(&0x00200000u32.to_le_bytes());
+        obj.pe_reloc_data.extend_from_slice(&12u32.to_le_bytes());
+        obj.pe_reloc_data.extend_from_slice(&0x3000u16.to_le_bytes());
+        obj.pe_reloc_data.extend_from_slice(&0u16.to_le_bytes());
+        apply_base_relocations(&mut obj, 0x00400000).unwrap();
+        assert_eq!(
+            obj.sections[2].relocations.at(0x00600000).unwrap().target_symbol,
+            target_symbol
+        );
+    }
+
+    #[test]
+    fn test_abs32_scan_keeps_misclassified_crt_pointers() {
+        for physical_section in [false, true] {
+            let mut pointer = symbol(
+                "initializer",
+                0x00600000,
+                Some(2),
+                4,
+                ObjSymbolKind::Object,
+                Default::default(),
+            );
+            pointer.data_kind = ObjDataKind::String;
+            let mut obj = pointer_scan_obj(b"d@@\0".to_vec(), vec![pointer]);
+            if physical_section {
+                obj.sections[2].name = ".CRT$XCU".into();
+            } else {
+                obj.sections[2].sub_regions.push(crate::obj::ObjSubRegion {
+                    start: 0x00600000,
+                    end: 0x00600004,
+                    name: ".CRT$XCU".into(),
+                    kind: None,
+                });
+            }
+            apply_base_relocations(&mut obj, 0x00400000).unwrap();
+            assert!(obj.sections[2].relocations.at(0x00600000).is_some());
+            crate::analysis::objects::detect_strings(&mut obj).unwrap();
+            assert_eq!(
+                obj.symbols.by_name("initializer").unwrap().unwrap().1.data_kind,
+                ObjDataKind::Unknown
+            );
+            obj.sections[2].relocations.remove(0x00600000);
+            apply_base_relocations(&mut obj, 0x00400000).unwrap();
+            assert!(
+                obj.sections[2].relocations.at(0x00600000).is_some(),
+                "classification stays stable on the next split"
+            );
+        }
+    }
+
+    #[test]
+    fn test_abs32_scan_keeps_misclassified_msvc_pointer_symbols() {
+        for name in ["?callback@@3P6AXXZA", "??_7Example@@6B@"] {
+            let mut pointer =
+                symbol(name, 0x00600000, Some(2), 4, ObjSymbolKind::Object, Default::default());
+            pointer.data_kind = ObjDataKind::String;
+            let mut obj = pointer_scan_obj(b"d@@\0".to_vec(), vec![pointer]);
+            apply_base_relocations(&mut obj, 0x00400000).unwrap();
+            assert!(obj.sections[2].relocations.at(0x00600000).is_some(), "{name}");
+            crate::analysis::objects::detect_strings(&mut obj).unwrap();
+            assert_eq!(
+                obj.symbols.by_name(name).unwrap().unwrap().1.data_kind,
+                ObjDataKind::Unknown
+            );
+        }
+    }
+
+    #[test]
+    fn test_string_detection_keeps_relocated_data_and_literal_names_distinct() {
+        let pointer =
+            symbol("callback", 0x00600000, Some(2), 4, ObjSymbolKind::Object, Default::default());
+        let literal = symbol(
+            "??_C@_03EXAMPLE@d?$AA@",
+            0x00600004,
+            Some(2),
+            4,
+            ObjSymbolKind::Object,
+            Default::default(),
+        );
+        let mut literal = literal;
+        literal.data_kind = ObjDataKind::String;
+        let mut obj = pointer_scan_obj(b"d@@\0d@@\0".to_vec(), vec![pointer, literal]);
+        apply_base_relocations(&mut obj, 0x00400000).unwrap();
+        assert!(obj.sections[2].relocations.at(0x00600000).is_some());
+        assert!(obj.sections[2].relocations.at(0x00600004).is_none());
+        crate::analysis::objects::detect_strings(&mut obj).unwrap();
+        assert_eq!(
+            obj.symbols.by_name("callback").unwrap().unwrap().1.data_kind,
+            ObjDataKind::Unknown
+        );
+        assert_eq!(
+            obj.symbols.by_name("??_C@_03EXAMPLE@d?$AA@").unwrap().unwrap().1.data_kind,
+            ObjDataKind::String
+        );
     }
 
     #[test]

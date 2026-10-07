@@ -22,6 +22,17 @@ fn cstr_at(data: &[u8], off: usize) -> Option<&str> {
     std::str::from_utf8(&slice[..end]).ok()
 }
 
+/// Read the header and name of an x86 MSVC TypeDescriptor. The caller must
+/// also verify that the returned type_info vtable pointer addresses data.
+pub(crate) fn type_descriptor_name(data: &[u8], off: usize) -> Option<(u32, &str)> {
+    let vtable = read_u32_le(data, off)?;
+    if read_u32_le(data, off + 4)? != 0 || data.get(off + 8..off + 11)? != b".?A" {
+        return None;
+    }
+    let name = cstr_at(data, off + 8)?;
+    if name.starts_with(".?A") && name.ends_with("@@") { Some((vtable, name)) } else { None }
+}
+
 /// Detect MSVC RTTI structures in `.rdata` / `.data` sections and add symbols
 /// for TypeDescriptors, RTTICompleteObjectLocators, and vtables.
 ///
@@ -105,14 +116,10 @@ pub fn detect_rtti(obj: &mut ObjInfo) -> Result<()> {
         let base = *base as u32;
         let mut off = 0usize;
         while off + 12 <= data.len() {
-            let pvf = read_u32_le(data, off).unwrap();
-            let spare = read_u32_le(data, off + 4).unwrap();
-            if spare == 0 && va_in_data(pvf) {
-                if let Some(name) = cstr_at(data, off + 8) {
-                    if name.starts_with(".?A") && name.ends_with("@@") {
-                        let va = base + off as u32;
-                        type_descriptors.insert(va, name.to_string());
-                    }
+            if let Some((pvf, name)) = type_descriptor_name(data, off) {
+                if va_in_data(pvf) {
+                    let va = base + off as u32;
+                    type_descriptors.insert(va, name.to_string());
                 }
             }
             off += 4;
