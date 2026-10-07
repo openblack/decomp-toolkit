@@ -42,6 +42,20 @@ Symbol names, scopes, and splits are baked into the emitted objects at
 `dtk coff split` time. After editing `symbols.txt` or `splits.txt`, re-run
 `dtk coff split` to regenerate the objects.
 
+## Folding recompiled COMDATs
+
+`dtk coff fold input.obj config.yml --unit unit.cpp -o output.obj` resolves
+recompiled COMDATs to the locations recorded in `symbols.txt` and `splits.txt`.
+External definitions owned by another unit become undefined references. An
+explicit in-unit `alias` redirects its definition to the primary symbol and
+removes the duplicate section, including its associative debug sections.
+
+This also supports local function COMDATs emitted by MSVC `/Gy`. Folded static
+functions remain local labels on the retained function; they are not exported.
+Local names in other units do not authorize folding a private definition, and
+missing private aliases are not synthesized. Section auxiliary records are
+distinguished from static function auxiliary records.
+
 ## Non-contiguous units
 
 A unit may be listed in `splits.txt` with multiple, non-adjacent ranges of

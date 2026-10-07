@@ -181,6 +181,7 @@ pub fn run(args: Args) -> Result<()> {
 struct FoldSymbol {
     address: u32,
     alias: bool,
+    local: bool,
 }
 
 /// `coff fold`: the original link resolved every selectany COMDAT (inline
@@ -198,6 +199,8 @@ fn fold(args: FoldArgs) -> Result<()> {
     const IMAGE_SCN_LNK_COMDAT: u32 = 0x0000_1000;
     const IMAGE_SCN_LNK_REMOVE: u32 = 0x0000_0800;
     const IMAGE_SYM_CLASS_EXTERNAL: u8 = 2;
+    const IMAGE_SYM_CLASS_STATIC: u8 = 3;
+    const IMAGE_SYM_CLASS_LABEL: u8 = 6;
 
     let mut config_file = open_file(&args.config, true)?;
     let config: ProjectConfig = serde_yaml::from_reader(config_file.as_mut())?;
@@ -218,10 +221,11 @@ fn fold(args: FoldArgs) -> Result<()> {
         let Some((_, addr)) = sec_addr.split_once(":0x") else { continue };
         let Ok(address) = u32::from_str_radix(addr.trim(), 16) else { continue };
         let alias = attrs.split_whitespace().any(|a| a == "alias");
+        let local = attrs.split_whitespace().any(|a| matches!(a, "scope:local" | "noexport"));
         if !alias {
             primary_at.entry(address).or_insert_with(|| name.to_string());
         }
-        by_name.entry(name.to_string()).or_default().push(FoldSymbol { address, alias });
+        by_name.entry(name.to_string()).or_default().push(FoldSymbol { address, alias, local });
     }
 
     // Splits file: the unit's address ranges, any section.
@@ -276,11 +280,11 @@ fn fold(args: FoldArgs) -> Result<()> {
         let h = 20 + (sec - 1) * 40;
         u32::from_le_bytes(data[h + 36..h + 40].try_into().unwrap())
     };
-    // (record offset, name, value, section, class) for every symbol record, and
+    // (record offset, name, value, section, class, type) for every symbol record, and
     // the parent of every associative COMDAT section (its section symbol's aux
     // record carries selection 5 and the parent's number).
     const IMAGE_COMDAT_SELECT_ASSOCIATIVE: u8 = 5;
-    let mut records: Vec<(usize, String, u32, i16, u8)> = Vec::new();
+    let mut records: Vec<(usize, String, u32, i16, u8, u16)> = Vec::new();
     let mut assoc_parent: HashMap<usize, usize> = HashMap::new();
     let mut i = 0;
     while i < nsym {
@@ -288,48 +292,64 @@ fn fold(args: FoldArgs) -> Result<()> {
         let name = sym_name(&data, o);
         let value = u32::from_le_bytes(data[o + 8..o + 12].try_into().unwrap());
         let section = i16::from_le_bytes([data[o + 12], data[o + 13]]);
+        let symbol_type = u16::from_le_bytes([data[o + 14], data[o + 15]]);
         let class = data[o + 16];
         let naux = data[o + 17] as usize;
-        if class == 3 && section > 0 && naux >= 1 && value == 0 {
+        if class == IMAGE_SYM_CLASS_STATIC
+            && symbol_type == 0
+            && section > 0
+            && naux >= 1
+            && value == 0
+        {
             let aux = o + 18;
             if data[aux + 14] == IMAGE_COMDAT_SELECT_ASSOCIATIVE {
                 let parent = u16::from_le_bytes([data[aux + 12], data[aux + 13]]) as usize;
                 assoc_parent.insert(section as usize, parent);
             }
         }
-        records.push((o, name, value, section, class));
+        records.push((o, name, value, section, class, symbol_type));
         i += 1 + naux;
     }
     let mut removed: HashSet<usize> = HashSet::new();
     let defined: HashMap<String, (u32, i16)> = records
         .iter()
-        .filter(|r| r.3 > 0 && r.4 == IMAGE_SYM_CLASS_EXTERNAL)
+        .filter(|r| {
+            r.3 > 0
+                && (r.4 == IMAGE_SYM_CLASS_EXTERNAL
+                    || (r.4 == IMAGE_SYM_CLASS_STATIC && r.5 & 0x30 == 0x20))
+        })
         .map(|r| (r.1.clone(), (r.2, r.3)))
         .collect();
-    // The COMDAT symbol of each section: the first external symbol defined in
-    // it. It need not sit at offset 0: with /GR, a vtable's section starts with
+    // The COMDAT symbol of each section: the first external definition or local
+    // function, excluding static section symbols and debug records. It need
+    // not sit at offset 0: with /GR, a vtable's section starts with
     // the pointer to its RTTI complete object locator and `??_7X@@6B@` follows
     // at +4.
     let mut leader: HashMap<i16, usize> = HashMap::new();
-    for (o, _, _, section, class) in &records {
-        if *section > 0 && *class == IMAGE_SYM_CLASS_EXTERNAL {
+    for (o, _, _, section, class, symbol_type) in &records {
+        if *section > 0
+            && (*class == IMAGE_SYM_CLASS_EXTERNAL
+                || (*class == IMAGE_SYM_CLASS_STATIC && symbol_type & 0x30 == 0x20))
+        {
             leader.entry(*section).or_insert(*o);
         }
     }
 
     let mut folded_out = 0usize;
     let mut aliased = 0usize;
-    for (o, name, _, section, class) in &records {
-        if *section <= 0
-            || *class != IMAGE_SYM_CLASS_EXTERNAL
-            || leader.get(section) != Some(o)
-            || name.is_empty()
-        {
+    for (o, name, _, section, class, _) in &records {
+        if *section <= 0 || leader.get(section) != Some(o) || name.is_empty() {
             continue;
         }
         let Some(entries) = by_name.get(name) else { continue };
         // Our own definition: some non-alias entry of this name lies in the unit.
         if entries.iter().any(|e| !e.alias && inside(e.address)) {
+            continue;
+        }
+        // A private name in another unit is not a linkable definition of this
+        // unit's static function. Only explicit in-unit aliases can fold locals.
+        if *class == IMAGE_SYM_CLASS_STATIC && !entries.iter().any(|e| e.alias && inside(e.address))
+        {
             continue;
         }
         let sec = *section as usize;
@@ -366,6 +386,14 @@ fn fold(args: FoldArgs) -> Result<()> {
             };
             data[o + 8..o + 12].copy_from_slice(&pvalue.to_le_bytes());
             data[o + 12..o + 14].copy_from_slice(&psection.to_le_bytes());
+            if *class == IMAGE_SYM_CLASS_STATIC {
+                // This is now a local label on another function, not a second
+                // function definition. lld treats any STATIC auxiliary record
+                // as a section definition while its COMDAT is pending; leaving
+                // the old function aux on an early alias corrupts that selection.
+                // LABEL preserves local linkage without reordering symbol indices.
+                data[o + 16] = IMAGE_SYM_CLASS_LABEL;
+            }
             debug!("alias {} -> {} (+{:#X})", name, primary, pvalue);
             aliased += 1;
         } else {
@@ -415,15 +443,16 @@ fn fold(args: FoldArgs) -> Result<()> {
         if defined.contains_key(name.as_str()) {
             continue;
         }
-        let Some(entry) = by_name[name].iter().find(|e| e.alias && inside(e.address)) else {
+        let Some(entry) = by_name[name].iter().find(|e| e.alias && !e.local && inside(e.address))
+        else {
             continue;
         };
         let Some(primary) = primary_at.get(&entry.address) else { continue };
         let Some(&(pvalue, psection)) = defined.get(primary) else { continue };
         let ptype = records
             .iter()
-            .find(|r| &r.1 == primary && r.3 > 0 && r.4 == IMAGE_SYM_CLASS_EXTERNAL)
-            .map(|r| u16::from_le_bytes([data[r.0 + 14], data[r.0 + 15]]))
+            .find(|r| &r.1 == primary && r.3 == psection && r.2 == pvalue)
+            .map(|r| r.5)
             .unwrap_or(0x20);
         if let Some(r) = records
             .iter()
@@ -475,6 +504,171 @@ fn fold(args: FoldArgs) -> Result<()> {
         out, folded_out, aliased, synthesized
     );
     Ok(())
+}
+
+#[cfg(test)]
+mod fold_tests {
+    use std::sync::atomic::{AtomicUsize, Ordering};
+
+    use object::{Object, ObjectSection, ObjectSymbol};
+
+    use super::*;
+
+    struct Fixture {
+        dir: Utf8NativePathBuf,
+    }
+
+    impl Fixture {
+        fn new(local: bool, alias_first: bool, symbols: &str) -> Self {
+            static NEXT: AtomicUsize = AtomicUsize::new(0);
+            let dir = std::env::temp_dir().join(format!(
+                "dtk-coff-fold-{}-{}",
+                std::process::id(),
+                NEXT.fetch_add(1, Ordering::Relaxed)
+            ));
+            fs::create_dir_all(&dir).unwrap();
+            let dir = Utf8NativePathBuf::from(dir.to_str().unwrap());
+            let mut data = vec![0u8; 143];
+            data[..2].copy_from_slice(&0x14cu16.to_le_bytes());
+            data[2..4].copy_from_slice(&3u16.to_le_bytes());
+            data[8..12].copy_from_slice(&143u32.to_le_bytes());
+            data[12..16].copy_from_slice(&10u32.to_le_bytes());
+            for sec in 0..3 {
+                let h = 20 + sec * 40;
+                let name: &[u8] = if sec == 2 { b".debug$S" } else { b".text" };
+                data[h..h + name.len()].copy_from_slice(name);
+                data[h + 16..h + 20].copy_from_slice(&1u32.to_le_bytes());
+                data[h + 20..h + 24].copy_from_slice(&(140u32 + sec as u32).to_le_bytes());
+                let chars: u32 = if sec == 2 { 0x4230_1040 } else { 0x6030_1020 };
+                data[h + 36..h + 40].copy_from_slice(&chars.to_le_bytes());
+                data[140 + sec] = 0xc3;
+            }
+            let class = if local { 3 } else { 2 };
+            let first = if alias_first { "alias" } else { "primary" };
+            let second = if alias_first { "primary" } else { "alias" };
+            for (sec, name) in [(1i16, first), (2, second), (3, ".debug$S")] {
+                let mut record = [0u8; 18];
+                let section_name = if sec == 3 { ".debug$S" } else { ".text" };
+                record[..section_name.len()].copy_from_slice(section_name.as_bytes());
+                record[12..14].copy_from_slice(&sec.to_le_bytes());
+                record[16] = 3;
+                record[17] = 1;
+                data.extend_from_slice(&record);
+                let mut aux = [0u8; 18];
+                aux[..4].copy_from_slice(&1u32.to_le_bytes());
+                aux[14] = if sec == 3 { 5 } else { 1 };
+                if sec == 3 {
+                    let parent: u16 = if alias_first { 1 } else { 2 };
+                    aux[12..14].copy_from_slice(&parent.to_le_bytes());
+                }
+                data.extend_from_slice(&aux);
+                if sec != 3 {
+                    record.fill(0);
+                    record[..name.len()].copy_from_slice(name.as_bytes());
+                    record[12..14].copy_from_slice(&sec.to_le_bytes());
+                    record[14..16].copy_from_slice(&0x20u16.to_le_bytes());
+                    record[16] = class;
+                    record[17] = 1;
+                    data.extend_from_slice(&record);
+                    // A function auxiliary record, not a section definition.
+                    aux.fill(0);
+                    aux[4..8].copy_from_slice(&1u32.to_le_bytes());
+                    data.extend_from_slice(&aux);
+                }
+            }
+            data.extend_from_slice(&4u32.to_le_bytes());
+            fs::write(dir.join("input.obj"), data).unwrap();
+            fs::write(dir.join("symbols.txt"), symbols).unwrap();
+            fs::write(dir.join("splits.txt"), "unit.cpp:\n\t.text start:0x1000 end:0x1100\n")
+                .unwrap();
+            fs::write(
+                dir.join("config.yml"),
+                format!(
+                    "object: unused.exe\nsymbols: '{}'\nsplits: '{}'\n",
+                    dir.join("symbols.txt"),
+                    dir.join("splits.txt")
+                ),
+            )
+            .unwrap();
+            Self { dir }
+        }
+
+        fn fold(&self) -> Vec<u8> {
+            fold(FoldArgs {
+                object: self.dir.join("input.obj"),
+                config: self.dir.join("config.yml"),
+                unit: "unit.cpp".into(),
+                output: Some(self.dir.join("output.obj")),
+            })
+            .unwrap();
+            fs::read(self.dir.join("output.obj")).unwrap()
+        }
+    }
+
+    impl Drop for Fixture {
+        fn drop(&mut self) {
+            fs::remove_dir_all(&self.dir).unwrap();
+        }
+    }
+
+    const LOCAL_ALIASES: &str = "primary = .text:0x1000; // type:function scope:local\nalias = .text:0x1000; // type:label scope:local alias\n";
+
+    #[test]
+    fn folds_local_functions_in_both_symbol_orders() {
+        for alias_first in [true, false] {
+            let fixture = Fixture::new(true, alias_first, LOCAL_ALIASES);
+            let data = fixture.fold();
+            let obj = object::File::parse(data.as_slice()).unwrap();
+            let primary = obj.symbols().find(|s| s.name().unwrap() == "primary").unwrap();
+            let alias = obj.symbols().find(|s| s.name().unwrap() == "alias").unwrap();
+            assert_eq!(alias.section_index(), primary.section_index());
+            assert_eq!(alias.address(), primary.address());
+            assert!(alias.is_local());
+            assert!(primary.is_local());
+            assert_eq!(alias.kind(), object::SymbolKind::Label);
+            let alias_sec = if alias_first { 1 } else { 2 };
+            for sec in [alias_sec, 3] {
+                let section = obj.section_by_index(object::SectionIndex(sec)).unwrap();
+                let object::SectionFlags::Coff { characteristics } = section.flags() else {
+                    panic!("expected COFF section");
+                };
+                assert_eq!(characteristics & 0x1000, 0);
+                assert_ne!(characteristics & 0x0800, 0);
+            }
+        }
+    }
+
+    #[test]
+    fn leaves_local_definitions_from_other_units_alone() {
+        let fixture =
+            Fixture::new(true, true, "alias = .text:0x2000; // type:function scope:local\n");
+        assert_eq!(fixture.fold(), fs::read(fixture.dir.join("input.obj")).unwrap());
+    }
+
+    #[test]
+    fn still_folds_external_definitions_outside_the_unit() {
+        let fixture = Fixture::new(false, true, "alias = .text:0x2000; // type:function\n");
+        let data = fixture.fold();
+        let obj = object::File::parse(data.as_slice()).unwrap();
+        let alias = obj.symbols().find(|s| s.name().unwrap() == "alias").unwrap();
+        assert!(alias.is_undefined());
+        assert!(alias.is_global());
+    }
+
+    #[test]
+    fn synthesizes_global_but_not_private_aliases_on_a_local_primary() {
+        let symbols = format!(
+            "{LOCAL_ALIASES}public = .text:0x1000; // type:label scope:global alias\nprivate = .text:0x1000; // type:label scope:local alias\n"
+        );
+        let fixture = Fixture::new(true, true, &symbols);
+        let data = fixture.fold();
+        let obj = object::File::parse(data.as_slice()).unwrap();
+        let primary = obj.symbols().find(|s| s.name().unwrap() == "primary").unwrap();
+        let public = obj.symbols().find(|s| s.name().unwrap() == "public").unwrap();
+        assert!(public.is_global());
+        assert_eq!(public.section_index(), primary.section_index());
+        assert!(obj.symbols().all(|s| s.name().unwrap() != "private"));
+    }
 }
 
 fn sigs_lib(args: SigsLibArgs) -> Result<()> {
