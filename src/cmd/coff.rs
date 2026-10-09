@@ -1153,6 +1153,86 @@ fn retarget_vftable_deleting_destructors(obj: &mut ObjInfo) -> usize {
     updates.len()
 }
 
+/// `fs:[0]` accesses inside verbatim library units, taken from the original
+/// objects (see [`apply_except_list_relocations`]).
+#[derive(Default)]
+struct LibExceptList {
+    /// Code ranges of the library units present in this image.
+    ranges: Vec<(SectionIndex, u32, u32)>,
+    /// Operand addresses the original objects relocate against `__except_list`.
+    sites: std::collections::BTreeSet<(SectionIndex, u32)>,
+    /// Whether a library object defines `__except_list` (LIBCMT's exsup.obj, as
+    /// an absolute symbol). Without a definition the relocations cannot link.
+    defined: bool,
+}
+
+/// Relocates exception-registration accesses (`mov eax, fs:[0]`,
+/// `mov fs:[0], esp`) against `__except_list`, the absolute symbol cl emits for
+/// them; the linked image only shows a 0 displacement. Skips operands that
+/// already carry a relocation or are blocked by config. Inside verbatim library
+/// units only the original object's relocations are restored: its assembly
+/// (SEH helpers, `__asm` blocks) uses a plain 0. Does nothing unless one of the
+/// module's library objects defines `__except_list`, so the result links.
+fn apply_except_list_relocations(
+    obj: &mut ObjInfo,
+    sites: &[(SectionIndex, u32)],
+    lib: &LibExceptList,
+) -> Result<usize> {
+    if !lib.defined {
+        return Ok(0);
+    }
+    // Library code ranges are disjoint splits; sort once and binary-search.
+    let mut ranges = lib.ranges.clone();
+    ranges.sort_unstable();
+    let in_lib = |section: SectionIndex, address: u32| {
+        let i = ranges.partition_point(|&(sec, start, _)| (sec, start) <= (section, address));
+        i > 0 && {
+            let (sec, _, end) = ranges[i - 1];
+            sec == section && address < end
+        }
+    };
+    let mut target_symbol = None;
+    let mut added = 0;
+    for &(section, address) in sites.iter().collect::<std::collections::BTreeSet<_>>() {
+        if obj.sections[section].relocations.contains(address)
+            || obj
+                .blocked_relocation_sources
+                .contains(crate::analysis::cfa::SectionAddress::new(section, address))
+        {
+            continue;
+        }
+        if in_lib(section, address) && !lib.sites.contains(&(section, address)) {
+            continue;
+        }
+        let symbol = match target_symbol {
+            Some(symbol) => symbol,
+            None => {
+                let existing = obj.symbols.for_name("__except_list").next().map(|(index, _)| index);
+                let symbol = match existing {
+                    Some(index) => index,
+                    None => obj.symbols.add_direct(ObjSymbol {
+                        name: "__except_list".into(),
+                        ..Default::default()
+                    })?,
+                };
+                target_symbol = Some(symbol);
+                symbol
+            }
+        };
+        obj.sections[section].relocations.replace(
+            address,
+            crate::obj::ObjReloc {
+                kind: ObjRelocKind::X86Abs32,
+                target_symbol: symbol,
+                addend: 0,
+                module: None,
+            },
+        );
+        added += 1;
+    }
+    Ok(added)
+}
+
 /// Import BSS sizes and pointer-storage evidence from a verbatim library object.
 ///
 /// The object's symbol layout (sizes inferred as the gap to the next symbol in
@@ -1166,28 +1246,8 @@ fn import_lib_object_sizes(
     obj: &mut ObjInfo,
     lib: &LibObjectConfig,
     dep: &mut Vec<Utf8NativePathBuf>,
+    except_list: &mut LibExceptList,
 ) -> Result<()> {
-    // Skip units that aren't present in this image's splits (and so are never
-    // linked — the prebuilt object may not even have been extracted).
-    let present =
-        obj.sections.iter().any(|(_, s)| s.splits.iter().any(|(_, sp)| sp.unit == lib.unit));
-    if !present {
-        return Ok(());
-    }
-
-    let path = lib.object.to_native();
-    let Ok(mut file) = open_file(&path, true) else {
-        log::warn!("Verbatim object {} not found at {}, skipping size import", lib.unit, path);
-        return Ok(());
-    };
-    let data = file.map()?;
-    let (lib_obj, _) = process_coff(data, &lib.unit)?;
-    dep.push(path);
-
-    let mut size_updates: Vec<(SymbolIndex, u64)> = vec![];
-    let mut strips: Vec<SymbolIndex> = vec![];
-    let mut pointer_symbols = std::collections::BTreeSet::<SymbolIndex>::new();
-
     // Group this unit's splits by their emitted section name, carrying the main
     // image section index. The PE image has no `.bss`/`.CRT$*` sections of its
     // own — those are split renames inside `.data` — so match the object's
@@ -1203,9 +1263,43 @@ fn import_lib_object_sizes(
             unit_layout.entry(name).or_default().push((addr, sp.end, sec_idx));
         }
     }
+    // Skip units that aren't present in this image's splits (and so are never
+    // linked — the prebuilt object may not even have been extracted).
+    if unit_layout.is_empty() {
+        return Ok(());
+    }
     for ranges in unit_layout.values_mut() {
         ranges.sort_unstable_by_key(|&(a, _, _)| a);
     }
+    // Claim the unit's code even if its object turns out to be unreadable: an
+    // unknown object then gets no `__except_list` relocations rather than guesses.
+    for &(start, end, section_index) in unit_layout.values().flatten() {
+        if obj.sections[section_index].kind == crate::obj::ObjSectionKind::Code {
+            except_list.ranges.push((section_index, start, end));
+        }
+    }
+
+    let path = lib.object.to_native();
+    let Ok(mut file) = open_file(&path, true) else {
+        log::warn!("Verbatim object {} not found at {}, skipping size import", lib.unit, path);
+        return Ok(());
+    };
+    let data = file.map()?;
+    let (lib_obj, _) = process_coff(data, &lib.unit)?;
+    // process_coff doesn't keep absolute vs undefined apart, so re-read only the
+    // few objects that mention `__except_list` at all.
+    if !except_list.defined && lib_obj.symbols.for_name("__except_list").next().is_some() {
+        use object::{Object, ObjectSymbol, SymbolSection};
+        let file = object::File::parse(data)?;
+        except_list.defined = file.symbols().any(|symbol| {
+            symbol.name() == Ok("__except_list") && symbol.section() == SymbolSection::Absolute
+        });
+    }
+    dep.push(path);
+
+    let mut size_updates: Vec<(SymbolIndex, u64)> = vec![];
+    let mut strips: Vec<SymbolIndex> = vec![];
+    let mut pointer_symbols = std::collections::BTreeSet::<SymbolIndex>::new();
 
     for (lib_sec_idx, lib_sec) in lib_obj.sections.iter() {
         let Some(layout) = unit_layout.get(&lib_sec.name) else { continue };
@@ -1220,6 +1314,21 @@ fn import_lib_object_sizes(
             }
             None
         };
+        // The original object says which `fs:[0]` accesses are compiled code
+        // (relocated against `__except_list`) and which are assembly (plain 0).
+        if lib_sec.kind == crate::obj::ObjSectionKind::Code
+            && lib_obj.sections.iter().filter(|(_, section)| section.name == lib_sec.name).count()
+                == 1
+        {
+            for (off, reloc) in lib_sec.relocations.iter() {
+                if lib_obj.symbols[reloc.target_symbol].name != "__except_list" {
+                    continue;
+                }
+                if let Some((abs, _, section_index)) = map_off(off) {
+                    except_list.sites.insert((section_index, abs));
+                }
+            }
+        }
         if matches!(
             lib_sec.kind,
             crate::obj::ObjSectionKind::Data | crate::obj::ObjSectionKind::ReadOnlyData
@@ -1419,8 +1528,9 @@ fn load_analyze_coff(
     // Runs after splits (so unit ranges are known) and before abs32
     // reconstruction (so interior references fold into the real symbol + addend
     // via for_relocation instead of dtk's per-element placeholder labels).
+    let mut lib_except_list = LibExceptList::default();
     for lib in &module_config.lib_objects {
-        import_lib_object_sizes(&mut obj, lib, &mut dep)?;
+        import_lib_object_sizes(&mut obj, lib, &mut dep, &mut lib_except_list)?;
     }
 
     // Apply block relocations from config
@@ -1467,6 +1577,12 @@ fn load_analyze_coff(
             },
         );
     }
+
+    // Exception-registration accesses (`mov eax, fs:[0]`) after add_relocations,
+    // so a hand-written relocation at the same operand wins.
+    let n =
+        apply_except_list_relocations(&mut obj, &size_data.except_list_sites, &lib_except_list)?;
+    debug!("Added {n} __except_list relocations");
 
     // Reconstruct abs32 relocations from the PE base relocation table. Done last
     // so that targets resolve against fully-sized symbols (from analysis and the
@@ -2161,7 +2277,13 @@ mod lib_pointer_tests {
                 vec![pointer],
                 vec![section],
             );
-            import_lib_object_sizes(&mut image, &config, &mut vec![]).unwrap();
+            import_lib_object_sizes(
+                &mut image,
+                &config,
+                &mut vec![],
+                &mut LibExceptList::default(),
+            )
+            .unwrap();
             assert_eq!(
                 image.symbols[0].data_kind,
                 if complete { ObjDataKind::Unknown } else { ObjDataKind::String }
