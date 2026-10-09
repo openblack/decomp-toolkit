@@ -111,6 +111,11 @@ pub struct ObjInfo {
     /// absolute relocations. Not emitted as a section; the linker regenerates it.
     pub pe_reloc_data: Vec<u8>,
 
+    /// VAs of the import address table's slots (from the import directory). The
+    /// linker regenerates these, so their base relocations are not imported;
+    /// delay-load slots are ordinary data and keep theirs.
+    pub pe_iat_slots: BTreeSet<u32>,
+
     /// Compiler comment strings extracted from the PE header slack via
     /// `type:comment` splits. Each entry is `(owning unit, literal bytes)`;
     /// emitted as an `-?comment:"..."` directive in a `.drectve` section of the
@@ -159,6 +164,7 @@ impl ObjInfo {
             module_id: 0,
             unresolved_relocations: vec![],
             pe_reloc_data: Vec::new(),
+            pe_iat_slots: BTreeSet::new(),
             pe_comment_directives: Vec::new(),
             pe_comment_sections: Vec::new(),
             pe_metadata: None,

@@ -877,12 +877,10 @@ pub fn apply_base_relocations(obj: &mut ObjInfo, image_base: u32) -> Result<()> 
                 continue;
             }
             // Skip IAT slots: the linker regenerates the import address table and
-            // its base relocations from the import directory.
-            if obj
-                .symbols
-                .at_section_address(src_idx, reloc_va)
-                .any(|(_, s)| s.name.starts_with("__imp_"))
-            {
+            // its base relocations from the import directory. Delay-load slots
+            // (named `__imp__Foo` too, but outside the import directory) are data
+            // pointing at their `__imp_load_` thunks and keep their relocations.
+            if obj.pe_iat_slots.contains(&reloc_va) {
                 continue;
             }
             let off = (reloc_va as u64 - src_sec.address) as usize;
