@@ -105,6 +105,7 @@ fn detect_imports(obj: &mut ObjInfo, pe: &PeFile32, _data: &[u8]) -> Result<()> 
 
         while let Ok(Some(thunk)) = thunk_iter.next::<ImageNtHeaders32>() {
             let iat_va = image_base + first_thunk_rva as u64 + iat_off as u64;
+            obj.pe_iat_slots.insert(iat_va as u32);
             let raw = thunk.raw() as u32;
             let sym_name = if raw & 0x8000_0000 != 0 {
                 // Ordinal import — name it by ordinal
