@@ -1,5 +1,6 @@
 use std::io::Write;
 
+use crate::util::path::NativePathExt;
 use itertools::Itertools;
 use typed_path::{Utf8NativePath, Utf8NativePathBuf, Utf8UnixPathBuf};
 
@@ -10,15 +11,15 @@ pub struct DepFile {
 
 fn normalize_path(path: Utf8NativePathBuf) -> Utf8UnixPathBuf {
     if let Some((a, _)) = path.as_str().split_once(':') {
-        Utf8NativePath::new(a).with_unix_encoding()
+        Utf8NativePath::new(a).to_unix()
     } else {
-        path.with_unix_encoding()
+        path.to_unix()
     }
 }
 
 impl DepFile {
     pub fn new(name: Utf8NativePathBuf) -> Self {
-        Self { name: name.with_unix_encoding(), dependencies: vec![] }
+        Self { name: name.to_unix(), dependencies: vec![] }
     }
 
     pub fn push(&mut self, dependency: Utf8NativePathBuf) {

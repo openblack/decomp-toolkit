@@ -9,6 +9,7 @@ use owo_colors::{OwoColorize, Stream};
 use sha1::{Digest, Sha1};
 use typed_path::{Utf8NativePath, Utf8NativePathBuf};
 
+use crate::util::path::NativePathExt;
 use crate::{
     util::{
         file::{buf_writer, process_rsp, touch},
@@ -126,7 +127,7 @@ where
     let mut hash_buf = [0u8; 40];
     let hash_str = base16ct::lower::encode_str(&hash, &mut hash_buf)
         .map_err(|e| anyhow!("Failed to encode hash: {e}"))?;
-    writeln!(w, "{}  {}", hash_str, path.with_unix_encoding())?;
+    writeln!(w, "{}  {}", hash_str, path.to_unix())?;
     Ok(())
 }
 

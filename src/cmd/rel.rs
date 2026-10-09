@@ -16,6 +16,7 @@ use rustc_hash::FxHashMap;
 use tracing::{info, info_span};
 use typed_path::Utf8NativePathBuf;
 
+use crate::util::path::UnixPathExt;
 use crate::{
     analysis::{
         cfa::{AnalyzerState, SectionAddress},
@@ -180,7 +181,7 @@ fn load_rel(module_config: &ModuleConfig, object_base: &ObjectBase) -> Result<Re
     let header = process_rel_header(&mut reader)?;
     let sections = process_rel_sections(&mut reader, &header)?;
     let section_defs = if let Some(splits_path) = &module_config.splits {
-        read_splits_sections(&splits_path.with_encoding())?
+        read_splits_sections(&splits_path.to_native())?
     } else {
         None
     };

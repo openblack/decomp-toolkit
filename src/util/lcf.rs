@@ -3,6 +3,7 @@ use itertools::Itertools;
 use typed_path::{Utf8NativePathBuf, Utf8UnixPath};
 
 use crate::obj::{ObjInfo, ObjKind};
+use crate::util::path::UnixPathExt;
 
 const LCF_TEMPLATE: &str = include_str!("../../assets/ldscript.lcf");
 const LCF_PARTIAL_TEMPLATE: &str = include_str!("../../assets/ldscript_partial.lcf");
@@ -147,12 +148,12 @@ fn fit_filename(stem: String, ext: &str) -> String {
 
 pub fn obj_path_for_unit(unit: &str) -> Utf8NativePathBuf {
     let stem = fit_filename(sanitize_unit_name(unit), ".o");
-    Utf8UnixPath::new(&stem).with_encoding().with_extension("o")
+    Utf8UnixPath::new(&stem).to_native().with_extension("o")
 }
 
 pub fn asm_path_for_unit(unit: &str) -> Utf8NativePathBuf {
     let stem = fit_filename(sanitize_unit_name(unit), ".s");
-    Utf8UnixPath::new(&stem).with_encoding().with_extension("s")
+    Utf8UnixPath::new(&stem).to_native().with_extension("s")
 }
 
 #[cfg(test)]

@@ -9,6 +9,7 @@ use argp::FromArgs;
 use object::{Object, ObjectSymbol, SymbolScope};
 use typed_path::Utf8NativePathBuf;
 
+use crate::util::path::NativePathExt;
 use crate::{
     util::{
         file::{buf_writer, process_rsp},
@@ -77,7 +78,7 @@ fn create(args: CreateArgs) -> Result<()> {
     let mut identifiers = Vec::with_capacity(files.len());
     let mut symbol_table = BTreeMap::new();
     for path in &files {
-        let unix_path = path.with_unix_encoding();
+        let unix_path = path.to_unix();
         let identifier = unix_path.as_str().as_bytes().to_vec();
         identifiers.push(identifier.clone());
 

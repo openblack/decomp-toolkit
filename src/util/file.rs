@@ -11,6 +11,7 @@ use sha1::{Digest, Sha1};
 use typed_path::{Utf8NativePath, Utf8NativePathBuf, Utf8UnixPathBuf};
 use xxhash_rust::xxh3::xxh3_64;
 
+use crate::util::path::UnixPathExt;
 use crate::{
     array_ref,
     util::{
@@ -72,7 +73,7 @@ pub fn process_rsp(files: &[Utf8NativePathBuf]) -> Result<Vec<Utf8NativePathBuf>
             for result in file.lines() {
                 let line = result?;
                 if !line.is_empty() {
-                    out.push(Utf8UnixPathBuf::from(line).with_encoding());
+                    out.push(Utf8UnixPathBuf::from(line).to_native());
                 }
             }
         } else if path.as_str().contains('*') {
