@@ -3,6 +3,7 @@ use std::collections::HashMap;
 use anyhow::Result;
 use typed_path::Utf8UnixPathBuf;
 
+use crate::util::path::NativePathExt;
 use crate::{obj::ObjInfo, util::lcf::obj_path_for_unit};
 
 /// PE optional-header and per-section data needed to generate linker response files.
@@ -262,7 +263,7 @@ pub fn generate_objs_rsp(obj: &ObjInfo, obj_dir: &Utf8UnixPathBuf) -> Result<Str
         .link_order
         .iter()
         .map(|unit| {
-            let obj_path: Utf8UnixPathBuf = obj_path_for_unit(unit.name.as_str()).with_encoding();
+            let obj_path: Utf8UnixPathBuf = obj_path_for_unit(unit.name.as_str()).to_unix();
             obj_dir.join(&obj_path).to_string()
         })
         .collect();

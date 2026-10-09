@@ -15,6 +15,7 @@ use tracing::{debug, info};
 use typed_path::{Utf8NativePath, Utf8NativePathBuf};
 use xxhash_rust::xxh3::xxh3_64;
 
+use crate::util::path::{NativePathExt, UnixPathExt};
 use crate::{
     analysis::{
         objects::{detect_objects, detect_strings},
@@ -215,7 +216,7 @@ fn fold(args: FoldArgs) -> Result<()> {
     // e.g. per-TU statics), and (address) -> the non-alias name there.
     let mut by_name: HashMap<String, Vec<FoldSymbol>> = HashMap::new();
     let mut primary_at: HashMap<u32, String> = HashMap::new();
-    for line in fs::read_to_string(symbols_path.with_encoding())?.lines() {
+    for line in fs::read_to_string(symbols_path.to_native())?.lines() {
         let Some((name, rest)) = line.split_once(" = .") else { continue };
         let Some((sec_addr, attrs)) = rest.split_once(';') else { continue };
         let Some((_, addr)) = sec_addr.split_once(":0x") else { continue };
@@ -231,7 +232,7 @@ fn fold(args: FoldArgs) -> Result<()> {
     // Splits file: the unit's address ranges, any section.
     let mut ranges: Vec<(u32, u32)> = Vec::new();
     let mut in_unit = false;
-    for line in fs::read_to_string(splits_path.with_encoding())?.lines() {
+    for line in fs::read_to_string(splits_path.to_native())?.lines() {
         if !line.starts_with(['\t', ' ']) {
             in_unit = line.trim_end() == format!("{}:", args.unit);
             continue;
@@ -816,7 +817,7 @@ fn diff(args: DiffArgs) -> Result<()> {
         apply_base_relocations(&mut obj, base)?;
     }
     if let Some(symbols_path) = &config.base.symbols {
-        apply_symbols_file(&symbols_path.with_encoding(), &mut obj)?;
+        apply_symbols_file(&symbols_path.to_native(), &mut obj)?;
     }
 
     log::info!("Loading {}", args.exe_file);
@@ -918,7 +919,7 @@ fn apply(args: ApplyArgs) -> Result<()> {
     let Some(symbols_path) = &config.base.symbols else {
         bail!("No symbols file specified in config");
     };
-    let symbols_path = symbols_path.with_encoding();
+    let symbols_path = symbols_path.to_native();
     let Some(symbols_cache) = apply_symbols_file(&symbols_path, &mut obj)? else {
         bail!("Symbols file '{}' does not exist", symbols_path);
     };
@@ -1094,7 +1095,7 @@ fn load_coff_module(
         // Extract exestr comments declared as `type:comment` ranges in the
         // splits file's Sections block, re-emitted later as `.drectve` directives.
         if let Some(splits) = &config.splits {
-            let regions = comment_regions_from_splits(&splits.with_encoding(), image_base)?;
+            let regions = comment_regions_from_splits(&splits.to_native(), image_base)?;
             extract_comment_directives(data, &regions, &mut obj, config.name())?;
         }
         (obj, image_base, pe_header)
@@ -1138,7 +1139,7 @@ fn import_lib_object_sizes(
         return Ok(());
     }
 
-    let path = lib.object.with_encoding();
+    let path = lib.object.to_native();
     let Ok(mut file) = open_file(&path, true) else {
         log::warn!("Verbatim object {} not found at {}, skipping size import", lib.unit, path);
         return Ok(());
@@ -1341,7 +1342,7 @@ fn load_analyze_coff(
     // lets the recursive pass walk each named function, mint + trace its
     // callees, and emit the cross-unit relocations.
     let symbols_cache = if let Some(symbols_path) = &module_config.symbols {
-        let symbols_path = symbols_path.with_encoding();
+        let symbols_path = symbols_path.to_native();
         let cache = apply_symbols_file(&symbols_path, &mut obj)?;
         dep.push(symbols_path);
         cache
@@ -1355,11 +1356,11 @@ fn load_analyze_coff(
 
     // Apply x86 signatures for already-known symbols (entry point, named stubs).
     let sig_dir_buf: Option<Utf8NativePathBuf> =
-        config.x86_signatures.as_ref().map(|p| p.with_encoding());
+        config.x86_signatures.as_ref().map(|p| p.to_native());
     apply_signatures_x86(&mut obj, sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())))?;
 
     if let Some(map_path) = &module_config.map {
-        let map_path = map_path.with_encoding();
+        let map_path = map_path.to_native();
         crate::util::map::apply_map_file(
             &map_path,
             &mut obj,
@@ -1370,7 +1371,7 @@ fn load_analyze_coff(
     }
 
     let splits_cache = if let Some(splits_path) = &module_config.splits {
-        let splits_path = splits_path.with_encoding();
+        let splits_path = splits_path.to_native();
         let cache = apply_splits_file(&splits_path, &mut obj)?;
         dep.push(splits_path);
         cache
@@ -1542,7 +1543,7 @@ fn split_write_coff(
 
     // Post-analysis signature scan: check all functions against the sig dir.
     let sig_dir_buf: Option<Utf8NativePathBuf> =
-        config.x86_signatures.as_ref().map(|p| p.with_encoding());
+        config.x86_signatures.as_ref().map(|p| p.to_native());
     apply_signatures_post_x86(
         &mut module.obj,
         sig_dir_buf.as_ref().map(|p| std::path::Path::new(p.as_str())),
@@ -1699,15 +1700,10 @@ fn split_write_coff(
     if !no_update {
         debug!("Writing configuration");
         if let Some(symbols_path) = &module.config.symbols {
-            write_symbols_file(&symbols_path.with_encoding(), &module.obj, module.symbols_cache)?;
+            write_symbols_file(&symbols_path.to_native(), &module.obj, module.symbols_cache)?;
         }
         if let Some(splits_path) = &module.config.splits {
-            write_splits_file(
-                &splits_path.with_encoding(),
-                &module.obj,
-                false,
-                module.splits_cache,
-            )?;
+            write_splits_file(&splits_path.to_native(), &module.obj, false, module.splits_cache)?;
         }
     }
 
@@ -1746,7 +1742,7 @@ fn split_write_coff(
     let mut out_config = OutputModule {
         name: module_name,
         module_id: module.obj.module_id,
-        ldscript: out_dir.join("args.rsp").with_unix_encoding(),
+        ldscript: out_dir.join("args.rsp").to_unix(),
         units: Vec::with_capacity(split_objs.len()),
         entry,
         extract: Vec::with_capacity(module.config.extract.len()),
@@ -1787,7 +1783,7 @@ fn split_write_coff(
             );
         }
         out_config.units.push(OutputUnit {
-            object: out_path.with_unix_encoding(),
+            object: out_path.to_unix(),
             name: unit.name.clone(),
             autogenerated: unit.autogenerated,
             code_size: split_obj.code_size(),
@@ -1829,7 +1825,7 @@ fn split_write_coff(
         out_config.units.insert(
             0,
             OutputUnit {
-                object: out_path.with_unix_encoding(),
+                object: out_path.to_unix(),
                 name: unit_name.clone(),
                 autogenerated: true,
                 code_size: 0,
@@ -1858,11 +1854,11 @@ fn split_write_coff(
     let pe = module.pe_header.as_ref().unwrap_or(&pe_default);
 
     let args_string = generate_args_rsp(&module.obj, pe, &force_includes, config.dead_strip)?;
-    let args_path = out_config.ldscript.with_encoding();
+    let args_path = out_config.ldscript.to_native();
     write_if_changed(&args_path, args_string.as_bytes())?;
 
     let objs_string = generate_objs_rsp(&module.obj, &obj_dir)?;
-    let objs_path = out_dir_path.join("objs.rsp").with_encoding();
+    let objs_path = out_dir_path.join("objs.rsp").to_native();
     write_if_changed(&objs_path, objs_string.as_bytes())?;
 
     Ok(out_config)
@@ -1884,7 +1880,7 @@ fn split(args: SplitArgs) -> Result<()> {
     if config.extract_objects && matches!(object_base, ObjectBase::Vfs(..)) {
         // For COFF, just resolve to directory base
         let target_dir = match &config.object_base {
-            Some(p) => p.with_encoding(),
+            Some(p) => p.to_native(),
             None => bail!("No object base specified for VFS extraction"),
         };
         object_base = ObjectBase::Directory(target_dir);

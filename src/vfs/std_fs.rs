@@ -7,30 +7,31 @@ use filetime::FileTime;
 use typed_path::{Utf8NativePathBuf, Utf8UnixPath};
 
 use super::{DiscStream, Vfs, VfsFile, VfsFileType, VfsMetadata, VfsResult};
+use crate::util::path::UnixPathExt;
 
 #[derive(Clone)]
 pub struct StdFs;
 
 impl Vfs for StdFs {
     fn open(&mut self, path: &Utf8UnixPath) -> VfsResult<Box<dyn VfsFile>> {
-        let mut file = StdFile::new(path.with_encoding());
+        let mut file = StdFile::new(path.to_native());
         file.file()?; // Open the file now to check for errors
         Ok(Box::new(file))
     }
 
     fn exists(&mut self, path: &Utf8UnixPath) -> VfsResult<bool> {
-        Ok(fs::exists(path.with_encoding())?)
+        Ok(fs::exists(path.to_native())?)
     }
 
     fn read_dir(&mut self, path: &Utf8UnixPath) -> VfsResult<Vec<String>> {
-        let entries = fs::read_dir(path.with_encoding())?
+        let entries = fs::read_dir(path.to_native())?
             .map(|entry| entry.map(|e| e.file_name().to_string_lossy().into_owned()))
             .collect::<Result<Vec<_>, _>>()?;
         Ok(entries)
     }
 
     fn metadata(&mut self, path: &Utf8UnixPath) -> VfsResult<VfsMetadata> {
-        let metadata = fs::metadata(path.with_encoding())?;
+        let metadata = fs::metadata(path.to_native())?;
         Ok(VfsMetadata {
             file_type: if metadata.is_dir() { VfsFileType::Directory } else { VfsFileType::File },
             len: metadata.len(),

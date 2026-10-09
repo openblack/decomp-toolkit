@@ -25,6 +25,7 @@ use typed_path::{Utf8NativePath, Utf8UnixPath, Utf8UnixPathBuf};
 use u8_arc::U8Fs;
 use wad::WadFs;
 
+use crate::util::path::{NativePathExt, split_drive_prefix};
 use crate::util::{
     ncompress::{YAY0_MAGIC, YAZ0_MAGIC},
     nlzss,
@@ -222,8 +223,16 @@ pub fn open_path_with_fs(
     path: &Utf8NativePath,
     auto_decompress: bool,
 ) -> anyhow::Result<OpenResult> {
-    let path = path.with_unix_encoding();
-    let mut split = path.as_str().split(':').peekable();
+    let path = path.to_unix();
+    // ':' separates archive members ("disc.iso:files/a.arc:b.bin"); a Windows
+    // drive prefix's colon belongs to the first segment instead.
+    let drive_len = split_drive_prefix(path.as_str()).map_or(0, |(drive, _)| drive.len());
+    let (first, rest) = match path.as_str()[drive_len..].find(':') {
+        Some(i) => (&path.as_str()[..drive_len + i], Some(&path.as_str()[drive_len + i + 1..])),
+        None => (path.as_str(), None),
+    };
+    let mut split =
+        std::iter::once(first).chain(rest.into_iter().flat_map(|r| r.split(':'))).peekable();
     let mut current_path = String::new();
     let mut file: Option<Box<dyn VfsFile>> = None;
     let mut segment = Utf8UnixPath::new("");
