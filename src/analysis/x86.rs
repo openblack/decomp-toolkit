@@ -31,6 +31,10 @@ pub struct X86FunctionSizeData {
     /// the volatile guessed sizes they depend on are finalized first and the
     /// split is idempotent.
     pub abs32_candidates: Vec<(SectionIndex, u32, u32)>,
+    /// Operand VAs of exception-registration accesses (`mov eax, fs:[0]`,
+    /// `mov fs:[0], esp`). cl emits these against the absolute symbol
+    /// `__except_list`; the linked image only shows a 0 displacement.
+    pub except_list_sites: Vec<(SectionIndex, u32)>,
 }
 
 /// Recursively disassemble all reachable code in `obj` starting from every
@@ -142,6 +146,7 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
     // Abs32 references are only *collected* here; resolution to relocations is
     // deferred until after the size passes (see resolve_abs32_candidates).
     let mut abs32_candidates: Vec<(SectionIndex, u32, u32)> = Vec::new();
+    let mut except_list_sites: Vec<(SectionIndex, u32)> = Vec::new();
     let mut data_scanned = false;
 
     // Image address bounds, for a cheap reject of immediates that can't be a
@@ -253,6 +258,9 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
                 // resolves to an existing symbol only (see add_abs32).
                 let co = decoder.get_constant_offsets(&instr);
                 scan_abs32(&mut abs32_candidates, sec_idx, pc, &instr, &co, img_lo..img_hi);
+                if is_except_list_access(&instr, &co) {
+                    except_list_sites.push((sec_idx, pc + co.displacement_offset() as u32));
+                }
 
                 let next_pc = pc + instr.len() as u32;
                 switches.observe(pc, next_pc, &instr, fn_base, fn_data);
@@ -675,7 +683,13 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
         obj.name,
         abs32_candidates.len(),
     );
-    Ok(X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap, abs32_candidates })
+    Ok(X86FunctionSizeData {
+        fn_raw_ends,
+        fn_tables,
+        code_snap,
+        abs32_candidates,
+        except_list_sites,
+    })
 }
 
 /// Compute and set `size` / `size_known` on all x86 function symbols.
@@ -684,7 +698,13 @@ pub fn analyze_x86_functions(obj: &mut ObjInfo) -> Result<X86FunctionSizeData> {
 /// completed, so that size caps account for every function entry point.
 /// Pass in the [`X86FunctionSizeData`] returned by [`analyze_x86_functions`].
 pub fn compute_x86_function_sizes(obj: &mut ObjInfo, data: X86FunctionSizeData) -> Result<()> {
-    let X86FunctionSizeData { fn_raw_ends, fn_tables, code_snap, abs32_candidates: _ } = data;
+    let X86FunctionSizeData {
+        fn_raw_ends,
+        fn_tables,
+        code_snap,
+        abs32_candidates: _,
+        except_list_sites: _,
+    } = data;
 
     let find_code = |va: u32| -> Option<(SectionIndex, usize)> {
         code_snap.iter().find_map(|(idx, base, data)| {
@@ -1068,6 +1088,17 @@ fn scan_abs32(
             candidates.push((src_sec, pc + co.displacement_offset() as u32, target));
         }
     }
+}
+
+/// Whether `instr` reads or writes the head of the SEH registration chain,
+/// `fs:[0]`, through an absolute 32-bit displacement.
+fn is_except_list_access(instr: &Instruction, co: &ConstantOffsets) -> bool {
+    instr.segment_prefix() == Register::FS
+        && instr.memory_base() == Register::None
+        && instr.memory_index() == Register::None
+        && co.has_displacement()
+        && co.displacement_size() == 4
+        && instr.memory_displacement32() == 0
 }
 
 /// Resolve the abs32 candidates collected during phase-1 into relocations.
