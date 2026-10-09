@@ -1122,7 +1122,7 @@ fn comment_regions_from_splits(
 /// `??_G…` when nothing needs the vector form. The image only shows the `??_G`
 /// address; where the symbols file names a `??_E` alias at that address, point
 /// the slot back at it so the split vftable references what cl emitted.
-fn retarget_vftable_deleting_destructors(obj: &mut ObjInfo) -> Result<usize> {
+fn retarget_vftable_deleting_destructors(obj: &mut ObjInfo) -> usize {
     let vftables: Vec<(SectionIndex, u64, u64)> = obj
         .symbols
         .iter()
@@ -1136,10 +1136,11 @@ fn retarget_vftable_deleting_destructors(obj: &mut ObjInfo) -> Result<usize> {
         for (address, reloc) in obj.sections[section].relocations.range(start as u32..end as u32) {
             let target = &obj.symbols[reloc.target_symbol];
             let Some(rest) = target.name.strip_prefix("??_G") else { continue };
-            let Some((alias, alias_symbol)) = obj.symbols.by_name(&format!("??_E{rest}"))? else {
-                continue;
-            };
-            if alias_symbol.section == target.section && alias_symbol.address == target.address {
+            // An alias at the target's own address; names alone may repeat.
+            let alias = obj.symbols.for_name(&format!("??_E{rest}")).find(|(_, symbol)| {
+                symbol.section == target.section && symbol.address == target.address
+            });
+            if let Some((alias, _)) = alias {
                 updates.push((section, address, alias));
             }
         }
@@ -1149,7 +1150,7 @@ fn retarget_vftable_deleting_destructors(obj: &mut ObjInfo) -> Result<usize> {
             reloc.target_symbol = alias;
         }
     }
-    Ok(updates.len())
+    updates.len()
 }
 
 /// Import BSS sizes and pointer-storage evidence from a verbatim library object.
@@ -1473,7 +1474,7 @@ fn load_analyze_coff(
     if let Some(base) = image_base {
         apply_base_relocations(&mut obj, base)?;
     }
-    let n = retarget_vftable_deleting_destructors(&mut obj)?;
+    let n = retarget_vftable_deleting_destructors(&mut obj);
     debug!("Retargeted {n} vftable slots to vector deleting destructors");
 
     // Reconcile relocations against C translation-unit scoping. Runs AFTER reloc
