@@ -1639,7 +1639,7 @@ fn split_write_coff(
                 let sym = &module.obj.symbols[idx];
                 let local = sym.flags.0.contains(ObjSymbolFlags::NoExport)
                     || sym.flags.0.contains(ObjSymbolFlags::Local);
-                // Base image, local duplicates:
+                // Local duplicates (base image and modules alike):
                 //   Functions/labels get their own function splits and the
                 //     globalize pass renames any cross-unit reference to
                 //     <name>_<addr>, so duplicate names never collide. Keep them
@@ -1653,9 +1653,10 @@ fn split_write_coff(
                 //     references. A local nothing else refers to stays local, so
                 //     duplicates of it are fine (a static in a widely included header
                 //     gives every including unit its own copy of the same name).
-                // Exported names — and all duplicates in modules — keep the
-                // lowest-address occurrence and rename the rest.
-                let keep = if module.obj.module_id == 0 && local {
+                // Exported names keep the lowest-address occurrence and rename the
+                // rest. Modules follow the same rules: every unit of a DLL has its
+                // own copies of header statics and of its `_$E`/`_$S` initializers.
+                let keep = if local {
                     if sym.kind != ObjSymbolKind::Object {
                         true
                     } else if config.globalize_symbols && cross_unit_refs.contains(&idx) {
