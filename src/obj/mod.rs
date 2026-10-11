@@ -122,6 +122,9 @@ pub struct ObjInfo {
     /// owning unit's object (or a shared object when the unit is `None`). Not a
     /// real section.
     pub pe_comment_directives: Vec<(Option<String>, Vec<u8>)>,
+    /// `-export:` linker directives for the symbols this object defines that
+    /// the original image exports (see `ModuleConfig::generate_exports`).
+    pub pe_export_directives: Vec<String>,
 
     /// `type:comment` split declarations `(name, start_va, end_va, owning unit)`,
     /// retained so `dtk coff split` round-trips them into the regenerated splits
@@ -166,6 +169,7 @@ impl ObjInfo {
             pe_reloc_data: Vec::new(),
             pe_iat_slots: BTreeSet::new(),
             pe_comment_directives: Vec::new(),
+            pe_export_directives: Vec::new(),
             pe_comment_sections: Vec::new(),
             pe_metadata: None,
         }

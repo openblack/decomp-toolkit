@@ -34,6 +34,19 @@ pub struct PeHeaderInfo {
     pub section_characteristics: HashMap<String, u32>,
     /// `VirtualSize` from each IMAGE_SECTION_HEADER, keyed by section name.
     pub section_vsizes: HashMap<String, u32>,
+    /// The export directory, if the image has one.
+    pub exports: Option<PeExports>,
+}
+
+/// The parts of a PE export directory the linker regenerates.
+#[derive(Debug, Default)]
+pub struct PeExports {
+    /// The DLL name the directory records.
+    pub dll_name: String,
+    /// The directory's `TimeDateStamp` (the link time).
+    pub timestamp: u32,
+    /// Named exports as `(name, virtual address)`; forwarders are left out.
+    pub names: Vec<(String, u32)>,
 }
 
 impl PeHeaderInfo {
@@ -95,6 +108,8 @@ impl PeHeaderInfo {
             }
         };
 
+        let exports = parse_exports(&pe, opt.image_base.get(LE));
+
         Some(Self {
             image_base: opt.image_base.get(LE),
             stack_reserve: opt.size_of_stack_reserve.get(LE),
@@ -114,6 +129,7 @@ impl PeHeaderInfo {
             no_seh,
             section_characteristics,
             section_vsizes,
+            exports,
         })
     }
 
@@ -152,6 +168,22 @@ impl PeHeaderInfo {
     }
 }
 
+fn parse_exports(pe: &object::read::pe::PeFile32, image_base: u32) -> Option<PeExports> {
+    use object::{LittleEndian as LE, read::pe::ExportTarget};
+    let table = pe.export_table().ok()??;
+    let directory = table.directory();
+    let dll_name =
+        String::from_utf8_lossy(table.name_from_pointer(directory.name.get(LE)).ok()?).into_owned();
+    let mut names = Vec::new();
+    for export in table.exports().ok()? {
+        let (Some(name), ExportTarget::Address(rva)) = (export.name, export.target) else {
+            continue;
+        };
+        names.push((String::from_utf8_lossy(name).into_owned(), image_base.wrapping_add(rva)));
+    }
+    Some(PeExports { dll_name, timestamp: directory.time_date_stamp.get(LE), names })
+}
+
 /// Generate the flags-only response file (`args.rsp`).
 /// Contains all linker options but no object files.
 /// Usage: `lld-link @args.rsp @objs.rsp /OUT:foo.exe`
@@ -160,6 +192,7 @@ pub fn generate_args_rsp(
     pe: &PeHeaderInfo,
     force_includes: &[String],
     dead_strip: bool,
+    exports_def: Option<&str>,
 ) -> Result<String> {
     let mut lines: Vec<String> = vec!["/errorlimit:0".to_string(), "/demangle:no".to_string()];
     if dead_strip && !pe.is_dll {
@@ -245,6 +278,13 @@ pub fn generate_args_rsp(
 
     for sym in force_includes {
         lines.push(format!("/INCLUDE:{sym}"));
+    }
+
+    // A regenerated export table takes the original's DLL name (from the .def
+    // file's LIBRARY statement) and link time.
+    if let (Some(def), Some(exports)) = (exports_def, &pe.exports) {
+        lines.push(format!("/DEF:{def}"));
+        lines.push(format!("/TIMESTAMP:{:#x}", exports.timestamp));
     }
 
     Ok(lines.join("\n"))
