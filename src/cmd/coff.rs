@@ -509,12 +509,44 @@ fn fold(args: FoldArgs) -> Result<()> {
         data[12..16].copy_from_slice(&new_nsym.to_le_bytes());
     }
 
+    // The image's export directory is carried verbatim by the split objects, so a
+    // recompiled unit must not ask the linker to build a second one from its
+    // `__declspec(dllexport)` directives. Blank them out in place (the section
+    // keeps its size; the remaining directives still apply).
+    let mut exports_removed = 0;
+    for sec in 1..=nsec {
+        let h = 20 + (sec - 1) * 40;
+        if &data[h..h + 8] != b".drectve" {
+            continue;
+        }
+        let size = u32::from_le_bytes(data[h + 16..h + 20].try_into().unwrap()) as usize;
+        let raw = u32::from_le_bytes(data[h + 20..h + 24].try_into().unwrap()) as usize;
+        let Some(directives) = data.get_mut(raw..raw + size) else { continue };
+        let mut start = 0;
+        while start < directives.len() {
+            if directives[start].is_ascii_whitespace() {
+                start += 1;
+                continue;
+            }
+            let end = directives[start..]
+                .iter()
+                .position(|b| b.is_ascii_whitespace())
+                .map_or(directives.len(), |p| start + p);
+            let token = &directives[start..end];
+            if token.len() > 8 && token[1..8].eq_ignore_ascii_case(b"export:") {
+                directives[start..end].fill(b' ');
+                exports_removed += 1;
+            }
+            start = end;
+        }
+    }
+
     let out = args.output.as_ref().unwrap_or(&args.object);
     fs::write(out, &data).with_context(|| format!("Failed to write {}", out))?;
     info!(
         "{}: folded {} COMDAT definitions onto the image, {} onto unit-local functions, \
-         defined {} missing aliases",
-        out, folded_out, aliased, synthesized
+         defined {} missing aliases, dropped {} export directives",
+        out, folded_out, aliased, synthesized, exports_removed
     );
     Ok(())
 }
@@ -696,6 +728,26 @@ mod fold_tests {
         let obj = object::File::parse(data.as_slice()).unwrap();
         let alias = obj.symbols().find(|s| s.name().unwrap() == "alias").unwrap();
         assert!(alias.is_undefined());
+    }
+
+    #[test]
+    fn drops_export_directives() {
+        let fixture = Fixture::new(false, true, "alias = .text:0x1000; // type:function\n");
+        // Turn the fixture's third section into a .drectve that exports a symbol.
+        let mut data = fs::read(fixture.dir.join("input.obj")).unwrap();
+        let directives = b" /DEFAULTLIB:LIBCMT -export:alias /EXPORT:other,DATA ";
+        let raw = data.len() as u32;
+        data.extend_from_slice(directives);
+        let h = 20 + 2 * 40;
+        data[h..h + 8].copy_from_slice(b".drectve");
+        data[h + 16..h + 20].copy_from_slice(&(directives.len() as u32).to_le_bytes());
+        data[h + 20..h + 24].copy_from_slice(&raw.to_le_bytes());
+        fs::write(fixture.dir.join("input.obj"), &data).unwrap();
+        let out = fixture.fold();
+        let drectve = &out[raw as usize..raw as usize + directives.len()];
+        assert_eq!(drectve.len(), directives.len());
+        let text = std::str::from_utf8(drectve).unwrap();
+        assert_eq!(text.split_whitespace().collect::<Vec<_>>(), ["/DEFAULTLIB:LIBCMT"]);
     }
 
     #[test]
