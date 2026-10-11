@@ -311,9 +311,11 @@ pub fn generate_objs_rsp(obj: &ObjInfo, obj_dir: &Utf8UnixPathBuf) -> Result<Str
     // with address-ordered tie-breaking). Emit it verbatim — re-sorting here by
     // each unit's minimum address would discard the dependency order and
     // misplace text-less gap units (.bss/.data-only fillers).
+    // Linker units are written by the linker itself, so their objects stay out.
     let lines: Vec<String> = obj
         .link_order
         .iter()
+        .filter(|unit| !unit.linker)
         .map(|unit| {
             let obj_path: Utf8UnixPathBuf = obj_path_for_unit(unit.name.as_str()).to_unix();
             obj_dir.join(&obj_path).to_string()
