@@ -435,6 +435,14 @@ pub fn apply_signature_x86(
         if sig_symbol.name.starts_with("fn_") {
             continue;
         }
+        // The relocation already resolves to the symbol this signature names; any
+        // addend is an offset into it (signature relocations don't carry the
+        // implicit addend from the instruction bytes). Labelling the interior
+        // address would create a second copy of the name inside the real symbol
+        // (later renamed to a `data_0x` placeholder) and cut its extent short.
+        if addend != 0 && obj.symbols[target_sym_idx].name == sig_symbol.name {
+            continue;
+        }
         let target_va = (obj.symbols[target_sym_idx].address as i64 + addend) as u32;
         let Some(target_sec) = obj.symbols[target_sym_idx].section else { continue };
         // Likewise don't name a callee that lands inside an existing size-known
