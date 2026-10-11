@@ -345,6 +345,12 @@ pub struct ModuleConfig {
     /// timestamp. The splits must leave the original table out of every unit.
     #[serde(default, skip_serializing_if = "is_default")]
     pub generate_exports: bool,
+    /// Have the linker generate the import directory (PE) from an import
+    /// library and layout order read back from the original, built with a
+    /// vc6-aware lld-link (`/vc6imports:`). The splits must leave the original
+    /// tables (`.idata$N`) out of every unit.
+    #[serde(default, skip_serializing_if = "is_default")]
+    pub generate_imports: bool,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub skip_cfa_ranges: Vec<SkipCfaRangeConfig>,
     /// Prebuilt library objects linked verbatim for some of this module's units.
