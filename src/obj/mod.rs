@@ -72,6 +72,9 @@ pub struct ObjUnit {
     pub comment_version: Option<u8>,
     /// Influences the order of this unit relative to other ordered units.
     pub order: Option<i32>,
+    /// The linker writes this unit's bytes itself (an import or export table, a
+    /// debug directory), so its object is left out of the link.
+    pub linker: bool,
 }
 
 #[derive(Debug, Clone)]
