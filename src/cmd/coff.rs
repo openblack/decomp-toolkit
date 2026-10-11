@@ -2202,7 +2202,7 @@ fn split_write_coff(
     let pe = module.pe_header.as_ref().unwrap_or(&pe_default);
 
     check_linker_tables(
-        &module.config.name(),
+        module.config.name(),
         &module.obj,
         module.config.generate_imports,
         module.config.generate_exports,
