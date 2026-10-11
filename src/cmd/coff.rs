@@ -509,12 +509,16 @@ fn fold(args: FoldArgs) -> Result<()> {
         data[12..16].copy_from_slice(&new_nsym.to_le_bytes());
     }
 
-    // The image's export directory is carried verbatim by the split objects, so a
-    // recompiled unit must not ask the linker to build a second one from its
-    // `__declspec(dllexport)` directives. Blank them out in place (the section
-    // keeps its size; the remaining directives still apply).
+    // Unless the linker generates the export table, the image's export directory
+    // is carried verbatim by the split objects, so a recompiled unit must not ask
+    // the linker to build a second one from its `__declspec(dllexport)`
+    // directives. Blank them out in place (the section keeps its size; the
+    // remaining directives still apply).
     let mut exports_removed = 0;
     for sec in 1..=nsec {
+        if module_config.generate_exports {
+            break;
+        }
         let h = 20 + (sec - 1) * 40;
         if &data[h..h + 8] != b".drectve" {
             continue;
@@ -748,6 +752,39 @@ mod fold_tests {
         assert_eq!(drectve.len(), directives.len());
         let text = std::str::from_utf8(drectve).unwrap();
         assert_eq!(text.split_whitespace().collect::<Vec<_>>(), ["/DEFAULTLIB:LIBCMT"]);
+    }
+
+    #[test]
+    fn keeps_export_directives_when_the_module_generates_exports() {
+        let fixture = Fixture::new(false, true, "alias = .text:0x1000; // type:function\n");
+        fs::write(
+            fixture.dir.join("config.yml"),
+            format!(
+                "object: unused.exe\nmodules:\n- object: unused.dll\n  name: dll\n  symbols: '{}'\n  splits: '{}'\n  generate_exports: true\n",
+                fixture.dir.join("symbols.txt"),
+                fixture.dir.join("splits.txt")
+            ),
+        )
+        .unwrap();
+        let mut data = fs::read(fixture.dir.join("input.obj")).unwrap();
+        let directives = b" /DEFAULTLIB:LIBCMT -export:alias /EXPORT:other,DATA ";
+        let raw = data.len() as u32;
+        data.extend_from_slice(directives);
+        let h = 20 + 2 * 40;
+        data[h..h + 8].copy_from_slice(b".drectve");
+        data[h + 16..h + 20].copy_from_slice(&(directives.len() as u32).to_le_bytes());
+        data[h + 20..h + 24].copy_from_slice(&raw.to_le_bytes());
+        fs::write(fixture.dir.join("input.obj"), &data).unwrap();
+        fold(FoldArgs {
+            object: fixture.dir.join("input.obj"),
+            config: fixture.dir.join("config.yml"),
+            unit: "unit.cpp".into(),
+            output: Some(fixture.dir.join("output.obj")),
+            module: Some("dll".to_string()),
+        })
+        .unwrap();
+        let out = fs::read(fixture.dir.join("output.obj")).unwrap();
+        assert_eq!(&out[raw as usize..raw as usize + directives.len()], directives);
     }
 
     #[test]
@@ -1968,7 +2005,15 @@ fn split_write_coff(
 
     debug!("Splitting {} objects", module.obj.link_order.len());
     let module_name = module.config.name().to_string();
-    let split_objs = split_obj(&module.obj, Some(module_name.as_str()), config.globalize_symbols)?;
+    let mut split_objs =
+        split_obj(&module.obj, Some(module_name.as_str()), config.globalize_symbols)?;
+    if module.config.generate_exports {
+        let exports =
+            module.pe_header.as_ref().and_then(|pe| pe.exports.as_ref()).with_context(|| {
+                format!("{module_name}: generate_exports needs an export table")
+            })?;
+        crate::util::coff::add_export_directives(&module.obj, &mut split_objs, exports)?;
+    }
 
     debug!("Writing object files");
     DirBuilder::new()
@@ -2102,7 +2147,22 @@ fn split_write_coff(
     let pe_default = PeHeaderInfo::default();
     let pe = module.pe_header.as_ref().unwrap_or(&pe_default);
 
-    let args_string = generate_args_rsp(&module.obj, pe, &force_includes, config.dead_strip)?;
+    let exports_def = match (&pe.exports, module.config.generate_exports) {
+        (Some(exports), true) => {
+            let def_path = out_dir_path.join("exports.def");
+            let def = format!("LIBRARY \"{}\"\n", exports.dll_name);
+            write_if_changed(&def_path.to_native(), def.as_bytes())?;
+            Some(def_path.to_string())
+        }
+        _ => None,
+    };
+    let args_string = generate_args_rsp(
+        &module.obj,
+        pe,
+        &force_includes,
+        config.dead_strip,
+        exports_def.as_deref(),
+    )?;
     let args_path = out_config.ldscript.to_native();
     write_if_changed(&args_path, args_string.as_bytes())?;
 

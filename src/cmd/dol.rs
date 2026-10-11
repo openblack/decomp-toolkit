@@ -339,6 +339,12 @@ pub struct ModuleConfig {
     /// Process exception tables and zero out uninitialized data.
     #[serde(default, skip_serializing_if = "Option::is_none")]
     pub clean_extab: Option<bool>,
+    /// Have the linker generate the export table (PE): each split object
+    /// carries `-export:` directives for the exported symbols it defines, and
+    /// the link is given the original export directory's DLL name and
+    /// timestamp. The splits must leave the original table out of every unit.
+    #[serde(default, skip_serializing_if = "is_default")]
+    pub generate_exports: bool,
     #[serde(default, skip_serializing_if = "Vec::is_empty")]
     pub skip_cfa_ranges: Vec<SkipCfaRangeConfig>,
     /// Prebuilt library objects linked verbatim for some of this module's units.

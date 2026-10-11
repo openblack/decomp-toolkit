@@ -1,4 +1,7 @@
-use std::num::NonZeroU64;
+use std::{
+    collections::{HashMap, HashSet},
+    num::NonZeroU64,
+};
 
 use anyhow::{Context, Result, bail, ensure};
 use cwdemangle::demangle;
@@ -337,7 +340,7 @@ fn flush_synthetic_leaders(
     obj: &ObjInfo,
     section_chunks: &[Vec<SectionChunk>],
     section_all_comdat: &[bool],
-    comdat_sections: &mut std::collections::HashSet<SectionId>,
+    comdat_sections: &mut HashSet<SectionId>,
     comdat_groups: &mut Vec<(SymbolId, SectionId, ComdatKind)>,
     cursor: &mut [usize],
     section_idx: usize,
@@ -671,7 +674,7 @@ pub fn write_coff(
     // (leader SymbolId, SectionId, selection) for each symbol that leads a
     // COMDAT, emitted as COMDAT groups after all symbols are added.
     let mut comdat_groups: Vec<(SymbolId, SectionId, ComdatKind)> = Vec::new();
-    let mut comdat_sections: std::collections::HashSet<SectionId> = Default::default();
+    let mut comdat_sections: HashSet<SectionId> = Default::default();
     // Per-section scan position for `flush_synthetic_leaders`.
     let mut leader_cursor = vec![0usize; section_chunks.len()];
     // Dedup defined symbols that share an exact name within this object (e.g. a
@@ -931,8 +934,14 @@ pub fn write_coff(
     // Emit this unit's exestr comments as a `.drectve` section
     // (IMAGE_SCN_LNK_INFO | IMAGE_SCN_LNK_REMOVE), which a comment-aware linker
     // re-embeds and others ignore.
-    if !obj.pe_comment_directives.is_empty() {
-        let data = encode_drectve(obj.pe_comment_directives.iter().map(|(_, p)| p.as_slice()));
+    if !obj.pe_comment_directives.is_empty() || !obj.pe_export_directives.is_empty() {
+        let mut data = encode_drectve(obj.pe_comment_directives.iter().map(|(_, p)| p.as_slice()));
+        for directive in &obj.pe_export_directives {
+            if !data.is_empty() {
+                data.push(b' ');
+            }
+            data.extend_from_slice(directive.as_bytes());
+        }
         let sid = out.add_section(vec![], b".drectve".to_vec(), SectionKind::Linker);
         out.set_section_data(sid, data, 1);
     }
@@ -952,6 +961,76 @@ pub fn write_coff_comments(directives: &[&[u8]]) -> Result<Option<Vec<u8>>> {
     let sid = out.add_section(vec![], b".drectve".to_vec(), SectionKind::Linker);
     out.set_section_data(sid, encode_drectve(directives.iter().copied()), 1);
     out.write().map(Some).map_err(|e| anyhow::anyhow!("{e:?}"))
+}
+
+/// Give each split object a `-export:` directive for every symbol it defines
+/// that the original image exports by that name, as cl.exe does for
+/// `__declspec(dllexport)`, so the linker rebuilds the export table.
+pub fn add_export_directives(
+    obj: &ObjInfo,
+    split_objs: &mut [ObjInfo],
+    exports: &crate::util::rsp::PeExports,
+) -> Result<()> {
+    // Resolve each export to the image symbol at its address with that name;
+    // an undecorated C name is exported without its leading underscore, and an
+    // incrementally linked image exports a function through its `@ILT+n_name`
+    // jump thunk. Map the symbol to the directive that exports it.
+    let mut exported: HashMap<&str, String> = HashMap::new();
+    let mut missing = Vec::new();
+    for (name, address) in &exports.names {
+        let thunk = |s: &str| {
+            s.strip_prefix("@ILT+")
+                .and_then(|rest| rest.split_once('_'))
+                .is_some_and(|(n, target)| n.bytes().all(|b| b.is_ascii_digit()) && target == name)
+        };
+        let symbol = obj.sections.at_address(*address).ok().and_then(|(section_index, _)| {
+            obj.symbols.at_section_address(section_index, *address).find(|(_, s)| {
+                s.name == *name || s.name.strip_prefix('_') == Some(name.as_str()) || thunk(&s.name)
+            })
+        });
+        match symbol {
+            Some((_, symbol)) => {
+                let data = symbol
+                    .section
+                    .is_some_and(|i| obj.sections[i].kind != crate::obj::ObjSectionKind::Code);
+                let target = if thunk(&symbol.name) {
+                    format!("{name}={}", symbol.name)
+                } else {
+                    symbol.name.clone()
+                };
+                let directive = format!("-export:{target}{}", if data { ",DATA" } else { "" });
+                exported.insert(symbol.name.as_str(), directive);
+            }
+            None => missing.push((name, *address)),
+        }
+    }
+    if let Some((name, address)) = missing.first() {
+        bail!(
+            "{} exported name(s) have no symbol of that name at their address, e.g. {} at {:#010X}",
+            missing.len(),
+            name,
+            address
+        );
+    }
+    let mut found = HashSet::new();
+    for split_obj in split_objs.iter_mut() {
+        let mut directives = Vec::new();
+        for (_, symbol) in split_obj.symbols.iter() {
+            if symbol.section.is_none() || symbol.flags.is_local() {
+                continue;
+            }
+            let Some(directive) = exported.get(symbol.name.as_str()) else { continue };
+            if !found.insert(symbol.name.clone()) {
+                continue;
+            }
+            directives.push(directive.clone());
+        }
+        split_obj.pe_export_directives = directives;
+    }
+    if found.len() != exported.len() {
+        bail!("{} exported symbol(s) are not defined by any unit", exported.len() - found.len());
+    }
+    Ok(())
 }
 
 const IMAGE_REL_BASED_HIGHLOW: u16 = 3;
@@ -1937,6 +2016,74 @@ mod tests {
             obj.pe_comment_directives,
             vec![(unit.clone(), b"abc".to_vec()), (unit, b"def".to_vec()),]
         );
+    }
+
+    fn export_obj() -> ObjInfo {
+        let mut code = section(".text", ObjSectionKind::Code, 0, vec![0xC3; 0x10], vec![]);
+        code.address = 0x1000;
+        let mut data = section(".data", ObjSectionKind::Data, 1, vec![0; 4], vec![]);
+        data.address = 0x2000;
+        let global = || ObjSymbolFlagSet(ObjSymbolFlags::Global.into());
+        let function = |name: &str, address| {
+            symbol(name, address, Some(0), 4, ObjSymbolKind::Function, global())
+        };
+        let symbols = vec![
+            function("?Fn@@YAXXZ", 0x1000),
+            function("_cfunc", 0x1004),
+            function("@ILT+5_?Thunked@@YAXXZ", 0x1008),
+            symbol("?Var@@3HA", 0x2000, Some(1), 4, ObjSymbolKind::Object, global()),
+        ];
+        ObjInfo::new(
+            ObjKind::Executable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            symbols,
+            vec![code, data],
+        )
+    }
+
+    fn exports(names: &[(&str, u32)]) -> crate::util::rsp::PeExports {
+        crate::util::rsp::PeExports {
+            dll_name: "test.dll".to_string(),
+            timestamp: 0,
+            names: names.iter().map(|&(n, a)| (n.to_string(), a)).collect(),
+        }
+    }
+
+    #[test]
+    fn test_add_export_directives() {
+        let obj = export_obj();
+        let mut split_objs = vec![obj.clone(), obj.clone()];
+        let table = exports(&[
+            ("?Fn@@YAXXZ", 0x1000),
+            ("cfunc", 0x1004),
+            ("?Thunked@@YAXXZ", 0x1008),
+            ("?Var@@3HA", 0x2000),
+        ]);
+        add_export_directives(&obj, &mut split_objs, &table).unwrap();
+        assert_eq!(split_objs[0].pe_export_directives, [
+            "-export:?Fn@@YAXXZ",
+            "-export:_cfunc",
+            "-export:?Thunked@@YAXXZ=@ILT+5_?Thunked@@YAXXZ",
+            "-export:?Var@@3HA,DATA",
+        ]);
+        // Each export is requested once, by the first object that defines it.
+        assert!(split_objs[1].pe_export_directives.is_empty());
+
+        // An export with no symbol of that name at its address is an error.
+        let mut split_objs = vec![obj.clone()];
+        let table = exports(&[("?Gone@@YAXXZ", 0x1000)]);
+        assert!(add_export_directives(&obj, &mut split_objs, &table).is_err());
+    }
+
+    #[test]
+    fn test_write_coff_export_directives() {
+        let mut obj = test_obj();
+        obj.pe_export_directives = vec!["-export:fnA".to_string(), "-export:dat,DATA".to_string()];
+        let out = write_coff(&obj, true, false, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let drectve = file.section_by_name(".drectve").unwrap();
+        assert_eq!(drectve.data().unwrap(), b"-export:fnA -export:dat,DATA");
     }
 
     #[test]
