@@ -377,6 +377,127 @@ fn flush_synthetic_leaders(
     }
 }
 
+/// Section-relative offsets where a function's exception data begins in an
+/// `.xdata$x` section. cl.exe emits each function's EH tables as a COMDAT of
+/// their own, led by the FuncInfo record its `.text$x` handler loads, so the
+/// FuncInfo symbols (the relocation targets from `.text$x`) start the groups.
+/// A unit with a single EH function gets no cuts, matching the compiler's one
+/// section.
+fn xdata_function_starts(obj: &ObjInfo, idx: ObjSectionIndex, section: &ObjSection) -> Vec<u64> {
+    let mut starts = std::collections::BTreeSet::new();
+    for (_, src) in obj.sections.iter().filter(|(_, s)| s.name == ".text$x") {
+        for (_, reloc) in src.relocations.iter() {
+            if reloc.target_symbol >= obj.symbols.count() {
+                continue;
+            }
+            let target = &obj.symbols[reloc.target_symbol];
+            if target.section == Some(idx) && target.address >= section.address {
+                starts.insert(target.address - section.address);
+            }
+        }
+    }
+    if starts.len() < 2 {
+        return vec![];
+    }
+    starts.into_iter().collect()
+}
+
+/// Section-relative start of zero padding that follows a `comdat` data symbol
+/// at the end of the split (under 4 bytes, ending 4-aligned), if any.
+fn comdat_tail_padding(obj: &ObjInfo, idx: ObjSectionIndex, section: &ObjSection) -> Option<u64> {
+    if section.kind == ObjSectionKind::Code || (section.address + section.size) % 4 != 0 {
+        return None;
+    }
+    let symbols = obj
+        .symbols
+        .for_section(idx)
+        .filter(|(_, s)| !s.flags.is_stripped() && s.kind != ObjSymbolKind::Section)
+        .map(|(_, s)| s)
+        .collect::<Vec<_>>();
+    let last_end = symbols
+        .iter()
+        .filter(|s| s.size_known && s.size > 0)
+        .map(|s| s.address + s.size)
+        .max()?;
+    let section_end = section.address + section.size;
+    if last_end >= section_end || section_end - last_end >= 4 {
+        return None;
+    }
+    if !symbols.iter().any(|s| s.flags.is_comdat() && s.address + s.size == last_end)
+        || symbols.iter().any(|s| s.address >= last_end)
+    {
+        return None;
+    }
+    let pad_start = last_end - section.address;
+    let padding = section.data.get(pad_start as usize..section.size as usize)?;
+    padding.iter().all(|&b| b == 0).then_some(pad_start)
+}
+
+/// Section-relative `(padding_start, symbol_start, align)` for every symbol with
+/// an explicit `align:` that is separated from the end of the preceding symbol
+/// only by alignment padding: zeros in data, int3/nop in code. The padding must
+/// be exactly what aligning the symbol's address to `align` produces, and no
+/// symbol may start inside it, so the linker regenerates the same bytes.
+fn padding_aligned_starts(
+    obj: &ObjInfo,
+    idx: ObjSectionIndex,
+    section: &ObjSection,
+) -> Vec<(u64, u64, u64)> {
+    let mut result = Vec::new();
+    let symbols = obj
+        .symbols
+        .for_section(idx)
+        .filter(|(_, s)| !s.flags.is_stripped() && s.kind != ObjSymbolKind::Section)
+        .map(|(_, s)| s)
+        .collect::<Vec<_>>();
+    for (i, sym) in symbols.iter().enumerate() {
+        let Some(align) = sym.align.map(u64::from) else { continue };
+        if align < 2 || sym.address % align != 0 || sym.address <= section.address {
+            continue;
+        }
+        let start = sym.address - section.address;
+        // End of the furthest-reaching symbol before this one.
+        let Some(prev_end) = symbols[..i]
+            .iter()
+            .filter(|s| s.address < sym.address && s.size_known && s.size > 0)
+            .map(|s| s.address + s.size)
+            .max()
+        else {
+            continue;
+        };
+        if prev_end >= sym.address || sym.address - prev_end >= align {
+            continue;
+        }
+        if symbols.iter().any(|s| s.address >= prev_end && s.address < sym.address) {
+            continue;
+        }
+        let pad_start = prev_end - section.address;
+        let Some(padding) = section.data.get(pad_start as usize..start as usize) else { continue };
+        // cl.exe pads plain data within its section; only a COMDAT (one section
+        // per symbol, e.g. a string literal) leaves padding to the linker.
+        if section.kind != ObjSectionKind::Code
+            && !sym.flags.is_comdat()
+            && !symbols[..i].iter().any(|s| s.flags.is_comdat() && s.address + s.size == prev_end)
+        {
+            continue;
+        }
+        let is_padding = if section.kind == ObjSectionKind::Code {
+            padding.iter().all(|&b| b == 0xCC || b == 0x90)
+        } else {
+            padding.iter().all(|&b| b == 0)
+        };
+        if is_padding
+            && !section.relocations.iter().any(|(a, _)| {
+                let off = (a as u64).saturating_sub(section.address);
+                off + 4 > pad_start && off < start
+            })
+        {
+            result.push((pad_start, start, align));
+        }
+    }
+    result
+}
+
 pub fn write_coff(
     obj: &ObjInfo,
     export_all: bool,
@@ -470,6 +591,30 @@ pub fn write_coff(
                 cuts.push(start + s.size);
             }
         }
+        // MSVC emits each function's exception data as its own `.xdata$x`
+        // COMDAT; cut ours per symbol too so the object has the same shape as
+        // the compiler's (chunks after the first keep alignment 1, so the
+        // linked bytes are unchanged).
+        if section.name == ".xdata$x" {
+            cuts.extend(xdata_function_starts(obj, idx, section));
+        }
+        // Alignment padding the linker inserted between two of the original
+        // object's sections: a symbol with an explicit `align:` that only
+        // padding bytes separate from the end of the previous symbol starts a
+        // section of its own with that alignment, and the padding is left for
+        // the linker to regenerate (int3 for code, zeros for data) instead of
+        // being emitted as part of the preceding section. This keeps the
+        // preceding symbol's section exactly as long as the compiler's copy.
+        let mut aligned_starts = padding_aligned_starts(obj, idx, section);
+        // Trailing padding after a COMDAT at the end of the split: the next
+        // object's own alignment regenerates it at link time.
+        if let Some(tail) = comdat_tail_padding(obj, idx, section) {
+            aligned_starts.push((tail, section.size, 1));
+        }
+        for &(pad_start, start, _) in &aligned_starts {
+            cuts.push(pad_start);
+            cuts.push(start);
+        }
         let mut starts = vec![0u64];
         cuts.retain(|&a| a > 0 && a < section.size);
         cuts.sort_unstable();
@@ -477,6 +622,9 @@ pub fn write_coff(
         starts.extend(cuts);
         for (i, &start) in starts.iter().enumerate() {
             let end = starts.get(i + 1).copied().unwrap_or(section.size);
+            if aligned_starts.iter().any(|&(pad_start, next, _)| start == pad_start && end == next) {
+                continue;
+            }
             let sid = out.add_section(vec![], section.name.as_bytes().to_vec(), kind);
             let data_end = (end as usize).min(section.data.len());
             let mut data = section.data[(start as usize).min(data_end)..data_end].to_vec();
@@ -490,7 +638,29 @@ pub fn write_coff(
                     }
                 }
             }
-            let align = if start == 0 { section.align.max(1) } else { 1 };
+            // cl.exe aligns each string-literal COMDAT to 4 (or what `align:`
+            // states), so a chunk led by a `comdat` data symbol carries that
+            // alignment rather than the split's.
+            let comdat_align = (section.kind != ObjSectionKind::Code)
+                .then(|| {
+                    obj.symbols
+                        .at_section_address(idx, (section.address + start) as u32)
+                        .find(|(_, s)| s.flags.is_comdat() && !s.flags.is_stripped())
+                        .map(|(_, s)| s.align.map(u64::from).unwrap_or(4))
+                })
+                .flatten()
+                .filter(|&a| (section.address + start) % a == 0);
+            let align = if let Some(align) = comdat_align {
+                align
+            } else if start == 0 {
+                section.align.max(1)
+            } else if let Some(&(_, _, align)) =
+                aligned_starts.iter().find(|&&(_, next, _)| next == start)
+            {
+                align
+            } else {
+                1
+            };
             out.set_section_data(sid, data, align);
             section_chunks[idx as usize].push(SectionChunk { start, end, id: sid });
         }
