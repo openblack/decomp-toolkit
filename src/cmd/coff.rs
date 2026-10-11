@@ -93,6 +93,9 @@ pub struct FoldArgs {
     #[argp(option, short = 'o', from_str_fn(crate::util::path::native_path))]
     /// output object path
     output: Option<Utf8NativePathBuf>,
+    #[argp(option, long = "module")]
+    /// module (DLL) the unit belongs to, by its config `name`; the base image if omitted
+    module: Option<String>,
 }
 
 #[derive(FromArgs, PartialEq, Eq, Debug)]
@@ -205,10 +208,19 @@ fn fold(args: FoldArgs) -> Result<()> {
 
     let mut config_file = open_file(&args.config, true)?;
     let config: ProjectConfig = serde_yaml::from_reader(config_file.as_mut())?;
-    let Some(symbols_path) = &config.base.symbols else {
+    // A module's units resolve their COMDATs against that module's own image.
+    let module_config = match &args.module {
+        Some(name) => config
+            .modules
+            .iter()
+            .find(|m| m.name.as_deref() == Some(name.as_str()))
+            .with_context(|| format!("Module '{name}' not found in config"))?,
+        None => &config.base,
+    };
+    let Some(symbols_path) = &module_config.symbols else {
         bail!("No symbols file specified in config");
     };
-    let Some(splits_path) = &config.base.splits else {
+    let Some(splits_path) = &module_config.splits else {
         bail!("No splits file specified in config");
     };
 
@@ -600,6 +612,7 @@ mod fold_tests {
                 config: self.dir.join("config.yml"),
                 unit: "unit.cpp".into(),
                 output: Some(self.dir.join("output.obj")),
+                module: None,
             })
             .unwrap();
             fs::read(self.dir.join("output.obj")).unwrap()
@@ -654,6 +667,35 @@ mod fold_tests {
         let alias = obj.symbols().find(|s| s.name().unwrap() == "alias").unwrap();
         assert!(alias.is_undefined());
         assert!(alias.is_global());
+    }
+
+    #[test]
+    fn folds_a_module_unit_against_the_module_symbols() {
+        let fixture = Fixture::new(false, true, "alias = .text:0x2000; // type:function\n");
+        // The unit belongs to a module: the base image has no symbols or splits.
+        fs::write(
+            fixture.dir.join("config.yml"),
+            format!(
+                "object: unused.exe\nmodules:\n- object: unused.dll\n  name: dll\n  symbols: '{}'\n  splits: '{}'\n",
+                fixture.dir.join("symbols.txt"),
+                fixture.dir.join("splits.txt")
+            ),
+        )
+        .unwrap();
+        let args = |module: Option<&str>| FoldArgs {
+            object: fixture.dir.join("input.obj"),
+            config: fixture.dir.join("config.yml"),
+            unit: "unit.cpp".into(),
+            output: Some(fixture.dir.join("output.obj")),
+            module: module.map(str::to_string),
+        };
+        assert!(fold(args(None)).is_err());
+        assert!(fold(args(Some("other"))).is_err());
+        fold(args(Some("dll"))).unwrap();
+        let data = fs::read(fixture.dir.join("output.obj")).unwrap();
+        let obj = object::File::parse(data.as_slice()).unwrap();
+        let alias = obj.symbols().find(|s| s.name().unwrap() == "alias").unwrap();
+        assert!(alias.is_undefined());
     }
 
     #[test]
