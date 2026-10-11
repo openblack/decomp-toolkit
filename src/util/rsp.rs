@@ -36,6 +36,8 @@ pub struct PeHeaderInfo {
     pub section_vsizes: HashMap<String, u32>,
     /// The export directory, if the image has one.
     pub exports: Option<PeExports>,
+    /// The import directory, if the image has one.
+    pub imports: Option<crate::util::pe_imports::PeImports>,
 }
 
 /// The parts of a PE export directory the linker regenerates.
@@ -109,6 +111,7 @@ impl PeHeaderInfo {
         };
 
         let exports = parse_exports(&pe, opt.image_base.get(LE));
+        let imports = crate::util::pe_imports::parse_imports(&pe, opt.image_base.get(LE));
 
         Some(Self {
             image_base: opt.image_base.get(LE),
@@ -130,6 +133,7 @@ impl PeHeaderInfo {
             section_characteristics,
             section_vsizes,
             exports,
+            imports,
         })
     }
 
@@ -193,6 +197,7 @@ pub fn generate_args_rsp(
     force_includes: &[String],
     dead_strip: bool,
     exports_def: Option<&str>,
+    imports: Option<(&str, &str)>,
 ) -> Result<String> {
     let mut lines: Vec<String> = vec!["/errorlimit:0".to_string(), "/demangle:no".to_string()];
     if dead_strip && !pe.is_dll {
@@ -285,6 +290,13 @@ pub fn generate_args_rsp(
     if let (Some(def), Some(exports)) = (exports_def, &pe.exports) {
         lines.push(format!("/DEF:{def}"));
         lines.push(format!("/TIMESTAMP:{:#x}", exports.timestamp));
+    }
+
+    // A regenerated import directory: the import library standing in for the
+    // original's, and the layout link.exe gave the tables.
+    if let Some((library, order)) = imports {
+        lines.push(library.to_string());
+        lines.push(format!("/vc6imports:{order}"));
     }
 
     Ok(lines.join("\n"))

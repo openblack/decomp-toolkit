@@ -2156,12 +2156,36 @@ fn split_write_coff(
         }
         _ => None,
     };
+    let imports = match (&pe.imports, module.config.generate_imports) {
+        (Some(imports), true) => {
+            use crate::util::pe_imports::{slot_symbols, write_import_library, write_import_order};
+            let symbols = slot_symbols(&module.obj, imports)
+                .with_context(|| format!("{}: generate_imports", module.config.name()))?;
+            let library_path = out_dir_path.join("imports.lib");
+            write_if_changed(&library_path.to_native(), &write_import_library(imports, &symbols))?;
+            let order_path = out_dir_path.join("imports.order");
+            let iat_section_end = module
+                .obj
+                .sections
+                .iter()
+                .flat_map(|(_, s)| &s.sub_regions)
+                .find(|r| r.name == ".idata$5")
+                .map(|r| r.end);
+            let order = write_import_order(imports, &symbols, iat_section_end)
+                .with_context(|| format!("{}: generate_imports", module.config.name()))?;
+            write_if_changed(&order_path.to_native(), order.as_bytes())?;
+            Some((library_path.to_string(), order_path.to_string()))
+        }
+        (None, true) => bail!("{}: generate_imports needs an import table", module.config.name()),
+        _ => None,
+    };
     let args_string = generate_args_rsp(
         &module.obj,
         pe,
         &force_includes,
         config.dead_strip,
         exports_def.as_deref(),
+        imports.as_ref().map(|(l, o)| (l.as_str(), o.as_str())),
     )?;
     let args_path = out_config.ldscript.to_native();
     write_if_changed(&args_path, args_string.as_bytes())?;

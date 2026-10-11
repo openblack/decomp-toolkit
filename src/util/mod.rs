@@ -19,6 +19,7 @@ pub mod ncompress;
 pub mod nested;
 pub mod nlzss;
 pub mod path;
+pub mod pe_imports;
 pub mod rarc;
 pub mod read;
 pub mod reader;
