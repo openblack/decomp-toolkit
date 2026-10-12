@@ -501,6 +501,7 @@ where
             section_known: false,
             splits: Default::default(),
             sub_regions: Vec::new(),
+            linker: false,
         });
         if offset == 0 {
             total_bss_size += size;

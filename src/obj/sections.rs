@@ -35,6 +35,9 @@ pub struct ObjSubRegion {
     /// page). Units carved here are emitted as uninitialized so the linker
     /// regenerates the zero padding via file alignment, matching the original.
     pub kind: Option<ObjSectionKind>,
+    /// The linker writes this region itself (an import or export table, a debug
+    /// directory), so its bytes go in a `linker` unit that stays out of the link.
+    pub linker: bool,
 }
 
 #[derive(Debug, Clone)]
@@ -53,6 +56,8 @@ pub struct ObjSection {
     pub section_known: bool,
     pub splits: ObjSplits,
     pub sub_regions: Vec<ObjSubRegion>,
+    /// The linker writes this whole section (see [`ObjSubRegion::linker`]).
+    pub linker: bool,
 }
 
 #[derive(Debug, Clone)]
@@ -191,6 +196,12 @@ impl IndexMut<SectionIndex> for ObjSections {
 }
 
 impl ObjSection {
+    /// Whether the linker writes the byte at `addr` (a `linker` section or
+    /// sub-region).
+    pub fn is_linker_address(&self, addr: u32) -> bool {
+        self.linker || self.sub_regions.iter().any(|r| r.linker && r.start <= addr && addr < r.end)
+    }
+
     pub fn data_range(&self, start: u32, end: u32) -> Result<&[u8]> {
         if end == 0 {
             ensure!(

@@ -453,6 +453,7 @@ where
             section_known,
             splits: Default::default(),
             sub_regions: Vec::new(),
+            linker: false,
         });
     }
     ensure!(

@@ -104,6 +104,7 @@ pub fn process_elf(path: &Utf8NativePath) -> Result<ObjInfo> {
             section_known: true,
             splits: Default::default(),
             sub_regions: Vec::new(),
+            linker: false,
         });
     }
 

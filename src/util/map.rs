@@ -1161,6 +1161,7 @@ pub fn create_obj(result: &MapInfo) -> Result<ObjInfo> {
                 section_known: true,
                 splits: Default::default(),
                 sub_regions: Vec::new(),
+                linker: false,
             }
         })
         .collect();

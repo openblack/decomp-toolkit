@@ -384,6 +384,7 @@ pub fn process_dol(buf: &[u8], name: &str) -> Result<ObjInfo> {
                 section_known: known,
                 splits: Default::default(),
                 sub_regions: Vec::new(),
+                linker: false,
             });
         }
     } else {
@@ -438,6 +439,7 @@ pub fn process_dol(buf: &[u8], name: &str) -> Result<ObjInfo> {
                 section_known: known,
                 splits: Default::default(),
                 sub_regions: Vec::new(),
+                linker: false,
             });
         }
     }
@@ -471,6 +473,7 @@ pub fn process_dol(buf: &[u8], name: &str) -> Result<ObjInfo> {
                 section_known: false,
                 splits: Default::default(),
                 sub_regions: Vec::new(),
+                linker: false,
             });
         }
 
@@ -492,6 +495,7 @@ pub fn process_dol(buf: &[u8], name: &str) -> Result<ObjInfo> {
                 section_known: false,
                 splits: Default::default(),
                 sub_regions: Vec::new(),
+                linker: false,
             });
             let mut obj = ObjInfo::new(
                 ObjKind::Executable,
@@ -520,6 +524,7 @@ pub fn process_dol(buf: &[u8], name: &str) -> Result<ObjInfo> {
                         section_known: false,
                         splits: Default::default(),
                         sub_regions: Vec::new(),
+                        linker: false,
                     });
                     sections.push(ObjSection {
                         name: ".sbss".to_string(),
@@ -535,6 +540,7 @@ pub fn process_dol(buf: &[u8], name: &str) -> Result<ObjInfo> {
                         section_known: false,
                         splits: Default::default(),
                         sub_regions: Vec::new(),
+                        linker: false,
                     });
                 }
                 n => bail!("Invalid number of BSS sections: {}", n),

@@ -534,6 +534,7 @@ fn merge(args: MergeArgs) -> Result<()> {
                 section_known: mod_section.section_known,
                 splits: mod_section.splits.clone(),
                 sub_regions: mod_section.sub_regions.clone(),
+                linker: mod_section.linker,
             });
             section_map.nested_insert(module.module_id, mod_section.elf_index, offset)?;
             for (_, mod_symbol) in module.symbols.for_section(mod_section_index) {

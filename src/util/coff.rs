@@ -125,6 +125,7 @@ pub fn process_coff(data: &[u8], name: &str) -> Result<(ObjInfo, Option<u32>)> {
             section_known: true,
             splits: Default::default(),
             sub_regions: Vec::new(),
+            linker: false,
         });
     }
 
@@ -1416,6 +1417,7 @@ mod tests {
             section_known: true,
             splits: ObjSplits::default(),
             sub_regions: vec![],
+            linker: false,
         }
     }
 
@@ -1677,6 +1679,7 @@ mod tests {
                     end: 0x00600004,
                     name: ".CRT$XCU".into(),
                     kind: None,
+                    linker: false,
                 });
             }
             apply_base_relocations(&mut obj, 0x00400000).unwrap();
