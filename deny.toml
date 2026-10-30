@@ -80,6 +80,10 @@ ignore = [
     { id = "RUSTSEC-2025-0141", reason = "unmaintained transient dependency (bincode)" },
     { id = "RUSTSEC-2026-0194", reason = "quick-xml 0.36 pinned by nodtool 1.4; fix requires quick-xml >=0.41 (nodtool 2.0, still alpha)" },
     { id = "RUSTSEC-2026-0195", reason = "quick-xml 0.36 pinned by nodtool 1.4; fix requires quick-xml >=0.41 (nodtool 2.0, still alpha)" },
+    { id = "RUSTSEC-2024-0449", reason = "unsafe-libyaml is unmaintained; used through serde_yaml 0.9, which has no maintained successor in use yet" },
+    { id = "RUSTSEC-2026-0391", reason = "zstd 0.13 pinned by nodtool 1.4; fix requires zstd >=0.14.3 (nodtool 2.0, still alpha)" },
+    { id = "RUSTSEC-2026-0398", reason = "zstd-safe 7 pinned by nodtool 1.4 via zstd 0.13; fix requires zstd-safe >=8.2 (nodtool 2.0, still alpha)" },
+    { id = "RUSTSEC-2026-0403", reason = "zstd-safe 7 pinned by nodtool 1.4 via zstd 0.13; fix requires zstd-safe >=8.2 (nodtool 2.0, still alpha)" },
 ]
 # If this is true, then cargo deny will use the git executable to fetch advisory database.
 # If this is false, then it uses a built-in git library.
