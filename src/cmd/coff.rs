@@ -360,8 +360,10 @@ fn fold(args: FoldArgs) -> Result<()> {
             continue;
         }
         // A private name in another unit is not a linkable definition of this
-        // unit's static function. Only explicit in-unit aliases can fold locals.
-        if *class == IMAGE_SYM_CLASS_STATIC && !entries.iter().any(|e| e.alias && inside(e.address))
+        // unit's static function. A static folds onto an in-unit alias, or onto a
+        // global alias in another unit: that unit defines the name on its copy.
+        if *class == IMAGE_SYM_CLASS_STATIC
+            && !entries.iter().any(|e| e.alias && (inside(e.address) || !e.local))
         {
             continue;
         }
@@ -413,6 +415,10 @@ fn fold(args: FoldArgs) -> Result<()> {
             // Folded onto a copy in another unit: leave only a reference.
             data[o + 8..o + 12].copy_from_slice(&0u32.to_le_bytes());
             data[o + 12..o + 14].copy_from_slice(&0i16.to_le_bytes());
+            if *class == IMAGE_SYM_CLASS_STATIC {
+                // A static folded onto another unit's copy resolves by name.
+                data[o + 16] = IMAGE_SYM_CLASS_EXTERNAL;
+            }
             debug!("fold {} out of {}", name, args.object);
             folded_out += 1;
         }
@@ -689,6 +695,20 @@ mod fold_tests {
         let fixture =
             Fixture::new(true, true, "alias = .text:0x2000; // type:function scope:local\n");
         assert_eq!(fixture.fold(), fs::read(fixture.dir.join("input.obj")).unwrap());
+    }
+
+    #[test]
+    fn folds_local_definitions_onto_global_aliases_in_other_units() {
+        let symbols = "other = .text:0x2000; // type:function scope:local\nalias = .text:0x2000; // type:label scope:global alias\n";
+        let fixture = Fixture::new(true, true, symbols);
+        let data = fixture.fold();
+        let obj = object::File::parse(data.as_slice()).unwrap();
+        let alias = obj.symbols().find(|s| s.name().unwrap() == "alias").unwrap();
+        assert!(alias.is_undefined());
+        assert!(alias.is_global());
+        let primary = obj.symbols().find(|s| s.name().unwrap() == "primary").unwrap();
+        assert!(primary.is_local());
+        assert!(!primary.is_undefined());
     }
 
     #[test]
