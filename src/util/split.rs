@@ -16,7 +16,7 @@ use crate::{
         ObjSectionKind, ObjSplit, ObjSymbol, ObjSymbolFlagSet, ObjSymbolFlags, ObjSymbolKind,
         ObjSymbolScope, ObjUnit, SectionIndex, SymbolIndex,
     },
-    util::{align_up, comment::MWComment, toposort::toposort},
+    util::{align_up, coff::has_vftable_locator, comment::MWComment, toposort::toposort},
 };
 
 /// Create splits for function pointers in the given section.
@@ -658,9 +658,19 @@ fn split_extabindex(obj: &mut ObjInfo, start: SectionAddress) -> Result<()> {
     Ok(())
 }
 
+/// Where the COMDAT a `comdat` symbol leads starts: 4 bytes in front of a vftable
+/// that has cl.exe /GR's pointer to its `??_R4` complete object locator there.
+fn comdat_start(obj: &ObjInfo, section: &ObjSection, symbol: &ObjSymbol) -> u32 {
+    let address = symbol.address as u32;
+    if has_vftable_locator(obj, section, symbol) { address - 4 } else { address }
+}
+
 /// Create splits for gaps between existing splits.
 fn create_gap_splits(obj: &mut ObjInfo) -> Result<()> {
     let mut new_splits = BTreeMap::<SectionAddress, ObjSplit>::new();
+    // `comdat` symbols whose size ran over the next vftable's locator, shrunk to
+    // end at it.
+    let mut size_fixes = Vec::<(SymbolIndex, u64)>::new();
 
     for (section_index, section) in obj.sections.iter() {
         let mut current_address = SectionAddress::new(section_index, section.address as u32);
@@ -741,21 +751,48 @@ fn create_gap_splits(obj: &mut ObjInfo) -> Result<()> {
                     .filter(|&(_, s)| !s.flags.is_stripped())
                     .collect_vec();
                 let mut existing_symbols = HashSet::new();
-                for &(_, symbol) in &symbols {
+                for &(symbol_index, symbol) in &symbols {
                     // Isolate comdat-flagged symbols into their own auto unit
                     // so write_coff can emit them as a standalone COMDAT
                     // section, without pulling in the rest of the gap.
+                    // A vftable's COMDAT starts at its complete-object-locator
+                    // pointer, 4 bytes in front of it (see `write_coff`), so its
+                    // unit does too.
                     if symbol.flags.is_comdat() {
-                        if symbol.address as u32 == current_address.address {
+                        let start = comdat_start(obj, section, symbol).max(current_address.address);
+                        if start == current_address.address {
                             ensure!(
                                 symbol.size_known,
                                 "Comdat symbol {} at {:#010X} has unknown size",
                                 symbol.name,
                                 symbol.address,
                             );
-                            new_split_end.address = current_address.address + symbol.size as u32;
+                            let mut end = symbol.address as u32 + symbol.size as u32;
+                            // A size guessed up to the next vftable in the gap
+                            // takes in its locator, which belongs to that
+                            // vftable's COMDAT (and so to its unit).
+                            let next =
+                                symbol.address as u32 + 5..(end + 4).min(new_split_end.address);
+                            if let Some(locator) = (!next.is_empty())
+                                .then(|| {
+                                    obj.symbols
+                                        .for_section_range(section_index, next)
+                                        .find(|(_, s)| has_vftable_locator(obj, section, s))
+                                        .map(|(_, s)| s.address as u32 - 4)
+                                })
+                                .flatten()
+                            {
+                                log::debug!(
+                                    "Ending {} at the {:#010X} vftable locator",
+                                    symbol.name,
+                                    locator
+                                );
+                                end = locator;
+                                size_fixes.push((symbol_index, (end as u64) - symbol.address));
+                            }
+                            new_split_end.address = end;
                         } else {
-                            new_split_end.address = symbol.address as u32;
+                            new_split_end.address = start;
                         }
                         break;
                     }
@@ -855,6 +892,11 @@ fn create_gap_splits(obj: &mut ObjInfo) -> Result<()> {
     // Add new splits
     for (addr, split) in new_splits {
         obj.add_split(addr.section, addr.address, split)?;
+    }
+    for (idx, size) in size_fixes {
+        let mut symbol = obj.symbols[idx].clone();
+        symbol.size = size;
+        obj.symbols.replace(idx, symbol)?;
     }
 
     Ok(())
@@ -2206,4 +2248,71 @@ fn unit_exists(
             .flat_map(|(_, s)| s.splits.iter())
             .any(|(_, split)| split.unit.eq_ignore_ascii_case(unit_name))
         || new_splits.values().any(|split| split.unit.eq_ignore_ascii_case(unit_name))
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use crate::obj::ObjSplits;
+
+    #[test]
+    fn test_gap_split_vftable_ends_at_next_locator() {
+        // .rdata: A's locator @0x1000, ??_7A@@6B@ @0x1004 with a guessed size of 16
+        // (up to ??_7B, over B's locator), B's locator @0x1010, ??_7B@@6B@ @0x1014.
+        // A's auto unit ends at B's locator, which goes to B's unit with B.
+        let r4 = |target_symbol| ObjReloc {
+            kind: ObjRelocKind::X86Abs32,
+            target_symbol,
+            addend: 0,
+            module: None,
+        };
+        let section = |name: &str, address, data: Vec<u8>, relocations| ObjSection {
+            name: name.to_string(),
+            kind: ObjSectionKind::ReadOnlyData,
+            address,
+            size: data.len() as u64,
+            data,
+            align: 4,
+            elf_index: 0,
+            relocations: ObjRelocations::new(relocations).unwrap(),
+            virtual_address: None,
+            file_offset: 0,
+            section_known: true,
+            splits: ObjSplits::default(),
+            sub_regions: vec![],
+        };
+        let symbol = |name: &str, address, section, size, flags| ObjSymbol {
+            name: name.to_string(),
+            address,
+            section: Some(section),
+            size,
+            size_known: true,
+            flags,
+            kind: ObjSymbolKind::Object,
+            ..Default::default()
+        };
+        let comdat = ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Comdat);
+        let global = ObjSymbolFlagSet(ObjSymbolFlags::Global.into());
+        let mut obj = ObjInfo::new(
+            ObjKind::Executable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            vec![
+                symbol("??_7A@@6B@", 0x1004, 0, 16, comdat),
+                symbol("??_7B@@6B@", 0x1014, 0, 4, comdat),
+                symbol("??_R4A@@6B@", 0x2000, 1, 8, global),
+                symbol("??_R4B@@6B@", 0x2008, 1, 8, global),
+            ],
+            vec![
+                section(".rdata", 0x1000, vec![0; 0x18], vec![(0x1000, r4(2)), (0x1010, r4(3))]),
+                section(".rdata$r", 0x2000, vec![0; 0x10], vec![]),
+            ],
+        );
+        create_gap_splits(&mut obj).unwrap();
+        let splits: Vec<_> =
+            obj.sections[0].splits.iter().map(|(addr, split)| (addr, split.end)).collect();
+        assert_eq!(splits, vec![(0x1000, 0x1010), (0x1010, 0x1018)]);
+        assert_eq!(obj.symbols[0].size, 12, "A ends at B's locator");
+        validate_splits(&obj).unwrap();
+    }
 }

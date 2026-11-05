@@ -314,6 +314,9 @@ struct SectionChunk {
     start: u64,
     end: u64,
     id: SectionId,
+    /// Chunk-relative offset of the symbol that leads the chunk's COMDAT: 0,
+    /// or 4 for a vftable whose chunk starts at its locator pointer.
+    leader_offset: u64,
 }
 
 /// Find the chunk containing `offset`. An offset at or past the end of the
@@ -352,7 +355,7 @@ fn flush_synthetic_leaders(
         // either has a leader or got a synthetic one, and chunks are settled in
         // address order, so the scan never has to revisit them.
         while let Some(chunk) = chunks.get(cursor[idx]) {
-            if idx == section_idx && chunk.start >= offset {
+            if idx == section_idx && chunk.start + chunk.leader_offset >= offset {
                 break;
             }
             cursor[idx] += 1;
@@ -431,6 +434,19 @@ fn comdat_tail_padding(obj: &ObjInfo, idx: ObjSectionIndex, section: &ObjSection
     let pad_start = last_end - section.address;
     let padding = section.data.get(pad_start as usize..section.size as usize)?;
     padding.iter().all(|&b| b == 0).then_some(pad_start)
+}
+
+/// Whether `sym` is a vftable with cl.exe /GR's pointer to its `??_R4` complete
+/// object locator in the 4 bytes in front of it.
+pub(crate) fn has_vftable_locator(obj: &ObjInfo, section: &ObjSection, sym: &ObjSymbol) -> bool {
+    if !sym.name.starts_with("??_7") || sym.address < section.address + 4 {
+        return false;
+    }
+    section.relocations.at((sym.address - 4) as u32).is_some_and(|reloc| {
+        reloc.kind == ObjRelocKind::X86Abs32
+            && reloc.target_symbol < obj.symbols.count()
+            && obj.symbols[reloc.target_symbol].name.starts_with("??_R4")
+    })
 }
 
 /// Alignment of the COMDAT a `comdat` data symbol leads, where the linker put
@@ -592,6 +608,9 @@ pub fn write_coff(
         // `.bss` is cut the same way, so each `comdat` static (a template's
         // static member, a function-local static of an inline function) is a
         // COMDAT of its own rather than the leader of the rest of the section.
+        // Section-relative starts of `comdat` vftables whose chunk begins at
+        // the complete-object-locator pointer in front of them (see below).
+        let mut vftable_starts: Vec<u64> = Vec::new();
         if section.kind != ObjSectionKind::Code {
             for (_, s) in obj
                 .symbols
@@ -609,7 +628,16 @@ pub fn write_coff(
                     s.address
                 );
                 section_all_comdat[idx as usize] = function_comdat;
-                cuts.push(start);
+                // cl.exe /GR emits a vftable as a LARGEST COMDAT that starts at
+                // its pointer to the `??_R4` complete object locator, with
+                // `??_7X` at +4. Cut there too, or a recompiled copy is 4 bytes
+                // larger and the linker keeps it instead of this one.
+                if has_vftable_locator(obj, section, s) {
+                    vftable_starts.push(start);
+                    cuts.push(start - 4);
+                } else {
+                    cuts.push(start);
+                }
                 cuts.push(start + s.size);
             }
         }
@@ -638,7 +666,9 @@ pub fn write_coff(
             cuts.push(start);
         }
         let mut starts = vec![0u64];
-        cuts.retain(|&a| a > 0 && a < section.size);
+        // The previous symbol's end no longer starts a chunk where a vftable's
+        // chunk has moved back to its locator.
+        cuts.retain(|&a| a > 0 && a < section.size && !vftable_starts.contains(&a));
         cuts.sort_unstable();
         cuts.dedup();
         starts.extend(cuts);
@@ -647,6 +677,7 @@ pub fn write_coff(
             if aligned_starts.iter().any(|&(pad_start, next, _)| start == pad_start && end == next) {
                 continue;
             }
+            let leader_offset = if vftable_starts.contains(&(start + 4)) { 4 } else { 0 };
             let split_align = if start == 0 {
                 section.align.max(1)
             } else if let Some(&(_, _, align)) =
@@ -665,7 +696,7 @@ pub fn write_coff(
             let comdat_align = (section.kind != ObjSectionKind::Code)
                 .then(|| {
                     obj.symbols
-                        .at_section_address(idx, (section.address + start) as u32)
+                        .at_section_address(idx, (section.address + start + leader_offset) as u32)
                         .find(|(_, s)| s.flags.is_comdat() && !s.flags.is_stripped())
                         .and_then(|(_, s)| cl_comdat_align(s, image_address))
                 })
@@ -676,7 +707,7 @@ pub fn write_coff(
                 None => split_align,
             };
             let sid = out.add_section(vec![], section.name.as_bytes().to_vec(), kind);
-            section_chunks[idx as usize].push(SectionChunk { start, end, id: sid });
+            section_chunks[idx as usize].push(SectionChunk { start, end, id: sid, leader_offset });
             if is_bss {
                 out.append_section_bss(sid, end - start, align);
                 continue;
@@ -721,8 +752,8 @@ pub fn write_coff(
         // in the value field. cl.exe emits guard bytes and other tentative
         // definitions this way, so a `scope:common` symbol has to be written
         // as one rather than pinned into whichever split covers its address.
-        let (sym_section, sym_value) = if sym.flags.is_common() {
-            (WriteSymbolSection::Common, sym.size)
+        let (sym_section, sym_value, leader_offset) = if sym.flags.is_common() {
+            (WriteSymbolSection::Common, sym.size, 0)
         } else {
             match sym.section {
                 Some(sec_idx) => {
@@ -732,13 +763,15 @@ pub fn write_coff(
                         .get(sec_idx as usize)
                         .and_then(|chunks| chunk_for(chunks, offset))
                     {
-                        Some(chunk) => {
-                            (WriteSymbolSection::Section(chunk.id), offset - chunk.start)
-                        }
-                        None => (WriteSymbolSection::Undefined, sym.address),
+                        Some(chunk) => (
+                            WriteSymbolSection::Section(chunk.id),
+                            offset - chunk.start,
+                            chunk.leader_offset,
+                        ),
+                        None => (WriteSymbolSection::Undefined, sym.address, 0),
                     }
                 }
-                None => (WriteSymbolSection::Undefined, sym.address),
+                None => (WriteSymbolSection::Undefined, sym.address, 0),
             }
         };
         // Leaderless COMDAT chunks before this symbol get their synthetic
@@ -799,6 +832,9 @@ pub fn write_coff(
         // NODUPLICATES like /Gy output.
         let comdat_kind = if sym.flags.is_no_comdat() {
             None
+        } else if sym.flags.is_comdat() && leader_offset != 0 && sym_value == leader_offset {
+            // A vftable whose chunk starts at its locator, as cl.exe emits it.
+            Some(ComdatKind::Largest)
         } else if sym.flags.is_comdat() {
             Some(ComdatKind::Any)
         } else if function_comdat
@@ -809,7 +845,7 @@ pub fn write_coff(
                 == Some(ObjSectionKind::Code)
         {
             Some(ComdatKind::NoDuplicates)
-        } else if sym_value == 0
+        } else if sym_value == leader_offset
             && matches!(sym_section, WriteSymbolSection::Section(_))
             && sym.kind != ObjSymbolKind::Section
             && sym.section.is_some_and(|i| section_all_comdat[i as usize])
@@ -1957,6 +1993,58 @@ mod tests {
             leaders[pos] = Some((leader.name().unwrap().to_string(), c.kind(), leader.address()));
         }
         leaders
+    }
+
+    #[test]
+    fn test_comdat_vftable_starts_at_locator() {
+        // .rdata: A's locator pointer @0, ??_7A@@6B@ @4 (16 bytes as symbols.txt
+        // gives it, running over B's locator), B's locator @16 with a label on it,
+        // ??_7B@@6B@ @20 (4). cl.exe /GR emits each vftable as a LARGEST COMDAT
+        // that starts at its locator, with the vftable at +4.
+        let r4 = |target_symbol| ObjReloc {
+            kind: ObjRelocKind::X86Abs32,
+            target_symbol,
+            addend: 0,
+            module: None,
+        };
+        let rdata = section(".rdata", ObjSectionKind::ReadOnlyData, 0, vec![0; 24], vec![
+            (0, r4(3)),
+            (16, r4(4)),
+        ]);
+        let mut rdata = rdata;
+        rdata.align = 4;
+        let rtti = section(".rdata$r", ObjSectionKind::ReadOnlyData, 1, vec![0; 16], vec![]);
+        let comdat = ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Comdat);
+        let global = ObjSymbolFlagSet(ObjSymbolFlags::Global.into());
+        let symbols = vec![
+            symbol("??_7A@@6B@", 4, Some(0), 16, ObjSymbolKind::Object, comdat),
+            symbol("lbl_10", 16, Some(0), 0, ObjSymbolKind::Unknown, Default::default()),
+            symbol("??_7B@@6B@", 20, Some(0), 4, ObjSymbolKind::Object, comdat),
+            symbol("??_R4A@@6B@", 0, Some(1), 8, ObjSymbolKind::Object, global),
+            symbol("??_R4B@@6B@", 8, Some(1), 8, ObjSymbolKind::Object, global),
+        ];
+        let obj = ObjInfo::new(
+            ObjKind::Relocatable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            symbols,
+            vec![rdata, rtti],
+        );
+        let out = write_coff(&obj, true, true, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let sections: Vec<_> = file.sections().filter(|s| s.name() == Ok(".rdata")).collect();
+        assert_eq!(sections.iter().map(|s| s.size()).collect::<Vec<_>>(), vec![16, 8]);
+        assert!(sections.iter().all(|s| s.align() == 4));
+        let leaders = comdat_leaders(&file, &sections);
+        assert_eq!(leaders[0], Some(("??_7A@@6B@".to_string(), ComdatKind::Largest, 4)));
+        assert_eq!(leaders[1], Some(("??_7B@@6B@".to_string(), ComdatKind::Largest, 4)));
+        for s in &sections {
+            let relocs: Vec<_> = s.relocations().map(|(o, _)| o).collect();
+            assert_eq!(relocs, vec![0], "the locator pointer leads its vftable's section");
+        }
+        let lbl = file.symbols().find(|s| s.name() == Ok("lbl_10")).unwrap();
+        assert_eq!(lbl.section_index(), Some(sections[1].index()));
+        assert_eq!(lbl.address(), 0);
     }
 
     #[test]
