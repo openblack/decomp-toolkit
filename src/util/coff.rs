@@ -433,11 +433,28 @@ fn comdat_tail_padding(obj: &ObjInfo, idx: ObjSectionIndex, section: &ObjSection
     padding.iter().all(|&b| b == 0).then_some(pad_start)
 }
 
+/// Alignment of the COMDAT a `comdat` data symbol leads, where the linker put
+/// it at `image_address`, or None if that address has no alignment cl.exe would
+/// give it. An explicit `align:` is the only candidate. Otherwise cl.exe 6
+/// aligns string literals, vftables and vbtables to 4, and other data (RTTI
+/// descriptors, EH throw info, `__real@8` constants, statics) to 8 once it is 8
+/// bytes or more; 4 is the fallback for an address that is not 8-aligned.
+fn cl_comdat_align(sym: &ObjSymbol, image_address: u64) -> Option<u64> {
+    let four = ["??_C@", "??_7", "??_8"].iter().any(|p| sym.name.starts_with(p));
+    let candidates = match sym.align {
+        Some(align) => vec![align as u64],
+        None if !four && sym.size >= 8 => vec![8, 4],
+        None => vec![4],
+    };
+    candidates.into_iter().find(|&a| image_address % a == 0)
+}
+
 /// Section-relative `(padding_start, symbol_start, align)` for every symbol with
-/// an explicit `align:` that is separated from the end of the preceding symbol
-/// only by alignment padding: zeros in data, int3/nop in code. The padding must
-/// be exactly what aligning the symbol's address to `align` produces, and no
-/// symbol may start inside it, so the linker regenerates the same bytes.
+/// an explicit `align:` (or a `comdat` data symbol, aligned as cl.exe aligns it)
+/// that is separated from the end of the preceding symbol only by alignment
+/// padding: zeros in data, int3/nop in code. The padding must be exactly what
+/// aligning the symbol's address to `align` produces, and no symbol may start
+/// inside it, so the linker regenerates the same bytes.
 fn padding_aligned_starts(
     obj: &ObjInfo,
     idx: ObjSectionIndex,
@@ -451,15 +468,26 @@ fn padding_aligned_starts(
         .map(|(_, s)| s)
         .collect::<Vec<_>>();
     for (i, sym) in symbols.iter().enumerate() {
-        let Some(align) = sym.align.map(u64::from) else { continue };
-        if align < 2 || sym.address % align != 0 || sym.address <= section.address {
+        if sym.address <= section.address {
             continue;
         }
         let start = sym.address - section.address;
-        // End of the furthest-reaching symbol before this one.
+        // The linker aligns the image address, which a split's own section
+        // address (0) does not carry; `write_coff` measures chunks the same way.
+        let image_address = section.virtual_address.unwrap_or(section.address) + start;
+        let cl_align = (section.kind != ObjSectionKind::Code && sym.flags.is_comdat())
+            .then(|| cl_comdat_align(sym, image_address))
+            .flatten();
+        let Some(align) = sym.align.map(u64::from).or(cl_align) else { continue };
+        if align < 2 || image_address % align != 0 {
+            continue;
+        }
+        // End of the furthest-reaching symbol before this one (dtk's own `gap_`/`pad_`
+        // fillers name the padding, they are not data).
+        let filler = |s: &&&ObjSymbol| s.name.starts_with("gap_") || s.name.starts_with("pad_");
         let Some(prev_end) = symbols[..i]
             .iter()
-            .filter(|s| s.address < sym.address && s.size_known && s.size > 0)
+            .filter(|s| !filler(s) && s.address < sym.address && s.size_known && s.size > 0)
             .map(|s| s.address + s.size)
             .max()
         else {
@@ -468,7 +496,7 @@ fn padding_aligned_starts(
         if prev_end >= sym.address || sym.address - prev_end >= align {
             continue;
         }
-        if symbols.iter().any(|s| s.address >= prev_end && s.address < sym.address) {
+        if symbols.iter().any(|s| !filler(&s) && s.address >= prev_end && s.address < sym.address) {
             continue;
         }
         let pad_start = prev_end - section.address;
@@ -638,18 +666,18 @@ pub fn write_coff(
                     }
                 }
             }
-            // cl.exe aligns each string-literal COMDAT to 4 (or what `align:`
-            // states), so a chunk led by a `comdat` data symbol carries that
-            // alignment rather than the split's.
+            // cl.exe aligns a data COMDAT by its leader (see `cl_comdat_align`),
+            // so a chunk led by a `comdat` data symbol carries that alignment
+            // where the image address has it.
+            let image_address = section.virtual_address.unwrap_or(section.address) + start;
             let comdat_align = (section.kind != ObjSectionKind::Code)
                 .then(|| {
                     obj.symbols
                         .at_section_address(idx, (section.address + start) as u32)
                         .find(|(_, s)| s.flags.is_comdat() && !s.flags.is_stripped())
-                        .map(|(_, s)| s.align.map(u64::from).unwrap_or(4))
+                        .and_then(|(_, s)| cl_comdat_align(s, image_address))
                 })
-                .flatten()
-                .filter(|&a| (section.address + start) % a == 0);
+                .flatten();
             let align = if let Some(align) = comdat_align {
                 align
             } else if start == 0 {
@@ -1910,6 +1938,61 @@ mod tests {
             .collect();
         comdat_sections.sort();
         assert_eq!(comdat_sections, vec![1, 3], "only k1 and k2 are COMDATs");
+    }
+
+    #[test]
+    fn test_comdat_data_alignment() {
+        // A split at 0x1008: a 4-byte comdat string at its start gets cl.exe's 4,
+        // not the split's 8; RTTI of 8 bytes or more gets 8 where the address
+        // has it.
+        let mut data = section(".data", ObjSectionKind::Data, 0, vec![0; 0x2c], vec![]);
+        data.align = 8;
+        data.virtual_address = Some(0x1008);
+        let comdat = ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Comdat);
+        let symbols = vec![
+            symbol("??_C@_03ABC@abc?$AA@", 0, Some(0), 4, ObjSymbolKind::Object, comdat),
+            symbol("??_R0?AVA@@@8", 4, Some(0), 0x14, ObjSymbolKind::Object, comdat),
+            symbol("??_R0?AVB@@@8", 0x18, Some(0), 0x10, ObjSymbolKind::Object, comdat),
+            symbol("??_R0?AVC@@@8", 0x28, Some(0), 0x4, ObjSymbolKind::Object, comdat),
+        ];
+        let obj = ObjInfo::new(
+            ObjKind::Relocatable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            symbols,
+            vec![data],
+        );
+        let out = write_coff(&obj, true, true, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let aligns: Vec<_> = file.sections().map(|s| (s.size(), s.align())).collect();
+        assert_eq!(aligns, vec![(4, 4), (0x14, 4), (0x10, 8), (4, 4)]);
+    }
+
+    #[test]
+    fn test_comdat_padding_measured_at_image_address() {
+        // A split at 0x1004: a 3-byte string, 5 zero bytes, then RTTI at +8
+        // (0x100C). +8 is 8-aligned within the split but 0x100C is not, so the
+        // RTTI is aligned to 4 and the padding stays: dropping it would let the
+        // linker place the RTTI at 0x1008.
+        let mut data = section(".data", ObjSectionKind::Data, 0, vec![0; 0x10], vec![]);
+        data.align = 4;
+        data.virtual_address = Some(0x1004);
+        let comdat = ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Comdat);
+        let symbols = vec![
+            symbol("??_C@_02ABC@ab?$AA@", 0, Some(0), 3, ObjSymbolKind::Object, comdat),
+            symbol("??_R0?AVA@@@8", 8, Some(0), 8, ObjSymbolKind::Object, comdat),
+        ];
+        let obj = ObjInfo::new(
+            ObjKind::Relocatable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            symbols,
+            vec![data],
+        );
+        let out = write_coff(&obj, true, true, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let aligns: Vec<_> = file.sections().map(|s| (s.size(), s.align())).collect();
+        assert_eq!(aligns, vec![(3, 4), (5, 1), (8, 4)]);
     }
 
     #[test]
