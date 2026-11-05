@@ -561,16 +561,7 @@ pub fn write_coff(
             ObjSectionKind::ReadOnlyData => SectionKind::ReadOnlyData,
             ObjSectionKind::Bss => SectionKind::UninitializedData,
         };
-        if section.kind == ObjSectionKind::Bss {
-            let sid = out.add_section(vec![], section.name.as_bytes().to_vec(), kind);
-            out.append_section_bss(sid, section.size, section.align.max(1));
-            section_chunks[idx as usize].push(SectionChunk {
-                start: 0,
-                end: section.size,
-                id: sid,
-            });
-            continue;
-        }
+        let is_bss = section.kind == ObjSectionKind::Bss;
         // Section-relative offsets where a new chunk begins. Labels (Unknown)
         // and Object symbols (e.g. jump tables) do not cut. Neither do the
         // `gap_*` symbols invented for inter-function padding: cl.exe pads a
@@ -598,6 +589,9 @@ pub fn write_coff(
         // contribution. Without `function_comdat` (a link that dead-strips with
         // /OPT:REF, where an unreferenced COMDAT chunk would vanish) the other
         // chunks stay plain and the linker must keep input section order.
+        // `.bss` is cut the same way, so each `comdat` static (a template's
+        // static member, a function-local static of an inline function) is a
+        // COMDAT of its own rather than the leader of the rest of the section.
         if section.kind != ObjSectionKind::Code {
             for (_, s) in obj
                 .symbols
@@ -653,7 +647,40 @@ pub fn write_coff(
             if aligned_starts.iter().any(|&(pad_start, next, _)| start == pad_start && end == next) {
                 continue;
             }
+            let split_align = if start == 0 {
+                section.align.max(1)
+            } else if let Some(&(_, _, align)) =
+                aligned_starts.iter().find(|&&(_, next, _)| next == start)
+            {
+                align
+            } else {
+                1
+            };
+            // cl.exe aligns a data COMDAT by its leader (see `cl_comdat_align`),
+            // so a chunk led by a `comdat` data symbol carries that alignment
+            // where the image address has it. In `.bss`, where nothing checks
+            // that splits cover the gaps between them, it never goes below the
+            // split's own: a chunk that starts the split stays where it was put.
+            let image_address = section.virtual_address.unwrap_or(section.address) + start;
+            let comdat_align = (section.kind != ObjSectionKind::Code)
+                .then(|| {
+                    obj.symbols
+                        .at_section_address(idx, (section.address + start) as u32)
+                        .find(|(_, s)| s.flags.is_comdat() && !s.flags.is_stripped())
+                        .and_then(|(_, s)| cl_comdat_align(s, image_address))
+                })
+                .flatten();
+            let align = match comdat_align {
+                Some(align) if is_bss => align.max(split_align),
+                Some(align) => align,
+                None => split_align,
+            };
             let sid = out.add_section(vec![], section.name.as_bytes().to_vec(), kind);
+            section_chunks[idx as usize].push(SectionChunk { start, end, id: sid });
+            if is_bss {
+                out.append_section_bss(sid, end - start, align);
+                continue;
+            }
             let data_end = (end as usize).min(section.data.len());
             let mut data = section.data[(start as usize).min(data_end)..data_end].to_vec();
             // Zero out bytes at relocation sites; addend is carried by the relocation record
@@ -666,31 +693,7 @@ pub fn write_coff(
                     }
                 }
             }
-            // cl.exe aligns a data COMDAT by its leader (see `cl_comdat_align`),
-            // so a chunk led by a `comdat` data symbol carries that alignment
-            // where the image address has it.
-            let image_address = section.virtual_address.unwrap_or(section.address) + start;
-            let comdat_align = (section.kind != ObjSectionKind::Code)
-                .then(|| {
-                    obj.symbols
-                        .at_section_address(idx, (section.address + start) as u32)
-                        .find(|(_, s)| s.flags.is_comdat() && !s.flags.is_stripped())
-                        .and_then(|(_, s)| cl_comdat_align(s, image_address))
-                })
-                .flatten();
-            let align = if let Some(align) = comdat_align {
-                align
-            } else if start == 0 {
-                section.align.max(1)
-            } else if let Some(&(_, _, align)) =
-                aligned_starts.iter().find(|&&(_, next, _)| next == start)
-            {
-                align
-            } else {
-                1
-            };
             out.set_section_data(sid, data, align);
-            section_chunks[idx as usize].push(SectionChunk { start, end, id: sid });
         }
     }
 
@@ -1938,6 +1941,65 @@ mod tests {
             .collect();
         comdat_sections.sort();
         assert_eq!(comdat_sections, vec![1, 3], "only k1 and k2 are COMDATs");
+    }
+
+    /// `(leader name, selection, leader value)` of the COMDAT of each section.
+    fn comdat_leaders(
+        file: &object::File,
+        sections: &[object::Section],
+    ) -> Vec<Option<(String, ComdatKind, u64)>> {
+        let mut leaders = vec![None; sections.len()];
+        for c in file.comdats() {
+            let secs: Vec<_> = c.sections().collect();
+            assert_eq!(secs.len(), 1);
+            let leader = file.symbol_by_index(c.symbol()).unwrap();
+            let pos = sections.iter().position(|s| s.index() == secs[0]).unwrap();
+            leaders[pos] = Some((leader.name().unwrap().to_string(), c.kind(), leader.address()));
+        }
+        leaders
+    }
+
+    #[test]
+    fn test_comdat_bss_symbols_get_own_sections() {
+        // .bss: x@0 (4), g@4 (1, comdat), 3 unnamed bytes @5, s@8 (8, comdat).
+        // Each comdat static leads a COMDAT of its own, aligned as cl.exe aligns
+        // it (4, or 8 for 8 bytes or more at an 8-aligned address).
+        let mut bss = section(".bss", ObjSectionKind::Bss, 0, vec![], vec![]);
+        bss.size = 16;
+        bss.align = 4;
+        let comdat = ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Comdat);
+        let global = ObjSymbolFlagSet(ObjSymbolFlags::Global.into());
+        let symbols = vec![
+            symbol("x", 0, Some(0), 4, ObjSymbolKind::Object, global),
+            symbol("g", 4, Some(0), 1, ObjSymbolKind::Object, comdat),
+            symbol("s", 8, Some(0), 8, ObjSymbolKind::Object, comdat),
+        ];
+        let obj = ObjInfo::new(
+            ObjKind::Relocatable,
+            ObjArchitecture::X86,
+            "test".to_string(),
+            symbols,
+            vec![bss],
+        );
+        let out = write_coff(&obj, true, true, true).unwrap();
+        let file = object::File::parse(&*out).unwrap();
+        let sections: Vec<_> = file.sections().collect();
+        assert!(sections.iter().all(|s| s.name() == Ok(".bss")));
+        assert_eq!(sections.iter().map(|s| s.size()).collect::<Vec<_>>(), vec![4, 1, 3, 8]);
+        assert_eq!(sections.iter().map(|s| s.align()).collect::<Vec<_>>(), vec![4, 4, 1, 8]);
+        let leaders: Vec<_> = comdat_leaders(&file, &sections)
+            .into_iter()
+            .map(|l| {
+                let (name, kind, _) = l.expect("chunk is a COMDAT");
+                (if name.starts_with("comdat_") { "comdat_".to_string() } else { name }, kind)
+            })
+            .collect();
+        assert_eq!(leaders, vec![
+            ("x".to_string(), ComdatKind::NoDuplicates),
+            ("g".to_string(), ComdatKind::Any),
+            ("comdat_".to_string(), ComdatKind::NoDuplicates),
+            ("s".to_string(), ComdatKind::Any),
+        ]);
     }
 
     #[test]
