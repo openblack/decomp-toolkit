@@ -83,7 +83,9 @@ jobs:
         run: cargo test --release --all-features
 
   build:
-    name: Build dtk
+    # Spelled out so the check names the branch ruleset requires stay the same
+    # when a job runs on a `runner` other than its `platform`.
+    name: Build dtk (${{ matrix.platform }}, ${{ matrix.target }}, ${{ matrix.name }}, ${{ matrix.build }})
     env:
       CARGO_BIN_NAME: dtk
     strategy:
@@ -113,16 +115,20 @@ jobs:
             target: aarch64-pc-windows-msvc
             name: windows-arm64
             build: build
+          # The macOS arm64 runner pool (`macos-latest`) goes hours without a
+          # free runner; Xcode on the Intel pool builds both targets.
           - platform: macos-latest
+            runner: macos-15-intel
             target: x86_64-apple-darwin
             name: macos-x86_64
             build: build
           - platform: macos-latest
+            runner: macos-15-intel
             target: aarch64-apple-darwin
             name: macos-arm64
             build: build
       fail-fast: false
-    runs-on: ${{ matrix.platform }}
+    runs-on: ${{ matrix.runner || matrix.platform }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
