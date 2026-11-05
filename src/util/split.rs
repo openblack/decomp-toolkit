@@ -1727,7 +1727,15 @@ pub fn split_obj(
                         .unwrap_or(default_align),
                     default_align,
                 );
-                max(align, address_align(obj.architecture, current_address.address))
+                // cl.exe emits the `.CRT$X*` initializer tables as arrays of
+                // 4-byte pointers aligned to 4. link.exe starts a `$` group at the
+                // largest alignment of its contributions, so one read off the
+                // address would move the whole group.
+                if split.rename.as_deref().unwrap_or(&section.name).starts_with(".CRT$") {
+                    align
+                } else {
+                    max(align, address_align(obj.architecture, current_address.address))
+                }
             }) as u64;
 
             if current_address & (align as u32 - 1) != 0 {
