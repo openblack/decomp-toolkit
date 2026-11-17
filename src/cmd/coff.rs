@@ -1809,6 +1809,16 @@ fn write_if_changed(path: &Utf8NativePath, contents: &[u8]) -> Result<()> {
     Ok(())
 }
 
+/// The address at which a duplicated exported name is kept, given every
+/// occurrence of the name as (private, address). It is the lowest exported
+/// address: a private copy of the same name at a lower address (a unit's static
+/// function below another unit's global one) does not take the name away, or
+/// a recompiled unit that defines the real name leaves references to the
+/// renamed copy undefined.
+fn kept_exported_address(occurrences: impl IntoIterator<Item = (bool, u64)>) -> Option<u64> {
+    occurrences.into_iter().filter(|&(private, _)| !private).map(|(_, addr)| addr).min()
+}
+
 fn split_write_coff(
     module: &mut ModuleState,
     config: &ProjectConfig,
@@ -1931,18 +1941,12 @@ fn split_write_coff(
                 continue;
             }
             let lowest = *distinct.iter().next().unwrap();
-            // An exported name is kept at its lowest exported address: a private
-            // copy of the same name at a lower address (a unit's static function
-            // next to another unit's global one) does not take the name away.
-            let lowest_exported = occ
-                .iter()
-                .filter(|&&(idx, _)| {
-                    let flags = &module.obj.symbols[idx].flags.0;
-                    !flags.contains(ObjSymbolFlags::NoExport)
-                        && !flags.contains(ObjSymbolFlags::Local)
-                })
-                .map(|&(_, a)| a)
-                .min();
+            let lowest_exported = kept_exported_address(occ.iter().map(|&(idx, addr)| {
+                let flags = &module.obj.symbols[idx].flags.0;
+                let private = flags.contains(ObjSymbolFlags::NoExport)
+                    || flags.contains(ObjSymbolFlags::Local);
+                (private, addr)
+            }));
             for &(idx, addr) in occ {
                 let sym = &module.obj.symbols[idx];
                 let local = sym.flags.0.contains(ObjSymbolFlags::NoExport)
@@ -1961,8 +1965,8 @@ fn split_write_coff(
                 //     references. A local nothing else refers to stays local, so
                 //     duplicates of it are fine (a static in a widely included header
                 //     gives every including unit its own copy of the same name).
-                // Exported names keep the lowest-address occurrence and rename the
-                // rest. Modules follow the same rules: every unit of a DLL has its
+                // Exported names keep the lowest exported occurrence and rename the
+                // rest (see kept_exported_address). Modules follow the same rules: every unit of a DLL has its
                 // own copies of header statics and of its `_$E`/`_$S` initializers.
                 let keep = if local {
                     if sym.kind != ObjSymbolKind::Object {
@@ -2341,6 +2345,28 @@ fn split(args: SplitArgs) -> Result<()> {
     let duration = command_start.elapsed();
     info!("Total time: {}.{:03}s", duration.as_secs(), duration.subsec_millis());
     Ok(())
+}
+
+#[cfg(test)]
+mod duplicate_name_tests {
+    use super::kept_exported_address;
+
+    #[test]
+    fn a_lower_static_copy_does_not_take_an_exported_name() {
+        // One unit's static function below another unit's global function of
+        // the same name: the global one keeps the name.
+        assert_eq!(kept_exported_address([(true, 0x1000), (false, 0x2000)]), Some(0x2000));
+    }
+
+    #[test]
+    fn exported_copies_keep_the_lowest_address() {
+        assert_eq!(kept_exported_address([(false, 0x2000), (false, 0x1000)]), Some(0x1000));
+    }
+
+    #[test]
+    fn private_copies_alone_keep_no_exported_address() {
+        assert_eq!(kept_exported_address([(true, 0x1000), (true, 0x2000)]), None);
+    }
 }
 
 #[cfg(test)]
