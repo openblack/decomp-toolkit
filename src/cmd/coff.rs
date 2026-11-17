@@ -1903,6 +1903,18 @@ fn split_write_coff(
                 continue;
             }
             let lowest = *distinct.iter().next().unwrap();
+            // An exported name is kept at its lowest exported address: a private
+            // copy of the same name at a lower address (a unit's static function
+            // next to another unit's global one) does not take the name away.
+            let lowest_exported = occ
+                .iter()
+                .filter(|&&(idx, _)| {
+                    let flags = &module.obj.symbols[idx].flags.0;
+                    !flags.contains(ObjSymbolFlags::NoExport)
+                        && !flags.contains(ObjSymbolFlags::Local)
+                })
+                .map(|&(_, a)| a)
+                .min();
             for &(idx, addr) in occ {
                 let sym = &module.obj.symbols[idx];
                 let local = sym.flags.0.contains(ObjSymbolFlags::NoExport)
@@ -1933,7 +1945,7 @@ fn split_write_coff(
                         addr & 3 == 0
                     }
                 } else {
-                    addr == lowest
+                    Some(addr) == lowest_exported
                 };
                 if keep {
                     continue;
