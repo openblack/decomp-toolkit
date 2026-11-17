@@ -324,6 +324,12 @@ impl ObjSymbols {
             None
         } else if let Some(section_index) = in_symbol.section {
             self.at_section_address(section_index, in_symbol.address as u32).find(|(_, symbol)| {
+                // An alias stays a separate name, even when the symbol it sits
+                // on has the same name (a static function another unit's global
+                // function of that name was folded onto).
+                if symbol.flags.is_alias() {
+                    return false;
+                }
                 symbol.kind == in_symbol.kind ||
                     // Same name at the same address: merge into the existing
                     // symbol rather than creating a duplicate with a
@@ -763,4 +769,47 @@ pub fn best_match_for_reloc(
         -rank
     });
     symbols.into_iter().next()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn a_symbol_does_not_merge_into_an_alias_of_its_own_name() {
+        // Another unit's global function folded onto a static function of the
+        // same name: the symbols file lists the alias and the function itself.
+        let mut symbols = ObjSymbols::new(ObjKind::Executable, vec![]);
+        symbols
+            .add(
+                ObjSymbol {
+                    name: "f".to_string(),
+                    address: 0x1000,
+                    section: Some(0),
+                    flags: ObjSymbolFlagSet(ObjSymbolFlags::Global | ObjSymbolFlags::Alias),
+                    ..Default::default()
+                },
+                true,
+            )
+            .unwrap();
+        symbols
+            .add(
+                ObjSymbol {
+                    name: "f".to_string(),
+                    address: 0x1000,
+                    section: Some(0),
+                    size: 0x30,
+                    size_known: true,
+                    flags: ObjSymbolFlagSet(ObjSymbolFlags::Local.into()),
+                    kind: ObjSymbolKind::Function,
+                    ..Default::default()
+                },
+                true,
+            )
+            .unwrap();
+        let at: Vec<_> = symbols.at_section_address(0, 0x1000).map(|(_, s)| s.clone()).collect();
+        assert_eq!(at.len(), 2);
+        assert_eq!(at.iter().filter(|s| s.flags.is_alias()).count(), 1);
+        assert!(at.iter().any(|s| s.kind == ObjSymbolKind::Function && s.flags.is_local()));
+    }
 }

@@ -453,20 +453,31 @@ fn fold(args: FoldArgs) -> Result<()> {
     // reference resolves to the folded copy. An undefined record of that name is
     // turned into the definition; otherwise a new record is appended.
     let mut synthesized = 0usize;
+    let static_functions: HashSet<&str> = records
+        .iter()
+        .filter(|r| r.3 > 0 && r.4 == IMAGE_SYM_CLASS_STATIC && r.5 & 0x30 == 0x20)
+        .map(|r| r.1.as_str())
+        .collect();
     let mut new_records: Vec<u8> = Vec::new();
     let mut new_strings: Vec<u8> = Vec::new();
     let old_strsize = u32::from_le_bytes(data[stroff..stroff + 4].try_into().unwrap()) as usize;
     let mut names: Vec<&String> = by_name.keys().collect();
     names.sort();
     for name in names {
-        if defined.contains_key(name.as_str()) {
-            continue;
-        }
         let Some(entry) = by_name[name].iter().find(|e| e.alias && !e.local && inside(e.address))
         else {
             continue;
         };
         let Some(primary) = primary_at.get(&entry.address) else { continue };
+        // A definition of the name already serves the alias, unless it is this
+        // unit's static function and the alias is another unit's global function
+        // of the same name, folded onto it: the static cannot be referenced from
+        // outside, so the name is defined a second time, as an external.
+        if defined.contains_key(name.as_str())
+            && !(primary == name && static_functions.contains(name.as_str()))
+        {
+            continue;
+        }
         let Some(&(pvalue, psection)) = defined.get(primary) else { continue };
         let ptype = records
             .iter()
@@ -709,6 +720,23 @@ mod fold_tests {
         let primary = obj.symbols().find(|s| s.name().unwrap() == "primary").unwrap();
         assert!(primary.is_local());
         assert!(!primary.is_undefined());
+    }
+
+    #[test]
+    fn exports_a_static_function_another_units_global_copy_folded_onto() {
+        // `alias` is this unit's static function, and another unit's global
+        // function of the same name was folded onto it.
+        let symbols = "alias = .text:0x1000; // type:function scope:local\nalias = .text:0x1000; // type:label scope:global alias\nprimary = .text:0x1010; // type:function scope:local\n";
+        let fixture = Fixture::new(true, true, symbols);
+        let data = fixture.fold();
+        let obj = object::File::parse(data.as_slice()).unwrap();
+        let copies: Vec<_> = obj.symbols().filter(|s| s.name().unwrap() == "alias").collect();
+        assert_eq!(copies.len(), 2);
+        let local = copies.iter().find(|s| s.is_local()).unwrap();
+        let global = copies.iter().find(|s| s.is_global()).unwrap();
+        assert!(!global.is_undefined());
+        assert_eq!(global.section_index(), local.section_index());
+        assert_eq!(global.address(), local.address());
     }
 
     #[test]

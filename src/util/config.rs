@@ -297,12 +297,19 @@ where
     // many references to a CRT locale array element). They collapse to a single
     // definition at link time, so persisting each as its own line just bloats the
     // file with identical entries — write each (name, section, address) once.
-    let mut seen = std::collections::HashSet::<(&str, Option<SectionIndex>, u64)>::new();
+    // An alias is its own line even where it repeats the name of the symbol it
+    // sits on (another unit's global function folded onto a static of that name).
+    let mut seen = std::collections::HashSet::<(&str, Option<SectionIndex>, u64, bool)>::new();
     for (_, symbol) in obj.symbols.iter_ordered() {
         if symbol.kind == ObjSymbolKind::Section || is_skip_symbol(symbol) {
             continue;
         }
-        if !seen.insert((symbol.name.as_str(), symbol.section, symbol.address)) {
+        if !seen.insert((
+            symbol.name.as_str(),
+            symbol.section,
+            symbol.address,
+            symbol.flags.is_alias(),
+        )) {
             continue;
         }
         write_symbol(w, obj, symbol)?;
